@@ -15,22 +15,22 @@
     "area": "Musashino and across Tokyo"
   },
   "江戸前天丼": {
-    "summary": "A rice bowl topped with tempura of seafood from Tokyo Bay and a rich, sweet and savory sauce. It typically includes shrimp, conger eel, sillago and squid, fried in sesame oil for a fragrant crunch that pairs with the sauce-soaked rice. Asakusa has many long-established tempura restaurants and famous tendon shops. Enjoy a traditional tendon after visiting Sensoji temple. The richness of the sauce varies by shop.",
+    "summary": "A rice bowl topped with tempura of seafood from Tokyo Bay and a rich, sweet and savory sauce. It typically includes shrimp, conger eel, sillago and squid, fried in sesame oil for a fragrant crunch that pairs with the sauce-soaked rice. Asakusa has many long-established tempura restaurants, some dating back to the Edo period, and famous tendon shops. Enjoy a traditional tendon after visiting Sensoji temple. The richness of the sauce varies by shop.",
     "price": "¥1,500–3,000",
     "area": "Asakusa, Taito Ward and more"
   },
   "江戸前寿司": {
-    "summary": "Nigiri sushi, fish on vinegared rice, began as fast food at street stalls in old Edo (Tokyo). Without refrigeration, the fish was cured in vinegar, marinated in soy sauce or simmered before serving. This careful preparation, known as shigoto, is the tradition of Edomae sushi. Today Tokyo has everything from high-end counters to conveyor-belt sushi. Try it in areas known for great sushi, such as around Toyosu Market or Ginza, and appreciate the craftsmanship.",
+    "summary": "Nigiri sushi, fish on vinegared rice, began as fast food at Edo-period street stalls. Without refrigeration, the fish was cured in vinegar, marinated in soy sauce or simmered before serving. This careful preparation, known as shigoto, is the tradition of Edomae sushi. Today Tokyo has everything from high-end counters to conveyor-belt sushi. Try it in areas known for great sushi, such as around Toyosu Market or Ginza, and appreciate the craftsmanship.",
     "price": "¥2,000–20,000+",
     "area": "Ginza, Toyosu and more"
   },
   "深川めし": {
-    "summary": "A clam and rice dish once eaten by fishermen in Fukagawa (now Koto Ward). There are two styles: bukkake, with clams and green onions simmered in miso and poured over rice, and takikomi, with clams cooked into the rice with soy sauce. It is said to have been created as a quick meal for busy fishermen. Full of clam flavor, it is comforting and satisfying. You can try it in the temple town around Fukagawa Fudo-son and get a taste of old Edo.",
+    "summary": "A clam and rice dish eaten by fishermen in Edo-period Fukagawa (now Koto Ward). There are two styles: bukkake, with clams and green onions simmered in miso and poured over rice, and takikomi, with clams cooked into the rice with soy sauce. It is said to have been created as a quick meal for busy fishermen. Full of clam flavor, it is comforting and satisfying. You can try it in the temple town around Fukagawa Fudo-son and get a taste of old Edo.",
     "price": "¥1,000–2,000",
     "area": "Fukagawa, Koto Ward"
   },
   "柳川鍋": {
-    "summary": "An Edo dish of loach and shaved burdock simmered in a sweet and savory sauce and bound with egg, cooked in a shallow earthenware pot. The aroma of burdock combines with the flavor of the loach. It has long been eaten as nourishing food during the hot summer. Specialist loach restaurants still remain in Asakusa and elsewhere, where you can enjoy it in an old Edo atmosphere. Dozeu-nabe, whole loach simmered without being opened, is another specialty.",
+    "summary": "An Edo dish of loach and shaved burdock simmered in a sweet and savory sauce and bound with egg, cooked in a shallow earthenware pot. The aroma of burdock combines with the flavor of the loach. Since the Edo period, it has been eaten as nourishing food during the hot summer. Specialist loach restaurants still remain in Asakusa and elsewhere, where you can enjoy it in an old Edo atmosphere. Dozeu-nabe, whole loach simmered without being opened, is another specialty.",
     "price": "¥1,500–3,000",
     "area": "Asakusa, Taito Ward and more"
   },
@@ -40,7 +40,7 @@
     "area": "Ryogoku, Sumida Ward"
   },
   "てんぷら": {
-    "summary": "Tempura, seafood and vegetables battered and deep-fried, first spread as a casual food sold on skewers at street stalls in old Edo (Tokyo). Edomae tempura is said to be characterized by fresh Tokyo Bay seafood fried in sesame oil. Enjoy the crisp batter and the flavor of the ingredients. Many restaurants serve it piece by piece at the counter, straight from the fryer. It is usually eaten with tentsuyu dipping sauce or salt. Asakusa and Ginza have many long-established tempura restaurants.",
+    "summary": "Tempura, seafood and vegetables battered and deep-fried, spread in the Edo period as a casual food sold on skewers at street stalls. Edomae tempura is said to be characterized by fresh Tokyo Bay seafood fried in sesame oil. Enjoy the crisp batter and the flavor of the ingredients. Many restaurants serve it piece by piece at the counter, straight from the fryer. It is usually eaten with tentsuyu dipping sauce or salt. Asakusa and Ginza have many long-established tempura restaurants.",
     "price": "¥1,500–10,000",
     "area": "Asakusa, Ginza and more"
   },
@@ -60,12 +60,12 @@
     "area": "Tokyo Station, Haneda Airport and across Tokyo"
   },
   "いもようかん": {
-    "summary": "A Japanese sweet of strained sweet potato set with sugar and salt. It is said to have been created by an Asakusa sweet shop as an affordable alternative to expensive bean yokan. Its simple flavor brings out the natural sweetness and fluffy texture of sweet potato. A long-established Asakusa shop is especially famous, and it is still loved today. Many shops use no additives, so it does not keep long; eat it soon. Its simple goodness is the charm.",
+    "summary": "A Japanese sweet of strained sweet potato set with sugar and salt. It is said to have been created in the Meiji era by an Asakusa sweet shop as an affordable alternative to expensive bean yokan. Its simple flavor brings out the natural sweetness and fluffy texture of sweet potato. A long-established Asakusa shop is especially famous, and it is still loved today. Many shops use no additives, so it does not keep long; eat it soon. Its simple goodness is the charm.",
     "price": "¥500–1,500",
     "area": "Asakusa, Taito Ward"
   },
   "あんみつ": {
-    "summary": "A dessert of agar jelly, red peas, soft gyuhi, fruit and more, topped with sweet bean paste and dark brown sugar syrup. Mitsumame, agar and peas with syrup, became anmitsu with the addition of bean paste, said to have been created at a Ginza sweet shop. The slippery agar, sweet bean paste and rich syrup make it refreshing yet satisfying. Asakusa, Ginza and Ueno have many traditional sweet shops. Seasonal fruit is often added. A perfect break while exploring.",
+    "summary": "A dessert of agar jelly, red peas, soft gyuhi, fruit and more, topped with sweet bean paste and dark brown sugar syrup. Mitsumame, agar and peas with syrup, became anmitsu with the addition of bean paste, said to have been created at a Ginza sweet shop in the early Showa era. The slippery agar, sweet bean paste and rich syrup make it refreshing yet satisfying. Asakusa, Ginza and Ueno have many traditional sweet shops. Seasonal fruit is often added. A perfect break while exploring.",
     "price": "¥700–1,200",
     "area": "Ginza, Asakusa and more"
   },

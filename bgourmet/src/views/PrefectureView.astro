@@ -50,7 +50,14 @@ const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
               <ul class="dishes">
                 {withoutArticle.map((item) => (
                   <li>
-                    {item.name}
+                    <span class="names">
+                      {item.name}
+                      {lang !== 'ja' && (
+                        <span class="ja" lang="ja">
+                          {item.ja}
+                        </span>
+                      )}
+                    </span>
                     <span class="pending">{t(lang, 'articlePreparing')}</span>
                   </li>
                 ))}
@@ -130,6 +137,14 @@ const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
     border: 1px solid var(--border);
     border-radius: 10px;
     background: var(--surface);
+  }
+  .names {
+    display: grid;
+    min-width: 0;
+  }
+  .ja {
+    color: var(--muted);
+    font-size: 0.8rem;
   }
   .pending {
     flex-shrink: 0;

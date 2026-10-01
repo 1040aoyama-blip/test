@@ -15,6 +15,8 @@ const data = catalog as Record<string, Record<Category, CatalogEntry[]>>;
 export interface CatalogItem {
   /** この言語での料理名 */
   name: string;
+  /** 日本語の料理名（日本語以外のページで、お店で見せられるよう併記する） */
+  ja: string;
   /** この言語の記事があればその記事 */
   gourmet?: Gourmet;
 }
@@ -35,7 +37,7 @@ export async function getCatalog(lang: Lang, prefectureId: string): Promise<Cata
         const name = entry[lang];
         if (!name) return [];
         const gourmet = gourmets.find((g) => g.meta.prefecture === prefectureId && g.meta.catalogName === entry.ja);
-        return [{ name: gourmet?.text.data.name ?? name, gourmet }];
+        return [{ name: gourmet?.text.data.name ?? name, ja: entry.ja, gourmet }];
       }),
     }))
     .filter((group) => group.items.length > 0);

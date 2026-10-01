@@ -58,14 +58,19 @@ src/
     "price": "1本100〜300円",
     "area": "新世界（通天閣周辺）",
     "shops": [
-      { "name": "串かつだるま 新世界総本店", "query": "串かつだるま 新世界総本店", "comment": "自分で書いたおすすめ理由" }
+      {
+        "name": "串かつだるま 新世界総本店",
+        "query": "串かつだるま 新世界総本店",
+        "comment": "自分で書いたおすすめ理由",
+        "access": "新世界・通天閣の近く"
+      }
     ],
     "affiliate": [{ "label": "リンクの文言", "url": "https://..." }]
   }
 }
 ```
 
-- **shops**（任意・3件まで表示）: `query` は Google マップで店を特定できる検索語。place_id が分かれば `placeId` を使うと確実です。Google の口コミや写真は規約上転載できないので、`comment` は自分で書きます。
+- **shops**（任意・3件まで表示）: `query` は Google マップで店を特定できる検索語。place_id が分かれば `placeId` を使うと確実です。Google の口コミや写真は規約上転載できないので、`comment` は自分で書きます。`access` は最寄り駅や目印などの場所の目安です。
 - **affiliate**（任意）: 「PR」表記つきで表示されます。言語ごとに別のリンクを設定できます。
 
 ## 言語を追加する
@@ -78,5 +83,6 @@ src/
 
 ## Google マップ
 
-`.env.example` を `.env` にコピーし、`PUBLIC_GOOGLE_MAPS_EMBED_KEY` に Maps Embed API のキーを設定すると地図が埋め込まれます。
-未設定の場合は「Google マップで見る」リンクだけを表示します。
+`.env.example` を `.env` にコピーし、`PUBLIC_GOOGLE_MAPS_EMBED_KEY` に Maps Embed API のキー（無料・回数無制限）を設定すると、
+おすすめの店に「地図を表示」ボタンが出ます。地図は押したときだけ読み込みます。未設定の場合は「Googleマップで開く」リンクだけを表示します。
+API キーは「Maps Embed API のみ」「自分のサイトのドメインのみ」に制限してください。

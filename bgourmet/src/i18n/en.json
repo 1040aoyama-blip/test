@@ -21,5 +21,7 @@
   "jumpTo": "Jump to",
   "photoPlaceholder": "Photo coming soon",
   "recommendedShops": "Recommended shops",
-  "searchMaps": "Find on Google Maps"
+  "searchMaps": "Find on Google Maps",
+  "showMap": "Show map",
+  "hideMap": "Hide map"
 }

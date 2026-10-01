@@ -164,25 +164,14 @@ const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ ap
     margin: 0.25rem 0 0.5rem;
     font-size: 0.95rem;
   }
-  /* スマホでは横にスワイプ、広い画面では3列に並ぶ */
+  /* 広い画面では3列、スマホでは縦に並ぶ */
   .shops ul {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(170px, 1fr);
-    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+    gap: 0.6rem;
     margin: 0;
-    padding: 0 0 0.25rem;
+    padding: 0;
     list-style: none;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-  .shops ul > :global(li) {
-    scroll-snap-align: start;
-  }
-  @media (max-width: 759px) {
-    .shops ul {
-      grid-auto-columns: 72%;
-    }
   }
   .actions {
     display: flex;

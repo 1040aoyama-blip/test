@@ -17,17 +17,20 @@
       {
         "name": "Kushikatsu Daruma Shinsekai Main Store",
         "query": "串かつだるま 新世界総本店",
-        "comment": "The long-running shop famous for its no-double-dipping rule. Easy for first-timers."
+        "comment": "The long-running shop famous for its no-double-dipping rule. Easy for first-timers.",
+        "access": "Shinsekai, near Tsutenkaku Tower"
       },
       {
         "name": "Tengu",
         "query": "てんぐ 串かつ 新世界 ジャンジャン横丁",
-        "comment": "A popular spot on Janjan Yokocho, also known for its dote-yaki."
+        "comment": "A popular spot on Janjan Yokocho, also known for its dote-yaki.",
+        "access": "Janjan Yokocho (near Dobutsuen-mae Station)"
       },
       {
         "name": "Yaekatsu",
         "query": "八重勝 串かつ 新世界",
-        "comment": "A classic with a constant line, known for its light, crispy batter."
+        "comment": "A classic with a constant line, known for its light, crispy batter.",
+        "access": "Janjan Yokocho (near Dobutsuen-mae Station)"
       }
     ]
   },
@@ -44,7 +47,8 @@
       {
         "name": "Hanshin Ikayaki (Hanshin Umeda Main Store)",
         "query": "阪神名物いか焼き 阪神梅田本店",
-        "comment": "A famous counter in the department store basement."
+        "comment": "A famous counter in the department store basement.",
+        "access": "Hanshin Umeda Main Store (by Umeda Station)"
       }
     ]
   },
@@ -66,7 +70,8 @@
       {
         "name": "Chitose Main Store",
         "query": "千とせ 本店 肉吸い",
-        "comment": "Known as the birthplace of nikusui."
+        "comment": "Known as the birthplace of nikusui.",
+        "access": "Namba, near Namba Grand Kagetsu theater"
       }
     ]
   },
@@ -78,7 +83,8 @@
       {
         "name": "551 Horai Main Store",
         "query": "551蓬莱 本店",
-        "comment": "Osaka's best-known butaman. You can watch them being made at the counter."
+        "comment": "Osaka's best-known butaman. You can watch them being made at the counter.",
+        "access": "Namba, Ebisubashi-suji shopping street"
       }
     ]
   },

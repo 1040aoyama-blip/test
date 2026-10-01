@@ -12,7 +12,8 @@
       {
         "name": "Fujinomiya Yakisoba Antenna Shop",
         "query": "富士宮やきそばアンテナショップ",
-        "comment": "Near Fujisan Hongu Sengen Taisha shrine. A good place to compare styles."
+        "comment": "Near Fujisan Hongu Sengen Taisha shrine. A good place to compare styles.",
+        "access": "In front of Fujisan Hongu Sengen Taisha (Omiya Yokocho)"
       }
     ]
   },
@@ -24,7 +25,8 @@
       {
         "name": "Aoba Oden Street",
         "query": "青葉おでん街 静岡",
-        "comment": "An alley lined with Shizuoka oden bars. Fun for bar-hopping."
+        "comment": "An alley lined with Shizuoka oden bars. Fun for bar-hopping.",
+        "access": "Central Shizuoka City (around Aoba Symbol Road)"
       }
     ]
   },

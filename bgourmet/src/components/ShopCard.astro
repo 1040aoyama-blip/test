@@ -11,7 +11,11 @@ const { lang, shop } = Astro.props;
 const key = import.meta.env.PUBLIC_GOOGLE_MAPS_EMBED_KEY;
 const query = shop.query ?? shop.name;
 
-// API キーがあれば Maps Embed API で地図を埋め込む。なければ地図の位置に Google マップへのリンクを出す
+const linkParams = new URLSearchParams({ api: '1', query });
+if (shop.placeId) linkParams.set('query_place_id', shop.placeId);
+const linkHref = `https://www.google.com/maps/search/?${linkParams}`;
+
+// 地図は「地図を表示」を押したときだけ読み込む（ページを軽くするため）。API キーがない間はボタンを出さない
 const embedSrc = key
   ? `https://www.google.com/maps/embed/v1/place?${new URLSearchParams({
       key,
@@ -19,63 +23,111 @@ const embedSrc = key
       language: lang,
     })}`
   : null;
-const linkParams = new URLSearchParams({ api: '1', query });
-if (shop.placeId) linkParams.set('query_place_id', shop.placeId);
-const linkHref = `https://www.google.com/maps/search/?${linkParams}`;
 ---
 
 <li class="shop">
-  {
-    embedSrc ? (
-      <iframe src={embedSrc} title={shop.name} loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" />
-    ) : (
-      <a class="map-placeholder" href={linkHref} target="_blank" rel="noopener">
-        <span>{t(lang, 'openInMaps')}</span>
-      </a>
-    )
-  }
-  <div class="body">
-    <a class="name" href={linkHref} target="_blank" rel="noopener">{shop.name}</a>
-    {shop.comment && <p>{shop.comment}</p>}
+  <p class="name">{shop.name}</p>
+  {shop.comment && <p class="comment">{shop.comment}</p>}
+  {shop.access && <p class="access">📍 {shop.access}</p>}
+  <div class="buttons">
+    <a class="open" href={linkHref} target="_blank" rel="noopener">{t(lang, 'openInMaps')}</a>
+    {
+      embedSrc && (
+        <button
+          type="button"
+          class="toggle"
+          data-map-toggle
+          data-src={embedSrc}
+          data-title={shop.name}
+          data-show={t(lang, 'showMap')}
+          data-hide={t(lang, 'hideMap')}
+          aria-expanded="false"
+        >
+          {t(lang, 'showMap')}
+        </button>
+      )
+    }
   </div>
+  {embedSrc && <div class="map" hidden />}
 </li>
+
+<script>
+  // 「地図を表示」を押したときに、その店の地図を読み込んで開閉する
+  document.addEventListener('click', (event) => {
+    const button = (event.target as Element | null)?.closest<HTMLButtonElement>('[data-map-toggle]');
+    if (!button) return;
+    const box = button.closest('.shop')?.querySelector<HTMLElement>('.map');
+    if (!box) return;
+    if (!box.firstElementChild) {
+      const iframe = document.createElement('iframe');
+      iframe.src = button.dataset.src ?? '';
+      iframe.title = button.dataset.title ?? '';
+      iframe.allowFullscreen = true;
+      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      box.append(iframe);
+    }
+    box.hidden = !box.hidden;
+    button.setAttribute('aria-expanded', String(!box.hidden));
+    button.textContent = (box.hidden ? button.dataset.show : button.dataset.hide) ?? '';
+  });
+</script>
 
 <style>
   .shop {
-    display: grid;
-    gap: 0.5rem;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
     min-width: 0;
-  }
-  iframe,
-  .map-placeholder {
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: 4 / 3;
-    border: 0;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border);
     border-radius: 10px;
-    background: var(--surface-2);
-  }
-  .map-placeholder {
-    display: grid;
-    place-items: center;
-    color: var(--muted);
-    font-size: 0.8rem;
-    text-decoration: none;
-  }
-  .body {
-    display: grid;
-    gap: 0.15rem;
   }
   .name {
-    color: var(--text);
+    margin: 0;
     font-weight: 700;
-    font-size: 0.95rem;
   }
-  p {
+  .comment,
+  .access {
     margin: 0;
     color: var(--muted);
     font-size: 0.85rem;
     line-height: 1.6;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 0.35rem;
+  }
+  .open,
+  .toggle {
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .open:hover,
+  .toggle:hover {
+    border-color: var(--accent);
+  }
+  .map[hidden] {
+    display: none;
+  }
+  .map :global(iframe) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    margin-top: 0.4rem;
+    border: 0;
+    border-radius: 8px;
   }
 </style>

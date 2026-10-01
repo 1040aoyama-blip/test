@@ -21,6 +21,8 @@ export interface Shop {
   placeId?: string;
   /** 自分で書いたおすすめ理由（Google の口コミは転載しない） */
   comment?: string;
+  /** 場所の目安（最寄り駅や目印） */
+  access?: string;
 }
 
 export interface DishInfo {

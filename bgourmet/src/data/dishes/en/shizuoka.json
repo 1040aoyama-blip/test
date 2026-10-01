@@ -1,0 +1,78 @@
+{
+  "浜松餃子": {
+    "summary": "Fried in a circle in the pan and served with boiled bean sprouts in the middle. The light, cabbage-rich filling makes them easy to keep eating.",
+    "price": "¥500–800",
+    "area": "Hamamatsu",
+    "tip": "Eat them with the bean sprouts in the center to refresh your palate."
+  },
+  "富士宮やきそば": {
+    "summary": "Firm, chewy steamed noodles topped with crispy pork bits (nikukasu) and sardine or mackerel powder (dashiko). Made famous by winning the B-1 Grand Prix.",
+    "price": "¥500–900",
+    "area": "Fujinomiya",
+    "tip": "Locals sprinkle plenty of dashiko on top. A perfect stop on a trip to see Mt. Fuji."
+  },
+  "静岡おでん": {
+    "summary": "Oden simmered in a dark broth made with beef tendon, with every ingredient on a skewer. The grey kuro hanpen fish cake made from sardines or mackerel is a must.",
+    "price": "¥100–200 per skewer",
+    "area": "Shizuoka City",
+    "tip": "Sprinkle on fish powder and green seaweed flakes. Try it at old-style candy shops or izakaya."
+  },
+  "生しらす丼": {
+    "summary": "A rice bowl piled with raw whitebait caught in Suruga Bay. Freshness is everything, so it is best eaten in the fishing towns where it is landed.",
+    "price": "¥1,000–1,800",
+    "area": "Shizuoka City (Mochimune, Yui), Yaizu",
+    "tip": "Raw whitebait may not be served during the winter-to-spring closed season or on days when boats cannot go out."
+  },
+  "三島コロッケ": {
+    "summary": "Croquettes made with Mishima-grown potatoes, known for their fluffy texture and natural sweetness. A local snack to eat while strolling.",
+    "price": "¥100–250 each",
+    "area": "Mishima"
+  },
+  "浜名湖うな重": {
+    "summary": "Grilled eel over rice served in a lacquered box, from the area around Lake Hamana, a major center of eel farming.",
+    "price": "¥3,000–6,000",
+    "area": "Hamamatsu (Lake Hamana area)",
+    "tip": "Popular restaurants can sell out before noon, so go early."
+  },
+  "サクラエビのかき揚げ": {
+    "summary": "A crispy fritter packed with sakura shrimp, which in Japan are landed only in Suruga Bay. Fragrant, crunchy and naturally sweet.",
+    "price": "¥800–1,500",
+    "area": "Shizuoka City (Yui), Fuji",
+    "tip": "The fishing seasons are spring and autumn, when you can also try them raw or boiled."
+  },
+  "金目の煮付け": {
+    "summary": "Splendid alfonsino, a red-skinned fish Izu is famous for, simmered in a sweet soy sauce glaze. The tender white flesh goes perfectly with rice.",
+    "price": "¥2,000–4,000",
+    "area": "Izu (Inatori, Shimoda, etc.)"
+  },
+  "とろろ汁": {
+    "summary": "Grated wild yam thinned with miso soup and poured over barley rice. A specialty of Mariko, an old post town on the Tokaido road.",
+    "price": "¥1,500–2,500",
+    "area": "Shizuoka City (Mariko)"
+  },
+  "山葵漬け": {
+    "summary": "Chopped wasabi pickled in sake lees, a Shizuoka specialty with a sharp kick. Great with rice, sashimi or fish cakes.",
+    "price": "¥500–1,000 (souvenir)",
+    "area": "Shizuoka City, Izu"
+  },
+  "うなぎパイ": {
+    "summary": "Crispy pie cookies made with eel extract by Hamamatsu confectioner Shunkado. The classic Hamamatsu souvenir.",
+    "price": "From about ¥1,000 per box",
+    "area": "Hamamatsu and souvenir shops across the prefecture"
+  },
+  "安倍川もち": {
+    "summary": "Soft, freshly pounded rice cakes coated in roasted soybean flour (kinako) or smooth red bean paste, sold by teahouses along the Abe River for centuries.",
+    "price": "¥600–900",
+    "area": "Shizuoka City (near Abekawa Bridge)"
+  },
+  "こっこ": {
+    "summary": "A fluffy steamed sponge cake filled with milk cream, and one of Shizuoka's best-known souvenirs.",
+    "price": "About ¥1,000 per box",
+    "area": "Stations and souvenir shops across the prefecture"
+  },
+  "治一郎のバウムクーヘン": {
+    "summary": "A Hamamatsu-born baumkuchen loved for its moist texture. People travel from outside the prefecture to buy it.",
+    "price": "From about ¥1,500",
+    "area": "Hamamatsu and other locations"
+  }
+}

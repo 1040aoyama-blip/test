@@ -4,7 +4,7 @@ import GourmetCard from '../components/GourmetCard.astro';
 import { localizePath, t, type Lang } from '../i18n';
 import { prefectures, regions } from '../data/prefectures';
 import { getGourmets } from '../data/gourmet';
-import { assertArticlesInCatalog, countCatalog } from '../data/catalog';
+import { assertCatalogConsistency, countCatalog } from '../data/catalog';
 
 interface Props {
   lang: Lang;
@@ -12,7 +12,7 @@ interface Props {
 
 const { lang } = Astro.props;
 const gourmets = await getGourmets(lang);
-await assertArticlesInCatalog();
+await assertCatalogConsistency();
 // 一覧に載っている料理の数（その言語の一覧がまだなければ記事の数）
 const countFor = (prefId: string) =>
   countCatalog(lang, prefId) || gourmets.filter((g) => g.meta.prefecture === prefId).length;

@@ -1,0 +1,94 @@
+{
+  "たこ焼き": {
+    "summary": "Balls of batter with a piece of octopus inside, the star of Osaka's flour-based street food. Crispy outside and gooey inside.",
+    "price": "¥500–800 (6–8 pieces)",
+    "area": "Dotonbori, Namba and all over Osaka City",
+    "tip": "Fresh takoyaki is very hot inside, so let it cool a little. Some shops serve it with dashi or soy sauce instead of sauce."
+  },
+  "お好み焼き": {
+    "summary": "Osaka-style savory pancake: cabbage and toppings are mixed into the batter before grilling. Finished with sauce, mayonnaise and bonito flakes.",
+    "price": "¥800–1,500",
+    "area": "All over Osaka City",
+    "tip": "Cut and eat it right on the hot plate with a small spatula (kote) to keep it hot."
+  },
+  "串カツ": {
+    "summary": "Battered and deep-fried skewers of meat, vegetables and seafood, the local favorite of Shinsekai. You can order just one at a time.",
+    "price": "¥100–300 per skewer",
+    "area": "Shinsekai (around Tsutenkaku Tower)",
+    "tip": "No double-dipping in the shared sauce! Use the free cabbage to scoop more sauce."
+  },
+  "ねぎ焼き": {
+    "summary": "A cousin of okonomiyaki made with a mountain of green onions and a thin batter, eaten with soy sauce or ponzu for a lighter taste.",
+    "price": "¥800–1,300",
+    "area": "Juso and other areas"
+  },
+  "いか焼き": {
+    "summary": "Batter with chopped squid, pressed flat between two hot plates. A thin, chewy Osaka snack.",
+    "price": "About ¥200 each",
+    "area": "Umeda (Hanshin Department Store) and others",
+    "tip": "It is a famous department store basement snack. The line moves fast."
+  },
+  "きつねうどん": {
+    "summary": "Udon topped with a large piece of sweet simmered fried tofu. The clear, light-colored kelp broth is the taste of Osaka.",
+    "price": "¥500–900",
+    "area": "Osaka City (said to originate in Senba)"
+  },
+  "どて焼き": {
+    "summary": "Beef tendon slowly simmered in miso until meltingly soft. A standard side dish at kushikatsu restaurants.",
+    "price": "¥400–700 per plate",
+    "area": "Shinsekai and other areas"
+  },
+  "肉吸い": {
+    "summary": "Beef udon without the noodles: a savory broth with beef and a soft-cooked egg. It started at a long-running udon shop in Namba.",
+    "price": "¥700–1,000",
+    "area": "Namba",
+    "tip": "Order it with a small bowl of rice, the classic combination."
+  },
+  "豚まん": {
+    "summary": "In Osaka, pork buns are called butaman, not nikuman. Fluffy dough filled with juicy pork and onion.",
+    "price": "¥200–300 each",
+    "area": "Around Namba, Umeda and other stations in Osaka City",
+    "tip": "Eat it with a dab of mustard, Osaka style."
+  },
+  "バッテラ": {
+    "summary": "Pressed sushi of vinegar-cured mackerel on rice, topped with a thin sheet of kelp. The name comes from the Portuguese word for a small boat.",
+    "price": "¥1,000–2,000",
+    "area": "Sushi shops and department stores in Osaka City"
+  },
+  "鯨のハリハリ鍋": {
+    "summary": "A hot pot of whale meat and mizuna greens quickly cooked in broth. The name comes from the crisp \"hari-hari\" texture of the mizuna.",
+    "price": "¥3,000–6,000",
+    "area": "Osaka City (only a few restaurants serve it)"
+  },
+  "てっちり": {
+    "summary": "A hot pot of pufferfish (fugu) and vegetables, a winter specialty in Osaka, which eats a lot of fugu. Finish with rice porridge in the leftover broth.",
+    "price": "From ¥5,000",
+    "area": "Dotonbori and other areas of Osaka City",
+    "tip": "Eat fugu only at specialist restaurants with licensed chefs."
+  },
+  "うどんすき": {
+    "summary": "A hot pot of thick udon cooked in broth with seafood, chicken, vegetables and more. It was created by a long-established Osaka restaurant.",
+    "price": "From ¥4,000",
+    "area": "Osaka City"
+  },
+  "りくろーおじさんのチーズケーキ": {
+    "summary": "A fluffy cheesecake loved for being sold fresh from the oven. A bell rings when a new batch is ready, and you can watch the logo being branded on top.",
+    "price": "About ¥1,000 per whole cake",
+    "area": "Shops in Namba, Umeda and elsewhere in Osaka"
+  },
+  "ミックスジュース": {
+    "summary": "A blend of fruit such as banana and peach with milk, a standard drink at Osaka coffee shops.",
+    "price": "¥300–600",
+    "area": "Coffee shops and station juice stands in Osaka City"
+  },
+  "みたらし小餅": {
+    "summary": "Bite-size grilled rice cakes covered in a sweet-savory soy glaze, a staple of Osaka's long-established sweet shops.",
+    "price": "About ¥500",
+    "area": "Juso and other areas"
+  },
+  "岩おこし": {
+    "summary": "Crushed rice bound with syrup into a very hard, crunchy sweet. A classic Osaka souvenir.",
+    "price": "From about ¥500",
+    "area": "Souvenir shops in Osaka City"
+  }
+}

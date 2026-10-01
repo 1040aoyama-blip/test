@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import DishEntry from '../components/DishEntry.astro';
 import GourmetCard from '../components/GourmetCard.astro';
 import { localizePath, t, type Lang } from '../i18n';
 import { getPrefecture, regions } from '../data/prefectures';
@@ -29,45 +30,35 @@ const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
   {dishCount > 0 && <p class="count">{t(lang, 'dishCount', { n: dishCount })}</p>}
 
   {
+    groups.length > 1 && (
+      <nav class="jump" aria-label={t(lang, 'jumpTo')}>
+        {groups.map((group) => (
+          <a href={`#${group.category}`}>
+            {t(lang, `category_${group.category}`)}
+            <span class="n">{group.items.length}</span>
+          </a>
+        ))}
+      </nav>
+    )
+  }
+
+  {
     groups.length > 0 ? (
-      groups.map((group) => {
-        const withArticle = group.items.filter((item) => item.gourmet);
-        const withoutArticle = group.items.filter((item) => !item.gourmet);
-        return (
-          <section class="group">
-            <h2>
-              {t(lang, `category_${group.category}`)}
-              <span class="n">{group.items.length}</span>
-            </h2>
-            {withArticle.length > 0 && (
-              <div class="grid">
-                {withArticle.map((item) => (
-                  <GourmetCard lang={lang} gourmet={item.gourmet!} />
-                ))}
-              </div>
-            )}
-            {withoutArticle.length > 0 && (
-              <ul class="dishes">
-                {withoutArticle.map((item) => (
-                  <li>
-                    <span class="names">
-                      {item.name}
-                      {lang !== 'ja' && (
-                        <span class="ja" lang="ja">
-                          {item.ja}
-                        </span>
-                      )}
-                    </span>
-                    <span class="pending">{t(lang, 'articlePreparing')}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </section>
-        );
-      })
+      groups.map((group) => (
+        <section class="group" id={group.category}>
+          <h2>
+            {t(lang, `category_${group.category}`)}
+            <span class="n">{group.items.length}</span>
+          </h2>
+          <div class="dishes">
+            {group.items.map((item) => (
+              <DishEntry lang={lang} prefectureId={pref.id} item={item} />
+            ))}
+          </div>
+        </section>
+      ))
     ) : articles.length > 0 ? (
-      <div class="grid">
+      <div class="cards">
         {articles.map((g) => (
           <GourmetCard lang={lang} gourmet={g} />
         ))}
@@ -93,11 +84,32 @@ const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
     margin-bottom: 0.25rem;
   }
   .count {
-    margin: 0 0 1.5rem;
+    margin: 0 0 1rem;
     color: var(--muted);
+  }
+  .jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .jump a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .jump a:hover {
+    border-color: var(--accent);
   }
   .group {
     margin-top: 2rem;
+    scroll-margin-top: 4.5rem;
   }
   .group h2 {
     display: flex;
@@ -114,42 +126,15 @@ const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
     color: var(--accent);
     font-size: 0.8rem;
   }
-  .grid {
+  .dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    gap: 0.75rem;
+  }
+  .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1rem;
-    margin-bottom: 1rem;
-  }
-  .dishes {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 0.5rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .dishes li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 0.9rem;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    background: var(--surface);
-  }
-  .names {
-    display: grid;
-    min-width: 0;
-  }
-  .ja {
-    color: var(--muted);
-    font-size: 0.8rem;
-  }
-  .pending {
-    flex-shrink: 0;
-    color: var(--muted);
-    font-size: 0.75rem;
   }
   .soon {
     padding: 1.5rem;

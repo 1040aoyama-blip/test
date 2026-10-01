@@ -23,6 +23,10 @@
   "category_bgourmet": "B級グルメ",
   "category_local": "郷土料理",
   "category_sweets": "スイーツ",
-  "articlePreparing": "記事準備中",
-  "dishCount": "{n}品を掲載"
+  "dishCount": "{n}品を掲載",
+  "area": "エリア",
+  "tip": "ひとこと",
+  "searchMaps": "Google マップで探す",
+  "readMore": "詳しく読む",
+  "jumpTo": "ジャンルへ移動"
 }

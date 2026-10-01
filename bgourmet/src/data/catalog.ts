@@ -144,7 +144,7 @@ export interface FeaturedItem extends CatalogItem {
   prefectureId: string;
 }
 
-/** トップページの「注目」欄に出す料理（src/data/featured.json の順。のちに「SNS で紹介中」に使う） */
+/** トップページの「注目」欄に出す料理（src/data/featured.json の順） */
 export function getFeatured(lang: Lang): FeaturedItem[] {
   return featured.flatMap(({ prefecture, ja }) => {
     if (!hasDish(prefecture, ja)) throw new Error(`featured.json の「${ja}」が catalog.json の ${prefecture} にありません`);

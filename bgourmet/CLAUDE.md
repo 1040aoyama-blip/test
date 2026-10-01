@@ -12,6 +12,7 @@
 - **県ページが主役**: 料理ごとのページは作らず、県ページに全料理の短い説明を直接並べる
   - 説明は `src/data/dishes/<言語>/<県>.json`（キーは catalog.json の日本語名。summary・price・area・tip）
   - 説明がまだない料理は、名前と「Google マップで探す」だけを表示する
+  - 県名の下に県の概要説明（食文化を中心に2文程度）。`src/data/intros/<言語>.json`。47都道府県分作成済み
   - 各料理にページ内リンク（例: `/ja/shizuoka/#fujinomiya-yakisoba`）があり、X の投稿から直接飛べる
   - 特に人気の料理やコラムで深掘りしたい料理だけ、詳しい個別ページを作る（`src/content/gourmet/`。`meta.json` の `catalogName` で一覧と結びつけ、県ページに「詳しく読む」ボタンが出る）
   - 地図は埋め込まず、Google マップの検索へのリンクにする（ページを軽くするため）

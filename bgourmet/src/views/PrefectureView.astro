@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import DishEntry from '../components/DishEntry.astro';
 import GourmetCard from '../components/GourmetCard.astro';
 import { localizePath, t, type Lang } from '../i18n';
-import { getPrefecture, regions } from '../data/prefectures';
+import { getIntro, getPrefecture, regions } from '../data/prefectures';
 import { getGourmets } from '../data/gourmet';
 import { getCatalog } from '../data/catalog';
 
@@ -20,13 +20,15 @@ const dishCount = groups.reduce((sum, g) => sum + g.items.length, 0);
 // 一覧にその言語の料理名がまだない場合は、記事だけを並べる
 const articles = (await getGourmets(lang)).filter((g) => g.meta.prefecture === pref.id);
 const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
+const intro = getIntro(lang, pref.id);
 ---
 
-<BaseLayout lang={lang} path={`/${pref.id}/`} title={title}>
+<BaseLayout lang={lang} path={`/${pref.id}/`} title={title} description={intro}>
   <nav class="crumbs">
     <a href={localizePath(lang, '/')}>{t(lang, 'siteName')}</a> › {region.name[lang]}
   </nav>
   <h1>{title}</h1>
+  {intro && <p class="intro">{intro}</p>}
   {dishCount > 0 && <p class="count">{t(lang, 'dishCount', { n: dishCount })}</p>}
 
   {
@@ -82,6 +84,12 @@ const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
   }
   h1 {
     margin-bottom: 0.25rem;
+  }
+  .intro {
+    max-width: 46rem;
+    margin: 0.5rem 0 0.75rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
   }
   .count {
     margin: 0 0 1rem;

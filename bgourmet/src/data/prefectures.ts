@@ -20,3 +20,11 @@ export function getPrefecture(id: string): Prefecture {
   if (!pref) throw new Error(`Unknown prefecture: ${id}`);
   return pref;
 }
+
+// 都道府県の概要説明（src/data/intros/<言語>.json。キーは都道府県の id）
+const introFiles = import.meta.glob<Record<string, string>>('./intros/*.json', { eager: true, import: 'default' });
+
+/** 都道府県の概要説明（その言語の説明がなければ undefined） */
+export function getIntro(lang: string, prefectureId: string): string | undefined {
+  return introFiles[`./intros/${lang}.json`]?.[prefectureId];
+}

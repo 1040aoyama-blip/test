@@ -1,0 +1,57 @@
+{
+  "鳥取牛骨ラーメン": {
+    "summary": "Ramen with a beef bone broth, loved mainly in central and western Tottori. The beef bone soup has a faintly sweet aroma and richness, light yet deep in flavor. Tottori has long been a cattle-raising area, and a food culture using beef bones is said to be the background. The standard bowl has soy sauce broth topped with roast pork, bean sprouts and green onion. Many shops are found in Kurayoshi, Kotoura and Yonago.",
+    "price": "¥700–1,000",
+    "area": "Kurayoshi, Kotoura, Yonago and around"
+  },
+  "鳥取カレー": {
+    "summary": "Tottori City is said to be among the top in Japan for curry roux consumption, and curry is eaten often both at home and in restaurants. There is no fixed style of Tottori curry, but many use local ingredients, and serving it with the local specialty, pickled rakkyo shallots, is the Tottori way. The crunchy, sweet-sour rakkyo brings out the flavor of the curry. Western-style restaurants and cafes in the city each offer their own creative curries.",
+    "price": "¥800–1,300",
+    "area": "Tottori City"
+  },
+  "ホルモンそば": {
+    "summary": "A local dish of Tottori City: beef offal, Chinese noodles and vegetables such as cabbage fried on an iron plate with a sweet and savory miso sauce. It is said to have started at a yakiniku restaurant where noodles were added to leftover sauce and grilled. The flavor and fat of the springy offal coat the noodles for a rich taste that goes well with beer. Though called soba, it uses Chinese noodles. Try it at yakiniku restaurants and izakaya in Tottori City. It is a dish locals love.",
+    "price": "¥800–1,200",
+    "area": "Tottori City"
+  },
+  "松葉ガニの塩ゆで": {
+    "summary": "Male snow crab caught in the San'in region is called matsuba crab and is regarded as the king of winter delicacies. A tag is attached as a mark of quality. Freshly caught crab boiled in salted water lets you fully enjoy its sweet meat and rich crab miso. The season is limited to winter, when Sakaiminato and Karo Port in Tottori City bustle with crab lovers. Prices vary greatly by size and timing. It is one of the great pleasures of a winter trip to Tottori.",
+    "price": "¥5,000–30,000",
+    "area": "Sakaiminato, Tottori City and around"
+  },
+  "とうふちくわ": {
+    "summary": "Tottori City's famous chikuwa, made by mixing tofu with white fish paste, wrapping it around a bamboo stick and steaming it. It is said to have started in the Edo period when a lord encouraged people to eat tofu instead of expensive fish to save money. It is softer and fluffier than ordinary chikuwa, with a gentle tofu flavor. Eat it as is, with wasabi and soy sauce, or in simmered dishes. It is sold at supermarkets and souvenir shops in Tottori City.",
+    "price": "¥300–800",
+    "area": "Tottori City"
+  },
+  "大山おこわ": {
+    "summary": "A local dish from around Mt. Daisen, the highest peak in the Chugoku region. Glutinous rice is cooked with chicken, burdock, carrot, shiitake and wild vegetables and seasoned with soy sauce. Legend says it began as food eaten by the warrior monks of Daisen-ji Temple before going into battle. It is chewy with a simple, gentle flavor from the ingredients soaked into the rice. It has also been made for celebrations. Try it at diners and roadside stations around Mt. Daisen.",
+    "price": "¥500–1,000",
+    "area": "Daisen, Yonago and around"
+  },
+  "らっきょう漬け": {
+    "summary": "Sand dune rakkyo, grown in sandy fields around the Tottori Sand Dunes, is one of Tottori's signature products. Grown in well-drained sand, these shallots are white, firm and crunchy. Pickled in sweet vinegar, they are familiar as a curry side, but they are also perfect on their own with rice or drinks. In autumn, the rakkyo fields are covered in purple flowers. They are sold at souvenir shops in Tottori City.",
+    "price": "¥500–1,500",
+    "area": "Tottori City (Fukube and around)"
+  },
+  "もさえびの刺身": {
+    "summary": "Sashimi of mosa shrimp caught off Tottori. Officially called kurozako shrimp, it is a smallish shrimp said to be named for its dark, rough mosa-like appearance. It is said to be even sweeter than sweet shrimp, with a silky texture and rich sweetness. Because it spoils quickly and is hard to transport, it is known as a precious shrimp you can only taste locally. Try it at restaurants in Tottori City and Sakaiminato. The season runs from autumn to spring.",
+    "price": "¥1,000–2,500",
+    "area": "Tottori City, Sakaiminato and around"
+  },
+  "打吹公園だんご": {
+    "summary": "A specialty of Kurayoshi, named after the city's Utsubuki Park. Small mochi balls are coated in three kinds of bean paste, white, azuki and matcha, and skewered. The three colors look festive, and each paste has a gentle sweetness. Bite-sized and easy to eat, they have long been loved by Kurayoshi people. Utsubuki Park is also known for cherry blossoms in spring. Pick some up as a souvenir while strolling past the white-walled storehouses. They are perfect with tea.",
+    "price": "¥500–1,200 per box",
+    "area": "Kurayoshi"
+  },
+  "因幡の白うさぎ": {
+    "summary": "A representative Tottori souvenir: baked buns shaped like white rabbits. The moist dough is filled with sweet yolk bean paste. The name comes from the White Hare of Inaba, a myth in the Kojiki, said to be Japan's oldest history book. Hakuto Shrine is said to be the setting of the myth and is known for matchmaking. Their cute look and easy-to-share size are a plus. They are sold at Tottori Station, the airport and souvenir shops around the prefecture.",
+    "price": "¥600–1,500",
+    "area": "Tottori City and around"
+  },
+  "ふろしきまんじゅう": {
+    "summary": "An old-fashioned bun from a long-established shop in Kurayoshi. A thin brown sugar wrapper encloses smooth red bean paste, and its shape is said to resemble a bundle wrapped in a furoshiki cloth, hence the name. Enjoy the rich aroma of brown sugar and the gentle sweetness of the paste. Small and easy to eat, it has long been a teatime favorite locally. It makes a nice memento of a stroll past Kurayoshi's white-walled storehouses. Its simple flavor is comforting.",
+    "price": "¥80–150 each",
+    "area": "Kurayoshi"
+  }
+}

@@ -67,6 +67,11 @@ const switchHref = (l: Lang) => localizePath(l, availableLangs.includes(l) ? pat
 
     <footer class="site-footer">
       <div class="container">
+        <nav class="footer-links">
+          <a href={localizePath(lang, '/about/')}>{t(lang, 'aboutTitle')}</a>
+          <a href={localizePath(lang, '/privacy/')}>{t(lang, 'privacyTitle')}</a>
+          <a href={localizePath(lang, '/contact/')}>{t(lang, 'contactTitle')}</a>
+        </nav>
         <p>{t(lang, 'adNotice')}</p>
         <p>© {new Date().getFullYear()} {siteName}</p>
       </div>
@@ -142,6 +147,19 @@ const switchHref = (l: Lang) => localizePath(l, availableLangs.includes(l) ? pat
     color: var(--muted);
     font-size: 0.85rem;
     padding-block: 1.5rem;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .footer-links a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    color: var(--accent);
   }
   .site-footer p {
     margin: 0.25rem 0;

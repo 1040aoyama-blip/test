@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Prose from '../components/Prose.astro';
+import { localizePath, t, type Lang } from '../i18n';
+import { formatDate, siteInfo } from '../data/site';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ja = lang === 'ja';
+const date = formatDate(lang, siteInfo.privacyPolicyDate);
+const contact = localizePath(lang, '/contact/');
+const googlePolicy = 'https://policies.google.com/privacy';
+const googleAds = 'https://policies.google.com/technologies/ads';
+const googlePartner = 'https://policies.google.com/technologies/partner-sites';
+---
+
+<BaseLayout lang={lang} path="/privacy/" title={t(lang, 'privacyTitle')}>
+  <Prose>
+    <h1>{t(lang, 'privacyTitle')}</h1>
+    <p class="meta">{ja ? `制定・最終改定日：${date}` : `Last updated: ${date}`}</p>
+
+    {
+      ja ? (
+        <>
+          <p>
+            「{t(lang, 'siteName')}」（以下「当サイト」）は、利用者の個人情報の取り扱いについて、以下のとおり定めます。
+          </p>
+
+          <h2>個人情報の取得と利用目的</h2>
+          <p>
+            当サイトでは、お問い合わせの際に、お名前（ニックネーム可）やメールアドレスなどをお送りいただくことがあります。いただいた情報は、お問い合わせへの回答や、必要な連絡のためだけに利用し、それ以外の目的では利用しません。
+          </p>
+
+          <h2>個人情報の第三者への提供</h2>
+          <p>法令に基づく場合を除き、ご本人の同意なく、個人情報を第三者に提供することはありません。</p>
+
+          <h2>広告について</h2>
+          <p>
+            当サイトは、アフィリエイトプログラムに参加しています。紹介している商品やサービスを、当サイトのリンクを通じて購入・予約された場合、運営者が報酬を受け取ることがあります。広告のリンクには「{t(lang, 'prLabel')}」と表示し、広告であることが分かるようにしています。
+          </p>
+          <p>
+            また、当サイトでは、Google AdSense などの第三者配信の広告サービスを利用する場合があります。これらの広告配信事業者は、利用者の興味に合わせた広告を表示するために、Cookie を使用することがあります。Cookie を無効にする方法や、Google の広告での情報の取り扱いについては、
+            <a href={googleAds} target="_blank" rel="noopener">Google の広告に関するポリシー</a>をご覧ください。
+          </p>
+
+          <h2>アクセス解析ツールについて</h2>
+          <p>
+            当サイトでは、サイトの利用状況を把握し、内容を改善するために、Google アナリティクスなどのアクセス解析ツールを利用する場合があります。これらのツールは Cookie を使ってデータを収集しますが、個人を特定する情報は含まれません。データの取り扱いについては、
+            <a href={googlePartner} target="_blank" rel="noopener">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>
+            をご覧ください。
+          </p>
+
+          <h2>Cookie について</h2>
+          <p>
+            Cookie は、ブラウザの設定で無効にすることができます。無効にした場合、当サイトの一部の機能が使えなくなることがあります。
+          </p>
+
+          <h2>Google マップについて</h2>
+          <p>
+            当サイトでは、お店の場所を案内するために Google マップを利用しています。「地図を表示」を押したときや、Google マップへのリンクを開いたときは、Google のサービスが読み込まれ、
+            <a href={googlePolicy} target="_blank" rel="noopener">Google のプライバシーポリシー</a>が適用されます。
+          </p>
+
+          <h2>免責事項</h2>
+          <ul>
+            <li>
+              当サイトの情報は、できるだけ正確なものを掲載するよう努めていますが、その正確性や最新性を保証するものではありません。値段は目安であり、お店の営業時間やメニューは変わることがあります。
+            </li>
+            <li>当サイトの情報を利用したことによって生じた損害について、当サイトは責任を負いかねます。</li>
+            <li>当サイトからのリンク先のサイトで提供される情報やサービスについて、当サイトは責任を負いません。</li>
+          </ul>
+
+          <h2>著作権について</h2>
+          <p>
+            当サイトに掲載している文章の著作権は、運営者に帰属します。引用の範囲を超える無断転載はご遠慮ください。
+          </p>
+
+          <h2>プライバシーポリシーの変更</h2>
+          <p>このプライバシーポリシーは、必要に応じて内容を見直し、変更することがあります。変更後の内容は、このページに掲載した時点から適用されます。</p>
+
+          <h2>お問い合わせ</h2>
+          <p>
+            このプライバシーポリシーに関するお問い合わせは、<a href={contact}>お問い合わせページ</a>からお願いします。
+          </p>
+        </>
+      ) : (
+        <>
+          <p>This privacy policy explains how {t(lang, 'siteName')} (“this site”) handles personal information.</p>
+
+          <h2>Information we collect and how we use it</h2>
+          <p>
+            When you contact us, you may send us your name (a nickname is fine) and email address. We use this information only to reply to
+            you and for necessary communication, and for no other purpose.
+          </p>
+
+          <h2>Sharing with third parties</h2>
+          <p>We do not share your personal information with third parties without your consent, except as required by law.</p>
+
+          <h2>Advertising</h2>
+          <p>
+            This site participates in affiliate programs. If you buy or book a product or service through a link on this site, the operator
+            may receive a commission. Affiliate links are labeled “{t(lang, 'prLabel')}” so you can tell they are advertising.
+          </p>
+          <p>
+            This site may also use third-party advertising services such as Google AdSense. These providers may use cookies to show ads
+            based on your interests. For how to disable cookies and how Google uses information in advertising, see{' '}
+            <a href={googleAds} target="_blank" rel="noopener">Google's advertising policies</a>.
+          </p>
+
+          <h2>Analytics</h2>
+          <p>
+            To understand how the site is used and improve it, this site may use analytics tools such as Google Analytics. These tools use
+            cookies to collect data, which does not include information that identifies you personally. See{' '}
+            <a href={googlePartner} target="_blank" rel="noopener">how Google uses information from sites that use its services</a>.
+          </p>
+
+          <h2>Cookies</h2>
+          <p>You can disable cookies in your browser settings. Some features of this site may not work if cookies are disabled.</p>
+
+          <h2>Google Maps</h2>
+          <p>
+            This site uses Google Maps to show restaurant locations. When you press “Show map” or open a link to Google Maps, Google's
+            services are loaded and{' '}
+            <a href={googlePolicy} target="_blank" rel="noopener">Google's privacy policy</a> applies.
+          </p>
+
+          <h2>Disclaimer</h2>
+          <ul>
+            <li>
+              We try to keep the information on this site accurate, but we cannot guarantee that it is correct or up to date. Prices are
+              approximate, and opening hours and menus may change.
+            </li>
+            <li>We are not responsible for any loss or damage arising from the use of information on this site.</li>
+            <li>We are not responsible for the information or services provided on sites linked from this site.</li>
+          </ul>
+
+          <h2>Copyright</h2>
+          <p>The text on this site is copyrighted by the operator. Please do not reproduce it beyond the scope of fair quotation.</p>
+
+          <h2>Changes to this policy</h2>
+          <p>We may update this policy as needed. Changes take effect when they are posted on this page.</p>
+
+          <h2>Contact</h2>
+          <p>
+            For questions about this policy, please use our <a href={contact}>contact page</a>.
+          </p>
+        </>
+      )
+    }
+  </Prose>
+</BaseLayout>

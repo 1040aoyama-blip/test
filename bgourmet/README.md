@@ -21,6 +21,7 @@ npm run build    # dist/ に本番用ファイルを生成
 | トップ | `/ja/`, `/en/` |
 | 都道府県 | `/ja/shizuoka/`, `/en/shizuoka/` |
 | 料理（県ページ内） | `/ja/shizuoka/#fujinomiya-yakisoba` |
+| 運営者情報・プライバシーポリシー・お問い合わせ | `/ja/about/`, `/ja/privacy/`, `/ja/contact/` |
 | 検索・絞り込み | `/ja/search/`（例: `/ja/search/?q=ラーメン&pref=region:kyushu&cat=bgourmet`） |
 
 検索ページの URL には条件が入るので、「九州のラーメン」のような絞り込み結果を SNS に貼ることもできます。
@@ -38,6 +39,7 @@ src/
 │   ├ prefectures.json  地域名・都道府県名（言語ごと）
 │   ├ catalog.json      全国のグルメ一覧（都道府県 × ジャンル × 料理名）
 │   ├ dishes/<言語>/<県>.json  県ページに出す料理ごとの説明・おすすめの店
+│   ├ site.json          運営者名・お問い合わせ先・SNS の URL（必須ページで使う）
 │   ├ featured.json            トップの「注目」欄に出す料理
 │   └ intros/<言語>.json       県ページの見出しの下に出す、県の概要説明（シェア時の説明文にも使う）
 ├─ lib/normalize.ts   検索用に文字をそろえる（カタカナ・ひらがな、全角・半角などの違いを無視）

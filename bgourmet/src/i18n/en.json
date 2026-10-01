@@ -37,5 +37,8 @@
   "resultCount": "{n} dishes found",
   "noResults": "No dishes match. Try a shorter keyword or remove a filter.",
   "clearFilters": "Clear",
-  "browseByCategory": "Browse by category"
+  "browseByCategory": "Browse by category",
+  "aboutTitle": "About",
+  "privacyTitle": "Privacy Policy",
+  "contactTitle": "Contact"
 }

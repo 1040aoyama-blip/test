@@ -37,5 +37,8 @@
   "resultCount": "{n}品が見つかりました",
   "noResults": "条件に合う料理が見つかりませんでした。キーワードを短くしたり、絞り込みを外したりしてみてください。",
   "clearFilters": "条件をクリア",
-  "browseByCategory": "ジャンルから探す"
+  "browseByCategory": "ジャンルから探す",
+  "aboutTitle": "運営者情報",
+  "privacyTitle": "プライバシーポリシー",
+  "contactTitle": "お問い合わせ"
 }

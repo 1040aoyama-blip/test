@@ -1,0 +1,51 @@
+---
+/** 運営者情報・プライバシーポリシーなど、文章が中心のページの見た目 */
+---
+
+<article class="prose">
+  <slot />
+</article>
+
+<style>
+  .prose {
+    max-width: 46rem;
+  }
+  .prose :global(h1) {
+    margin-bottom: 0.5rem;
+  }
+  .prose :global(h2) {
+    margin: 2.2rem 0 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--accent-soft);
+    font-size: 1.2rem;
+  }
+  .prose :global(p),
+  .prose :global(li) {
+    line-height: 1.85;
+  }
+  .prose :global(ul) {
+    padding-left: 1.3rem;
+  }
+  .prose :global(.meta) {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .prose :global(.pending) {
+    padding: 0.05rem 0.4rem;
+    border-radius: 4px;
+    background: var(--label-bg);
+    color: var(--muted);
+  }
+  .prose :global(dl) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5rem 1.25rem;
+  }
+  .prose :global(dt) {
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .prose :global(dd) {
+    margin: 0;
+  }
+</style>

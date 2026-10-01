@@ -1,0 +1,77 @@
+{
+  "冷やしラーメン": {
+    "summary": "Ramen served with an ice-cold broth, said to have been created by a long-established soba restaurant in Yamagata City. It was designed to be eaten refreshingly on hot summer days, and the soy-based broth made with beef bones is crafted so the fat does not solidify when chilled. It is sometimes served with ice cubes floating in it, which looks wonderfully cool. Some shops in Yamagata City serve it all year round. If you visit Yamagata on a hot day, give it a try. It is light yet full of flavor.",
+    "price": "¥800–1,100",
+    "area": "Yamagata City"
+  },
+  "米沢ラーメン": {
+    "summary": "The local ramen of Yonezawa. It features thin, hand-crumpled wavy noodles in a light soy sauce broth made from dried sardines and chicken bones. The wavy noodles hold the soup well, giving a clean taste with plenty of umami. The city has many ramen shops, and it is loved as a local flavor alongside Yonezawa beef. Enjoy it with sightseeing in the castle town, such as Uesugi Shrine. Some popular shops have lines at lunchtime. Its light flavor never gets old.",
+    "price": "¥700–1,000",
+    "area": "Yonezawa"
+  },
+  "赤湯からみそラーメン": {
+    "summary": "Ramen topped with a spicy miso paste, born in Akayu Onsen in Nan'yo. Thick, wavy noodles come in a miso-based broth with a ball of red spicy miso in the center. Start by eating it as is, then gradually stir in the spicy miso to change the flavor. The paste, made with garlic and chili, has deep umami beneath the heat. If you do not like spicy food, dissolve it little by little. It is also a great meal during a stay at Akayu Onsen, especially on a cold day.",
+    "price": "¥900–1,200",
+    "area": "Nan'yo (Akayu Onsen)"
+  },
+  "鳥中華": {
+    "summary": "A noodle dish from Tendo and nearby areas that pairs Chinese-style ramen noodles with a Japanese broth like soba soup. It is usually topped with sweet and savory simmered chicken, tempura bits and seaweed. It is said to have started as a staff meal at a soba restaurant, and the unexpected mix of Japanese dashi and ramen noodles is addictive. The tempura bits soak up the soup, so the flavor changes as you eat. Enjoy it on a visit to Tendo, famous for making shogi pieces.",
+    "price": "¥700–1,000",
+    "area": "Tendo, Yamagata City and more"
+  },
+  "どんどん焼き": {
+    "summary": "A Yamagata snack of thin, okonomiyaki-like batter topped with seaweed and fish sausage, then rolled around a pair of chopsticks. It is brushed with sauce, making it easy to eat on the go. Sold at stalls and specialist shops, it is loved by children and adults alike. It is inexpensive and easy to grab. A nostalgic taste for people in Yamagata, it often appears at festival stalls. Eat it piping hot. A casual way to enjoy local flavor.",
+    "price": "¥200–300 each",
+    "area": "Yamagata City and more"
+  },
+  "芋煮": {
+    "summary": "A Yamagata dish of taro, beef, konjac and green onions simmered in soy sauce. In autumn, imoni-kai parties, where people gather around big pots by the river, are held across the prefecture and are a seasonal tradition. The flavor varies by area: inland it is usually beef and soy sauce, while the Shonai region uses pork and miso. Every September, there is even an event where imoni is cooked in a giant pot 6 meters across. The soft taro and sweet-savory broth warm you up. It is the taste of autumn in Yamagata.",
+    "price": "¥500–1,000",
+    "area": "All over Yamagata"
+  },
+  "だし": {
+    "summary": "A Yamagata dish of finely chopped summer vegetables like cucumber, eggplant, myoga ginger and shiso, seasoned with soy sauce. It is different from the dashi broth used in cooking, and is eaten as is over rice or chilled tofu. Finely chopped kelp or okra is sometimes added for a sticky texture. Fresh and light, it is perfect for hot summer days when appetites fade. It is a summer staple in Yamagata homes and is sold in local supermarkets. A taste of Yamagata summer worth trying.",
+    "price": "¥300–600",
+    "area": "All over Yamagata"
+  },
+  "玉こんにゃく": {
+    "summary": "A Yamagata specialty of round konjac balls simmered slowly in soy sauce and dashi and served on skewers, usually with a dab of mustard. Yamagata is known for eating lots of konjac, and you can easily find these at tourist spots and festival stalls. The ones sold at the foot of Yamadera (Risshakuji Temple) are especially famous and make a perfect snack before or after climbing its long stone staircase. Eat them piping hot to warm yourself up. Adjust the mustard to taste.",
+    "price": "¥100–200 each",
+    "area": "Yamagata City (Yamadera) and more"
+  },
+  "冷たい肉そば": {
+    "summary": "A specialty of Kahoku: thick soba in a cold soy sauce broth with meat from mature hens. The firm, chewy chicken releases umami and its fat adds richness to the broth. It is said to have started when a regular customer at a soba shop asked for his broth to be served cold. Locals eat it cold even in winter, though some shops also offer a hot version, so choose whichever you like. Enjoy the firm soba and the satisfying chew of the chicken.",
+    "price": "¥700–1,000",
+    "area": "Kahoku and more"
+  },
+  "山形板そば": {
+    "summary": "A Yamagata specialty of soba served on a long wooden board or tray. The portions are meant to be shared by several people, so it is eaten together around the table. The soba tends to be thick, rustic inaka soba with a firm texture and strong aroma. The Murayama area has so many soba shops that one road is called the Soba Highway, so you can compare flavors. If you are traveling in a group, be sure to share an ita soba. You can fully enjoy the aroma and bite of the soba.",
+    "price": "¥900–1,500 per person",
+    "area": "Murayama and the Murayama region"
+  },
+  "米沢牛すき焼き": {
+    "summary": "Sukiyaki made with Yonezawa beef, one of Japan's top brands. It is known for fine marbling and sweet fat with a melt-in-the-mouth tenderness. The fame of Yonezawa beef is said to have begun in the Meiji era, when a foreigner who visited Yonezawa spread word of how good the beef was. The city has many long-established restaurants serving it as sukiyaki, steak or yakiniku. Dip the meat in beaten egg and enjoy it with the sweet sauce. A perfect treat for your trip.",
+    "price": "¥5,000–15,000",
+    "area": "Yonezawa"
+  },
+  "だだちゃ豆": {
+    "summary": "A variety of edamame grown in Tsuruoka. Dadacha means father in the Shonai dialect. The pods are slightly brownish and plain-looking compared to ordinary edamame, but they are remarkably sweet and fragrant, with a taste you will not forget. The season is short, around August. They are best simply boiled in salt, and they go perfectly with beer. There are also sweets and ice cream made with them. Locals see them as a sign that summer has arrived, so try to visit in season.",
+    "price": "¥500–1,000",
+    "area": "Tsuruoka"
+  },
+  "のし梅": {
+    "summary": "A traditional Yamagata sweet of plum pulp mixed with agar and sugar, rolled thin and sandwiched between bamboo sheaths. It is said to have started as a medicine in the Edo period. It has a sweet-tart plum flavor, a smooth texture and refreshing sweetness. Peel away the bamboo sheath to reveal a thin, translucent amber sheet. It is perfect with tea and has long been loved as a Yamagata souvenir. It looks beautiful too, making it a welcome gift. Available at long-established shops in Yamagata City.",
+    "price": "¥500–1,500",
+    "area": "Yamagata City"
+  },
+  "くじら餅": {
+    "summary": "A traditional Yamagata sweet of glutinous and regular rice flour mixed with sugar, soy sauce and walnuts, then steamed. Despite its name, which means whale mochi, it contains no whale. There are several theories about the name, including that it was written with characters meaning long-lasting because it keeps well. It is lightly sweet and chewy, and toasting it adds a savory aroma. It is often made around the Doll Festival in the Mogami region, including Shinjo. It keeps well, so it makes a good souvenir.",
+    "price": "¥500–1,000",
+    "area": "Shinjo and the Mogami region"
+  },
+  "富貴豆": {
+    "summary": "A traditional Yamagata sweet of peeled green peas simmered until soft in sugar. It has a fluffy texture and an elegant, gentle sweetness. It is said to have been created at a shop in Yamagata City in the Meiji era, and the name fuki carries an auspicious meaning of wealth and honor. It is perfect with tea or as a snack and can be bought at long-established shops in Yamagata City. Its simple, old-fashioned flavor brings out the natural taste of the peas. A must for fans of Japanese sweets.",
+    "price": "¥500–1,000",
+    "area": "Yamagata City"
+  }
+}

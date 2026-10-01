@@ -51,12 +51,6 @@ const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ ap
               )}
             </dl>
           )}
-          {info.tip && (
-            <p class="tip">
-              <span class="label">{t(lang, 'tip')}</span>
-              {info.tip}
-            </p>
-          )}
         </>
       )
     }
@@ -83,15 +77,17 @@ const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ ap
 </article>
 
 <style>
+  /* 料理ごとに区切り線を入れる（グループ内の最初の料理には付けない） */
   .dish {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 1.1rem 1.2rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--surface);
-    scroll-margin-top: 5rem;
+    padding-block: 1.75rem;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 4rem;
+  }
+  .dish:first-child {
+    border-top: 0;
   }
   @media (min-width: 760px) {
     .dish:not(.brief) {
@@ -99,12 +95,15 @@ const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ ap
       gap: 1.5rem;
     }
   }
+  /* SNS などから #料理名 のリンクで来たときに、その料理を目立たせる */
   .dish:target {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px var(--accent-soft);
+    margin-inline: -0.75rem;
+    padding-inline: 0.75rem;
+    border-radius: var(--radius);
+    background: var(--target-bg);
   }
   .brief {
-    padding-block: 0.9rem;
+    padding-block: 1rem;
   }
   .photo {
     display: grid;
@@ -147,24 +146,18 @@ const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ ap
     display: flex;
     gap: 0.4rem;
   }
+  .facts div {
+    align-items: center;
+  }
   .facts dt {
+    padding: 0.05rem 0.5rem;
+    border-radius: 4px;
+    background: var(--label-bg);
     color: var(--muted);
+    font-size: 0.8rem;
   }
   .facts dd {
     margin: 0;
-    font-weight: 700;
-  }
-  .tip {
-    margin: 0;
-    padding: 0.55rem 0.8rem;
-    border-radius: 10px;
-    background: var(--surface-2);
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
-  .label {
-    margin-right: 0.5rem;
-    color: var(--accent);
     font-weight: 700;
   }
   .shops h4 {

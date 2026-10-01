@@ -1,15 +1,13 @@
 {
   "浜松餃子": {
-    "summary": "Fried in a circle in the pan and served with boiled bean sprouts in the middle. The light, cabbage-rich filling makes them easy to keep eating.",
+    "summary": "Fried in a circle in the pan and served with boiled bean sprouts in the middle. The light, cabbage-rich filling makes them easy to keep eating. Eat them with the bean sprouts in the center to refresh your palate.",
     "price": "¥500–800",
-    "area": "Hamamatsu",
-    "tip": "Eat them with the bean sprouts in the center to refresh your palate."
+    "area": "Hamamatsu"
   },
   "富士宮やきそば": {
-    "summary": "Firm, chewy steamed noodles topped with crispy pork bits (nikukasu) and sardine or mackerel powder (dashiko). Made famous by winning the B-1 Grand Prix.",
+    "summary": "Firm, chewy steamed noodles topped with crispy pork bits (nikukasu) and sardine or mackerel powder (dashiko). Made famous by winning the B-1 Grand Prix. Locals sprinkle plenty of dashiko on top. A perfect stop on a trip to see Mt. Fuji.",
     "price": "¥500–900",
     "area": "Fujinomiya",
-    "tip": "Locals sprinkle plenty of dashiko on top. A perfect stop on a trip to see Mt. Fuji.",
     "shops": [
       {
         "name": "Fujinomiya Yakisoba Antenna Shop",
@@ -19,10 +17,9 @@
     ]
   },
   "静岡おでん": {
-    "summary": "Oden simmered in a dark broth made with beef tendon, with every ingredient on a skewer. The grey kuro hanpen fish cake made from sardines or mackerel is a must.",
+    "summary": "Oden simmered in a dark broth made with beef tendon, with every ingredient on a skewer. The grey kuro hanpen fish cake made from sardines or mackerel is a must. Sprinkle on fish powder and green seaweed flakes. Try it at old-style candy shops or izakaya.",
     "price": "¥100–200 per skewer",
     "area": "Shizuoka City",
-    "tip": "Sprinkle on fish powder and green seaweed flakes. Try it at old-style candy shops or izakaya.",
     "shops": [
       {
         "name": "Aoba Oden Street",
@@ -32,10 +29,9 @@
     ]
   },
   "生しらす丼": {
-    "summary": "A rice bowl piled with raw whitebait caught in Suruga Bay. Freshness is everything, so it is best eaten in the fishing towns where it is landed.",
+    "summary": "A rice bowl piled with raw whitebait caught in Suruga Bay. Freshness is everything, so it is best eaten in the fishing towns where it is landed. Raw whitebait may not be served during the winter-to-spring closed season or on days when boats cannot go out.",
     "price": "¥1,000–1,800",
-    "area": "Shizuoka City (Mochimune, Yui), Yaizu",
-    "tip": "Raw whitebait may not be served during the winter-to-spring closed season or on days when boats cannot go out."
+    "area": "Shizuoka City (Mochimune, Yui), Yaizu"
   },
   "三島コロッケ": {
     "summary": "Croquettes made with Mishima-grown potatoes, known for their fluffy texture and natural sweetness. A local snack to eat while strolling.",
@@ -43,16 +39,14 @@
     "area": "Mishima"
   },
   "浜名湖うな重": {
-    "summary": "Grilled eel over rice served in a lacquered box, from the area around Lake Hamana, a major center of eel farming.",
+    "summary": "Grilled eel over rice served in a lacquered box, from the area around Lake Hamana, a major center of eel farming. Popular restaurants can sell out before noon, so go early.",
     "price": "¥3,000–6,000",
-    "area": "Hamamatsu (Lake Hamana area)",
-    "tip": "Popular restaurants can sell out before noon, so go early."
+    "area": "Hamamatsu (Lake Hamana area)"
   },
   "サクラエビのかき揚げ": {
-    "summary": "A crispy fritter packed with sakura shrimp, which in Japan are landed only in Suruga Bay. Fragrant, crunchy and naturally sweet.",
+    "summary": "A crispy fritter packed with sakura shrimp, which in Japan are landed only in Suruga Bay. Fragrant, crunchy and naturally sweet. The fishing seasons are spring and autumn, when you can also try them raw or boiled.",
     "price": "¥800–1,500",
-    "area": "Shizuoka City (Yui), Fuji",
-    "tip": "The fishing seasons are spring and autumn, when you can also try them raw or boiled."
+    "area": "Shizuoka City (Yui), Fuji"
   },
   "金目の煮付け": {
     "summary": "Splendid alfonsino, a red-skinned fish Izu is famous for, simmered in a sweet soy sauce glaze. The tender white flesh goes perfectly with rice.",

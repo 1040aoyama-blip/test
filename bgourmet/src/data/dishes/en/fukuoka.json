@@ -1,14 +1,12 @@
 {
   "博多ラーメン": {
-    "summary": "Fukuoka's ramen pairs a rich, milky pork-bone broth with very thin, straight noodles. Choose your noodle firmness and order a kaedama refill.",
+    "summary": "Fukuoka's ramen pairs a rich, milky pork-bone broth with very thin, straight noodles. Choose your noodle firmness and order a kaedama refill. Save some broth so you can order a noodle refill. You can also try it at the yatai food stalls in Nakasu.",
     "price": "¥700–1,000",
-    "area": "Fukuoka City (Hakata, Nakasu, etc.)",
-    "tip": "Save some broth so you can order a noodle refill. You can also try it at the yatai food stalls in Nakasu."
+    "area": "Fukuoka City (Hakata, Nakasu, etc.)"
   },
   "博多もつ鍋": {
-    "summary": "Hakata's famous hot pot of tender beef offal simmered with cabbage, garlic chives and garlic. Soy sauce and miso broths are the most common.",
+    "summary": "Hakata's famous hot pot of tender beef offal simmered with cabbage, garlic chives and garlic. Soy sauce and miso broths are the most common. Finish by adding champon noodles to the leftover soup. Most restaurants serve it for two or more people.",
     "price": "¥1,500–2,500 per person",
-    "area": "Fukuoka City",
-    "tip": "Finish by adding champon noodles to the leftover soup. Most restaurants serve it for two or more people."
+    "area": "Fukuoka City"
   }
 }

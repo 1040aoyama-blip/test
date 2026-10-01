@@ -1,21 +1,18 @@
 {
   "たこ焼き": {
-    "summary": "Balls of batter with a piece of octopus inside, the star of Osaka's flour-based street food. Crispy outside and gooey inside.",
+    "summary": "Balls of batter with a piece of octopus inside, the star of Osaka's flour-based street food. Crispy outside and gooey inside. Fresh takoyaki is very hot inside, so let it cool a little. Some shops serve it with dashi or soy sauce instead of sauce.",
     "price": "¥500–800 (6–8 pieces)",
-    "area": "Dotonbori, Namba and all over Osaka City",
-    "tip": "Fresh takoyaki is very hot inside, so let it cool a little. Some shops serve it with dashi or soy sauce instead of sauce."
+    "area": "Dotonbori, Namba and all over Osaka City"
   },
   "お好み焼き": {
-    "summary": "Osaka-style savory pancake: cabbage and toppings are mixed into the batter before grilling. Finished with sauce, mayonnaise and bonito flakes.",
+    "summary": "Osaka-style savory pancake: cabbage and toppings are mixed into the batter before grilling. Finished with sauce, mayonnaise and bonito flakes. Cut and eat it right on the hot plate with a small spatula (kote) to keep it hot.",
     "price": "¥800–1,500",
-    "area": "All over Osaka City",
-    "tip": "Cut and eat it right on the hot plate with a small spatula (kote) to keep it hot."
+    "area": "All over Osaka City"
   },
   "串カツ": {
-    "summary": "Battered and deep-fried skewers of meat, vegetables and seafood, the local favorite of Shinsekai. You can order just one at a time.",
+    "summary": "Battered and deep-fried skewers of meat, vegetables and seafood, the local favorite of Shinsekai. You can order just one at a time. No double-dipping in the shared sauce! Use the free cabbage to scoop more sauce.",
     "price": "¥100–300 per skewer",
     "area": "Shinsekai (around Tsutenkaku Tower)",
-    "tip": "No double-dipping in the shared sauce! Use the free cabbage to scoop more sauce.",
     "shops": [
       {
         "name": "Kushikatsu Daruma Shinsekai Main Store",
@@ -40,10 +37,9 @@
     "area": "Juso and other areas"
   },
   "いか焼き": {
-    "summary": "Batter with chopped squid, pressed flat between two hot plates. A thin, chewy Osaka snack.",
+    "summary": "Batter with chopped squid, pressed flat between two hot plates. A thin, chewy Osaka snack. It is a famous department store basement snack. The line moves fast.",
     "price": "About ¥200 each",
     "area": "Umeda (Hanshin Department Store) and others",
-    "tip": "It is a famous department store basement snack. The line moves fast.",
     "shops": [
       {
         "name": "Hanshin Ikayaki (Hanshin Umeda Main Store)",
@@ -63,10 +59,9 @@
     "area": "Shinsekai and other areas"
   },
   "肉吸い": {
-    "summary": "Beef udon without the noodles: a savory broth with beef and a soft-cooked egg. It started at a long-running udon shop in Namba.",
+    "summary": "Beef udon without the noodles: a savory broth with beef and a soft-cooked egg. It started at a long-running udon shop in Namba. Order it with a small bowl of rice, the classic combination.",
     "price": "¥700–1,000",
     "area": "Namba",
-    "tip": "Order it with a small bowl of rice, the classic combination.",
     "shops": [
       {
         "name": "Chitose Main Store",
@@ -76,10 +71,9 @@
     ]
   },
   "豚まん": {
-    "summary": "In Osaka, pork buns are called butaman, not nikuman. Fluffy dough filled with juicy pork and onion.",
+    "summary": "In Osaka, pork buns are called butaman, not nikuman. Fluffy dough filled with juicy pork and onion. Eat it with a dab of mustard, Osaka style.",
     "price": "¥200–300 each",
     "area": "Around Namba, Umeda and other stations in Osaka City",
-    "tip": "Eat it with a dab of mustard, Osaka style.",
     "shops": [
       {
         "name": "551 Horai Main Store",
@@ -99,10 +93,9 @@
     "area": "Osaka City (only a few restaurants serve it)"
   },
   "てっちり": {
-    "summary": "A hot pot of pufferfish (fugu) and vegetables, a winter specialty in Osaka, which eats a lot of fugu. Finish with rice porridge in the leftover broth.",
+    "summary": "A hot pot of pufferfish (fugu) and vegetables, a winter specialty in Osaka, which eats a lot of fugu. Finish with rice porridge in the leftover broth. Eat fugu only at specialist restaurants with licensed chefs.",
     "price": "From ¥5,000",
-    "area": "Dotonbori and other areas of Osaka City",
-    "tip": "Eat fugu only at specialist restaurants with licensed chefs."
+    "area": "Dotonbori and other areas of Osaka City"
   },
   "うどんすき": {
     "summary": "A hot pot of thick udon cooked in broth with seafood, chicken, vegetables and more. It was created by a long-established Osaka restaurant.",

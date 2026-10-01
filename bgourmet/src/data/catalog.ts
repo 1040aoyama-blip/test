@@ -27,7 +27,6 @@ export interface DishInfo {
   summary: string;
   price?: string;
   area?: string;
-  tip?: string;
   /** おすすめの店（3件まで表示） */
   shops?: Shop[];
   /** アフィリエイトリンク（「PR」表記つきで表示） */

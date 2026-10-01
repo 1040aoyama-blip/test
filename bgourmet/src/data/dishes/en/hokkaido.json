@@ -1,11 +1,11 @@
 {
   "豚丼": {
-    "summary": "The signature dish of the Tokachi region around Obihiro. Thick slices of pork loin are grilled, often over charcoal, glazed with a sweet soy-based sauce and served over rice. It is said to have been created in the early Showa era by an Obihiro diner that wanted to give hard-working farmers a hearty, energizing meal. The combination of smoky pork and sauce-soaked rice is simple but deeply satisfying. Each shop has its own sauce and cut of meat, and there are many specialist restaurants around Obihiro Station.",
+    "summary": "The signature dish of the Tokachi region around Obihiro. Thick slices of pork loin are grilled, often over charcoal, glazed with a sweet soy-based sauce and served over rice. It is said to have been created by an Obihiro diner that wanted to give hard-working farmers a hearty, energizing meal. The combination of smoky pork and sauce-soaked rice is simple but deeply satisfying. Each shop has its own sauce and cut of meat, and there are many specialist restaurants around Obihiro Station.",
     "price": "¥1,000–1,800",
     "area": "Obihiro and the Tokachi region"
   },
   "札幌味噌ラーメン": {
-    "summary": "Sapporo's signature ramen: a rich miso broth with thick, wavy noodles, often topped with stir-fried bean sprouts, minced pork, corn and a pat of butter. A layer of lard on the surface keeps the soup hot to the last sip, even in the depths of winter. It is said to have been born at a Sapporo ramen shop in the 1950s before spreading across Japan. Try it at Ramen Yokocho in Susukino or at popular shops around the city. On a snowy day, it warms you to the core.",
+    "summary": "Sapporo's signature ramen: a rich miso broth with thick, wavy noodles, often topped with stir-fried bean sprouts, minced pork, corn and a pat of butter. A layer of lard on the surface keeps the soup hot to the last sip, even in the depths of winter. It is said to have been born at a Sapporo ramen shop before spreading across Japan. Try it at Ramen Yokocho in Susukino or at popular shops around the city. On a snowy day, it warms you to the core.",
     "price": "¥900–1,300",
     "area": "Sapporo"
   },
@@ -15,7 +15,7 @@
     "area": "Asahikawa"
   },
   "函館塩ラーメン": {
-    "summary": "A salt-based ramen long eaten in the port city of Hakodate. Pork and chicken bones are simmered gently so the broth stays clear and light. It is served with thin, straight noodles and simple toppings such as roast pork, bamboo shoots and green onions. Some say its roots go back to Chinese cooking that arrived in the Meiji era, giving it one of the longest histories of any Japanese ramen. Try it around Hakodate Station or in the Motomachi area, perhaps as a light meal before seeing the famous night view.",
+    "summary": "A salt-based ramen long eaten in the port city of Hakodate. Pork and chicken bones are simmered gently so the broth stays clear and light. It is served with thin, straight noodles and simple toppings such as roast pork, bamboo shoots and green onions. Some say its roots go back to Chinese cooking brought to the port, giving it one of the longest histories of any Japanese ramen. Try it around Hakodate Station or in the Motomachi area, perhaps as a light meal before seeing the famous night view.",
     "price": "¥700–1,000",
     "area": "Hakodate"
   },
@@ -35,7 +35,7 @@
     "area": "Sapporo and all over Hokkaido"
   },
   "石狩鍋": {
-    "summary": "A hot pot of salmon fillets and bones simmered in miso broth with cabbage, onion, potato and tofu. It is the specialty of Ishikari, at the mouth of the Ishikari River, and is said to come from meals eaten by fishermen in the Meiji era. A sprinkle of sansho pepper at the end adds a fresh aroma that brings out the salmon's flavor, and some places add butter for extra richness. Enjoy this Hokkaido home-style dish in autumn and winter, during salmon season. It warms you right through.",
+    "summary": "A hot pot of salmon fillets and bones simmered in miso broth with cabbage, onion, potato and tofu. It is the specialty of Ishikari, at the mouth of the Ishikari River, and is said to come from meals eaten by fishermen. A sprinkle of sansho pepper at the end adds a fresh aroma that brings out the salmon's flavor, and some places add butter for extra richness. Enjoy this Hokkaido home-style dish in autumn and winter, during salmon season. It warms you right through.",
     "price": "¥1,500–3,000",
     "area": "Ishikari and all over Hokkaido"
   },
@@ -45,12 +45,12 @@
     "area": "All over Hokkaido"
   },
   "いかめし": {
-    "summary": "Squid stuffed with glutinous and regular rice and simmered in a sweet soy sauce. It is famous as an ekiben (station bento) from Mori Station on the Hakodate Line, and is said to have been created during wartime food shortages as a way to fill people up with less rice. The chewy rice soaks up the squid's flavor and the aroma of soy sauce. It is a favorite at station bento fairs across Japan and a classic Hokkaido souvenir. It is best warmed up before eating.",
+    "summary": "Squid stuffed with glutinous and regular rice and simmered in a sweet soy sauce. It is famous as an ekiben (station bento) from Mori Station on the Hakodate Line, and is said to have been created at a time of food shortages as a way to fill people up with less rice. The chewy rice soaks up the squid's flavor and the aroma of soy sauce. It is a favorite at station bento fairs across Japan and a classic Hokkaido souvenir. It is best warmed up before eating.",
     "price": "¥600–1,000 per pack",
     "area": "Mori (Mori Station, Hakodate Line)"
   },
   "松前漬": {
-    "summary": "A Hokkaido specialty of thinly sliced dried squid and kelp marinated in soy sauce, sake and mirin. The kelp releases a silky stickiness and umami, while the squid gives a pleasant chew. The name is said to come from the Matsumae domain, a source of kelp and dried squid in the Edo period. Luxurious versions include herring roe, and it is a popular New Year dish. It goes perfectly with rice or drinks and keeps well, making it a popular Hokkaido souvenir.",
+    "summary": "A Hokkaido specialty of thinly sliced dried squid and kelp marinated in soy sauce, sake and mirin. The kelp releases a silky stickiness and umami, while the squid gives a pleasant chew. The name is said to come from the Matsumae domain, once a source of kelp and dried squid. Luxurious versions include herring roe, and it is a popular New Year dish. It goes perfectly with rice or drinks and keeps well, making it a popular Hokkaido souvenir.",
     "price": "¥500–1,500",
     "area": "All over Hokkaido (famous around Hakodate)"
   },
@@ -75,7 +75,7 @@
     "area": "All over Hokkaido (main store in Obihiro)"
   },
   "三方六": {
-    "summary": "A baumkuchen made by Obihiro confectioner Ryugetsu. It is coated in white and dark chocolate so that it looks like a birch log. The name comes from the firewood used in the pioneer days, which was cut to six sun (about 18 cm) on each of three sides. The moist cake and sweet chocolate go well together, and because it is sliced to share, it makes a great souvenir for the family. You can buy it in the Tokachi region and at souvenir shops all over Hokkaido.",
+    "summary": "A baumkuchen made by Obihiro confectioner Ryugetsu. It is coated in white and dark chocolate so that it looks like a birch log. The name comes from the firewood used by Hokkaido's settlers, which was cut to six sun (about 18 cm) on each of three sides. The moist cake and sweet chocolate go well together, and because it is sliced to share, it makes a great souvenir for the family. You can buy it in the Tokachi region and at souvenir shops all over Hokkaido.",
     "price": "¥700–1,000",
     "area": "Obihiro and all over Hokkaido"
   }

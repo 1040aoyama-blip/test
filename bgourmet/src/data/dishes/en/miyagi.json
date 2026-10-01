@@ -1,11 +1,11 @@
 {
   "牛タン焼き": {
-    "summary": "Sendai's most famous dish. Thick slices of beef tongue are scored, seasoned with salt and grilled over charcoal. Chewy yet tender, the meat releases more flavor with every bite. It is said to have been created shortly after the war by the owner of a Sendai yakitori restaurant. The classic set meal comes with barley rice, oxtail soup and pickles. There are many specialist restaurants around Sendai Station, including inside the station itself, so it is easy to try. Go for the thick-cut tongue.",
+    "summary": "Sendai's most famous dish. Thick slices of beef tongue are scored, seasoned with salt and grilled over charcoal. Chewy yet tender, the meat releases more flavor with every bite. It is said to have been created by the owner of a Sendai yakitori restaurant. The classic set meal comes with barley rice, oxtail soup and pickles. There are many specialist restaurants around Sendai Station, including inside the station itself, so it is easy to try. Go for the thick-cut tongue.",
     "price": "¥1,800–3,500",
     "area": "Sendai"
   },
   "油麩丼": {
-    "summary": "A specialty of Tome, in which abura-fu replaces the pork cutlet in a katsudon. Abura-fu is deep-fried wheat gluten, eaten in the Tome area for generations. It is simmered in dashi with onions, bound with egg and served over rice. The abura-fu soaks up plenty of broth and is juicy, yet it contains no meat, making it a lighter choice. Originally home cooking, it is now served at many restaurants in the city. Enjoy it with a stroll through Tome's well-preserved Meiji-era townscape.",
+    "summary": "A specialty of Tome, in which abura-fu replaces the pork cutlet in a katsudon. Abura-fu is deep-fried wheat gluten, eaten in the Tome area for generations. It is simmered in dashi with onions, bound with egg and served over rice. The abura-fu soaks up plenty of broth and is juicy, yet it contains no meat, making it a lighter choice. Originally home cooking, it is now served at many restaurants in the city. Enjoy it with a stroll through Tome's well-preserved historic townscape.",
     "price": "¥700–1,000",
     "area": "Tome"
   },
@@ -25,7 +25,7 @@
     "area": "Sendai, Shiogama and more"
   },
   "白石温麺": {
-    "summary": "A specialty of Shiroishi: short noodles about 9 cm long. They are made without oil, so they taste light and are easy to digest. Legend says that in the Edo period, a son learned how to make noodles without oil for his father, who suffered from stomach trouble. The name umen is said to reflect the warmth (on) of that kindness. They are delicious in hot or cold broth and easy for everyone from children to the elderly to eat.",
+    "summary": "A specialty of Shiroishi: short noodles about 9 cm long. They are made without oil, so they taste light and are easy to digest. Legend says that a son learned how to make noodles without oil for his father, who suffered from stomach trouble. The name umen is said to reflect the warmth (on) of that kindness. They are delicious in hot or cold broth and easy for everyone from children to the elderly to eat.",
     "price": "¥600–900",
     "area": "Shiroishi"
   },

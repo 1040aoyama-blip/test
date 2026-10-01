@@ -1,0 +1,62 @@
+{
+  "宇都宮餃子": {
+    "summary": "Utsunomiya is known, along with Hamamatsu, as one of Japan's gyoza cities. It is said that gyoza spread here after the war, brought by people returning from Manchuria. The city has many specialist shops, and besides pan-fried gyoza, boiled and deep-fried versions are popular at some. Many shops use a light, vegetable-rich filling, and they are eaten with vinegar and chili oil. There is even a gyoza statue in front of the station, and many visitors go on gyoza tours. Frozen gyoza to take home are popular too.",
+    "price": "¥300–700",
+    "area": "Utsunomiya"
+  },
+  "佐野ラーメン": {
+    "summary": "The local ramen of Sano. Its hand-made noodles are rolled out with a green bamboo pole, a technique called aotake-uchi, making them flat, soft yet springy. The clear, light soy sauce broth made from chicken bones goes perfectly with the noodles. There are many ramen shops in the city, and quite a few have long lines. Combine it with a visit to Sano Yakuyoke Daishi temple or shopping at the outlet mall. Its gentle, old-fashioned flavor and the texture of the noodles are the draw.",
+    "price": "¥700–1,000",
+    "area": "Sano"
+  },
+  "いもフライ": {
+    "summary": "A local favorite in Sano: steamed potatoes on a skewer, battered and deep-fried, then drizzled with plenty of sweet sauce. The combination of fluffy potato, crispy coating and sauce is simple yet addictive. They are sold at specialist shops, butchers and festival stalls in the city, and are cheap and easy to enjoy. Along with Sano ramen, they are a soul food loved by locals for many years. Try them fresh from the fryer.",
+    "price": "¥100–200 each",
+    "area": "Sano"
+  },
+  "那須塩原スープ入り焼きそば": {
+    "summary": "A local dish born in the Kuroiso district of Nasushiobara: yakisoba with soy sauce soup poured over it. Because the sauce-fried noodles are served in soup, the sauce and broth blend into a unique flavor somewhere between yakisoba and ramen. It began as the specialty of a local diner and is now served at many restaurants in the city. Each shop's soup and toppings differ, so comparing them is fun. Stop by on a trip to the Nasu highlands or Shiobara Onsen. There is nothing else quite like it.",
+    "price": "¥700–1,000",
+    "area": "Nasushiobara"
+  },
+  "しもつかれ": {
+    "summary": "A traditional dish from northern Kanto, centered on Tochigi. Salmon heads, coarsely grated daikon and carrot, roasted soybeans, fried tofu and sake lees are simmered together. It is made on the first Day of the Horse in February and offered at Inari shrines, and it is said that eating shimotsukare from seven different homes keeps illness away. It looks unusual, but the richness of sake lees and the umami of salmon make for a simple, nourishing flavor. It appears in supermarkets at this time of year.",
+    "price": "¥300–600",
+    "area": "All over Tochigi"
+  },
+  "耳うどん": {
+    "summary": "Ear-shaped udon from areas such as Senba in the former town of Kuzu, Sano. Square pieces of wheat dough are folded into the shape of an ear. It is eaten at New Year, and legend says that eating the ears of evil spirits stops them from hearing your family's affairs that year. It is simmered with vegetables in a soy-based dashi soup and has a unique chewy texture. You can try it at restaurants in the city. It is also loved as a dish that brings good luck.",
+    "price": "¥800–1,200",
+    "area": "Sano"
+  },
+  "揚げまき湯波の煮物": {
+    "summary": "Nikko's famous yuba (tofu skin) rolled up, deep-fried and simmered in a sweet and savory broth. In Nikko, yuba is usually written with characters different from Kyoto's. While Kyoto yuba is thin, Nikko yuba is said to be lifted differently, making it thicker and more substantial. Frying adds richness, and it soaks up the broth to become wonderfully juicy. You can find it at long-established restaurants and inns in Nikko. It also has a history as part of Buddhist vegetarian cuisine, and its flavor is refined.",
+    "price": "¥1,000–2,500",
+    "area": "Nikko"
+  },
+  "日光湯波そば": {
+    "summary": "Soba topped with Nikko's famous yuba (tofu skin). The gentle flavor of the yuba goes perfectly with the warm, dashi-rich broth. Nikko yuba is thick, keeping a satisfying texture even after soaking in the soup. It is a popular, easy way to taste yuba between visits to World Heritage shrines and temples such as Toshogu and Rinnoji. You can try it at soba restaurants in Nikko. Hot soba is especially welcome in the cold season, and some shops serve it cold too.",
+    "price": "¥1,000–1,500",
+    "area": "Nikko"
+  },
+  "レモン牛乳": {
+    "summary": "A sweet, lemon-colored milk drink long loved in Tochigi. Despite the name, it has a gentle sweetness with a refreshing lemon flavor. For Tochigi people it is a nostalgic drink from childhood, sometimes called the prefecture's soul drink. It is easy to buy at supermarkets and convenience stores in the prefecture, and there are many related products such as lemon milk sweets and ice cream. Try it at least once when you visit Tochigi; it is perfect after a hot spring bath too.",
+    "price": "¥100–200",
+    "area": "All over Tochigi"
+  },
+  "とちおとめジェラート": {
+    "summary": "Tochigi has long been Japan's top strawberry producer. Gelato made with Tochiotome, the prefecture's signature variety, offers the sweet-tart aroma of strawberries and a smooth, melting texture. You can find it at roadside stations, tourist farms and strawberry farm shops. During the strawberry-picking season from winter to spring, enjoy it alongside other strawberry sweets. In dairy areas like Nasu, you can also taste the richness of local milk. A perfect break during your travels.",
+    "price": "¥300–500",
+    "area": "All over Tochigi"
+  },
+  "御用邸チーズケーキ": {
+    "summary": "A popular Nasu sweet, a cheesecake named after the Imperial villa (goyotei) in Nasu. It has a rich cheese flavor and a moist, melt-in-the-mouth texture. At the shop in the Nasu highlands, you can also enjoy a variety of other cheese sweets. It is a very popular souvenir and can also be bought at highway service areas and stations. Stop by during a drive through the Nasu highlands for a fresh one. It is delicious chilled or slightly warmed, and makes a lovely gift.",
+    "price": "¥1,500–2,500",
+    "area": "Nasu"
+  },
+  "日光羊羹": {
+    "summary": "Yokan, sweet bean jelly made with Nikko's pure water. Many traditional yokan shops still remain in Nikko. It is said to have spread in the Edo period as a souvenir for pilgrims visiting Toshogu Shrine. Besides rich neri yokan that highlights the flavor of red beans, the lighter mizu yokan is also popular. Each shop's sweetness and texture differ, so comparing them is fun. It keeps well, making it a good souvenir for people far away, and it goes perfectly with green tea.",
+    "price": "¥500–2,000",
+    "area": "Nikko"
+  }
+}

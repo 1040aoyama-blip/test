@@ -1,0 +1,72 @@
+{
+  "生しらす丼": {
+    "summary": "A rice bowl piled with whitebait fresh from the Shonan coast, served raw instead of boiled. It is famous around fishing ports such as Enoshima and Koshigoe, and is translucent, plump and lightly sweet. It is usually eaten with ginger and soy sauce. Because it loses freshness quickly, it is often only available on days with a catch. There is a closed season from winter to early spring, so check ahead. A half-and-half bowl with boiled whitebait is also popular.",
+    "price": "¥1,000–1,800",
+    "area": "Fujisawa (Enoshima), Kamakura (Koshigoe) and more"
+  },
+  "よこすか海軍カレー": {
+    "summary": "Yokosuka's local curry. In the Meiji era, the Japanese Navy adopted curry, based on British Navy cooking, as a nourishing meal. Yokosuka Navy Curry recreates recipes from that time. The rule is to serve it with salad and milk, also following navy meals of the era. Many restaurants in the city serve it, each with its own flavor. Enjoy it along with Yokosuka sightseeing, such as a naval port cruise. A curry with a taste of history.",
+    "price": "¥1,000–1,500",
+    "area": "Yokosuka"
+  },
+  "横浜家系ラーメン": {
+    "summary": "Ramen born in Yokohama in the 1970s, pairing a rich pork-bone and soy sauce broth with thick, short noodles. It is typically topped with spinach, seaweed and roast pork. When ordering, you can choose noodle firmness, richness and amount of oil, for example firm, strong and extra oil. Many people eat it with rice, and wrapping rice in the seaweed is fun. There are now shops across Japan, but try it in Yokohama, where it began.",
+    "price": "¥800–1,200",
+    "area": "Yokohama"
+  },
+  "サンマーメン": {
+    "summary": "A local ramen born in Yokohama: bean sprouts, napa cabbage and pork are stir-fried, thickened into a sauce and poured over soy sauce ramen. The name sanma is said to come from a Chinese term for noodles topped with fresh, crisp ingredients. The thick sauce keeps the soup hot, and the vegetables' flavor melts into the broth. It has long been served at Chinese restaurants and ramen shops in Yokohama and is a soul food for locals.",
+    "price": "¥800–1,200",
+    "area": "Yokohama and more"
+  },
+  "厚木シロコロ・ホルモン": {
+    "summary": "A local dish from Atsugi: pork large intestine grilled whole as a tube, without being cut open. When grilled it curls up into little rolls, earning the name shirokoro. The fat sealed inside bursts with juicy flavor when you bite into it. This style is said to be possible only with very fresh meat, making use of Atsugi's meat culture. It became famous nationwide after winning the B-1 Grand Prix. Try it at yakiniku restaurants in the city, ideally with a cold beer.",
+    "price": "¥1,000–2,000",
+    "area": "Atsugi"
+  },
+  "三崎まぐろ丼": {
+    "summary": "Misaki Port, at the tip of the Miura Peninsula, is known for its tuna landings. The area around the port is lined with tuna restaurants serving bowls of lean akami, fatty chutoro, negitoro and more. Some offer rare cuts you can only find at a fishing port, such as the collar and cheek. It is close to Misakiguchi Station on the Keikyu Line, making it an easy day trip from Tokyo. Combine it with a visit to Jogashima island, and enjoy fresh tuna at reasonable prices.",
+    "price": "¥1,500–3,500",
+    "area": "Miura (Misaki Port)"
+  },
+  "崎陽軒シウマイ弁当": {
+    "summary": "Yokohama's signature ekiben, loved for decades since it went on sale in the 1950s. It centers on Yokohama's famous shumai dumplings, which taste great even cold, along with fried chicken, teriyaki tuna, rolled omelet, fish cake, simmered bamboo shoots and dried apricot. The rice packed in small cylinders is another trademark. You can buy it at Yokohama and Shin-Yokohama stations, and many people eat it on the shinkansen. Kiyoken's shumai alone are also a popular Yokohama souvenir.",
+    "price": "About ¥1,000",
+    "area": "Yokohama and more"
+  },
+  "横浜中華街の肉まん": {
+    "summary": "One of the joys of Yokohama Chinatown, one of the largest in Japan, is snacking on pork buns sold at storefronts. Fluffy dough is filled generously with juicy pork. Shops differ in size, dough texture and filling seasoning, so comparing them is fun. Besides pork buns, there are red bean buns, soup dumplings, sesame balls and other dim sum. Enjoy strolling past Chinatown's ornate gates and Kanteibyo temple, and eat them piping hot.",
+    "price": "¥300–600 each",
+    "area": "Chinatown, Naka Ward, Yokohama"
+  },
+  "小田原かまぼこ": {
+    "summary": "Odawara has been known for making kamaboko (fish cake) since the Edo period. Made from fresh white fish paste, it is known for its springy texture and refined umami. It is smooth and fine-textured, delicious as is or with wasabi and soy sauce. The city has many long-established kamaboko shops, and some facilities let you try making it yourself. Combine it with a visit to Odawara Castle. It also makes a great souvenir.",
+    "price": "¥500–2,000 per piece",
+    "area": "Odawara"
+  },
+  "牛鍋": {
+    "summary": "A dish that spread in Yokohama in the Meiji era as a symbol of Japan's modernization. Before then, eating beef was rare in Japan, but in Yokohama, home to many foreigners, beef simmered in miso or soy sauce became popular. It is considered one of the roots of sukiyaki. Long-established gyunabe restaurants dating back to the Meiji era still operate in Yokohama, letting you savor the atmosphere of that time. A dish that captures stylish old Yokohama, perfect for a special occasion.",
+    "price": "¥5,000–15,000",
+    "area": "Yokohama"
+  },
+  "大山の豆腐料理": {
+    "summary": "Mt. Oyama in Isehara has been a sacred mountain since the Edo period, visited by many pilgrims. Tofu made with Oyama's abundant spring water is its specialty and developed as a dish to welcome pilgrims. At temple lodgings and restaurants, you can enjoy tofu courses including simmered tofu, chilled tofu and tofu dengaku. The smooth, gentle tofu is rich in soybean flavor. Combine it with a visit by the Oyama cable car, and savor the sweetness of the soybeans.",
+    "price": "¥2,000–5,000",
+    "area": "Isehara (Mt. Oyama)"
+  },
+  "鳩サブレー": {
+    "summary": "Dove-shaped butter cookies made by Toshimaya, a long-established Kamakura confectioner. Born in the Meiji era, they are Kamakura's signature souvenir. The dove shape is said to come from the character for eight on the plaque of Tsurugaoka Hachimangu shrine, which is drawn as a pair of doves. With a buttery, crisp texture and gentle sweetness, they are loved by children and adults alike. Available at the main store in Kamakura and at shops and stations in the prefecture.",
+    "price": "From about ¥1,000 per box",
+    "area": "Kamakura and more"
+  },
+  "クルミッ子": {
+    "summary": "A baked sweet by Kamakura confectioner Kamakura Beniya, with homemade walnut caramel sandwiched between buttery layers. The gooey caramel, toasty walnuts and buttery pastry create a flavor unlike anything else. The packaging, featuring a squirrel character, is adorable. It is a very popular Kamakura souvenir and sometimes sells out. Available at Kamakura shops and stations, it is one of the most sought-after sweets in the area, so buy it early in the day if you can. Its rich, chewy texture makes it perfect with coffee or tea, and it is definitely worth trying.",
+    "price": "¥1,000–3,000",
+    "area": "Kamakura and more"
+  },
+  "横浜ハーバー": {
+    "summary": "A ship-shaped baked sweet by Yokohama confectioner Ariake, with chestnut paste wrapped in sponge cake. It has a moist texture and the gentle sweetness of chestnut, and has long been a classic Yokohama souvenir. The ship shape suits the port city of Yokohama. Seasonal flavors sometimes appear. You can find it all over the city, including Yokohama Station, Chinatown and Minato Mirai. Its gentle sweetness pleases all ages, and individually wrapped pieces make it easy to share.",
+    "price": "About ¥200 each",
+    "area": "Yokohama"
+  }
+}

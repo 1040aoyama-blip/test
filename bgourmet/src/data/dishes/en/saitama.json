@@ -1,0 +1,67 @@
+{
+  "ゼリーフライ": {
+    "summary": "A local dish from Gyoda. Despite the name, it is not fried jelly. Okara (soy pulp) and potato are mixed with vegetables like carrot and green onion, shaped into ovals, deep-fried without batter and dipped in sauce. One theory says the coin-like shape earned the name zeni-furai (coin fry), which became zeri-furai over time. It has a simple, fluffy flavor and makes a great snack. Try it cheaply at specialist shops in the city, perhaps with a walk around Gyoda's ancient burial mounds.",
+    "price": "¥100–200 each",
+    "area": "Gyoda"
+  },
+  "みそポテト": {
+    "summary": "A local favorite in the Chichibu area: steamed potatoes battered and deep-fried, then topped generously with sweet and savory miso sauce. The fluffy potato, crispy coating and sweet miso make an addictive combination. It was originally eaten as a snack between farm work. You can find it at restaurants, roadside stations and tourist stalls in Chichibu. Enjoy it as a walking snack while visiting Chichibu Shrine or Nagatoro. Locals often make it at home too.",
+    "price": "¥300–500",
+    "area": "Chichibu and the Chichibu area"
+  },
+  "東松山やきとり": {
+    "summary": "A local dish from Higashimatsuyama. Although it is called yakitori, it is not chicken but pork kashira (cheek and temple meat) grilled over charcoal. It is eaten with a spicy miso sauce made with garlic and chili. The nicely marbled pork and spicy miso go perfectly with beer. There are many yakitori shops in the city, and in the evening the savory smell drifts through the streets with the smoke. Each shop's miso sauce is different, so be sure to compare.",
+    "price": "¥100–200 per skewer",
+    "area": "Higashimatsuyama"
+  },
+  "秩父わらじかつ丼": {
+    "summary": "A Chichibu specialty: large, thin cutlets as big as straw sandals (waraji), dipped in sweet and savory soy sauce and laid over rice. Two cutlets are common, overflowing the bowl. Because it is not cooked with egg, you can fully enjoy the crispy cutlet and the flavor of the sauce. Many restaurants in Chichibu serve it, each with its own sauce and cutlet thickness. It makes a filling lunch during sightseeing in Chichibu and will leave you full.",
+    "price": "¥1,000–1,500",
+    "area": "Chichibu and the Chichibu area"
+  },
+  "秩父豚みそ丼": {
+    "summary": "A Chichibu specialty of pork marinated in miso, grilled until fragrant and served over rice. Chichibu has a long tradition of preserving meat and vegetables in miso, and this dish is said to have grown out of it. The toasty miso, sweet pork and sauce-soaked rice are irresistible. Each shop uses different miso and cooking methods, and some grill over charcoal. Take your time and enjoy it with views of Chichibu's mountains. A taste you can only find here.",
+    "price": "¥1,000–1,500",
+    "area": "Chichibu and the Chichibu area"
+  },
+  "武蔵野うどん": {
+    "summary": "Udon long eaten in the Musashino area, from western Saitama to the Tama area of Tokyo. The noodles are thick and firm, with a satisfying chew. The classic style is niku-jiru udon: cold noodles dipped in a warm sauce with pork and green onions. In Musashino, once a wheat-growing area, farmers made it for special occasions. Its rustic, hearty flavor is the appeal, and the area has many specialist shops. The more you chew, the more the wheat aroma spreads.",
+    "price": "¥700–1,200",
+    "area": "Tokorozawa and western Saitama"
+  },
+  "深谷煮ぼうとう": {
+    "summary": "A Fukaya home-style dish of wide, flat noodles simmered in soy sauce soup with Fukaya green onions, daikon, carrot and taro. The noodles go in raw, so the soup thickens and warms you to the core. Fukaya is the hometown of Shibusawa Eiichi, called the father of Japanese capitalism, who is said to have loved this dish. It is packed with sweet Fukaya green onions. A warming home-style taste of Fukaya for the cold season, best enjoyed when the onions are in season.",
+    "price": "¥800–1,200",
+    "area": "Fukaya"
+  },
+  "浦和うなぎの蒲焼き": {
+    "summary": "Urawa in Saitama City has been famous for grilled eel since the Edo period, using eel caught in local marshes. Eels are no longer caught in the rivers and marshes, but many long-established eel restaurants carry on the tradition. Fragrant grilled eel and rice soaked in sweet and savory sauce make an exceptional combination. Each shop grills and sauces its eel differently, so comparing them is fun. It is close to central Tokyo and easy to visit. Enjoy the plump, tender eel.",
+    "price": "¥3,000–6,000",
+    "area": "Urawa, Saitama City"
+  },
+  "川幅うどん": {
+    "summary": "A local dish from Konosu: extremely flat udon more than 5 cm wide. It was created in honor of the Arakawa River, whose width between Konosu and Yoshimi is the widest of any river in Japan. The wide noodles have a unique slippery, chewy texture. Shops serve them in many ways, in hot soup, with cold dipping sauce or with curry. They make a big visual impression, and many people take photos. Stop by when walking along the Arakawa riverbank.",
+    "price": "¥800–1,300",
+    "area": "Konosu"
+  },
+  "草加せんべい": {
+    "summary": "The famous hard, soy sauce-flavored rice crackers of Soka, once a thriving post town on the Nikko Kaido road. Rice is flattened and grilled over charcoal while being brushed with soy sauce. They have a satisfying crunch and a fragrant soy sauce aroma. Legend says they began when a woman at a dumpling shop flattened and grilled her unsold dumplings. There are many cracker shops in the city, and some let you grill your own. Freshly grilled crackers are exceptional.",
+    "price": "¥500–1,500",
+    "area": "Soka"
+  },
+  "十万石まんじゅう": {
+    "summary": "Saitama's signature manju, made by a confectioner in Gyoda. A moist skin made with mountain yam wraps smooth bean paste. It has an elegant, gentle sweetness and a branded mark on top. Its TV commercial catchphrase, \"delicious, too delicious,\" is well known to Saitama people. The name comes from the rice yield of the Oshi domain once based in Gyoda. You can buy it at shops and stations in the prefecture. It goes well with green tea and is a nostalgic taste for locals.",
+    "price": "¥100–200 each",
+    "area": "Gyoda and across Saitama"
+  },
+  "五家宝": {
+    "summary": "A famous sweet from Kumagaya: puffed glutinous rice bound with starch syrup into sticks and coated in roasted soybean flour (kinako). Enjoy the soft kinako outside and the crisp rice inside. It has a toasty kinako aroma and gentle sweetness and has long been Kumagaya's representative souvenir. It is said to have been made since the Edo period and pairs perfectly with green tea. Available at Japanese sweet shops in Kumagaya. Its simple flavor is its charm.",
+    "price": "¥500–1,000",
+    "area": "Kumagaya"
+  },
+  "彩果の宝石": {
+    "summary": "Fruit-shaped jelly sweets made by a Saitama confectioner. They come in many flavors and shapes, such as strawberry, melon, peach and grape, and look as beautiful as jewels. The fruit flavor comes through clearly, and you can enjoy the crunchy sugar coating and the soft jelly inside. Their colorful look makes them perfect gifts. Each piece is individually wrapped, so they are easy to share, and assortments are especially popular. Available at shops and department stores in the prefecture.",
+    "price": "¥1,000–3,000",
+    "area": "Saitama City and across Saitama"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "鹿児島ラーメン": {
+    "summary": "Kagoshima's local ramen, featuring a cloudy broth based on pork bones combined with chicken bones and vegetables. Compared with other Kyushu tonkotsu ramen, it is mellow with little pungency. Many shops use medium-thick noodles and top them with bean sprouts, cabbage and green onion. A Kagoshima touch is that many shops serve pickled daikon with tea. The broth varies greatly from shop to shop, so comparing them is fun. Nibbling the pickles while you wait is the local way.",
+    "price": "¥700–1,000",
+    "area": "Kagoshima City"
+  },
+  "黒豚とんかつ": {
+    "summary": "Tonkatsu made with Kagoshima kurobuta, the prefecture's brand of Berkshire black pork. Kurobuta features fine, tender meat and fat that is sweet yet light. Fried in a crisp coating, the cutlet is juicy and full of meat flavor. Besides sauce, eating it simply with salt is also recommended. Kagoshima City has many black pork specialty restaurants where you can choose cuts such as loin or fillet. Try it around the Tenmonkan district.",
+    "price": "¥1,500–3,000",
+    "area": "Kagoshima City"
+  },
+  "鶏飯": {
+    "summary": "A local dish of Amami Oshima. Rice is topped with shredded chicken, shredded egg, sweet simmered shiitake, pickled papaya, green onion, nori and citrus peel, then plenty of hot chicken broth is poured over. It is light and easy to eat, like ochazuke. It is said to have started in the Edo period as a dish to entertain officials of the Satsuma domain. Try it at diners on Amami Oshima or local restaurants in Kagoshima City. Some places offer broth refills.",
+    "price": "¥1,000–1,500",
+    "area": "Amami Oshima, Kagoshima City"
+  },
+  "さつま揚げ": {
+    "summary": "A Kagoshima specialty of fish paste kneaded with local sake and sugar and deep-fried. Locals call it tsukeage. It features a gentle sweetness and a soft, fluffy texture. There are many kinds, including ones with burdock, carrot or onion, and ones with shrimp or cheese. It is especially good hot from the fryer, either as is or lightly toasted. It is sold at specialty shops and souvenir stores in Kagoshima City.",
+    "price": "¥100–300 per piece",
+    "area": "Kagoshima City and around"
+  },
+  "黒豚しゃぶしゃぶ": {
+    "summary": "Shabu-shabu made with Kagoshima kurobuta black pork. Thin slices are swished briefly in broth and eaten. The fat of black pork is sweet and light, so it does not feel heavy even as shabu-shabu. In Kagoshima, many restaurants swish it in a slightly sweet, bonito-rich broth like soba sauce and eat it as is. Try it at black pork specialty restaurants in Kagoshima's Tenmonkan district. Fully enjoy the sweetness of the meat.",
+    "price": "¥3,000–6,000",
+    "area": "Kagoshima City"
+  },
+  "きびなごの刺身": {
+    "summary": "A signature Kagoshima local dish: sashimi of kibinago, a small fish with a beautiful silver stripe. The fish are opened by hand, deboned and arranged radially on a plate like a chrysanthemum. Fresh kibinago has no fishy smell, with refined umami and a slight sweetness. The Kagoshima way is to eat it with vinegared miso. It spoils quickly, so it is a taste unique to where it is caught. Try it at izakaya and local restaurants in Kagoshima City. It is also good as tempura or salt-grilled.",
+    "price": "¥600–1,200",
+    "area": "Kagoshima City and around"
+  },
+  "さつま汁": {
+    "summary": "A Kagoshima local dish: a hearty miso soup of bone-in chicken and vegetables such as daikon, carrot, burdock, taro and konnyaku, simmered in plenty of barley miso. The flavors of chicken and vegetables blend into a rich taste. Legend says it began when Satsuma samurai cooked the losing birds from cockfights. In the cold season, it warms you to the core. Try it at local restaurants in Kagoshima. It goes perfectly with rice.",
+    "price": "¥500–1,000",
+    "area": "Throughout Kagoshima"
+  },
+  "豚骨": {
+    "summary": "A Kagoshima local dish of bone-in pork ribs slowly simmered for a long time with shochu, brown sugar and miso. The pork is so tender it falls off the bone, with a rich sweet-savory flavor. Daikon, konnyaku and burdock are simmered with it. It is said to have its roots in food eaten by Satsuma samurai on the battlefield. Try it at local restaurants in Kagoshima. It goes perfectly with shochu and makes rice disappear.",
+    "price": "¥1,000–1,800",
+    "area": "Kagoshima City and around"
+  },
+  "鶏刺し": {
+    "summary": "Chicken sashimi, a familiar dish in Kagoshima. It is often served like tataki, with the surface quickly seared. Enjoy the firm bite of jidori chicken and the flavor that spreads as you chew. The standard way is to eat it with Kagoshima's sweet soy sauce, ginger and garlic. In Kagoshima it is even sold in supermarkets, but since it is raw chicken, eat it at a trustworthy restaurant with good hygiene. It goes perfectly with shochu.",
+    "price": "¥800–1,500",
+    "area": "Kagoshima City and around"
+  },
+  "しろくま": {
+    "summary": "Kagoshima's signature shaved ice: fluffy ice drizzled with plenty of condensed milk and colorfully topped with fruit, agar jelly and beans. Seen from above, the arrangement of fruit looks like a polar bear's face, hence the name. Enjoy the gentle sweetness of condensed milk and the freshness of fruit. A long-established shop in Kagoshima's Tenmonkan is famous for it, with lines in summer. It is also sold as a cup ice. Portions are big, so some shops offer a smaller size.",
+    "price": "¥700–1,200",
+    "area": "Tenmonkan, Kagoshima City"
+  },
+  "かるかん": {
+    "summary": "One of Kagoshima's best-known sweets: a steamed cake of grated mountain yam such as jinenjo, rice flour and sugar. It is pure white, with a fluffy, moist and springy texture and a refined, gentle sweetness. It is said to have been made under the lords of the Satsuma domain in the Edo period. Karukan manju, filled with smooth bean paste, is also popular. It is sold at long-established confectioners in Kagoshima City, the airport and souvenir shops. Enjoy it with Japanese tea.",
+    "price": "¥1,000–2,500",
+    "area": "Kagoshima City and around"
+  },
+  "あくまき": {
+    "summary": "A local sweet essential to the Boys' Festival in Kagoshima. Glutinous rice is soaked in lye water, wrapped in bamboo sheath and boiled in lye water for a long time. It features a translucent amber-brown color, a jiggly texture and a faint lye flavor. It is eaten with roasted soybean flour and sugar or brown sugar syrup. Because it keeps well, it is said to have been a preserved food for Satsuma samurai at the Battle of Sekigahara and in the Satsuma Rebellion. Its unique texture is addictive.",
+    "price": "¥500–1,000",
+    "area": "Throughout Kagoshima"
+  },
+  "じゃんぼ餅": {
+    "summary": "A specialty of the Iso district of Kagoshima City: small soft mochi pierced with two bamboo skewers, brushed with sweet soy or miso sauce and grilled. The two skewers are said to represent the long and short swords carried by Satsuma samurai, and it is written with characters meaning two-stick mochi. Enjoy the chewy mochi with the sweet-savory sauce. Shops in Iso let you eat it looking out at Kinko Bay and Sakurajima. Combine it with a visit to Sengan-en. Eat it freshly grilled.",
+    "price": "¥400–600 per plate",
+    "area": "Iso, Kagoshima City"
+  },
+  "げたんは": {
+    "summary": "A Kagoshima local sweet: a moist baked cake soaked in syrup rich with brown sugar. Its triangular shape is said to resemble the teeth of a geta sandal, so it came to be called getanha, geta teeth, in the Kagoshima dialect. It features the rich sweetness of brown sugar and a moist texture. Its simple, nostalgic flavor has long been loved by Kagoshima people. It is sold at confectioners and supermarkets in the prefecture. Enjoy it with Japanese tea or milk.",
+    "price": "¥300–800",
+    "area": "Throughout Kagoshima"
+  }
+}

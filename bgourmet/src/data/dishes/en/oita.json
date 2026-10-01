@@ -1,0 +1,72 @@
+{
+  "とり天": {
+    "summary": "Chicken tempura, called the soul food of Oita. Seasoned chicken is coated in tempura batter and fried, making it softer and lighter than karaage. The Oita way is to eat it with vinegar soy sauce or ponzu and mustard. It is said to have been born at a Western-style restaurant in Beppu. It is loved in many forms, as a set meal or on udon. Try it at diners and restaurants in Oita City and Beppu. Squeezing on kabosu citrus is also recommended.",
+    "price": "¥800–1,300",
+    "area": "Oita City, Beppu and around"
+  },
+  "中津からあげ": {
+    "summary": "Karaage from Nakatsu, called the holy land of fried chicken. The city has many karaage specialty shops, each marinating chicken in its own sauce before frying. The chicken is well seasoned with garlic and soy sauce, crisp outside and juicy inside. Many shops are takeaway specialists that sell by weight. Choose cuts such as thigh, breast, wings or gizzards and compare each shop's flavor. Eating it fresh from the fryer on the spot is also recommended.",
+    "price": "¥200–300 per 100 g",
+    "area": "Nakatsu"
+  },
+  "宇佐からあげ": {
+    "summary": "Usa is said to be the birthplace of karaage specialty shops. The city has many of them and, along with Nakatsu, is known as a karaage mecca. Chicken marinated in secret sauces is fried until fragrant, crisp outside and juicy inside, with seasoning that differs by shop. Many shops sell it by weight for takeaway. Enjoy it fresh after visiting Usa Jingu Shrine. It is tasty even cold, perfect for a drive.",
+    "price": "¥200–300 per 100 g",
+    "area": "Usa"
+  },
+  "別府冷麺": {
+    "summary": "Local cold noodles of the hot spring town of Beppu. They feature thick, very firm noodles made with buckwheat and wheat flour, served in a light Japanese-style broth made from beef bones and seafood. Kimchi, beef chashu, boiled egg and green onion are the standard toppings. It is said to have grown from a shop started by someone who returned from Manchuria. Many shops serve it all year, not only in summer. Cold noodles are a treat after a hot spring bath, and the kimchi adds a nice kick.",
+    "price": "¥700–1,100",
+    "area": "Beppu"
+  },
+  "日田やきそば": {
+    "summary": "Local yakisoba of Hita, distinguished by noodles fried on an iron griddle until crisp and browned. You can enjoy both crunchy and chewy noodles. Plenty of crunchy bean sprouts, green onion and pork are added and finished with sauce. The method of one long-standing shop is said to have spread among Hita locals. Many shops in Hita serve it. Combine it with a stroll through the water town and the old Mamada district. The toasty browned noodles are irresistible.",
+    "price": "¥700–1,000",
+    "area": "Hita"
+  },
+  "りゅうきゅう": {
+    "summary": "A local dish born in Oita fishing villages: sashimi of fresh horse mackerel, mackerel or yellowtail marinated in a sauce of soy sauce, sake, mirin, sesame and ginger. One theory says the name comes from being introduced by fishermen from Ryukyu, Okinawa. It is enjoyed with drinks, on rice as a bowl, or finished as ochazuke with tea or dashi poured over. Try it at izakaya and local restaurants in Oita. It is a taste only fresh fish can deliver.",
+    "price": "¥800–1,500",
+    "area": "Throughout Oita"
+  },
+  "だんご汁": {
+    "summary": "An Oita local dish of dango, wheat dough kneaded and stretched by hand into long, flat strips, simmered with vegetables and mushrooms in miso soup. Despite the name, the dumplings are not round but flat like kishimen noodles. With a chewy texture and broth full of vegetable flavor, it warms you to the core. It is a hometown taste long made in Oita homes. Try it at local restaurants and roadside stations. It is especially welcome in the cold season.",
+    "price": "¥600–1,000",
+    "area": "Throughout Oita"
+  },
+  "関あじの刺身": {
+    "summary": "A brand of horse mackerel caught in the Hoyo Strait off Saganoseki in Oita City. Raised in fast currents, the fish have firm flesh and good fat. Caught one by one by pole-and-line fishing and handled carefully without touching the body, they stay very fresh. As sashimi, they have a crunchy bite and rich flavor. Try them at restaurants in Saganoseki and Oita City. Known as a luxury fish, they are ordered from all over Japan. It is a luxurious plate worth trying once.",
+    "price": "¥2,000–4,000",
+    "area": "Saganoseki, Oita City"
+  },
+  "関さばの刺身": {
+    "summary": "Like seki aji, a brand of mackerel caught in the Hoyo Strait off Saganoseki. Tossed by fast currents, the fish have firm flesh, rich fat and a crunchy bite. Mackerel spoils quickly, so being able to eat it as sashimi is thanks to careful pole-and-line fishing and handling. Eating it with ginger soy sauce is recommended. Try it at restaurants in Saganoseki and Oita City. It is also delicious dressed in sesame sauce. It may change how you think about mackerel sashimi.",
+    "price": "¥2,000–4,000",
+    "area": "Saganoseki, Oita City"
+  },
+  "城下かれいの刺身": {
+    "summary": "A brand of marbled flounder caught in the sea below the site of Hiji Castle in Hiji. Raised where fresh water springs up from the seabed, the fish are said to have no muddy smell and an elegant flavor. In the Edo period, it is said only the lord was allowed to eat it. As sashimi, the translucent white flesh offers a refined sweetness and a crisp bite. The season is early summer, and restaurants in Hiji serve it. The town is so proud of it that it holds a festival for the fish.",
+    "price": "¥3,000–6,000",
+    "area": "Hiji"
+  },
+  "地獄蒸し": {
+    "summary": "A specialty of Kannawa Onsen in Beppu: vegetables, seafood, meat and eggs steamed with hot spring steam. In Kannawa, facilities let you choose ingredients and steam them yourself amid the rising steam. High-temperature steam cooks food quickly, sealing in flavor and sweetness so you can taste the ingredients themselves. The salt in the spring water adds a light seasoning. Pair it with the steamy scenery of Kannawa. It is a unique hot spring town experience.",
+    "price": "¥1,000–2,500",
+    "area": "Kannawa Onsen, Beppu"
+  },
+  "やせうま": {
+    "summary": "An Oita local sweet of wheat dough stretched flat and long, boiled and generously coated in roasted soybean flour and sugar. It features a chewy texture, the toasty aroma of soybean flour and a gentle sweetness. Legend says the name comes from the Heian period, when a young noble from Kyoto begged his nurse, Yase, for food, uma. It has been made for Obon and other occasions. Try it at local restaurants and roadside stations in Oita. Its simple sweetness is perfect with tea.",
+    "price": "¥400–800",
+    "area": "Throughout Oita"
+  },
+  "ざびえる": {
+    "summary": "One of Oita's best-known souvenir sweets, made by an Oita confectioner. Buttery, moist Western-style dough is wrapped around white bean paste, or bean paste with rum-soaked raisins, and baked. The name honors Francis Xavier, the missionary who visited Oita, then Bungo, in the Sengoku period and spread Christianity. Its black and gold packaging, evoking nanban culture, is striking. It is sold at Oita Station, the airport and souvenir shops. It goes well with tea or coffee.",
+    "price": "¥600–2,000",
+    "area": "Oita Prefecture"
+  },
+  "地獄蒸しプリン": {
+    "summary": "A sweet specialty of the hot spring town of Beppu: pudding steamed with hot spring steam. Many are old-fashioned firm puddings made with eggs and milk, with a smooth but firm texture and slightly bitter caramel sauce. They are sold at Kannawa Onsen and the Hells sightseeing spots in Beppu. Enjoy one between visits to the Hells while strolling through the steam. Some are sold to take home. It is a local sweet only a hot spring town could offer.",
+    "price": "¥300–500",
+    "area": "Beppu"
+  }
+}

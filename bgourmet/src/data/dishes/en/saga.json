@@ -1,0 +1,72 @@
+{
+  "シシリアンライス": {
+    "summary": "A local dish of Saga City: rice topped with stir-fried sweet and savory meat and raw vegetables such as lettuce, tomato and cucumber, drizzled with mayonnaise. The combination of warm rice and meat with cool vegetables is fun, and it is nutritious too. It is said to have been born at a cafe in Saga City, and the origin of the name is unclear. Many cafes, Western-style restaurants and diners in the city serve it, each with its own presentation and seasoning. It is generously portioned.",
+    "price": "¥700–1,000",
+    "area": "Saga City"
+  },
+  "唐津バーガー": {
+    "summary": "Hamburgers sold from a van inside Niji no Matsubara in Karatsu, one of Japan's three great pine groves. Each one is slowly grilled on a griddle after you order. Soft buns with a juicy patty, egg and cheese give it a simple, nostalgic flavor that is very popular. Eating one fresh off the griddle among the pines is part of the fun. Many people stop by while driving through the pine grove. Combine it with a visit to Karatsu Castle.",
+    "price": "¥400–800",
+    "area": "Niji no Matsubara, Karatsu"
+  },
+  "イカしゅうまい": {
+    "summary": "A specialty of Yobuko, a town famous for squid: shumai made with lots of squid paste. Instead of a wrapper, many are coated with thin strips of wrapper like petals and steamed. They feature a fluffy texture, squid umami and a hint of sweetness. At Yobuko squid restaurants, they are often served as part of a live squid course. Frozen versions are also made and are easy to find at souvenir shops in Saga and Fukuoka. They make a great souvenir.",
+    "price": "¥1,000–2,000",
+    "area": "Yobuko, Karatsu"
+  },
+  "佐賀ラーメン": {
+    "summary": "Tonkotsu ramen loved in Saga. Compared with Hakata ramen, the broth is mellower: rich but with little pungency. Many shops use slightly thick straight noodles. Topping it with a raw egg and stirring it into the broth is the Saga way, making it even milder. The strength and aroma of the broth vary by shop. Old-fashioned shops are scattered across Saga City and the prefecture. It has a simple, nostalgic taste.",
+    "price": "¥600–900",
+    "area": "Saga City and around"
+  },
+  "佐賀牛ステーキ": {
+    "summary": "Steak of Saga beef, a brand name that only Japanese Black cattle raised in Saga and meeting strict standards may carry. It features fine marbling and beautiful, glossy meat, with melt-in-your-mouth tenderness and elegant sweetness. Many restaurants grill it on an iron plate in front of you. You can also find it in tourist areas such as Ureshino Onsen, Takeo Onsen and Karatsu. Choose it as a reward on your trip. Ask the staff how it is best cooked.",
+    "price": "¥5,000–20,000",
+    "area": "Saga City, Karatsu and around"
+  },
+  "呼子イカの活き造り": {
+    "summary": "A specialty of Yobuko in Karatsu, known as a squid town. Fresh swordtip squid taken straight from the tank is prepared on the spot, so the flesh is translucent and the tentacles are still moving. It has a crunchy bite and a rich sweetness. Afterwards, the tentacles and fins are usually cooked as tempura or salt-grilled. Squid restaurants line the area around the Yobuko morning market. Combine it with a stroll around the port town and Yobuko Bridge.",
+    "price": "¥2,500–5,000",
+    "area": "Yobuko, Karatsu"
+  },
+  "嬉野温泉湯豆腐": {
+    "summary": "A specialty of Ureshino Onsen: tofu simmered in Ureshino's hot spring water. The minerals in the water melt the surface of the tofu, giving it a silky, meltingly soft texture. The broth turns milky, like mellow soy milk. It is eaten with sesame sauce, and you can enjoy every drop of the broth. Try it at inns and restaurants in the hot spring town. Combine it with bathing in Ureshino Onsen, said to be one of Japan's three great springs for beautiful skin. The tofu can also be bought as a souvenir.",
+    "price": "¥800–1,500",
+    "area": "Ureshino Onsen, Ureshino"
+  },
+  "竹崎カニの塩ゆで": {
+    "summary": "A specialty of Takezaki in Tara, facing the Ariake Sea: gazami swimming crab boiled in salted water. Raised in the nutrient-rich sea, the crabs are packed with meat and full of rich flavor. Males are said to be best in summer and egg-bearing females in winter, so they can be enjoyed all year. Crab restaurants and shops selling boiled crab line the highway in Tara. Enjoy the unique scenery of the Ariake Sea with its huge tides. Take your time picking out the meat.",
+    "price": "¥2,000–5,000",
+    "area": "Takezaki, Tara"
+  },
+  "神埼そうめん": {
+    "summary": "Hand-stretched somen made in Kanzaki. It has long been made with clear water from the Sefuri mountains and wheat grown on the Saga Plain. It is thin, silky and firm. It is said to have been made since the Edo period and is known as Saga's representative somen. Besides cold somen, it is also delicious hot as nyumen. It is sold at shops in Kanzaki and souvenir stores, and is often chosen as a gift. Its thinness shines best served cold.",
+    "price": "¥500–1,500",
+    "area": "Kanzaki"
+  },
+  "小城羊羹": {
+    "summary": "A specialty of Ogi, known as a yokan town with many yokan shops. Ogi yokan is the old-fashioned kiri yokan, whose outside has hardened into a crisp layer of sugar crystals. Enjoy the contrast between the crunchy outside and moist inside. In the Edo period, Saga lay on the Sugar Road along which sugar was carried from Nagasaki, and making sweets with sugar flourished. It is sold at long-established shops in Ogi. Savor it slowly with Japanese tea.",
+    "price": "¥800–2,000 each",
+    "area": "Ogi"
+  },
+  "丸ぼうろ": {
+    "summary": "Saga's signature round, flat baked sweet. A simple dough of flour, sugar and eggs is baked, giving a soft, fluffy texture and the gentle sweetness of eggs. It is said to be based on a Portuguese nanban sweet. In Saga, which lay on the Sugar Road, it has long been a hometown snack. It is sold at long-established confectioners in Saga City and souvenir shops in the prefecture. Enjoy it with milk or tea.",
+    "price": "¥100–200 each",
+    "area": "Saga City and around"
+  },
+  "佐賀錦": {
+    "summary": "A souvenir sweet representing Saga, named after Saga nishiki, a traditional silk brocade. It is known for its beautiful layered look, like woven fabric, and its refined sweetness. Saga nishiki is a gorgeous hand-woven brocade said to have been devised by the wife of a lord of the Hizen-Kashima domain, and this sweet expresses its beauty. It is an elegant item welcomed as a gift. It is sold at Saga Station and souvenir shops in the prefecture. It suits gifts for people you respect.",
+    "price": "¥1,000–3,000",
+    "area": "Saga Prefecture"
+  },
+  "松露饅頭": {
+    "summary": "A Karatsu specialty: small round balls of bean paste wrapped in castella-like dough and baked. The name is said to come from their resemblance to shoro, round mushrooms that grow in Niji no Matsubara. Bite-sized, they combine moist dough with smooth bean paste, refined and pleasantly sweet. They are sold at long-established confectioners in Karatsu. Choose them as a memento of a walk in Niji no Matsubara or a visit to Karatsu Castle. They are easy to eat in one bite.",
+    "price": "¥500–1,500",
+    "area": "Karatsu"
+  },
+  "ブラックモンブラン": {
+    "summary": "An ice cream bar made by a Saga confectionery company and long loved throughout Kyushu. Vanilla ice cream is coated in chocolate and covered with cookie crunch. The slight bitterness of chocolate, the crunchy texture and the mellow vanilla are addictive. If you get a winning stick, you can get another one free. It is sold at supermarkets and convenience stores in Kyushu. It is a nostalgic taste for people from Kyushu.",
+    "price": "¥100–200",
+    "area": "Saga and throughout Kyushu"
+  }
+}

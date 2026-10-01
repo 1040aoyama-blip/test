@@ -332,7 +332,7 @@
     ],
     "sweets": [
       {"ja": "月世界", "en": "Gessekai (Egg White Sugar Sweet)"},
-      {"ja": "甘金丹", "en": "Kankintan (Citrus Jelly Sweet)"},
+      {"ja": "甘金丹", "en": "Kankintan (Traditional Toyama Sweet)"},
       {"ja": "薄氷", "en": "Usugori (Thin Ice Sugar Wafers)"}
     ]
   },
@@ -373,7 +373,7 @@
     "sweets": [
       {"ja": "羽二重餅", "en": "Habutae Mochi (Silky Rice Cake)"},
       {"ja": "水ようかん", "en": "Mizu Yokan (Winter Bean Jelly)"},
-      {"ja": "五月ヶ瀬", "en": "Satsukigase (Peanut Butter Cookies)"}
+      {"ja": "五月ヶ瀬", "en": "Satsukigase (Peanut Crackers)"}
     ]
   },
   "yamanashi": {

@@ -1,0 +1,18 @@
+---
+import GourmetView from '../../../views/GourmetView.astro';
+import { langs, type Lang } from '../../../i18n';
+import { getGourmets } from '../../../data/gourmet';
+
+// 翻訳がある言語のページだけを作る
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of langs) {
+    for (const g of await getGourmets(lang)) {
+      paths.push({ params: { lang, prefecture: g.meta.prefecture, gourmet: g.id } });
+    }
+  }
+  return paths;
+}
+---
+
+<GourmetView lang={Astro.params.lang as Lang} gourmetId={Astro.params.gourmet} />

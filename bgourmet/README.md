@@ -1,6 +1,6 @@
 # ご当地B級グルメ図鑑 / Japan B-Gourmet Guide
 
-47都道府県のご当地B級グルメを紹介するサイト。訪日観光客（英語）と日本人観光客（日本語）の両方に向けて作っています。
+47都道府県のご当地B級グルメを紹介するサイト。日本人観光客（日本語）と訪日観光客（英語）に向けて作っています。
 [Astro](https://astro.build/) で静的サイトとして生成します。
 
 ## 使い方
@@ -13,20 +13,52 @@ npm run build    # dist/ に本番用ファイルを生成
 
 ## URL 構成
 
-| ページ | 日本語 | 英語 |
-|---|---|---|
-| トップ | `/` | `/en/` |
-| 都道府県 | `/shizuoka/` | `/en/shizuoka/` |
-| グルメ詳細 | `/shizuoka/fujinomiya-yakisoba/` | `/en/shizuoka/fujinomiya-yakisoba/` |
+すべてのページに言語の接頭辞が付きます。言語を増やしても既存の URL は変わりません。
 
-## データの追加
+| ページ | URL |
+|---|---|
+| 言語を選ぶ入口 | `/` |
+| トップ | `/ja/`, `/en/` |
+| 都道府県 | `/ja/shizuoka/`, `/en/shizuoka/` |
+| グルメ詳細 | `/ja/shizuoka/fujinomiya-yakisoba/` |
 
-- **グルメ**: `src/data/gourmet.ts` の `gourmets` に1件追加すると、日英両方のページが自動で生成されます。
-- **おすすめ店**: 各グルメの `shops` に店名・Google マップの place_id・自分で書いたコメントを追加します。
-  `shops` が空の間は、`mapQuery` で検索した Google マップを表示します。
-  - Google マップの口コミや写真は規約上転載できないため、紹介文は自分で書いてください。
-- **アフィリエイト**: 各グルメの `affiliate` にリンクを追加すると、「PR」表記つきで表示されます（`rel="sponsored"` 付き）。
-- **画面の文言**: `src/i18n/ui.ts`
+## ファイル構成
+
+```
+src/
+├─ i18n/
+│   ├ index.ts        対応言語の一覧と翻訳の関数
+│   ├ ja.json         画面の文言（ボタン・見出し・フッターなど）
+│   └ en.json
+├─ data/
+│   └ prefectures.json  地域名・都道府県名（言語ごと）
+├─ content/gourmet/<グルメのID>/
+│   ├ meta.json       言語に関係ない情報（都道府県・絵文字・地図の検索語・並び順）
+│   ├ ja.md           日本語の記事
+│   └ en.md           英語の記事
+├─ pages/[lang]/      ページの型（言語の数だけ自動で生成）
+├─ views/             トップ・都道府県・グルメ詳細の見た目
+└─ components/        地図・広告枠・カード
+```
+
+## グルメを追加する
+
+1. `src/content/gourmet/<ID>/` フォルダを作る（ID は URL になるので半角英小文字とハイフン）
+2. `meta.json` と、`ja.md` などの言語ごとの記事を置く（既存のフォルダをコピーすると楽です）
+
+翻訳がない言語ではそのグルメのページを作らず、一覧にも表示しません。
+
+- **おすすめ店**: 記事の `shops` に `name`・`placeId`（Google マップの place_id）・`comment`（自分で書いた紹介文）を追加します。
+  空の間は、`meta.json` の `mapQuery` で検索した地図を表示します。Google マップの口コミや写真は規約上転載できません。
+- **アフィリエイト**: 記事の `affiliate` に `label` と `url` を追加すると、「PR」表記つきで表示されます。
+  言語ごとに別のリンクを設定できます（日本語は国内の ASP、英語は海外向けのサービスなど）。
+
+## 言語を追加する
+
+1. `src/i18n/index.ts` の `languages` に1行足す（例: `'zh-tw': { label: '繁體中文', ogLocale: 'zh_TW' }`）
+2. `src/i18n/ja.json` をコピーして `zh-tw.json` を作り、翻訳する（足りない文言があるとビルドが止まります）
+3. `src/data/prefectures.json` の各地域・都道府県の `name` に `zh-tw` を足す
+4. 翻訳した記事から順に `zh-tw.md` を追加する
 
 ## Google マップ
 

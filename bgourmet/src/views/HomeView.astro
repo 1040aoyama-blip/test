@@ -1,15 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import GourmetCard from '../components/GourmetCard.astro';
-import { localizePath, t, type Lang } from '../i18n/ui';
+import { localizePath, t, type Lang } from '../i18n';
 import { prefectures, regions } from '../data/prefectures';
-import { gourmets, gourmetsByPrefecture } from '../data/gourmet';
+import { getGourmets } from '../data/gourmet';
 
 interface Props {
   lang: Lang;
 }
 
 const { lang } = Astro.props;
+const gourmets = await getGourmets(lang);
+const countFor = (prefId: string) => gourmets.filter((g) => g.meta.prefecture === prefId).length;
 ---
 
 <BaseLayout lang={lang} path="/">
@@ -36,7 +38,7 @@ const { lang } = Astro.props;
               {prefectures
                 .filter((p) => p.region === region.id)
                 .map((p) => {
-                  const count = gourmetsByPrefecture(p.id).length;
+                  const count = countFor(p.id);
                   return (
                     <li>
                       <a href={localizePath(lang, `/${p.id}/`)} class={count ? 'has' : 'empty'}>

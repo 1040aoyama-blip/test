@@ -1,10 +1,9 @@
 ---
-import { t, type Lang } from '../i18n/ui';
-import type { AffiliateLink } from '../data/gourmet';
+import { t, type Lang } from '../i18n';
 
 interface Props {
   lang: Lang;
-  links: AffiliateLink[];
+  links: { label: string; url: string }[];
 }
 
 const { lang, links } = Astro.props;
@@ -20,7 +19,7 @@ const showPlaceholder = links.length === 0 && import.meta.env.DEV;
         {links.map((link) => (
           <li>
             <a href={link.url} target="_blank" rel="sponsored noopener">
-              {link.label[lang]}
+              {link.label}
             </a>
           </li>
         ))}

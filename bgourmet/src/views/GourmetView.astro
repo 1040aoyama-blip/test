@@ -3,9 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import GourmetCard from '../components/GourmetCard.astro';
 import MapEmbed from '../components/MapEmbed.astro';
 import AffiliateBox from '../components/AffiliateBox.astro';
-import { localizePath, t, type Lang } from '../i18n/ui';
+import { render } from 'astro:content';
+import { localizePath, t, type Lang } from '../i18n';
 import { getPrefecture } from '../data/prefectures';
-import { gourmets, gourmetsByPrefecture } from '../data/gourmet';
+import { getAvailableLangs, getGourmets } from '../data/gourmet';
 
 interface Props {
   lang: Lang;
@@ -13,48 +14,60 @@ interface Props {
 }
 
 const { lang, gourmetId } = Astro.props;
+const gourmets = await getGourmets(lang);
 const g = gourmets.find((x) => x.id === gourmetId)!;
-const pref = getPrefecture(g.prefecture);
-const others = gourmetsByPrefecture(pref.id).filter((x) => x.id !== g.id);
-const title = lang === 'ja' ? `${g.name.ja}（${pref.name.ja}）` : `${g.name.en} — ${pref.name.en}`;
+const { meta } = g;
+const text = g.text.data;
+const { Content } = await render(g.text);
+const pref = getPrefecture(meta.prefecture);
+const others = gourmets.filter((x) => x.meta.prefecture === pref.id && x.id !== g.id);
+const title = t(lang, 'gourmetTitle', { name: text.name, pref: pref.name[lang] });
+// 日本語名は、日本語以外のページで店員さんに見せられるよう併記する
+const jaName = lang === 'ja' ? null : (await getGourmets('ja')).find((x) => x.id === g.id)?.text.data.name;
 ---
 
-<BaseLayout lang={lang} path={`/${pref.id}/${g.id}/`} title={title} description={g.summary[lang]}>
+<BaseLayout
+  lang={lang}
+  path={`/${pref.id}/${g.id}/`}
+  title={title}
+  description={text.summary}
+  availableLangs={await getAvailableLangs(g.id)}
+>
   <nav class="crumbs">
     <a href={localizePath(lang, '/')}>{t(lang, 'siteName')}</a> ›
     <a href={localizePath(lang, `/${pref.id}/`)}>{pref.name[lang]}</a>
   </nav>
 
   <header class="head">
-    <span class="emoji" aria-hidden="true">{g.emoji}</span>
+    <span class="emoji" aria-hidden="true">{meta.emoji}</span>
     <div>
-      <h1>{g.name[lang]}</h1>
-      {lang !== 'ja' && <p class="sub">{g.name.ja} · <i>{g.romaji}</i></p>}
-      <p class="lead">{g.summary[lang]}</p>
+      <h1>{text.name}</h1>
+      {jaName && <p class="sub"><span lang="ja">{jaName}</span> · <i>{meta.romaji}</i></p>}
+      <p class="lead">{text.summary}</p>
     </div>
   </header>
 
   <div class="layout">
     <article>
-      {g.body[lang].map((p) => <p>{p}</p>)}
+      <Content />
 
       <h2>{t(lang, 'howToEat')}</h2>
-      <ul>{g.howToEat[lang].map((tip) => <li>{tip}</li>)}</ul>
+      <ul>{text.howToEat.map((tip) => <li>{tip}</li>)}</ul>
 
       <h2>{t(lang, 'whereToEat')}</h2>
       {
-        g.shops.length > 0 ? (
+        text.shops.length > 0 ? (
           <div class="shops">
-            {g.shops.map((shop) => (
+            {text.shops.map((shop) => (
               <section class="shop">
-                <h3>{shop.name[lang]}</h3>
-                <p>{shop.comment[lang]}</p>
-                <MapEmbed lang={lang} placeId={shop.placeId} query={shop.name.ja} title={shop.name[lang]} />
+                <h3>{shop.name}</h3>
+                <p>{shop.comment}</p>
+                <MapEmbed lang={lang} placeId={shop.placeId} query={shop.name} title={shop.name} />
               </section>
             ))}
           </div>
         ) : (
-          <MapEmbed lang={lang} query={g.mapQuery} title={g.name[lang]} />
+          <MapEmbed lang={lang} query={meta.mapQuery} title={text.name} />
         )
       }
       <p class="note">{t(lang, 'mapNote')}</p>
@@ -63,9 +76,9 @@ const title = lang === 'ja' ? `${g.name.ja}（${pref.name.ja}）` : `${g.name.en
     <aside class="side">
       <dl class="facts">
         <dt>{t(lang, 'priceRange')}</dt>
-        <dd>{g.priceRange[lang]}</dd>
+        <dd>{text.priceRange}</dd>
       </dl>
-      <AffiliateBox lang={lang} links={g.affiliate} />
+      <AffiliateBox lang={lang} links={text.affiliate} />
     </aside>
   </div>
 

@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { languages, localizePath, t, type Lang } from '../i18n/ui';
+import { languages, langs, localizePath, t, type Lang } from '../i18n';
 
 interface Props {
   lang: Lang;
@@ -8,14 +8,19 @@ interface Props {
   description?: string;
   /** 言語を除いたパス（例: /shizuoka/） */
   path: string;
+  /** このページの翻訳がある言語（省略時はすべての言語） */
+  availableLangs?: Lang[];
 }
 
-const { lang, title, description, path } = Astro.props;
+const { lang, title, description, path, availableLangs = langs } = Astro.props;
 const siteName = t(lang, 'siteName');
 const pageTitle = title ? `${title} | ${siteName}` : siteName;
 const metaDescription = description ?? t(lang, 'siteDescription');
 const site = Astro.site ?? new URL('https://example.com');
-const langs = Object.keys(languages) as Lang[];
+// 翻訳がない言語への切り替えは、その言語のトップページへ
+// 言語が合わない訪問者には英語版を案内する（訪日客向け）。英語版がなければ最初の言語
+const defaultLangFor = (available: Lang[]): Lang => (available.includes('en') ? 'en' : available[0]);
+const switchHref = (l: Lang) => localizePath(l, availableLangs.includes(l) ? path : '/');
 ---
 
 <!doctype html>
@@ -26,12 +31,12 @@ const langs = Object.keys(languages) as Lang[];
     <title>{pageTitle}</title>
     <meta name="description" content={metaDescription} />
     <link rel="canonical" href={new URL(localizePath(lang, path), site)} />
-    {langs.map((l) => <link rel="alternate" hreflang={l} href={new URL(localizePath(l, path), site)} />)}
-    <link rel="alternate" hreflang="x-default" href={new URL(path, site)} />
+    {availableLangs.map((l) => <link rel="alternate" hreflang={l} href={new URL(localizePath(l, path), site)} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL(localizePath(defaultLangFor(availableLangs), path), site)} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={metaDescription} />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content={lang === 'ja' ? 'ja_JP' : 'en_US'} />
+    <meta property="og:locale" content={languages[lang].ogLocale} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
@@ -41,8 +46,8 @@ const langs = Object.keys(languages) as Lang[];
         <nav class="langs" aria-label={t(lang, 'langSwitch')}>
           {
             langs.map((l) => (
-              <a href={localizePath(l, path)} aria-current={l === lang ? 'true' : undefined} hreflang={l} lang={l}>
-                {languages[l]}
+              <a href={switchHref(l)} aria-current={l === lang ? 'true' : undefined} hreflang={l} lang={l}>
+                {languages[l].label}
               </a>
             ))
           }

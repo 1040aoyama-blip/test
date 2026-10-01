@@ -1,0 +1,67 @@
+{
+  "松阪鶏焼き肉": {
+    "summary": "A local dish of Matsusaka: chicken marinated in a sweet and savory miso-based sauce and grilled over a shichirin charcoal brazier or gas stove. Matsusaka is famous for its beef, but locals have long enjoyed affordable grilled chicken too. The garlicky miso sauce turns fragrant on the grill, making rice and beer go down easily. Specialty restaurants are scattered around the city, and some let you choose chewy meat from older hens. Enjoy grilling it yourself amid the smoke.",
+    "price": "¥1,000–2,000",
+    "area": "Matsusaka"
+  },
+  "四日市とんてき": {
+    "summary": "A local dish of Yokkaichi: a thick pork loin steak grilled and coated with garlic and a dark, rich sauce. A signature feature is the glove-shaped cuts in the meat that help it cook evenly. It is served with plenty of shredded cabbage and eaten with rice. The garlic aroma and bold sweet-savory sauce make it very satisfying, and the portions are generous. Many restaurants in the city serve it, and the sauce differs from shop to shop.",
+    "price": "¥1,000–1,800",
+    "area": "Yokkaichi"
+  },
+  "津ぎょうざ": {
+    "summary": "A local dish of Tsu: big deep-fried dumplings made with wrappers about 15 cm across. It began as a school lunch menu in the city that children loved, and local promotion later made it famous. The outside is crisp and fragrant, and the inside is packed with meat and vegetables, so even one is quite filling. You can try it at restaurants around the city, and fillings and seasoning vary by shop. Enjoy them piping hot.",
+    "price": "¥200–400 each",
+    "area": "Tsu"
+  },
+  "亀山みそ焼きうどん": {
+    "summary": "A local dish of Kameyama: udon fried with cabbage, pork and more in a rich red miso sauce. It is often cooked on an iron plate or in an iron pan, and the aroma of slightly charred miso whets the appetite. It is said to have started at offal barbecue restaurants, where udon was added to leftover sauce and grilled. The chewy noodles soak up the sweet-savory miso, making it good with rice too. Try it at diners and barbecue restaurants in the city.",
+    "price": "¥700–1,000",
+    "area": "Kameyama"
+  },
+  "伊勢うどん": {
+    "summary": "A specialty of Ise: very thick, soft and fluffy udon coated in a dark, rich sauce made with tamari soy sauce. It is not as salty as it looks; the sweet, savory sauce clings nicely to the soft noodles. The classic version has only chopped green onion on top. One reason for the softness is said to be that noodles were kept boiling for a long time so they could be served instantly to pilgrims visiting Ise Grand Shrine. Try it at Okage Yokocho or around the station.",
+    "price": "¥500–900",
+    "area": "Ise"
+  },
+  "てこねずし": {
+    "summary": "A local dish born in the fishing villages of the Shima area. Bonito or tuna marinated in a soy-based sauce is mixed into vinegared rice by hand, and the name is said to come from this kneading motion, teko-ne. It began as a fishermen's meal made quickly with the day's catch between busy work. It is often topped with shiso, ginger and nori, and tastes refreshing. Try it at diners in Ise-Shima or at Okage Yokocho. It is especially fresh during bonito season.",
+    "price": "¥1,200–2,000",
+    "area": "Shima, Ise and around"
+  },
+  "松阪牛すき焼き": {
+    "summary": "Sukiyaki made with Matsusaka beef, one of Japan's most famous luxury wagyu. It has fine marbling and fat with a low melting point, giving a melt-in-your-mouth texture and an elegant sweetness. Many restaurants serve Kansai-style sukiyaki, in which the beef is first seared in a pot greased with beef fat and seasoned with sugar and soy sauce, rather than simmered in sauce. Dipping it in beaten egg is the classic way. Matsusaka has many long-established restaurants worth visiting for a special occasion.",
+    "price": "¥10,000–30,000",
+    "area": "Matsusaka"
+  },
+  "伊勢海老の刺身": {
+    "summary": "Sashimi of Japanese spiny lobster, Ise-Shima's signature luxury ingredient. It is said to have been named ise-ebi because so many were caught in the sea off Ise. It features springy flesh and a rich, silky sweetness. Ikizukuri, served dramatically in its own shell, looks spectacular. After the sashimi, the head is usually made into miso soup so you can enjoy the broth too. The season runs from autumn to spring, and inns and restaurants in Ise-Shima serve it. It is also delicious grilled.",
+    "price": "¥5,000–15,000",
+    "area": "Shima, Toba and around"
+  },
+  "桑名焼きはまぐり": {
+    "summary": "Kuwana, near the mouths of the three Kiso rivers, has long been known for top-quality clams. Grilled in their shells over charcoal, they burst open and release a rush of savory juice, revealing plump meat. They have been famous since the Edo period, so much so that a pun about Kuwana's grilled clams became a common saying. Besides grilled clams, clam hot pot and clams simmered in soy sauce are delicious too. Try them at restaurants in Kuwana, and do not leave the juice in the shell.",
+    "price": "¥1,500–4,000",
+    "area": "Kuwana"
+  },
+  "赤福餅": {
+    "summary": "Ise's most famous mochi, made by a long-established shop in Ise. Smooth red bean paste covers soft mochi, and the three lines pressed into the paste are said to represent the clear stream of the Isuzu River near Ise Grand Shrine. Enjoy its refined sweetness and soft mochi. At the main store on Oharaimachi street, you can eat it with bancha tea while looking out at the river. It does not keep long, so eat it soon if you buy it as a souvenir. It has long been loved as a memento of pilgrimages to Ise.",
+    "price": "From about ¥800 per box",
+    "area": "Oharaimachi and around, Ise"
+  },
+  "へんば餅": {
+    "summary": "A famous mochi made by a long-established shop in Ise: a flat mochi filled with smooth red bean paste and toasted on both sides. The name is said to come from henba, returning the horse, because pilgrims returned the horses they had ridden here and walked the rest of the way to Ise Grand Shrine. Enjoy its simple, gentle sweetness and toasty grill marks. Eat it at the shop on your way back from the shrine, or buy some as a souvenir. Its humble look carries a long history.",
+    "price": "¥100–200 each",
+    "area": "Ise"
+  },
+  "なが餅": {
+    "summary": "A specialty of a long-established shop in Yokkaichi: long, thin mochi filled with chunky red bean paste and toasted on both sides. In Yokkaichi, which thrived as a post town on the Tokaido highway, it has long been loved by travelers. Its flat, elongated shape is distinctive, and you can enjoy the toasty surface, chewy mochi and gentle sweetness of the beans. Each piece is wrapped individually, making it easy to eat. It is sold at shops in Yokkaichi and station souvenir stores. Enjoy it with Japanese tea.",
+    "price": "¥800–1,500 per box",
+    "area": "Yokkaichi"
+  },
+  "伊勢ういろ": {
+    "summary": "A steamed sweet of rice flour and sugar made in the Ise area. Compared with Nagoya's uiro, it is said to be springier with a lighter sweetness. It comes in white, brown sugar, matcha, azuki and other flavors, all simple and gentle. Many people buy it as a souvenir on their way back from Ise Grand Shrine. It is sold at confectioners and souvenir shops in Ise. It is also delicious chilled. With its mild sweetness, it suits even people who do not usually like sweets.",
+    "price": "¥500–1,200",
+    "area": "Ise"
+  }
+}

@@ -11,6 +11,8 @@ const gourmetMeta = defineCollection({
   }),
   schema: z.object({
     prefecture: z.string(),
+    /** src/data/catalog.json に載っている日本語の料理名（一覧と記事をつなぐ） */
+    catalogName: z.string(),
     emoji: z.string(),
     romaji: z.string(),
     /** 店舗データがないときに Google マップで検索するキーワード */

@@ -19,5 +19,10 @@
   "prLabel": "PR",
   "adNotice": "当サイトはアフィリエイト広告を利用しています。",
   "adPlaceholder": "広告枠（準備中・開発時のみ表示）",
-  "langSwitch": "言語"
+  "langSwitch": "言語",
+  "category_bgourmet": "B級グルメ",
+  "category_local": "郷土料理",
+  "category_sweets": "スイーツ",
+  "articlePreparing": "記事準備中",
+  "dishCount": "{n}品を掲載"
 }

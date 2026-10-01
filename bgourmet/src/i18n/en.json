@@ -19,5 +19,10 @@
   "prLabel": "AD",
   "adNotice": "This site contains affiliate links.",
   "adPlaceholder": "Ad slot (placeholder, shown in dev only)",
-  "langSwitch": "Language"
+  "langSwitch": "Language",
+  "category_bgourmet": "B-gourmet",
+  "category_local": "Local cuisine",
+  "category_sweets": "Sweets",
+  "articlePreparing": "Article coming soon",
+  "dishCount": "{n} dishes"
 }

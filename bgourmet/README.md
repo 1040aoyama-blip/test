@@ -20,7 +20,7 @@ npm run build    # dist/ に本番用ファイルを生成
 | 言語を選ぶ入口 | `/` |
 | トップ | `/ja/`, `/en/` |
 | 都道府県 | `/ja/shizuoka/`, `/en/shizuoka/` |
-| グルメ詳細 | `/ja/shizuoka/fujinomiya-yakisoba/` |
+| 料理（県ページ内） | `/ja/shizuoka/#fujinomiya-yakisoba` |
 
 ## ファイル構成
 
@@ -33,15 +33,12 @@ src/
 ├─ data/
 │   ├ prefectures.json  地域名・都道府県名（言語ごと）
 │   ├ catalog.json      全国のグルメ一覧（都道府県 × ジャンル × 料理名）
-│   ├ dishes/<言語>/<県>.json  県ページに出す料理ごとの短い説明
+│   ├ dishes/<言語>/<県>.json  県ページに出す料理ごとの説明・おすすめの店
+│   ├ featured.json            トップの「注目」欄に出す料理
 │   └ intros/<言語>.json       県ページの見出しの下に出す、県の概要説明（シェア時の説明文にも使う）
-├─ content/gourmet/<グルメのID>/
-│   ├ meta.json       言語に関係ない情報（都道府県・絵文字・地図の検索語・並び順）
-│   ├ ja.md           日本語の記事
-│   └ en.md           英語の記事
 ├─ pages/[lang]/      ページの型（言語の数だけ自動で生成）
-├─ views/             トップ・都道府県・グルメ詳細の見た目
-└─ components/        地図・広告枠・カード
+├─ views/             トップ・都道府県ページの見た目
+└─ components/        料理・おすすめの店・広告枠
 ```
 
 ## グルメ一覧（catalog.json）
@@ -52,41 +49,33 @@ src/
 
 ## 料理の説明（dishes/<言語>/<県>.json）
 
-県ページに表示する短い説明です。キーは catalog.json の日本語名です（一致しないとビルドが止まります）。
+県ページに表示する説明とおすすめの店です。キーは catalog.json の日本語名です（一致しないとビルドが止まります）。
 
 ```json
 {
-  "富士宮やきそば": {
+  "串カツ": {
     "summary": "説明（2〜3文）",
-    "price": "500〜900円",
-    "area": "富士宮市",
-    "tip": "ひとこと（任意）"
+    "price": "1本100〜300円",
+    "area": "新世界（通天閣周辺）",
+    "tip": "ひとこと（任意）",
+    "shops": [
+      { "name": "串かつだるま 新世界総本店", "query": "串かつだるま 新世界総本店", "comment": "自分で書いたおすすめ理由" }
+    ],
+    "affiliate": [{ "label": "リンクの文言", "url": "https://..." }]
   }
 }
 ```
 
-## 詳しい個別ページを追加する
-
-県ページの短い説明だけでは足りない、人気の料理だけに作ります。県ページのその料理に「詳しく読む」ボタンが出ます。
-
-
-1. `src/content/gourmet/<ID>/` フォルダを作る（ID は URL になるので半角英小文字とハイフン）
-2. `meta.json` と、`ja.md` などの言語ごとの記事を置く（既存のフォルダをコピーすると楽です）
-3. `meta.json` の `catalogName` に、catalog.json に載っている日本語の料理名を書く（一致しないとビルドが止まります）
-
-翻訳がない言語ではそのグルメのページを作らず、一覧にも表示しません。
-
-- **おすすめ店**: 記事の `shops` に `name`・`placeId`（Google マップの place_id）・`comment`（自分で書いた紹介文）を追加します。
-  空の間は、`meta.json` の `mapQuery` で検索した地図を表示します。Google マップの口コミや写真は規約上転載できません。
-- **アフィリエイト**: 記事の `affiliate` に `label` と `url` を追加すると、「PR」表記つきで表示されます。
-  言語ごとに別のリンクを設定できます（日本語は国内の ASP、英語は海外向けのサービスなど）。
+- **shops**（任意・3件まで表示）: `query` は Google マップで店を特定できる検索語。place_id が分かれば `placeId` を使うと確実です。Google の口コミや写真は規約上転載できないので、`comment` は自分で書きます。
+- **affiliate**（任意）: 「PR」表記つきで表示されます。言語ごとに別のリンクを設定できます。
 
 ## 言語を追加する
 
 1. `src/i18n/index.ts` の `languages` に1行足す（例: `'zh-tw': { label: '繁體中文', ogLocale: 'zh_TW' }`）
 2. `src/i18n/ja.json` をコピーして `zh-tw.json` を作り、翻訳する（足りない文言があるとビルドが止まります）
 3. `src/data/prefectures.json` の各地域・都道府県の `name` に `zh-tw` を足す
-4. 翻訳した記事から順に `zh-tw.md` を追加する
+4. `src/data/intros/zh-tw.json` と `src/data/dishes/zh-tw/` を追加する（説明がない料理は名前だけ表示されます）
+5. `src/data/catalog.json` の各料理に `"zh-tw": "料理名"` を追加する
 
 ## Google マップ
 

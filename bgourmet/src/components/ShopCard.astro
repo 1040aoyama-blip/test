@@ -1,0 +1,81 @@
+---
+import { t, type Lang } from '../i18n';
+import type { Shop } from '../data/catalog';
+
+interface Props {
+  lang: Lang;
+  shop: Shop;
+}
+
+const { lang, shop } = Astro.props;
+const key = import.meta.env.PUBLIC_GOOGLE_MAPS_EMBED_KEY;
+const query = shop.query ?? shop.name;
+
+// API キーがあれば Maps Embed API で地図を埋め込む。なければ地図の位置に Google マップへのリンクを出す
+const embedSrc = key
+  ? `https://www.google.com/maps/embed/v1/place?${new URLSearchParams({
+      key,
+      q: shop.placeId ? `place_id:${shop.placeId}` : query,
+      language: lang,
+    })}`
+  : null;
+const linkParams = new URLSearchParams({ api: '1', query });
+if (shop.placeId) linkParams.set('query_place_id', shop.placeId);
+const linkHref = `https://www.google.com/maps/search/?${linkParams}`;
+---
+
+<li class="shop">
+  {
+    embedSrc ? (
+      <iframe src={embedSrc} title={shop.name} loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" />
+    ) : (
+      <a class="map-placeholder" href={linkHref} target="_blank" rel="noopener">
+        <span>{t(lang, 'openInMaps')}</span>
+      </a>
+    )
+  }
+  <div class="body">
+    <a class="name" href={linkHref} target="_blank" rel="noopener">{shop.name}</a>
+    {shop.comment && <p>{shop.comment}</p>}
+  </div>
+</li>
+
+<style>
+  .shop {
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+    min-width: 0;
+  }
+  iframe,
+  .map-placeholder {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    border: 0;
+    border-radius: 10px;
+    background: var(--surface-2);
+  }
+  .map-placeholder {
+    display: grid;
+    place-items: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  .body {
+    display: grid;
+    gap: 0.15rem;
+  }
+  .name {
+    color: var(--text);
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+</style>

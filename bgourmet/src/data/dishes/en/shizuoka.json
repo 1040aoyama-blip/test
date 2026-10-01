@@ -9,13 +9,27 @@
     "summary": "Firm, chewy steamed noodles topped with crispy pork bits (nikukasu) and sardine or mackerel powder (dashiko). Made famous by winning the B-1 Grand Prix.",
     "price": "¥500–900",
     "area": "Fujinomiya",
-    "tip": "Locals sprinkle plenty of dashiko on top. A perfect stop on a trip to see Mt. Fuji."
+    "tip": "Locals sprinkle plenty of dashiko on top. A perfect stop on a trip to see Mt. Fuji.",
+    "shops": [
+      {
+        "name": "Fujinomiya Yakisoba Antenna Shop",
+        "query": "富士宮やきそばアンテナショップ",
+        "comment": "Near Fujisan Hongu Sengen Taisha shrine. A good place to compare styles."
+      }
+    ]
   },
   "静岡おでん": {
     "summary": "Oden simmered in a dark broth made with beef tendon, with every ingredient on a skewer. The grey kuro hanpen fish cake made from sardines or mackerel is a must.",
     "price": "¥100–200 per skewer",
     "area": "Shizuoka City",
-    "tip": "Sprinkle on fish powder and green seaweed flakes. Try it at old-style candy shops or izakaya."
+    "tip": "Sprinkle on fish powder and green seaweed flakes. Try it at old-style candy shops or izakaya.",
+    "shops": [
+      {
+        "name": "Aoba Oden Street",
+        "query": "青葉おでん街 静岡",
+        "comment": "An alley lined with Shizuoka oden bars. Fun for bar-hopping."
+      }
+    ]
   },
   "生しらす丼": {
     "summary": "A rice bowl piled with raw whitebait caught in Suruga Bay. Freshness is everything, so it is best eaten in the fishing towns where it is landed.",

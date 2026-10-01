@@ -6,16 +6,9 @@
   "featured": "注目のB級グルメ",
   "gourmetCount": "{n}品",
   "prefectureTitle": "{pref}のB級グルメ",
-  "gourmetTitle": "{name}（{pref}）",
-  "comingSoon": "準備中",
-  "comingSoonBody": "この都道府県のグルメ情報は準備中です。もうしばらくお待ちください。",
   "backToTop": "トップへ戻る",
   "priceRange": "予算の目安",
-  "whereToEat": "どこで食べられる？",
-  "howToEat": "食べ方のコツ",
   "openInMaps": "Google マップで見る",
-  "mapNote": "地図はGoogle マップの検索結果を表示しています。営業時間などは必ず事前にご確認ください。",
-  "otherGourmet": "{pref}の他のB級グルメ",
   "prLabel": "PR",
   "adNotice": "当サイトはアフィリエイト広告を利用しています。",
   "adPlaceholder": "広告枠（準備中・開発時のみ表示）",
@@ -26,7 +19,7 @@
   "dishCount": "{n}品を掲載",
   "area": "エリア",
   "tip": "ひとこと",
-  "searchMaps": "Google マップで探す",
-  "readMore": "詳しく読む",
-  "jumpTo": "ジャンルへ移動"
+  "jumpTo": "ジャンルへ移動",
+  "photoPlaceholder": "写真準備中",
+  "recommendedShops": "おすすめのお店"
 }

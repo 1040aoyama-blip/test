@@ -6,16 +6,9 @@
   "featured": "Featured local eats",
   "gourmetCount": "{n} dishes",
   "prefectureTitle": "Local Food in {pref}",
-  "gourmetTitle": "{name} ({pref})",
-  "comingSoon": "Coming soon",
-  "comingSoonBody": "We are still preparing the food guide for this prefecture. Please check back soon.",
   "backToTop": "Back to top",
   "priceRange": "Typical price",
-  "whereToEat": "Where to eat",
-  "howToEat": "Tips for eating",
   "openInMaps": "Open in Google Maps",
-  "mapNote": "The map shows Google Maps search results. Please check opening hours before you visit.",
-  "otherGourmet": "More local eats in {pref}",
   "prLabel": "AD",
   "adNotice": "This site contains affiliate links.",
   "adPlaceholder": "Ad slot (placeholder, shown in dev only)",
@@ -26,7 +19,7 @@
   "dishCount": "{n} dishes",
   "area": "Where",
   "tip": "Tip",
-  "searchMaps": "Find on Google Maps",
-  "readMore": "Read more",
-  "jumpTo": "Jump to"
+  "jumpTo": "Jump to",
+  "photoPlaceholder": "Photo coming soon",
+  "recommendedShops": "Recommended shops"
 }

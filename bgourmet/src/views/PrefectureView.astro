@@ -1,10 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import DishEntry from '../components/DishEntry.astro';
-import GourmetCard from '../components/GourmetCard.astro';
 import { localizePath, t, type Lang } from '../i18n';
 import { getIntro, getPrefecture, regions } from '../data/prefectures';
-import { getGourmets } from '../data/gourmet';
 import { getCatalog } from '../data/catalog';
 
 interface Props {
@@ -15,10 +13,8 @@ interface Props {
 const { lang, prefectureId } = Astro.props;
 const pref = getPrefecture(prefectureId);
 const region = regions.find((r) => r.id === pref.region)!;
-const groups = await getCatalog(lang, pref.id);
+const groups = getCatalog(lang, pref.id);
 const dishCount = groups.reduce((sum, g) => sum + g.items.length, 0);
-// 一覧にその言語の料理名がまだない場合は、記事だけを並べる
-const articles = (await getGourmets(lang)).filter((g) => g.meta.prefecture === pref.id);
 const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
 const intro = getIntro(lang, pref.id);
 ---
@@ -45,33 +41,19 @@ const intro = getIntro(lang, pref.id);
   }
 
   {
-    groups.length > 0 ? (
-      groups.map((group) => (
-        <section class="group" id={group.category}>
-          <h2>
-            {t(lang, `category_${group.category}`)}
-            <span class="n">{group.items.length}</span>
-          </h2>
-          <div class="dishes">
-            {group.items.map((item) => (
-              <DishEntry lang={lang} prefectureId={pref.id} item={item} />
-            ))}
-          </div>
-        </section>
-      ))
-    ) : articles.length > 0 ? (
-      <div class="cards">
-        {articles.map((g) => (
-          <GourmetCard lang={lang} gourmet={g} />
-        ))}
-      </div>
-    ) : (
-      <p class="soon">
-        <strong>{t(lang, 'comingSoon')}</strong>
-        <br />
-        {t(lang, 'comingSoonBody')}
-      </p>
-    )
+    groups.map((group) => (
+      <section class="group" id={group.category}>
+        <h2>
+          {t(lang, `category_${group.category}`)}
+          <span class="n">{group.items.length}</span>
+        </h2>
+        <div class="dishes">
+          {group.items.map((item) => (
+            <DishEntry lang={lang} item={item} />
+          ))}
+        </div>
+      </section>
+    ))
   }
 
   <p class="back"><a href={localizePath(lang, '/')}>← {t(lang, 'backToTop')}</a></p>
@@ -136,18 +118,7 @@ const intro = getIntro(lang, pref.id);
   }
   .dishes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
-    gap: 0.75rem;
-  }
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1rem;
-  }
-  .soon {
-    padding: 1.5rem;
-    border-radius: var(--radius);
-    background: var(--surface-2);
   }
   .back {
     margin-top: 2.5rem;

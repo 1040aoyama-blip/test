@@ -1,21 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import GourmetCard from '../components/GourmetCard.astro';
 import { localizePath, t, type Lang } from '../i18n';
-import { prefectures, regions } from '../data/prefectures';
-import { getGourmets } from '../data/gourmet';
-import { assertCatalogConsistency, countCatalog } from '../data/catalog';
+import { getPrefecture, prefectures, regions } from '../data/prefectures';
+import { assertCatalogConsistency, countCatalog, getFeatured } from '../data/catalog';
 
 interface Props {
   lang: Lang;
 }
 
 const { lang } = Astro.props;
-const gourmets = await getGourmets(lang);
-await assertCatalogConsistency();
-// 一覧に載っている料理の数（その言語の一覧がまだなければ記事の数）
-const countFor = (prefId: string) =>
-  countCatalog(lang, prefId) || gourmets.filter((g) => g.meta.prefecture === prefId).length;
+assertCatalogConsistency();
+const featured = getFeatured(lang);
 ---
 
 <BaseLayout lang={lang} path="/">
@@ -27,7 +22,15 @@ const countFor = (prefId: string) =>
   <section>
     <h2>{t(lang, 'featured')}</h2>
     <div class="grid">
-      {gourmets.map((g) => <GourmetCard lang={lang} gourmet={g} showPrefecture />)}
+      {
+        featured.map((item) => (
+          <a class="card" href={`${localizePath(lang, `/${item.prefectureId}/`)}#${item.anchor}`}>
+            <span class="pref">{getPrefecture(item.prefectureId).name[lang]}</span>
+            <strong>{item.name}</strong>
+            {item.info && <span class="summary">{item.info.summary}</span>}
+          </a>
+        ))
+      }
     </div>
   </section>
 
@@ -42,7 +45,7 @@ const countFor = (prefId: string) =>
               {prefectures
                 .filter((p) => p.region === region.id)
                 .map((p) => {
-                  const count = countFor(p.id);
+                  const count = countCatalog(lang, p.id);
                   return (
                     <li>
                       <a href={localizePath(lang, `/${p.id}/`)} class={count ? 'has' : 'empty'}>
@@ -83,6 +86,38 @@ const countFor = (prefId: string) =>
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1rem;
+  }
+  .card {
+    display: grid;
+    gap: 0.2rem;
+    align-content: start;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    color: var(--text);
+    text-decoration: none;
+  }
+  .card:hover {
+    border-color: var(--accent);
+  }
+  .card .pref {
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .card strong {
+    font-size: 1.1rem;
+  }
+  .card .summary {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .regions {
     display: grid;

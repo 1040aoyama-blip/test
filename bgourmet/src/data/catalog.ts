@@ -1,11 +1,11 @@
 import catalog from './catalog.json';
-import { getGourmets, type Gourmet } from './gourmet';
+import featured from './featured.json';
 import { getPrefecture } from './prefectures';
 import { langs, type Lang } from '../i18n';
 
 /**
- * 全国のグルメ一覧（src/data/catalog.json）と、料理ごとの短い説明（src/data/dishes/<言語>/<県>.json）。
- * 都道府県ページはこれをもとに全料理を表示する。詳しい記事がある料理は meta.json の catalogName で結びつける。
+ * 全国のグルメ一覧（src/data/catalog.json）と、料理ごとの説明（src/data/dishes/<言語>/<県>.json）。
+ * 都道府県ページはこれをもとに全料理を表示する（料理ごとの個別ページは作らない）。
  */
 export const categories = ['bgourmet', 'local', 'sweets'] as const;
 export type Category = (typeof categories)[number];
@@ -13,11 +13,25 @@ export type Category = (typeof categories)[number];
 type CatalogEntry = { ja: string; en: string } & Partial<Record<Lang, string>>;
 const data = catalog as Record<string, Record<Category, CatalogEntry[]>>;
 
+export interface Shop {
+  /** 店名（この言語での表記） */
+  name: string;
+  /** Google マップで店を特定する検索語（例: 「串かつだるま 新世界総本店」）。place_id が分かれば placeId を使う */
+  query?: string;
+  placeId?: string;
+  /** 自分で書いたおすすめ理由（Google の口コミは転載しない） */
+  comment?: string;
+}
+
 export interface DishInfo {
   summary: string;
   price?: string;
   area?: string;
   tip?: string;
+  /** おすすめの店（3件まで表示） */
+  shops?: Shop[];
+  /** アフィリエイトリンク（「PR」表記つきで表示） */
+  affiliate?: { label: string; url: string }[];
 }
 
 // dishes/<lang>/<pref>.json を読み込む（キーは catalog.json の日本語名）
@@ -39,8 +53,6 @@ export interface CatalogItem {
   info?: DishInfo;
   /** Google マップで探すときの検索語 */
   mapQuery: string;
-  /** この言語の詳しい記事があればその記事 */
-  gourmet?: Gourmet;
 }
 
 export interface CatalogGroup {
@@ -60,8 +72,7 @@ function toAnchor(en: string): string {
 }
 
 /** 都道府県の料理一覧を、ジャンルごとに返す（その言語の名前がある料理だけ） */
-export async function getCatalog(lang: Lang, prefectureId: string): Promise<CatalogGroup[]> {
-  const gourmets = await getGourmets(lang);
+export function getCatalog(lang: Lang, prefectureId: string): CatalogGroup[] {
   const pref = data[prefectureId] ?? {};
   const prefName = getPrefecture(prefectureId).name.ja;
   return categories
@@ -70,7 +81,6 @@ export async function getCatalog(lang: Lang, prefectureId: string): Promise<Cata
       items: (pref[category] ?? []).flatMap((entry) => {
         const name = entry[lang];
         if (!name) return [];
-        const gourmet = gourmets.find((g) => g.meta.prefecture === prefectureId && g.meta.catalogName === entry.ja);
         return [
           {
             anchor: toAnchor(entry.en),
@@ -78,7 +88,6 @@ export async function getCatalog(lang: Lang, prefectureId: string): Promise<Cata
             ja: entry.ja,
             info: infos[lang]?.[prefectureId]?.[entry.ja],
             mapQuery: `${entry.ja} ${prefName}`,
-            gourmet,
           },
         ];
       }),
@@ -91,20 +100,35 @@ export function countCatalog(lang: Lang, prefectureId: string): number {
   return categories.reduce((sum, c) => sum + (data[prefectureId]?.[c] ?? []).filter((e) => e[lang]).length, 0);
 }
 
+/** 一覧にその料理があるか */
+export function hasDish(prefectureId: string, ja: string): boolean {
+  return categories.some((c) => data[prefectureId]?.[c]?.some((e) => e.ja === ja));
+}
+
 /** データの食い違いを確かめる（見つかったらビルドを止める） */
-export async function assertCatalogConsistency(): Promise<void> {
-  const has = (pref: string, ja: string) => categories.some((c) => data[pref]?.[c]?.some((e) => e.ja === ja));
-  for (const g of await getGourmets('ja')) {
-    if (!has(g.meta.prefecture, g.meta.catalogName)) {
-      throw new Error(`記事 ${g.id} の catalogName「${g.meta.catalogName}」が catalog.json の ${g.meta.prefecture} にありません`);
-    }
-  }
+export function assertCatalogConsistency(): void {
   for (const [lang, prefs] of Object.entries(infos)) {
     if (!langs.includes(lang as Lang)) throw new Error(`src/data/dishes/${lang}/ は対応言語ではありません`);
     for (const [pref, dishes] of Object.entries(prefs)) {
       for (const ja of Object.keys(dishes)) {
-        if (!has(pref, ja)) throw new Error(`src/data/dishes/${lang}/${pref}.json の「${ja}」が catalog.json にありません`);
+        if (!hasDish(pref, ja)) throw new Error(`src/data/dishes/${lang}/${pref}.json の「${ja}」が catalog.json にありません`);
       }
     }
   }
+}
+
+
+export interface FeaturedItem extends CatalogItem {
+  prefectureId: string;
+}
+
+/** トップページの「注目」欄に出す料理（src/data/featured.json の順。のちに「SNS で紹介中」に使う） */
+export function getFeatured(lang: Lang): FeaturedItem[] {
+  return featured.flatMap(({ prefecture, ja }) => {
+    if (!hasDish(prefecture, ja)) throw new Error(`featured.json の「${ja}」が catalog.json の ${prefecture} にありません`);
+    const item = getCatalog(lang, prefecture)
+      .flatMap((g) => g.items)
+      .find((i) => i.ja === ja);
+    return item ? [{ ...item, prefectureId: prefecture }] : [];
+  });
 }

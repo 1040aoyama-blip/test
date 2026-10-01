@@ -1,76 +1,103 @@
 ---
-import { localizePath, t, type Lang } from '../i18n';
+import { t, type Lang } from '../i18n';
 import type { CatalogItem } from '../data/catalog';
+import ShopCard from './ShopCard.astro';
+import AffiliateBox from './AffiliateBox.astro';
 
 interface Props {
   lang: Lang;
-  prefectureId: string;
   item: CatalogItem;
 }
 
-const { lang, prefectureId, item } = Astro.props;
+const { lang, item } = Astro.props;
 const { info } = item;
+const shops = (info?.shops ?? []).slice(0, 3);
+// TODO: 画像の入手方法が決まったら、写真の枠（.photo）を料理の写真に差し替える（CLAUDE.md の「保留中」を参照）
 const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ api: '1', query: item.mapQuery })}`;
 ---
 
 <article class:list={['dish', { brief: !info }]} id={item.anchor}>
-  <header>
-    <h3>{item.name}</h3>
-    {lang !== 'ja' && <p class="ja" lang="ja">{item.ja}</p>}
-  </header>
-
   {
     info && (
-      <>
-        <p class="summary">{info.summary}</p>
-        {(info.price || info.area) && (
-          <dl class="facts">
-            {info.price && (
-              <div>
-                <dt>{t(lang, 'priceRange')}</dt>
-                <dd>{info.price}</dd>
-              </div>
-            )}
-            {info.area && (
-              <div>
-                <dt>{t(lang, 'area')}</dt>
-                <dd>{info.area}</dd>
-              </div>
-            )}
-          </dl>
-        )}
-        {info.tip && (
-          <p class="tip">
-            <span class="label">{t(lang, 'tip')}</span>
-            {info.tip}
-          </p>
-        )}
-      </>
+      <div class="photo" aria-hidden="true">
+        <span>{t(lang, 'photoPlaceholder')}</span>
+      </div>
     )
   }
 
-  <footer class="actions">
-    <a class="maps" href={mapsHref} target="_blank" rel="noopener">{t(lang, 'searchMaps')}</a>
+  <div class="content">
+    <header>
+      <h3>{item.name}</h3>
+      {lang !== 'ja' && <p class="ja" lang="ja">{item.ja}</p>}
+    </header>
+
     {
-      item.gourmet && (
-        <a class="more" href={localizePath(lang, `/${prefectureId}/${item.gourmet.id}/`)}>
-          {t(lang, 'readMore')} →
-        </a>
+      info && (
+        <>
+          <p class="summary">{info.summary}</p>
+          {(info.price || info.area) && (
+            <dl class="facts">
+              {info.price && (
+                <div>
+                  <dt>{t(lang, 'priceRange')}</dt>
+                  <dd>{info.price}</dd>
+                </div>
+              )}
+              {info.area && (
+                <div>
+                  <dt>{t(lang, 'area')}</dt>
+                  <dd>{info.area}</dd>
+                </div>
+              )}
+            </dl>
+          )}
+          {info.tip && (
+            <p class="tip">
+              <span class="label">{t(lang, 'tip')}</span>
+              {info.tip}
+            </p>
+          )}
+        </>
       )
     }
-  </footer>
+
+    {
+      shops.length > 0 && (
+        <section class="shops">
+          <h4>{t(lang, 'recommendedShops')}</h4>
+          <ul>
+            {shops.map((shop) => (
+              <ShopCard lang={lang} shop={shop} />
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {info?.affiliate && info.affiliate.length > 0 && <AffiliateBox lang={lang} links={info.affiliate} />}
+
+    <footer class="actions">
+      <a class="maps" href={mapsHref} target="_blank" rel="noopener">{t(lang, 'openInMaps')}</a>
+    </footer>
+  </div>
 </article>
 
 <style>
   .dish {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     padding: 1.1rem 1.2rem;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);
     scroll-margin-top: 5rem;
+  }
+  @media (min-width: 760px) {
+    .dish:not(.brief) {
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 1.5rem;
+    }
   }
   .dish:target {
     border-color: var(--accent);
@@ -79,9 +106,26 @@ const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ ap
   .brief {
     padding-block: 0.9rem;
   }
+  .photo {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    background: repeating-linear-gradient(-45deg, var(--surface-2) 0 12px, var(--bg) 12px 24px);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    min-width: 0;
+  }
   h3 {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .ja {
     margin: 0.1rem 0 0;
@@ -90,7 +134,7 @@ const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ ap
   }
   .summary {
     margin: 0;
-    line-height: 1.7;
+    line-height: 1.75;
   }
   .facts {
     display: flex;
@@ -123,30 +167,46 @@ const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ ap
     color: var(--accent);
     font-weight: 700;
   }
+  .shops h4 {
+    margin: 0.25rem 0 0.5rem;
+    font-size: 0.95rem;
+  }
+  /* スマホでは横にスワイプ、広い画面では3列に並ぶ */
+  .shops ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(170px, 1fr);
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0 0 0.25rem;
+    list-style: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .shops ul > :global(li) {
+    scroll-snap-align: start;
+  }
+  @media (max-width: 759px) {
+    .shops ul {
+      grid-auto-columns: 72%;
+    }
+  }
   .actions {
-    margin-top: auto;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
   }
-  .actions a {
-    padding: 0.35rem 0.85rem;
+  .maps {
+    padding: 0.45rem 1rem;
     border-radius: 999px;
-    font-size: 0.85rem;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: 0.9rem;
     font-weight: 700;
     text-decoration: none;
     white-space: nowrap;
   }
-  .maps {
-    border: 1px solid var(--border);
-    color: var(--text);
-  }
   .maps:hover {
-    border-color: var(--accent);
-  }
-  .more {
-    background: var(--accent);
-    color: var(--on-accent);
+    filter: brightness(1.08);
   }
 </style>

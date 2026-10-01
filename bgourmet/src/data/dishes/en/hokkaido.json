@@ -1,0 +1,14 @@
+{
+  "スープカレー": {
+    "summary": "A Sapporo-born curry with a thin, broth-like soup instead of a thick roux, loaded with large pieces of fried vegetables and a bone-in chicken leg.",
+    "price": "¥1,200–1,800",
+    "area": "Sapporo",
+    "tip": "Most shops let you choose the soup base and spice level. Start mild if it is your first time."
+  },
+  "ジンギスカン": {
+    "summary": "Hokkaido's classic: lamb or mutton and vegetables grilled on a dome-shaped iron pan, with the meat juices flavoring the vegetables around the edge.",
+    "price": "¥1,500–3,000",
+    "area": "Sapporo and all over Hokkaido",
+    "tip": "The smoke sticks to clothes, so use the apron most restaurants provide."
+  }
+}

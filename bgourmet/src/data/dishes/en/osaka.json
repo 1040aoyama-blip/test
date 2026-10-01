@@ -15,7 +15,24 @@
     "summary": "Battered and deep-fried skewers of meat, vegetables and seafood, the local favorite of Shinsekai. You can order just one at a time.",
     "price": "¥100–300 per skewer",
     "area": "Shinsekai (around Tsutenkaku Tower)",
-    "tip": "No double-dipping in the shared sauce! Use the free cabbage to scoop more sauce."
+    "tip": "No double-dipping in the shared sauce! Use the free cabbage to scoop more sauce.",
+    "shops": [
+      {
+        "name": "Kushikatsu Daruma Shinsekai Main Store",
+        "query": "串かつだるま 新世界総本店",
+        "comment": "The long-running shop famous for its no-double-dipping rule. Easy for first-timers."
+      },
+      {
+        "name": "Tengu",
+        "query": "てんぐ 串かつ 新世界 ジャンジャン横丁",
+        "comment": "A popular spot on Janjan Yokocho, also known for its dote-yaki."
+      },
+      {
+        "name": "Yaekatsu",
+        "query": "八重勝 串かつ 新世界",
+        "comment": "A classic with a constant line, known for its light, crispy batter."
+      }
+    ]
   },
   "ねぎ焼き": {
     "summary": "A cousin of okonomiyaki made with a mountain of green onions and a thin batter, eaten with soy sauce or ponzu for a lighter taste.",
@@ -26,7 +43,14 @@
     "summary": "Batter with chopped squid, pressed flat between two hot plates. A thin, chewy Osaka snack.",
     "price": "About ¥200 each",
     "area": "Umeda (Hanshin Department Store) and others",
-    "tip": "It is a famous department store basement snack. The line moves fast."
+    "tip": "It is a famous department store basement snack. The line moves fast.",
+    "shops": [
+      {
+        "name": "Hanshin Ikayaki (Hanshin Umeda Main Store)",
+        "query": "阪神名物いか焼き 阪神梅田本店",
+        "comment": "A famous counter in the department store basement."
+      }
+    ]
   },
   "きつねうどん": {
     "summary": "Udon topped with a large piece of sweet simmered fried tofu. The clear, light-colored kelp broth is the taste of Osaka.",
@@ -42,13 +66,27 @@
     "summary": "Beef udon without the noodles: a savory broth with beef and a soft-cooked egg. It started at a long-running udon shop in Namba.",
     "price": "¥700–1,000",
     "area": "Namba",
-    "tip": "Order it with a small bowl of rice, the classic combination."
+    "tip": "Order it with a small bowl of rice, the classic combination.",
+    "shops": [
+      {
+        "name": "Chitose Main Store",
+        "query": "千とせ 本店 肉吸い",
+        "comment": "Known as the birthplace of nikusui."
+      }
+    ]
   },
   "豚まん": {
     "summary": "In Osaka, pork buns are called butaman, not nikuman. Fluffy dough filled with juicy pork and onion.",
     "price": "¥200–300 each",
     "area": "Around Namba, Umeda and other stations in Osaka City",
-    "tip": "Eat it with a dab of mustard, Osaka style."
+    "tip": "Eat it with a dab of mustard, Osaka style.",
+    "shops": [
+      {
+        "name": "551 Horai Main Store",
+        "query": "551蓬莱 本店",
+        "comment": "Osaka's best-known butaman. You can watch them being made at the counter."
+      }
+    ]
   },
   "バッテラ": {
     "summary": "Pressed sushi of vinegar-cured mackerel on rice, topped with a thin sheet of kelp. The name comes from the Portuguese word for a small boat.",

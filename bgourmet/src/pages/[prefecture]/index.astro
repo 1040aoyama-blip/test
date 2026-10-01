@@ -1,0 +1,10 @@
+---
+import PrefectureView from '../../views/PrefectureView.astro';
+import { prefectures } from '../../data/prefectures';
+
+export function getStaticPaths() {
+  return prefectures.map((p) => ({ params: { prefecture: p.id } }));
+}
+---
+
+<PrefectureView lang="ja" prefectureId={Astro.params.prefecture} />

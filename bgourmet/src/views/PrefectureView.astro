@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GourmetCard from '../components/GourmetCard.astro';
+import { localizePath, t, type Lang } from '../i18n/ui';
+import { getPrefecture, regions } from '../data/prefectures';
+import { gourmetsByPrefecture } from '../data/gourmet';
+
+interface Props {
+  lang: Lang;
+  prefectureId: string;
+}
+
+const { lang, prefectureId } = Astro.props;
+const pref = getPrefecture(prefectureId);
+const region = regions.find((r) => r.id === pref.region)!;
+const items = gourmetsByPrefecture(pref.id);
+const title = lang === 'ja' ? `${pref.name.ja}のB級グルメ` : `Local Food in ${pref.name.en}`;
+---
+
+<BaseLayout lang={lang} path={`/${pref.id}/`} title={title}>
+  <nav class="crumbs">
+    <a href={localizePath(lang, '/')}>{t(lang, 'siteName')}</a> › {region.name[lang]}
+  </nav>
+  <h1>{title}</h1>
+
+  {
+    items.length > 0 ? (
+      <div class="grid">
+        {items.map((g) => (
+          <GourmetCard lang={lang} gourmet={g} />
+        ))}
+      </div>
+    ) : (
+      <p class="soon">
+        <strong>{t(lang, 'comingSoon')}</strong>
+        <br />
+        {t(lang, 'comingSoonBody')}
+      </p>
+    )
+  }
+
+  <p><a href={localizePath(lang, '/')}>← {t(lang, 'backToTop')}</a></p>
+</BaseLayout>
+
+<style>
+  .crumbs {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .soon {
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    background: var(--surface-2);
+  }
+</style>

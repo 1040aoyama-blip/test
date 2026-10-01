@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GourmetCard from '../components/GourmetCard.astro';
+import { localizePath, t, type Lang } from '../i18n/ui';
+import { prefectures, regions } from '../data/prefectures';
+import { gourmets, gourmetsByPrefecture } from '../data/gourmet';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<BaseLayout lang={lang} path="/">
+  <section class="hero">
+    <h1>{t(lang, 'siteName')}</h1>
+    <p>{t(lang, 'siteTagline')}</p>
+  </section>
+
+  <section>
+    <h2>{t(lang, 'featured')}</h2>
+    <div class="grid">
+      {gourmets.map((g) => <GourmetCard lang={lang} gourmet={g} showPrefecture />)}
+    </div>
+  </section>
+
+  <section>
+    <h2>{t(lang, 'browseByRegion')}</h2>
+    <div class="regions">
+      {
+        regions.map((region) => (
+          <div class="region">
+            <h3>{region.name[lang]}</h3>
+            <ul>
+              {prefectures
+                .filter((p) => p.region === region.id)
+                .map((p) => {
+                  const count = gourmetsByPrefecture(p.id).length;
+                  return (
+                    <li>
+                      <a href={localizePath(lang, `/${p.id}/`)} class={count ? 'has' : 'empty'}>
+                        {p.name[lang]}
+                        {count > 0 && <span class="count">{t(lang, 'gourmetCount', { n: count })}</span>}
+                      </a>
+                    </li>
+                  );
+                })}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: calc(var(--radius) * 1.5);
+    background: linear-gradient(135deg, var(--accent-soft), var(--surface-2));
+    text-align: center;
+  }
+  .hero h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+  }
+  .hero p {
+    margin: 0;
+    color: var(--muted);
+  }
+  section {
+    margin-top: 2.5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .regions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1rem;
+  }
+  .region {
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .region h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+  }
+  .region ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .region a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.15rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .region a.has {
+    background: var(--accent-soft);
+    color: var(--text);
+    font-weight: 700;
+  }
+  .region a.empty {
+    color: var(--muted);
+  }
+  .count {
+    color: var(--accent);
+    font-size: 0.75rem;
+  }
+</style>

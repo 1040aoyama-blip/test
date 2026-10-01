@@ -1,0 +1,10 @@
+---
+import GourmetView from '../../../views/GourmetView.astro';
+import { gourmets } from '../../../data/gourmet';
+
+export function getStaticPaths() {
+  return gourmets.map((g) => ({ params: { prefecture: g.prefecture, gourmet: g.id } }));
+}
+---
+
+<GourmetView lang="en" gourmetId={Astro.params.gourmet} />

@@ -1,0 +1,70 @@
+---
+import { t, type Lang } from '../i18n/ui';
+import type { AffiliateLink } from '../data/gourmet';
+
+interface Props {
+  lang: Lang;
+  links: AffiliateLink[];
+}
+
+const { lang, links } = Astro.props;
+// 広告が未登録の場合、本番では何も表示しない（開発中だけ枠の位置が分かるようにする）
+const showPlaceholder = links.length === 0 && import.meta.env.DEV;
+---
+
+{
+  links.length > 0 && (
+    <aside class="ad">
+      <span class="pr">{t(lang, 'prLabel')}</span>
+      <ul>
+        {links.map((link) => (
+          <li>
+            <a href={link.url} target="_blank" rel="sponsored noopener">
+              {link.label[lang]}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  )
+}
+{
+  showPlaceholder && (
+    <aside class="ad placeholder">
+      <span class="pr">{t(lang, 'prLabel')}</span>
+      {t(lang, 'adPlaceholder')}
+    </aside>
+  )
+}
+
+<style>
+  .ad {
+    position: relative;
+    padding: 1rem 1rem 1rem 3.5rem;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    background: var(--surface-2);
+  }
+  .placeholder {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .pr {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 0.4rem;
+    border-radius: 4px;
+    background: var(--muted);
+    color: var(--bg);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.4rem;
+  }
+</style>

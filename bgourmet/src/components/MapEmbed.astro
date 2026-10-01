@@ -1,0 +1,66 @@
+---
+import { t, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  /** 検索キーワード、または place_id を指定 */
+  query?: string;
+  placeId?: string;
+  title: string;
+}
+
+const { lang, query, placeId, title } = Astro.props;
+const key = import.meta.env.PUBLIC_GOOGLE_MAPS_EMBED_KEY;
+
+const q = placeId ? `place_id:${placeId}` : (query ?? '');
+const embedSrc = key
+  ? `https://www.google.com/maps/embed/v1/${placeId ? 'place' : 'search'}?key=${key}&q=${encodeURIComponent(q)}&language=${lang}`
+  : null;
+
+const linkParams = new URLSearchParams({ api: '1', query: query ?? title });
+if (placeId) linkParams.set('query_place_id', placeId);
+const linkHref = `https://www.google.com/maps/search/?${linkParams}`;
+---
+
+<div class="map">
+  {
+    embedSrc && (
+      <iframe
+        src={embedSrc}
+        title={title}
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    )
+  }
+  <a class="map-link" href={linkHref} target="_blank" rel="noopener">
+    📍 {t(lang, 'openInMaps')}
+  </a>
+</div>
+
+<style>
+  .map {
+    display: grid;
+    gap: 0.75rem;
+  }
+  iframe {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border: 0;
+    border-radius: var(--radius);
+    background: var(--surface-2);
+  }
+  .map-link {
+    justify-self: start;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .map-link:hover {
+    filter: brightness(1.08);
+  }
+</style>

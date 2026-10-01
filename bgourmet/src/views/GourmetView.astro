@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GourmetCard from '../components/GourmetCard.astro';
+import MapEmbed from '../components/MapEmbed.astro';
+import AffiliateBox from '../components/AffiliateBox.astro';
+import { localizePath, t, type Lang } from '../i18n/ui';
+import { getPrefecture } from '../data/prefectures';
+import { gourmets, gourmetsByPrefecture } from '../data/gourmet';
+
+interface Props {
+  lang: Lang;
+  gourmetId: string;
+}
+
+const { lang, gourmetId } = Astro.props;
+const g = gourmets.find((x) => x.id === gourmetId)!;
+const pref = getPrefecture(g.prefecture);
+const others = gourmetsByPrefecture(pref.id).filter((x) => x.id !== g.id);
+const title = lang === 'ja' ? `${g.name.ja}（${pref.name.ja}）` : `${g.name.en} — ${pref.name.en}`;
+---
+
+<BaseLayout lang={lang} path={`/${pref.id}/${g.id}/`} title={title} description={g.summary[lang]}>
+  <nav class="crumbs">
+    <a href={localizePath(lang, '/')}>{t(lang, 'siteName')}</a> ›
+    <a href={localizePath(lang, `/${pref.id}/`)}>{pref.name[lang]}</a>
+  </nav>
+
+  <header class="head">
+    <span class="emoji" aria-hidden="true">{g.emoji}</span>
+    <div>
+      <h1>{g.name[lang]}</h1>
+      {lang !== 'ja' && <p class="sub">{g.name.ja} · <i>{g.romaji}</i></p>}
+      <p class="lead">{g.summary[lang]}</p>
+    </div>
+  </header>
+
+  <div class="layout">
+    <article>
+      {g.body[lang].map((p) => <p>{p}</p>)}
+
+      <h2>{t(lang, 'howToEat')}</h2>
+      <ul>{g.howToEat[lang].map((tip) => <li>{tip}</li>)}</ul>
+
+      <h2>{t(lang, 'whereToEat')}</h2>
+      {
+        g.shops.length > 0 ? (
+          <div class="shops">
+            {g.shops.map((shop) => (
+              <section class="shop">
+                <h3>{shop.name[lang]}</h3>
+                <p>{shop.comment[lang]}</p>
+                <MapEmbed lang={lang} placeId={shop.placeId} query={shop.name.ja} title={shop.name[lang]} />
+              </section>
+            ))}
+          </div>
+        ) : (
+          <MapEmbed lang={lang} query={g.mapQuery} title={g.name[lang]} />
+        )
+      }
+      <p class="note">{t(lang, 'mapNote')}</p>
+    </article>
+
+    <aside class="side">
+      <dl class="facts">
+        <dt>{t(lang, 'priceRange')}</dt>
+        <dd>{g.priceRange[lang]}</dd>
+      </dl>
+      <AffiliateBox lang={lang} links={g.affiliate} />
+    </aside>
+  </div>
+
+  {
+    others.length > 0 && (
+      <section class="others">
+        <h2>{t(lang, 'otherGourmet', { pref: pref.name[lang] })}</h2>
+        <div class="grid">
+          {others.map((o) => (
+            <GourmetCard lang={lang} gourmet={o} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .crumbs {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .head {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    margin-block: 1rem 2rem;
+  }
+  .emoji {
+    font-size: clamp(3rem, 10vw, 4.5rem);
+    line-height: 1;
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+  }
+  .sub {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+  }
+  .lead {
+    margin: 0.5rem 0 0;
+    font-size: 1.05rem;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 860px) {
+    .layout {
+      grid-template-columns: minmax(0, 1fr) 280px;
+    }
+    .side {
+      position: sticky;
+      top: 5rem;
+      align-self: start;
+    }
+  }
+  .side {
+    display: grid;
+    gap: 1rem;
+  }
+  .facts {
+    margin: 0;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .facts dt {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .facts dd {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .shops {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .note {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .others {
+    margin-top: 3rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+</style>

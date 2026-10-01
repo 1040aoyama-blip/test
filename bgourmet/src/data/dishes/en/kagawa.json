@@ -1,0 +1,62 @@
+{
+  "釜玉うどん": {
+    "summary": "Sanuki udon eaten straight from the pot: piping hot noodles are put into a bowl and mixed with raw egg and soy sauce. The heat of the noodles gently sets the egg into a silky, carbonara-like texture. It is said to have been created at an udon shop in Ayagawa. Its simplicity brings out the chewy texture and wheat aroma of the noodles. Topping it with green onion or tempura bits is fun too, and black pepper is recommended. Many udon shops in Kagawa serve it.",
+    "price": "¥300–600",
+    "area": "Throughout Kagawa"
+  },
+  "ぶっかけうどん": {
+    "summary": "Sanuki udon with a small amount of strong dashi poured over. The broth is stronger than in kake udon, so you can fully taste the noodles' bite and wheat flavor. Many shops let you choose cold hiyashi or hot atsu, and the standard toppings are grated daikon, sudachi, green onion and tempura bits. Adding tempura is also recommended. Many udon shops in Kagawa serve it. Cold bukkake is especially delicious in hot summer.",
+    "price": "¥300–700",
+    "area": "Throughout Kagawa"
+  },
+  "骨付鳥": {
+    "summary": "A local dish born in Marugame: bone-in chicken thighs seasoned with garlic and pepper and slowly roasted in an oven. The crisp skin and spicy flavor are addictive and go perfectly with beer. Many shops let you choose oya, chewy and full-flavored older hen, or hina, tender and juicy young chicken. Dipping cabbage or rice balls in the juices collected on the plate is another pleasure. Try it at shops in Marugame and Takamatsu.",
+    "price": "¥1,000–1,500",
+    "area": "Marugame, Takamatsu and around"
+  },
+  "讃岐うどん": {
+    "summary": "The signature food of Kagawa, also nicknamed Udon Prefecture. It features a strong bite, a chewy texture and silky smoothness, enjoyed in a broth rich with dried sardines. Kagawa has many self-service shops where you warm the noodles yourself and pick tempura and rice balls, all at low prices. Many shops open in the morning, and many people visit several udon shops in a day. Each shop has its own noodles and broth, so enjoy comparing them.",
+    "price": "¥300–700",
+    "area": "Throughout Kagawa"
+  },
+  "釜揚げうどん": {
+    "summary": "Sanuki udon served in its cooking water without being rinsed in cold water. It is eaten by dipping in a warm sauce. Because it is not rinsed, the surface is soft, with a fluffy texture and a sweet wheat aroma. To serve it hot from the pot, you often wait after ordering. Some shops serve it in a big tub. Many udon shops in Kagawa offer it, and it warms you up on a cold day. Some people add a little cooking water to the sauce to change the flavor.",
+    "price": "¥300–700",
+    "area": "Throughout Kagawa"
+  },
+  "あんもち雑煮": {
+    "summary": "Zoni soup in white miso, essential to New Year in Kagawa. Its most distinctive feature is round mochi filled with sweet red bean paste. The sweetness of the white miso, the sweet bean paste and the chewy mochi combine into a taste found nowhere else. Daikon, carrot and other vegetables go in too. It is said to have come from the wish to eat something sweet at least at New Year, when sugar was precious. Some restaurants in the prefecture serve it all year. It is worth trying once.",
+    "price": "¥500–900",
+    "area": "Throughout Kagawa"
+  },
+  "しょうゆ豆": {
+    "summary": "A Kagawa local dish: roasted broad beans soaked while hot in a sweet and savory sauce of soy sauce, sugar and chili. Enjoy the pleasant chew of the skins and the fluffy beans soaked with sweet-savory flavor. They are perfect with rice or drinks. In Kagawa homes, they have long been enjoyed as a side dish or snack. They are sold at supermarkets and souvenir shops in the prefecture. Those from Shodoshima, known for soy sauce, are popular too.",
+    "price": "¥300–700",
+    "area": "Throughout Kagawa"
+  },
+  "小豆島そうめん": {
+    "summary": "Hand-stretched somen made on Shodoshima. A distinctive feature is the use of the island's sesame oil while stretching the dough, giving a faint aroma and silky smoothness. Though thin, the noodles have a firm bite and do not go soggy easily. It is said to have started in the Edo period when islanders learned somen-making and brought it home. On clear winter days you may see noodles hanging out to dry. It is sold at shops on the island and is delicious cold or hot.",
+    "price": "¥500–1,500",
+    "area": "Shodoshima"
+  },
+  "おいり": {
+    "summary": "A traditional wedding sweet long handed out at weddings in the Seisan area of western Kagawa. These round rice puffs made from glutinous rice are about 1 cm across, and their pink, yellow, green and other colors look adorable. In the mouth, they are light and crisp, then quickly melt away. They have a faint sweetness. Recently, new ways of eating them, such as on soft serve ice cream, have become popular. They are sold at confectioners in Marugame and elsewhere and make a pretty gift.",
+    "price": "¥500–1,000",
+    "area": "Marugame and the Seisan area"
+  },
+  "かまど": {
+    "summary": "One of Kagawa's best-known souvenir sweets, made by a confectioner in Sakaide. Yolk bean paste made with white kidney beans and egg yolk is wrapped in moist dough and baked. Its name and shape come from the kamado furnaces used in salt-making, once thriving in Sakaide. Its simple, gentle sweetness goes well with Japanese tea or coffee. It is individually wrapped and easy to share. It is widely sold at stations, the airport and souvenir shops in Kagawa, and has long been a classic souvenir.",
+    "price": "¥600–1,500",
+    "area": "Sakaide and around"
+  },
+  "灸まん": {
+    "summary": "A specialty of Kotohira: little buns shaped like the moxa used in moxibustion. They are said to be inspired by pilgrims to Kotohiragu Shrine soothing their travel fatigue with moxibustion. Yolk bean paste is wrapped in castella-like dough and baked, giving a moist texture and gentle sweetness. They are bite-sized and easy to eat. They are perfect for a relaxing break after climbing the long stone steps of Kotohiragu. They are sold at shops in Kotohira.",
+    "price": "¥600–1,500",
+    "area": "Kotohira"
+  },
+  "和三盆干菓子": {
+    "summary": "Dry sweets made in eastern Kagawa with wasanbon, a traditional fine sugar. Wasanbon is made by boiling down sugarcane juice and kneading it by hand many times, giving it a refined, mellow sweetness. Pressed into molds, the sweets melt away in the mouth, spreading a gentle sweetness. Their beautiful shapes, modeled on seasonal flowers and lucky symbols, are part of the charm. They are sold at shops in Higashikagawa and elsewhere, and some let you try molding them. They pair beautifully with matcha.",
+    "price": "¥500–2,000",
+    "area": "Higashikagawa and around"
+  }
+}

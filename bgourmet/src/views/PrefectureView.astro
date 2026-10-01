@@ -27,7 +27,7 @@ const intro = getIntro(lang, pref.id);
   <nav class="crumbs">
     <a href={localizePath(lang, '/')}>{t(lang, 'siteName')}</a> › {region.name[lang]}
   </nav>
-  <h1>{title}</h1>
+  <h1>{pref.name[lang]}</h1>
   {intro && <p class="intro">{intro}</p>}
   {dishCount > 0 && <p class="count">{t(lang, 'dishCount', { n: dishCount })}</p>}
 

@@ -23,5 +23,19 @@
   "recommendedShops": "Recommended shops",
   "searchMaps": "Find on Google Maps",
   "showMap": "Show map",
-  "hideMap": "Hide map"
+  "hideMap": "Hide map",
+  "search": "Search",
+  "searchTitle": "Find a dish",
+  "searchLead": "Search by dish name, prefecture or ingredient, and narrow down by prefecture or category.",
+  "searchPlaceholder": "e.g. ramen, eel",
+  "searchButton": "Search",
+  "filterPrefecture": "Prefecture",
+  "allPrefectures": "All prefectures",
+  "allInRegion": "All of {region}",
+  "filterCategory": "Category",
+  "allCategories": "All",
+  "resultCount": "{n} dishes found",
+  "noResults": "No dishes match. Try a shorter keyword or remove a filter.",
+  "clearFilters": "Clear",
+  "browseByCategory": "Browse by category"
 }

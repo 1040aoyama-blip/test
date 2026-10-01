@@ -21,6 +21,10 @@ npm run build    # dist/ に本番用ファイルを生成
 | トップ | `/ja/`, `/en/` |
 | 都道府県 | `/ja/shizuoka/`, `/en/shizuoka/` |
 | 料理（県ページ内） | `/ja/shizuoka/#fujinomiya-yakisoba` |
+| 検索・絞り込み | `/ja/search/`（例: `/ja/search/?q=ラーメン&pref=region:kyushu&cat=bgourmet`） |
+
+検索ページの URL には条件が入るので、「九州のラーメン」のような絞り込み結果を SNS に貼ることもできます。
+`pref` は都道府県の id（`kyoto`）か `region:地域の id`（`region:kinki`）、`cat` は `bgourmet` / `local` / `sweets` です。
 
 ## ファイル構成
 
@@ -36,8 +40,9 @@ src/
 │   ├ dishes/<言語>/<県>.json  県ページに出す料理ごとの説明・おすすめの店
 │   ├ featured.json            トップの「注目」欄に出す料理
 │   └ intros/<言語>.json       県ページの見出しの下に出す、県の概要説明（シェア時の説明文にも使う）
-├─ pages/[lang]/      ページの型（言語の数だけ自動で生成）
-├─ views/             トップ・都道府県ページの見た目
+├─ lib/normalize.ts   検索用に文字をそろえる（カタカナ・ひらがな、全角・半角などの違いを無視）
+├─ pages/[lang]/      ページの型（言語の数だけ自動で生成）。search/text.json は検索ページが後から読む説明文
+├─ views/             トップ・都道府県ページ・検索ページの見た目
 └─ components/        料理・おすすめの店・広告枠
 ```
 

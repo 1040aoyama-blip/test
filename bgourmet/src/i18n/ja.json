@@ -23,5 +23,19 @@
   "recommendedShops": "おすすめのお店",
   "searchMaps": "Googleマップで探す",
   "showMap": "地図を表示",
-  "hideMap": "地図を閉じる"
+  "hideMap": "地図を閉じる",
+  "search": "検索",
+  "searchTitle": "料理を探す",
+  "searchLead": "料理名・都道府県・食材などのキーワードと、都道府県やジャンルで絞り込めます。",
+  "searchPlaceholder": "例：ラーメン、うなぎ",
+  "searchButton": "探す",
+  "filterPrefecture": "都道府県",
+  "allPrefectures": "すべての都道府県",
+  "allInRegion": "{region}のすべて",
+  "filterCategory": "ジャンル",
+  "allCategories": "すべて",
+  "resultCount": "{n}品が見つかりました",
+  "noResults": "条件に合う料理が見つかりませんでした。キーワードを短くしたり、絞り込みを外したりしてみてください。",
+  "clearFilters": "条件をクリア",
+  "browseByCategory": "ジャンルから探す"
 }

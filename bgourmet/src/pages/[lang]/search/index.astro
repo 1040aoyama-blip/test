@@ -1,0 +1,8 @@
+---
+import SearchView from '../../../views/SearchView.astro';
+import { getLangStaticPaths, type Lang } from '../../../i18n';
+
+export const getStaticPaths = getLangStaticPaths;
+---
+
+<SearchView lang={Astro.params.lang as Lang} />

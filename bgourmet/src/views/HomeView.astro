@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { localizePath, t, type Lang } from '../i18n';
 import { getPrefecture, prefectures, regions } from '../data/prefectures';
-import { assertCatalogConsistency, countCatalog, getFeatured } from '../data/catalog';
+import { assertCatalogConsistency, categories, countCatalog, getFeatured } from '../data/catalog';
 
 interface Props {
   lang: Lang;
@@ -17,6 +17,18 @@ const featured = getFeatured(lang);
   <section class="hero">
     <h1>{t(lang, 'siteName')}</h1>
     <p>{t(lang, 'siteTagline')}</p>
+    <form class="search" action={localizePath(lang, '/search/')} method="get" role="search">
+      <label for="home-q" class="visually-hidden">{t(lang, 'search')}</label>
+      <input id="home-q" name="q" type="search" placeholder={t(lang, 'searchPlaceholder')} enterkeyhint="search" />
+      <button type="submit">{t(lang, 'searchButton')}</button>
+    </form>
+    <nav class="cat-links" aria-label={t(lang, 'browseByCategory')}>
+      {
+        categories.map((c) => (
+          <a href={`${localizePath(lang, '/search/')}?cat=${c}`}>{t(lang, `category_${c}`)}</a>
+        ))
+      }
+    </nav>
   </section>
 
   <section>
@@ -78,6 +90,65 @@ const featured = getFeatured(lang);
   .hero p {
     margin: 0;
     color: var(--muted);
+  }
+  .search {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 520px;
+    margin: 1.25rem auto 0;
+  }
+  .search input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 1rem; /* 16px 未満だと iPhone で入力時に拡大されるため */
+  }
+  .search input:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .search button {
+    flex-shrink: 0;
+    padding: 0.7rem 1.2rem;
+    border: 0;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .cat-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: 0.9rem;
+  }
+  .cat-links a {
+    padding: 0.2rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  .cat-links a:hover {
+    border-color: var(--accent);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
   }
   section {
     margin-top: 2.5rem;

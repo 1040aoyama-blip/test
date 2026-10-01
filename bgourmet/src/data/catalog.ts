@@ -1,6 +1,6 @@
 import catalog from './catalog.json';
 import featured from './featured.json';
-import { getPrefecture } from './prefectures';
+import { getPrefecture, prefectures } from './prefectures';
 import { langs, type Lang } from '../i18n';
 
 /**
@@ -94,6 +94,27 @@ export function getCatalog(lang: Lang, prefectureId: string): CatalogGroup[] {
       }),
     }))
     .filter((group) => group.items.length > 0);
+}
+
+export interface CatalogEntryWithPlace extends CatalogItem {
+  prefectureId: string;
+  category: Category;
+  /** 英語名（言語に関係なく検索に使う） */
+  en: string;
+}
+
+/** 全国の料理を、都道府県の順・ジャンルの順に返す（検索ページ用） */
+export function getAllDishes(lang: Lang): CatalogEntryWithPlace[] {
+  return prefectures.map((p) => p.id).flatMap((prefectureId) =>
+    getCatalog(lang, prefectureId).flatMap((group) =>
+      group.items.map((item) => ({
+        ...item,
+        prefectureId,
+        category: group.category,
+        en: data[prefectureId][group.category].find((e) => e.ja === item.ja)!.en,
+      })),
+    ),
+  );
 }
 
 /** 都道府県ごとの掲載数（その言語の名前がある料理の数） */

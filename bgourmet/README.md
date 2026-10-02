@@ -93,3 +93,34 @@ src/
 `.env.example` を `.env` にコピーし、`PUBLIC_GOOGLE_MAPS_EMBED_KEY` に Maps Embed API のキー（無料・回数無制限）を設定すると、
 おすすめの店に「地図を表示」ボタンが出ます。地図は押したときだけ読み込みます。未設定の場合は「Googleマップで開く」リンクだけを表示します。
 API キーは「Maps Embed API のみ」「自分のサイトのドメインのみ」に制限してください。
+
+## 公開（Cloudflare Pages）
+
+GitHub のリポジトリを Cloudflare Pages につなぐと、push するたびに自動でビルド・公開されます（無料プラン）。
+
+### 最初の設定（1回だけ）
+
+1. https://dash.cloudflare.com にログイン（アカウントがなければ無料で作成）
+2. 左のメニューの **Workers & Pages** →「作成」→ **Pages** タブ →「Git に接続」
+3. GitHub アカウントを連携し、リポジトリ `1040aoyama-blip/test` を選ぶ
+4. 「ビルドとデプロイ」の設定を次のようにする
+
+   | 項目 | 値 |
+   |---|---|
+   | プロジェクト名 | `bgourmet` など（`https://<プロジェクト名>.pages.dev` になる） |
+   | 本番ブランチ | サイトがあるブランチ（今は `claude/session-not-showing-mobile-kg5x7o`） |
+   | フレームワーク プリセット | Astro |
+   | ビルドコマンド | `npm run build` |
+   | ビルド出力ディレクトリ | `dist` |
+   | ルートディレクトリ（詳細設定） | `bgourmet` |
+   | 環境変数 | `SITE_URL` = `https://<プロジェクト名>.pages.dev`（独自ドメインを取ったらそれに変える） |
+   | 環境変数（地図を使う場合） | `PUBLIC_GOOGLE_MAPS_EMBED_KEY` = Maps Embed API のキー |
+
+5.「保存してデプロイ」を押す。1〜2分で `https://<プロジェクト名>.pages.dev` で見られるようになる
+
+Node のバージョンは `.node-version`（22）で指定しています。
+
+### そのあと
+
+- 本番ブランチに push すると自動で公開し直されます。ほかのブランチに push すると、別の URL のプレビュー版ができます
+- 独自ドメインは、Pages のプロジェクトの「カスタムドメイン」から追加します。追加したら環境変数 `SITE_URL` も変えて、デプロイし直してください

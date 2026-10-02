@@ -1,0 +1,78 @@
+---
+// 見つからないページ（Cloudflare Pages は存在しない URL でこの 404.html を返す）
+import '../styles/global.css';
+import { langs, localizePath, t } from '../i18n';
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>404 | {t('ja', 'siteName')}</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="container notfound">
+      <span class="emoji" aria-hidden="true">🍜</span>
+      <h1>404</h1>
+      <p lang="ja">ページが見つかりませんでした。</p>
+      <p lang="en">Sorry, this page could not be found.</p>
+      <nav class="links">
+        {
+          langs.map((l) => (
+            <a href={localizePath(l, '/')} lang={l}>
+              {t(l, 'backToTop')}
+            </a>
+          ))
+        }
+        {
+          langs.map((l) => (
+            <a href={localizePath(l, '/search/')} lang={l}>
+              {t(l, 'searchTitle')}
+            </a>
+          ))
+        }
+      </nav>
+    </main>
+  </body>
+</html>
+
+<style>
+  .notfound {
+    display: grid;
+    justify-items: center;
+    gap: 0.25rem;
+    padding-block: 4rem;
+    text-align: center;
+  }
+  .emoji {
+    font-size: 3rem;
+  }
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  p {
+    margin: 0;
+    color: var(--muted);
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .links a {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .links a:hover {
+    border-color: var(--accent);
+  }
+</style>

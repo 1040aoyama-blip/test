@@ -2,32 +2,86 @@
   "十和田バラ焼き": {
     "summary": "A local dish from Towada of beef belly and plenty of onions grilled on an iron plate with a sweet soy-based sauce. It is said to have come from food eaten around the US military base in neighboring Misawa after the war. Grill it until the onions are soft and they soak up the sauce and meat juices, making it perfect with rice. Thanks to local promotion, it placed highly at the B-1 Grand Prix and became known nationwide. Many restaurants in the city serve it, so stop by on a trip to Lake Towada or the Oirase Stream.",
     "price": "¥800–1,500",
-    "area": "Towada"
+    "area": "Towada",
+    "shops": [
+      {
+        "name": "Tsukasa Barayaki Taishu Shokudo",
+        "query": "司バラ焼き大衆食堂 十和田",
+        "comment": "A popular barayaki spot loved by locals and tourists alike.",
+        "access": "Near the Towada Art Center"
+      }
+    ]
   },
   "黒石つゆやきそば": {
     "summary": "A local dish from Kuroishi: sauce yakisoba made with thick, flat noodles and served in a Japanese-style dashi broth. It feels like eating yakisoba and soba at the same time, and there is nothing else quite like it. The sauce melts into the broth for a gentle, sweet and savory flavor. It is usually topped with tempura bits and green onions. Some say it began when broth was poured over cold yakisoba. Enjoy it with a stroll along Komise-dori, with its traditional wooden arcades.",
     "price": "¥600–900",
-    "area": "Kuroishi"
+    "area": "Kuroishi",
+    "shops": [
+      {
+        "name": "Kuroishi Yakisoba Suzunoya",
+        "query": "黒石やきそば専門店 すずのや",
+        "comment": "Serves tsuyu yakisoba recreating the taste of the original shop.",
+        "access": "Nakamachi Komise-dori, Kuroishi"
+      }
+    ]
   },
   "青森味噌カレー牛乳ラーメン": {
     "summary": "A one-of-a-kind ramen from Aomori City made by adding curry and milk to miso ramen broth. The name may surprise you, but the milk mellows the curry's heat and the miso's saltiness into a rich, rounded flavor. It is usually topped with butter, seaweed and bean sprouts, and it warms you up in the cold winters. It is said to have been born at an Aomori ramen shop and spread among students. Several shops in the city now serve it. It is worth trying at least once.",
     "price": "¥800–1,100",
-    "area": "Aomori City"
+    "area": "Aomori City",
+    "shops": [
+      {
+        "name": "Aji no Sapporo Onishi",
+        "query": "味の札幌 大西 青森",
+        "comment": "A popular shop carrying on the original miso curry milk ramen. Cash only.",
+        "access": "Near Aomori Station (Shinmachi)"
+      }
+    ]
   },
   "津軽煮干しラーメン": {
     "summary": "Ramen from the Tsugaru region of Aomori, made with a broth packed with dried sardines (niboshi). The soup concentrates the umami and aroma of the fish, a must for seafood lovers. Styles range widely, from light and clear to intensely rich broths made with huge amounts of niboshi. Locals even eat ramen for breakfast, known as asa-ra, and some shops open early in the morning. Aomori City and Hirosaki are full of popular shops, so comparing them is fun.",
     "price": "¥700–1,000",
-    "area": "Aomori City, Hirosaki and the Tsugaru region"
+    "area": "Aomori City, Hirosaki and the Tsugaru region",
+    "shops": [
+      {
+        "name": "Takahashi Chuka Soba",
+        "query": "たかはし中華そば店 弘前",
+        "comment": "A Hirosaki shop known nationwide for its rich sardine broth.",
+        "access": "Naijoushi, Hirosaki"
+      },
+      {
+        "name": "Nagao Chuka Soba Nishi Bypass",
+        "query": "長尾中華そば 西バイパス本店",
+        "comment": "The Aomori shop that helped spread niboshi ramen across Japan.",
+        "access": "Aomori City (easiest by car)"
+      }
+    ]
   },
   "のっけ丼": {
     "summary": "A make-your-own seafood bowl at the Aomori Gyosai Center market in Aomori City. First you buy meal tickets and collect a bowl of rice, then you walk around the market stalls choosing toppings like tuna, scallops and salmon roe. You can pick a little of whatever you like, creating a bowl that is uniquely yours. It is within walking distance of Aomori Station and very popular with visitors. The market closes early, so go in the morning or at lunchtime. Choosing your toppings is half the fun.",
     "price": "¥1,500–2,500",
-    "area": "Aomori City (Aomori Gyosai Center)"
+    "area": "Aomori City (Aomori Gyosai Center)",
+    "shops": [
+      {
+        "name": "Furukawa Market (Aomori Gyosai Center)",
+        "query": "青森魚菜センター 古川市場",
+        "comment": "Use meal tickets to build your own bowl from market stalls. Closed Tuesdays.",
+        "access": "About 5 min walk from Aomori Station"
+      }
+    ]
   },
   "せんべい汁": {
     "summary": "A hot pot from the Nanbu region around Hachinohe. Special Nanbu crackers made for soup are broken into a soy sauce broth flavored with chicken or pork, burdock and mushrooms. The crackers do not dissolve as they cook, taking on a unique chewy texture. It is said to have a long history and became famous nationwide after winning the B-1 Grand Prix. A warming winter dish you can enjoy at restaurants in Hachinohe.",
     "price": "¥700–1,200",
-    "area": "Hachinohe and the Nanbu region"
+    "area": "Hachinohe and the Nanbu region",
+    "shops": [
+      {
+        "name": "Ichibatei (Hasshoku Center)",
+        "query": "いちば亭 八食センター",
+        "comment": "Try senbei-jiru and other local dishes inside Hachinohe's food market.",
+        "access": "Hasshoku Center, Hachinohe"
+      }
+    ]
   },
   "いちご煮": {
     "summary": "A clear soup of sea urchin and abalone from the Sanriku coast, including Hachinohe. Despite the name, which means strawberry stew, there is no fruit in it. The name comes from the sea urchin floating in the bowl, which looks like wild strawberries. The umami of the sea urchin and abalone melts into an elegant, clear broth. Once a fishermen's dish, it is now a luxury served at celebrations. It is also sold canned, making it a popular souvenir.",
@@ -52,12 +106,34 @@
   "大間まぐろ丼": {
     "summary": "A rice bowl of premium bluefin tuna caught by single-line fishing in Oma, at the northern tip of Honshu. Raised in the rough waters of the Tsugaru Strait, the tuna is firm and beautifully marbled. Oma tuna is famous for fetching record prices at the first auction of the year each January. Restaurants in Oma serve bowls with everything from lean akami to fatty chutoro and otoro. The season is autumn to winter. Prices vary by season and cut, so check before ordering. A once-in-a-lifetime treat.",
     "price": "¥3,000–6,000",
-    "area": "Oma"
+    "area": "Oma",
+    "shops": [
+      {
+        "name": "Oma Hamazushi",
+        "query": "大間 浜寿司",
+        "comment": "Known for sushi and bowls of top-quality Oma tuna.",
+        "access": "Oma (about 5 min by car to Cape Oma)"
+      },
+      {
+        "name": "Kaikyoso",
+        "query": "海峡荘 大間",
+        "comment": "A guesthouse dining room. Closed from early November to mid-April.",
+        "access": "Near Cape Oma"
+      }
+    ]
   },
   "弘前アップルパイ": {
     "summary": "Aomori grows more apples than any other prefecture, and in Hirosaki, at the heart of apple country, many shops make their own distinctive apple pies. Some highlight the apples' tartness, some are rich in cinnamon and others are filled with custard. Tourist information centers hand out guide maps introducing each shop's pie, so you can go on an apple pie tour. Try to visit during Hirosaki Castle's cherry blossom or autumn leaf season, and find your favorite shop.",
     "price": "¥300–600 each",
-    "area": "Hirosaki"
+    "area": "Hirosaki",
+    "shops": [
+      {
+        "name": "Angelique",
+        "query": "アンジェリック 弘前 アップルパイ",
+        "comment": "A pastry shop popular for apple pies packed with apples.",
+        "access": "About 15 min walk from Hirosaki Station"
+      }
+    ]
   },
   "南部せんべい": {
     "summary": "Crackers made from wheat flour and water, baked in round molds, famous from the Nanbu area of Aomori to northern Iwate. They have a crisp rim called mimi (ears). There are many varieties, from sesame and peanut to sweet ones, and even special crackers for simmering in soup. Their simple, gentle flavor and long shelf life make them perfect souvenirs. Locals eat them as an everyday snack. You can buy them at souvenir shops in Hachinohe and elsewhere.",
@@ -67,6 +143,14 @@
   "気になるリンゴ": {
     "summary": "An apple pie made with a whole apple by Aomori confectioner Lagnoo. The cored apple is soaked in syrup, wrapped in pastry and baked. Cut it open and a cross-section of the whole apple appears, making a striking impression. Enjoy the juicy apple with the fragrant, flaky crust. It is large, so it is best shared with family or friends. A very popular Aomori souvenir, and also delicious warmed up.",
     "price": "About ¥1,500 each",
-    "area": "Souvenir shops in Aomori Prefecture"
+    "area": "Souvenir shops in Aomori Prefecture",
+    "shops": [
+      {
+        "name": "Ragnoo Hyakkokumachi Main Store",
+        "query": "ラグノオ 百石町本店",
+        "comment": "The main store of Ragnoo, maker of Kininaru Ringo.",
+        "access": "Hyakkokumachi, Hirosaki (near Hirosaki Castle)"
+      }
+    ]
   }
 }

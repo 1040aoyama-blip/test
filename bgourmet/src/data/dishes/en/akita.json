@@ -2,17 +2,41 @@
   "横手やきそば": {
     "summary": "The local yakisoba of Yokote. It uses thick, straight boiled noodles flavored with a sweetish Worcestershire sauce. The standard toppings are minced pork and cabbage, crowned with a soft fried egg and served with fukujinzuke pickles. Break the yolk and mix it into the noodles for a mellow flavor. Born at street stalls as everyday food, it became famous nationwide after winning the B-1 Grand Prix. Many restaurants in the city serve it, so comparing them is fun.",
     "price": "¥600–900",
-    "area": "Yokote"
+    "area": "Yokote",
+    "shops": [
+      {
+        "name": "Umamidokoro Debaya",
+        "query": "旨味処 出端屋 横手",
+        "comment": "A regular at the top of Yokote yakisoba popularity rankings.",
+        "access": "About 5 min walk from Yokote Station"
+      }
+    ]
   },
   "比内地鶏親子丼": {
     "summary": "Oyakodon made with Hinai-jidori, one of Japan's three great heritage chicken breeds. The meat is firm, and the more you chew, the more flavor it releases. The chicken is simmered in dashi, bound with egg and served over rice. Rich egg and deeply flavorful chicken make a simple dish with great depth. You can try it at restaurants in Odate and Akita City, and it is popular as a station bento too. You will be surprised by how flavorful the chicken is. A must along with kiritanpo hot pot.",
     "price": "¥1,200–2,000",
-    "area": "Odate, Akita City and more"
+    "area": "Odate, Akita City and more",
+    "shops": [
+      {
+        "name": "Honke Abeya Akita",
+        "query": "本家あべや 秋田店",
+        "comment": "Run by a Hinai chicken producer. The oyakodon is the star.",
+        "access": "Area Nakaichi (about 11 min walk from Akita Station)"
+      }
+    ]
   },
   "きりたんぽ鍋": {
     "summary": "Akita's signature hot pot. Kiritanpo, mashed rice wrapped around cedar sticks and grilled, is simmered in Hinai chicken broth with burdock, Japanese parsley and maitake mushrooms. The kiritanpo soaks up the broth and becomes soft and chewy. Its roots are said to lie in food eaten by people working in the mountains. The season is autumn to winter, especially when the new rice harvest arrives. Try it at local restaurants in Akita City or Odate. A winter dish best shared with family.",
     "price": "¥1,500–3,000",
-    "area": "Odate, Akita City and more"
+    "area": "Odate, Akita City and more",
+    "shops": [
+      {
+        "name": "Honke Abeya Akita",
+        "query": "本家あべや 秋田店",
+        "comment": "Serves kiritanpo nabe made with Hinai chicken.",
+        "access": "Area Nakaichi (about 11 min walk from Akita Station)"
+      }
+    ]
   },
   "しょっつる鍋": {
     "summary": "A hot pot seasoned with shottsuru, Akita's famous fish sauce. Made by salting and fermenting fish such as hatahata (sandfish), shottsuru is counted among Japan's three great fish sauces. Hatahata and other fish are simmered with tofu, green onions and Japanese parsley, flavored with the deep umami of shottsuru. It is best in winter, during hatahata season. It has a distinctive aroma, but it mellows as it cooks. Try it at restaurants in Akita City or Oga, and taste an Akita winter.",
@@ -22,7 +46,21 @@
   "稲庭うどん": {
     "summary": "Hand-stretched dried udon from the Inaniwa district of Yuzawa, counted among Japan's three great udon. The flat, thin noodles are silky smooth, slip down easily and have just the right firmness. They are made using traditional methods that date back to the Edo period. The classic way is cold, dipped in a chilled sauce, but they are also delicious in hot broth. Try them at restaurants in Yuzawa or Akita City; dried noodles make a popular souvenir. Enjoy how smoothly they go down.",
     "price": "¥900–1,500",
-    "area": "Yuzawa, Akita City and more"
+    "area": "Yuzawa, Akita City and more",
+    "shops": [
+      {
+        "name": "Sato Yosuke Main Store",
+        "query": "佐藤養助 総本店",
+        "comment": "The main store of a long-established Inaniwa udon maker. Watch the noodles being made.",
+        "access": "Inaniwa, Yuzawa"
+      },
+      {
+        "name": "Sato Yosuke Akita",
+        "query": "佐藤養助 秋田店",
+        "comment": "Try Inaniwa udon near Akita Station.",
+        "access": "Near Akita Station (Seibu Akita B1F)"
+      }
+    ]
   },
   "いぶりがっこ": {
     "summary": "An Akita pickle of daikon radish smoked over an irori hearth and then pickled in rice bran. Gakko means pickles in the Akita dialect. It was born from the wisdom of snowy Akita winters, when daikon could not easily be dried outdoors. It has a smoky aroma and a satisfying crunch. It goes perfectly with rice or drinks, and pairing it with cream cheese is popular too. It keeps well, so it makes a good souvenir. Once you try it, you may get hooked.",
@@ -47,7 +85,15 @@
   "金萬": {
     "summary": "A baked sweet long loved in Akita, with white bean paste wrapped in a moist sponge made with honey and eggs. It is bite-size, easy to eat and gently sweet. A familiar taste for people in Akita, it has become a classic Akita souvenir. Individually wrapped versions are easy to hand out. You can buy it at Akita Station, the airport and souvenir shops. For locals it is a nostalgic taste from childhood, and it goes well with tea.",
     "price": "About ¥100 each",
-    "area": "Akita City and more"
+    "area": "Akita City and more",
+    "shops": [
+      {
+        "name": "Kinman Akita Ekimae Oyane-dori",
+        "query": "金萬 秋田駅前大屋根通り店",
+        "comment": "A directly run shop selling freshly baked kinman.",
+        "access": "Near Akita Station"
+      }
+    ]
   },
   "北秋田バター餅": {
     "summary": "A sweet from Kitaakita and nearby areas: mochi kneaded with butter, sugar and egg yolk. It stays soft and fluffy instead of hardening over time. It is said to have originally been made as portable food for matagi, traditional mountain hunters. Enjoy the gentle aroma of butter and mild sweetness. It became popular after appearing on TV and is sold at souvenir shops and roadside stations around the prefecture. Since it stays soft, it makes a good souvenir, and it is also nice lightly toasted.",

@@ -2,66 +2,254 @@
   "金沢カレー": {
     "summary": "A local curry born in Kanazawa. It features a thick, rich, dark roux that covers the rice completely on a stainless steel plate. The classic style adds shredded cabbage and a pork cutlet on top drizzled with sauce. Eating it with a fork or a spork is another Kanazawa curry trademark. The city has many specialty shops, and some chains have spread across Japan. The bold flavor makes the rice disappear fast. Some shops top it with fried shrimp instead of a cutlet.",
     "price": "¥800–1,200",
-    "area": "Kanazawa"
+    "area": "Kanazawa",
+    "shops": [
+      {
+        "name": "Curry no Champion Nonoichi",
+        "query": "カレーのチャンピオン 野々市本店",
+        "comment": "The main store of the chain said to have started Kanazawa curry.",
+        "access": "Nonoichi"
+      },
+      {
+        "name": "Turban Curry Main Store",
+        "query": "ターバンカレー 本店 広坂",
+        "comment": "A popular Kanazawa curry shop since the Showa era.",
+        "access": "Hirosaka (near Korinbo)"
+      }
+    ]
   },
   "ハントンライス": {
     "summary": "A local dish born at a Western-style restaurant in Kanazawa. Ketchup rice wrapped in a thin omelette is topped with fried white fish or shrimp, then with ketchup and tartar sauce. One theory says the name combines Hun from Hungary and thon, French for tuna. With its generous portion, it is a treat for anyone who loves Japanese-style Western food. You can find it at Western-style restaurants and cafes in Kanazawa. The combination of ketchup and tartar sauce is addictive.",
     "price": "¥900–1,300",
-    "area": "Kanazawa"
+    "area": "Kanazawa",
+    "shops": [
+      {
+        "name": "Grill Otsuka",
+        "query": "グリルオーツカ 片町",
+        "comment": "The old Western-style diner said to have created hanton rice. No reservations.",
+        "access": "Katamachi, Kanazawa"
+      },
+      {
+        "name": "No Side",
+        "query": "ノーサイド 金沢 ハントンライス",
+        "comment": "In a renovated old house; choose your fried topping.",
+        "access": "Near Kanazawa Station"
+      }
+    ]
   },
   "能登丼": {
     "summary": "A local rice bowl made in the Oku-Noto area at the tip of the Noto Peninsula. The rules say it must use Noto rice and water, feature local seafood or produce as the main ingredient, and be served in Noto tableware such as Wajima lacquerware or Suzu ware. From fresh seafood bowls to bowls with Noto beef or pork, each shop offers its own version. You can take the chopsticks home as a souvenir of your trip. Check whether shops are open before you visit, and look for it when traveling in Noto.",
     "price": "¥1,500–3,500",
-    "area": "Wajima, Suzu and Oku-Noto"
+    "area": "Wajima, Suzu and Oku-Noto",
+    "shops": [
+      {
+        "name": "Notomae Kozushi",
+        "query": "能登前 幸寿し 穴水",
+        "comment": "A sushi shop in Anamizu that has stayed open since the earthquake.",
+        "access": "Anamizu (near Noto Railway Anamizu Station)"
+      },
+      {
+        "name": "Fukuzushi",
+        "query": "福寿司 穴水 能登丼",
+        "comment": "Serves a seafood Noto-don with local fish.",
+        "access": "Anamizu"
+      }
+    ]
   },
   "じぶ煮": {
     "summary": "A signature Kanazawa dish and a classic of Kaga cuisine. Duck or chicken coated in flour is simmered in dashi and served with sudare-fu wheat gluten, shiitake and Japanese parsley. The flour seals in the meat's flavor and lightly thickens the broth. It is served with a dab of wasabi. One theory says the name comes from the jibu-jibu sound it makes while simmering. Enjoy it at Kanazawa's traditional restaurants, served in beautiful Kaga tableware. The thick broth and wasabi go together perfectly.",
     "price": "¥1,500–3,000",
-    "area": "Kanazawa"
+    "area": "Kanazawa",
+    "shops": [
+      {
+        "name": "Ryotei Otomoro",
+        "query": "大友楼 金沢",
+        "comment": "A ryotei carrying on Kaga domain cuisine since the Edo period. Book ahead.",
+        "access": "Oyamacho, Kanazawa"
+      },
+      {
+        "name": "Saryo Fumuroya",
+        "query": "茶寮 不室屋 金沢",
+        "comment": "Run by a Kaga-fu maker; try jibuni with wheat gluten.",
+        "access": "Kanazawa"
+      }
+    ]
   },
   "かぶらずし": {
     "summary": "Kanazawa's winter specialty: slices of yellowtail sandwiched between salted turnips and fermented with rice koji. A type of narezushi, it has an elegant flavor combining crisp turnip, rich yellowtail and the gentle sweetness of koji. It is an essential part of New Year meals and is made in Kanazawa homes and shops every winter. Garnishes of carrot and kelp make it colorful. Look for it at long-established shops and souvenir stores in Kanazawa during winter. Enjoy the crunchy turnip and the umami of the fish.",
     "price": "¥1,500–3,000",
-    "area": "Kanazawa"
+    "area": "Kanazawa",
+    "shops": [
+      {
+        "name": "Shijimaya Honpo",
+        "query": "四十萬谷本舗 弥生本店",
+        "comment": "A pickle maker founded in the Meiji era. A winter seasonal item.",
+        "access": "Yayoi, Kanazawa"
+      },
+      {
+        "name": "Shijimaya Honpo Anto",
+        "query": "四十萬谷本舗 百番街あんと店",
+        "comment": "A shop inside Kanazawa Station.",
+        "access": "Kanazawa Station (Hyakubangai Anto)"
+      }
+    ]
   },
   "金沢おでん": {
     "summary": "People in Kanazawa are said to eat oden all year round, not just in winter, and the city has many long-established oden restaurants. It features a clear, flavorful broth and local ingredients such as kurumabu wheat gluten rings, whelks and Kaga vegetables. In winter, kani-men, crab meat and roe packed into the shell and simmered, becomes the star. Sitting at the counter, choosing items and pairing them with sake is part of the fun. You can try it around Katamachi and Kanazawa Station. Do not miss the broth-soaked kurumabu.",
     "price": "¥150–600 per item",
-    "area": "Kanazawa"
+    "area": "Kanazawa",
+    "shops": [
+      {
+        "name": "Akadama",
+        "query": "赤玉 本店 金沢 おでん",
+        "comment": "A Kanazawa oden institution founded in the early Showa era.",
+        "access": "Katamachi, Kanazawa"
+      },
+      {
+        "name": "Miyuki",
+        "query": "おでん居酒屋 三幸 本店",
+        "comment": "A popular Katamachi spot; closes when the oden runs out.",
+        "access": "Katamachi, Kanazawa"
+      },
+      {
+        "name": "Wakaba",
+        "query": "おでん 若葉 石引",
+        "comment": "A long-loved local oden shop.",
+        "access": "Ishibiki, Kanazawa"
+      }
+    ]
   },
   "のどぐろの塩焼き": {
     "summary": "Nodoguro, named for its black throat, is a luxury fish of the Sea of Japan, officially called akamutsu. Though a white fish, it is rich in fat and is even called the toro of white fish. Simply salt-grilled, the skin turns crisp and fragrant while the flesh stays plump, filling your mouth with sweet fat. Try it at restaurants in Kanazawa and around Omicho Market. Prices vary with size and season, so check first. It is rich and melts in your mouth.",
     "price": "¥3,000–8,000",
-    "area": "Kanazawa and around"
+    "area": "Kanazawa and around",
+    "shops": [
+      {
+        "name": "Omicho Shokudo",
+        "query": "近江町食堂 金沢",
+        "comment": "A diner in Omicho Market, using fish from the market.",
+        "access": "Omicho Market"
+      },
+      {
+        "name": "Itaru",
+        "query": "いたる 本店 金沢",
+        "comment": "A popular izakaya for local fish.",
+        "access": "Kakinokibatake (near Korinbo)"
+      }
+    ]
   },
   "香箱ガニの甲羅盛り": {
     "summary": "Kobako crab is the female snow crab. It is smaller than the male, but the inner roe inside the shell and the outer eggs it carries are superb, with a deep, rich flavor. The fishing season is limited to a short period in winter, and Kanazawa locals eagerly look forward to it. The kora-mori, with meat and roe piled back into the shell, looks gorgeous. Some places serve it in oden as kani-men. No shelling required, so it is easy to eat.",
     "price": "¥2,000–5,000",
-    "area": "Kanazawa and around"
+    "area": "Kanazawa and around",
+    "shops": [
+      {
+        "name": "Omicho Shokudo",
+        "query": "近江町食堂 金沢 香箱",
+        "comment": "Serves a kobako crab bowl in season (Nov–Dec).",
+        "access": "Omicho Market"
+      },
+      {
+        "name": "Akadama",
+        "query": "赤玉 本店 金沢 カニ面",
+        "comment": "Famous in winter for kani-men oden.",
+        "access": "Katamachi, Kanazawa"
+      }
+    ]
   },
   "能登牛ステーキ": {
     "summary": "Steak of Noto beef, a brand of Japanese Black cattle raised in Ishikawa, mainly on the Noto Peninsula. It features fine marbling, melt-in-your-mouth tenderness and fat with an elegant sweetness. Because production is small, it is a rare beef that is hard to find outside the region. Steakhouses and yakiniku restaurants in Kanazawa and Noto serve it, and some offer it as sushi or sukiyaki. It is perfect for a special meal on your trip. Ask the staff to recommend how it should be cooked.",
     "price": "¥5,000–15,000",
-    "area": "Kanazawa, Noto and around"
+    "area": "Kanazawa, Noto and around",
+    "shops": [
+      {
+        "name": "Teraoka Fusha Kanazawa",
+        "query": "てらおか風舎 金沢店",
+        "comment": "A restaurant run by an old Noto butcher.",
+        "access": "Teraji, Kanazawa"
+      },
+      {
+        "name": "Steak House Nishimura",
+        "query": "ステーキハウスにしむら 金沢",
+        "comment": "A certified Noto beef steakhouse near Kenrokuen.",
+        "access": "Near Kenrokuen"
+      }
+    ]
   },
   "きんつば": {
     "summary": "A sweet of red bean paste set into squares, coated with a thin flour batter and grilled one by one. Kanazawa has a strong tea ceremony culture, and making Japanese sweets thrives here. Kanazawa's kintsuba are packed with bean paste, letting you fully enjoy the flavor of azuki beans. The fragrant thin coating and moist bean paste make a lovely contrast. They are sold at long-established confectioners and are a classic Kanazawa souvenir. Try comparing several shops.",
     "price": "¥200–300 each",
-    "area": "Kanazawa"
+    "area": "Kanazawa",
+    "shops": [
+      {
+        "name": "Kintsuba Nakataya Higashiyama",
+        "query": "きんつば中田屋 東山茶屋街店",
+        "comment": "At the entrance of Higashi Chaya; café upstairs.",
+        "access": "Higashiyama (Higashi Chaya district)"
+      },
+      {
+        "name": "Kintsuba Nakataya Kanazawa Station",
+        "query": "きんつば中田屋 金沢百番街",
+        "comment": "Buy it inside Kanazawa Station.",
+        "access": "Kanazawa Station (Hyakubangai Anto)"
+      }
+    ]
   },
   "あんころ餅": {
     "summary": "A specialty of a long-established confectioner in Matto, Hakusan: soft mochi wrapped in smooth red bean paste. It comes wrapped in bamboo sheath, and its rustic look is part of the charm. Bite-sized and easy to eat, it offers the refined sweetness of the paste and the softness of the mochi. It is said to have been enjoyed by travelers on the Hokuriku Highway since the Edo period. It is also sold at Kanazawa Station and souvenir shops. It does not keep long, so eat it soon.",
     "price": "¥500–1,000",
-    "area": "Hakusan and around"
+    "area": "Hakusan and around",
+    "shops": [
+      {
+        "name": "Enpachi Main Store",
+        "query": "圓八 本店 白山",
+        "comment": "An anko-mochi maker of over 270 years.",
+        "access": "Narimachi, Hakusan"
+      },
+      {
+        "name": "Enpachi Kanazawa Station",
+        "query": "圓八 あんころ 金沢駅",
+        "comment": "Sold at Kanazawa Station's souvenir area.",
+        "access": "Kanazawa Station"
+      }
+    ]
   },
   "金箔ソフトクリーム": {
     "summary": "Kanazawa produces almost all of Japan's gold leaf. This soft serve ice cream is covered with a whole sheet of it, making it a truly lavish-looking sweet. The gold leaf itself has no taste, but its glittering look makes a huge impression, and it is hugely popular with tourists for photos. It is sold in sightseeing areas such as the Higashi Chaya District. Some gold leaf craft shops even let you try applying gold leaf yourself. Try it at least once as a souvenir of your walk around Kanazawa.",
     "price": "¥800–1,000",
-    "area": "Higashi Chaya District and around, Kanazawa"
+    "area": "Higashi Chaya District and around, Kanazawa",
+    "shops": [
+      {
+        "name": "Hakuichi Higashiyama",
+        "query": "箔一 東山店",
+        "comment": "Originator of the soft serve topped with a whole sheet of gold leaf.",
+        "access": "Higashiyama (Higashi Chaya district)"
+      },
+      {
+        "name": "Kinpakuya Sakuda",
+        "query": "金箔屋さくだ 東山",
+        "comment": "A gold leaf shop in the Higashi Chaya district.",
+        "access": "Higashiyama, Kanazawa"
+      }
+    ]
   },
   "五色生菓子": {
     "summary": "A traditional celebratory sweet of Kanazawa, said to have been first made for a wedding in the ruling Maeda family of the Kaga domain. The five kinds of fresh sweets represent the sun, the moon, the mountains, the sea and the village. In Kanazawa they are still given as gifts for weddings and celebrations. Their colorful look reflects the elegant culture of Kaga. They are usually made to order at confectioners, though sometimes available in stores. They show the depth of Kanazawa's sweets culture.",
     "price": "¥2,000–4,000",
-    "area": "Kanazawa"
+    "area": "Kanazawa",
+    "shops": [
+      {
+        "name": "Koshiyama Kanseido",
+        "query": "越山甘清堂 金沢",
+        "comment": "A confectioner founded in the Meiji era; order ahead and pick up.",
+        "access": "Musashimachi, Kanazawa"
+      },
+      {
+        "name": "Nakazaki Namagashiten",
+        "query": "なかざき生菓子店 金沢",
+        "comment": "A fresh sweets shop of over 80 years.",
+        "access": "Kanazawa"
+      }
+    ]
   }
 }

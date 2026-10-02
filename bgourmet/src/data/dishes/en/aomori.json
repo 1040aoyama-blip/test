@@ -9,6 +9,12 @@
         "query": "司バラ焼き大衆食堂 十和田",
         "comment": "A popular barayaki spot loved by locals and tourists alike.",
         "access": "Near the Towada Art Center"
+      },
+      {
+        "name": "Daishoen",
+        "query": "大昌園 十和田",
+        "comment": "A long-running yakiniku shop with barayaki and plenty of offal cuts. Closed Wednesdays.",
+        "access": "Inaoicho, central Towada"
       }
     ]
   },
@@ -22,6 +28,12 @@
         "query": "黒石やきそば専門店 すずのや",
         "comment": "Serves tsuyu yakisoba recreating the taste of the original shop.",
         "access": "Nakamachi Komise-dori, Kuroishi"
+      },
+      {
+        "name": "Oshokujidokoro Myoko",
+        "query": "お食事処 妙光 黒石",
+        "comment": "Known for its tsuyu yakisoba recreating the original shop's taste.",
+        "access": "Motomachi, Kuroishi"
       }
     ]
   },
@@ -35,6 +47,12 @@
         "query": "味の札幌 大西 青森",
         "comment": "A popular shop carrying on the original miso curry milk ramen. Cash only.",
         "access": "Near Aomori Station (Shinmachi)"
+      },
+      {
+        "name": "Aji no Sapporo Asari",
+        "query": "味の札幌 浅利 青森",
+        "comment": "A small counter-only shop descended from the original. Lunch only, closed Mondays.",
+        "access": "About 5 min walk from Aomori Station (Shinmachi)"
       }
     ]
   },
@@ -67,6 +85,12 @@
         "query": "青森魚菜センター 古川市場",
         "comment": "Use meal tickets to build your own bowl from market stalls. Closed Tuesdays.",
         "access": "About 5 min walk from Aomori Station"
+      },
+      {
+        "name": "Mutsuminato Station Morning Market",
+        "query": "陸奥湊駅前朝市 八戸市営魚菜小売市場",
+        "comment": "Buy sashimi and sides in the market and eat them with rice. Mornings only, closed Sundays.",
+        "access": "In front of Mutsu-Minato Station, Hachinohe"
       }
     ]
   },
@@ -80,28 +104,90 @@
         "query": "いちば亭 八食センター",
         "comment": "Try senbei-jiru and other local dishes inside Hachinohe's food market.",
         "access": "Hasshoku Center, Hachinohe"
+      },
+      {
+        "name": "Nanbu Mingei Ryori Kura",
+        "query": "南部民芸料理 蔵 八戸",
+        "comment": "Serves Hachinohe dishes such as senbei-jiru and ichigo-ni.",
+        "access": "About 10 min walk from Hon-Hachinohe Station"
       }
     ]
   },
   "いちご煮": {
     "summary": "A clear soup of sea urchin and abalone from the Sanriku coast, including Hachinohe. Despite the name, which means strawberry stew, there is no fruit in it. The name comes from the sea urchin floating in the bowl, which looks like wild strawberries. The umami of the sea urchin and abalone melts into an elegant, clear broth. Once a fishermen's dish, it is now a luxury served at celebrations. It is also sold canned, making it a popular souvenir.",
     "price": "¥1,500–3,000",
-    "area": "Hachinohe and more"
+    "area": "Hachinohe and more",
+    "shops": [
+      {
+        "name": "Nanbu Mingei Ryori Kura",
+        "query": "南部民芸料理 蔵 八戸",
+        "comment": "A regional cuisine restaurant serving ichigo-ni.",
+        "access": "About 10 min walk from Hon-Hachinohe Station"
+      },
+      {
+        "name": "Kikunosato Tsuzumi",
+        "query": "菊乃里 鼓 八戸",
+        "comment": "Serves ichigo-ni and other local dishes in central Hachinohe.",
+        "access": "About 5 min walk from Hon-Hachinohe Station"
+      }
+    ]
   },
   "貝焼き味噌": {
     "summary": "A large scallop shell is used as a pot to simmer scallops and green onions in miso, finished with beaten egg. This traditional dish from the Tsugaru and Shimokita regions is also called kayaki miso. The umami from the shell, the miso and the egg blend into a mellow flavor that is irresistible over rice. It was long eaten as nourishing food when someone was feeling unwell. You can enjoy it at izakaya and local restaurants in Aomori City. It also pairs nicely with sake.",
     "price": "¥700–1,200",
-    "area": "Aomori City, Tsugaru and Shimokita regions"
+    "area": "Aomori City, Tsugaru and Shimokita regions",
+    "shops": [
+      {
+        "name": "Tsugaruji Yasaburo",
+        "query": "津軽路 弥三郎 弘前",
+        "comment": "A regional cuisine restaurant popular for its original kaiyaki miso.",
+        "access": "Hirosaki"
+      },
+      {
+        "name": "Kyodo Dining Shibiyama",
+        "query": "郷土ダイニング 鮪山 弘前",
+        "comment": "Offers a regional set including kaiyaki miso and ke-no-shiru.",
+        "access": "Hirosaki"
+      }
+    ]
   },
   "けの汁": {
     "summary": "A Tsugaru dish of finely chopped daikon, carrot, burdock, fern shoots and freeze-dried tofu simmered in miso. The ingredients are cut to about the size of rice grains, and the name is said to come from kayu no shiru, porridge soup. It is traditionally made for Little New Year in mid-January, cooked in large batches and reheated over several days. It has a simple, gentle flavor full of vegetable goodness. It lives on as home cooking and can also be found at local restaurants.",
     "price": "¥500–900",
-    "area": "Hirosaki and the Tsugaru region"
+    "area": "Hirosaki and the Tsugaru region",
+    "shops": [
+      {
+        "name": "Kikufuji Main Store",
+        "query": "菊富士 本店 弘前",
+        "comment": "A regional cuisine restaurant in business for over half a century.",
+        "access": "Central Hirosaki"
+      },
+      {
+        "name": "Aiya",
+        "query": "津軽三味線居酒屋 あいや 弘前",
+        "comment": "Enjoy regional dishes with live Tsugaru shamisen music.",
+        "access": "Tomita, Hirosaki"
+      }
+    ]
   },
   "鱈のじゃっぱ汁": {
     "summary": "A soup that uses every part of the winter cod, not just the flesh but also the head, bones and innards, known locally as jappa. It is simmered with vegetables like daikon and green onions and seasoned with miso or salt. The rich stock from the bones warms you to the core, a true snow country dish. Along Aomori's Sea of Japan coast and Mutsu Bay, families make it during the winter cod season. If you visit Aomori in winter, try this seasonal taste at an izakaya or local restaurant.",
     "price": "¥800–1,500",
-    "area": "Ajigasawa, Mutsu Bay coast and more"
+    "area": "Ajigasawa, Mutsu Bay coast and more",
+    "shops": [
+      {
+        "name": "Tsugaru Joppari Isariya Sakaba",
+        "query": "津軽じょっぱり漁屋酒場 青森",
+        "comment": "An izakaya with Aomori sake, regional dishes and local seafood; jappa-jiru in winter.",
+        "access": "Honcho, Aomori City"
+      },
+      {
+        "name": "Kyodo Dining Shibiyama",
+        "query": "郷土ダイニング 鮪山 弘前",
+        "comment": "A Hirosaki restaurant serving Tsugaru regional dishes.",
+        "access": "Hirosaki"
+      }
+    ]
   },
   "大間まぐろ丼": {
     "summary": "A rice bowl of premium bluefin tuna caught by single-line fishing in Oma, at the northern tip of Honshu. Raised in the rough waters of the Tsugaru Strait, the tuna is firm and beautifully marbled. Oma tuna is famous for fetching record prices at the first auction of the year each January. Restaurants in Oma serve bowls with everything from lean akami to fatty chutoro and otoro. The season is autumn to winter. Prices vary by season and cut, so check before ordering. A once-in-a-lifetime treat.",
@@ -132,13 +218,39 @@
         "query": "アンジェリック 弘前 アップルパイ",
         "comment": "A pastry shop popular for apple pies packed with apples.",
         "access": "About 15 min walk from Hirosaki Station"
+      },
+      {
+        "name": "Taisho Roman Kissashitsu",
+        "query": "大正浪漫喫茶室 弘前",
+        "comment": "A cafe where you can compare apple pies from shops across the city.",
+        "access": "Inside Fujita Memorial Garden (near Hirosaki Castle)"
+      },
+      {
+        "name": "Tamura Farm",
+        "query": "タムラファーム 弘前",
+        "comment": "Popular for apple pies made with kogyoku apples from its own orchard.",
+        "access": "Hirosaki"
       }
     ]
   },
   "南部せんべい": {
     "summary": "Crackers made from wheat flour and water, baked in round molds, famous from the Nanbu area of Aomori to northern Iwate. They have a crisp rim called mimi (ears). There are many varieties, from sesame and peanut to sweet ones, and even special crackers for simmering in soup. Their simple, gentle flavor and long shelf life make them perfect souvenirs. Locals eat them as an everyday snack. You can buy them at souvenir shops in Hachinohe and elsewhere.",
     "price": "¥300–800",
-    "area": "Hachinohe and the Nanbu region"
+    "area": "Hachinohe and the Nanbu region",
+    "shops": [
+      {
+        "name": "Oyamada Senbei",
+        "query": "小山田せんべい 三戸",
+        "comment": "A nanbu senbei maker in business for over 100 years.",
+        "access": "Sannohe"
+      },
+      {
+        "name": "Nanbu Senbei Honpo Hachinoheya",
+        "query": "南部せんべい本舗 八戸屋",
+        "comment": "Offers many kinds of nanbu senbei, including butter senbei.",
+        "access": "Mutsu"
+      }
+    ]
   },
   "気になるリンゴ": {
     "summary": "An apple pie made with a whole apple by Aomori confectioner Lagnoo. The cored apple is soaked in syrup, wrapped in pastry and baked. Cut it open and a cross-section of the whole apple appears, making a striking impression. Enjoy the juicy apple with the fragrant, flaky crust. It is large, so it is best shared with family or friends. A very popular Aomori souvenir, and also delicious warmed up.",
@@ -150,6 +262,12 @@
         "query": "ラグノオ 百石町本店",
         "comment": "The main store of Ragnoo, maker of Kininaru Ringo.",
         "access": "Hyakkokumachi, Hirosaki (near Hirosaki Castle)"
+      },
+      {
+        "name": "Ragnoo Shin-Aomori Station",
+        "query": "ラグノオ 新青森駅 あおもり旬味館",
+        "comment": "Buy Kininaru Ringo right at the shinkansen station.",
+        "access": "Shin-Aomori Station"
       }
     ]
   }

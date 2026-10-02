@@ -72,6 +72,18 @@
         "query": "函館麺厨房あじさい 本店",
         "comment": "A leading Hakodate shop known for its clear salt broth.",
         "access": "Near Goryokaku Tower"
+      },
+      {
+        "name": "Jiyoken",
+        "query": "滋養軒 函館",
+        "comment": "A long-established shop with clear broth and house-made noodles.",
+        "access": "Near Hakodate Station"
+      },
+      {
+        "name": "Hakodate Menya Ichimonji",
+        "query": "函館麺や 一文字 函館本店",
+        "comment": "Popular for offering both light and rich salt ramen.",
+        "access": "Near Yunokawa Onsen (Yukawacho)"
       }
     ]
   },
@@ -148,13 +160,33 @@
         "query": "金大亭 石狩",
         "comment": "The long-established restaurant said to have created ishikari nabe. Reservation only.",
         "access": "Ishikari (about 40 min by car from Sapporo)"
+      },
+      {
+        "name": "Kyodo Ryori Oga",
+        "query": "郷土料理 おが 札幌",
+        "comment": "Serves Hokkaido regional dishes like ishikari nabe and chan-chan yaki.",
+        "access": "About 3 min walk from Susukino Station"
       }
     ]
   },
   "鮭のチャンチャン焼き": {
     "summary": "A fishing-town dish of salmon fillets and vegetables such as cabbage, onion and carrot, steam-grilled on an iron plate with miso sauce. Once cooked, you flake the salmon and mix it with the vegetables as you eat. Theories about the name include that it can be made quickly (chatto) or that it was cooked by dad (chan). Adding butter makes it even richer. It is a staple at home and at barbecues in Hokkaido, and you will often find it at izakaya too.",
     "price": "¥1,000–2,000",
-    "area": "All over Hokkaido"
+    "area": "All over Hokkaido",
+    "shops": [
+      {
+        "name": "Kyodo Ryori Oga",
+        "query": "郷土料理 おが 札幌",
+        "comment": "A regional cuisine restaurant serving chan-chan yaki.",
+        "access": "About 3 min walk from Susukino Station"
+      },
+      {
+        "name": "Uodoraku",
+        "query": "魚道楽 札幌 二条市場",
+        "comment": "Serves chan-chan yaki with house-made miso.",
+        "access": "Next to Nijo Market"
+      }
+    ]
   },
   "いかめし": {
     "summary": "Squid stuffed with glutinous and regular rice and simmered in a sweet soy sauce. It is famous as an ekiben (station bento) from Mori Station on the Hakodate Line, and is said to have been created during wartime food shortages as a way to fill people up with less rice. The chewy rice soaks up the squid's flavor and the aroma of soy sauce. It is a favorite at station bento fairs across Japan and a classic Hokkaido souvenir. It is best warmed up before eating.",
@@ -166,13 +198,33 @@
         "query": "柴田商店 森駅",
         "comment": "Sells Mori Station's famous ikameshi all year round.",
         "access": "In front of Mori Station"
+      },
+      {
+        "name": "Michi no Eki You Yu Mori",
+        "query": "道の駅 YOU・遊・もり",
+        "comment": "A roadside station selling ikameshi with other Mori specialties.",
+        "access": "About 6 min by car from Mori Station"
       }
     ]
   },
   "松前漬": {
     "summary": "A Hokkaido specialty of thinly sliced dried squid and kelp marinated in soy sauce, sake and mirin. The kelp releases a silky stickiness and umami, while the squid gives a pleasant chew. The name is said to come from the Matsumae domain, a source of kelp and dried squid in the Edo period. Luxurious versions include herring roe, and it is a popular New Year dish. It goes perfectly with rice or drinks and keeps well, making it a popular Hokkaido souvenir.",
     "price": "¥500–1,500",
-    "area": "All over Hokkaido (famous around Hakodate)"
+    "area": "All over Hokkaido (famous around Hakodate)",
+    "shops": [
+      {
+        "name": "Michi no Eki Kitamaebune Matsumae",
+        "query": "道の駅 北前船 松前",
+        "comment": "A roadside station in Matsumae itself, where you can sample and compare many kinds.",
+        "access": "Matsumae (about 2 hours by car from Hakodate)"
+      },
+      {
+        "name": "Hakodate Morning Market",
+        "query": "函館朝市",
+        "comment": "Lined with seafood shops, many of which sell matsumae-zuke.",
+        "access": "Near Hakodate Station"
+      }
+    ]
   },
   "いくら丼": {
     "summary": "A rice bowl topped generously with ikura, salmon roe separated and marinated in soy sauce. The roe pops in your mouth and releases a rich, creamy flavor. Autumn, when salmon are caught, is the season for fresh raw ikura. The classic place to eat it is at a market diner, such as Hakodate Morning Market or Sapporo's Nijo Market, and bowls combined with sea urchin or crab are also popular. Prices vary by season and shop, so check before you order.",
@@ -184,6 +236,12 @@
         "query": "きくよ食堂 本店 函館朝市",
         "comment": "A long-running seafood bowl shop in the Hakodate Morning Market. Opens early.",
         "access": "Hakodate Morning Market (near Hakodate Station)"
+      },
+      {
+        "name": "Asaichi no Ajidokoro Chamu",
+        "query": "朝市の味処 茶夢 函館",
+        "comment": "A popular Morning Market eatery using house-marinated salmon roe.",
+        "access": "Donburi Yokocho, Morning Market (1 min walk from Hakodate Station)"
       }
     ]
   },
@@ -216,6 +274,12 @@
         "query": "白い恋人パーク",
         "comment": "A factory park with tours and sweets-making workshops.",
         "access": "Nishi Ward, Sapporo (near Miyanosawa Station)"
+      },
+      {
+        "name": "New Chitose Airport (Domestic Terminal)",
+        "query": "新千歳空港 国内線ターミナル",
+        "comment": "Full of souvenir shops, making it easy to pick up Shiroi Koibito on the way home.",
+        "access": "New Chitose Airport"
       }
     ]
   },
@@ -229,6 +293,12 @@
         "query": "六花亭 帯広本店",
         "comment": "Rokkatei's main store, with a cafe serving store-only treats.",
         "access": "Near Obihiro Station"
+      },
+      {
+        "name": "Rokkatei Sapporo Main Store",
+        "query": "六花亭 札幌本店",
+        "comment": "A large store near Sapporo Station, with a cafe upstairs serving store-only treats.",
+        "access": "About 3 min walk from Sapporo Station"
       }
     ]
   },
@@ -242,6 +312,12 @@
         "query": "柳月スイートピア・ガーデン",
         "comment": "Watch the factory where sanpouroku is made and enjoy the cafe.",
         "access": "Otofuke (about 20 min by car from Obihiro)"
+      },
+      {
+        "name": "New Chitose Airport (Domestic Terminal)",
+        "query": "新千歳空港 国内線ターミナル",
+        "comment": "Pick up Ryugetsu's sanpouroku at the airport souvenir shops.",
+        "access": "New Chitose Airport"
       }
     ]
   }

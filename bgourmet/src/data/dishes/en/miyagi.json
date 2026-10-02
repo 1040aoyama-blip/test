@@ -34,6 +34,12 @@
         "query": "大衆食堂 つか勇 登米",
         "comment": "An old-style diner serving Tome's local specialties.",
         "access": "Toyoma, Tome (near the Miyagi Meiji-mura area)"
+      },
+      {
+        "name": "Ajidokoro Mon",
+        "query": "味処もん 登米",
+        "comment": "Known as the birthplace of aburafu-don.",
+        "access": "Teraike Sakurakoji, Toyoma, Tome"
       }
     ]
   },
@@ -46,6 +52,12 @@
         "name": "Horumon Ikkyu",
         "query": "ホルモン一休 気仙沼",
         "comment": "A yakiniku restaurant serving Kesennuma horumon.",
+        "access": "Kesennuma"
+      },
+      {
+        "name": "Yakiniku Kuriko",
+        "query": "焼肉くりこ 気仙沼",
+        "comment": "The long-running restaurant where Kesennuma horumon began.",
         "access": "Kesennuma"
       }
     ]
@@ -60,6 +72,12 @@
         "query": "旬魚・鮨の店 あら浜 亘理店",
         "comment": "Known for harako-meshi, served only in autumn (September to early December).",
         "access": "Arahama, Watari"
+      },
+      {
+        "name": "Gyotei Hamaya (S-PAL Sendai)",
+        "query": "漁亭 浜や エスパル仙台",
+        "comment": "Serves seasonal rice dishes: harako-meshi in autumn, hokki-meshi in spring.",
+        "access": "S-PAL Sendai, connected to Sendai Station"
       }
     ]
   },
@@ -73,18 +91,52 @@
         "query": "阿部蒲鉾店 本店 仙台",
         "comment": "The long-established shop said to have named sasa kamaboko.",
         "access": "Clis Road arcade (about 10 min walk from Sendai Station)"
+      },
+      {
+        "name": "Kanezaki Sasakama-kan",
+        "query": "鐘崎 笹かま館",
+        "comment": "Offers factory tours and hands-on sasa kamaboko grilling.",
+        "access": "Wakabayashi Ward (about 20 min by car from Sendai Station)"
       }
     ]
   },
   "白石温麺": {
     "summary": "A specialty of Shiroishi: short noodles about 9 cm long. They are made without oil, so they taste light and are easy to digest. Legend says that in the Edo period, a son learned how to make noodles without oil for his father, who suffered from stomach trouble. The name umen is said to reflect the warmth (on) of that kindness. They are delicious in hot or cold broth and easy for everyone from children to the elderly to eat.",
     "price": "¥600–900",
-    "area": "Shiroishi"
+    "area": "Shiroishi",
+    "shops": [
+      {
+        "name": "Tsuriganean",
+        "query": "白石温麺 つりがね庵",
+        "comment": "A umen specialty restaurant on the grounds of a noodle maker.",
+        "access": "About 8 min walk from Shiroishi Station"
+      },
+      {
+        "name": "Kantoya",
+        "query": "関東家 白石",
+        "comment": "A local eatery in Shiroishi serving umen.",
+        "access": "Shiroishi"
+      }
+    ]
   },
   "ホヤの酢の物": {
     "summary": "Hoya, or sea squirt, is a knobbly sea creature nicknamed the pineapple of the sea. Miyagi is one of Japan's main producers, with active farming along the Sanriku coast. The classic way to eat the orange flesh is in a vinegared salad with cucumber. It is said to have all five tastes: sweet, bitter, salty, sour and umami, along with a distinctive briny aroma. The fresher it is, the milder it tastes, so try it in summer near where it is farmed. Locals also enjoy it with sake.",
     "price": "¥500–1,000",
-    "area": "Ishinomaki, Kesennuma and more"
+    "area": "Ishinomaki, Kesennuma and more",
+    "shops": [
+      {
+        "name": "Mabo-ya (Sendai Ekimae)",
+        "query": "ほや&純米酒場 まぼ屋 仙台駅前店",
+        "comment": "A hoya specialist serving sea squirt shipped straight from the coast.",
+        "access": "Near Sendai Station"
+      },
+      {
+        "name": "Guzuramozura",
+        "query": "居酒屋 ぐずらもずら 仙台",
+        "comment": "An izakaya with hoya sashimi, vinegared hoya and more.",
+        "access": "Near Sendai Station"
+      }
+    ]
   },
   "ほっきめし": {
     "summary": "Rice cooked with surf clams, a specialty of Yamamoto and Watari in southern Miyagi. The rice is cooked in the clam simmering broth and topped with the clams. The sweetness of the clams and the umami of the broth soak into every grain. The season is winter to spring, and you can try it at local restaurants. Along with autumn's harako-meshi, it is a local dish that lets you taste the bounty of Miyagi's sea. The clams have a pleasant chew too.",
@@ -96,6 +148,12 @@
         "query": "旬魚・鮨の店 あら浜 亘理店",
         "comment": "Serves seasonal mixed rice dishes, including hokki-meshi.",
         "access": "Arahama, Watari"
+      },
+      {
+        "name": "Gyotei Hamaya (S-PAL Sendai)",
+        "query": "漁亭 浜や エスパル仙台",
+        "comment": "Serves hokki-meshi in spring. Handy, right by the station.",
+        "access": "S-PAL Sendai, connected to Sendai Station"
       }
     ]
   },
@@ -128,6 +186,12 @@
         "query": "菓匠三全 広瀬通り大町本店",
         "comment": "The main store of Kasho Sanzen, maker of Hagi no Tsuki.",
         "access": "Hirose-dori, Aoba Ward, Sendai"
+      },
+      {
+        "name": "Kasho Sanzen (Sendai Station 2F)",
+        "query": "菓匠三全 仙台駅",
+        "comment": "A station shop, handy before boarding the shinkansen.",
+        "access": "Sendai Station 2F"
       }
     ]
   },
@@ -141,6 +205,12 @@
         "query": "喜久水庵 仙台駅",
         "comment": "Buy kikufuku, made by a tea merchant, right in the station.",
         "access": "Sendai Station 2F"
+      },
+      {
+        "name": "Ochanoigeta Sendai Chuo Main Store",
+        "query": "お茶の井ヶ田 仙台中央本店",
+        "comment": "The main store of the tea merchant behind kikufuku.",
+        "access": "Clis Road arcade (about 10 min walk from Sendai Station)"
       }
     ]
   },
@@ -154,6 +224,12 @@
         "query": "ずんだ茶寮 仙台駅",
         "comment": "The go-to spot for zunda shakes. Easy to stop by before the shinkansen.",
         "access": "Inside Sendai Station"
+      },
+      {
+        "name": "Kikusuian Zunda Stand",
+        "query": "喜久水庵 ずんだスタンド tekute",
+        "comment": "A tea merchant's zunda sweets stand, perfect for snacking on the go.",
+        "access": "tekute Sendai (Sendai Station 1F)"
       }
     ]
   }

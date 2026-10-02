@@ -9,6 +9,12 @@
         "query": "旨味処 出端屋 横手",
         "comment": "A regular at the top of Yokote yakisoba popularity rankings.",
         "access": "About 5 min walk from Yokote Station"
+      },
+      {
+        "name": "Fujiharu Shokudo",
+        "query": "藤春食堂 横手",
+        "comment": "A regular among Yokote's top four yakisoba shops. Yakisoba only, lunchtime only.",
+        "access": "Oya-shinmachi, Yokote (near Yanagita Station)"
       }
     ]
   },
@@ -22,6 +28,12 @@
         "query": "本家あべや 秋田店",
         "comment": "Run by a Hinai chicken producer. The oyakodon is the star.",
         "access": "Area Nakaichi (about 11 min walk from Akita Station)"
+      },
+      {
+        "name": "Akita Kiritanpoya Ekimae",
+        "query": "秋田きりたんぽ屋 駅前本店",
+        "comment": "Offers a wide range of Akita dishes, including ones with Hinai chicken.",
+        "access": "Near Akita Station"
       }
     ]
   },
@@ -35,13 +47,33 @@
         "query": "本家あべや 秋田店",
         "comment": "Serves kiritanpo nabe made with Hinai chicken.",
         "access": "Area Nakaichi (about 11 min walk from Akita Station)"
+      },
+      {
+        "name": "Akita Kiritanpoya Ekimae",
+        "query": "秋田きりたんぽ屋 駅前本店",
+        "comment": "As the name says, kiritanpo nabe is the star of this regional restaurant.",
+        "access": "Near Akita Station"
       }
     ]
   },
   "しょっつる鍋": {
     "summary": "A hot pot seasoned with shottsuru, Akita's famous fish sauce. Made by salting and fermenting fish such as hatahata (sandfish), shottsuru is counted among Japan's three great fish sauces. Hatahata and other fish are simmered with tofu, green onions and Japanese parsley, flavored with the deep umami of shottsuru. It is best in winter, during hatahata season. It has a distinctive aroma, but it mellows as it cooks. Try it at restaurants in Akita City or Oga, and taste an Akita winter.",
     "price": "¥1,500–3,000",
-    "area": "Akita City, Oga and more"
+    "area": "Akita City, Oga and more",
+    "shops": [
+      {
+        "name": "Akita Kiritanpoya Ekimae",
+        "query": "秋田きりたんぽ屋 駅前本店",
+        "comment": "Also serves Akita fish dishes such as sandfish.",
+        "access": "Near Akita Station"
+      },
+      {
+        "name": "Akita Banya Sakaba",
+        "query": "秋田番屋酒場",
+        "comment": "An izakaya serving seasonal fish from the Oga Peninsula and Akita dishes.",
+        "access": "Near Akita Station"
+      }
+    ]
   },
   "稲庭うどん": {
     "summary": "Hand-stretched dried udon from the Inaniwa district of Yuzawa, counted among Japan's three great udon. The flat, thin noodles are silky smooth, slip down easily and have just the right firmness. They are made using traditional methods that date back to the Edo period. The classic way is cold, dipped in a chilled sauce, but they are also delicious in hot broth. Try them at restaurants in Yuzawa or Akita City; dried noodles make a popular souvenir. Enjoy how smoothly they go down.",
@@ -65,22 +97,78 @@
   "いぶりがっこ": {
     "summary": "An Akita pickle of daikon radish smoked over an irori hearth and then pickled in rice bran. Gakko means pickles in the Akita dialect. It was born from the wisdom of snowy Akita winters, when daikon could not easily be dried outdoors. It has a smoky aroma and a satisfying crunch. It goes perfectly with rice or drinks, and pairing it with cream cheese is popular too. It keeps well, so it makes a good souvenir. Once you try it, you may get hooked.",
     "price": "¥500–1,000",
-    "area": "All over Akita"
+    "area": "All over Akita",
+    "shops": [
+      {
+        "name": "Akita Prefectural Products Plaza Akitano",
+        "query": "秋田県産品プラザ あきたの",
+        "comment": "About 4,000 Akita products, including many kinds of iburigakko.",
+        "access": "About 5 min walk from Akita Station (Atorion B1F)"
+      },
+      {
+        "name": "Omiyagedokoro Komachien (Akita Station)",
+        "query": "おみやげ処 こまち園 秋田駅",
+        "comment": "Buy many kinds of iburigakko inside the station.",
+        "access": "Akita Station 2F"
+      }
+    ]
   },
   "だまこ鍋": {
     "summary": "A hot pot of damako, balls of mashed rice, simmered in chicken broth with burdock, maitake mushrooms, green onions and Japanese parsley. It is similar to kiritanpo hot pot, but the rice is rolled into balls rather than wrapped on sticks. It is a home-style dish loved in central Akita, including Gojome, and the damako soak up the broth and turn soft and chewy. Made from the new rice season through winter, it is a warm taste of Akita home cooking that heats you to the core.",
     "price": "¥1,000–2,000",
-    "area": "Gojome and central Akita"
+    "area": "Gojome and central Akita",
+    "shops": [
+      {
+        "name": "Akita Kiritanpoya Ekimae",
+        "query": "秋田きりたんぽ屋 駅前本店",
+        "comment": "A regional restaurant with Akita's hot pots.",
+        "access": "Near Akita Station"
+      },
+      {
+        "name": "Toppin Parari no Pu",
+        "query": "とっぴんぱらりのぷ 秋田",
+        "comment": "Enjoy Akita ingredients like Hinai chicken and sandfish with local sake.",
+        "access": "Near Akita Station"
+      }
+    ]
   },
   "ハタハタ寿し": {
     "summary": "A type of narezushi, fermented sushi, made by layering hatahata, Akita's prefectural fish, with rice, koji and vegetables such as carrot. It has long been made at home in Akita as a New Year dish. Fermentation gives it a distinctive tang and umami, and the fish becomes soft right down to the bones. It is a preserved food unique to Akita, where hatahata are caught in large numbers in early winter. You can find it at local supermarkets, markets and souvenir shops, mainly in winter.",
     "price": "¥1,000–2,000",
-    "area": "Oga, Akita City and more"
+    "area": "Oga, Akita City and more",
+    "shops": [
+      {
+        "name": "Akita Prefectural Products Plaza Akitano",
+        "query": "秋田県産品プラザ あきたの",
+        "comment": "About 4,000 Akita products under one roof; a good first stop for local foods.",
+        "access": "About 5 min walk from Akita Station (Atorion B1F)"
+      },
+      {
+        "name": "Toppin Parari no Pu",
+        "query": "とっぴんぱらりのぷ 秋田",
+        "comment": "Serves Akita fish such as sandfish.",
+        "access": "Near Akita Station"
+      }
+    ]
   },
   "ババヘラアイス": {
     "summary": "Pink and yellow ice cream sold under parasols along Akita's roadsides. The name comes from the older women (baba) who scoop it with a spatula (hera). The highlight is watching them skillfully shape it into a rose. The strawberry and banana flavors are light and refreshing, close to sherbet. You will find it mainly in summer at tourist spots, along roads and at events. If you spot one, pull over and try it. It makes a lovely summer memory.",
     "price": "About ¥300",
-    "area": "Akita (along roads, mainly in summer)"
+    "area": "Akita (along roads, mainly in summer)",
+    "shops": [
+      {
+        "name": "Akita Marugoto Ichiba",
+        "query": "秋田まるごと市場",
+        "comment": "A market where you can buy babahera ice all year.",
+        "access": "Oroshimachi, Akita City"
+      },
+      {
+        "name": "Michi no Eki Akita Port (Selion)",
+        "query": "道の駅 あきた港 セリオン",
+        "comment": "Serves babahera soft serve. Not sold November to March.",
+        "access": "Akita Port"
+      }
+    ]
   },
   "金萬": {
     "summary": "A baked sweet long loved in Akita, with white bean paste wrapped in a moist sponge made with honey and eggs. It is bite-size, easy to eat and gently sweet. A familiar taste for people in Akita, it has become a classic Akita souvenir. Individually wrapped versions are easy to hand out. You can buy it at Akita Station, the airport and souvenir shops. For locals it is a nostalgic taste from childhood, and it goes well with tea.",
@@ -92,12 +180,32 @@
         "query": "金萬 秋田駅前大屋根通り店",
         "comment": "A directly run shop selling freshly baked kinman.",
         "access": "Near Akita Station"
+      },
+      {
+        "name": "Kinman (Topico)",
+        "query": "金萬 トピコ",
+        "comment": "A directly run shop in the Akita Station building.",
+        "access": "Topico, Akita Station building"
       }
     ]
   },
   "北秋田バター餅": {
     "summary": "A sweet from Kitaakita and nearby areas: mochi kneaded with butter, sugar and egg yolk. It stays soft and fluffy instead of hardening over time. It is said to have originally been made as portable food for matagi, traditional mountain hunters. Enjoy the gentle aroma of butter and mild sweetness. It became popular after appearing on TV and is sold at souvenir shops and roadside stations around the prefecture. Since it stays soft, it makes a good souvenir, and it is also nice lightly toasted.",
     "price": "¥300–600",
-    "area": "Kitaakita and more"
+    "area": "Kitaakita and more",
+    "shops": [
+      {
+        "name": "Michi no Eki Takanosu",
+        "query": "道の駅たかのす",
+        "comment": "A roadside station stocking local butter mochi.",
+        "access": "Takanosu, Kitaakita"
+      },
+      {
+        "name": "Akita Prefectural Products Plaza Akitano",
+        "query": "秋田県産品プラザ あきたの",
+        "comment": "About 4,000 Akita products under one roof; a good first stop for local foods.",
+        "access": "About 5 min walk from Akita Station (Atorion B1F)"
+      }
+    ]
   }
 }

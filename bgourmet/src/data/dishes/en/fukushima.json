@@ -9,6 +9,18 @@
         "query": "坂内食堂 喜多方",
         "comment": "The veteran shop that popularized morning ramen. Famous for its pork-topped noodles; opens early.",
         "access": "Kitakata (about 15 min walk from the station)"
+      },
+      {
+        "name": "Shokudo Namae",
+        "query": "食堂なまえ 喜多方",
+        "comment": "A popular old-style diner with a light soy sauce broth.",
+        "access": "About 10 min walk from Kitakata Station"
+      },
+      {
+        "name": "Abe Shokudo",
+        "query": "あべ食堂 喜多方",
+        "comment": "A morning ramen spot loved by locals. Opens at 7:30 a.m.",
+        "access": "Kitakata"
       }
     ]
   },
@@ -22,6 +34,18 @@
         "query": "とら食堂 白河",
         "comment": "The renowned shop regarded as the origin of hand-made Shirakawa ramen. Closed Mondays.",
         "access": "Shirakawa (about 15 min by car from the station)"
+      },
+      {
+        "name": "Teuchi Chuka Kashima",
+        "query": "手打ち中華 かしま 白河",
+        "comment": "A popular shop carrying on the Shirakawa ramen tradition.",
+        "access": "Shirakawa"
+      },
+      {
+        "name": "Azuma Shokudo",
+        "query": "あずま食堂 白河",
+        "comment": "A long-established Shirakawa ramen shop with a spacious dining room.",
+        "access": "Shirakawa"
       }
     ]
   },
@@ -54,6 +78,12 @@
         "query": "杉乃家 二本松 浪江焼そば",
         "comment": "Serves Namie yakisoba with extra-thick noodles.",
         "access": "Near Nihonmatsu Station"
+      },
+      {
+        "name": "Michi no Eki Namie",
+        "query": "道の駅 なみえ",
+        "comment": "The roadside station in Namie itself, where namie yakisoba is the top seller.",
+        "access": "Namie"
       }
     ]
   },
@@ -67,23 +97,77 @@
         "query": "元祖円盤餃子 満腹 福島",
         "comment": "The long-established shop regarded as the originator of enban gyoza.",
         "access": "Near Fukushima Station"
+      },
+      {
+        "name": "Gyoza Terui Iizaka Main Store",
+        "query": "餃子の照井 飯坂本店",
+        "comment": "A long-established shop renowned for enban gyoza.",
+        "access": "Iizaka Onsen, Fukushima City"
+      },
+      {
+        "name": "Gyoza Terui Fukushima Station East",
+        "query": "餃子 照井 福島駅東口店",
+        "comment": "Enjoy enban gyoza right by Fukushima Station.",
+        "access": "Fukushima Station East Exit"
       }
     ]
   },
   "こづゆ": {
     "summary": "A soup from the Aizu region made with dried scallop broth. It is full of ingredients such as taro, carrot, shiitake mushrooms, wood ear mushrooms and small wheat gluten pieces, with a refined flavor. In inland Aizu, far from the sea, it was made luxurious with dried scallops and became essential at celebrations and New Year. It is served in shallow Aizu lacquerware bowls, and it is said you can have as many refills as you like. A warm taste of Aizu hospitality, available at local restaurants in Aizu-Wakamatsu.",
     "price": "¥500–1,000",
-    "area": "Aizu-Wakamatsu and the Aizu region"
+    "area": "Aizu-Wakamatsu and the Aizu region",
+    "shops": [
+      {
+        "name": "Kagota",
+        "query": "籠太 会津若松",
+        "comment": "An izakaya serving Aizu regional dishes and local sake.",
+        "access": "About 20 min walk from Aizuwakamatsu Station"
+      },
+      {
+        "name": "Takino",
+        "query": "割烹 会津料理 田季野",
+        "comment": "Famous for wappa-meshi; also serves Aizu dishes like kozuyu.",
+        "access": "Sakaemachi, Aizuwakamatsu"
+      }
+    ]
   },
   "いかにんじん": {
     "summary": "A local dish from northern Fukushima of shredded dried squid and carrot marinated in soy sauce, mirin and sake. The chewy squid, crunchy carrot and savory soy sauce combine to deepen in flavor as you chew. It has long been made in homes from autumn into winter as a preserved food. It is perfect with rice or drinks. You can buy it at supermarkets and souvenir shops, so it is an easy way to taste Fukushima home cooking. A simple dish that local families have treasured.",
     "price": "¥500–1,000",
-    "area": "Fukushima City and northern Fukushima"
+    "area": "Fukushima City and northern Fukushima",
+    "shops": [
+      {
+        "name": "Fukushima Prefectural Tourist Products Hall",
+        "query": "福島県観光物産館 コラッセふくしま",
+        "comment": "A products hall with specialties from across the prefecture.",
+        "access": "Fukushima Station West Exit (Corasse Fukushima 1F)"
+      },
+      {
+        "name": "Michi no Eki Date no Sato Ryozen",
+        "query": "道の駅 伊達の郷りょうぜん",
+        "comment": "A roadside station with a wide range of local products.",
+        "access": "Ryozen, Date"
+      }
+    ]
   },
   "にしんの山椒漬け": {
     "summary": "An Aizu dish of dried herring marinated with sansho leaves in soy sauce and vinegar. In Aizu, far from the sea, it was created to make use of dried herring, which kept well. The fresh aroma of sansho and the umami of herring make it great with rice or sake. Traditionally, it is pickled in a special ceramic dish called a nishin-bachi. The sansho aroma whets the appetite, and the dish reflects the clever ways Aizu people made the most of seafood. Available at local restaurants and souvenir shops in Aizu-Wakamatsu.",
     "price": "¥500–1,000",
-    "area": "Aizu-Wakamatsu and the Aizu region"
+    "area": "Aizu-Wakamatsu and the Aizu region",
+    "shops": [
+      {
+        "name": "Kagota",
+        "query": "籠太 会津若松",
+        "comment": "Enjoy herring with sansho and other Aizu dishes with local sake.",
+        "access": "About 20 min walk from Aizuwakamatsu Station"
+      },
+      {
+        "name": "Takino",
+        "query": "割烹 会津料理 田季野",
+        "comment": "Serves Aizu regional dishes such as herring with sansho.",
+        "access": "Sakaemachi, Aizuwakamatsu"
+      }
+    ]
   },
   "ねぎそば": {
     "summary": "The specialty of Ouchi-juku, an old post town lined with thatched-roof houses: soba eaten with a single long green onion instead of chopsticks. You scoop up the noodles with the curved onion and take bites of the onion as a condiment. It is tricky at first, but that is part of the fun. Together with the Edo-era streetscape of Ouchi-juku, it makes an unforgettable memory. The soba itself has a strong aroma and firm texture, and the onion's bite brings out its flavor. Be sure to eat the onion too.",
@@ -94,6 +178,12 @@
         "name": "Ouchijuku Misawaya",
         "query": "大内宿 三澤屋",
         "comment": "The thatched-roof originator of soba eaten with a leek. Closed Wednesdays.",
+        "access": "Ouchi-juku"
+      },
+      {
+        "name": "Komeya",
+        "query": "こめや 大内宿",
+        "comment": "One of the Ouchi-juku shops serving negi soba.",
         "access": "Ouchi-juku"
       }
     ]
@@ -108,6 +198,12 @@
         "query": "三万石 郡山駅おみやげ館",
         "comment": "Buy Romeo's cream box, regarded as the original, at Koriyama Station.",
         "access": "Koriyama Station"
+      },
+      {
+        "name": "Otomo Pan",
+        "query": "大友パン店 郡山",
+        "comment": "A bakery founded in the Taisho era, popular for its cream box.",
+        "access": "Toramarucho, Koriyama"
       }
     ]
   },
@@ -121,6 +217,12 @@
         "query": "柏屋本店 郡山",
         "comment": "The main store of the usukawa manju maker, with store-only sweets.",
         "access": "About 3 min walk from Koriyama Station"
+      },
+      {
+        "name": "Kashiwaya (S-PAL Fukushima)",
+        "query": "柏屋 エスパル福島店",
+        "comment": "A shop inside the Fukushima Station building.",
+        "access": "S-PAL Fukushima (station building)"
       }
     ]
   },
@@ -134,6 +236,12 @@
         "query": "三万石 郡山駅おみやげ館",
         "comment": "A Sanmangoku shop, maker of mamadoru, right in the station.",
         "access": "Koriyama Station"
+      },
+      {
+        "name": "Sanmangoku Koriyama Main Store",
+        "query": "三万石 郡山本店",
+        "comment": "The main store of Sanmangoku, maker of mamadoru.",
+        "access": "Near Koriyama Station"
       }
     ]
   },
@@ -147,12 +255,32 @@
         "query": "小池菓子舗 柳津",
         "comment": "The Yanaizu shop famous for awa manju. Closes when sold out.",
         "access": "Yanaizu (near Enzoji Temple)"
+      },
+      {
+        "name": "Iwaiya",
+        "query": "岩井屋 柳津 あわまんじゅう",
+        "comment": "A long-established shop said to have originated awa manju.",
+        "access": "Jikemachi, Yanaizu"
       }
     ]
   },
   "あんぽ柿": {
     "summary": "A specialty of Date: astringent persimmons smoked with sulfur and then dried. They hold more moisture than ordinary dried persimmons, with a soft, jelly-like texture and intense sweetness. Production is said to have begun in the Taisho era in the Isazawa district of Yanagawa, Date. It is a seasonal treat available in winter, eaten as is and also used in sweets. It is a popular gift, and its melting texture is unforgettable. If you visit Fukushima in winter, be sure to try it.",
     "price": "¥1,000–3,000",
-    "area": "Date and northern Fukushima"
+    "area": "Date and northern Fukushima",
+    "shops": [
+      {
+        "name": "Agri Mart",
+        "query": "あぐりマート 伊達市 梁川町 五十沢",
+        "comment": "A farm stand in Isazawa, birthplace of anpo-gaki. Closed Wednesdays.",
+        "access": "Isazawa, Yanagawa, Date"
+      },
+      {
+        "name": "Michi no Eki Date no Sato Ryozen",
+        "query": "道の駅 伊達の郷りょうぜん",
+        "comment": "Anpo-gaki appear from late November.",
+        "access": "Ryozen, Date"
+      }
+    ]
   }
 }

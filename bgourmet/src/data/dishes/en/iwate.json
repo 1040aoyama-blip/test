@@ -53,6 +53,12 @@
         "query": "福田パン 長田町本店",
         "comment": "The main store, where your fillings are spread to order. Opens at 7 a.m.",
         "access": "About 13 min walk from Morioka Station"
+      },
+      {
+        "name": "Fukuda Pan Nakanohashi (Morioka Bus Center)",
+        "query": "福田パン 中ノ橋店 盛岡バスセンター",
+        "comment": "A directly run shop inside the Morioka Bus Center.",
+        "access": "Morioka Bus Center (Nakanohashi)"
       }
     ]
   },
@@ -66,18 +72,58 @@
         "query": "東家 本店 盛岡 わんこそば",
         "comment": "A long-established shop founded in the Meiji era. Eat 100 bowls for a certificate.",
         "access": "Nakanohashi-dori, Morioka"
+      },
+      {
+        "name": "Chokurian",
+        "query": "直利庵 盛岡 わんこそば",
+        "comment": "A long-established soba restaurant dating from the Meiji era.",
+        "access": "Nakanohashi-dori, Morioka"
+      },
+      {
+        "name": "Hatsukoma",
+        "query": "初駒 盛岡 わんこそば",
+        "comment": "A long-running wanko soba shop where the servers' banter is part of the fun.",
+        "access": "Hachimancho, Morioka"
       }
     ]
   },
   "ひっつみ": {
     "summary": "An Iwate home-style dish of wheat dough torn into thin pieces by hand and simmered with chicken and vegetables in a soy sauce broth. The name comes from hittsumamu, a local word for pinching or tearing off the dough. The smooth, slippery dough soaks up the flavor of the broth. It has long been made in the cold months and is called totte-nage in some areas. You can try it at local restaurants and roadside stations, and it will warm you up on a winter trip. Its simple flavor stays with you.",
     "price": "¥700–1,000",
-    "area": "All over Iwate"
+    "area": "All over Iwate",
+    "shops": [
+      {
+        "name": "Nanbu-han Nagaya Sakaba",
+        "query": "南部藩長屋酒場 盛岡",
+        "comment": "Offers set meals with hittsumi soup and other Iwate dishes.",
+        "access": "Near Morioka Station"
+      },
+      {
+        "name": "Hittsumitei",
+        "query": "ひっつみ亭 盛岡",
+        "comment": "Enjoy hittsumi and handmade soba in an old farmhouse. Lunchtime only.",
+        "access": "Kurokawa, Morioka (about 20 min by car from the station)"
+      }
+    ]
   },
   "まめぶ汁": {
     "summary": "A local dish from the Yamagata district of Kuji. Mamebu dumplings, wheat dough filled with walnuts and brown sugar, are simmered in a soy sauce soup with vegetables, tofu and mushrooms. The mix of sweet dumplings and savory soup may surprise you, but the toasty walnuts and rich brown sugar blend with the broth into something strangely addictive. It was once a feast dish served at celebrations, and it became famous nationwide after appearing in a TV drama. A curious taste worth trying at least once.",
     "price": "¥500–900",
-    "area": "Kuji"
+    "area": "Kuji",
+    "shops": [
+      {
+        "name": "Restaurant Sankairi (Michi no Eki Kuji)",
+        "query": "レストラン山海里 道の駅くじ やませ土風館",
+        "comment": "Try Kuji mamebu-jiru affordably at the roadside station restaurant.",
+        "access": "Near Kuji Station"
+      },
+      {
+        "name": "Sushidokoro Kiyota",
+        "query": "鮨処 きよ田 久慈",
+        "comment": "A sushi restaurant that also serves mamebu-jiru.",
+        "access": "Kuji"
+      }
+    ]
   },
   "前沢牛ステーキ": {
     "summary": "Steak from Maezawa beef, Japanese Black cattle raised in the Maezawa district of Oshu. It is known for fine marbling, melt-in-the-mouth tenderness and elegant, sweet fat. Because so little is produced, it is a rare brand of beef that is hard to find outside the area. Local yakiniku and steak restaurants serve it as steak, grilled meat and even sushi. Enjoying it fresh where it is raised is part of the appeal. Combine it with a visit to the World Heritage site of Hiraizumi for a special meal.",
@@ -89,6 +135,12 @@
         "query": "牛匠おがた 味心 前沢",
         "comment": "A restaurant run directly by a Maesawa beef farm.",
         "access": "Maesawa, Oshu (about 15 min by car from Chusonji)"
+      },
+      {
+        "name": "Steak House Pioneer Bokujo",
+        "query": "ステーキハウス パイオニア牧場 奥州",
+        "comment": "A steakhouse run directly by a ranch that raises Maesawa beef.",
+        "access": "Mizusawa, Oshu"
       }
     ]
   },
@@ -102,6 +154,12 @@
         "query": "じんぎすかん あんべ 遠野",
         "comment": "A long-running jingisukan restaurant in Tono. Closed Thursdays.",
         "access": "Near Tono Station"
+      },
+      {
+        "name": "Tono Shokuniku Center Main Store",
+        "query": "遠野食肉センター 本店",
+        "comment": "Run by a butcher, serving fresh lamb jingisukan.",
+        "access": "Tono"
       }
     ]
   },
@@ -115,6 +173,12 @@
         "query": "かもめテラス 三陸菓匠さいとう総本店",
         "comment": "The main store of the confectioner that makes Kamome no Tamago.",
         "access": "Ofunato"
+      },
+      {
+        "name": "Sanriku Kasho Saito (Fesan)",
+        "query": "三陸菓匠 さいとう フェザン店",
+        "comment": "A directly run shop in the Morioka Station building.",
+        "access": "Fesan, Morioka Station building"
       }
     ]
   },
@@ -128,6 +192,12 @@
         "query": "南部せんべい乃巖手屋 本店",
         "comment": "A specialty shop with many flavors of nanbu senbei. Closed weekends.",
         "access": "Ninohe"
+      },
+      {
+        "name": "Shirasawa Senbei",
+        "query": "白沢せんべい店 盛岡",
+        "comment": "A long-running shop with over 20 kinds of hand-baked nanbu senbei.",
+        "access": "Konyacho, Morioka"
       }
     ]
   }

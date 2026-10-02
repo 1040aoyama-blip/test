@@ -2,71 +2,267 @@
   "熊本ラーメン": {
     "summary": "Kumamoto's local ramen, featuring a pork bone broth with fried garlic chips or mayu, an oil of burnt garlic. The toasty garlic aroma goes perfectly with the rich pork broth. Many shops use thicker noodles than Hakata ramen. Wood ear mushrooms, nori and roast pork are the standard toppings. Kumamoto City has many famous long-established shops known nationwide. Enjoy a fragrant bowl along with a visit to Kumamoto Castle.",
     "price": "¥700–1,000",
-    "area": "Kumamoto City"
+    "area": "Kumamoto City",
+    "shops": [
+      {
+        "name": "Kokutei Honten",
+        "query": "黒亭 本店 熊本",
+        "comment": "A veteran known for ramen topped with raw egg yolk.",
+        "access": "Nihongi, Nishi Ward (near Kumamoto Station)"
+      },
+      {
+        "name": "Keika Ramen Honten",
+        "query": "桂花ラーメン 本店 熊本",
+        "comment": "A long-running shop famous for its black garlic oil.",
+        "access": "Hanabatacho, Chuo Ward"
+      }
+    ]
   },
   "太平燕": {
     "summary": "A soup dish with glass noodles loved in Kumamoto. It is said to have been popularized by Chinese restaurants in Kumamoto based on a dish from Fujian, China. Glass noodles, vegetables such as Chinese cabbage and cabbage, seafood such as shrimp and squid, and pork go into a chicken broth, topped with a fried boiled egg. Using glass noodles makes it lighter and healthier than ramen. It is even served in school lunches in Kumamoto and is available at Chinese restaurants in the city.",
     "price": "¥800–1,200",
-    "area": "Kumamoto City"
+    "area": "Kumamoto City",
+    "shops": [
+      {
+        "name": "Kourantei Shimotori",
+        "query": "紅蘭亭 下通本店",
+        "comment": "A prewar Chinese restaurant renowned for taipien.",
+        "access": "Shimotori"
+      },
+      {
+        "name": "Kourantei Kumamoto Station",
+        "query": "紅蘭亭 熊本駅",
+        "comment": "Try it at Kumamoto Station.",
+        "access": "Kumamoto Station"
+      }
+    ]
   },
   "あか牛丼": {
     "summary": "A specialty of Aso: a rice bowl of akaushi, Japanese Brown cattle raised on Aso's grasslands. Akaushi is lean with little fat, light yet increasingly flavorful as you chew. Many shops pile grilled akaushi generously over rice with a soft-boiled egg and wasabi. Enjoy it while looking out over Aso's vast scenery. Popular shops draw lines, especially on holidays. Stop by on a drive around Aso. Some shops let you choose the amount of meat.",
     "price": "¥1,800–3,000",
-    "area": "Aso and around"
+    "area": "Aso and around",
+    "shops": [
+      {
+        "name": "Imakin Shokudo",
+        "query": "いまきん食堂 阿蘇",
+        "comment": "A long-running diner in Uchinomaki Onsen, famous for its akaushi bowl.",
+        "access": "Uchinomaki, Aso"
+      },
+      {
+        "name": "Meshi no Yamaichi",
+        "query": "めしのやまいち 阿蘇",
+        "comment": "Run by an Aso takana pickle maker.",
+        "access": "Uchinomaki, Aso"
+      }
+    ]
   },
   "高菜めし": {
     "summary": "A specialty of the Aso area: chopped Aso takana mustard green pickles stir-fried with rice in sesame oil. The crunchy takana, its pleasant saltiness and spicy kick go well with rice. Many shops stir-fry it with egg. Rice balls wrapped in takana leaves are also an Aso specialty. Try it at diners and roadside stations in Aso. Its simple yet addictive flavor whets the appetite. It is a hearty, inexpensive meal loved by locals and travelers alike, and a good way to taste Aso farm produce.",
     "price": "¥600–1,000",
-    "area": "Aso and around"
+    "area": "Aso and around",
+    "shops": [
+      {
+        "name": "Asoji",
+        "query": "元祖たかなめし あそ路",
+        "comment": "Said to be the originator of takana meshi.",
+        "access": "Aso"
+      },
+      {
+        "name": "Himeji",
+        "query": "ひめ路 阿蘇 高菜めし",
+        "comment": "An Aso local-cuisine restaurant.",
+        "access": "Otohime, Aso"
+      }
+    ]
   },
   "ちくわサラダ": {
-    "summary": "A Kumamoto local dish of chikuwa stuffed with potato salad, battered and fried. It is said to have been created by a Kumamoto bakery as a filling for savory bread. Crisp outside, with fluffy potato salad inside and chewy chikuwa. It is good on its own or in bread. It is sold at supermarkets, delis and bakeries in Kumamoto. For Kumamoto people, it is a familiar taste since childhood. It is cheap and easy to grab as a snack.",
+    "summary": "A Kumamoto local dish of chikuwa stuffed with potato salad, battered and fried. It is said to have been created at Hirai, a Kumamoto bento and deli chain, to make use of its popular potato salad, and was first sold as a filling for savory bread. Crisp outside, with fluffy potato salad inside and chewy chikuwa. It is good on its own or in bread. It is sold at Hirai shops, supermarkets and delis in Kumamoto. For Kumamoto people, it is a familiar taste since childhood.",
     "price": "¥100–200 each",
-    "area": "Kumamoto City and around"
+    "area": "Kumamoto City and around",
+    "shops": [
+      {
+        "name": "Obento no Hirai",
+        "query": "おべんとうのヒライ",
+        "comment": "The bento and deli chain where chikuwa salad was born.",
+        "access": "Throughout Kumamoto"
+      },
+      {
+        "name": "Kumamoto Station shops",
+        "query": "熊本駅 肥後よかモン市場",
+        "comment": "Also found at Kumamoto Station's food shops.",
+        "access": "Kumamoto Station"
+      }
+    ]
   },
   "馬刺し": {
     "summary": "Kumamoto is said to be among the top in Japan for producing and eating horse meat, and horse sashimi is its signature dish. You can enjoy various cuts, such as lean red meat, marbled jo-rosu loin, and koune, fat from the mane. The Kumamoto way is to eat it with garlic or ginger and sweet soy sauce. The lean meat is light, while the marbled cuts have a melting sweetness. Try it at izakaya and specialty restaurants in Kumamoto City. An assortment is the best way to compare cuts.",
     "price": "¥1,500–4,000",
-    "area": "Kumamoto City and around"
+    "area": "Kumamoto City and around",
+    "shops": [
+      {
+        "name": "Suganoya Kamitori",
+        "query": "菅乃屋 上通店 熊本",
+        "comment": "A horse meat specialist.",
+        "access": "Kamitori"
+      },
+      {
+        "name": "Suganoya Kumamoto Station",
+        "query": "馬肉料理 菅乃屋 熊本駅店",
+        "comment": "Horse meat dishes at Kumamoto Station.",
+        "access": "Kumamoto Station"
+      }
+    ]
   },
   "からし蓮根": {
     "summary": "A Kumamoto local dish: the holes of lotus root are stuffed with mustard miso, then coated in yellow batter and fried. It is said to have been created in the Edo period to nourish a sickly lord of the Kumamoto domain. One story says the recipe was kept secret outside the domain because its cross-section resembled the Hosokawa family crest. Enjoy the sharp mustard heat and the crunchy lotus root. It is sold at souvenir shops in Kumamoto.",
     "price": "¥1,000–2,000 each",
-    "area": "Kumamoto City and around"
+    "area": "Kumamoto City and around",
+    "shops": [
+      {
+        "name": "Mori Karashi Renkon",
+        "query": "森からし蓮根 熊本",
+        "comment": "A long-established karashi renkon maker.",
+        "access": "Kumamoto"
+      },
+      {
+        "name": "Kumamoto Station souvenir shops",
+        "query": "熊本駅 肥後よかモン市場 からし蓮根",
+        "comment": "Sold at Kumamoto Station shops.",
+        "access": "Kumamoto Station"
+      }
+    ]
   },
   "だご汁": {
     "summary": "A local dish long made in Kumamoto homes. Dago, dumplings of kneaded wheat flour, are simmered with chicken and vegetables such as burdock, carrot, taro and shiitake in a miso or soy sauce broth. The dumplings are torn by hand or flattened. With chewy dumplings and plenty of ingredients, it warms you to the core. It is said to have been a staple when rice was precious. Try it at local restaurants and roadside stations in Kumamoto. It is a simple, gentle taste of home.",
     "price": "¥500–900",
-    "area": "Throughout Kumamoto"
+    "area": "Throughout Kumamoto",
+    "shops": [
+      {
+        "name": "Dagojiru Saryo Kokonotsu",
+        "query": "だご汁茶寮 ここのつ",
+        "comment": "A dagojiru specialist in a renovated house.",
+        "access": "Kumamoto (near the prefectural office)"
+      },
+      {
+        "name": "Takamori Dengaku Hozonkai",
+        "query": "高森田楽保存会",
+        "comment": "Enjoy dagojiru along with dengaku.",
+        "access": "Takamori"
+      }
+    ]
   },
   "高森田楽": {
     "summary": "A local dish of Takamori in Aso: skewered ingredients brushed with miso and grilled around an irori hearth. Taro, tofu, konnyaku and yamame trout are used. The specialty is tsuru no ko imo, small taro with a fluffy texture. The aroma of toasted miso and the fun of grilling over charcoal are the charms. Try it at local restaurants in Takamori. Combine it with sightseeing on the south side of Aso. Enjoy the old-fashioned atmosphere around the hearth.",
     "price": "¥1,500–3,000",
-    "area": "Takamori"
+    "area": "Takamori",
+    "shops": [
+      {
+        "name": "Takamori Dengaku Hozonkai",
+        "query": "高森田楽保存会",
+        "comment": "The original Takamori dengaku, grilled by the hearth.",
+        "access": "Kamishikimi, Takamori"
+      },
+      {
+        "name": "Takamori Dengaku no Sato",
+        "query": "高森田楽の里",
+        "comment": "Enjoy it in a thatched farmhouse.",
+        "access": "Takamori"
+      }
+    ]
   },
   "あか牛ステーキ": {
     "summary": "Steak of akaushi, Japanese Brown cattle raised grazing on Aso's grasslands. It is lean with little fat, light yet full of natural beef flavor with a pleasant chew. It offers a healthy deliciousness different from marbled wagyu, and does not feel heavy even in larger amounts. Try it at steakhouses in Aso and Kumamoto City. Enjoy it along with a drive through the vast grasslands. Savor the true flavor of the beef.",
     "price": "¥3,000–8,000",
-    "area": "Aso, Kumamoto City and around"
+    "area": "Aso, Kumamoto City and around",
+    "shops": [
+      {
+        "name": "Restaurant Fujiya",
+        "query": "レストラン藤屋 阿蘇 あか牛",
+        "comment": "An akaushi restaurant founded just after the war.",
+        "access": "Miyaji Station front, Aso"
+      },
+      {
+        "name": "Meshi no Yamaichi",
+        "query": "めしのやまいち 阿蘇",
+        "comment": "Also serves akaushi steak.",
+        "access": "Uchinomaki, Aso"
+      }
+    ]
   },
   "いきなり団子": {
     "summary": "A Kumamoto local sweet: slices of sweet potato and bean paste wrapped in wheat dough and steamed. One theory says the name comes from ikinari, Kumamoto dialect for easy and quick, as it can be made quickly for unexpected guests. Enjoy the fluffy sweet potato, the gentle bean paste and the chewy dough. They are especially good warm and freshly steamed. They are sold throughout Kumamoto. If they cool down, warm them up again.",
     "price": "¥120–200 each",
-    "area": "Throughout Kumamoto"
+    "area": "Throughout Kumamoto",
+    "shops": [
+      {
+        "name": "Chojuan Kumamoto Station",
+        "query": "長寿庵 熊本駅 いきなり団子",
+        "comment": "An ikinari dango specialist.",
+        "access": "Kumamoto Station (Higo Yokamon Ichiba)"
+      },
+      {
+        "name": "Ikinariya Watanabe",
+        "query": "いきなりや わたなべ 城彩苑",
+        "comment": "At Sakuranobaba Josaien below Kumamoto Castle.",
+        "access": "Josaien, Kumamoto Castle"
+      }
+    ]
   },
   "陣太鼓": {
     "summary": "One of Kumamoto's best-known sweets, made by a Kumamoto confectioner. Soft gyuhi is wrapped in chunky paste of dainagon azuki beans, and its round, flat shape is modeled on the war drums beaten in battle. Enjoy the generous bean paste and chewy gyuhi. It comes in a tin, and you cut it with the string provided. It is sold at Kumamoto Station, the airport and souvenir shops. Choose it as a memento of visiting Kumamoto Castle. Enjoy it with Japanese tea.",
     "price": "¥600–2,000",
-    "area": "Kumamoto City and around"
+    "area": "Kumamoto City and around",
+    "shops": [
+      {
+        "name": "Okashi no Kobai Hakusan",
+        "query": "お菓子の香梅 白山本店",
+        "comment": "The flagship of Kobai, maker of jindaiko.",
+        "access": "Hakusan, Chuo Ward"
+      },
+      {
+        "name": "Okashi no Kobai Kumamoto Station",
+        "query": "お菓子の香梅 熊本駅店",
+        "comment": "Available at Kumamoto Station.",
+        "access": "Kumamoto Station"
+      }
+    ]
   },
   "武者がえし": {
     "summary": "A classic Kumamoto souvenir made by a Kumamoto confectioner. Smooth bean paste is wrapped in thin, flaky layers of pastry and baked. The name comes from musha-gaeshi, the curved walls of Kumamoto Castle that grow steeper toward the top. Enjoy the toasty crisp pastry and moist, refined bean paste. It is sold at Kumamoto Station, the airport and souvenir shops. Taste it after seeing the castle's stone walls. It also goes well with coffee or tea.",
     "price": "¥600–2,000",
-    "area": "Kumamoto City and around"
+    "area": "Kumamoto City and around",
+    "shops": [
+      {
+        "name": "Okashi no Kobai Hakusan",
+        "query": "お菓子の香梅 白山本店",
+        "comment": "The flagship of Kobai, maker of mushagaeshi.",
+        "access": "Hakusan, Chuo Ward"
+      },
+      {
+        "name": "Okashi no Kobai Kumamotojo Kobaian",
+        "query": "お菓子の香梅 熊本城香梅庵",
+        "comment": "A branch near Kumamoto Castle.",
+        "access": "Near Kumamoto Castle"
+      }
+    ]
   },
   "黒糖ドーナツ棒": {
     "summary": "Stick-shaped doughnuts made by a Kumamoto confectionery company. Brown sugar is kneaded into the dough before frying, and they are then coated in brown sugar syrup. Crisp outside and moist inside, they offer the rich sweetness of brown sugar. They have a simple, nostalgic flavor. Some are individually wrapped, making them handy souvenirs to share. They are sold at Kumamoto Station, the airport and supermarkets across Kyushu. Enjoy them with coffee or milk.",
     "price": "¥300–1,000",
-    "area": "Kumamoto Prefecture"
+    "area": "Kumamoto Prefecture",
+    "shops": [
+      {
+        "name": "Fujibambi Honten",
+        "query": "フジバンビ 本店 熊本",
+        "comment": "The flagship at the factory, with a café.",
+        "access": "Kumamoto"
+      },
+      {
+        "name": "Kumamoto Station souvenir shops",
+        "query": "熊本駅 黒糖ドーナツ棒",
+        "comment": "Also sold at Kumamoto Station and elsewhere.",
+        "access": "Kumamoto Station"
+      }
+    ]
   }
 }

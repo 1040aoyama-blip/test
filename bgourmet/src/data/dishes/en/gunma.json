@@ -2,66 +2,254 @@
   "高崎パスタ": {
     "summary": "Takasaki is known as a pasta town because it has so many pasta restaurants. One background factor is said to be Gunma's long tradition of eating flour-based food as a wheat-growing region. The city has many distinctive pasta shops, and some serve very generous portions. A competition is held every year where local pasta restaurants compete, so new dishes keep appearing. When you visit Takasaki, find your favorite plate, and be ready for the portion sizes.",
     "price": "¥1,000–1,800",
-    "area": "Takasaki"
+    "area": "Takasaki",
+    "shops": [
+      {
+        "name": "Shango Tonyamachi Main Store",
+        "query": "シャンゴ 問屋町本店",
+        "comment": "The veteran restaurant credited with starting Takasaki pasta; try the Shango-style.",
+        "access": "Near Takasaki-Tonyamachi Station"
+      },
+      {
+        "name": "Bambina Nakai",
+        "query": "バンビーナ 中居店 高崎",
+        "comment": "Three-time champion of Takasaki's King of Pasta contest.",
+        "access": "Nakaimachi, Takasaki"
+      }
+    ]
   },
   "太田焼きそば": {
     "summary": "The local yakisoba of Ota. It has long been a quick meal for workers in this industrial town. Many shops use a dark sauce, but noodle thickness, sauce flavor and toppings vary from shop to shop, with no fixed style. The city has many yakisoba shops, and maps for touring them are sometimes made. It is a cheap and filling soul food for locals. Each shop has its own character, so visiting a few is part of the fun.",
     "price": "¥400–800",
-    "area": "Ota"
+    "area": "Ota",
+    "shops": [
+      {
+        "name": "Iwasakiya",
+        "query": "岩崎屋 太田 焼きそば",
+        "comment": "A popular specialty shop known for its dark-sauce yakisoba.",
+        "access": "Ota"
+      },
+      {
+        "name": "Suketeiya",
+        "query": "助平屋 太田 焼きそば",
+        "comment": "A long-running Ota yakisoba shop with over 90 years of history.",
+        "access": "Ota"
+      }
+    ]
   },
   "ソースカツ丼": {
     "summary": "A katsudon loved in Kiryu, Maebashi and other parts of Gunma. Instead of being cooked with egg, a freshly fried pork cutlet is dipped in a sweet and savory sauce and placed on rice. It is said to have originated at a long-established shop in Kiryu, and the sauce-soaked rice and crispy cutlet make a delicious combination. Some shops serve hearty bowls topped with several cutlets. Each shop's sauce is different, so comparing them is fun. A taste locals have loved for generations.",
     "price": "¥900–1,500",
-    "area": "Kiryu, Maebashi and more"
+    "area": "Kiryu, Maebashi and more",
+    "shops": [
+      {
+        "name": "Shitamiya Honten",
+        "query": "志多美屋本店 桐生",
+        "comment": "Founded in the Taisho era; where Kiryu's sauce katsudon began.",
+        "access": "Hamamatsucho, Kiryu"
+      },
+      {
+        "name": "Fujiya Honten Kiryu",
+        "query": "藤屋本店 桐生",
+        "comment": "A shop over 120 years old, famous for sauce katsudon and himokawa udon.",
+        "access": "Honcho, Kiryu"
+      }
+    ]
   },
   "峠の釜めし": {
     "summary": "A nationally famous ekiben sold at Yokokawa Station on the Shin'etsu Line. It comes in a Mashiko-ware clay pot, beautifully arranged with chicken, shiitake mushrooms, bamboo shoots, chestnuts and quail eggs. It is said to have been created by people who wanted travelers to enjoy a warm meal. The dashi-cooked rice soaks up the flavors and stays tasty even when cool. You can take the clay pot home, and some people use it to cook rice. It is also sold at highway service areas.",
     "price": "About ¥1,300",
-    "area": "Annaka (Yokokawa Station) and more"
+    "area": "Annaka (Yokokawa Station) and more",
+    "shops": [
+      {
+        "name": "Oginoya Yokokawa Main Store",
+        "query": "おぎのや 横川本店",
+        "comment": "The birthplace of toge no kamameshi, serving it as a set meal. Closed Tuesdays.",
+        "access": "Near Yokokawa Station (Annaka)"
+      },
+      {
+        "name": "Oginoya Yokokawa (drive-in)",
+        "query": "おぎのや 横川店",
+        "comment": "A drive-in at the foot of Usui Pass.",
+        "access": "Matsuida, Annaka"
+      }
+    ]
   },
   "登利平の鳥めし": {
     "summary": "The famous bento of Torihei, a long-established restaurant in Maebashi. Chicken is grilled with a sweet and savory sauce and laid generously over rice. The sauce-soaked rice and tender chicken are simple but superb, and for Gunma people it is the bento for special occasions. It is wrapped in bamboo sheath, which gives it a traditional charm. You can buy it at shops and stations in the prefecture, and eating it on the shinkansen is a treat. Some shops also have dining areas.",
     "price": "¥800–1,200",
-    "area": "Maebashi and across Gunma"
+    "area": "Maebashi and across Gunma",
+    "shops": [
+      {
+        "name": "Torihei Main Store",
+        "query": "登利平 本店 前橋",
+        "comment": "The main store of Gunma's soul food, eat in or take out.",
+        "access": "Rokkumachi, Maebashi"
+      },
+      {
+        "name": "Torihei Takasaki Montres",
+        "query": "登利平 高崎モントレー店",
+        "comment": "Inside the Takasaki Station building; enjoy hot torimeshi in the restaurant.",
+        "access": "Montres, Takasaki Station building"
+      }
+    ]
   },
   "おきりこみ": {
     "summary": "A Gunma home-style dish of wide, flat noodles simmered raw, without boiling first, together with vegetables. It is packed with daikon, carrot, taro and green onions and seasoned with soy sauce or miso. Because the noodles are not pre-boiled, the soup thickens and warms you up. Made in homes for generations in this wheat-growing region, it is perfect for cold winters. The umami of seasonal vegetables melts into the soup. It is also called okkirikomi in some areas.",
     "price": "¥800–1,200",
-    "area": "All over Gunma"
+    "area": "All over Gunma",
+    "shops": [
+      {
+        "name": "Shinshin-an Sobahiro",
+        "query": "真心庵 そばひろ 前橋",
+        "comment": "A soba shop of over 40 years serving Maebashi's okirikomi.",
+        "access": "Maebashi"
+      },
+      {
+        "name": "Kamakuratei",
+        "query": "かまくら亭 前橋 おきりこみ",
+        "comment": "A restaurant serving Maebashi's okirikomi.",
+        "access": "Kamihosoi, Maebashi"
+      }
+    ]
   },
   "水沢うどん": {
     "summary": "Udon that has been made for pilgrims in front of Mizusawa Kannon temple in Shibukawa, sometimes counted among Japan's three great udon. The white, translucent noodles are very firm with a smooth, slippery texture. The classic way is cold zaru udon, dipped in soy-based sauce or sesame sauce. The approach to the temple has an udon road lined with shops, so you can compare flavors. It is also close to Ikaho Onsen. The sesame sauce is a wonderful match.",
     "price": "¥900–1,500",
-    "area": "Shibukawa (Mizusawa)"
+    "area": "Shibukawa (Mizusawa)",
+    "shops": [
+      {
+        "name": "Ganso Tamaruya",
+        "query": "元祖 田丸屋 水沢うどん",
+        "comment": "Said to date from the Sengoku period; the original Mizusawa udon shop. Closed Wednesdays.",
+        "access": "Near Mizusawa Kannon (Ikaho, Shibukawa)"
+      },
+      {
+        "name": "Shiso Shimizuya",
+        "query": "始祖 清水屋 水沢うどん",
+        "comment": "A shop with over 400 years of history. Closed Thursdays.",
+        "access": "Near Mizusawa Kannon"
+      }
+    ]
   },
   "桐生ひもかわうどん": {
     "summary": "Kiryu's famous udon, so flat that the noodles can be several centimeters wide. The thin, wide noodles have a slippery yet chewy texture. You can enjoy them dipped in cold sauce or in hot soup. They make a strong visual impression, and first-timers are often surprised. Some shops make use of the width by serving them wrapped around other ingredients. Enjoy them with a stroll through the historic streets of Kiryu, once a thriving textile town.",
     "price": "¥800–1,200",
-    "area": "Kiryu"
+    "area": "Kiryu",
+    "shops": [
+      {
+        "name": "Fujiya Honten Kiryu",
+        "query": "藤屋本店 桐生",
+        "comment": "A himokawa udon shop with over 120 years of history.",
+        "access": "Honcho, Kiryu"
+      },
+      {
+        "name": "Furukawa Kuremutsu Aioi",
+        "query": "めん処酒処ふる川 暮六つ 相生店",
+        "comment": "Famous for its over-10 cm-wide mori himokawa; lines on weekends.",
+        "access": "Aioicho, Kiryu"
+      },
+      {
+        "name": "Momotaro Main Store",
+        "query": "桃太郎 本店 桐生",
+        "comment": "In a renovated old storehouse; choose soba, udon or himokawa.",
+        "access": "Kiryu"
+      }
+    ]
   },
   "こんにゃく味噌おでん": {
     "summary": "Gunma grows the vast majority of Japan's konjac potatoes. Triangles or squares of konjac are simmered or boiled in dashi, skewered and spread with sweet miso. Enjoy the springy texture with the sweet miso. You can easily find it at tourist spots, roadside stations and festival stalls. Some restaurants serve a variety of konjac dishes, and there are facilities where you can tour a konjac factory. It is also popular as a healthy snack.",
     "price": "¥100–200 each",
-    "area": "All over Gunma"
+    "area": "All over Gunma",
+    "shops": [
+      {
+        "name": "Konnyaku Park",
+        "query": "こんにゃくパーク 甘楽",
+        "comment": "A factory park with tours and konnyaku tasting.",
+        "access": "Kanra"
+      },
+      {
+        "name": "Ishidan Tama Konnyaku",
+        "query": "石段玉こんにゃく 伊香保",
+        "comment": "Snack on pot-simmered konnyaku balls on Ikaho's stone steps.",
+        "access": "Ikaho Onsen stone steps"
+      }
+    ]
   },
   "焼きまんじゅう": {
     "summary": "A Gunma specialty of steamed buns without filling, skewered, brushed with sweet and savory miso sauce and grilled until fragrant. They are crispy outside and fluffy inside, a perfect match for the sweet miso. They taste best piping hot, fresh off the grill. There are many specialist shops in the prefecture, and they often appear at festival stalls. For Gunma people, they are a snack loved since childhood, filling enough for when you feel peckish. The aroma of toasted miso is irresistible.",
     "price": "¥200–400 each",
-    "area": "All over Gunma"
+    "area": "All over Gunma",
+    "shops": [
+      {
+        "name": "Harashimaya Sohonke",
+        "query": "原嶋屋総本家 前橋",
+        "comment": "The oldest yaki-manju shop in Gunma, from the Edo period. Closed Tuesdays.",
+        "access": "Heiwamachi, Maebashi"
+      },
+      {
+        "name": "Chuji Chaya Honpo",
+        "query": "忠治茶屋本舗 伊勢崎",
+        "comment": "A leading yaki-manju shop in Isesaki.",
+        "access": "Kamihasumachi, Isesaki"
+      }
+    ]
   },
   "湯の花まんじゅう": {
     "summary": "The famous manju of Ikaho Onsen. The brown skin is said to evoke the color of Ikaho's hot spring water, and it is sometimes called the original onsen manju. A moist skin is filled generously with smooth bean paste. Many shops along the famous stone stairs sell them, and some offer them freshly steamed. Enjoy choosing souvenirs as you stroll the stone steps of Ikaho Onsen. A taste unique to Ikaho and a sweet reminder of your hot spring trip.",
     "price": "About ¥100 each",
-    "area": "Shibukawa (Ikaho Onsen)"
+    "area": "Shibukawa (Ikaho Onsen)",
+    "shops": [
+      {
+        "name": "Shogetsudo",
+        "query": "勝月堂 伊香保",
+        "comment": "The long-established shop said to have made the first yunohana manju.",
+        "access": "Near Ikaho Shrine (top of the stone steps)"
+      },
+      {
+        "name": "Matsumura Manju",
+        "query": "松むら饅頭 草津",
+        "comment": "Known for fluffy onsen manju. Closes when sold out.",
+        "access": "Kusatsu Onsen"
+      }
+    ]
   },
   "旅がらす": {
     "summary": "A classic Gunma souvenir made by a Maebashi confectioner: thin, crisp wafers sandwiching sweet cream. The light texture makes them easy to eat, and they have long been a favorite Gunma gift. The name is said to evoke the land and traveling people of Joshu, the old name for Gunma. You can buy them at stations, service areas and souvenir shops in the prefecture. Individually wrapped, they are easy to share at work, and they go well with both green tea and coffee.",
     "price": "¥500–1,500",
-    "area": "Maebashi and across Gunma"
+    "area": "Maebashi and across Gunma",
+    "shops": [
+      {
+        "name": "Tabigarasu Honpo Seigetsudo",
+        "query": "旅がらす本舗 清月堂 前橋",
+        "comment": "The main store of the confectioner that makes tabigarasu.",
+        "access": "Shinbori, Maebashi"
+      },
+      {
+        "name": "Tabigarasu Honpo Kokuryo",
+        "query": "旅がらす本舗 清月堂 前橋国領町店",
+        "comment": "A shop closer to central Maebashi.",
+        "access": "Kokuryomachi, Maebashi"
+      }
+    ]
   },
   "ガトーラスク": {
     "summary": "Rusks made from French bread by a confectioner headquartered in Takasaki. Generous butter and sugar give them a crisp texture and toasty sweetness. Simple, yet once you start you cannot stop, and they are a very popular gift. The main store is a palace-like building that has become a sightseeing spot in its own right. They are sold at department stores across Japan, but buying them at the main store is part of the fun. Try the various flavors.",
     "price": "¥500–2,000",
-    "area": "Takasaki and more"
+    "area": "Takasaki and more",
+    "shops": [
+      {
+        "name": "Gateau Festa Harada Main Building",
+        "query": "ガトーフェスタ ハラダ 本館",
+        "comment": "The palace-like main building, with factory tours.",
+        "access": "Shinmachi, Takasaki"
+      },
+      {
+        "name": "Gateau Festa Harada Nakasendo",
+        "query": "ガトーフェスタ ハラダ 中山道店",
+        "comment": "A directly run shop near the main building.",
+        "access": "Shinmachi, Takasaki"
+      }
+    ]
   }
 }

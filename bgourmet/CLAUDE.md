@@ -27,7 +27,7 @@
   - お問い合わせはサーバーを持たないため、外部フォーム（Google フォームなど）の URL かメールアドレスを案内する
   - プライバシーポリシーは、アフィリエイト・Google AdSense・アクセス解析（Google アナリティクス）・Google マップ・免責・著作権を含む。広告やアクセス解析を実際に導入するときは内容を見直す
 - コラムはサイトにも載せる（未実装）
-- 公開先は Cloudflare Pages の予定。ドメインは公開直前に取得する（サイト名は未定）
+- 公開先は Cloudflare Pages（https://bgourmet.pages.dev）。ドメインは公開直前に取得する（サイト名は未定）
 
 ## 保留中（あとで決める）
 
@@ -42,7 +42,7 @@
 0. 621品の説明は全品作成済み（日本語・英語）。事実関係の確認は CHECKLIST.md で運営者が進める
    - おすすめの店は見本として大阪・静岡の数品だけ。店選びは運営者と相談して決める
 1. シェア用画像（OGP）、コラムのコーナー
-2. Cloudflare Pages で公開：リポジトリ側の準備は済み（`.node-version`、`SITE_URL` 環境変数、404 ページ）。Cloudflare のダッシュボードでの接続は運営者が行う（手順は README.md の「公開」）
+2. Cloudflare Pages で公開済み：https://bgourmet.pages.dev （プロジェクト名 bgourmet、本番ブランチ claude/session-not-showing-mobile-kg5x7o、ルート bgourmet、SITE_URL 設定済み）。このブランチに push すると自動で更新される
    - 公開前に `src/data/site.json` を埋める
 
 （検索・絞り込み、必須ページは作成済み。トップの「SNS で紹介中」欄は運営者の判断で作らない）

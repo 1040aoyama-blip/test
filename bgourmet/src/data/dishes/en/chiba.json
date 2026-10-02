@@ -2,66 +2,254 @@
   "勝浦タンタンメン": {
     "summary": "The local ramen of Katsuura. Unlike typical dandan noodles, it uses no sesame; instead, its bright red soy sauce broth is loaded with chili oil. It is topped with stir-fried onions and minced pork, and the sweetness of the onions balances the heat. It is said to have spread as a dish to warm the bodies of ama divers and fishermen who worked in the cold sea. It became known nationwide after winning the B-1 Grand Prix. Spice levels vary by shop, and it is perfect on a cold day.",
     "price": "¥800–1,200",
-    "area": "Katsuura"
+    "area": "Katsuura",
+    "shops": [
+      {
+        "name": "Ezawa",
+        "query": "元祖勝浦式担々麺 江ざわ",
+        "comment": "The shop that created Katsuura tantanmen.",
+        "access": "Katsuura"
+      },
+      {
+        "name": "Ramen Matsunoya",
+        "query": "ラーメン松野屋 勝浦",
+        "comment": "A popular shop with weekend lines; closes when the soup runs out.",
+        "access": "Matsuno, Katsuura"
+      }
+    ]
   },
   "竹岡式ラーメン": {
     "summary": "A unique ramen born in the Takeoka district of Futtsu. The soup is made by diluting the soy sauce used to simmer roast pork with hot water, giving it a dark color. Many shops use dried noodles, and instead of green onions, it is topped with chopped onion. Simple as it is, the umami of soy sauce and the sweetness of onion are addictive. Stop by on a coastal drive along the Boso Peninsula. Some long-established shops have lines.",
     "price": "¥700–1,000",
-    "area": "Futtsu and more"
+    "area": "Futtsu and more",
+    "shops": [
+      {
+        "name": "Umenoya",
+        "query": "梅乃家 富津 竹岡",
+        "comment": "A shop of over 70 years and the best-known name in Takeoka-style ramen.",
+        "access": "Takeoka, Futtsu"
+      },
+      {
+        "name": "Suzuya",
+        "query": "鈴屋 富津 竹岡 ラーメン",
+        "comment": "Said to be, with Umenoya, an originator of the Takeoka style.",
+        "access": "Takeoka, Futtsu"
+      }
+    ]
   },
   "アリランラーメン": {
     "summary": "The local ramen of Chonan: a soy sauce ramen packed with garlic, onions, garlic chives and pork, full of energy. The soup absorbs the flavors of the vegetables and has a slight kick that warms you up. It is said to have started at a long-established shop in the hills, and it has since spread to nearby areas. Loaded with toppings, it is very filling, and ramen fans often travel to try it. The aroma of garlic whets the appetite and gives you a boost.",
     "price": "¥800–1,100",
-    "area": "Chonan and more"
+    "area": "Chonan and more",
+    "shops": [
+      {
+        "name": "Hachibee no Shokudo",
+        "query": "八平の食堂 長柄",
+        "comment": "The originator of arirang ramen, a diner in the hills.",
+        "access": "Nagara"
+      },
+      {
+        "name": "Ramen Hachibee",
+        "query": "アリランラーメン八平 長南",
+        "comment": "One of only two shops allowed to use the name arirang ramen.",
+        "access": "Chonan"
+      }
+    ]
   },
   "はかりめ丼": {
     "summary": "A Futtsu specialty rice bowl made with conger eel. In Futtsu, conger eel is called hakarime because the white dots along its side look like the markings on an old scale. Conger eel from Tokyo Bay is simmered or grilled in a sweet and savory sauce and served over rice. Enjoy the soft, fluffy eel and sauce-soaked rice. You can try it at diners around Futtsu's fishing ports. Conger eel is said to be in season in summer. A taste of Tokyo Bay's bounty.",
     "price": "¥1,200–2,000",
-    "area": "Futtsu"
+    "area": "Futtsu",
+    "shops": [
+      {
+        "name": "Isone",
+        "query": "いそね寿司 富津",
+        "comment": "A shop with lines for hakarime-don. Limited daily servings.",
+        "access": "Futtsu"
+      },
+      {
+        "name": "Kanshichi",
+        "query": "かん七 富津 千種新田",
+        "comment": "Popular for hakarime-don piled with simmered conger eel.",
+        "access": "Chikusashinden, Futtsu"
+      }
+    ]
   },
   "ホワイト餃子": {
     "summary": "Gyoza born in Noda, known for their thick, chewy wrappers. They are cooked in plenty of oil, almost deep-fried, giving them a crispy outside and a chewy inside. They come out round and plump, looking different from ordinary gyoza. The name is said to come from the person who taught the recipe. Frozen versions are also sold, and many people cook them at home. There are shops mainly in the Kanto region. Enjoy the toasty aroma fresh from the pan.",
     "price": "¥500–800",
-    "area": "Noda and more"
+    "area": "Noda and more",
+    "shops": [
+      {
+        "name": "White Gyoza Noda Main Store",
+        "query": "ホワイト餃子 野田本店",
+        "comment": "The original White Gyoza shop. Dine-in days are limited, so check before you go.",
+        "access": "Noda (near Atago Station)"
+      },
+      {
+        "name": "White Gyoza Kashiwa",
+        "query": "ホワイト餃子 柏店",
+        "comment": "A branch near Kashiwa Station.",
+        "access": "Kashiwa"
+      }
+    ]
   },
   "なめろう": {
     "summary": "A traditional dish from the fishing towns of the Boso Peninsula. Fresh fish such as horse mackerel or sardine is finely chopped with miso, green onions, ginger and shiso. The name is said to come from the idea that it is so good you want to lick (nameru) the plate. The umami of the fish, the richness of the miso and the fresh herbs go perfectly with rice or drinks. It is said fishermen first made it on their boats. Try it at diners around Boso's fishing ports.",
     "price": "¥800–1,500",
-    "area": "Minamiboso and the Boso Peninsula"
+    "area": "Minamiboso and the Boso Peninsula",
+    "shops": [
+      {
+        "name": "Daitokuya",
+        "query": "寿司と地魚料理 大徳家 千倉",
+        "comment": "Founded in the Meiji era; keeps the original namero recipe.",
+        "access": "Chikura, Minamiboso"
+      },
+      {
+        "name": "Banya",
+        "query": "漁協直営食堂 ばんや 保田",
+        "comment": "A diner run by the Hota fishing cooperative, with fish caught that morning.",
+        "access": "Hota, Kyonan"
+      }
+    ]
   },
   "さんが焼き": {
     "summary": "A Boso Peninsula dish made by shaping namero into patties and grilling them. It is said to have started when fishermen took namero packed into abalone shells to the mountains and grilled it at their huts. Because it was grilled at a mountain house (sanka), it came to be called sanga-yaki. Grilling deepens the toasty aroma of the miso and concentrates the umami of the fish. It is fun to compare with namero, and it goes perfectly with rice.",
     "price": "¥800–1,500",
-    "area": "Minamiboso and the Boso Peninsula"
+    "area": "Minamiboso and the Boso Peninsula",
+    "shops": [
+      {
+        "name": "Fusehime no Sangayaki",
+        "query": "伏姫さんが焼 南房総",
+        "comment": "A specialty restaurant for sangayaki and namero.",
+        "access": "About 3 min walk from Iwai Station"
+      },
+      {
+        "name": "Senpachi",
+        "query": "扇八 館山 さんが焼き",
+        "comment": "A Tateyama eatery serving sangayaki at a reasonable price.",
+        "access": "Tateyama"
+      },
+      {
+        "name": "Banya",
+        "query": "漁協直営食堂 ばんや 保田",
+        "comment": "The fishing cooperative diner also serves fishermen's sangayaki.",
+        "access": "Hota, Kyonan"
+      }
+    ]
   },
   "太巻き祭り寿司": {
     "summary": "Thick sushi rolls from the Boso region of Chiba that reveal patterns of flowers, animals or letters when sliced. Colored rice, rolled omelet and dried gourd strips are arranged and rolled so that a picture appears in the cross-section. It was traditionally made for weddings, funerals and festivals as a dish of hospitality. Thanks to its beauty, classes teaching how to make it are popular. It is sometimes sold at farm stands and supermarkets and makes a nice souvenir.",
     "price": "¥500–1,500",
-    "area": "Boso region"
+    "area": "Boso region",
+    "shops": [
+      {
+        "name": "Hanamiyu",
+        "query": "花味結 鴨川 太巻き祭りずし",
+        "comment": "Try making futomaki matsuri-zushi, or buy a platter.",
+        "access": "Kamogawa"
+      },
+      {
+        "name": "Michi no Eki Takeyura no Sato Otaki",
+        "query": "道の駅 たけゆらの里おおたき",
+        "comment": "The local food restaurant serves a matsuri-zushi bento.",
+        "access": "Otaki"
+      }
+    ]
   },
   "ゆで落花生": {
     "summary": "Chiba produces more peanuts than any other prefecture. Boiled peanuts are freshly harvested raw peanuts boiled in salt water, still in their shells. Unlike roasted peanuts, they are soft and fluffy with the natural sweetness of the bean. The season runs from late summer into autumn, when they are sold at farm stands and roadside stations. The large, sweet Omasari variety is said to be especially good boiled. Frozen ones are available too, and once you try them, you may get hooked.",
     "price": "¥500–1,000",
-    "area": "Yachimata and more"
+    "area": "Yachimata and more",
+    "shops": [
+      {
+        "name": "Ishii Susumu Shoten",
+        "query": "石井進商店 八街 落花生",
+        "comment": "A Yachimata peanut shop; sells raw peanuts in season.",
+        "access": "Yachimata"
+      },
+      {
+        "name": "Sakai no Peanuts",
+        "query": "酒井のピーナツ 八街",
+        "comment": "A shop certified for quality local peanuts by Yachimata City.",
+        "access": "Yachimata"
+      }
+    ]
   },
   "成田うなぎの蒲焼き": {
     "summary": "The main approach to Naritasan Shinshoji temple is lined with eel restaurants and is known as an eel town. This is said to be because eels have long been caught in nearby Inba Marsh and other waters. At some shops, you can watch craftsmen prepare and grill the eel at the storefront. The fragrant grilled eel and sauce-soaked rice make an exceptional combination. Stop by before or after visiting Naritasan or using Narita Airport, and enjoy a stroll along the approach.",
     "price": "¥3,000–6,000",
-    "area": "Narita"
+    "area": "Narita",
+    "shops": [
+      {
+        "name": "Kawatoyo",
+        "query": "川豊本店 成田",
+        "comment": "Watch eels being prepared at the storefront on Omotesando.",
+        "access": "Narita-san Omotesando"
+      },
+      {
+        "name": "Kikuya",
+        "query": "菊屋 成田 うなぎ",
+        "comment": "A long-established shop on Omotesando, open into the evening.",
+        "access": "Narita-san Omotesando"
+      }
+    ]
   },
   "銚子ぬれ煎餅": {
     "summary": "A Choshi specialty: grilled rice crackers dipped in soy sauce while hot, making them moist and soft. It is a sweet only Choshi, famous for soy sauce production, could create, with soy sauce flavor soaked right through. Unlike ordinary crunchy crackers, they have a unique chewy texture. They became famous when the local railway company started selling them. You can buy them at stations and shops in Choshi. A great way to enjoy the aroma of Choshi soy sauce.",
     "price": "¥500–1,000",
-    "area": "Choshi"
+    "area": "Choshi",
+    "shops": [
+      {
+        "name": "Choshi Electric Railway Nure Senbei Station",
+        "query": "銚子電鉄 ぬれ煎餅駅",
+        "comment": "A shop run by Choshi Electric Railway, with live grilling.",
+        "access": "Obamacho, Choshi"
+      },
+      {
+        "name": "Kashiwaya",
+        "query": "柏屋 銚子 ぬれせんべい",
+        "comment": "The shop where nure senbei was born; try them fresh.",
+        "access": "Choshi"
+      }
+    ]
   },
   "ぴーなっつ最中": {
     "summary": "Peanut-shaped monaka wafers made by a Chiba confectioner. Their cute look is inspired by peanuts, Chiba's famous product. Inside is a sweet paste made with simmered peanuts, full of toasty peanut flavor. A classic Chiba souvenir for many years, they are available at stations, the airport and souvenir shops. Individually wrapped, they are easy to share with coworkers or friends. The toasty peanut flavor and gentle sweetness go well with green tea.",
     "price": "¥1,000–2,000",
-    "area": "Chiba"
+    "area": "Chiba",
+    "shops": [
+      {
+        "name": "Nagomi no Yoneya Main Store",
+        "query": "なごみの米屋 總本店 成田",
+        "comment": "A Japanese sweets maker founded in the Meiji era, with free tea.",
+        "access": "About 6 min walk from Narita Station (Omotesando)"
+      },
+      {
+        "name": "Narita Airport shops",
+        "query": "成田空港 なごみの米屋",
+        "comment": "Also sold at souvenir shops in Narita Airport.",
+        "access": "Narita Airport"
+      }
+    ]
   },
   "びわゼリー": {
     "summary": "Minamiboso is known for growing loquats in its mild climate, especially in the Tomiura area. Biwa jelly contains a whole loquat, letting you enjoy its gentle sweetness and juiciness. It looks beautiful and is popular as a gift. Loquats are in season in early summer, when you can also taste them fresh. Available at roadside stations, it makes a perfect souvenir from a drive through Minamiboso. It is even better well chilled.",
     "price": "¥300–500 each",
-    "area": "Minamiboso"
+    "area": "Minamiboso",
+    "shops": [
+      {
+        "name": "Michi no Eki Tomiura Biwa Club",
+        "query": "道の駅とみうら 枇杷倶楽部",
+        "comment": "The roadside station run by the company that makes the jelly.",
+        "access": "Tomiura, Minamiboso"
+      },
+      {
+        "name": "Michi no Eki Furari Tomiyama",
+        "query": "道の駅 富楽里とみやま",
+        "comment": "Sells loquat jellies and mousses.",
+        "access": "Minamiboso"
+      }
+    ]
   }
 }

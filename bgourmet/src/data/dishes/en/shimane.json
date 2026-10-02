@@ -2,61 +2,229 @@
   "宍道湖しじみラーメン": {
     "summary": "Local ramen from around Matsue made with shijimi clams from Lake Shinji. The clam broth is full of shellfish umami, clean yet deep in flavor. Many shops pile on plenty of clams in their shells, which is fun to see. Shops vary between soy sauce and salt broths. Shijimi clams are also known as a food that is kind to the body. Try it at shops in Matsue along with watching the famous sunset over Lake Shinji. It is a soothing bowl.",
     "price": "¥800–1,200",
-    "area": "Matsue and around"
+    "area": "Matsue and around",
+    "shops": [
+      {
+        "name": "Totanya",
+        "query": "麺's ダイニング トタン屋 松江",
+        "comment": "A salt ramen loaded with Shinji clams. Opens late at night.",
+        "access": "Watamicho, Matsue"
+      },
+      {
+        "name": "Ra-men Dining KAKERU",
+        "query": "為セバ成ル。KAKERU 松江駅",
+        "comment": "A ramen shop at Matsue Station with a clam ramen.",
+        "access": "Matsue Station"
+      }
+    ]
   },
   "出雲そば": {
     "summary": "A specialty of the Izumo region, counted among Japan's three great soba. Because the flour is ground from whole buckwheat including the husk, it is dark in color with a strong aroma. The firm noodles are eaten with a fairly strong sauce. Cold warigo soba and hot kamaage soba are the typical styles; kamaage soba is served in its cooking water with sauce poured over. Many soba shops line the area around Izumo Taisha Shrine. Do not miss the soba cooking water.",
     "price": "¥800–1,500",
-    "area": "Izumo, Matsue and around"
+    "area": "Izumo, Matsue and around",
+    "shops": [
+      {
+        "name": "Arakiya",
+        "query": "出雲そば 荒木屋",
+        "comment": "An Edo-period soba house near Izumo Taisha.",
+        "access": "10 min walk from Izumo Taisha"
+      },
+      {
+        "name": "Kenjo Soba Haneya",
+        "query": "献上そば 羽根屋 本店",
+        "comment": "A late-Edo soba house that once served the imperial family.",
+        "access": "Imaichicho, Izumo"
+      }
+    ]
   },
   "割子そば": {
     "summary": "The classic way to eat Izumo soba: noodles served in round lacquer dishes called warigo, stacked about three high. To eat, put condiments on the first tier, pour the sauce directly on top, then pour the leftover sauce into the next tier and repeat. It is said to have started in the Edo period, when people carried soba in stacked boxes to eat outdoors. Grated daikon with chili, green onion and nori are the standard condiments. See how many tiers you can eat.",
     "price": "¥800–1,300",
-    "area": "Izumo, Matsue and around"
+    "area": "Izumo, Matsue and around",
+    "shops": [
+      {
+        "name": "Yakumoan",
+        "query": "八雲庵 松江 そば",
+        "comment": "In a converted samurai residence on Shiomi Nawate.",
+        "access": "Shiomi Nawate (near Matsue Castle)"
+      },
+      {
+        "name": "Arakiya",
+        "query": "出雲そば 荒木屋",
+        "comment": "The Edo-period soba house near Izumo Taisha also serves warigo.",
+        "access": "10 min walk from Izumo Taisha"
+      }
+    ]
   },
   "しじみ汁": {
     "summary": "Lake Shinji is famous nationwide for shijimi clams. The clams raised in this brackish lake, where seawater and freshwater mix, are large and plump. Shijimi soup is miso soup loaded with these clams, with a broth full of shellfish umami. Around the lake it is a breakfast staple at inns. It is counted among the seven delicacies of Lake Shinji. Try it at diners in Matsue. It is a warming taste of the lake.",
     "price": "¥300–800",
-    "area": "Matsue and around Lake Shinji"
+    "area": "Matsue and around Lake Shinji",
+    "shops": [
+      {
+        "name": "Kawakyo",
+        "query": "郷土料理 川京 松江",
+        "comment": "A local-cuisine restaurant serving the \"seven treasures\" of Lake Shinji. Evenings only.",
+        "access": "Suetsugu-honmachi, Matsue"
+      },
+      {
+        "name": "Kisetsu no Kaze Kura",
+        "query": "季節の風 蔵 松江",
+        "comment": "Recommended by clam fishermen; also known for its clam rice bowl.",
+        "access": "Matsue"
+      }
+    ]
   },
   "スズキの奉書焼き": {
     "summary": "A traditional dish of Matsue: sea bass from Lake Shinji wrapped in wet hosho washi paper and steam-baked. Wrapping it in paper keeps the flesh plump and tender and seals in the flavor. It is said to have been presented to the lords of the Matsue domain in the Edo period. Some restaurants open the paper in front of you, and the rising steam and aroma are part of the pleasure. Sea bass is one of the seven delicacies of Lake Shinji. Try it at restaurants in Matsue.",
     "price": "¥3,000–6,000",
-    "area": "Matsue"
+    "area": "Matsue",
+    "shops": [
+      {
+        "name": "Minamikan",
+        "query": "皆美館 松江",
+        "comment": "A historic ryokan on Lake Shinji that serves hoshoyaki.",
+        "access": "Suetsugu-honmachi (Lake Shinji)"
+      },
+      {
+        "name": "Kawakyo",
+        "query": "郷土料理 川京 松江",
+        "comment": "Suzuki hoshoyaki is on the menu.",
+        "access": "Suetsugu-honmachi, Matsue"
+      }
+    ]
   },
   "あご野焼き": {
     "summary": "In the San'in region, flying fish is called ago. Ago noyaki is a fish cake like a giant chikuwa, made by mixing flying fish paste with local sake and salt, wrapping it around a thick stick and grilling it. It features a toasty surface, a firm bite and the elegant flavor of flying fish. In the Izumo area it has long been an essential dish for celebrations and New Year. It is sold at supermarkets and souvenir shops in the prefecture. It is typically sliced thin and eaten with wasabi soy sauce.",
     "price": "¥800–1,500",
-    "area": "Izumo, Matsue and around"
+    "area": "Izumo, Matsue and around",
+    "shops": [
+      {
+        "name": "Aoyama Kamaboko",
+        "query": "青山蒲鉾店 松江",
+        "comment": "A fish-cake maker founded in the mid-Edo period.",
+        "access": "Nakaharacho, Matsue"
+      },
+      {
+        "name": "Yokosho Kamaboko",
+        "query": "横庄かまぼこ店 出雲大社",
+        "comment": "A fish-cake shop near Izumo Taisha.",
+        "access": "Taisha, Izumo"
+      }
+    ]
   },
   "赤天": {
     "summary": "A specialty of Hamada: fish paste mixed with chili pepper, coated with red breadcrumbs and fried. Its bright red look is distinctive, and you can enjoy the chili's kick along with the flavor of fish. It is good as is, lightly toasted, or with mayonnaise. It works as a side with rice or as a drinking snack. It is sold at fish cake shops in Hamada and supermarkets around the prefecture. Its striking look makes it a fun souvenir.",
     "price": "¥150–300 per piece",
-    "area": "Hamada"
+    "area": "Hamada",
+    "shops": [
+      {
+        "name": "Egi Kamaboko",
+        "query": "赤天本舗 江木蒲鉾店",
+        "comment": "An akaten maker founded at the start of the Taisho period.",
+        "access": "Hamada"
+      },
+      {
+        "name": "Hamada Tourism Association Shop",
+        "query": "浜田市観光協会 特産品販売所 浜田駅",
+        "comment": "A souvenir shop at Hamada Station.",
+        "access": "Hamada Station"
+      }
+    ]
   },
   "のどぐろの塩焼き": {
     "summary": "Salt-grilled nodoguro, a luxury fish of the San'in region. The name comes from its black throat, and it is officially called akamutsu. Though a white fish, it is rich in fat, which bubbles out when grilled. Hamada Port is known for its nodoguro catch, and fish that meet size and fat standards are sold as a premium brand. Try it at restaurants in Hamada and Matsue. Prices vary with size and season. It is a must-try at least once.",
     "price": "¥3,000–8,000",
-    "area": "Hamada, Matsue and around"
+    "area": "Hamada, Matsue and around",
+    "shops": [
+      {
+        "name": "Meshidokoro Gussan",
+        "query": "めし処 ぐっさん 浜田",
+        "comment": "A diner at Hamada fishing port famous for its nodoguro bowl.",
+        "access": "Hamada Fishing Port"
+      },
+      {
+        "name": "Nodoguro Nihonkai Izumoshi",
+        "query": "のどぐろ日本海 出雲市駅前店",
+        "comment": "Nodoguro at reasonable prices.",
+        "access": "Izumoshi Station front"
+      }
+    ]
   },
   "出雲ぜんざい": {
     "summary": "The Izumo region is said to be the birthplace of zenzai, sweet red bean soup. In the tenth month of the old calendar, the gods of Japan are said to gather at Izumo Taisha, and one theory says jinzai mochi served at the Kamiari Festival then turned into the word zenzai. The classic version has red and white rice dumplings or mochi in sweet azuki soup. Many shops around Izumo Taisha serve it. Try it after praying to the god of matchmaking. The festive red and white colors are auspicious.",
     "price": "¥500–900",
-    "area": "Izumo (around Izumo Taisha)"
+    "area": "Izumo (around Izumo Taisha)",
+    "shops": [
+      {
+        "name": "Nihon Zenzai Gakkai Ichigoten",
+        "query": "日本ぜんざい学会 壱号店",
+        "comment": "A zenzai shop on the approach to Izumo Taisha.",
+        "access": "Shinmon-dori (in front of Izumo Taisha)"
+      },
+      {
+        "name": "Saiundo Shinmon-dori",
+        "query": "彩雲堂 神門通り",
+        "comment": "A café of a long-established Matsue confectioner.",
+        "access": "Shinmon-dori (3 min walk from Izumo-taisha-mae Station)"
+      }
+    ]
   },
   "源氏巻": {
     "summary": "A famous sweet from the castle town of Tsuwano: smooth red bean paste wrapped flat in thin castella-like sponge. Enjoy the moist sponge and the gentle sweetness of the paste. The name is said to come from The Tale of Genji. Several shops in Tsuwano make it, each with its own sponge and paste, and there are flavors such as matcha. Choose it as a memento of strolling through Tsuwano, called the little Kyoto of San'in.",
     "price": "¥200–400 each",
-    "area": "Tsuwano"
+    "area": "Tsuwano",
+    "shops": [
+      {
+        "name": "Yamada Chikufuken Honmachi",
+        "query": "山田竹風軒 本町店 津和野",
+        "comment": "A Meiji-era confectioner; you can try making genjimaki.",
+        "access": "Tsuwano"
+      },
+      {
+        "name": "Sanshodo Tsuwano",
+        "query": "三松堂 津和野本店",
+        "comment": "Popular for small genjimaki with seasonal brand marks.",
+        "access": "Tsuwano"
+      }
+    ]
   },
   "若草": {
     "summary": "A famous Matsue sweet of soft gyuhi rice cake coated in kanbaiko rice powder dyed fresh green. Its pale green color, like young grass sprouting in early spring, is beautiful. It is said to be one of the sweets loved by Matsudaira Fumai, a lord of the Matsue domain who loved the tea ceremony. Matsue is known as a city of Japanese sweets alongside Kyoto and Kanazawa, with a deep-rooted tea culture. Enjoy the chewy gyuhi and refined sweetness with matcha after visiting Matsue Castle.",
     "price": "¥150–250 each",
-    "area": "Matsue"
+    "area": "Matsue",
+    "shops": [
+      {
+        "name": "Saiundo Honten",
+        "query": "彩雲堂 本店 松江",
+        "comment": "The Meiji-era maker of wakakusa, with a tea room.",
+        "access": "Tenjinmachi, Matsue"
+      },
+      {
+        "name": "Saiundo Shamine Matsue",
+        "query": "彩雲堂 シャミネ松江",
+        "comment": "Available in the Matsue Station building.",
+        "access": "Matsue Station (Shamine)"
+      }
+    ]
   },
   "どじょう掬いまんじゅう": {
     "summary": "Buns shaped like the comical face of the dojo-sukui dance, a loach-scooping dance performed to Yasugi-bushi, a folk song from Yasugi. The charming face, with a cloth tied over the head and a coin on the nose, is distinctive. Inside is gently sweet white bean paste, enjoyed with the moist dough. Their cute look makes them a popular Shimane souvenir. Pick them up at souvenir shops in Yasugi or Matsue along with a visit to the Adachi Museum of Art. They are sure to make you smile.",
     "price": "¥600–1,500",
-    "area": "Yasugi, Matsue and around"
+    "area": "Yasugi, Matsue and around",
+    "shops": [
+      {
+        "name": "ANA FESTA Yonago",
+        "query": "ANA FESTA 米子空港",
+        "comment": "Sold at the Yonago Airport shop.",
+        "access": "Yonago Airport"
+      },
+      {
+        "name": "Matsue Station souvenir shops",
+        "query": "松江駅 シャミネ おみやげ どじょう掬いまんじゅう",
+        "comment": "Widely sold at San'in souvenir shops.",
+        "access": "Matsue Station"
+      }
+    ]
   }
 }

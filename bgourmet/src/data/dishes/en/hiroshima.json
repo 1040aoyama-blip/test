@@ -2,76 +2,292 @@
   "お好み焼き": {
     "summary": "Hiroshima's signature soul food. Instead of mixing the batter, it is made by layering: a thin crepe of batter is topped with lots of cabbage, bean sprouts and pork and cooked. The classic style adds soba or udon noodles and finishes with a thin layer of egg. It is brushed generously with a sweet, rich sauce. The Hiroshima way is to eat it piping hot at the counter in front of the griddle, using a small spatula. The city has countless okonomiyaki restaurants.",
     "price": "¥800–1,500",
-    "area": "Hiroshima City and around"
+    "area": "Hiroshima City and around",
+    "shops": [
+      {
+        "name": "Micchan Sohonten Hatchobori",
+        "query": "みっちゃん総本店 八丁堀本店",
+        "comment": "One of the shops said to have pioneered Hiroshima okonomiyaki.",
+        "access": "Hatchobori"
+      },
+      {
+        "name": "Hassho (Okonomi-mura)",
+        "query": "お好み村 八昌",
+        "comment": "A popular stall in Okonomi-mura, a building full of okonomiyaki shops.",
+        "access": "Shintenchi (Okonomi-mura)"
+      }
+    ]
   },
   "尾道ラーメン": {
     "summary": "The local ramen of Onomichi, a town of hills and slopes. Its soy sauce broth combines chicken bones and seafood stock from small Seto Inland Sea fish, topped with minced pork back fat. Flat noodles cling to the broth, giving a light yet rich flavor. The sweetness of the fat brings out the taste of the soup. Many shops are found around Onomichi Station and in the shopping arcade. Stop by between walks up the slopes and temple visits. Some shops draw lines.",
     "price": "¥700–1,000",
-    "area": "Onomichi"
+    "area": "Onomichi",
+    "shops": [
+      {
+        "name": "Tsutafuji",
+        "query": "つたふじ 尾道 ラーメン",
+        "comment": "A long-running Onomichi ramen shop, lunch only.",
+        "access": "Onomichi"
+      },
+      {
+        "name": "Onomichi Ramen Maruboshi",
+        "query": "尾道ラーメン 丸ぼし",
+        "comment": "A popular shop that draws lines.",
+        "access": "Onomichi"
+      },
+      {
+        "name": "Onomichi Ramen Ichibankan",
+        "query": "尾道ラーメン 壱番館",
+        "comment": "Soy ramen with stock from small Seto Inland Sea fish.",
+        "access": "Onomichi"
+      }
+    ]
   },
   "広島つけ麺": {
     "summary": "Tsukemen born in Hiroshima: cold noodles dipped in a spicy sauce with chili and chili oil. The noodles are topped with plenty of boiled cabbage, cucumber, green onion and roast pork. The fiery heat and refreshing cold noodles make it easy to eat even on a hot day. Many shops let you choose from several spice levels. If you love spicy food, try the hotter levels. Hiroshima City has many specialty shops.",
     "price": "¥800–1,100",
-    "area": "Hiroshima City"
+    "area": "Hiroshima City",
+    "shops": [
+      {
+        "name": "Shinkaen",
+        "query": "新華園 広島 つけ麺",
+        "comment": "Said to be the originator of Hiroshima tsukemen.",
+        "access": "Funairimachi, Naka Ward"
+      },
+      {
+        "name": "Bakudanya Honten",
+        "query": "ばくだん屋 本店 広島",
+        "comment": "A popular tsukemen shop where you choose the heat level.",
+        "access": "Shintenchi, Naka Ward"
+      }
+    ]
   },
   "汁なし担担麺": {
     "summary": "Soupless dandan noodles, hugely popular in Hiroshima. A sauce of chili oil, Sichuan pepper and sesame sits under the noodles, and the trick is said to be mixing everything thoroughly from the bottom at least 30 times before eating. The numbing heat of Sichuan pepper and the sharp heat of chili oil are addictive. Many shops let you choose the levels of spiciness and numbness. Adding a small bowl of rice to the leftover sauce at the end is a classic. Hiroshima City has many specialty shops.",
     "price": "¥700–1,100",
-    "area": "Hiroshima City"
+    "area": "Hiroshima City",
+    "shops": [
+      {
+        "name": "Kunimatsu",
+        "query": "汁なし担担麺 くにまつ 八丁堀",
+        "comment": "A popular soupless tantanmen shop. Weekdays only.",
+        "access": "Hatchobori"
+      },
+      {
+        "name": "King-ken",
+        "query": "汁なし担担麺専門 キング軒 広島",
+        "comment": "A soupless tantanmen specialist.",
+        "access": "Naka Ward, Hiroshima"
+      }
+    ]
   },
   "呉冷麺": {
     "summary": "A local dish of Kure: cold noodles made with flat egg noodles. They come in a sweet and sour broth with roast pork, boiled egg and cucumber, and are eaten with chili peppers pickled in vinegar. Unlike typical reimen, the noodles are chewy, flat Chinese-style noodles, giving a taste different from Korean naengmyeon. Many shops serve it all year, not only in summer. Try it at shops in the port city of Kure along with sightseeing at the Yamato Museum. It is addictive.",
     "price": "¥800–1,100",
-    "area": "Kure"
+    "area": "Kure",
+    "shops": [
+      {
+        "name": "Chinraiken",
+        "query": "珍来軒 呉 冷麺",
+        "comment": "Where Kure reimen was born.",
+        "access": "Hondori, Kure"
+      },
+      {
+        "name": "Goryu",
+        "query": "呉龍 呉 冷麺",
+        "comment": "A rival to the originator in popularity.",
+        "access": "Nishichuo, Kure"
+      }
+    ]
   },
   "府中焼き": {
     "summary": "Local okonomiyaki of Fuchu City. Like Hiroshima-style okonomiyaki, the batter and toppings are layered, but it uses minced meat instead of pork belly. The fat from the minced meat makes the surface crisp and toasty, giving a crunchy outside and a fluffy inside. With noodles and egg too, it is very filling. Fuchu has many okonomiyaki restaurants. Comparing it with Hiroshima City's okonomiyaki is fun. The aroma of the sauce is irresistible.",
     "price": "¥800–1,300",
-    "area": "Fuchu"
+    "area": "Fuchu",
+    "shops": [
+      {
+        "name": "Sachi",
+        "query": "さち 府中焼き 府中市",
+        "comment": "A popular Fuchu-yaki restaurant.",
+        "access": "Fuchu"
+      },
+      {
+        "name": "Bingo Fuchuyaki Ikkyu Fuchu",
+        "query": "備後府中焼き 一宮 府中店",
+        "comment": "A shop known for crisp Fuchu-yaki.",
+        "access": "Fuchucho, Fuchu"
+      }
+    ]
   },
   "あなご飯": {
     "summary": "A specialty from around Miyajima: conger eel brushed with a sweet and savory sauce and grilled until fragrant, piled generously on rice cooked in the sauce. At Miyajimaguchi, across from Miyajima, anago rice station bento are said to have been sold since the Meiji era. Enjoy the plump eel, the aroma of toasted sauce and the flavorful rice. Many anago rice restaurants are found at Miyajimaguchi and along the main approach on Miyajima. Pair it with a visit to Itsukushima Shrine.",
     "price": "¥2,000–4,000",
-    "area": "Miyajimaguchi and Miyajima, Hatsukaichi"
+    "area": "Miyajimaguchi and Miyajima, Hatsukaichi",
+    "shops": [
+      {
+        "name": "Anagomeshi Ueno",
+        "query": "あなごめし うえの 宮島口本店",
+        "comment": "Selling anago rice at Miyajimaguchi since the Meiji period.",
+        "access": "Miyajimaguchi (near the ferry pier)"
+      },
+      {
+        "name": "Fujitaya",
+        "query": "あなごめし ふじたや 宮島",
+        "comment": "A Miyajima institution founded in the Meiji period.",
+        "access": "Miyajima"
+      }
+    ]
   },
   "かきの土手鍋": {
     "summary": "A Hiroshima winter specialty: a miso-based hot pot of oysters. Miso is spread like an embankment, a dote, around the rim of the pot, and you simmer oysters, tofu and vegetables while gradually dissolving the miso into the broth. Melting the miso as you go lets you adjust the flavor to your liking. The plump oysters' umami combines with the rich miso to warm you to the core. Enjoy it in winter, oyster season, at oyster restaurants in Hiroshima City. Finishing with rice porridge is recommended.",
     "price": "¥2,500–5,000",
-    "area": "Hiroshima City and around"
+    "area": "Hiroshima City and around",
+    "shops": [
+      {
+        "name": "Kakifune Kanawa",
+        "query": "かき船 かなわ 広島",
+        "comment": "An oyster restaurant aboard a boat moored on the river.",
+        "access": "Near the Atomic Bomb Dome (Motoyasu River)"
+      },
+      {
+        "name": "Yakigaki no Hayashi",
+        "query": "焼がきのはやし 宮島",
+        "comment": "An oyster specialist.",
+        "access": "Omotesando, Miyajima"
+      }
+    ]
   },
   "焼き牡蠣": {
     "summary": "Hiroshima is known as Japan's top oyster producer. Grilled oysters are cooked in their shells over a grill, and when the shells open, flavorful juices spill out. Enjoy the plump meat and the scent of the sea. On Miyajima's Omotesando shopping street, shops selling freshly grilled oysters to eat as you walk are popular with tourists. Winter is the season, but some shops serve them all year. Squeezing on lemon is recommended. They are hot, so be careful not to burn yourself.",
     "price": "¥200–500 each",
-    "area": "Miyajima, Hatsukaichi and around"
+    "area": "Miyajima, Hatsukaichi and around",
+    "shops": [
+      {
+        "name": "Yakigaki no Hayashi",
+        "query": "焼がきのはやし 宮島",
+        "comment": "A postwar shop said to have started grilled oysters.",
+        "access": "Omotesando, Miyajima"
+      },
+      {
+        "name": "Kakifune Kanawa",
+        "query": "かき船 かなわ 広島",
+        "comment": "Oyster dishes in central Hiroshima.",
+        "access": "Near the Atomic Bomb Dome (Motoyasu River)"
+      }
+    ]
   },
   "広島菜漬のおにぎり": {
     "summary": "Hiroshima-na is a leafy green grown in Hiroshima, and its pickles are counted among Japan's three great pickled greens. Hiroshima-na pickles feature a crunchy texture, a pleasant spiciness and saltiness, and a fresh flavor. Rice balls wrapped in the big pickled leaves are a familiar taste for Hiroshima people. There are also versions with the chopped pickles mixed into the rice. They are sold at Hiroshima Station and rice ball shops in the city. They taste different from nori-wrapped rice balls and are perfect for a trip.",
     "price": "¥150–300 each",
-    "area": "Hiroshima City and around"
+    "area": "Hiroshima City and around",
+    "shops": [
+      {
+        "name": "Musubi no Musashi Dobashi",
+        "query": "むすび むさし 土橋店",
+        "comment": "The flagship, known for tawara musubi with Hiroshima-na.",
+        "access": "Dobashicho, Naka Ward"
+      },
+      {
+        "name": "Musubi no Musashi Hiroshima Station",
+        "query": "むすびのむさし お土産街道店 広島駅",
+        "comment": "In the Shinkansen concourse at Hiroshima Station.",
+        "access": "Hiroshima Station (Shinkansen concourse)"
+      }
+    ]
   },
   "もみじ饅頭": {
     "summary": "A Miyajima specialty and Hiroshima's most famous souvenir sweet. Castella-like sponge shaped like a maple leaf is filled with smooth bean paste and baked. It is said to have been created by a confectioner at the request of an innkeeper on Miyajima. Besides smooth bean paste, there are flavors like chunky bean paste, matcha, chocolate and custard. Deep-fried momiji manju is also popular street food on Miyajima. They are sold at many shops on Miyajima, at Hiroshima Station and elsewhere, and some sell them freshly baked.",
     "price": "¥100–150 each",
-    "area": "Miyajima, Hatsukaichi and Hiroshima City"
+    "area": "Miyajima, Hatsukaichi and Hiroshima City",
+    "shops": [
+      {
+        "name": "Fujiiya Miyajima",
+        "query": "藤い屋 宮島本店",
+        "comment": "A momiji manju maker founded in the Taisho period.",
+        "access": "Miyajima"
+      },
+      {
+        "name": "Yamadaya Miyajima",
+        "query": "やまだ屋 宮島本店",
+        "comment": "Buy them fresh from the griddle.",
+        "access": "Miyajima"
+      }
+    ]
   },
   "生もみじ": {
     "summary": "A chewy momiji manju made by a long-established Hiroshima confectioner. Regular momiji manju uses castella-like sponge, but nama momiji uses dough made from rice flour and glutinous rice flour, wrapped around bean paste and steamed. The moist, chewy dough with smooth paste offers a different pleasure from regular momiji manju. Flavors include smooth bean paste, chunky bean paste and matcha. It is sold at Hiroshima Station, the airport and souvenir shops. Its refined sweetness makes it a good gift.",
     "price": "¥600–1,500",
-    "area": "Hiroshima City and around"
+    "area": "Hiroshima City and around",
+    "shops": [
+      {
+        "name": "Nishikido Hikarimachi",
+        "query": "にしき堂 光町本店",
+        "comment": "The flagship of Nishikido, maker of nama momiji.",
+        "access": "Near Hiroshima Station north exit"
+      },
+      {
+        "name": "Hiroshima Station souvenir shops",
+        "query": "広島駅 ekie おみやげ 生もみじ",
+        "comment": "Sold at Hiroshima Station shops.",
+        "access": "Hiroshima Station"
+      }
+    ]
   },
   "はっさく大福": {
     "summary": "A specialty of Innoshima in Onomichi: daifuku with hassaku citrus segments and white bean paste wrapped in soft gyuhi. Innoshima is known as the birthplace of hassaku. The citrus's refreshing tartness, slight bitterness and juiciness go well with the gentle sweetness of white bean paste. Chilled, it tastes even more refreshing. It is sold at confectioners on Innoshima, often seasonally. It also makes a great snack break while cycling the Shimanami Kaido.",
     "price": "¥150–250 each",
-    "area": "Innoshima, Onomichi"
+    "area": "Innoshima, Onomichi",
+    "shops": [
+      {
+        "name": "Hassakuya",
+        "query": "はっさく屋 因島",
+        "comment": "The hassaku daifuku shop. Sold about October–June, until sold out.",
+        "access": "Inside Innoshima Ohashi Memorial Park"
+      },
+      {
+        "name": "Shofukutei",
+        "query": "昇福亭 尾道 はっさく大福",
+        "comment": "An Onomichi confectioner that also makes hassaku daifuku.",
+        "access": "Tokamotomachi, Onomichi"
+      }
+    ]
   },
   "くりーむパン": {
     "summary": "Cream buns from a bakery in Mihara, meant to be eaten chilled. Soft, fluffy bread is filled generously with smooth custard and other creams. Chilling makes the cream cool, giving it a dessert-like taste. Besides custard, there are fresh cream, matcha and seasonal flavors. The shop has branches at stations across Japan, but be sure to try it at Hiroshima Station or the main store in Mihara. It makes a great snack or souvenir.",
     "price": "¥250–350 each",
-    "area": "Mihara, Hiroshima City and around"
+    "area": "Mihara, Hiroshima City and around",
+    "shops": [
+      {
+        "name": "Hattendo Honten (Hattendo Village)",
+        "query": "八天堂ビレッジ 八天堂本店",
+        "comment": "Hattendo's flagship, with factory tours.",
+        "access": "Hongo, Mihara"
+      },
+      {
+        "name": "Hiroshima Station souvenir shops",
+        "query": "広島駅 ekie 八天堂",
+        "comment": "Also sold at Hiroshima Station.",
+        "access": "Hiroshima Station"
+      }
+    ]
   },
   "レモンケーキ": {
     "summary": "Hiroshima is known as Japan's top producer of domestic lemons, and Setoda in Onomichi is especially famous for them. Lemon cakes are moist baked sweets made with these lemons, often shaped like a cute lemon. Some are coated with lemon-flavored chocolate or icing. Enjoy the balance of refreshing tartness and sweetness. They are sold in Setoda, at Hiroshima Station and at souvenir shops. They go perfectly with black tea.",
     "price": "¥200–400 each",
-    "area": "Setoda, Onomichi and around"
+    "area": "Setoda, Onomichi and around",
+    "shops": [
+      {
+        "name": "Shimagokoro Setoda",
+        "query": "島ごころ SETODA 瀬戸田本店",
+        "comment": "A lemon-cake shop using Setoda lemons, with a café.",
+        "access": "Setoda, Onomichi"
+      },
+      {
+        "name": "Hiroshima Station souvenir shops",
+        "query": "広島駅 ekie おみやげ レモンケーキ",
+        "comment": "Sold at Hiroshima Station shops.",
+        "access": "Hiroshima Station"
+      }
+    ]
   }
 }

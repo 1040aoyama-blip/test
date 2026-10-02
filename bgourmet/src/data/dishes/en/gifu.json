@@ -2,61 +2,235 @@
   "高山ラーメン": {
     "summary": "The local ramen of Hida-Takayama, often called chuka soba by locals. It has thin curly noodles and a light soy sauce broth made from chicken bones, dried sardines and more. Many shops use a unique method of simmering the soup and soy sauce base together from the start. Its simple, gentle flavor feels somehow nostalgic. Many shops are easy to drop into between strolls through the old town. It is also perfect after a visit to the morning markets.",
     "price": "¥700–1,000",
-    "area": "Takayama"
+    "area": "Takayama",
+    "shops": [
+      {
+        "name": "Masago Soba",
+        "query": "まさごそば 高山",
+        "comment": "A prewar shop said to be the birthplace of Takayama ramen.",
+        "access": "Yurakucho, Takayama"
+      },
+      {
+        "name": "Mametengu Honten",
+        "query": "豆天狗 本店 高山",
+        "comment": "Popular for its soy-sauce chuka soba.",
+        "access": "Shimoichinomachi (12 min walk from Takayama Station)"
+      }
+    ]
   },
   "鶏ちゃん": {
     "summary": "A local dish of the Okumino area and Gero in Gifu. Chicken is marinated in a sauce of miso, soy sauce, garlic and more, then grilled on an iron plate with cabbage, onion and other vegetables. The sauce soaks into the vegetables, making it great with rice. The sauce varies by area and shop, from miso to soy sauce to salt. It was originally cooked at home, often in a Genghis Khan grill pan. Try it along with sightseeing in Gujo Hachiman or Gero Onsen.",
     "price": "¥800–1,500",
-    "area": "Gujo, Gero and around"
+    "area": "Gujo, Gero and around",
+    "shops": [
+      {
+        "name": "Kei-chan Sugi no Ko",
+        "query": "鶏ちゃん 杉の子 下呂",
+        "comment": "A kei-chan specialist with generous portions.",
+        "access": "Ogawa, Gero"
+      },
+      {
+        "name": "Hagiya Kei-chan",
+        "query": "萩屋ケイちゃん 下呂",
+        "comment": "Run by a kei-chan maker; choose the type of chicken and the sauce.",
+        "access": "Gero"
+      },
+      {
+        "name": "Hokaen",
+        "query": "芳花園 郡上八幡 鶏ちゃん",
+        "comment": "Serves kei-chan in Gujo miso sauce.",
+        "access": "Hachiman, Gujo"
+      }
+    ]
   },
   "漬物ステーキ": {
     "summary": "A local dish of the Hida area: Chinese cabbage pickles that have aged and turned sour are fried on an iron plate or pan and bound with egg. It is said to have started with warming frozen pickles in the cold winter. Frying mellows the sourness, and with the gentle flavor of egg it goes well with rice and sake. It is seasoned with bonito flakes and soy sauce. Try it at izakaya and local restaurants in Takayama, sometimes served with hoba miso. Sourer pickles are said to make it tastier.",
     "price": "¥500–900",
-    "area": "Takayama and the Hida area"
+    "area": "Takayama and the Hida area",
+    "shops": [
+      {
+        "name": "Kyoya",
+        "query": "飛騨高山 京や",
+        "comment": "Local cooking served in an old farmhouse.",
+        "access": "Oshinmachi, Takayama"
+      },
+      {
+        "name": "Hisadaya",
+        "query": "郷土料理 久田屋 高山",
+        "comment": "Local dishes in a townhouse on the old-town streets.",
+        "access": "Old town (Kamisannomachi)"
+      }
+    ]
   },
   "朴葉味噌": {
     "summary": "A Hida local dish: miso mixed with green onion and shiitake is placed on a large dried magnolia leaf and grilled over a small stove as you eat. The miso turns toasty and fragrant, and the leaf adds its own aroma, making rice disappear bowl after bowl. A luxurious version grilled with Hida beef is also popular. It is a breakfast classic at Takayama inns and served at local restaurants in the city. Magnolia leaves and miso are sold as souvenirs too, so you can enjoy the taste at home.",
     "price": "¥500–1,500",
-    "area": "Takayama and the Hida area"
+    "area": "Takayama and the Hida area",
+    "shops": [
+      {
+        "name": "Hisadaya",
+        "query": "郷土料理 久田屋 高山",
+        "comment": "A late-Edo townhouse popular for hoba miso with Hida beef.",
+        "access": "Old town (Kamisannomachi)"
+      },
+      {
+        "name": "Kyoya",
+        "query": "飛騨高山 京や",
+        "comment": "Enjoy hoba miso in a house with an open hearth.",
+        "access": "Oshinmachi, Takayama"
+      }
+    ]
   },
   "朴葉ずし": {
     "summary": "A local dish of vinegared rice topped with salmon, wild vegetables, shiitake, shredded egg and more, wrapped in a large magnolia leaf. Magnolia leaves have antibacterial properties, and their fresh scent transfers to the rice. It is made in early summer when the leaves grow large, and is loved as a seasonal taste. It has long been made at home around rice-planting time. Look for it seasonally at roadside stations and farm stands in the Hida and Tono areas. Enjoy the refreshing scent of the leaf.",
     "price": "¥200–400 each",
-    "area": "Hida and Tono areas"
+    "area": "Hida and Tono areas",
+    "shops": [
+      {
+        "name": "Sushikan",
+        "query": "すし勘 下呂 朴葉寿し",
+        "comment": "A Gero shop selling hoba-zushi. Early summer only.",
+        "access": "Ogawa, Gero"
+      },
+      {
+        "name": "Hida Bussankan (Takayama Green Hotel)",
+        "query": "飛騨物産館 高山グリーンホテル",
+        "comment": "A souvenir shop near Takayama Station; stocked in early summer.",
+        "access": "Near Takayama Station"
+      }
+    ]
   },
   "飛騨牛ステーキ": {
     "summary": "Steak of Hida beef, a brand name that only Japanese Black cattle raised in Gifu and meeting strict standards may carry. It features fine marbling, melt-in-your-mouth tenderness and rich aroma and flavor. Many steakhouses and yakiniku restaurants around Takayama serve it. You can also enjoy it grilled with hoba miso, or as sukiyaki or shabu-shabu. It is the perfect reward on a trip. Medium rare is recommended. Pair it with a walk around Takayama.",
     "price": "¥5,000–15,000",
-    "area": "Takayama and around"
+    "area": "Takayama and around",
+    "shops": [
+      {
+        "name": "Steak House Kitchen Hida",
+        "query": "ステーキハウス キッチン飛騨 本店",
+        "comment": "A long-running Hida beef steak specialist.",
+        "access": "Honmachi (10 min walk from Takayama Station)"
+      },
+      {
+        "name": "Kyoya",
+        "query": "飛騨高山 京や",
+        "comment": "Have Hida beef alongside local dishes.",
+        "access": "Oshinmachi, Takayama"
+      }
+    ]
   },
   "飛騨牛にぎり": {
     "summary": "A popular street food in Takayama's old town: Hida beef lightly seared and placed on vinegared rice as nigiri sushi. The sweetness of the melting beef fat goes perfectly with the refreshing rice. Some shops serve it on a shrimp cracker instead of a plate, and you can eat the cracker too. It is a casual way to taste Hida beef and is hugely popular with tourists. On holidays there are often lines. Some shops let you choose salt or soy sauce. Enjoy it while strolling the old streets.",
     "price": "¥600–1,200 per plate",
-    "area": "Old town, Takayama"
+    "area": "Old town, Takayama",
+    "shops": [
+      {
+        "name": "Sakaguchiya",
+        "query": "御食事処 坂口屋 高山",
+        "comment": "A Meiji-era restaurant said to have created Hida beef nigiri.",
+        "access": "Old town, Takayama"
+      },
+      {
+        "name": "Kin no Kotteushi",
+        "query": "金乃こって牛 高山",
+        "comment": "Hida beef nigiri on a shrimp cracker, to eat as you stroll.",
+        "access": "Old town (Kaminininomachi)"
+      }
+    ]
   },
   "鮎の塩焼": {
     "summary": "In Gifu, through which the clear Nagara River flows, sweetfish dishes have long been loved. Freshly caught ayu sprinkled with salt and slowly grilled over charcoal offer crisp skin, tender flaky flesh and slightly bitter innards. Because of its aroma, ayu is also called the fragrant fish. On the Nagara River, ukai, the traditional method of fishing with cormorants, takes place on summer nights. Try it in Gifu City, Seki, Gujo and elsewhere. You can eat it whole, head and all.",
     "price": "¥600–1,200 per fish",
-    "area": "Gifu City, Gujo and around"
+    "area": "Gifu City, Gujo and around",
+    "shops": [
+      {
+        "name": "Kawaramachi Izumiya",
+        "query": "川原町 泉屋 岐阜",
+        "comment": "A Meiji-era sweetfish restaurant near the cormorant-fishing pier.",
+        "access": "Kawaramachi, Gifu City"
+      },
+      {
+        "name": "Tennen Ayu Miyachika",
+        "query": "天然鮎 みやちか 郡上",
+        "comment": "Serves wild sweetfish caught at its own Nagara River weir. Regular hours Jun–Oct.",
+        "access": "Minami, Gujo"
+      }
+    ]
   },
   "五平餅": {
     "summary": "A local dish of cooked rice half-mashed, skewered, grilled and brushed with a sweet and savory sauce. It is loved in Gifu's Tono and Hida areas, and in Ena and Nakatsugawa it often comes in the shape of dumplings. The sauce uses walnuts, sesame, miso, soy sauce and more, and the flavor differs by area and shop. The aroma of the toasted sauce whets the appetite. You can eat it freshly grilled in the post towns of the Nakasendo and at roadside stations. It makes a perfect snack on a trip.",
     "price": "¥200–400 per skewer",
-    "area": "Ena, Nakatsugawa and around"
+    "area": "Ena, Nakatsugawa and around",
+    "shops": [
+      {
+        "name": "Gohei Mochi Kiraku",
+        "query": "五平餅の喜楽 中津川",
+        "comment": "A Nakatsugawa gohei mochi shop founded during the war years.",
+        "access": "Nakatsugawa"
+      },
+      {
+        "name": "Amakara Honten",
+        "query": "あまから 本店 恵那 五平餅",
+        "comment": "A popular shop in Ena.",
+        "access": "Ena"
+      }
+    ]
   },
   "栗きんとん": {
     "summary": "An autumn sweet famous in the Tono area, centered on Nakatsugawa and Ena. Steamed chestnuts are strained, cooked with sugar, and shaped in a cloth into a chestnut form. Made only with chestnuts and sugar, it lets you enjoy the true chestnut flavor and a crumbly texture. It is different from the kuri kinton found in New Year dishes. Many shops make it only in autumn when chestnuts are harvested, and going around confectioners to compare is fun. If you visit Tono in autumn, be sure to try it.",
     "price": "¥250–400 each",
-    "area": "Nakatsugawa, Ena"
+    "area": "Nakatsugawa, Ena",
+    "shops": [
+      {
+        "name": "Suya Honten",
+        "query": "栗きんとん本家 すや 本店",
+        "comment": "An Edo-period maker of kuri kinton.",
+        "access": "Shinmachi, Nakatsugawa"
+      },
+      {
+        "name": "Kawakamiya Honten",
+        "query": "川上屋 本店 中津川",
+        "comment": "A confectioner founded in the late Edo period.",
+        "access": "Honmachi, Nakatsugawa"
+      }
+    ]
   },
   "水まんじゅう": {
     "summary": "A summer specialty of Ogaki: smooth bean paste wrapped in a clear dough of kudzu or bracken starch. It is set in small cups like sake cups and served chilled in cold well water. Ogaki is a city of water blessed with abundant groundwater, and this cool-looking sweet makes the most of it. Its slippery texture and gentle sweetness are perfect on a hot day. You can enjoy it at Ogaki's confectioners during summer. It is a sweet that shows off the richness of Ogaki's water.",
     "price": "¥100–200 each",
-    "area": "Ogaki"
+    "area": "Ogaki",
+    "shops": [
+      {
+        "name": "Kinchoen Sohonke",
+        "query": "金蝶園総本家 大垣駅前本店",
+        "comment": "Edo-period confectioner selling mizu manju chilled in a tank of spring water.",
+        "access": "1 min walk from Ogaki Station"
+      },
+      {
+        "name": "Mochiso",
+        "query": "餅惣 大垣 水まんじゅう",
+        "comment": "A late-Edo confectioner near Ogaki Castle.",
+        "access": "Kuruwamachi (near Ogaki Castle)"
+      }
+    ]
   },
   "高山みだらしだんご": {
     "summary": "A Hida-Takayama specialty of skewered rice dumplings brushed with soy sauce and grilled. Unlike regular mitarashi dango, it is not sweet but soy-flavored. Locals often call it midarashi. The toasty aroma of grilled soy sauce drifts through the streets, and the simple flavor feels nostalgic. Shops in the old town sell them freshly grilled, perfect for eating as you walk. Recommended even for people who do not like sweets. You can buy just one skewer.",
     "price": "¥80–150 per skewer",
-    "area": "Takayama"
+    "area": "Takayama",
+    "shops": [
+      {
+        "name": "Jinya Dango",
+        "query": "陣屋だんご店 高山",
+        "comment": "Freshly grilled dango in front of Takayama Jinya.",
+        "access": "In front of Takayama Jinya"
+      },
+      {
+        "name": "Komemaruya Takayama Ekimae",
+        "query": "米丸家 高山駅前本店",
+        "comment": "A mitarashi dango shop by Takayama Station.",
+        "access": "Takayama Station front"
+      }
+    ]
   }
 }

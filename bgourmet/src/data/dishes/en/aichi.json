@@ -2,81 +2,305 @@
   "味噌カツ": {
     "summary": "A leading Nagoya meshi dish: pork cutlet topped with a sweet and savory sauce based on mame miso, a soybean miso. The richness and sweetness of mame miso, essential to Nagoya's food culture, goes perfectly with the crisp cutlet. Some shops pour plenty of sauce over it, while others serve it on a sizzling iron plate. It usually comes with shredded cabbage and rice. Nagoya has many miso katsu specialty shops, and the amount of miso varies by shop. It is the first dish to try in Nagoya.",
     "price": "¥1,000–1,800",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Yabaton Yabacho Honten",
+        "query": "矢場とん 矢場町本店",
+        "comment": "Nagoya's best-known miso katsu shop, founded just after the war.",
+        "access": "Near Yabacho Station"
+      },
+      {
+        "name": "Ajidokoro Kano",
+        "query": "味処 叶 名古屋 みそかつ",
+        "comment": "Said to be the originator of miso katsudon.",
+        "access": "3 min walk from Sakae Station"
+      }
+    ]
   },
   "手羽先唐揚げ": {
     "summary": "One of Nagoya's signature izakaya dishes: chicken wings fried, brushed with a sweet and savory sauce, and sprinkled with lots of pepper and sesame. The crisp skin and peppery kick are addictive and go great with beer. Nagoya has several famous wing shops, each with its own seasoning. Some shops even show you the best way to eat them, and stripping the meat cleanly from the bones is fun. It is a must on any night out in Nagoya.",
     "price": "¥500–800 for 5",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Furaibo Sakae",
+        "query": "風来坊 栄店 手羽先",
+        "comment": "The chain said to have originated tebasaki karaage.",
+        "access": "Sakae"
+      },
+      {
+        "name": "Sekai no Yamachan Honten",
+        "query": "世界の山ちゃん 本店",
+        "comment": "Known for its peppery \"phantom\" tebasaki.",
+        "access": "Sakae"
+      }
+    ]
   },
   "台湾ラーメン": {
     "summary": "A local ramen born in Nagoya. Despite the name Taiwan, it is not found in Taiwan and is unique to Nagoya. It features a soy-based broth topped with spicy minced meat stir-fried with chili and garlic, plus garlic chives. It is said to have been created at a Taiwanese restaurant in Nagoya, inspired by Taiwan's danzai noodles. The fiery heat carries deep umami, and it is addictive. Some shops offer a milder version called American. Working up a sweat as you eat is part of the experience.",
     "price": "¥700–1,000",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Misen Imaike Honten",
+        "query": "味仙 今池本店",
+        "comment": "The shop that invented Taiwan ramen. Evenings only.",
+        "access": "Near Imaike Station"
+      },
+      {
+        "name": "Misen JR Nagoya Station",
+        "query": "味仙 JR名古屋駅店",
+        "comment": "An easy stop in Nagoya Station's restaurant arcade. Open every day.",
+        "access": "Nagoya Station (Nagoya Umaimon-dori)"
+      }
+    ]
   },
   "台湾まぜそば": {
     "summary": "A soupless noodle dish born in Nagoya. Thick noodles are topped with spicy Taiwan-style minced meat with chili and garlic, garlic chives, green onion, fish powder and a raw egg yolk, then mixed well. It is said to have been inspired by Taiwan ramen. Heat, garlic aroma and mellow egg combine into a punchy flavor. The classic finish is oimeshi: add a small serving of rice to the leftover sauce and mix it in. The garlic is strong, so mind the timing.",
     "price": "¥900–1,200",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Menya Hanabi Takabata",
+        "query": "麺屋はなび 高畑本店",
+        "comment": "The shop where Taiwan mazesoba was born.",
+        "access": "Near Takabata Station (Nakagawa Ward)"
+      },
+      {
+        "name": "Menya Hanabi Meieki Nishiguchi",
+        "query": "台湾まぜそば はなび 名駅西口店",
+        "comment": "Within walking distance of Nagoya Station's west exit.",
+        "access": "Nagoya Station west exit"
+      }
+    ]
   },
   "あんかけスパゲッティ": {
     "summary": "A local pasta born in Nagoya: thick spaghetti stir-fried and covered with plenty of thick, peppery sauce. The sauce is made by simmering tomatoes, vegetables, meat and more, and its signature is a peppery kick. The menu names change with the toppings, such as sausages, vegetables or bacon, which is fun. For Nagoya people, it is a taste they have long enjoyed at cafes and specialty shops. It shows Nagoya's unique food culture.",
     "price": "¥800–1,200",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Spaghetti House Yokoi Sumiyoshi",
+        "query": "スパゲッティハウス ヨコイ 住吉本店",
+        "comment": "The originator of ankake spaghetti; try the \"Mirakan\".",
+        "access": "Sakae"
+      },
+      {
+        "name": "Spaghetti House Chao JR Nagoya Taiko-dori",
+        "query": "スパゲティハウス チャオ JR名古屋駅太閤通口店",
+        "comment": "A popular ankake spaghetti chain with many Nagoya branches.",
+        "access": "Nagoya Station (Nagoya Umaimon-dori)"
+      }
+    ]
   },
   "鉄板ナポリタン": {
     "summary": "A classic at Nagoya cafes: beaten egg poured onto a sizzling iron plate, topped with spaghetti stir-fried in ketchup. The heat of the plate cooks the egg until fluffy, and eating the pasta and egg together is fun. It stays hot to the last bite. It spread with Nagoya's cafe culture, and the sight of it arriving with a sizzle is part of its charm. Try it at an old-fashioned cafe. The gentle flavor of the egg is a treat.",
     "price": "¥800–1,100",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Kissa Yuki",
+        "query": "喫茶ユキ 名古屋 鉄板スパゲッティ",
+        "comment": "The coffee shop where teppan napolitan was born.",
+        "access": "Naka Ward, Nagoya"
+      },
+      {
+        "name": "Kissa Rich",
+        "query": "喫茶リッチ エスカ",
+        "comment": "A veteran coffee shop in the Nagoya Station underground mall.",
+        "access": "Nagoya Station (Esca underground mall)"
+      }
+    ]
   },
   "天むす": {
     "summary": "A rice ball with a small shrimp tempura inside, wrapped in nori seaweed. It is said to have been born at a shop in Tsu, Mie, then came to Nagoya and spread as a Nagoya meshi dish. Bite-sized and easy to eat, it pairs fragrant shrimp tempura with lightly salted rice. Many shops serve it with pickles such as kyarabuki, simmered butterbur. You can buy it at Nagoya Station and specialty shops, perfect for the bullet train. It is tasty even cold.",
     "price": "¥600–1,000 for 5",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Tenmusu Senju Honten",
+        "query": "めいふつ天むす 千寿 本店 大須",
+        "comment": "The shop that made tenmusu a Nagoya favorite.",
+        "access": "Osu"
+      },
+      {
+        "name": "Jiraiya Honten",
+        "query": "地雷也 本店 名古屋 天むす",
+        "comment": "A popular tenmusu shop near Tokugawaen.",
+        "access": "Higashi Ward (Tokugawa area)"
+      }
+    ]
   },
   "小倉トースト": {
     "summary": "A classic at Nagoya cafes: thick toast spread with butter or margarine and topped with plenty of sweet red bean paste. The toasty bread, salty butter and sweet beans make an addictive combination. Nagoya cafes have a morning culture, in which ordering a drink gets you free toast, a boiled egg and more, and many let you choose ogura toast. When in Nagoya, try it at a cafe in the morning. The amount of bean paste and butter varies by shop.",
     "price": "¥400–700",
-    "area": "Nagoya and around"
+    "area": "Nagoya and around",
+    "shops": [
+      {
+        "name": "Kissa Matsuba",
+        "query": "喫茶まつば 円頓寺",
+        "comment": "Nagoya's oldest coffee shop, descended from the inventor of ogura toast.",
+        "access": "Endoji shopping street (Nishi Ward)"
+      },
+      {
+        "name": "Komeda Coffee Honten",
+        "query": "コメダ珈琲店 本店 名古屋",
+        "comment": "The flagship of the Nagoya-born coffee chain.",
+        "access": "Showa Ward, Nagoya"
+      }
+    ]
   },
   "豊橋カレーうどん": {
     "summary": "A local dish of Toyohashi: an unusual curry udon with rice and grated yam at the bottom of the bowl and curry udon on top. A quail egg on top is another trademark. After finishing the noodles, you enjoy the rice and yam that appear from the bottom with the leftover curry. Getting two meals in one bowl is the appeal. Many udon shops in Toyohashi serve it. Be sure to eat all the way down to the rice. The grated yam softens the curry's heat.",
     "price": "¥900–1,200",
-    "area": "Toyohashi"
+    "area": "Toyohashi",
+    "shops": [
+      {
+        "name": "Segawa Honten",
+        "query": "勢川 本店 豊橋",
+        "comment": "A Taisho-era udon shop.",
+        "access": "10 min walk from Toyohashi Station"
+      },
+      {
+        "name": "Tamagawa Hirokoji",
+        "query": "玉川 豊橋広小路本店",
+        "comment": "A handmade udon shop founded in the Meiji period.",
+        "access": "5 min walk from Toyohashi Station"
+      }
+    ]
   },
   "ひつまぶし": {
     "summary": "Nagoya's signature dish: chopped grilled eel on rice in a wooden tub. The classic way is to eat the first bowl plain, the second with condiments such as green onion, wasabi and nori, and the third with dashi poured over as ochazuke, enjoying the changing flavors. Finish with your favorite way. Nagoya has many long-established eel restaurants, and popular ones draw lines. Enjoy the flavor of fragrant grilled eel to the very last bite.",
     "price": "¥3,500–6,000",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Atsuta Horaiken Honten",
+        "query": "あつた蓬莱軒 本店",
+        "comment": "A Meiji-era restaurant said to have originated hitsumabushi.",
+        "access": "Near Atsuta Shrine"
+      },
+      {
+        "name": "Ibasho",
+        "query": "いば昇 本店 名古屋",
+        "comment": "A Meiji-era eel house with just one shop, in Nagoya.",
+        "access": "Sakae (Nishiki 3-chome)"
+      }
+    ]
   },
   "きしめん": {
     "summary": "A Nagoya specialty: udon with flat, thin noodles. Enjoy their smooth texture and chewy bite. The classic way is to eat them in a soy sauce broth rich with bonito, topped with plenty of bonito flakes, fried tofu and greens. The standing kishimen counters on the shinkansen platforms of Nagoya Station are popular with travelers. They are delicious both hot and cold. The thin noodles cook quickly, so they are fast to eat too. A perfect way to end a trip to Nagoya.",
     "price": "¥600–1,000",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Miya Kishimen Jingu",
+        "query": "宮きしめん 神宮店",
+        "comment": "Eat it inside the grounds of Atsuta Shrine.",
+        "access": "Atsuta Shrine grounds"
+      },
+      {
+        "name": "Miya Kishimen Jingu Higashi",
+        "query": "宮きしめん 神宮東店",
+        "comment": "In the station building at Jingu-mae.",
+        "access": "Jingu-mae Station (μPLAT)"
+      }
+    ]
   },
   "味噌煮込みうどん": {
     "summary": "One of Nagoya's signature dishes: udon simmered in a clay pot in a broth based on mame miso. The noodles are made without salt and are firm, keeping their bite even after simmering. They may feel hard at first, but that is the authentic taste. With chicken, egg, green onion and fried tofu, the rich miso broth warms you up. Using the pot lid as a plate is the Nagoya way. It is piping hot, so take your time and be careful not to burn yourself.",
     "price": "¥1,000–1,800",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Yamamotoya Sohonke Honke",
+        "query": "山本屋総本家 本家",
+        "comment": "A long-running miso nikomi udon house dating to the Taisho period.",
+        "access": "Near Yabacho Station"
+      },
+      {
+        "name": "Yamamotoya Honten Esca",
+        "query": "山本屋本店 エスカ店",
+        "comment": "Available in the Nagoya Station underground mall.",
+        "access": "Nagoya Station (Esca underground mall)"
+      }
+    ]
   },
   "ういろう": {
     "summary": "A chewy steamed sweet of rice flour and sugar, and one of Nagoya's best-known souvenirs. It comes in many colors and flavors, such as white, brown sugar, matcha, cherry blossom and yuzu. It has a simple, gentle sweetness and a springy, chewy texture. Nagoya uiro often comes cut into bite-sized pieces or individually wrapped, making it easy to enjoy. It is widely sold at Nagoya Station and souvenir shops in the city. Some types keep well, making them good souvenirs.",
     "price": "¥500–1,500",
-    "area": "Nagoya"
+    "area": "Nagoya",
+    "shops": [
+      {
+        "name": "Aoyagi Sohonke Osu",
+        "query": "青柳総本家 大須本店",
+        "comment": "A uiro maker founded in the Meiji period.",
+        "access": "Osu"
+      },
+      {
+        "name": "Osu Uiro Honten",
+        "query": "大須ういろ 本店",
+        "comment": "The Osu-named uiro maker.",
+        "access": "Osu"
+      }
+    ]
   },
   "鬼まんじゅう": {
     "summary": "A homey Aichi snack of diced sweet potato mixed into a flour and sugar dough and steamed. Its bumpy look is said to resemble an ogre's horns or iron club, hence the name. Enjoy the fluffy sweetness of sweet potato and the chewy dough. It is often made at home in Nagoya and is easy to buy at confectioners and supermarkets. It is especially good warm, fresh from the steamer. Try it from autumn to winter when sweet potatoes are at their best.",
     "price": "¥100–200 each",
-    "area": "Nagoya and around"
+    "area": "Nagoya and around",
+    "shops": [
+      {
+        "name": "Baikado",
+        "query": "梅花堂 覚王山 鬼まんじゅう",
+        "comment": "Sells out early; reserve to be sure.",
+        "access": "Kakuozan"
+      },
+      {
+        "name": "Mochikan",
+        "query": "お菓子司 餅勘 千種",
+        "comment": "A Taisho-era confectioner.",
+        "access": "10 min walk from Chikusa or Imaike Station"
+      }
+    ]
   },
   "ぴよりん": {
     "summary": "A cute chick-shaped pudding sweet sold at Nagoya Station. Pudding made with Nagoya Cochin eggs is wrapped in sponge cake and cream and finished as a little yellow chick. Its cute look makes it very popular, and many people take photos. It loses its shape easily, so take care when carrying it home. You can buy it at shops inside Nagoya Station, and also eat it at the cafe there. Each one has a slightly different face, which is part of the fun.",
     "price": "¥400–500",
-    "area": "Nagoya Station"
+    "area": "Nagoya Station",
+    "shops": [
+      {
+        "name": "cafe & gifts Piyorin Village",
+        "query": "ぴよりんvillage 名古屋駅",
+        "comment": "Piyorin's shop at Nagoya Station, with a café.",
+        "access": "JR Nagoya Station central concourse"
+      },
+      {
+        "name": "Piyorin Shop",
+        "query": "ぴよりんshop 名古屋駅",
+        "comment": "Takeaway Piyorin, sold at set times.",
+        "access": "JR Nagoya Station"
+      }
+    ]
   },
   "ゆかり": {
     "summary": "Shrimp crackers made by a long-established Aichi company. Plenty of fresh shrimp is used, and each cracker is carefully baked. In the mouth, the toasty aroma and umami of shrimp spread out, with an elegant flavor. Aichi is a major producer of shrimp crackers, and Yukari is known as its signature product. It is very popular as a gift and souvenir, sold at Nagoya Station, the airport and department stores. Its refined flavor is appreciated by people of all ages.",
     "price": "¥1,000–3,000",
-    "area": "Nagoya and around"
+    "area": "Nagoya and around",
+    "shops": [
+      {
+        "name": "Bankaku Sohonpo Honten",
+        "query": "坂角総本舖 本店 東海市",
+        "comment": "Where Yukari was born; fresh batches arrive on weekday afternoons.",
+        "access": "Tokai (3 min walk from Owari-Yokosuka Station)"
+      },
+      {
+        "name": "Nagoya Station souvenir shops",
+        "query": "名古屋駅 坂角 ゆかり",
+        "comment": "Sold at Nagoya Station shops and department stores.",
+        "access": "Nagoya Station"
+      }
+    ]
   }
 }

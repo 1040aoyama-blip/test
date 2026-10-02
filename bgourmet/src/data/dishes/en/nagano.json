@@ -2,71 +2,285 @@
   "山賊焼き": {
     "summary": "A local dish of Matsumoto and Shiojiri: a whole chicken thigh marinated in garlicky soy sauce, coated in potato starch and fried. It is crisp outside and juicy inside, and the garlic aroma whets your appetite. One theory says the name is a pun: bandits take things away, toriageru, which sounds like frying chicken, tori ageru. It is popular in set meals and bento and comes in generous portions. Enjoy it together with a visit to Matsumoto Castle.",
     "price": "¥900–1,500",
-    "area": "Matsumoto, Shiojiri"
+    "area": "Matsumoto, Shiojiri",
+    "shops": [
+      {
+        "name": "Sanzoku",
+        "query": "山賊 塩尻 山賊焼き",
+        "comment": "The originator said to have named sanzoku-yaki. Evenings only.",
+        "access": "10 min walk from Shiojiri Station"
+      },
+      {
+        "name": "Ganso Sanzoku Murai",
+        "query": "元祖山賊 村井 松本",
+        "comment": "The original's second shop, with the same secret marinade.",
+        "access": "Muraimachi, Matsumoto (near Murai Station)"
+      }
+    ]
   },
   "駒ヶ根ソースかつ丼": {
     "summary": "A local dish of Komagane. Shredded cabbage is spread over rice, and a freshly fried pork cutlet dipped in a special sauce is laid on top. You can enjoy the crisp cutlet, the crunchy cabbage and the sauce's balance of sweetness and tang. Many shops in the city serve it, each with its own sauce and cutlet thickness. Enjoy it together with sightseeing in the Central Alps or a drive through the Komagane Highlands. It is filling and very satisfying.",
     "price": "¥1,000–1,500",
-    "area": "Komagane"
+    "area": "Komagane",
+    "shops": [
+      {
+        "name": "Kiraku",
+        "query": "とんかつ ソースかつ丼 きらく 駒ヶ根",
+        "comment": "A long-running shop said to be the originator of Komagane sauce katsudon.",
+        "access": "Akaho, Komagane"
+      },
+      {
+        "name": "Meijitei Komagane",
+        "query": "明治亭 駒ヶ根本店",
+        "comment": "A popular shop with house-made sauce, open every day.",
+        "access": "Akaho, Komagane"
+      },
+      {
+        "name": "Garo",
+        "query": "ガロ 駒ヶ根 ソースかつ丼",
+        "comment": "Known for a towering pile of fillet cutlets.",
+        "access": "Akaho, Komagane"
+      }
+    ]
   },
   "伊那ローメン": {
     "summary": "A local dish of Ina made with thick steamed Chinese noodles, mutton and cabbage. There is a soup style served in broth and a yakisoba style that is stir-fried. A key feature is adding vinegar, sauce, sesame oil, shichimi chili pepper and more to taste, finishing the flavor your own way. It is a dish unique to Ina, where people have a culture of eating mutton, and many shops in the city serve it. You will not find it anywhere else. Many people find it addictive after the first try.",
     "price": "¥700–1,000",
-    "area": "Ina"
+    "area": "Ina",
+    "shops": [
+      {
+        "name": "Banri",
+        "query": "萬里 伊那 ローメン",
+        "comment": "The shop that invented romen.",
+        "access": "Sakashita, Ina"
+      },
+      {
+        "name": "Ushio",
+        "query": "うしお 伊那 ローメン",
+        "comment": "A go-to shop for the soupless, yakisoba-style romen.",
+        "access": "Arai, Ina"
+      }
+    ]
   },
   "信州そば": {
     "summary": "The general name for soba made in Nagano. The highland climate, with big temperature differences between day and night, suits buckwheat, and soba-making has thrived here since long ago. It is fragrant with a firm bite, and eating it cold on a bamboo tray lets you enjoy its true flavor. The prefecture has many well-known soba areas, such as Togakushi and Kaida Highlands. In autumn, the new soba season, soba festivals are held around the prefecture, and some places offer soba-making experiences. Enjoy it with wasabi and green onion.",
     "price": "¥800–1,500",
-    "area": "Throughout Nagano"
+    "area": "Throughout Nagano",
+    "shops": [
+      {
+        "name": "Fujikian",
+        "query": "門前そば 藤木庵 長野",
+        "comment": "A soba house by Zenkoji, in business since the Edo period.",
+        "access": "Daimoncho, Nagano (near Zenkoji)"
+      },
+      {
+        "name": "Nomugi",
+        "query": "御そば打処 野麦 松本",
+        "comment": "A Matsumoto favorite for ultra-thin handmade soba. Lunch only.",
+        "access": "Chuo, Matsumoto"
+      }
+    ]
   },
   "戸隠そば": {
     "summary": "Soba made in the Togakushi area of Nagano City and counted among Japan's three great soba. It is served in bocchi-mori style, with bite-sized bundles arranged in the shape of horseshoes. The flour is often ground from whole buckwheat including the husk, giving it a strong aroma. It has long been served to pilgrims visiting Togakushi Shrine. Many soba shops line the approach to the shrine, and eating soba after walking the cedar-lined path is recommended. Finish by drinking the soba cooking water.",
     "price": "¥1,000–1,800",
-    "area": "Togakushi, Nagano City"
+    "area": "Togakushi, Nagano City",
+    "shops": [
+      {
+        "name": "Uzuraya",
+        "query": "うずら家 戸隠 そば",
+        "comment": "A popular shop at the gate of Togakushi Shrine's Chusha. Closes when sold out.",
+        "access": "In front of Togakushi Shrine Chusha"
+      },
+      {
+        "name": "Soba no Mi",
+        "query": "蕎麦処 そばの実 戸隠",
+        "comment": "A large soba restaurant near Togakushi Shrine.",
+        "access": "Togakushi, Nagano City"
+      }
+    ]
   },
   "おやき": {
     "summary": "A Nagano local dish of flour or buckwheat dough wrapped around fillings such as nozawana greens, eggplant, pumpkin or red bean paste, then grilled or steamed. In mountain areas where rice was hard to grow, it has long been eaten as a staple and snack. Depending on the area it is grilled, steamed, or grilled then steamed. Nozawana oyaki is the classic, salty with a crunchy bite. Near Zenkoji Temple you can eat them freshly made as you walk. With so many fillings, comparing them is fun.",
     "price": "¥150–300 each",
-    "area": "Nagano City and throughout Nagano"
+    "area": "Nagano City and throughout Nagano",
+    "shops": [
+      {
+        "name": "Ogawa no Sho Oyaki Mura",
+        "query": "小川の庄 おやき村",
+        "comment": "Try oyaki baked by an open hearth.",
+        "access": "Ogawa Village"
+      },
+      {
+        "name": "Irohado OYAKI FARM",
+        "query": "いろは堂 OYAKI FARM",
+        "comment": "The factory store of an oyaki maker founded in the Taisho period.",
+        "access": "Toward Kinasa, Nagano City"
+      },
+      {
+        "name": "Ogawa no Sho Oyaki Mura MIDORI Nagano",
+        "query": "小川の庄 おやき村 MIDORI長野",
+        "comment": "Buy them in the Nagano Station building.",
+        "access": "MIDORI, Nagano Station"
+      }
+    ]
   },
   "野沢菜漬": {
     "summary": "Nagano's most famous pickle, made with nozawana greens said to come from Nozawa Onsen village. In Nagano's harsh winters, nozawana harvested in autumn was pickled and eaten through the winter as a preserved food. It has a crunchy texture and a refreshing taste, perfect with rice. Nagano families often serve it with tea. It is also delicious as an oyaki filling or stir-fried. You can buy it at souvenir shops throughout the prefecture. It is a staple of the Nagano winter table.",
     "price": "¥300–800",
-    "area": "Nozawa Onsen and throughout Nagano"
+    "area": "Nozawa Onsen and throughout Nagano",
+    "shops": [
+      {
+        "name": "Nozawana Honpo",
+        "query": "野沢菜本舗 野沢温泉",
+        "comment": "A pickle shop on Oyu-dori in the hot-spring village.",
+        "access": "Oyu-dori, Nozawa Onsen"
+      },
+      {
+        "name": "Tomiki Tsukemono",
+        "query": "とみき漬物 野沢温泉",
+        "comment": "Grows its own nozawana and pickles it in-house.",
+        "access": "Nozawa Onsen"
+      }
+    ]
   },
   "馬刺し": {
     "summary": "In Nagano, areas such as Ina have long had a culture of eating horse meat. Horses were used for farming and transport, which is said to be the background. Nagano horse sashimi is mostly lean red meat, light yet full of flavor the more you chew. The classic way is to eat it with ginger or garlic and sweet soy sauce. You can try it at izakaya and soba shops, and locals also serve it at celebrations. Its bright red color whets the appetite.",
     "price": "¥1,000–2,000",
-    "area": "Ina, Matsumoto and around"
+    "area": "Ina, Matsumoto and around",
+    "shops": [
+      {
+        "name": "Shinmiyoshi",
+        "query": "馬肉バル 新三よし 松本本店",
+        "comment": "A horse-meat restaurant dating back to the Meiji period.",
+        "access": "5 min walk from Matsumoto Station"
+      },
+      {
+        "name": "Echigoya Seinikuten",
+        "query": "越後屋精肉店 伊那",
+        "comment": "A Taisho-era butcher selling basashi to take away.",
+        "access": "Yamadera, Ina"
+      }
+    ]
   },
   "とうじそば": {
     "summary": "A local dish of the Nagawa area of Matsumoto. A single serving of soba is placed in a small bamboo basket called a toji-kago, dipped into a hot pot full of ingredients to warm it, and eaten. Toji is said to come from tojiru, to throw the soba into the pot. The pot contains mushrooms, wild vegetables, chicken and more, eaten along with the soba. It was eaten in cold mountain villages to warm the body. Sharing a pot with others is part of the fun, and the broth is delicious to the last drop.",
     "price": "¥1,500–2,500",
-    "area": "Nagawa, Matsumoto"
+    "area": "Nagawa, Matsumoto",
+    "shops": [
+      {
+        "name": "Teuchi Soba Fukuden",
+        "query": "手打ちそば 福伝 奈川",
+        "comment": "Serves toji soba in Nagawa. Closes when sold out.",
+        "access": "Nagawa, Matsumoto"
+      },
+      {
+        "name": "Soba no Sato Nagawa",
+        "query": "そばの里 奈川",
+        "comment": "A soba restaurant run by locals.",
+        "access": "Nagawa, Matsumoto"
+      }
+    ]
   },
   "五平餅": {
     "summary": "A local dish of cooked rice half-mashed, shaped into flat sandal shapes or balls, skewered, brushed with a sweet and savory sauce and grilled. It is loved in the Kiso and Ina areas of southern Nagano. The sauces, made with walnuts, sesame, miso and more, vary by area and shop. The aroma of the toasted sauce is irresistible. You can eat it freshly grilled in the post towns along the Nakasendo and at roadside stations. It has long been a simple snack of the mountain villages, and it makes a great treat on a trip.",
     "price": "¥200–400 per skewer",
-    "area": "Kiso, Ina and around"
+    "area": "Kiso, Ina and around",
+    "shops": [
+      {
+        "name": "Kiso Naraijuku Kimura",
+        "query": "木曽奈良井宿 きむら 五平餅",
+        "comment": "A popular stop in Narai-juku. Closed Jan–Feb.",
+        "access": "Narai-juku, Shiojiri"
+      },
+      {
+        "name": "Omote",
+        "query": "おもて 妻籠 五平餅",
+        "comment": "Try Tsumago's dumpling-shaped gohei mochi.",
+        "access": "Tsumago-juku, Nagiso"
+      }
+    ]
   },
   "栗かの子": {
     "summary": "A traditional sweet of Obuse, a town famous for chestnuts: chestnut paste kneaded together with chestnuts candied in syrup. The chestnut flavor is so rich it feels like eating chestnuts themselves. Obuse chestnuts are said to have been presented to the shogun's family in the Edo period. The town has a row of long-established chestnut confectioners, where you can also enjoy chestnut rice, Mont Blanc and other chestnut dishes and sweets. It is a perfect souvenir from a stroll around Obuse.",
     "price": "¥1,000–2,500",
-    "area": "Obuse"
+    "area": "Obuse",
+    "shops": [
+      {
+        "name": "Obusedo Honten",
+        "query": "小布施堂 本店",
+        "comment": "A long-established maker known for its kurikanoko.",
+        "access": "Obuse"
+      },
+      {
+        "name": "Chikufudo Obuse Honten",
+        "query": "竹風堂 小布施本店",
+        "comment": "A chestnut-sweets shop that also serves chestnut rice.",
+        "access": "Obuse"
+      },
+      {
+        "name": "Sakurai Kanseido Honten",
+        "query": "桜井甘精堂 本店",
+        "comment": "A chestnut confectioner dating to the Edo period.",
+        "access": "Obuse"
+      }
+    ]
   },
   "牛乳パン": {
     "summary": "A local bread long loved in Nagano: a big, fluffy square bun filled with sweet buttercream. The packaging often features an illustration such as a boy drinking milk, and its retro look is part of the charm. It is sold at many bakeries and supermarkets in the prefecture, and the size and cream vary from shop to shop. It is filling and perfect for breakfast or a snack. With its simple flavor, it is loved by people of all ages.",
     "price": "¥200–350 each",
-    "area": "Throughout Nagano"
+    "area": "Throughout Nagano",
+    "shops": [
+      {
+        "name": "Kanemaru Bakery",
+        "query": "かねまるパン店 木曽福島",
+        "comment": "Said to be the originator of gyunyu pan.",
+        "access": "Fukushima, Kiso"
+      },
+      {
+        "name": "Komatsu Bakery",
+        "query": "小松パン店 松本",
+        "comment": "A Taisho-era bakery. Reserve ahead to be sure.",
+        "access": "Ote, Matsumoto"
+      }
+    ]
   },
   "雷鳥の里": {
     "summary": "A sweet from a Nagano confectionery company and one of the prefecture's best-known souvenirs. It is a thin Western-style wafer cookie with a cream filling. Its light, crisp texture and gentle sweetness make it easy to enjoy for children and adults alike. The name comes from the rock ptarmigan, raicho, Nagano's prefectural bird, which lives high in mountains such as the Northern Alps. Individually wrapped, it is easy to share and perfect for the office. It is widely sold at stations and highway rest areas. It goes well with coffee or tea.",
     "price": "¥500–1,500",
-    "area": "Throughout Nagano"
+    "area": "Throughout Nagano",
+    "shops": [
+      {
+        "name": "Raicho no Sato Honpo Tanakaya",
+        "query": "雷鳥の里本舗 田中屋 大町",
+        "comment": "The Omachi confectioner that makes Raicho no Sato.",
+        "access": "Omachi"
+      },
+      {
+        "name": "Nagano Station souvenir shops",
+        "query": "長野駅 MIDORI おみやげ 雷鳥の里",
+        "comment": "Sold in the MIDORI station building and elsewhere.",
+        "access": "MIDORI, Nagano Station"
+      }
+    ]
   },
   "みすゞ飴": {
     "summary": "A jelly-like sweet made with fruit juice by a long-established shop in Ueda. Flavors use Shinshu fruits such as apricot, grape, apple, peach and ume. Each piece is wrapped in edible rice paper, with a chewy texture and the natural sweet-tartness of fruit. Its colorful look is beautiful, and Nagano people have loved it for a long time. The main store in Ueda is also known for its retro Western-style building. You can really taste the fruit.",
     "price": "¥500–1,500",
-    "area": "Ueda"
+    "area": "Ueda",
+    "shops": [
+      {
+        "name": "Misuzuame Honpo Iijima Shoten Ueda",
+        "query": "みすゞ飴本舗 飯島商店 上田本店",
+        "comment": "The flagship in a Taisho-era building.",
+        "access": "Chuo, Ueda"
+      },
+      {
+        "name": "Misuzuame Honpo MIDORI Nagano",
+        "query": "みすゞ飴本舗 飯島商店 MIDORI長野店",
+        "comment": "The company's shop in the Nagano Station building.",
+        "access": "MIDORI, Nagano Station"
+      }
+    ]
   }
 }

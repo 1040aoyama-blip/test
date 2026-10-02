@@ -2,61 +2,223 @@
   "和歌山ラーメン": {
     "summary": "Local ramen eaten mainly in Wakayama City, called chuka soba by locals. It features a rich broth combining pork bones and soy sauce that clings to thin straight noodles. Many shops have a unique system: boiled eggs and hayazushi, mackerel pressed sushi, sit on the table for you to take freely, and you report what you ate when you pay. Ramen with hayazushi is a pairing only found in Wakayama. There are many popular shops in the city.",
     "price": "¥700–1,000",
-    "area": "Wakayama City"
+    "area": "Wakayama City",
+    "shops": [
+      {
+        "name": "Ide Shoten",
+        "query": "井出商店 和歌山",
+        "comment": "The shop that made Wakayama ramen famous nationwide; hayazushi on the table.",
+        "access": "Tanakamachi (near Wakayama Station)"
+      },
+      {
+        "name": "Honke Arochi Marutaka",
+        "query": "本家アロチ丸高 和歌山",
+        "comment": "A veteran that started as a postwar food stall. Open evening to late night.",
+        "access": "Arochi, Wakayama City"
+      }
+    ]
   },
   "めはりずし": {
     "summary": "A local dish of the Kumano area: big rice balls wrapped in lightly pickled takana mustard leaves. The name is said to come from opening your mouth so wide your eyes open wide too, mehari. It was originally made as a packed lunch for people working in the mountains or at sea. The mild saltiness and fresh aroma of takana go well with rice. It is sold at diners and stations in Shingu and the Kumano area, perfect for walking the Kumano Kodo. Some shops add fillings inside.",
     "price": "¥200–400 each",
-    "area": "Shingu and the Kumano area"
+    "area": "Shingu and the Kumano area",
+    "shops": [
+      {
+        "name": "Sohonke Mehariya Shingu",
+        "query": "総本家めはりや 新宮本店",
+        "comment": "A mehari-zushi specialist; takeaway available.",
+        "access": "Yakushicho, Shingu"
+      },
+      {
+        "name": "Mehari Sushi Nidaime",
+        "query": "めはり寿司 二代目 那智勝浦",
+        "comment": "Near Kii-Katsuura Station; pair it with local tuna.",
+        "access": "Near Kii-Katsuura Station"
+      }
+    ]
   },
   "柿の葉寿司": {
     "summary": "Persimmon leaf sushi is made in northern Wakayama too, just like in Nara. Salted mackerel and other fish is placed on bite-sized vinegared rice, wrapped in a persimmon leaf and pressed, so the leaf's faint scent transfers to the sushi. Around Kudoyama and Katsuragi, famous for persimmons, each family has long made it as a feast for summer festivals. Try it at local shops on the way to or from Mt. Koya. It has a refined flavor with a hint of the leaf's aroma.",
     "price": "¥1,000–2,000",
-    "area": "Kudoyama, Katsuragi and around"
+    "area": "Kudoyama, Katsuragi and around",
+    "shops": [
+      {
+        "name": "Kuwaraku",
+        "query": "柿の葉すし 九和楽 九度山",
+        "comment": "A beloved Kudoyama specialist. Closes when sold out.",
+        "access": "6 min walk from Kudoyama Station"
+      },
+      {
+        "name": "Kakinoha Sushi Benkei",
+        "query": "柿の葉すし 弁慶 かつらぎ",
+        "comment": "A kakinoha-zushi specialist in Katsuragi.",
+        "access": "Katsuragi"
+      }
+    ]
   },
   "金山寺味噌": {
     "summary": "A namemiso, a miso eaten as is, made by mixing chopped vegetables such as gourd, eggplant and ginger into soybean, rice and barley koji and aging it. It is not used as a seasoning but eaten on rice or with drinks. It is said that in the Kamakura period, a monk returning from China brought the method to Yuasa. The liquid that collected at the bottom of the miso barrels is even said to be the origin of soy sauce. It is sold at long-established shops in Yuasa. Try it with cucumber sticks.",
     "price": "¥500–1,500",
-    "area": "Yuasa and around"
+    "area": "Yuasa and around",
+    "shops": [
+      {
+        "name": "Ota Kyusuke Ginsei",
+        "query": "太田久助吟製 湯浅",
+        "comment": "Keeping to traditional methods since the late Edo period.",
+        "access": "10 min walk from Yuasa Station"
+      },
+      {
+        "name": "Marushin Honke",
+        "query": "丸新本家 湯浅 金山寺味噌",
+        "comment": "Makes kinzanji miso with Yuasa eggplant.",
+        "access": "Yuasa"
+      }
+    ]
   },
   "梅干し": {
     "summary": "Wakayama is known as Japan's top producer of ume plums. Among them, the Nanko ume, developed in Minabe, has thin skin and thick, soft flesh, making it ideal for umeboshi. Besides traditional sour umeboshi pickled only with salt, there are milder, easier-to-eat versions such as honey-pickled ones. Minabe and Tanabe have many umeboshi specialty shops. Compare different flavors to find your favorite. Visiting in early spring, when the plum groves bloom, is also recommended.",
     "price": "¥1,000–5,000",
-    "area": "Minabe, Tanabe and around"
+    "area": "Minabe, Tanabe and around",
+    "shops": [
+      {
+        "name": "Kishu Umeboshi-kan",
+        "query": "梅干館 みなべ",
+        "comment": "Factory tours and umeboshi-making experiences.",
+        "access": "Minabe"
+      },
+      {
+        "name": "Plum Kobo",
+        "query": "わたしの家は梅農家 ぷらむ工房 みなべ",
+        "comment": "A farm shop run by plum growers, with tours and workshops.",
+        "access": "Minabe"
+      }
+    ]
   },
   "クエ鍋": {
     "summary": "Kue, longtooth grouper, is a luxury fish so rarely caught that it is called a phantom fish. In Hidaka and elsewhere in Wakayama, kue hot pot is a winter specialty. The springy flesh has a pleasant amount of fat, and the gelatinous skin is silky and delicious. The longer it simmers, the more flavor melts into the broth. The classic finish is rice porridge made in the rich broth. It is a special treat served at inns and restaurants in Hidaka in winter. Enjoy it with refreshing ponzu.",
     "price": "¥8,000–20,000",
-    "area": "Hidaka and around"
+    "area": "Hidaka and around",
+    "shops": [
+      {
+        "name": "Kappo Misaki",
+        "query": "割烹 岬 日高町 クエ",
+        "comment": "The restaurant of Misaki Ryokan, known for kue.",
+        "access": "Hii, Hidaka"
+      },
+      {
+        "name": "Hashimotoso",
+        "query": "料理宿 橋本荘 日高町",
+        "comment": "A kue-cuisine inn facing Ubuyu Beach.",
+        "access": "Hidaka (Ubuyu Beach)"
+      }
+    ]
   },
   "勝浦まぐろ丼": {
     "summary": "Nachikatsuura is known as one of Japan's leading ports for landing fresh, unfrozen tuna. Tuna bowls made with never-frozen tuna offer moist, tender flesh, a slightly chewy texture and the natural sweetness of tuna. Some shops let you enjoy different cuts such as lean akami, fatty chutoro and negitoro. Try it at diners around Katsuura fishing port. Stop by along with sightseeing at Nachi Falls and Kumano Nachi Taisha. You may even be able to watch the early morning tuna auction.",
     "price": "¥1,500–3,000",
-    "area": "Nachikatsuura"
+    "area": "Nachikatsuura",
+    "shops": [
+      {
+        "name": "Katsuragi",
+        "query": "桂城 那智勝浦",
+        "comment": "A fresh-tuna restaurant in Katsuura.",
+        "access": "Near Kii-Katsuura Station"
+      },
+      {
+        "name": "Takehara",
+        "query": "竹原 那智勝浦 まぐろ",
+        "comment": "A tuna restaurant a short walk from the station.",
+        "access": "2 min walk from Kii-Katsuura Station"
+      }
+    ]
   },
   "ごま豆腐": {
     "summary": "A signature dish of Mt. Koya's vegetarian temple cuisine. Despite its name, it contains no soybeans; ground white sesame and kudzu starch are kneaded with water and set. It features a chewy bounce, a smooth texture, and a rich sesame aroma and depth. It is eaten with wasabi soy sauce or a sweet sauce. If you stay at a temple lodging on Mt. Koya, you can enjoy it as part of a vegetarian meal. It is also sold as a souvenir at shops along the approach. Many are surprised by its deep sesame flavor.",
     "price": "¥500–1,200",
-    "area": "Koya (Mt. Koya)"
+    "area": "Koya (Mt. Koya)",
+    "shops": [
+      {
+        "name": "Hamadaya",
+        "query": "高野山 胡麻豆腐 濱田屋",
+        "comment": "A goma-dofu maker in business since the Meiji period.",
+        "access": "Koyasan"
+      },
+      {
+        "name": "Kadohama Gomatofu Sohonpo",
+        "query": "角濱ごまとうふ総本舗 高野山",
+        "comment": "You can also try it at their restaurant.",
+        "access": "Koyasan"
+      }
+    ]
   },
   "早なれ寿司": {
     "summary": "A Wakayama local dish of salted fish such as mackerel or saury combined with rice and fermented for a short time. It is a quicker version of narezushi, which ferments for a long time, offering a pleasant sourness and the umami of fish. It is often wrapped in leaves such as ase leaves. It has long been made across Wakayama as a feast for festivals. The fish and methods vary by area, which makes it interesting. It has a distinctive old-fashioned sourness and aroma.",
     "price": "¥1,000–2,000",
-    "area": "Throughout Wakayama"
+    "area": "Throughout Wakayama",
+    "shops": [
+      {
+        "name": "Yasuke Sushi",
+        "query": "弥助寿司 和歌山 なれずし",
+        "comment": "A Meiji-era sushi shop that serves hayanare-zushi.",
+        "access": "Wakayama City"
+      },
+      {
+        "name": "Bettinsan",
+        "query": "べっちんさん 黒江 早なれ寿司",
+        "comment": "A café in the old Kuroe townscape serving hayanare-zushi.",
+        "access": "Kuroe, Kainan"
+      }
+    ]
   },
   "かげろう": {
-    "summary": "A famous Wakayama sweet made by a long-established confectioner in Gobo. Buttercream is sandwiched between light, airy baked layers. It melts away in your mouth with a fleeting texture, which inspired its name, meaning mayfly or shimmering haze. Its gentle sweetness makes it easy to enjoy for children and adults. Individually wrapped, it is easy to share. It is sold at Wakayama Station and souvenir shops in the prefecture. It goes well with coffee or tea and makes a refined gift.",
+    "summary": "A famous Wakayama sweet made by Fukubishi, a confectioner in Shirahama. Buttercream is sandwiched between light, airy baked layers. It melts away in your mouth with a fleeting texture, which inspired its name, meaning mayfly or shimmering haze. Its gentle sweetness makes it easy to enjoy for children and adults. Individually wrapped, it is easy to share. Besides the Shirahama main store, it is sold at Wakayama Station and souvenir shops in the prefecture, and the main store also offers a fresh \"nama kagero\" that does not keep. It goes well with coffee or tea.",
     "price": "¥800–2,000",
-    "area": "Gobo and around"
+    "area": "Shirahama and around",
+    "shops": [
+      {
+        "name": "Fukubishi Honten",
+        "query": "福菱 本店 白浜 かげろう",
+        "comment": "The maker's flagship; nama kagero is sold only here.",
+        "access": "Shirahama"
+      },
+      {
+        "name": "Wakayama Station souvenir shops",
+        "query": "和歌山駅 おみやげ かげろう",
+        "comment": "Sold at Wakayama Station and other shops.",
+        "access": "Wakayama Station"
+      }
+    ]
   },
   "鈴焼": {
-    "summary": "Small bell-shaped baked sweets made by a long-established Wakayama confectioner. The dough is like castella sponge cake made with plenty of eggs, with a fluffy texture and gentle sweetness. Bite-sized and easy to eat, they have a simple, nostalgic flavor. They have long been a familiar sweet for Wakayama people. The cute bell shape is also welcomed as a lucky charm. They are sold at shops in Wakayama City. Enjoy them with Japanese tea or milk.",
+    "summary": "Small bell-shaped castella sponge cakes made by Kobaido, a long-established confectioner in Shingu. The shape is modeled on the sacred bells of Kumano Hayatama Taisha. The fine-textured sponge is soft and slightly chewy, with a gentle sweetness. Bite-sized and easy to eat, they have a simple, nostalgic flavor. The shop has only one store, in Shingu, and they are not sold anywhere else, which makes them a special souvenir from a pilgrimage to the Kumano shrines. Enjoy them with Japanese tea or milk.",
     "price": "¥500–1,200",
-    "area": "Wakayama City"
+    "area": "Shingu",
+    "shops": [
+      {
+        "name": "Kobaido",
+        "query": "香梅堂 新宮 鈴焼",
+        "comment": "The Meiji-era shop that makes suzuyaki, sold only here.",
+        "access": "Ohashi-dori, Shingu"
+      }
+    ]
   },
   "那智黒": {
     "summary": "Round black candies made with brown sugar. The name comes from nachiguro, a beautiful black stone found in the Kumano area. Their gentle sweetness and the depth of brown sugar have made them a long-loved Kumano souvenir. Each candy is individually wrapped, making them handy to carry. They are a perfect companion when walking the Kumano Kodo. They are sold around Nachikatsuura and at souvenir shops in the prefecture. They melt slowly in the mouth with a gentle sweetness.",
     "price": "¥300–800",
-    "area": "Nachikatsuura and around"
+    "area": "Nachikatsuura and around",
+    "shops": [
+      {
+        "name": "Nachiguro Sohonpo",
+        "query": "那智黒総本舗 太地",
+        "comment": "The Meiji-era maker of Nachiguro.",
+        "access": "2 min walk from Taiji Station"
+      },
+      {
+        "name": "Nachiguro Sohonpo Shirahama",
+        "query": "那智黒総本舗 白浜支店",
+        "comment": "The Shirahama branch.",
+        "access": "Shirahama"
+      }
+    ]
   }
 }

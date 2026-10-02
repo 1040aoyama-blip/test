@@ -2,12 +2,52 @@
   "たこ焼き": {
     "summary": "Balls of dashi-based batter with a piece of octopus inside, grilled on a special iron plate. The star of Osaka's flour-based food culture, they are crispy outside and gooey inside. The classic topping is sauce, mayonnaise, green seaweed and bonito flakes, but some shops serve them dipped in dashi or with soy sauce or salt. Fresh takoyaki is very hot inside, so let it cool a little. Eating on the go around Dotonbori is fun, but please take your trash with you. Comparing shops is part of the fun.",
     "price": "¥500–800 (6–8 pieces)",
-    "area": "Dotonbori, Namba and all over Osaka City"
+    "area": "Dotonbori, Namba and all over Osaka City",
+    "shops": [
+      {
+        "name": "Aizuya Honten",
+        "query": "元祖たこ焼き 会津屋 本店",
+        "comment": "Said to be the originator of takoyaki; eaten without sauce.",
+        "access": "Tamade, Nishinari Ward"
+      },
+      {
+        "name": "Wanaka Sennichimae",
+        "query": "わなか 千日前本店",
+        "comment": "A popular takoyaki shop in Namba.",
+        "access": "Namba (Sennichimae)"
+      },
+      {
+        "name": "Kogaryu Amerikamura",
+        "query": "甲賀流 アメリカ村本店",
+        "comment": "A popular stand in front of Triangle Park in Amerikamura.",
+        "access": "Amerikamura (Shinsaibashi)"
+      }
+    ]
   },
   "お好み焼き": {
     "summary": "Osaka-style okonomiyaki: cabbage, pork and other ingredients are mixed into the batter before grilling. It is finished with sauce, mayonnaise, bonito flakes and green seaweed. Some restaurants cook it for you while at others you cook it yourself, so first-timers may prefer a place where the staff do it. Cut and eat it right on the hot plate with a small spatula (kote) so it stays hot to the last bite. Modan-yaki, with yakisoba noodles inside, is also popular. Try a few shops and compare.",
     "price": "¥800–1,500",
-    "area": "All over Osaka City"
+    "area": "All over Osaka City",
+    "shops": [
+      {
+        "name": "Mizuno",
+        "query": "お好み焼 美津の 道頓堀",
+        "comment": "A Dotonbori institution founded just after the war.",
+        "access": "Dotonbori"
+      },
+      {
+        "name": "Botejyu Sohonten",
+        "query": "ぼてぢゅう 総本店 道頓堀",
+        "comment": "The flagship of a famous chain, open late.",
+        "access": "Dotonbori"
+      },
+      {
+        "name": "Chibo Dotonbori Building",
+        "query": "千房 道頓堀ビル店",
+        "comment": "A big multi-floor branch in Dotonbori.",
+        "access": "Dotonbori"
+      }
+    ]
   },
   "串カツ": {
     "summary": "Skewers of beef, pork, vegetables and seafood, battered and deep-fried. Shinsekai, home of Tsutenkaku Tower, is packed with kushikatsu shops and has long been the place for this everyday favorite. Skewers start at around ¥100 each and go perfectly with beer. The shared sauce has one rule: no double-dipping. Once you have bitten a skewer, do not dip it again. If you need more sauce, do as the locals do and use the free cabbage to scoop it on. Each shop's batter has a different texture.",
@@ -37,7 +77,21 @@
   "ねぎ焼き": {
     "summary": "A cousin of okonomiyaki made with a mountain of green onions in a thin batter. Green onions replace the cabbage as the star, and some shops add beef tendon or konjac. It is usually eaten with soy sauce or ponzu rather than sauce, for a lighter taste. It is said to have started at a restaurant in Juso, Osaka, where you can still find famous shops today. Enjoy the sweetness and crunch of the onions, a different pleasure from okonomiyaki. It goes well with beer too.",
     "price": "¥800–1,300",
-    "area": "Juso and other areas"
+    "area": "Juso and other areas",
+    "shops": [
+      {
+        "name": "Negiyaki Yamamoto Honten",
+        "query": "ねぎ焼やまもと 本店 十三",
+        "comment": "The birthplace of negiyaki.",
+        "access": "Juso (near Hankyu Juso Station)"
+      },
+      {
+        "name": "Negiyaki Yamamoto Umeda EST",
+        "query": "ねぎ焼やまもと 梅田エスト店",
+        "comment": "The same negiyaki in Umeda.",
+        "access": "Umeda (EST)"
+      }
+    ]
   },
   "いか焼き": {
     "summary": "A uniquely Osaka snack: batter mixed with chopped squid, pressed flat and cooked in seconds between two hot iron plates. The thin, chewy pancake is brushed with sweet and savory sauce. It is completely different from the whole grilled squid also called ikayaki, so first-timers may be surprised. The most famous stand is in the basement of a department store in Umeda, where even long lines move quickly. At around ¥200 each, it is perfect when you feel a little peckish.",
@@ -49,18 +103,52 @@
         "query": "阪神名物いか焼き 阪神梅田本店",
         "comment": "A famous counter in the department store basement.",
         "access": "Hanshin Umeda Main Store (by Umeda Station)"
+      },
+      {
+        "name": "Ikayaki Yamagen Kyobashi",
+        "query": "いかやきやまげん 京橋本店",
+        "comment": "A specialist in hand-griddled ikayaki.",
+        "access": "Kyobashi"
       }
     ]
   },
   "きつねうどん": {
     "summary": "Udon topped with a large piece of sweet simmered fried tofu, said to have been born in Osaka. Osaka udon is known for its clear, light-colored broth made from kelp and bonito, which lets you taste the umami of the dashi. Biting into the sweet tofu changes the flavor as it mixes with the broth. In Osaka it is sometimes called ketsune udon. Almost every udon shop in the city serves it, including standing noodle bars in stations. It is just right for breakfast or a light lunch.",
     "price": "¥500–900",
-    "area": "Osaka City (said to originate in Senba)"
+    "area": "Osaka City (said to originate in Senba)",
+    "shops": [
+      {
+        "name": "Usamitei Matsubaya",
+        "query": "うさみ亭マツバヤ",
+        "comment": "The birthplace of kitsune udon, founded in the Meiji period.",
+        "access": "Minami-Semba (near Shinsaibashi)"
+      },
+      {
+        "name": "Dotonbori Imai Honten",
+        "query": "道頓堀 今井 本店",
+        "comment": "A Dotonbori udon house renowned for its dashi.",
+        "access": "Dotonbori"
+      }
+    ]
   },
   "どて焼き": {
     "summary": "Beef tendon slowly simmered for hours in white or red miso and mirin, a classic Osaka dish. The tendon becomes meltingly tender and soaks up the sweet and savory miso. Some shops serve it on skewers and others in small dishes. It is a standard side at Shinsekai kushikatsu restaurants, usually ordered with skewers and beer. The name is said to come from building a dote, a bank of miso, around the edge of the pot. It also goes great with rice. Enjoy it in Shinsekai's lively atmosphere.",
     "price": "¥400–700 per plate",
-    "area": "Shinsekai and other areas"
+    "area": "Shinsekai and other areas",
+    "shops": [
+      {
+        "name": "Tengu",
+        "query": "てんぐ 串かつ 新世界 ジャンジャン横丁",
+        "comment": "A veteran kushikatsu shop also famous for doteyaki.",
+        "access": "Jan Jan Yokocho (near Dobutsuen-mae Station)"
+      },
+      {
+        "name": "Yaekatsu",
+        "query": "八重勝 串かつ 新世界",
+        "comment": "Doteyaki is as popular as the kushikatsu here.",
+        "access": "Jan Jan Yokocho (near Dobutsuen-mae Station)"
+      }
+    ]
   },
   "肉吸い": {
     "summary": "Beef udon without the noodles: a savory dashi soup with beef and a soft-cooked egg, said to have started at a long-running udon shop in Namba. The story goes that a hungover comedian ordered beef udon, hold the udon. The classic way is to order it with a small bowl of rice (kodama) and eat them in turns. It makes a light meal, popular for lunch or after a night of drinking. Drop by while visiting Namba's comedy theaters, and drink the broth to the last drop.",
@@ -72,6 +160,12 @@
         "query": "千とせ 本店 肉吸い",
         "comment": "Known as the birthplace of nikusui.",
         "access": "Namba, near Namba Grand Kagetsu theater"
+      },
+      {
+        "name": "Chitose Bekkan",
+        "query": "千とせ べっかん 肉吸い",
+        "comment": "The annex across from the main shop.",
+        "access": "Ground floor of Namba Grand Kagetsu"
       }
     ]
   },
@@ -85,47 +179,165 @@
         "query": "551蓬莱 本店",
         "comment": "Osaka's best-known butaman. You can watch them being made at the counter.",
         "access": "Namba, Ebisubashi-suji shopping street"
+      },
+      {
+        "name": "Horai Honkan",
+        "query": "蓬莱本館 難波 豚まん",
+        "comment": "A separate business from 551 Horai, popular for handmade buns.",
+        "access": "Namba (Ebisubashi-suji)"
       }
     ]
   },
   "バッテラ": {
     "summary": "Pressed sushi of vinegar-cured mackerel on rice, topped with a thin sheet of white kelp and shaped in a wooden mold. It is said to have been created in Osaka in the Meiji era, and the name comes from the Portuguese word for a small boat. It was originally made with gizzard shad, but mackerel later became standard. The umami of the kelp, the richness of the mackerel and the tang of the vinegared rice make an elegant combination. Find it at Osaka sushi shops and department stores. It travels well and pairs nicely with sake.",
     "price": "¥1,000–2,000",
-    "area": "Sushi shops and department stores in Osaka City"
+    "area": "Sushi shops and department stores in Osaka City",
+    "shops": [
+      {
+        "name": "Sushitsune",
+        "query": "寿司常 南森町 バッテラ",
+        "comment": "The birthplace of battera, revived by the fourth generation.",
+        "access": "Minamimorimachi (Tenjinbashi-suji)"
+      },
+      {
+        "name": "Yoshino Sushi",
+        "query": "吉野寿司 淀屋橋",
+        "comment": "An Edo-period Osaka sushi house. Weekdays only.",
+        "access": "Yodoyabashi (Semba-Awajimachi)"
+      }
+    ]
   },
   "鯨のハリハリ鍋": {
     "summary": "A hot pot of whale meat and mizuna greens briefly cooked in kelp broth. The name is said to come from hari-hari, the crisp sound and feel of biting into mizuna. It was once common in Osaka homes, but now few places serve whale and it is mostly eaten at specialist restaurants. Some shops use pork or duck instead of whale. It is a simple dish that lets you enjoy the fresh crunch of the mizuna and a broth full of umami. An Osaka taste people crave in winter.",
     "price": "¥3,000–6,000",
-    "area": "Osaka City (only a few restaurants serve it)"
+    "area": "Osaka City (only a few restaurants serve it)",
+    "shops": [
+      {
+        "name": "Nishitamamizu",
+        "query": "西玉水 鯨料理",
+        "comment": "A whale-cuisine specialist founded in the Meiji period. Evenings only.",
+        "access": "Nipponbashi"
+      },
+      {
+        "name": "Murasaki",
+        "query": "鯨料理 むらさき 大阪",
+        "comment": "A whale-cuisine restaurant.",
+        "access": "Nishi Ward, Osaka"
+      }
+    ]
   },
   "てっちり": {
     "summary": "A hot pot of pufferfish (fugu) meat and bones cooked with napa cabbage, green onions and tofu. Osaka eats more fugu than almost anywhere in Japan, and it is a classic winter dish. Because fugu can be deadly, it was nicknamed teppo (gun), and teppo no chiri-nabe was shortened to tecchiri. Dip it in ponzu and finish with rice porridge made in the fugu-flavored broth. Preparing fugu requires a license, so eat it at a specialist restaurant. Blanched fugu skin is also popular.",
     "price": "From ¥5,000",
-    "area": "Dotonbori and other areas of Osaka City"
+    "area": "Dotonbori and other areas of Osaka City",
+    "shops": [
+      {
+        "name": "Kuromon Hamato",
+        "query": "鮮てっちり 黒門 浜藤 黒門店",
+        "comment": "A long-established fugu restaurant at Kuromon Market.",
+        "access": "Kuromon Market (Nipponbashi)"
+      },
+      {
+        "name": "Genpin Namba",
+        "query": "ふぐ うなぎ料理 玄品 難波",
+        "comment": "A tiger-pufferfish chain, on Soemoncho.",
+        "access": "Soemoncho (near Dotonbori)"
+      }
+    ]
   },
   "うどんすき": {
     "summary": "A hot pot of thick udon and more than a dozen ingredients, including seafood, chicken and vegetables, simmered in broth. Created by a long-established Osaka restaurant, it is now a beloved winter dish in the city. The thick noodles are made to stay firm even after simmering, and the broth soaks up the umami of all the ingredients. It looks festive and is perfect for sharing with family or friends. You can try it at specialist restaurants and Japanese restaurants. Finish with rice porridge in the broth.",
     "price": "From ¥4,000",
-    "area": "Osaka City"
+    "area": "Osaka City",
+    "shops": [
+      {
+        "name": "Mimiu Honmachi",
+        "query": "美々卯 本町店 うどんすき",
+        "comment": "Part of the restaurant group that created udon-suki.",
+        "access": "Honmachi"
+      },
+      {
+        "name": "Mimiu Namba Dining Maison",
+        "query": "美々卯 高島屋大阪店",
+        "comment": "In the restaurant floors of Takashimaya Osaka, Namba.",
+        "access": "Takashimaya Osaka (Namba)"
+      }
+    ]
   },
   "りくろーおじさんのチーズケーキ": {
     "summary": "A fluffy cheesecake loved for being sold fresh from the oven. Raisins line the bottom, and the flavor is gentle and not too sweet. When a new batch is ready, a bell rings and you can watch staff brand the logo onto each cake. At about ¥1,000 for a whole cake, the reasonable price is part of its appeal. It is delicious warm, and also great chilled in the fridge for a moister texture, so you can enjoy it two ways. There is often a line outside the shop.",
     "price": "About ¥1,000 per whole cake",
-    "area": "Shops in Namba, Umeda and elsewhere in Osaka"
+    "area": "Shops in Namba, Umeda and elsewhere in Osaka",
+    "shops": [
+      {
+        "name": "Rikuro Namba",
+        "query": "りくろーおじさんの店 なんば本店",
+        "comment": "A bell rings when a fresh batch comes out; café upstairs.",
+        "access": "Namba (Ebisubashi-suji)"
+      },
+      {
+        "name": "Rikuro Namba Parks",
+        "query": "りくろーおじさんの店 なんばパークス",
+        "comment": "Inside Namba Parks.",
+        "access": "Namba Parks"
+      }
+    ]
   },
   "ミックスジュース": {
     "summary": "A blend of fruit such as banana, peach and mandarin orange with milk, a standard drink at Osaka coffee shops. It is said to have been born at an Osaka coffee shop and is still served at many cafes and station juice stands. It is thick and smooth, with the gentle sweetness of fruit. Each shop uses a different mix and sweetness, so comparing them is fun. It is perfect for a break while exploring, or to refresh your palate after flour-based food. A retro coffee shop adds to the mood.",
     "price": "¥300–600",
-    "area": "Coffee shops and station juice stands in Osaka City"
+    "area": "Coffee shops and station juice stands in Osaka City",
+    "shops": [
+      {
+        "name": "Sennariya Coffee",
+        "query": "千成屋珈琲 新世界",
+        "comment": "The coffee shop said to have created mix juice.",
+        "access": "Shinsekai (Jan Jan Yokocho)"
+      },
+      {
+        "name": "Umeda Mix Juice Honten",
+        "query": "梅田ミックスジュース 本店",
+        "comment": "A pioneer of the station juice stand.",
+        "access": "Underground at Hanshin Osaka-Umeda Station"
+      }
+    ]
   },
   "みたらし小餅": {
     "summary": "Bite-size grilled rice cakes covered in a sweet and savory soy glaze. The small, fragrant rice cakes are easy to eat and go perfectly with the thick glaze. They are the famous product of a long-established sweet shop in Juso, Osaka, and have been loved by locals for generations. Each pack holds several skewers at a reasonable price. They do not keep long, so it is best to eat them the same day you buy them. Enjoy them with a cup of green tea.",
     "price": "About ¥500",
-    "area": "Juso and other areas"
+    "area": "Juso and other areas",
+    "shops": [
+      {
+        "name": "Kiyasu Sohonpo Honten",
+        "query": "喜八洲総本舗 本店 十三",
+        "comment": "Known for mitarashi dango grilled to your preference.",
+        "access": "Right by Hankyu Juso Station"
+      },
+      {
+        "name": "Kiyasu Sohonpo Daimaru Umeda",
+        "query": "喜八洲総本舗 梅田大丸店",
+        "comment": "Buy them in the basement of Daimaru Umeda.",
+        "access": "Daimaru Umeda B1"
+      }
+    ]
   },
   "岩おこし": {
     "summary": "Crushed rice bound with starch syrup and sugar into a very hard, crunchy sweet. The story goes that in the Edo period, digging canals in Osaka turned up lots of rock, and the sweet became popular with a pun on okosu (to dig up) and iwa (rock). Many versions are flavored with ginger and have a satisfying crunch. It is a classic Osaka souvenir still sold at souvenir shops today. It is very hard, so break it into small pieces as you eat. It goes nicely with tea.",
     "price": "From about ¥500",
-    "area": "Souvenir shops in Osaka City"
+    "area": "Souvenir shops in Osaka City",
+    "shops": [
+      {
+        "name": "Amidaike Daikoku Honten",
+        "query": "あみだ池大黒 本店",
+        "comment": "An okoshi maker founded in the Edo period.",
+        "access": "1 min walk from Nishi-Nagahori Station"
+      },
+      {
+        "name": "Baisendo",
+        "query": "梅仙堂 粟おこし 岩おこし",
+        "comment": "An okoshi specialist dating to the early Edo period.",
+        "access": "Osaka"
+      }
+    ]
   }
 }

@@ -2,71 +2,273 @@
   "明石焼": {
     "summary": "A specialty of Akashi, called tamagoyaki by locals. Soft batter made with lots of egg is cooked into balls with octopus inside, fluffier and more melting than takoyaki. They are served lined up on a red board and dipped in warm dashi broth. Some people add sauce before dipping in the broth. Many shops line the area around Akashi Station and the Uonotana shopping street. Eat them hot, fresh off the griddle.",
     "price": "¥600–1,000",
-    "area": "Akashi"
+    "area": "Akashi",
+    "shops": [
+      {
+        "name": "Akashiyaki Yokoi",
+        "query": "明石焼 よこ井",
+        "comment": "A postwar shop near Uonotana market.",
+        "access": "Near Akashi Station (Uonotana)"
+      },
+      {
+        "name": "Kimuraya",
+        "query": "きむらや 明石焼",
+        "comment": "A long-established akashiyaki shop.",
+        "access": "Kajiyamachi, Akashi"
+      }
+    ]
   },
   "そばめし": {
     "summary": "A local dish born in Nagata Ward, Kobe: chopped yakisoba noodles and rice stir-fried together with sauce on a griddle. It is said to have started when a customer at an okonomiyaki shop brought cold rice and asked for it to be fried with yakisoba. Enjoy the toasty sauce and the textures of both noodles and rice in this filling dish. You can try it at okonomiyaki shops in Nagata. Locals love it as a taste of Kobe's working-class neighborhoods.",
     "price": "¥700–1,000",
-    "area": "Nagata Ward, Kobe"
+    "area": "Nagata Ward, Kobe",
+    "shops": [
+      {
+        "name": "Okonomiyaki Aomori",
+        "query": "お好み焼 青森 長田",
+        "comment": "The birthplace of sobameshi.",
+        "access": "6 min walk from Shin-Nagata Station"
+      },
+      {
+        "name": "Nagata Honjoken Sannomiya",
+        "query": "長田本庄軒 三宮センタープラザ",
+        "comment": "A bokkake yakisoba shop that also serves sobameshi.",
+        "access": "Sannomiya Center Plaza"
+      }
+    ]
   },
   "かつめし": {
     "summary": "A local dish of Kakogawa: a beef cutlet on rice, topped with a demi-glace-like sauce and served with boiled cabbage. It is said to have been created so people could casually eat Western-style food with chopsticks. Some shops use pork cutlets instead of beef. Serving it on a plate and eating with chopsticks is the Kakogawa way. Many Western-style restaurants and diners in the city serve it, and it even appears in school lunches. The rice and sauce go together perfectly.",
     "price": "¥800–1,300",
-    "area": "Kakogawa"
+    "area": "Kakogawa",
+    "shops": [
+      {
+        "name": "Katsumeshi Irohazu",
+        "query": "かつめし いろはーず 加古川",
+        "comment": "A specialist carrying on the recipe of the shop that created katsumeshi.",
+        "access": "2 min walk from Kakogawa Station"
+      },
+      {
+        "name": "Honke Katsumeshitei",
+        "query": "本家かつめし亭 加古川",
+        "comment": "Serves katsumeshi made with Kobe beef.",
+        "access": "Kakogawa"
+      }
+    ]
   },
   "姫路おでん": {
     "summary": "Himeji's local oden, eaten with ginger soy sauce poured over or used for dipping. Whether the broth is strong or light depends on the shop, but everywhere it is eaten with ginger soy sauce. The fresh aroma and kick of ginger make the oden taste light. In Himeji, this way of eating oden has long been widely loved. Try it at shops around the station along with a visit to Himeji Castle. Enjoy it piping hot.",
     "price": "¥100–300 per item",
-    "area": "Himeji"
+    "area": "Himeji",
+    "shops": [
+      {
+        "name": "Nadagiku Kappatei",
+        "query": "灘菊かっぱ亭 姫路",
+        "comment": "An oden restaurant run by a Meiji-era sake brewery.",
+        "access": "2 min walk from Himeji Station"
+      },
+      {
+        "name": "Oden Tonahachi",
+        "query": "おでん 十七八 姫路",
+        "comment": "An oden shop run by three generations.",
+        "access": "5 min walk from Himeji Station"
+      }
+    ]
   },
   "ぼっかけ": {
     "summary": "A specialty of Nagata Ward, Kobe: beef tendon and konnyaku simmered sweet and savory with soy sauce and sugar. The name is said to come from bukkakeru, to pour over, as it is poured over rice or udon. The flavor of the meltingly tender tendon soaks into the konnyaku. It is eaten as bokkake udon, or added to okonomiyaki and yakisoba. Try it at okonomiyaki shops in Nagata, a taste of Kobe's working-class neighborhoods. The rich beef flavor is irresistible.",
     "price": "¥700–1,200",
-    "area": "Nagata Ward, Kobe"
+    "area": "Nagata Ward, Kobe",
+    "shops": [
+      {
+        "name": "Nagata Honjoken Sannomiya",
+        "query": "長田本庄軒 三宮センタープラザ",
+        "comment": "A bokkake yakisoba specialist.",
+        "access": "Sannomiya Center Plaza"
+      },
+      {
+        "name": "Okonomiyaki Aomori",
+        "query": "お好み焼 青森 長田",
+        "comment": "A Nagata institution; try the beef-tendon sobameshi.",
+        "access": "6 min walk from Shin-Nagata Station"
+      }
+    ]
   },
   "淡路島バーガー": {
     "summary": "Local burgers made with ingredients from Awaji Island. They use Awaji onions, known for their sweetness and tenderness, and Awaji beef. Thick fried onion slices and juicy, flavorful patties are among the creative burgers each shop offers. You can try them at roadside stations on the island, perfect for a stop on a drive. Enjoy the island's bounty while looking out at the Akashi Kaikyo Bridge. They are generous in size and very filling.",
     "price": "¥800–1,500",
-    "area": "Awaji Island (Awaji, Sumoto and around)"
+    "area": "Awaji Island (Awaji, Sumoto and around)",
+    "shops": [
+      {
+        "name": "Awajishima Onion Kitchen Uzu no Oka",
+        "query": "淡路島オニオンキッチン うずの丘店",
+        "comment": "Known for winning local-burger contests.",
+        "access": "Fukura, Minamiawaji (Uzu no Oka)"
+      },
+      {
+        "name": "Awajishima Onion Kitchen Uzumachi Terrace",
+        "query": "淡路島オニオンキッチン うずまちテラス",
+        "comment": "A branch by Fukura Port.",
+        "access": "Fukura, Minamiawaji (Uzumachi Terrace)"
+      }
+    ]
   },
   "神戸ビーフステーキ": {
     "summary": "Steak of Kobe beef, a brand known around the world. Only Tajima cattle from Hyogo that meet strict standards may be called Kobe beef. It features fine marbling, melt-in-your-mouth tenderness and fat with an elegant sweetness. Many restaurants grill it on an iron plate right in front of you, and watching the chef is part of the fun. There are many steakhouses around Sannomiya and Kitano in Kobe. Choose it for a special meal on your trip.",
     "price": "¥10,000–30,000",
-    "area": "Kobe (Sannomiya, Kitano and around)"
+    "area": "Kobe (Sannomiya, Kitano and around)",
+    "shops": [
+      {
+        "name": "Mouriya Honten",
+        "query": "神戸ステーキレストラン モーリヤ本店",
+        "comment": "A Kobe beef restaurant founded in the Meiji period.",
+        "access": "5 min walk from Sannomiya Station"
+      },
+      {
+        "name": "Steakland Kobe-kan",
+        "query": "ステーキランド 神戸館",
+        "comment": "Kobe beef at more affordable prices.",
+        "access": "Near Sannomiya Station"
+      }
+    ]
   },
   "ぼたん鍋": {
     "summary": "A specialty of Tamba-Sasayama: a miso-based hot pot of wild boar meat. The name is said to come from thin slices of boar arranged on a plate like a peony flower, botan. Boar becomes more tender the longer it cooks, and the sweetness and flavor of its fat melt into the miso broth. It is enjoyed with Chinese cabbage, burdock, mushrooms and tofu. Its season is winter, and many restaurants and inns in the castle town of Sasayama serve it. Boar is also known as a warming food.",
     "price": "¥4,000–8,000",
-    "area": "Tamba-Sasayama"
+    "area": "Tamba-Sasayama",
+    "shops": [
+      {
+        "name": "Kinmata",
+        "query": "丹波篠山 近又",
+        "comment": "The ryokan where botan nabe was born. Reservation only.",
+        "access": "Tamba-Sasayama"
+      },
+      {
+        "name": "Kai",
+        "query": "丹波篠山郷土料理 懐",
+        "comment": "Serves botan nabe all year.",
+        "access": "Nikaimachi, Tamba-Sasayama"
+      },
+      {
+        "name": "Ikkyuan",
+        "query": "丹波篠山 一休庵",
+        "comment": "A soba restaurant that serves botan nabe in winter.",
+        "access": "Tamba-Sasayama"
+      }
+    ]
   },
   "イカナゴのくぎ煮": {
     "summary": "Young sand lance caught in the Seto Inland Sea in early spring, simmered sweet and savory with soy sauce, sugar and ginger. The name is said to come from how the cooked fish look like bent old nails, kugi. In Kobe and Akashi, many families make kugini when spring arrives and send it to relatives and friends. The ginger aroma and sweet-savory flavor make it perfect with rice. In recent years the catch has declined, making it a precious taste of spring.",
     "price": "¥800–2,000",
-    "area": "Kobe, Akashi and around"
+    "area": "Kobe, Akashi and around",
+    "shops": [
+      {
+        "name": "Takahashiya",
+        "query": "たかはしや 魚の棚",
+        "comment": "A seafood shop in Uonotana market.",
+        "access": "Uonotana, Akashi"
+      },
+      {
+        "name": "Gogyofuku Otsumamidokoro",
+        "query": "伍魚福 オツマミドコロ 神戸三宮",
+        "comment": "The shop of a Kobe snack maker that also makes kugini.",
+        "access": "Sannomiya (Kobe Kotsu Center Bldg)"
+      }
+    ]
   },
   "出石皿そば": {
     "summary": "Soba from the castle town of Izushi, served in small portions on many little plates that pile up as you eat. It is said to have started in the Edo period when a lord who moved to Izushi from Shinshu brought soba makers with him. A standard serving is five plates, and you change the flavor by adding grated yam, egg and green onion to the dipping sauce. Trying to see how many plates you can eat is part of the fun, and some shops give a certificate for big eaters.",
     "price": "¥900–1,200 per person",
-    "area": "Izushi, Toyooka"
+    "area": "Izushi, Toyooka",
+    "shops": [
+      {
+        "name": "Jinbe",
+        "query": "出石手打ち皿そば 甚兵衛",
+        "comment": "A popular Izushi sarasoba shop. Closes when sold out.",
+        "access": "Izushi, Toyooka"
+      },
+      {
+        "name": "Kinmata (Izushi)",
+        "query": "手打ち出石皿そば 近又",
+        "comment": "Soba from flour stone-ground in-house.",
+        "access": "Izushi, Toyooka"
+      }
+    ]
   },
   "炭酸せんべい": {
     "summary": "A specialty of Arima Onsen: thin crackers said to be made with carbonated spring water from the hot spring area. They feature a light, crisp texture and a faint, gentle sweetness. Made from simple ingredients, they have a homey flavor. Shops selling them line the hot spring town, and some sell them freshly baked. They are perfect as a snack between baths or as a souvenir of your hot spring trip. Their simple taste makes them easy to keep eating.",
     "price": "¥500–1,500",
-    "area": "Arima Onsen, Kobe"
+    "area": "Arima Onsen, Kobe",
+    "shops": [
+      {
+        "name": "Mitsumori Honpo",
+        "query": "三津森本舗 有馬",
+        "comment": "A tansan senbei maker in Arima Onsen.",
+        "access": "Arima Onsen"
+      },
+      {
+        "name": "Ganso Mitsumori Honten",
+        "query": "有馬温泉 元祖 三ツ森 本店",
+        "comment": "Claims to be the originator of tansan senbei.",
+        "access": "Arima Onsen"
+      }
+    ]
   },
   "神戸プリン": {
     "summary": "A pudding souvenir representing Kobe, a stylish city known for Western sweets. Enjoy its smooth, melting texture and the slight bitterness of the caramel sauce. The cute packaging with a Kobe feel is part of its popularity. Besides custard, there are seasonal flavors. It is sold at Kobe's stations, the airport and department stores. Choose it as a memento of strolling through Kobe's cosmopolitan streets. It is best eaten chilled.",
     "price": "¥1,000–2,000",
-    "area": "Kobe"
+    "area": "Kobe",
+    "shops": [
+      {
+        "name": "Entree Marche Shin-Kobe",
+        "query": "アントレマルシェ 新神戸",
+        "comment": "A shop by the Shinkansen gates.",
+        "access": "Shin-Kobe Station"
+      },
+      {
+        "name": "Entree Marche Sannomiya",
+        "query": "アントレマルシェ 三ノ宮",
+        "comment": "By the central gates of JR Sannomiya.",
+        "access": "JR Sannomiya Station"
+      }
+    ]
   },
   "ゴーフル": {
     "summary": "A sweet from a long-established Kobe confectioner: cream sandwiched between thin, round wafers. Its large round shape, about 15 cm across, is distinctive, and you can enjoy the light, crisp texture with vanilla, strawberry or chocolate cream. It comes in a tin and has long been popular as a gift. It is one of the sweets that represent Kobe's Western confectionery culture. It is sold at the main store, department stores and stations in Kobe. Eating the thin wafer without breaking it is a challenge.",
     "price": "¥1,000–3,000",
-    "area": "Kobe"
+    "area": "Kobe",
+    "shops": [
+      {
+        "name": "Kobe Fugetsudo Motomachi",
+        "query": "神戸風月堂 元町本店",
+        "comment": "The gaufre flagship, with a café.",
+        "access": "Motomachi shopping street"
+      },
+      {
+        "name": "Entree Marche Shin-Kobe",
+        "query": "アントレマルシェ 新神戸",
+        "comment": "Available at the Shin-Kobe Station shop.",
+        "access": "Shin-Kobe Station"
+      }
+    ]
   },
   "御座候": {
     "summary": "Imagawayaki-style filled cakes made by a company headquartered in Himeji. Its shops are seen across Kansai, especially Hyogo, and locals are so fond of them that the product name Gozasoro is used as the name for this kind of cake. There are two kinds, red bean and white bean, with fluffy baked batter and plenty of filling. Buying them freshly made at the counter is the appeal. At Himeji Station and elsewhere, watching them being made is fun. Eat them hot.",
     "price": "¥100–150 each",
-    "area": "Himeji and around"
+    "area": "Himeji and around",
+    "shops": [
+      {
+        "name": "Gozasoro Himeji Station",
+        "query": "御座候 姫路駅店",
+        "comment": "Inside the JR Himeji ticket gates.",
+        "access": "Inside JR Himeji Station gates"
+      },
+      {
+        "name": "Gozasoro Granfesta Himeji",
+        "query": "御座候 グランフェスタ姫路",
+        "comment": "In the underground mall at Himeji Station.",
+        "access": "Himeji Station (Granfesta)"
+      }
+    ]
   }
 }

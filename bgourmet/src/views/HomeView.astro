@@ -1,0 +1,237 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localizePath, t, type Lang } from '../i18n';
+import { getPrefecture, prefectures, regions } from '../data/prefectures';
+import { assertCatalogConsistency, categories, countCatalog, getFeatured } from '../data/catalog';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+assertCatalogConsistency();
+const featured = getFeatured(lang);
+---
+
+<BaseLayout lang={lang} path="/">
+  <section class="hero">
+    <h1>{t(lang, 'siteName')}</h1>
+    <p>{t(lang, 'siteTagline')}</p>
+    <form class="search" action={localizePath(lang, '/search/')} method="get" role="search">
+      <label for="home-q" class="visually-hidden">{t(lang, 'search')}</label>
+      <input id="home-q" name="q" type="search" placeholder={t(lang, 'searchPlaceholder')} enterkeyhint="search" />
+      <button type="submit">{t(lang, 'searchButton')}</button>
+    </form>
+    <nav class="cat-links" aria-label={t(lang, 'browseByCategory')}>
+      {
+        categories.map((c) => (
+          <a href={`${localizePath(lang, '/search/')}?cat=${c}`}>{t(lang, `category_${c}`)}</a>
+        ))
+      }
+    </nav>
+  </section>
+
+  <section>
+    <h2>{t(lang, 'featured')}</h2>
+    <div class="grid">
+      {
+        featured.map((item) => (
+          <a class="card" href={`${localizePath(lang, `/${item.prefectureId}/`)}#${item.anchor}`}>
+            <span class="pref">{getPrefecture(item.prefectureId).name[lang]}</span>
+            <strong>{item.name}</strong>
+            {item.info && <span class="summary">{item.info.summary}</span>}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section>
+    <h2>{t(lang, 'browseByRegion')}</h2>
+    <div class="regions">
+      {
+        regions.map((region) => (
+          <div class="region">
+            <h3>{region.name[lang]}</h3>
+            <ul>
+              {prefectures
+                .filter((p) => p.region === region.id)
+                .map((p) => {
+                  const count = countCatalog(lang, p.id);
+                  return (
+                    <li>
+                      <a href={localizePath(lang, `/${p.id}/`)} class={count ? 'has' : 'empty'}>
+                        {p.name[lang]}
+                        {count > 0 && <span class="count">{t(lang, 'gourmetCount', { n: count })}</span>}
+                      </a>
+                    </li>
+                  );
+                })}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: calc(var(--radius) * 1.5);
+    background: linear-gradient(135deg, var(--accent-soft), var(--surface-2));
+    text-align: center;
+  }
+  .hero h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+  }
+  .hero p {
+    margin: 0;
+    color: var(--muted);
+  }
+  .search {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 520px;
+    margin: 1.25rem auto 0;
+  }
+  .search input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 1rem; /* 16px 未満だと iPhone で入力時に拡大されるため */
+  }
+  .search input:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .search button {
+    flex-shrink: 0;
+    padding: 0.7rem 1.2rem;
+    border: 0;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .cat-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: 0.9rem;
+  }
+  .cat-links a {
+    padding: 0.2rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  .cat-links a:hover {
+    border-color: var(--accent);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  section {
+    margin-top: 2.5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    display: grid;
+    gap: 0.2rem;
+    align-content: start;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    color: var(--text);
+    text-decoration: none;
+  }
+  .card:hover {
+    border-color: var(--accent);
+  }
+  .card .pref {
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .card strong {
+    font-size: 1.1rem;
+  }
+  .card .summary {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .regions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1rem;
+  }
+  .region {
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .region h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+  }
+  .region ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .region a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.15rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .region a.has {
+    background: var(--accent-soft);
+    color: var(--text);
+    font-weight: 700;
+  }
+  .region a.empty {
+    color: var(--muted);
+  }
+  .count {
+    color: var(--accent);
+    font-size: 0.75rem;
+  }
+</style>

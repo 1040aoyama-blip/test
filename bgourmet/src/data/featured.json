@@ -1,0 +1,10 @@
+[
+  { "prefecture": "shizuoka", "ja": "富士宮やきそば" },
+  { "prefecture": "osaka", "ja": "たこ焼き" },
+  { "prefecture": "hokkaido", "ja": "スープカレー" },
+  { "prefecture": "fukuoka", "ja": "博多ラーメン" },
+  { "prefecture": "shizuoka", "ja": "静岡おでん" },
+  { "prefecture": "osaka", "ja": "串カツ" },
+  { "prefecture": "hokkaido", "ja": "ジンギスカン" },
+  { "prefecture": "fukuoka", "ja": "博多もつ鍋" }
+]

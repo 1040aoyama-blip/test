@@ -1,0 +1,330 @@
+{
+  "京都ラーメン": {
+    "summary": "Kyoto is known as a city with many ramen shops, and rich, hearty bowls are the local favorite. Styles vary, from soy sauce broth with floating pork back fat to thick broth made by slowly simmering chicken bones. Many shops pile on Kujo green onions, a very Kyoto touch. Some areas, like Ichijoji's ramen street, gather popular shops, so comparing bowls is fun. It shows another side of Kyoto, different from its image of refined cuisine. Many shops stay open late.",
+    "price": "¥800–1,200",
+    "area": "Kyoto City (Ichijoji and around)",
+    "shops": [
+      {
+        "name": "Honke Daiichi Asahi Takabashi",
+        "query": "本家第一旭 たかばし本店",
+        "comment": "A popular shop open from early morning to late night.",
+        "access": "5 min walk from Kyoto Station (Takabashi)"
+      },
+      {
+        "name": "Shinpuku Saikan Honten",
+        "query": "新福菜館 本店 京都",
+        "comment": "A veteran known for its dark soup and fried rice, next door to Daiichi Asahi.",
+        "access": "5 min walk from Kyoto Station (Takabashi)"
+      },
+      {
+        "name": "Tenkaippin Sohonten",
+        "query": "天下一品 総本店 北白川",
+        "comment": "The flagship of the chain famous for its thick, rich soup.",
+        "access": "Kitashirakawa, Sakyo Ward"
+      }
+    ]
+  },
+  "衣笠丼": {
+    "summary": "A rice bowl loved in Kyoto homes and udon shops. Chopped fried tofu and Kujo green onions are simmered in a sweet and savory broth, bound with egg and served over rice. The name is said to come from Mt. Kinugasa in northwest Kyoto, whose snow-covered look resembles the egg topping. The fried tofu soaks up the broth for a gentle flavor. It is often on the menu at Kyoto udon and soba shops. Enjoy this simple, homey Kyoto taste. It is inexpensive and easy to order.",
+    "price": "¥600–900",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Okakita",
+        "query": "京うどん 生蕎麦 岡北",
+        "comment": "A prewar udon shop near Heian Shrine.",
+        "access": "Okazaki (near Heian Shrine)"
+      },
+      {
+        "name": "Watatsune",
+        "query": "わたつね 京都 三条",
+        "comment": "A soba shop with an old-time diner feel.",
+        "access": "Nakagyo Ward (Sanjo-Yanaginobamba)"
+      }
+    ]
+  },
+  "湯豆腐": {
+    "summary": "One of Kyoto's signature dishes: tofu warmed in a clay pot of kelp broth. Kyoto is blessed with good groundwater and has long produced high-quality tofu. Because the dish is so simple, you can taste the smoothness of the tofu and the sweetness of soybeans. It is eaten with a soy-based sauce and condiments such as green onion and bonito flakes. Many long-established yudofu restaurants are found around Nanzenji Temple and Arashiyama. Pair it with temple visits, especially in winter.",
+    "price": "¥2,500–5,000",
+    "area": "Kyoto City (Nanzenji, Arashiyama and around)",
+    "shops": [
+      {
+        "name": "Nanzenji Junsei",
+        "query": "南禅寺 順正",
+        "comment": "A yudofu restaurant on the Nanzenji approach, with a fine garden.",
+        "access": "Nanzenji approach"
+      },
+      {
+        "name": "Okutan Nanzenji",
+        "query": "奥丹 南禅寺",
+        "comment": "A long-established yudofu house near Nanzenji.",
+        "access": "Near Nanzenji"
+      },
+      {
+        "name": "Yudofu Sagano",
+        "query": "湯豆腐 嵯峨野 嵐山",
+        "comment": "Yudofu made with Saga tofu in Arashiyama.",
+        "access": "Arashiyama (near Tenryuji)"
+      }
+    ]
+  },
+  "湯葉料理": {
+    "summary": "Yuba is the thin skin that forms on the surface of heated soy milk, lifted off as it forms. It has long been used in vegetarian temple cuisine in Kyoto, a city of many temples. Freshly lifted nama yuba is silky and smooth with a gentle soybean sweetness. It can be eaten like sashimi with wasabi and soy sauce, or in hot pots, simmered dishes and rice bowls. Try it at specialty yuba shops and traditional restaurants. Some shops let you watch yuba being made.",
+    "price": "¥2,000–5,000",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Yubasen Kiyomizu Gojozaka",
+        "query": "ゆば泉 清水五条坂",
+        "comment": "Uses yuba from its own workshop. Near Kiyomizu-dera.",
+        "access": "Near Kiyomizu-dera (Gojozaka)"
+      },
+      {
+        "name": "Kyo Yuba Yubani",
+        "query": "京湯葉 湯葉に",
+        "comment": "A yuba specialist restaurant.",
+        "access": "Kyoto"
+      }
+    ]
+  },
+  "にしんそば": {
+    "summary": "A famous Kyoto soba: hot soba in broth topped with dried herring simmered sweet and savory. In Kyoto, far from the sea, preserved dried herring brought from Hokkaido by kitamaebune trading ships was a treasured ingredient. The sweetness and flavor of the tender herring melt into the broth and go well with the noodles. It is said to have been created at a long-established soba shop in Gion. Many soba shops in Kyoto serve it, and it is especially warming in the cold season.",
+    "price": "¥1,000–1,800",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Matsuba Honten",
+        "query": "総本家にしんそば 松葉 本店",
+        "comment": "The originator of nishin soba, founded in the late Edo period.",
+        "access": "Next to Minamiza Theatre (east of Shijo Ohashi)"
+      },
+      {
+        "name": "Matsuba Kyoto Station",
+        "query": "総本家にしんそば 松葉 京都駅店",
+        "comment": "Eat it at Kyoto Station.",
+        "access": "Kyoto Station"
+      }
+    ]
+  },
+  "さばずし": {
+    "summary": "Pressed sushi of mackerel cured in salt and vinegar, laid on vinegared rice and wrapped in kelp. The road along which salted mackerel from Wakasa Bay was carried to Kyoto is called the Saba Kaido, the mackerel road. By the time it reached Kyoto, the fish was perfectly seasoned. It has long been a feast for festivals and celebrations in Kyoto homes. Enjoy the rich flavor of thick mackerel and the aroma of kelp. Long-established sushi shops in Kyoto sell it to take away.",
+    "price": "¥2,000–5,000",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Izuu",
+        "query": "いづう 祇園 さば姿寿司",
+        "comment": "A saba-zushi house dating to the Edo period.",
+        "access": "Gion"
+      },
+      {
+        "name": "Izuju",
+        "query": "いづ重 祇園",
+        "comment": "A Kyoto-style sushi shop at the foot of Yasaka Shrine's steps.",
+        "access": "Below the steps of Yasaka Shrine"
+      }
+    ]
+  },
+  "賀茂なすの田楽": {
+    "summary": "Kamo eggplant, one of Kyoto's heirloom vegetables, is round, large and dense. For dengaku, it is cut into thick rounds, fried or grilled, and spread with sweet miso. The meltingly soft eggplant pairs perfectly with the toasty sweetness of the miso. It is in season in summer and served at restaurants offering Kyoto cuisine. It is an easy way to taste the goodness of Kyoto vegetables. It goes well with both rice and sake.",
+    "price": "¥800–1,500",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Minokichi Honten Chikumoro",
+        "query": "京料理 美濃吉 本店 竹茂楼",
+        "comment": "An Edo-period Kyoto restaurant; kamo-nasu dengaku also appears among its early-summer deli dishes.",
+        "access": "Awataguchi, Sakyo Ward (near Heian Shrine)"
+      },
+      {
+        "name": "Miyakoyasai Kamo Karasuma",
+        "query": "都野菜 賀茂 烏丸",
+        "comment": "Obanzai made with Kyoto vegetables; kamo eggplant may appear in summer.",
+        "access": "Near Shijo-Karasuma"
+      }
+    ]
+  },
+  "千枚漬け": {
+    "summary": "Kyoto's signature winter pickle: shogoin turnips, a Kyoto heirloom vegetable, sliced thin and pickled in sweet vinegar with kelp. The name, a thousand slices, is said to come from cutting the turnip so thin you could get a thousand slices. It features a crisp texture, kelp umami and mellow sweet-sour flavor. It is counted among Kyoto's three great pickles. In winter it lines the shelves of Kyoto pickle shops. Its elegant look makes it a welcome souvenir or gift.",
+    "price": "¥800–2,000",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Daito",
+        "query": "千枚漬本家 大藤 麩屋町本店",
+        "comment": "A late-Edo shop said to have created senmaizuke.",
+        "access": "Near Nishiki Market (Fuyacho)"
+      },
+      {
+        "name": "Murakamiju Honten",
+        "query": "村上重本店 京都",
+        "comment": "A long-established pickle shop on Nishikiyamachi.",
+        "access": "Near Shijo-Kawaramachi (Nishikiyamachi)"
+      }
+    ]
+  },
+  "しば漬け": {
+    "summary": "Pickles of eggplant, cucumber and other vegetables fermented with red shiso and salt. One of Kyoto's three great pickles, it is said to come from Ohara, a village north of Kyoto. It features a vivid purple color from the shiso and a refreshing sourness. It is perfect with rice and delicious on ochazuke too. In Ohara you can also enjoy views of shiso fields. Kyoto pickle shops sell many kinds. It is also tasty chopped and mixed into rice.",
+    "price": "¥500–1,200",
+    "area": "Kyoto City (Ohara and around)",
+    "shops": [
+      {
+        "name": "Doi Shibazuke Honpo",
+        "query": "土井志ば漬本舗 本店",
+        "comment": "A Meiji-era shibazuke maker in Ohara.",
+        "access": "Ohara"
+      },
+      {
+        "name": "Doi Shibazuke Sanzen-in-mae",
+        "query": "土井志ば漬本舗 三千院前店",
+        "comment": "Handy on a visit to Sanzen-in.",
+        "access": "In front of Sanzen-in (Ohara)"
+      }
+    ]
+  },
+  "鱧落とし": {
+    "summary": "A signature Kyoto summer dish. Pike conger, hamo, is full of small bones, so it requires honekiri, a skilled technique of scoring the flesh finely while leaving the skin intact. The scored fish is dipped briefly in boiling water and chilled in ice water, and the flesh opens like a white flower. It is classically eaten with pickled plum paste for a refreshing taste. Kyoto's Gion Festival is even called the hamo festival, showing how essential it is. Enjoy its soft, fluffy texture at Kyoto restaurants.",
+    "price": "¥2,000–5,000",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Sangenan",
+        "query": "京都 鱧料理専門店 三源庵",
+        "comment": "A hamo specialist. May to mid-November, by reservation.",
+        "access": "Kyoto"
+      },
+      {
+        "name": "Kyo Ryori Sanei",
+        "query": "京料理 三栄 京都",
+        "comment": "A Kyoto restaurant whose summer specialty is hamo.",
+        "access": "5 min walk from Gion-Shijo Station"
+      }
+    ]
+  },
+  "生八ッ橋": {
+    "summary": "A famous Kyoto sweet: thin, soft dough of rice flour, sugar and cinnamon, steamed and wrapped around bean paste. Its triangle fold is distinctive, combining chewy dough with smooth paste. Besides cinnamon, there are flavors such as matcha and seasonal fruits. It is a classic Kyoto souvenir, and many yatsuhashi shops are found around Shogoin and Kiyomizu-dera Temple. Choosing your favorite while sampling is fun. It does not keep long, so eat it soon.",
+    "price": "¥500–1,000",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Shogoin Yatsuhashi Sohonten",
+        "query": "聖護院八ッ橋総本店 本店",
+        "comment": "A yatsuhashi maker founded in the Edo period.",
+        "access": "Shogoin, Sakyo Ward"
+      },
+      {
+        "name": "Honke Nishio Yatsuhashi Honten",
+        "query": "本家西尾八ッ橋 本店",
+        "comment": "A long-established yatsuhashi maker near Shogoin.",
+        "access": "Shogoin, Sakyo Ward"
+      }
+    ]
+  },
+  "八ッ橋": {
+    "summary": "One of Kyoto's best-known sweets: dough of rice flour, sugar and cinnamon rolled thin and baked. Its gently curved shape is modeled on a koto, a Japanese harp. Enjoy its crisp bite and the aroma of cinnamon. One theory says the name honors Yatsuhashi Kengyo, regarded as the founder of koto music. A traditional sweet made in Kyoto since long ago, it keeps well and is perfect as a souvenir. Try comparing it with the soft nama yatsuhashi.",
+    "price": "¥500–1,000",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Izutsu Yatsuhashi Honpo Gion",
+        "query": "井筒八ッ橋本舗 祇園本店",
+        "comment": "Founded in the Edo period, near Shijo Ohashi.",
+        "access": "Gion (east of Shijo Ohashi)"
+      },
+      {
+        "name": "Shogoin Yatsuhashi Sohonten",
+        "query": "聖護院八ッ橋総本店 本店",
+        "comment": "Sells both baked and fresh yatsuhashi.",
+        "access": "Shogoin, Sakyo Ward"
+      }
+    ]
+  },
+  "阿闍梨餅": {
+    "summary": "One of Kyoto's best-known sweets, made by a long-established confectioner. Chewy dough made with glutinous rice wraps chunky red bean paste and is baked. The name comes from the shape of the woven hat worn by ajari, monks training on Mt. Hiei. Enjoy the moist, chewy dough and the refined sweetness of the bean paste. It does not keep long, so eat it soon. It is sold at Kyoto Station and department stores and is a hugely popular souvenir. Warming it makes the dough fluffy.",
+    "price": "¥120–150 each",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Mangetsu Honten",
+        "query": "阿闍梨餅本舗 満月 本店",
+        "comment": "The flagship of Ajari mochi's maker.",
+        "access": "Near Demachiyanagi (Sakyo Ward)"
+      },
+      {
+        "name": "Kyoto Station souvenir shops",
+        "query": "京都駅 阿闍梨餅",
+        "comment": "Also sold at Kyoto Station shops and department stores.",
+        "access": "Kyoto Station"
+      }
+    ]
+  },
+  "宇治抹茶パフェ": {
+    "summary": "A parfait made with plenty of matcha from Uji, a famous tea-growing area. Matcha ice cream, matcha jelly and matcha sponge cake are beautifully layered in a glass with rice dumplings, red bean paste and chestnuts. Enjoy the rich aroma of matcha and its balance of bitterness and sweetness. Around Uji's Byodoin Temple and in Kyoto's Gion, many cafes are run by long-established tea merchants, and popular ones draw lines. Some even let you choose how strong the matcha is.",
+    "price": "¥1,200–2,000",
+    "area": "Uji, Kyoto City",
+    "shops": [
+      {
+        "name": "Nakamura Tokichi Uji",
+        "query": "中村藤吉本店 宇治本店",
+        "comment": "Café of a historic Uji tea merchant in a converted tea factory.",
+        "access": "Near Uji Station"
+      },
+      {
+        "name": "Itohkyuemon Uji",
+        "query": "伊藤久右衛門 宇治本店",
+        "comment": "Tea room of a long-established Uji tea house.",
+        "access": "Todo, Uji"
+      },
+      {
+        "name": "Saryo Tsujiri Gion",
+        "query": "茶寮都路里 祇園本店",
+        "comment": "The tea room of Gion Tsujiri, right in Gion.",
+        "access": "Gion (Shijo-dori)"
+      }
+    ]
+  },
+  "水無月": {
+    "summary": "A Japanese sweet eaten in Kyoto at the end of June, when the Nagoshi no Harae purification ritual is held. White uiro is topped with sweet azuki beans and cut into triangles. The triangle is said to represent ice for beating the heat, and the azuki beans ward off evil. In the past, when ice was precious, people ate this sweet instead and prayed for good health for the rest of the year. Enjoy its chewy texture and gentle sweetness. It appears at Kyoto confectioners around June.",
+    "price": "¥200–350 each",
+    "area": "Kyoto City",
+    "shops": [
+      {
+        "name": "Sentaro Honten",
+        "query": "仙太郎 本店 寺町",
+        "comment": "A Meiji-era confectioner.",
+        "access": "Teramachi, Shimogyo Ward"
+      },
+      {
+        "name": "Nakamuraken",
+        "query": "中村軒 桂",
+        "comment": "A Meiji-era confectioner near Katsura Imperial Villa.",
+        "access": "Katsura, Nishikyo Ward"
+      },
+      {
+        "name": "Demachi Futaba",
+        "query": "出町ふたば",
+        "comment": "Famous for mame mochi; minazuki appears in June.",
+        "access": "Demachiyanagi"
+      }
+    ]
+  },
+  "豆餅": {
+    "summary": "A Kyoto sweet of soft mochi filled with salty red peas and smooth bean paste. The mame mochi of a long-established shop in Demachiyanagi is especially famous, with lines forming almost every day. The salty peas, gentle sweetness of the paste and chewy mochi make a perfect combination. It does not keep, so eat it the same day. Enjoying it leisurely on the banks of the Kamo River is a very Kyoto pleasure. Savor the bite of the peas too.",
+    "price": "¥200–300 each",
+    "area": "Demachiyanagi, Kyoto City",
+    "shops": [
+      {
+        "name": "Demachi Futaba",
+        "query": "出町ふたば",
+        "comment": "A Meiji-era shop with a constant line for its mame mochi.",
+        "access": "Demachiyanagi"
+      },
+      {
+        "name": "Sentaro Honten",
+        "query": "仙太郎 本店 寺町",
+        "comment": "A long-established confectioner that also sells mame mochi.",
+        "access": "Teramachi, Shimogyo Ward"
+      }
+    ]
+  }
+}

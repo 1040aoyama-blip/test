@@ -1,0 +1,204 @@
+{
+  "盛岡冷麺": {
+    "summary": "Translucent, very chewy noodles made from wheat flour and starch, served in a rich, chilled broth made with beef bones. Many shops let you choose how spicy the kimchi is, and it is often topped with fruit such as watermelon or pear. Its roots are said to be a restaurant opened in Morioka by someone from the northern Korean Peninsula, and it has become a Morioka staple. It is classic to order after a yakiniku meal. One of Morioka's three great noodles, along with wanko soba and jajamen. It suits both hot summer days and cold winter nights.",
+    "price": "¥900–1,300",
+    "area": "Morioka",
+    "shops": [
+      {
+        "name": "Shokudoen",
+        "query": "食道園 盛岡 冷麺",
+        "comment": "The long-established restaurant said to be the birthplace of Morioka reimen.",
+        "access": "Odori, Morioka"
+      },
+      {
+        "name": "Pyonpyonsha Morioka Ekimae",
+        "query": "ぴょんぴょん舎 盛岡駅前店",
+        "comment": "The famous shop that spread Morioka reimen nationwide. Close to the station.",
+        "access": "Near Morioka Station"
+      },
+      {
+        "name": "Seirokaku",
+        "query": "盛楼閣 盛岡",
+        "comment": "A popular spot to enjoy reimen alongside yakiniku.",
+        "access": "Near Morioka Station"
+      }
+    ]
+  },
+  "盛岡じゃじゃ麺": {
+    "summary": "Morioka's famous noodles: flat, udon-like noodles topped with meat miso, cucumber and green onions, mixed well before eating. Adding garlic, chili oil and vinegar to taste is part of the fun. When you finish, crack a raw egg into the plate, stir, and ask the staff to add noodle water and miso to make a soup called chitantan. Based on Chinese zhajiangmian, it is said to have been born in postwar Morioka. It may seem confusing at first, but once you learn how to eat it, it becomes addictive. Ask the staff if you are unsure.",
+    "price": "¥600–900",
+    "area": "Morioka",
+    "shops": [
+      {
+        "name": "Pairon Main Store",
+        "query": "白龍 本店 盛岡 じゃじゃ麺",
+        "comment": "The originator of jajamen. Don't skip the chitantan egg soup at the end.",
+        "access": "Near Morioka Castle Ruins Park (Uchimaru)"
+      },
+      {
+        "name": "Pairon Fesan Branch",
+        "query": "白龍 フェザン分店",
+        "comment": "Inside the Morioka Station building, handy for travelers.",
+        "access": "Fesan, Morioka Station building"
+      }
+    ]
+  },
+  "福田パン": {
+    "summary": "A long-established Morioka bakery famous for filling large soft rolls with your choice of toppings on the spot. There are dozens of fillings, from sweet options like red bean and butter or peanut cream to savory ones like potato salad or yakisoba. They fill your roll right in front of you after you order, so choosing a combination is half the fun. Generously filled and very satisfying, it is a soul food that Morioka locals have loved since their school days.",
+    "price": "¥200–400 each",
+    "area": "Morioka",
+    "shops": [
+      {
+        "name": "Fukuda Pan Nagatacho Main Store",
+        "query": "福田パン 長田町本店",
+        "comment": "The main store, where your fillings are spread to order. Opens at 7 a.m.",
+        "access": "About 13 min walk from Morioka Station"
+      },
+      {
+        "name": "Fukuda Pan Nakanohashi (Morioka Bus Center)",
+        "query": "福田パン 中ノ橋店 盛岡バスセンター",
+        "comment": "A directly run shop inside the Morioka Bus Center.",
+        "access": "Morioka Bus Center (Nakanohashi)"
+      }
+    ]
+  },
+  "わんこそば": {
+    "summary": "An Iwate specialty in which servers keep tossing bite-size portions of soba into your bowl, calling out encouragement as they go. The refills continue until you put the lid on your bowl, so it is fun to see how many you can eat. About 15 bowls is said to equal one regular bowl of soba. It is served with condiments and side dishes. There are specialist restaurants in Morioka and Hanamaki, and some give you a certificate showing how many bowls you ate. Just do not overdo it!",
+    "price": "¥3,000–4,000",
+    "area": "Morioka and Hanamaki",
+    "shops": [
+      {
+        "name": "Azumaya Main Store",
+        "query": "東家 本店 盛岡 わんこそば",
+        "comment": "A long-established shop founded in the Meiji era. Eat 100 bowls for a certificate.",
+        "access": "Nakanohashi-dori, Morioka"
+      },
+      {
+        "name": "Chokurian",
+        "query": "直利庵 盛岡 わんこそば",
+        "comment": "A long-established soba restaurant dating from the Meiji era.",
+        "access": "Nakanohashi-dori, Morioka"
+      },
+      {
+        "name": "Hatsukoma",
+        "query": "初駒 盛岡 わんこそば",
+        "comment": "A long-running wanko soba shop where the servers' banter is part of the fun.",
+        "access": "Hachimancho, Morioka"
+      }
+    ]
+  },
+  "ひっつみ": {
+    "summary": "An Iwate home-style dish of wheat dough torn into thin pieces by hand and simmered with chicken and vegetables in a soy sauce broth. The name comes from hittsumamu, a local word for pinching or tearing off the dough. The smooth, slippery dough soaks up the flavor of the broth. It has long been made in the cold months and is called totte-nage in some areas. You can try it at local restaurants and roadside stations, and it will warm you up on a winter trip. Its simple flavor stays with you.",
+    "price": "¥700–1,000",
+    "area": "All over Iwate",
+    "shops": [
+      {
+        "name": "Nanbu-han Nagaya Sakaba",
+        "query": "南部藩長屋酒場 盛岡",
+        "comment": "Offers set meals with hittsumi soup and other Iwate dishes.",
+        "access": "Near Morioka Station"
+      },
+      {
+        "name": "Hittsumitei",
+        "query": "ひっつみ亭 盛岡",
+        "comment": "Enjoy hittsumi and handmade soba in an old farmhouse. Lunchtime only.",
+        "access": "Kurokawa, Morioka (about 20 min by car from the station)"
+      }
+    ]
+  },
+  "まめぶ汁": {
+    "summary": "A local dish from the Yamagata district of Kuji. Mamebu dumplings, wheat dough filled with walnuts and brown sugar, are simmered in a soy sauce soup with vegetables, tofu and mushrooms. The mix of sweet dumplings and savory soup may surprise you, but the toasty walnuts and rich brown sugar blend with the broth into something strangely addictive. It was once a feast dish served at celebrations, and it became famous nationwide after appearing in a TV drama. A curious taste worth trying at least once.",
+    "price": "¥500–900",
+    "area": "Kuji",
+    "shops": [
+      {
+        "name": "Restaurant Sankairi (Michi no Eki Kuji)",
+        "query": "レストラン山海里 道の駅くじ やませ土風館",
+        "comment": "Try Kuji mamebu-jiru affordably at the roadside station restaurant.",
+        "access": "Near Kuji Station"
+      },
+      {
+        "name": "Sushidokoro Kiyota",
+        "query": "鮨処 きよ田 久慈",
+        "comment": "A sushi restaurant that also serves mamebu-jiru.",
+        "access": "Kuji"
+      }
+    ]
+  },
+  "前沢牛ステーキ": {
+    "summary": "Steak from Maezawa beef, Japanese Black cattle raised in the Maezawa district of Oshu. It is known for fine marbling, melt-in-the-mouth tenderness and elegant, sweet fat. Because so little is produced, it is a rare brand of beef that is hard to find outside the area. Local yakiniku and steak restaurants serve it as steak, grilled meat and even sushi. Enjoying it fresh where it is raised is part of the appeal. Combine it with a visit to the World Heritage site of Hiraizumi for a special meal.",
+    "price": "¥5,000–15,000",
+    "area": "Oshu",
+    "shops": [
+      {
+        "name": "Gyusho Ogata Ajigokoro",
+        "query": "牛匠おがた 味心 前沢",
+        "comment": "A restaurant run directly by a Maesawa beef farm.",
+        "access": "Maesawa, Oshu (about 15 min by car from Chusonji)"
+      },
+      {
+        "name": "Steak House Pioneer Bokujo",
+        "query": "ステーキハウス パイオニア牧場 奥州",
+        "comment": "A steakhouse run directly by a ranch that raises Maesawa beef.",
+        "access": "Mizusawa, Oshu"
+      }
+    ]
+  },
+  "遠野ジンギスカン": {
+    "summary": "In Tono, known as the home of Japanese folk tales, jingisukan grilled lamb is deeply loved by locals. It is eaten often at home, and at gatherings such as cherry blossom parties, people sit around a jingisukan pan over charcoal. There is even a style called bucket jingisukan, using a bucket with holes as a charcoal stove, which you can still see at events. Some butchers specialize in lamb, and their marinated meat is a popular souvenir. Enjoy it on an evening in the land of folk tales.",
+    "price": "¥1,500–3,000",
+    "area": "Tono",
+    "shops": [
+      {
+        "name": "Jingisukan Anbe",
+        "query": "じんぎすかん あんべ 遠野",
+        "comment": "A long-running jingisukan restaurant in Tono. Closed Thursdays.",
+        "access": "Near Tono Station"
+      },
+      {
+        "name": "Tono Shokuniku Center Main Store",
+        "query": "遠野食肉センター 本店",
+        "comment": "Run by a butcher, serving fresh lamb jingisukan.",
+        "access": "Tono"
+      }
+    ]
+  },
+  "かもめの玉子": {
+    "summary": "An egg-shaped sweet made by Saito Seika in Ofunato. Egg-yolk bean paste is wrapped in sponge cake and coated with white chocolate. The moist cake and smooth filling make it a classic Iwate souvenir. Seasonal flavors appear too, so try one if you see it. The factory was damaged in the Great East Japan Earthquake, but it was rebuilt and the sweet is still loved by many people today. Bite-size versions are also available.",
+    "price": "From about ¥150 each",
+    "area": "Ofunato and across Iwate",
+    "shops": [
+      {
+        "name": "Kamome Terrace (Saito main store)",
+        "query": "かもめテラス 三陸菓匠さいとう総本店",
+        "comment": "The main store of the confectioner that makes Kamome no Tamago.",
+        "access": "Ofunato"
+      },
+      {
+        "name": "Sanriku Kasho Saito (Fesan)",
+        "query": "三陸菓匠 さいとう フェザン店",
+        "comment": "A directly run shop in the Morioka Station building.",
+        "access": "Fesan, Morioka Station building"
+      }
+    ]
+  },
+  "南部せんべい": {
+    "summary": "Wheat crackers from the Nanbu region, also a famous local snack in northern Iwate, including Ninohe. They have a crisp rim called mimi, and versions with sesame or peanuts are the standard. There are many ways to enjoy them, from ame-sen, crackers sandwiching starch syrup, to special crackers for simmering in hot pot. Their simple, gentle flavor and long shelf life make them perfect souvenirs. You can find them at souvenir shops around the prefecture, and family members back home will appreciate them.",
+    "price": "¥300–800",
+    "area": "Ninohe and northern Iwate",
+    "shops": [
+      {
+        "name": "Nanbu Senbei no Iwateya Main Store",
+        "query": "南部せんべい乃巖手屋 本店",
+        "comment": "A specialty shop with many flavors of nanbu senbei. Closed weekends.",
+        "access": "Ninohe"
+      },
+      {
+        "name": "Shirasawa Senbei",
+        "query": "白沢せんべい店 盛岡",
+        "comment": "A long-running shop with over 20 kinds of hand-baked nanbu senbei.",
+        "access": "Konyacho, Morioka"
+      }
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+---
+import '../styles/global.css';
+import { languages, langs, localizePath, t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+  description?: string;
+  /** 言語を除いたパス（例: /shizuoka/） */
+  path: string;
+  /** このページの翻訳がある言語（省略時はすべての言語） */
+  availableLangs?: Lang[];
+}
+
+const { lang, title, description, path, availableLangs = langs } = Astro.props;
+const siteName = t(lang, 'siteName');
+const pageTitle = title ? `${title} | ${siteName}` : siteName;
+const metaDescription = description ?? t(lang, 'siteDescription');
+const site = Astro.site ?? new URL('https://example.com');
+// 翻訳がない言語への切り替えは、その言語のトップページへ
+// 言語が合わない訪問者には英語版を案内する（訪日客向け）。英語版がなければ最初の言語
+const defaultLangFor = (available: Lang[]): Lang => (available.includes('en') ? 'en' : available[0]);
+const switchHref = (l: Lang) => localizePath(l, availableLangs.includes(l) ? path : '/');
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={metaDescription} />
+    <link rel="canonical" href={new URL(localizePath(lang, path), site)} />
+    {availableLangs.map((l) => <link rel="alternate" hreflang={l} href={new URL(localizePath(l, path), site)} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL(localizePath(defaultLangFor(availableLangs), path), site)} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={languages[lang].ogLocale} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container bar">
+        <a class="logo" href={localizePath(lang, '/')}>🍜 {siteName}</a>
+        <div class="tools">
+          <a class="search-link" href={localizePath(lang, '/search/')}>
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            <span>{t(lang, 'search')}</span>
+          </a>
+          <nav class="langs" aria-label={t(lang, 'langSwitch')}>
+            {
+              langs.map((l) => (
+                <a href={switchHref(l)} aria-current={l === lang ? 'true' : undefined} hreflang={l} lang={l}>
+                  {languages[l].label}
+                </a>
+              ))
+            }
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <nav class="footer-links">
+          <a href={localizePath(lang, '/about/')}>{t(lang, 'aboutTitle')}</a>
+          <a href={localizePath(lang, '/privacy/')}>{t(lang, 'privacyTitle')}</a>
+          <a href={localizePath(lang, '/contact/')}>{t(lang, 'contactTitle')}</a>
+        </nav>
+        <p>{t(lang, 'adNotice')}</p>
+        <p>© {new Date().getFullYear()} {siteName}</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 0.75rem;
+  }
+  .logo {
+    color: var(--text);
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .tools {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .search-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text);
+    font-size: 0.9rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .search-link:hover {
+    border-color: var(--accent);
+  }
+  .langs {
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.25rem;
+  }
+  .langs a {
+    white-space: nowrap;
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .langs a[aria-current='true'] {
+    background: var(--accent-soft);
+    color: var(--text);
+    font-weight: 700;
+  }
+  main {
+    padding-block: 2rem 4rem;
+  }
+  .site-footer {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding-block: 1.5rem;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .footer-links a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    color: var(--accent);
+  }
+  .site-footer p {
+    margin: 0.25rem 0;
+  }
+  /* スマホでは虫めがねだけにして、ロゴと言語切り替えの場所を確保する */
+  @media (max-width: 480px) {
+    .search-link span {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+    .search-link {
+      padding: 0.35rem;
+    }
+    .tools {
+      gap: 0.25rem;
+    }
+    .logo {
+      font-size: 0.95rem;
+    }
+    .langs a {
+      padding-inline: 0.5rem;
+      font-size: 0.85rem;
+    }
+  }
+</style>

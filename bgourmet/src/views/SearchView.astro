@@ -1,0 +1,344 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localizePath, t, type Lang } from '../i18n';
+import { getPrefecture, prefectures, regions } from '../data/prefectures';
+import { categories, getAllDishes } from '../data/catalog';
+import { normalizeForSearch } from '../lib/normalize';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const dishes = getAllDishes(lang);
+
+// 一覧に出す説明は冒頭だけ（全文は検索の対象としてだけ持つ）
+const excerpt = (text: string) => {
+  const max = lang === 'ja' ? 60 : 110;
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  return `${lang === 'ja' ? cut : cut.slice(0, cut.lastIndexOf(' '))}…`;
+};
+
+const rows = dishes.map((dish) => {
+  const pref = getPrefecture(dish.prefectureId);
+  // 料理名・都道府県名は日本語と英語の両方で引けるようにする
+  const names = [dish.name, dish.ja, dish.en, pref.name.ja, pref.name.en, dish.info?.area ?? ''].join(' ');
+  return {
+    ...dish,
+    prefName: pref.name[lang],
+    region: pref.region,
+    nameKey: normalizeForSearch(names),
+  };
+});
+---
+
+<BaseLayout lang={lang} path="/search/" title={t(lang, 'searchTitle')} description={t(lang, 'searchLead')}>
+  <div class="search-page">
+  <h1>{t(lang, 'searchTitle')}</h1>
+  <p class="lead">{t(lang, 'searchLead')}</p>
+
+  <form class="filters" id="search-form" role="search">
+    <div class="field keyword">
+      <label for="q" class="visually-hidden">{t(lang, 'search')}</label>
+      <input id="q" name="q" type="search" placeholder={t(lang, 'searchPlaceholder')} autocomplete="off" enterkeyhint="search" />
+    </div>
+    <div class="field">
+      <label for="pref">{t(lang, 'filterPrefecture')}</label>
+      <select id="pref" name="pref">
+        <option value="">{t(lang, 'allPrefectures')}</option>
+        {
+          regions.map((region) => (
+            <optgroup label={region.name[lang]}>
+              <option value={`region:${region.id}`}>{t(lang, 'allInRegion', { region: region.name[lang] })}</option>
+              {prefectures
+                .filter((p) => p.region === region.id)
+                .map((p) => (
+                  <option value={p.id}>{p.name[lang]}</option>
+                ))}
+            </optgroup>
+          ))
+        }
+      </select>
+    </div>
+    <fieldset class="field cats">
+      <legend>{t(lang, 'filterCategory')}</legend>
+      <label><input type="radio" name="cat" value="" checked /><span>{t(lang, 'allCategories')}</span></label>
+      {
+        categories.map((c) => (
+          <label>
+            <input type="radio" name="cat" value={c} />
+            <span>{t(lang, `category_${c}`)}</span>
+          </label>
+        ))
+      }
+    </fieldset>
+  </form>
+
+  <div class="status">
+    <p id="result-count" aria-live="polite" data-template={t(lang, 'resultCount')}>
+      {t(lang, 'resultCount', { n: rows.length })}
+    </p>
+    <button type="button" id="clear" class="clear">{t(lang, 'clearFilters')}</button>
+  </div>
+
+  <ul class="results" id="results">
+    {
+      rows.map((row) => (
+        <li data-pref={row.prefectureId} data-region={row.region} data-cat={row.category} data-n={row.nameKey}>
+          <a href={`${localizePath(lang, `/${row.prefectureId}/`)}#${row.anchor}`}>
+            <span class="meta">
+              <span class="pref">{row.prefName}</span>
+              <span class="cat">{t(lang, `category_${row.category}`)}</span>
+            </span>
+            <strong>{row.name}</strong>
+            {lang !== 'ja' && (
+              <span class="ja" lang="ja">
+                {row.ja}
+              </span>
+            )}
+            {row.info && <span class="excerpt">{excerpt(row.info.summary)}</span>}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="empty" id="no-results" hidden>{t(lang, 'noResults')}</p>
+  </div>
+</BaseLayout>
+
+<script>
+  import { matchesTerm, normalizeForSearch } from '../lib/normalize';
+
+  const form = document.getElementById('search-form') as HTMLFormElement;
+  const input = document.getElementById('q') as HTMLInputElement;
+  const select = document.getElementById('pref') as HTMLSelectElement;
+  const count = document.getElementById('result-count')!;
+  const empty = document.getElementById('no-results')!;
+  const clear = document.getElementById('clear')!;
+  const items = Array.from(document.querySelectorAll<HTMLLIElement>('#results > li'));
+
+  // 説明文は別ファイル（text.json）から後で読み込む。届くまでは料理名・都道府県名だけで探す
+  let texts: string[] = [];
+  fetch(new URL('text.json', document.baseURI))
+    .then((res) => (res.ok ? res.json() : []))
+    .then((data: string[]) => {
+      texts = data;
+      apply();
+    })
+    .catch(() => {});
+
+  const catValue = () => (form.querySelector<HTMLInputElement>('input[name="cat"]:checked')?.value ?? '');
+
+  // URL の ?q=&pref=&cat= から条件を戻す（SNS などから条件付きのリンクで来られるように）
+  const params = new URLSearchParams(location.search);
+  input.value = params.get('q') ?? '';
+  if (params.get('pref') && select.querySelector(`option[value="${CSS.escape(params.get('pref')!)}"]`)) {
+    select.value = params.get('pref')!;
+  }
+  const initialCat = form.querySelector<HTMLInputElement>(`input[name="cat"][value="${CSS.escape(params.get('cat') ?? '')}"]`);
+  if (initialCat) initialCat.checked = true;
+
+  function apply() {
+    const terms = normalizeForSearch(input.value).split(' ').filter(Boolean);
+    const pref = select.value;
+    const cat = catValue();
+    let shown = 0;
+    items.forEach((item, i) => {
+      const { pref: p, region, cat: c, n = '' } = item.dataset;
+      const s = texts[i] ?? '';
+      const placeOk = !pref || (pref.startsWith('region:') ? `region:${region}` === pref : p === pref);
+      const catOk = !cat || c === cat;
+      const nameHit = terms.every((term) => matchesTerm(n, term));
+      const textHit = nameHit || terms.every((term) => matchesTerm(n, term) || matchesTerm(s, term));
+      const visible = placeOk && catOk && textHit;
+      item.hidden = !visible;
+      // 料理名・都道府県名に当たったものを、説明文だけに当たったものより前に出す
+      item.style.order = nameHit ? '0' : '1';
+      if (visible) shown++;
+    });
+    count.textContent = (count.dataset.template ?? '').replace('{n}', String(shown));
+    empty.hidden = shown > 0;
+
+    const next = new URLSearchParams();
+    if (input.value.trim()) next.set('q', input.value.trim());
+    if (pref) next.set('pref', pref);
+    if (cat) next.set('cat', cat);
+    const query = next.toString();
+    history.replaceState(null, '', query ? `?${query}` : location.pathname);
+  }
+
+  form.addEventListener('input', apply);
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    input.blur(); // スマホでキーボードを閉じて結果を見せる
+    apply();
+  });
+  clear.addEventListener('click', () => {
+    form.reset();
+    apply();
+    input.focus();
+  });
+  apply();
+</script>
+
+<style is:global>
+  .search-page .lead {
+    margin: 0 0 1.25rem;
+    color: var(--muted);
+  }
+  .search-page .filters {
+    display: grid;
+    gap: 0.9rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface-2);
+  }
+  .search-page .field {
+    display: grid;
+    gap: 0.3rem;
+    min-width: 0;
+  }
+  .search-page .field label,
+  .search-page .cats legend {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .search-page select {
+    max-width: 360px;
+  }
+  .search-page input[type='search'],
+  .search-page select {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 1rem; /* 16px 未満だと iPhone で入力時に拡大されるため */
+  }
+  .search-page input[type='search']:focus,
+  .search-page select:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .search-page .cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .search-page .cats legend {
+    width: 100%;
+    margin-bottom: 0.3rem;
+    padding: 0;
+  }
+  .search-page .cats label {
+    position: relative;
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .search-page .cats input {
+    position: absolute;
+    opacity: 0;
+  }
+  .search-page .cats span {
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    cursor: pointer;
+  }
+  .search-page .cats input:checked + span {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    font-weight: 700;
+  }
+  .search-page .cats input:focus-visible + span {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .search-page .status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1.25rem 0 0.5rem;
+  }
+  .search-page .status p {
+    margin: 0;
+    font-weight: 700;
+  }
+  .search-page .clear {
+    padding: 0.3rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .search-page .results {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .search-page .results li + li {
+    border-top: 1px solid var(--border);
+  }
+  .search-page .results a {
+    display: grid;
+    gap: 0.15rem;
+    padding: 0.85rem 0.25rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .search-page .results a:hover strong {
+    color: var(--accent);
+  }
+  .search-page .meta {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+  }
+  .search-page .pref {
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .search-page .cat {
+    color: var(--muted);
+  }
+  .search-page .results strong {
+    font-size: 1.05rem;
+  }
+  .search-page .ja {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .search-page .excerpt {
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .search-page .empty {
+    color: var(--muted);
+  }
+  .search-page .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+</style>

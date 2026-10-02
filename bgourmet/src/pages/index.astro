@@ -1,0 +1,87 @@
+---
+// 言語を選ぶ入口ページ（/）。自動で振り分けず、訪問者に選んでもらう
+import '../styles/global.css';
+import { languages, langs, localizePath, t } from '../i18n';
+
+const site = Astro.site ?? new URL('https://example.com');
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{t('ja', 'siteName')} / {t('en', 'siteName')}</title>
+    <meta name="description" content={t('en', 'siteDescription')} />
+    {langs.map((l) => <link rel="alternate" hreflang={l} href={new URL(localizePath(l, '/'), site)} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL('/', site)} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="container gate">
+      <span class="emoji" aria-hidden="true">🍜</span>
+      <div class="names">
+        {langs.map((l) => <h1 lang={l}>{t(l, 'siteName')}</h1>)}
+      </div>
+      <nav class="choices">
+        {
+          langs.map((l) => (
+            <a href={localizePath(l, '/')} hreflang={l} lang={l}>
+              <strong>{languages[l].label}</strong>
+              <span>{t(l, 'siteTagline')}</span>
+            </a>
+          ))
+        }
+      </nav>
+    </main>
+  </body>
+</html>
+
+<style>
+  .gate {
+    display: grid;
+    gap: 1.5rem;
+    justify-items: center;
+    max-width: 560px;
+    padding-block: 12vh 4rem;
+    text-align: center;
+  }
+  .emoji {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  .names h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+  .names h1 + h1 {
+    color: var(--muted);
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+  }
+  .choices {
+    display: grid;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  .choices a {
+    display: grid;
+    gap: 0.15rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+  }
+  .choices a:hover {
+    border-color: var(--accent);
+  }
+  .choices strong {
+    color: var(--accent);
+    font-size: 1.2rem;
+  }
+  .choices span {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>

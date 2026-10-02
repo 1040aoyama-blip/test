@@ -1,0 +1,217 @@
+{
+  "鳥取牛骨ラーメン": {
+    "summary": "Ramen with a beef bone broth, loved mainly in central and western Tottori. The beef bone soup has a faintly sweet aroma and richness, light yet deep in flavor. Tottori has long been a cattle-raising area, and a food culture using beef bones is said to be the background. The standard bowl has soy sauce broth topped with roast pork, bean sprouts and green onion. Many shops are found in Kurayoshi, Kotoura and Yonago.",
+    "price": "¥700–1,000",
+    "area": "Kurayoshi, Kotoura, Yonago and around",
+    "shops": [
+      {
+        "name": "Kamitoku Akasaki",
+        "query": "香味徳 赤碕店 牛骨ラーメン",
+        "comment": "A famed gyukotsu ramen shop; this is the original branch.",
+        "access": "Akasaki, Kotoura"
+      },
+      {
+        "name": "Masumi",
+        "query": "満洲味 米子 牛骨ラーメン",
+        "comment": "A postwar shop said to be the birthplace of gyukotsu ramen.",
+        "access": "Nishifukuhara, Yonago"
+      }
+    ]
+  },
+  "鳥取カレー": {
+    "summary": "Tottori City is said to be among the top in Japan for curry roux consumption, and curry is eaten often both at home and in restaurants. There is no fixed style of Tottori curry, but many use local ingredients, and serving it with the local specialty, pickled rakkyo shallots, is the Tottori way. The crunchy, sweet-sour rakkyo brings out the flavor of the curry. Western-style restaurants and cafes in the city each offer their own creative curries.",
+    "price": "¥800–1,300",
+    "area": "Tottori City",
+    "shops": [
+      {
+        "name": "Kissa Beniya",
+        "query": "喫茶ベニ屋 鳥取",
+        "comment": "A coffee shop founded just after the war, famous for katsu curry.",
+        "access": "Near Tottori Station"
+      },
+      {
+        "name": "Cardamon",
+        "query": "かるだもん 鳥取 カレー",
+        "comment": "A curry shop with lines and 19 curries to choose from.",
+        "access": "Tottori City"
+      }
+    ]
+  },
+  "ホルモンそば": {
+    "summary": "A local dish of Tottori City: beef offal, Chinese noodles and vegetables such as cabbage fried on an iron plate with a sweet and savory miso sauce. It is said to have started at a yakiniku restaurant where noodles were added to leftover sauce and grilled. The flavor and fat of the springy offal coat the noodles for a rich taste that goes well with beer. Though called soba, it uses Chinese noodles. Try it at yakiniku restaurants and izakaya in Tottori City. It is a dish locals love.",
+    "price": "¥800–1,200",
+    "area": "Tottori City",
+    "shops": [
+      {
+        "name": "Matsuya Horumon",
+        "query": "まつやホルモン店 鳥取",
+        "comment": "A long-running favorite also featured on TV.",
+        "access": "Tottori City"
+      },
+      {
+        "name": "Horusoba Goen",
+        "query": "ホルそば 御縁 鳥取",
+        "comment": "A horumon soba specialist open in the evening.",
+        "access": "Suehiro Onsencho, Tottori"
+      }
+    ]
+  },
+  "松葉ガニの塩ゆで": {
+    "summary": "Male snow crab caught in the San'in region is called matsuba crab and is regarded as the king of winter delicacies. A tag is attached as a mark of quality. Freshly caught crab boiled in salted water lets you fully enjoy its sweet meat and rich crab miso. The season is limited to winter, when Sakaiminato and Karo Port in Tottori City bustle with crab lovers. Prices vary greatly by size and timing. It is one of the great pleasures of a winter trip to Tottori.",
+    "price": "¥5,000–30,000",
+    "area": "Sakaiminato, Tottori City and around",
+    "shops": [
+      {
+        "name": "Gyosantei",
+        "query": "魚山亭 境港",
+        "comment": "A Sakaiminato seafood restaurant; Matsuba crab in winter.",
+        "access": "Nakanocho, Sakaiminato"
+      },
+      {
+        "name": "Kani Matsuba",
+        "query": "かにまつば 鳥取",
+        "comment": "A Matsuba crab specialist, open November to March.",
+        "access": "7 min walk from Tottori Station"
+      }
+    ]
+  },
+  "とうふちくわ": {
+    "summary": "Tottori City's famous chikuwa, made by mixing tofu with white fish paste, wrapping it around a bamboo stick and steaming it. It is said to have started in the Edo period when a lord encouraged people to eat tofu instead of expensive fish to save money. It is softer and fluffier than ordinary chikuwa, with a gentle tofu flavor. Eat it as is, with wasabi and soy sauce, or in simmered dishes. It is sold at supermarkets and souvenir shops in Tottori City.",
+    "price": "¥300–800",
+    "area": "Tottori City",
+    "shops": [
+      {
+        "name": "Chimura Honten",
+        "query": "とうふちくわ ちむら 本店",
+        "comment": "A fish-paste maker founded in the late Edo period, with an eat-in corner.",
+        "access": "Motouomachi, Tottori"
+      },
+      {
+        "name": "Karoichi Market",
+        "query": "鳥取港海鮮市場 かろいち",
+        "comment": "A market of Tottori seafood and processed foods.",
+        "access": "Karocho, Tottori"
+      }
+    ]
+  },
+  "大山おこわ": {
+    "summary": "A local dish from around Mt. Daisen, the highest peak in the Chugoku region. Glutinous rice is cooked with chicken, burdock, carrot, shiitake and wild vegetables and seasoned with soy sauce. Legend says it began as food eaten by the warrior monks of Daisen-ji Temple before going into battle. It is chewy with a simple, gentle flavor from the ingredients soaked into the rice. It has also been made for celebrations. Try it at diners and roadside stations around Mt. Daisen.",
+    "price": "¥500–1,000",
+    "area": "Daisen, Yonago and around",
+    "shops": [
+      {
+        "name": "Yonagoya Ryokan",
+        "query": "米子屋旅館 大山おこわ",
+        "comment": "A Meiji-era inn said to be the originator of Daisen okowa.",
+        "access": "Kofu Town"
+      },
+      {
+        "name": "Matsuoka Shokudo",
+        "query": "まつおか食堂 大山おこわ",
+        "comment": "A well-known spot for Daisen okowa at Masumizu Kogen.",
+        "access": "Hoki Town (Masumizu Kogen)"
+      },
+      {
+        "name": "Michi no Eki Daisen Megumi no Sato",
+        "query": "道の駅 大山恵みの里",
+        "comment": "Serves a Daisen okowa set in limited numbers.",
+        "access": "Nawa, Daisen"
+      }
+    ]
+  },
+  "らっきょう漬け": {
+    "summary": "Sand dune rakkyo, grown in sandy fields around the Tottori Sand Dunes, is one of Tottori's signature products. Grown in well-drained sand, these shallots are white, firm and crunchy. Pickled in sweet vinegar, they are familiar as a curry side, but they are also perfect on their own with rice or drinks. In autumn, the rakkyo fields are covered in purple flowers. They are sold at souvenir shops in Tottori City.",
+    "price": "¥500–1,500",
+    "area": "Tottori City (Fukube and around)",
+    "shops": [
+      {
+        "name": "Tottori Sakyu Kaikan",
+        "query": "鳥取砂丘会館",
+        "comment": "A shop at the dunes' entrance with sakyu rakkyo products.",
+        "access": "Entrance to Tottori Sand Dunes"
+      },
+      {
+        "name": "Michi no Eki Hojo",
+        "query": "道の駅 ほうじょう",
+        "comment": "Sells sweet-vinegar sakyu rakkyo and more.",
+        "access": "Hokuei"
+      }
+    ]
+  },
+  "もさえびの刺身": {
+    "summary": "Sashimi of mosa shrimp caught off Tottori. Officially called kurozako shrimp, it is a smallish shrimp said to be named for its dark, rough mosa-like appearance. It is said to be even sweeter than sweet shrimp, with a silky texture and rich sweetness. Because it spoils quickly and is hard to transport, it is known as a precious shrimp you can only taste locally. Try it at restaurants in Tottori City and Sakaiminato. The season runs from autumn to spring.",
+    "price": "¥1,000–2,500",
+    "area": "Tottori City, Sakaiminato and around",
+    "shops": [
+      {
+        "name": "Sakana Ryori Umi",
+        "query": "魚料理 海 琴浦",
+        "comment": "Popular for seafood bowls topped with mosa ebi.",
+        "access": "Kotoura (next to Michi no Eki Port Akasaki)"
+      },
+      {
+        "name": "Karoichi Market",
+        "query": "鳥取港海鮮市場 かろいち",
+        "comment": "A market of freshly landed seafood.",
+        "access": "Karocho, Tottori"
+      }
+    ]
+  },
+  "打吹公園だんご": {
+    "summary": "A specialty of Kurayoshi, named after the city's Utsubuki Park. Small mochi balls are coated in three kinds of bean paste, white, azuki and matcha, and skewered. The three colors look festive, and each paste has a gentle sweetness. Bite-sized and easy to eat, they have long been loved by Kurayoshi people. Utsubuki Park is also known for cherry blossoms in spring. Pick some up as a souvenir while strolling past the white-walled storehouses. They are perfect with tea.",
+    "price": "¥500–1,200 per box",
+    "area": "Kurayoshi",
+    "shops": [
+      {
+        "name": "Ishitani Seikado",
+        "query": "石谷精華堂 倉吉",
+        "comment": "Making Utsubuki Koen dango since the Meiji period.",
+        "access": "Kurayoshi"
+      },
+      {
+        "name": "Tottori Station souvenir shops",
+        "query": "鳥取駅 おみやげ 打吹公園だんご",
+        "comment": "Also sold at Tottori Station shops.",
+        "access": "Tottori Station"
+      }
+    ]
+  },
+  "因幡の白うさぎ": {
+    "summary": "A representative Tottori souvenir: baked buns shaped like white rabbits. The moist dough is filled with sweet yolk bean paste. The name comes from the White Hare of Inaba, a myth in the Kojiki, said to be Japan's oldest history book. Hakuto Shrine is said to be the setting of the myth and is known for matchmaking. Their cute look and easy-to-share size are a plus. They are sold at Tottori Station, the airport and souvenir shops around the prefecture.",
+    "price": "¥600–1,500",
+    "area": "Tottori City and around",
+    "shops": [
+      {
+        "name": "Okashi no Kotobukijo",
+        "query": "お菓子の壽城 米子",
+        "comment": "The castle-shaped shop of the maker, Kotobuki Seika.",
+        "access": "Yodoe, Yonago"
+      },
+      {
+        "name": "Michi no Eki Shinwa no Sato Shirousagi",
+        "query": "道の駅 神話の里 白うさぎ",
+        "comment": "A roadside station facing Hakuto Beach.",
+        "access": "Hakuto, Tottori (near Hakuto Shrine)"
+      }
+    ]
+  },
+  "ふろしきまんじゅう": {
+    "summary": "An old-fashioned bun that Yamamoto Otafukudo, a long-established shop in Kotoura, has made since the early Meiji period. A thin brown sugar wrapper encloses smooth red bean paste, and its shape is said to resemble a bundle wrapped in a furoshiki cloth, hence the name. Enjoy the rich aroma of brown sugar and the gentle sweetness of the paste. Small and easy to eat, it has long been a teatime favorite locally. Besides the main store on Route 9, it is sold at the Yonago shop and souvenir shops around the prefecture. Its simple flavor is comforting.",
+    "price": "¥80–150 each",
+    "area": "Kotoura and around",
+    "shops": [
+      {
+        "name": "Yamamoto Otafukudo Honten",
+        "query": "山本おたふく堂 本店",
+        "comment": "The flagship of a confectioner founded in the early Meiji period.",
+        "access": "Yabase, Kotoura (on Route 9)"
+      },
+      {
+        "name": "Yamamoto Otafukudo Yonago",
+        "query": "山本おたふく堂 米子店",
+        "comment": "The company's shop in Yonago.",
+        "access": "Yonago"
+      }
+    ]
+  }
+}

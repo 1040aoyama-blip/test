@@ -1,0 +1,194 @@
+---
+import { t, type Lang } from '../i18n';
+import type { CatalogItem } from '../data/catalog';
+import ShopCard from './ShopCard.astro';
+import AffiliateBox from './AffiliateBox.astro';
+
+interface Props {
+  lang: Lang;
+  item: CatalogItem;
+}
+
+const { lang, item } = Astro.props;
+const { info } = item;
+const shops = (info?.shops ?? []).slice(0, 3);
+// TODO: 画像の入手方法が決まったら、写真の枠（.photo）を料理の写真に差し替える（CLAUDE.md の「保留中」を参照）
+const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ api: '1', query: item.mapQuery })}`;
+---
+
+<article class:list={['dish', { brief: !info }]} id={item.anchor}>
+  {
+    info && (
+      <div class="photo" aria-hidden="true">
+        <span>{t(lang, 'photoPlaceholder')}</span>
+      </div>
+    )
+  }
+
+  <div class="content">
+    <header>
+      <h3>{item.name}</h3>
+      {lang !== 'ja' && <p class="ja" lang="ja">{item.ja}</p>}
+    </header>
+
+    {
+      info && (
+        <>
+          <p class="summary">{info.summary}</p>
+          {(info.price || info.area) && (
+            <dl class="facts">
+              {info.price && (
+                <div>
+                  <dt>{t(lang, 'priceRange')}</dt>
+                  <dd>{info.price}</dd>
+                </div>
+              )}
+              {info.area && (
+                <div>
+                  <dt>{t(lang, 'area')}</dt>
+                  <dd>{info.area}</dd>
+                </div>
+              )}
+            </dl>
+          )}
+        </>
+      )
+    }
+
+    {
+      shops.length > 0 && (
+        <section class="shops">
+          <h4>{t(lang, 'recommendedShops')}</h4>
+          <ul>
+            {shops.map((shop) => (
+              <ShopCard lang={lang} shop={shop} />
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {info?.affiliate && info.affiliate.length > 0 && <AffiliateBox lang={lang} links={info.affiliate} />}
+
+    <footer class="actions">
+      <a class="maps" href={mapsHref} target="_blank" rel="noopener">{t(lang, 'searchMaps')}</a>
+    </footer>
+  </div>
+</article>
+
+<style>
+  /* 料理ごとに区切り線を入れる（グループ内の最初の料理には付けない） */
+  .dish {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-block: 1.75rem;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 4rem;
+  }
+  .dish:first-child {
+    border-top: 0;
+  }
+  @media (min-width: 760px) {
+    .dish:not(.brief) {
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+  }
+  /* SNS などから #料理名 のリンクで来たときに、その料理を目立たせる */
+  .dish:target {
+    margin-inline: -0.75rem;
+    padding-inline: 0.75rem;
+    border-radius: var(--radius);
+    background: var(--target-bg);
+  }
+  .brief {
+    padding-block: 1rem;
+  }
+  .photo {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    background: repeating-linear-gradient(-45deg, var(--surface-2) 0 12px, var(--bg) 12px 24px);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    min-width: 0;
+  }
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .ja {
+    margin: 0.1rem 0 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .summary {
+    margin: 0;
+    line-height: 1.75;
+  }
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .facts div {
+    display: flex;
+    gap: 0.4rem;
+  }
+  .facts div {
+    align-items: center;
+  }
+  .facts dt {
+    padding: 0.05rem 0.5rem;
+    border-radius: 4px;
+    background: var(--label-bg);
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .facts dd {
+    margin: 0;
+    font-weight: 700;
+  }
+  .shops h4 {
+    margin: 0.25rem 0 0.5rem;
+    font-size: 0.95rem;
+  }
+  /* 広い画面では3列、スマホでは縦に並ぶ */
+  .shops ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .maps {
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .maps:hover {
+    filter: brightness(1.08);
+  }
+</style>

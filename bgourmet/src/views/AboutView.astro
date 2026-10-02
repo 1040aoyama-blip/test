@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Prose from '../components/Prose.astro';
+import { localizePath, t, type Lang } from '../i18n';
+import { prefectures } from '../data/prefectures';
+import { countCatalog } from '../data/catalog';
+import { siteInfo } from '../data/site';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const total = prefectures.reduce((sum, p) => sum + countCatalog(lang, p.id), 0);
+const ja = lang === 'ja';
+const pending = ja ? '準備中' : 'Coming soon';
+const sns = [
+  { label: 'Instagram', url: siteInfo.instagramUrl },
+  { label: 'X', url: siteInfo.xUrl },
+].filter((s) => s.url);
+---
+
+<BaseLayout lang={lang} path="/about/" title={t(lang, 'aboutTitle')}>
+  <Prose>
+    <h1>{t(lang, 'aboutTitle')}</h1>
+
+    <h2>{ja ? 'このサイトについて' : 'About this site'}</h2>
+    {
+      ja ? (
+        <>
+          <p>
+            「{t(lang, 'siteName')}」は、日本全国47都道府県のご当地B級グルメ・郷土料理・ご当地スイーツを紹介するガイドです。地元で長く愛されてきた味を、旅行の前に調べたり、旅先で探したりできるよう、{total}品を都道府県ごとにまとめています。
+          </p>
+          <p>日本を旅する方に向けて、日本語と英語で情報を掲載しています。</p>
+        </>
+      ) : (
+        <>
+          <p>
+            {t(lang, 'siteName')} introduces local comfort food, regional dishes and sweets from all 47 prefectures of Japan. We have
+            gathered {total} dishes, organized by prefecture, so you can look them up before your trip or find them while you travel.
+          </p>
+          <p>The site is available in Japanese and English for travelers in Japan.</p>
+        </>
+      )
+    }
+
+    <h2>{ja ? '運営者' : 'Operator'}</h2>
+    <dl>
+      <dt>{ja ? '運営者名' : 'Name'}</dt>
+      <dd>{siteInfo.operatorName || <span class="pending">{pending}</span>}</dd>
+      <dt>{ja ? 'お問い合わせ' : 'Contact'}</dt>
+      <dd><a href={localizePath(lang, '/contact/')}>{t(lang, 'contactTitle')}</a></dd>
+      {
+        sns.length > 0 && (
+          <>
+            <dt>SNS</dt>
+            <dd>
+              {sns.map((s, i) => (
+                <>
+                  {i > 0 && ' / '}
+                  <a href={s.url} target="_blank" rel="noopener">
+                    {s.label}
+                  </a>
+                </>
+              ))}
+            </dd>
+          </>
+        )
+      }
+    </dl>
+
+    <h2>{ja ? '掲載している情報について' : 'About the information on this site'}</h2>
+    {
+      ja ? (
+        <ul>
+          <li>料理の説明は、運営者が調べた内容をもとに作成しています。由来や歴史には諸説あるものも含まれます。</li>
+          <li>「予算の目安」は一般的な価格帯です。お店や時期によって大きく変わることがあります。</li>
+          <li>お店の営業時間・定休日・メニューは変わることがあります。お出かけの前に、お店の公式情報や Google マップでご確認ください。</li>
+          <li>内容の誤りにお気づきの場合は、<a href={localizePath(lang, '/contact/')}>お問い合わせ</a>からお知らせいただけると助かります。</li>
+        </ul>
+      ) : (
+        <ul>
+          <li>Dish descriptions are written by the operator based on research. Some origins and histories have more than one version.</li>
+          <li>Typical prices are general ranges and can vary greatly by restaurant and season.</li>
+          <li>Opening hours, closing days and menus may change. Please check the restaurant's official information or Google Maps before you go.</li>
+          <li>If you notice a mistake, we would be grateful if you let us know via the <a href={localizePath(lang, '/contact/')}>contact page</a>.</li>
+        </ul>
+      )
+    }
+
+    <h2>{ja ? '広告について' : 'Advertising'}</h2>
+    {
+      ja ? (
+        <p>
+          当サイトはアフィリエイト広告を利用しています。広告のリンクには「{t(lang, 'prLabel')}」と表示しています。詳しくは
+          <a href={localizePath(lang, '/privacy/')}>プライバシーポリシー</a>をご覧ください。
+        </p>
+      ) : (
+        <p>
+          This site contains affiliate links, which are labeled “{t(lang, 'prLabel')}”. See our{' '}
+          <a href={localizePath(lang, '/privacy/')}>privacy policy</a> for details.
+        </p>
+      )
+    }
+  </Prose>
+</BaseLayout>

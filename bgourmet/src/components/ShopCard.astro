@@ -1,0 +1,133 @@
+---
+import { t, type Lang } from '../i18n';
+import type { Shop } from '../data/catalog';
+
+interface Props {
+  lang: Lang;
+  shop: Shop;
+}
+
+const { lang, shop } = Astro.props;
+const key = import.meta.env.PUBLIC_GOOGLE_MAPS_EMBED_KEY;
+const query = shop.query ?? shop.name;
+
+const linkParams = new URLSearchParams({ api: '1', query });
+if (shop.placeId) linkParams.set('query_place_id', shop.placeId);
+const linkHref = `https://www.google.com/maps/search/?${linkParams}`;
+
+// 地図は「地図を表示」を押したときだけ読み込む（ページを軽くするため）。API キーがない間はボタンを出さない
+const embedSrc = key
+  ? `https://www.google.com/maps/embed/v1/place?${new URLSearchParams({
+      key,
+      q: shop.placeId ? `place_id:${shop.placeId}` : query,
+      language: lang,
+    })}`
+  : null;
+---
+
+<li class="shop">
+  <p class="name">{shop.name}</p>
+  {shop.comment && <p class="comment">{shop.comment}</p>}
+  {shop.access && <p class="access">📍 {shop.access}</p>}
+  <div class="buttons">
+    <a class="open" href={linkHref} target="_blank" rel="noopener">{t(lang, 'openInMaps')}</a>
+    {
+      embedSrc && (
+        <button
+          type="button"
+          class="toggle"
+          data-map-toggle
+          data-src={embedSrc}
+          data-title={shop.name}
+          data-show={t(lang, 'showMap')}
+          data-hide={t(lang, 'hideMap')}
+          aria-expanded="false"
+        >
+          {t(lang, 'showMap')}
+        </button>
+      )
+    }
+  </div>
+  {embedSrc && <div class="map" hidden />}
+</li>
+
+<script>
+  // 「地図を表示」を押したときに、その店の地図を読み込んで開閉する
+  document.addEventListener('click', (event) => {
+    const button = (event.target as Element | null)?.closest<HTMLButtonElement>('[data-map-toggle]');
+    if (!button) return;
+    const box = button.closest('.shop')?.querySelector<HTMLElement>('.map');
+    if (!box) return;
+    if (!box.firstElementChild) {
+      const iframe = document.createElement('iframe');
+      iframe.src = button.dataset.src ?? '';
+      iframe.title = button.dataset.title ?? '';
+      iframe.allowFullscreen = true;
+      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      box.append(iframe);
+    }
+    box.hidden = !box.hidden;
+    button.setAttribute('aria-expanded', String(!box.hidden));
+    button.textContent = (box.hidden ? button.dataset.show : button.dataset.hide) ?? '';
+  });
+</script>
+
+<style>
+  .shop {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 0;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .name {
+    margin: 0;
+    font-weight: 700;
+  }
+  .comment,
+  .access {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 0.35rem;
+  }
+  .open,
+  .toggle {
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .open:hover,
+  .toggle:hover {
+    border-color: var(--accent);
+  }
+  .map[hidden] {
+    display: none;
+  }
+  .map :global(iframe) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    margin-top: 0.4rem;
+    border: 0;
+    border-radius: 8px;
+  }
+</style>

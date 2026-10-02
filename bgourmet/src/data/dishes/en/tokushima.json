@@ -1,0 +1,230 @@
+{
+  "徳島ラーメン": {
+    "summary": "Local ramen loved mainly in Tokushima City. The best-known type is the brown style with a rich pork bone and soy sauce broth; there is also a lighter yellow style and a white pork bone style. A signature feature is pork belly simmered sweet and savory, topped with a raw egg. Mixing the egg in, like sukiyaki, makes it mellow. The strong broth goes well with rice, and many people order rice with their ramen. The city has many popular shops.",
+    "price": "¥700–1,000",
+    "area": "Tokushima City",
+    "shops": [
+      {
+        "name": "Chuka Soba Inotani Honten",
+        "query": "中華そば いのたに 本店",
+        "comment": "One of the shops that made Tokushima ramen famous. Closes when sold out.",
+        "access": "Nishidaikumachi, Tokushima"
+      },
+      {
+        "name": "Ramen Todai Daido Honten",
+        "query": "ラーメン東大 大道本店",
+        "comment": "A popular shop with free raw eggs; open until late at night.",
+        "access": "Daido, Tokushima"
+      }
+    ]
+  },
+  "フィッシュカツ": {
+    "summary": "A fish cake called the soul food of Tokushima. Fish paste mixed with curry powder and other spices is coated in breadcrumbs and fried, offering a hint of curry and the flavor of fish. It is said to have been created by a fish cake maker in Komatsushima. Eat it as is, lightly toasted, with sauce or mayonnaise, or in curry or sandwiches. It is easy to find at supermarkets around the prefecture.",
+    "price": "¥150–250 per piece",
+    "area": "Komatsushima, Tokushima City and around",
+    "shops": [
+      {
+        "name": "Tani Chikuwa Shoten",
+        "query": "谷ちくわ商店 小松島",
+        "comment": "A Komatsushima fish-paste maker in the town where fish katsu was born.",
+        "access": "Yokosucho, Komatsushima"
+      },
+      {
+        "name": "Tsukushi Kamaboko",
+        "query": "津久司蒲鉾 小松島",
+        "comment": "Another Komatsushima fish-paste maker.",
+        "access": "Komatsushima"
+      }
+    ]
+  },
+  "そば米雑炊": {
+    "summary": "A local dish of the remote Iya area. Soba-gome, buckwheat grains boiled in salt water, hulled and dried, is simmered in dashi with chicken, carrot, shiitake and tofu. It features the popping texture of the grains and a gentle broth. It comes from life in the mountains, where rice was hard to grow and buckwheat was eaten instead. Legend also says defeated Heike warriors made it while longing for the capital. Try it at inns and diners in Iya.",
+    "price": "¥600–1,000",
+    "area": "Iya, Miyoshi",
+    "shops": [
+      {
+        "name": "Iya Bijin",
+        "query": "清流のそば処 祖谷美人",
+        "comment": "A soba restaurant overlooking the Iya gorge; also serves sobagome zosui.",
+        "access": "Nishi-Iyayama, Miyoshi"
+      },
+      {
+        "name": "Soba Dojo",
+        "query": "そば道場 祖谷",
+        "comment": "An Iya soba shop that serves sobagome zosui.",
+        "access": "Iya, Miyoshi"
+      }
+    ]
+  },
+  "祖谷そば": {
+    "summary": "Rustic soba made in the Iya area of western Tokushima. With almost no binder, the noodles are thick, short and break easily. The natural aroma and flavor of buckwheat come through strongly, giving a simple, robust taste. It is usually eaten in a light broth made from dried sardines and bonito. Try it at local diners along with sightseeing at the Iya vine bridge and Oboke Gorge. It is a bowl that lets you feel mountain village life. Pair it with soba-gome porridge.",
+    "price": "¥700–1,000",
+    "area": "Iya, Miyoshi",
+    "shops": [
+      {
+        "name": "Iya Soba Momijitei",
+        "query": "祖谷そば もみじ亭",
+        "comment": "Handmade soba in a relocated old farmhouse.",
+        "access": "Yamashiro, Miyoshi"
+      },
+      {
+        "name": "Iya Bijin",
+        "query": "清流のそば処 祖谷美人",
+        "comment": "Eat with a view over the Iya gorge.",
+        "access": "Nishi-Iyayama, Miyoshi"
+      }
+    ]
+  },
+  "半田そうめん": {
+    "summary": "Hand-stretched somen made in the Handa area of Tsurugi. Thicker than ordinary somen, it has a firm bite and a chewy texture. In the Yoshino River basin, a hand-stretching method that uses the cold winter wind and sunshine has been passed down for generations. Besides cold somen, it is delicious hot as nyumen or stir-fried. Being thick, it does not go soggy easily. It is sold at supermarkets and souvenir shops around Tokushima and makes a welcome gift.",
+    "price": "¥500–1,500",
+    "area": "Handa, Tsurugi",
+    "shops": [
+      {
+        "name": "Handa Somen Shokudo",
+        "query": "半田そうめん食堂 つるぎ町",
+        "comment": "A Handa somen diner open only a few days a week; reserve ahead.",
+        "access": "Sadamitsu, Tsurugi"
+      },
+      {
+        "name": "Michi no Eki Sadamitsu Yuyukan",
+        "query": "道の駅 貞光ゆうゆう館",
+        "comment": "Try Handa somen at its restaurant.",
+        "access": "Sadamitsu, Tsurugi"
+      }
+    ]
+  },
+  "たらいうどん": {
+    "summary": "A specialty of Donari in Awa: udon served in its cooking water in a big wooden tub, shared by everyone around it. It is said to have started with mountain workers boiling udon in a large pot on the riverbank. Some shops make the dipping sauce with jinzoku, a small river fish, for a unique flavor. Gathering around the tub of chewy, thick udon with a group is fun. Udon shops are scattered in the hills of Donari. Visit with a big group.",
+    "price": "¥700–1,000 per person",
+    "area": "Donari, Awa",
+    "shops": [
+      {
+        "name": "Taraiudon Niimiya",
+        "query": "たらいうどん 新見屋",
+        "comment": "Tarai udon by the river.",
+        "access": "Donari, Awa (Gosho)"
+      },
+      {
+        "name": "Taruhei",
+        "query": "樽平 たらいうどん",
+        "comment": "A shop in Gosho, home of tarai udon.",
+        "access": "Donari, Awa (Gosho)"
+      }
+    ]
+  },
+  "ボウゼの姿寿司": {
+    "summary": "A local dish essential to Tokushima's autumn festivals. Bouze, butterfish, is split open, cured in vinegar and placed whole on vinegared rice. The vinegar often uses juice from sudachi, a Tokushima citrus specialty, for a refreshing aroma. The tender fish, with moderate fat, pairs well with the tart sudachi. At festival time, families make it and share it with relatives and neighbors. It is sold at supermarkets and fish shops in autumn. Its whole-fish look is striking.",
+    "price": "¥400–800 per fish",
+    "area": "Throughout Tokushima",
+    "shops": [
+      {
+        "name": "Inaka Zushi Nakayama",
+        "query": "田舎寿し なか山 勝浦",
+        "comment": "A takeaway shop selling freshly made bouze sugata-zushi.",
+        "access": "Katsuura Town"
+      },
+      {
+        "name": "Tokushima Station shops",
+        "query": "徳島駅 クレメントプラザ 姿寿司",
+        "comment": "Bento versions appear in the station basement from autumn to year-end.",
+        "access": "Tokushima Station (Clement Plaza)"
+      }
+    ]
+  },
+  "阿波尾鶏の炭火焼き": {
+    "summary": "Awaodori chicken, a Tokushima jidori breed, grilled fragrantly over charcoal. Awaodori has a pleasant chew and flavorful meat that is not too fatty, giving a clean taste. Charcoal grilling makes the skin crisp and the meat juicy. Grilling it with salt and pepper and squeezing on local sudachi is recommended. Try it at yakitori restaurants and izakaya in Tokushima City. It is perfect with drinks, and the flavor deepens as you chew.",
+    "price": "¥800–1,500",
+    "area": "Tokushima City and around",
+    "shops": [
+      {
+        "name": "Ikko Tokushima Ekimae",
+        "query": "一鴻 徳島駅前店",
+        "comment": "Famous for bone-in Awaodori chicken.",
+        "access": "Tokushima Station front"
+      },
+      {
+        "name": "Toribon",
+        "query": "焼鳥処 鳥ぼん 徳島",
+        "comment": "Charcoal-grilled Awaodori chicken.",
+        "access": "Near Tokushima Station"
+      }
+    ]
+  },
+  "阿波ういろ": {
+    "summary": "Uiro made in Tokushima by steaming rice flour with wasanbon, a fine local sugar. It features a chewy bounce and the refined, gentle sweetness of wasanbon. In the past, families are said to have made and eaten it for the festival in the third month of the old calendar. There are white, matcha, azuki, cherry blossom and other varieties. It is sold at confectioners and station souvenir shops in Tokushima. With its simple, gentle flavor, it is perfect with tea.",
+    "price": "¥500–1,200",
+    "area": "Tokushima City and around",
+    "shops": [
+      {
+        "name": "Hinodero",
+        "query": "日の出楼 徳島",
+        "comment": "A Tokushima City confectioner that makes Awa uiro.",
+        "access": "Nikenyacho, Tokushima"
+      },
+      {
+        "name": "Tokushima Station souvenir shops",
+        "query": "徳島駅 おみやげ 阿波ういろ",
+        "comment": "Several makers' Awa uiro are sold at the station.",
+        "access": "Tokushima Station"
+      }
+    ]
+  },
+  "金長まんじゅう": {
+    "summary": "One of Tokushima's best-known souvenir sweets, made by a local confectionery company. White bean paste is wrapped in chocolate-flavored dough and coated with chocolate. The name comes from Kincho, the righteous raccoon dog in a Tokushima tale about a great raccoon dog battle. Enjoy the gentle sweetness of the paste with the slight bitterness of chocolate. It is also tasty chilled. It is sold at Tokushima Station, the airport and souvenir shops, and is a familiar taste for locals.",
+    "price": "¥600–1,500",
+    "area": "Tokushima Prefecture",
+    "shops": [
+      {
+        "name": "Hallelujah Sweets Kitchen Matsushige",
+        "query": "ハレルヤ スイーツキッチン 松茂本店",
+        "comment": "The factory store of Hallelujah, maker of Kincho manju.",
+        "access": "Matsushige (near Tokushima Airport)"
+      },
+      {
+        "name": "Tokushima Station souvenir shops",
+        "query": "徳島駅 おみやげ 金長まんじゅう",
+        "comment": "Sold at the station and airport shops.",
+        "access": "Tokushima Station"
+      }
+    ]
+  },
+  "ぶどう饅頭": {
+    "summary": "A specialty that Hinode Honten in Anabuki, Mima, has made since the Taisho period: tiny round buns skewered like a bunch of grapes. One theory says the name, budo, was a lucky charm sold to pilgrims to sacred Mt. Tsurugi for progress in budo, martial arts. Inside is bean paste, and the pale green skins look like grapes. Enjoy its simple, gentle sweetness. It is sold at the main shop near Anabuki Station and at souvenir stores in the prefecture. Pair it with a stroll through the nearby Wakimachi streets lined with udatsu firewalls.",
+    "price": "¥600–1,200",
+    "area": "Anabuki, Mima",
+    "shops": [
+      {
+        "name": "Hinode Honten",
+        "query": "日乃出本店 ぶどう饅頭",
+        "comment": "The Taisho-era maker of budo manju.",
+        "access": "Near Anabuki Station (Mima)"
+      },
+      {
+        "name": "Tokushima Station souvenir shops",
+        "query": "徳島駅 おみやげ ぶどう饅頭",
+        "comment": "Sold at souvenir shops around the prefecture.",
+        "access": "Tokushima Station"
+      }
+    ]
+  },
+  "鳴門うず芋": {
+    "summary": "A signature sweet from Kurio Shoten, a Tokushima confectioner, made with Naruto Kintoki, a sweet potato that is a specialty of Naruto. Naruto Kintoki is grown in sandy fields near the sea and is known for its fluffy texture and refined sweetness. For uzu imo, the potatoes are steamed, soaked in a sweet syrup and dried. The syrup, topped up and kept going over the years, brings out the potato's flavor and texture. Uzu in the name refers to the famous whirlpools of the Naruto Strait. Pick it up at souvenir shops in Tokushima along with seeing the whirlpools.",
+    "price": "¥500–1,500",
+    "area": "Naruto and around",
+    "shops": [
+      {
+        "name": "Kurio Shoten",
+        "query": "栗尾商店 鳴門うず芋",
+        "comment": "The confectioner behind Naruto uzu imo.",
+        "access": "Sadamitsu, Tsurugi"
+      },
+      {
+        "name": "Tokushima Station souvenir shops",
+        "query": "徳島駅 おみやげ 鳴門うず芋",
+        "comment": "Sold at Tokushima Station and other shops.",
+        "access": "Tokushima Station"
+      }
+    ]
+  }
+}

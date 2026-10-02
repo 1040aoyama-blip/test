@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Prose from '../components/Prose.astro';
+import { localizePath, t, type Lang } from '../i18n';
+import { siteInfo } from '../data/site';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ja = lang === 'ja';
+// フォームがあればフォームを、なければメールアドレスを案内する
+const { contactFormUrl, contactEmail } = siteInfo;
+---
+
+<BaseLayout lang={lang} path="/contact/" title={t(lang, 'contactTitle')}>
+  <Prose>
+    <h1>{t(lang, 'contactTitle')}</h1>
+    {
+      ja ? (
+        <p>当サイトへのご意見・ご感想、掲載内容の誤りのご指摘、掲載店舗の方からの修正のご依頼などは、こちらからお送りください。</p>
+      ) : (
+        <p>
+          For feedback, corrections to the information on this site, or update requests from restaurants we feature, please contact us
+          below. English is welcome.
+        </p>
+      )
+    }
+
+    <div class="contact">
+      {
+        contactFormUrl ? (
+          <a class="button" href={contactFormUrl} target="_blank" rel="noopener">
+            {ja ? 'お問い合わせフォームを開く' : 'Open the contact form'}
+          </a>
+        ) : contactEmail ? (
+          <p>
+            {ja ? 'メール：' : 'Email: '}
+            <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+          </p>
+        ) : (
+          <p class="pending">{ja ? 'お問い合わせ窓口は準備中です。' : 'Our contact form is coming soon.'}</p>
+        )
+      }
+    </div>
+
+    <h2>{ja ? 'ご注意' : 'Please note'}</h2>
+    {
+      ja ? (
+        <ul>
+          <li>お返事までにお時間をいただくことがあります。内容によってはお返事できない場合もあります。</li>
+          <li>お店の予約・営業時間・混雑状況などのご質問には、お答えできません。各店舗に直接お問い合わせください。</li>
+          <li>
+            いただいた個人情報の取り扱いは、<a href={localizePath(lang, '/privacy/')}>プライバシーポリシー</a>をご覧ください。
+          </li>
+        </ul>
+      ) : (
+        <ul>
+          <li>It may take some time to reply, and we may not be able to reply to every message.</li>
+          <li>We cannot answer questions about restaurant reservations, opening hours or wait times. Please contact the restaurant directly.</li>
+          <li>
+            For how we handle your personal information, see our <a href={localizePath(lang, '/privacy/')}>privacy policy</a>.
+          </li>
+        </ul>
+      )
+    }
+  </Prose>
+</BaseLayout>
+
+<style>
+  .contact {
+    margin: 1.5rem 0;
+  }
+  .button {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .button:hover {
+    filter: brightness(1.08);
+  }
+</style>

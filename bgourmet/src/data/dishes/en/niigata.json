@@ -1,0 +1,236 @@
+{
+  "栃尾の油揚げ": {
+    "summary": "A specialty of the Tochio district of Nagaoka: deep-fried tofu about three times the size of the usual kind, big and thick. It is fried twice, slowly, so the outside turns crisp and fragrant while the inside stays soft and fluffy. The classic way is to grill it until golden, top it with green onion and ginger, and pour on soy sauce. It is said to have spread as a souvenir for pilgrims visiting the local Akiba Shrine. Tofu shops and roadside stations sell it, and some serve it freshly grilled.",
+    "price": "¥200–400 per piece",
+    "area": "Tochio, Nagaoka",
+    "shops": [
+      {
+        "name": "Bishamondo Honpo",
+        "query": "毘沙門堂本舗 栃尾 油揚げ",
+        "comment": "Hefty aburaage weighing over 200 g each.",
+        "access": "Tochio, Nagaoka"
+      },
+      {
+        "name": "Michi no Eki R290 Tochio",
+        "query": "道の駅 R290とちお",
+        "comment": "A roadside station where you can eat aburaage fresh from the fryer.",
+        "access": "Tochio, Nagaoka"
+      },
+      {
+        "name": "Mamesen",
+        "query": "豆撰 栃尾 油揚げ",
+        "comment": "Aburaage made with Niigata-grown soybeans.",
+        "access": "Sakaemachi, Tochio"
+      }
+    ]
+  },
+  "タレかつ丼": {
+    "summary": "A katsudon loved mainly in Niigata City. Thin pork cutlets are dipped in a sweet and savory soy sauce glaze right after frying and laid over rice. Since there is no egg, it is light and refreshing, and you feel you could eat cutlet after cutlet. It is said to have started at a street stall in Niigata City in the early Showa era and is now one of the prefecture's signature dishes. The rice soaked in sauce is delicious too. Many specialty shops let you choose how many cutlets you want.",
+    "price": "¥900–1,500",
+    "area": "Niigata City and around",
+    "shops": [
+      {
+        "name": "Tonkatsu Taro",
+        "query": "とんかつ太郎 古町",
+        "comment": "The originator of tare katsudon. Closes when sold out.",
+        "access": "Furumachi 6, Niigata City"
+      },
+      {
+        "name": "Tonkatsu Masachan Nuttari",
+        "query": "とんかつ政ちゃん 沼垂本店",
+        "comment": "Founded by a chef who trained at the originator.",
+        "access": "Nuttari, Chuo Ward"
+      }
+    ]
+  },
+  "新潟イタリアン": {
+    "summary": "A local yakisoba loved around Niigata City. Thick noodles are stir-fried with cabbage and bean sprouts in sauce, then topped with tomato sauce. The surprising name, Italian for a yakisoba dish, and the unexpected pairing of noodles and tomato sauce make it fun to try. It comes with white pickled ginger on the side. It was popularized by a Niigata chain of sweets shops and is a taste locals have known since childhood. Some shops let you pick other sauces, such as curry.",
+    "price": "¥400–700",
+    "area": "Niigata City, Nagaoka and around",
+    "shops": [
+      {
+        "name": "Mikazuki Bandai",
+        "query": "みかづき 万代店",
+        "comment": "The best-known maker of Niigata Italian, on the bus center's 2nd floor.",
+        "access": "About 10 min walk from Niigata Station (Bandai)"
+      },
+      {
+        "name": "Friend",
+        "query": "フレンド イタリアン 長岡",
+        "comment": "A chain serving Italian mainly around Nagaoka.",
+        "access": "Nagaoka and around"
+      }
+    ]
+  },
+  "燕背脂ラーメン": {
+    "summary": "The local ramen of Tsubame, a city known for metalworking. The surface of its soy sauce broth, rich with dried sardine flavor, is covered with plenty of pork back fat. It is said to have started as delivery food for busy factory workers: the fat seals in the heat and the extra-thick noodles do not go soggy. Chopped raw onion on top cuts through the richness. Many shops let you choose the amount of fat, so start with regular on your first visit. Large servings are common too.",
+    "price": "¥800–1,100",
+    "area": "Tsubame, Sanjo",
+    "shops": [
+      {
+        "name": "Koshu Hanten",
+        "query": "杭州飯店 燕",
+        "comment": "The originator of Tsubame back-fat ramen, always busy.",
+        "access": "Tsubame"
+      },
+      {
+        "name": "Shumentei Jun",
+        "query": "酒麺亭 潤 燕総本店",
+        "comment": "A popular shop that spread back-fat ramen widely.",
+        "access": "Tsubame"
+      }
+    ]
+  },
+  "長岡生姜醤油ラーメン": {
+    "summary": "Nagaoka's local ramen features a soy sauce broth made from pork bones and chicken, with a strong accent of ginger. The fresh aroma and gentle heat of the ginger give it a clean finish. It is said to have been loved as a warming dish through Nagaoka's snowy winters. Most shops keep the toppings simple, with roast pork, bamboo shoots and green onion. The city has many long-running shops, and each uses ginger in its own way. Eat it on a cold day and you will warm up from the inside.",
+    "price": "¥700–1,000",
+    "area": "Nagaoka",
+    "shops": [
+      {
+        "name": "Aoshima Shokudo Miyauchi",
+        "query": "青島食堂 宮内駅前店",
+        "comment": "Said to be the originator of ginger soy ramen.",
+        "access": "In front of Miyauchi Station"
+      },
+      {
+        "name": "Aoshima Shokudo Miyauchi Branch",
+        "query": "青島食堂 宮内店 長岡",
+        "comment": "Another Aoshima shop in Miyauchi.",
+        "access": "Higashi-Miyauchi, Nagaoka"
+      }
+    ]
+  },
+  "三条カレーラーメン": {
+    "summary": "The local ramen of Sanjo, a city famous for hardware and metal goods. It combines ramen and curry, either as noodles in a curry-flavored broth or as ramen topped with a thick curry sauce. In Sanjo, where food delivery culture runs deep, it is said to have spread as a filling meal for craftsmen that stays hot. It tastes like the best of both ramen and curry, and it is addictive. Many shops in the city serve it, each in its own style, so comparing them is fun.",
+    "price": "¥800–1,100",
+    "area": "Sanjo",
+    "shops": [
+      {
+        "name": "Taishu Shokudo Masahiro",
+        "query": "大衆食堂 正広 三条",
+        "comment": "A diner of over 50 years, the classic for Sanjo curry ramen.",
+        "access": "Sanjo"
+      },
+      {
+        "name": "Daikokutei",
+        "query": "大黒亭 松屋小路店 三条",
+        "comment": "Old-style curry over a niboshi-forward broth.",
+        "access": "Honcho, Sanjo"
+      }
+    ]
+  },
+  "万代バスセンターのカレー": {
+    "summary": "The curry served at the standing soba counter inside the bus center at Bandai City in Niigata. This yellowish, old-fashioned curry became popular among people who came for soba. Today it is so famous that people travel from outside the prefecture just to eat it. The roux is homey with gentle spiciness. Retort pouch versions are also sold and are popular as souvenirs. It is a Niigata classic you can casually enjoy while waiting for your bus.",
+    "price": "¥500–700",
+    "area": "Bandai City, Niigata City",
+    "shops": [
+      {
+        "name": "Bandai Soba",
+        "query": "万代そば バスセンター",
+        "comment": "A standing soba counter in the bus center, famous for its curry.",
+        "access": "Bandai, Chuo Ward (bus center 1F)"
+      },
+      {
+        "name": "Niigata Station souvenir shops",
+        "query": "新潟駅 バスセンターのカレー レトルト",
+        "comment": "Sells the retort-pouch version to take home.",
+        "access": "Niigata Station"
+      }
+    ]
+  },
+  "へぎそば": {
+    "summary": "Niigata's famous soba, eaten in the Uonuma area and Tokamachi. It uses funori seaweed as a binder, which gives it a smooth texture and a firm bite. The noodles are arranged in neat bite-sized bundles on a wooden tray called a hegi, a style known as tefuri. It is said to have come from the local practice of using funori to strengthen threads in weaving. Servings are usually shared among several people. It is a dish to enjoy together with friends and family.",
+    "price": "¥900–1,500 per person",
+    "area": "Tokamachi, Uonuma and around",
+    "shops": [
+      {
+        "name": "Kojimaya Sohonten",
+        "query": "小嶋屋総本店 十日町",
+        "comment": "A hegi soba institution founded in the Taisho era.",
+        "access": "Tokamachi"
+      },
+      {
+        "name": "Echigo Tokamachi Kojimaya",
+        "query": "越後十日町小嶋屋 本店",
+        "comment": "Another long-running Tokamachi soba house.",
+        "access": "Tokamachi"
+      }
+    ]
+  },
+  "のっぺ": {
+    "summary": "A local dish made in Niigata homes for New Year and festivals, when many people gather. Taro, carrot, konnyaku, shiitake, chicken and ginkgo nuts are slowly simmered in dashi. The taro gives it a light thickness and a gentle flavor. It is eaten warm, but eating it chilled is also a Niigata custom; cold, the flavors soak in and it tastes different again. Ingredients and seasoning vary by area and family, and some add scallops or salmon roe. It is a must on the New Year table.",
+    "price": "¥500–900",
+    "area": "Throughout Niigata",
+    "shops": [
+      {
+        "name": "Inakaya",
+        "query": "田舎家 古町 わっぱ飯",
+        "comment": "The originator of wappa-meshi, also serving chilled noppe.",
+        "access": "Furumachi-dori 9, Niigata City"
+      },
+      {
+        "name": "Echigo Banya Sakaba",
+        "query": "越後番屋酒場 新潟",
+        "comment": "An izakaya with Niigata's local dishes.",
+        "access": "About 5 min walk from Niigata Station"
+      }
+    ]
+  },
+  "笹団子": {
+    "summary": "Niigata's famous sweet: a mugwort dumpling filled with red bean paste, wrapped in bamboo leaves, tied with rush string and steamed. It was originally a homemade treat for the Boys' Festival in May. Bamboo leaves have antibacterial properties that help it keep, so it was once valued as a preserved food. You can enjoy the scent of mugwort and the fresh aroma of the leaves. It is easy to buy at Niigata Station shops, and frozen ones are also available. Steam or warm it lightly to bring back its softness.",
+    "price": "¥150–250 each",
+    "area": "Throughout Niigata",
+    "shops": [
+      {
+        "name": "Tanakaya Minato Kobo",
+        "query": "田中屋本店 みなと工房",
+        "comment": "Watch sasadango being made or try it yourself.",
+        "access": "Yanagishimacho, Chuo Ward"
+      },
+      {
+        "name": "CoCoLo Niigata",
+        "query": "CoCoLo新潟 笹団子",
+        "comment": "Niigata Station building with several sasadango shops.",
+        "access": "Niigata Station"
+      }
+    ]
+  },
+  "柿の種": {
+    "summary": "Spicy soy sauce rice crackers shaped like persimmon seeds. They are said to have been created at a confectioner in Nagaoka and are now a classic snack all over Japan. Kaki-pi, a mix with peanuts, is also popular. Niigata, a top rice-growing region, produces many rice crackers besides these. There are plenty of souvenir versions, such as Niigata-only flavors and big bags. They go perfectly with beer, and once you start it is hard to stop. Many come in small packs that are easy to hand out.",
+    "price": "¥300–1,000",
+    "area": "Nagaoka and elsewhere in Niigata",
+    "shops": [
+      {
+        "name": "Naniwaya Seika",
+        "query": "浪花屋製菓 柿の種発祥の地 長岡",
+        "comment": "The original maker, with an exhibit and direct shop.",
+        "access": "Settaya, Nagaoka"
+      },
+      {
+        "name": "CoCoLo Niigata",
+        "query": "CoCoLo新潟 柿の種",
+        "comment": "Souvenir shops in the Niigata Station building.",
+        "access": "Niigata Station"
+      }
+    ]
+  },
+  "ぽっぽ焼き": {
+    "summary": "A long, thin brown sugar sweet like a steamed bun, sold at festival stalls in northern Niigata such as Shibata. Batter of flour, brown sugar and baking soda is baked in special molds. It is soft and chewy with a gentle brown sugar sweetness. One theory says the name comes from the steam puffing out as it bakes. Several are sold together in a bag, and they are best eaten warm right after baking. For Niigata people, it is the nostalgic taste of local festivals.",
+    "price": "¥300–500 per bag",
+    "area": "Shibata and northern Niigata",
+    "shops": [
+      {
+        "name": "Wakuwaku Farm Toyosaka",
+        "query": "わくわくファーム 豊栄 ポッポ焼き",
+        "comment": "Buy poppo-yaki from Shimizu Shoten, founded in the Taisho era, any day.",
+        "access": "Toyosaka, Kita Ward"
+      },
+      {
+        "name": "Sanpokan",
+        "query": "さんぽ甘 新潟 ぽっぽ焼き",
+        "comment": "Festival-stall poppo-yaki available any day.",
+        "access": "About 12 min walk from Niigata Station"
+      }
+    ]
+  }
+}

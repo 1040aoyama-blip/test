@@ -1,0 +1,236 @@
+{
+  "牛タン焼き": {
+    "summary": "Sendai's most famous dish. Thick slices of beef tongue are scored, seasoned with salt and grilled over charcoal. Chewy yet tender, the meat releases more flavor with every bite. It is said to have been created shortly after the war by the owner of a Sendai yakitori restaurant. The classic set meal comes with barley rice, oxtail soup and pickles. There are many specialist restaurants around Sendai Station, including inside the station itself, so it is easy to try. Go for the thick-cut tongue.",
+    "price": "¥1,800–3,500",
+    "area": "Sendai",
+    "shops": [
+      {
+        "name": "Aji Tasuke Main Store",
+        "query": "味太助 本店 仙台",
+        "comment": "A long-running shop in the line of the restaurant said to have created gyutan.",
+        "access": "Kokubuncho (Sendai's nightlife area)"
+      },
+      {
+        "name": "Umami Tasuke",
+        "query": "旨味太助 仙台",
+        "comment": "Popular for its firm bite and well-balanced salt seasoning.",
+        "access": "Kokubuncho"
+      },
+      {
+        "name": "Rikyu",
+        "query": "牛たん炭焼 利久 仙台",
+        "comment": "Many branches in the city and at Sendai Station, easy to drop in.",
+        "access": "Sendai Station and around the city"
+      }
+    ]
+  },
+  "油麩丼": {
+    "summary": "A specialty of Tome, in which abura-fu replaces the pork cutlet in a katsudon. Abura-fu is deep-fried wheat gluten, eaten in the Tome area for generations. It is simmered in dashi with onions, bound with egg and served over rice. The abura-fu soaks up plenty of broth and is juicy, yet it contains no meat, making it a lighter choice. Originally home cooking, it is now served at many restaurants in the city. Enjoy it with a stroll through Tome's well-preserved Meiji-era townscape.",
+    "price": "¥700–1,000",
+    "area": "Tome",
+    "shops": [
+      {
+        "name": "Taishu Shokudo Tsukayu",
+        "query": "大衆食堂 つか勇 登米",
+        "comment": "An old-style diner serving Tome's local specialties.",
+        "access": "Toyoma, Tome (near the Miyagi Meiji-mura area)"
+      },
+      {
+        "name": "Ajidokoro Mon",
+        "query": "味処もん 登米",
+        "comment": "Known as the birthplace of aburafu-don.",
+        "access": "Teraike Sakurakoji, Toyoma, Tome"
+      }
+    ]
+  },
+  "気仙沼ホルモン": {
+    "summary": "A local dish from Kesennuma: pork offal marinated in a garlicky miso sauce and grilled. The unique way to eat it is with shredded raw cabbage, topped with Worcestershire sauce. It is said fishermen ate it to build stamina. The crunchy texture and garlic aroma are addictive. You can try it at yakiniku restaurants in the city, and it has long been a local favorite. It goes well with both rice and beer.",
+    "price": "¥1,000–2,000",
+    "area": "Kesennuma",
+    "shops": [
+      {
+        "name": "Horumon Ikkyu",
+        "query": "ホルモン一休 気仙沼",
+        "comment": "A yakiniku restaurant serving Kesennuma horumon.",
+        "access": "Kesennuma"
+      },
+      {
+        "name": "Yakiniku Kuriko",
+        "query": "焼肉くりこ 気仙沼",
+        "comment": "The long-running restaurant where Kesennuma horumon began.",
+        "access": "Kesennuma"
+      }
+    ]
+  },
+  "はらこ飯": {
+    "summary": "A local dish from Watari: rice cooked in salmon simmering broth, topped with salmon and harako (salmon roe). It uses salmon that swim up the Abukuma River in autumn, and legend says the feudal lord Date Masamune praised it highly. The rice soaked in salmon flavor and the popping roe make an irresistible combination. It is an autumn-only dish served at many restaurants in Watari during salmon season, and it is also sold as an ekiben. If you visit Miyagi in autumn, do not miss it.",
+    "price": "¥1,500–2,500",
+    "area": "Watari",
+    "shops": [
+      {
+        "name": "Arahama Watari",
+        "query": "旬魚・鮨の店 あら浜 亘理店",
+        "comment": "Known for harako-meshi, served only in autumn (September to early December).",
+        "access": "Arahama, Watari"
+      },
+      {
+        "name": "Gyotei Hamaya (S-PAL Sendai)",
+        "query": "漁亭 浜や エスパル仙台",
+        "comment": "Serves seasonal rice dishes: harako-meshi in autumn, hokki-meshi in spring.",
+        "access": "S-PAL Sendai, connected to Sendai Station"
+      }
+    ]
+  },
+  "笹かまぼこ": {
+    "summary": "Fish cakes shaped like bamboo leaves and one of Sendai's best-known specialties. White fish paste is shaped into a leaf and grilled, giving it a springy bite and rich fish flavor. The name is said to come from the Date family crest, which features bamboo and sparrows. It is delicious as is, and lightly toasting it adds a savory aroma. You can buy it at Sendai Station and souvenir shops in the city, and some shops let you grill your own. Comparing brands is fun too.",
+    "price": "¥100–200 each",
+    "area": "Sendai, Shiogama and more",
+    "shops": [
+      {
+        "name": "Abe Kamaboko Main Store",
+        "query": "阿部蒲鉾店 本店 仙台",
+        "comment": "The long-established shop said to have named sasa kamaboko.",
+        "access": "Clis Road arcade (about 10 min walk from Sendai Station)"
+      },
+      {
+        "name": "Kanezaki Sasakama-kan",
+        "query": "鐘崎 笹かま館",
+        "comment": "Offers factory tours and hands-on sasa kamaboko grilling.",
+        "access": "Wakabayashi Ward (about 20 min by car from Sendai Station)"
+      }
+    ]
+  },
+  "白石温麺": {
+    "summary": "A specialty of Shiroishi: short noodles about 9 cm long. They are made without oil, so they taste light and are easy to digest. Legend says that in the Edo period, a son learned how to make noodles without oil for his father, who suffered from stomach trouble. The name umen is said to reflect the warmth (on) of that kindness. They are delicious in hot or cold broth and easy for everyone from children to the elderly to eat.",
+    "price": "¥600–900",
+    "area": "Shiroishi",
+    "shops": [
+      {
+        "name": "Tsuriganean",
+        "query": "白石温麺 つりがね庵",
+        "comment": "A umen specialty restaurant on the grounds of a noodle maker.",
+        "access": "About 8 min walk from Shiroishi Station"
+      },
+      {
+        "name": "Kantoya",
+        "query": "関東家 白石",
+        "comment": "A local eatery in Shiroishi serving umen.",
+        "access": "Shiroishi"
+      }
+    ]
+  },
+  "ホヤの酢の物": {
+    "summary": "Hoya, or sea squirt, is a knobbly sea creature nicknamed the pineapple of the sea. Miyagi is one of Japan's main producers, with active farming along the Sanriku coast. The classic way to eat the orange flesh is in a vinegared salad with cucumber. It is said to have all five tastes: sweet, bitter, salty, sour and umami, along with a distinctive briny aroma. The fresher it is, the milder it tastes, so try it in summer near where it is farmed. Locals also enjoy it with sake.",
+    "price": "¥500–1,000",
+    "area": "Ishinomaki, Kesennuma and more",
+    "shops": [
+      {
+        "name": "Mabo-ya (Sendai Ekimae)",
+        "query": "ほや&純米酒場 まぼ屋 仙台駅前店",
+        "comment": "A hoya specialist serving sea squirt shipped straight from the coast.",
+        "access": "Near Sendai Station"
+      },
+      {
+        "name": "Guzuramozura",
+        "query": "居酒屋 ぐずらもずら 仙台",
+        "comment": "An izakaya with hoya sashimi, vinegared hoya and more.",
+        "access": "Near Sendai Station"
+      }
+    ]
+  },
+  "ほっきめし": {
+    "summary": "Rice cooked with surf clams, a specialty of Yamamoto and Watari in southern Miyagi. The rice is cooked in the clam simmering broth and topped with the clams. The sweetness of the clams and the umami of the broth soak into every grain. The season is winter to spring, and you can try it at local restaurants. Along with autumn's harako-meshi, it is a local dish that lets you taste the bounty of Miyagi's sea. The clams have a pleasant chew too.",
+    "price": "¥1,200–2,000",
+    "area": "Yamamoto and Watari",
+    "shops": [
+      {
+        "name": "Arahama Watari",
+        "query": "旬魚・鮨の店 あら浜 亘理店",
+        "comment": "Serves seasonal mixed rice dishes, including hokki-meshi.",
+        "access": "Arahama, Watari"
+      },
+      {
+        "name": "Gyotei Hamaya (S-PAL Sendai)",
+        "query": "漁亭 浜や エスパル仙台",
+        "comment": "Serves hokki-meshi in spring. Handy, right by the station.",
+        "access": "S-PAL Sendai, connected to Sendai Station"
+      }
+    ]
+  },
+  "ずんだ餅": {
+    "summary": "A Sendai specialty of soft rice cakes coated in zunda, a sweet paste of mashed edamame. It is known for its vivid green color, rich edamame flavor and gentle sweetness. Originally a sweet made at home for occasions like Obon, it is now easy to find at Japanese sweet shops and cafes in Sendai. New sweets made with zunda, such as shakes and roll cakes, keep appearing, so comparing them is fun. Be sure to try it when you visit Sendai.",
+    "price": "¥500–900",
+    "area": "Sendai",
+    "shops": [
+      {
+        "name": "Murakamiya Mochiten",
+        "query": "村上屋餅店 仙台",
+        "comment": "A long-established mochi shop known for its lightly sweet zunda mochi. Seating available.",
+        "access": "About 15 min walk from Sendai Station (Kitamemachi)"
+      },
+      {
+        "name": "Zunda Saryo (Sendai Station)",
+        "query": "ずんだ茶寮 仙台駅",
+        "comment": "Enjoy zunda mochi and zunda shakes right in the station.",
+        "access": "Inside Sendai Station"
+      }
+    ]
+  },
+  "萩の月": {
+    "summary": "Custard cream wrapped in fluffy sponge cake, made by Sendai confectioner Kasho Sanzen. The name comes from the bush clover (hagi) that blooms in Miyagi's fields and the moon (tsuki) in the sky, and its round shape resembles a full moon. Its gentle sweetness and smooth custard have made it a beloved Sendai souvenir for many years. It is also delicious chilled. You can buy it at Sendai Station, the airport and souvenir shops in the city. It is popular with all ages and makes a great gift.",
+    "price": "About ¥200 each",
+    "area": "Sendai and more",
+    "shops": [
+      {
+        "name": "Kasho Sanzen Hirosedori Omachi Main Store",
+        "query": "菓匠三全 広瀬通り大町本店",
+        "comment": "The main store of Kasho Sanzen, maker of Hagi no Tsuki.",
+        "access": "Hirose-dori, Aoba Ward, Sendai"
+      },
+      {
+        "name": "Kasho Sanzen (Sendai Station 2F)",
+        "query": "菓匠三全 仙台駅",
+        "comment": "A station shop, handy before boarding the shinkansen.",
+        "access": "Sendai Station 2F"
+      }
+    ]
+  },
+  "喜久福": {
+    "summary": "A daifuku made by a long-established Sendai tea shop, with fresh cream and bean paste wrapped in soft mochi. Flavors include zunda, matcha, roasted hojicha and fresh cream, and they are sold frozen. Eat them half-thawed to enjoy an ice cream-like chill and chewy mochi at the same time. You can buy them at Sendai Station and elsewhere, and they are a popular souvenir. As you might expect from a tea shop, the matcha and hojicha flavors are especially good. You can take them home frozen.",
+    "price": "About ¥200 each",
+    "area": "Sendai",
+    "shops": [
+      {
+        "name": "Kikusuian (Sendai Station)",
+        "query": "喜久水庵 仙台駅",
+        "comment": "Buy kikufuku, made by a tea merchant, right in the station.",
+        "access": "Sendai Station 2F"
+      },
+      {
+        "name": "Ochanoigeta Sendai Chuo Main Store",
+        "query": "お茶の井ヶ田 仙台中央本店",
+        "comment": "The main store of the tea merchant behind kikufuku.",
+        "access": "Clis Road arcade (about 10 min walk from Sendai Station)"
+      }
+    ]
+  },
+  "ずんだシェイク": {
+    "summary": "A newer Sendai specialty drink made with zunda, sweet edamame paste, blended into a vanilla shake. You get the texture of tiny edamame bits and a pleasant sweetness. It became popular after a Sendai confectioner began selling it at its shop in Sendai Station, where lines now sometimes form. It is easy to enjoy even if you have never tried zunda mochi, and makes a perfect break during your trip. Try it before boarding the shinkansen, especially on a hot day.",
+    "price": "¥300–450",
+    "area": "Sendai (Sendai Station and more)",
+    "shops": [
+      {
+        "name": "Zunda Saryo (Sendai Station)",
+        "query": "ずんだ茶寮 仙台駅",
+        "comment": "The go-to spot for zunda shakes. Easy to stop by before the shinkansen.",
+        "access": "Inside Sendai Station"
+      },
+      {
+        "name": "Kikusuian Zunda Stand",
+        "query": "喜久水庵 ずんだスタンド tekute",
+        "comment": "A tea merchant's zunda sweets stand, perfect for snacking on the go.",
+        "access": "tekute Sendai (Sendai Station 1F)"
+      }
+    ]
+  }
+}

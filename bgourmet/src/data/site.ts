@@ -5,7 +5,7 @@ import site from './site.json';
  * - operatorName: 運営者名（本名でなくハンドル名でもよい）
  * - contactFormUrl: お問い合わせフォームの URL（Google フォームなど）。あればこちらを優先して案内する
  * - contactEmail: お問い合わせ用のメールアドレス（フォームがない場合に表示）
- * - instagramUrl / xUrl: 運営している SNS アカウントの URL
+ * - instagramUrl / xUrl: 運営している SNS アカウントの URL。日本語サイト（ja）と英語サイト（en）で別に設定する
  * - privacyPolicyDate: プライバシーポリシーの制定日・最終改定日（YYYY-MM-DD）
  * 空欄の項目は「準備中」と表示する（公開前に埋める）。
  */

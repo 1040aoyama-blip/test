@@ -15,8 +15,8 @@ const total = prefectures.reduce((sum, p) => sum + countCatalog(lang, p.id), 0);
 const ja = lang === 'ja';
 const pending = ja ? '準備中' : 'Coming soon';
 const sns = [
-  { label: 'Instagram', url: siteInfo.instagramUrl },
-  { label: 'X', url: siteInfo.xUrl },
+  { label: 'Instagram', url: siteInfo.instagramUrl[lang] },
+  { label: 'X', url: siteInfo.xUrl[lang] },
 ].filter((s) => s.url);
 ---
 

@@ -45,4 +45,4 @@
 2. Cloudflare Pages で公開済み：https://bgourmet.pages.dev （プロジェクト名 bgourmet、本番ブランチ claude/session-not-showing-mobile-kg5x7o、ルート bgourmet、SITE_URL 設定済み）。このブランチに push すると自動で更新される
    - 公開前に `src/data/site.json` を埋める
 
-（検索・絞り込み、必須ページは作成済み。トップの「SNS で紹介中」欄は運営者の判断で作らない）
+（検索・絞り込み、必須ページは作成済み。各言語のトップの一番下に、その言語の SNS へのリンク（ロゴ付き）を置く。`site.json` の URL が空の言語では出さない）

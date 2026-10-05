@@ -1,4 +1,4 @@
-# ご当地B級グルメ図鑑 / Japan B-Gourmet Guide
+# ご当地グルメ図鑑 / JAPANESE FOODS IN JAPAN
 
 47都道府県のご当地B級グルメを紹介するサイト。日本人観光客（日本語）と訪日観光客（英語）に向けて作っています。
 [Astro](https://astro.build/) で静的サイトとして生成します。

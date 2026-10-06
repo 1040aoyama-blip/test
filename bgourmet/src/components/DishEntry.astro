@@ -12,19 +12,11 @@ interface Props {
 const { lang, item } = Astro.props;
 const { info } = item;
 const shops = (info?.shops ?? []).slice(0, 3);
-// TODO: 画像の入手方法が決まったら、写真の枠（.photo）を料理の写真に差し替える（CLAUDE.md の「保留中」を参照）
+// TODO: 画像の入手方法が決まったら、料理の写真を content の左（スマホでは上）に入れる（CLAUDE.md の「保留中」を参照）
 const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ api: '1', query: item.mapQuery })}`;
 ---
 
 <article class:list={['dish', { brief: !info }]} id={item.anchor}>
-  {
-    info && (
-      <div class="photo" aria-hidden="true">
-        <span>{t(lang, 'photoPlaceholder')}</span>
-      </div>
-    )
-  }
-
   <div class="content">
     <header>
       <h3>{item.name}</h3>
@@ -89,12 +81,6 @@ const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ ap
   .dish:first-child {
     border-top: 0;
   }
-  @media (min-width: 760px) {
-    .dish:not(.brief) {
-      grid-template-columns: 240px minmax(0, 1fr);
-      gap: 1.5rem;
-    }
-  }
   /* SNS などから #料理名 のリンクで来たときに、その料理を目立たせる */
   .dish:target {
     margin-inline: -0.75rem;
@@ -104,17 +90,6 @@ const mapsHref = `https://www.google.com/maps/search/?${new URLSearchParams({ ap
   }
   .brief {
     padding-block: 1rem;
-  }
-  .photo {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: 4 / 3;
-    border-radius: 10px;
-    background: repeating-linear-gradient(-45deg, var(--surface-2) 0 12px, var(--bg) 12px 24px);
-    color: var(--muted);
-    font-size: 0.85rem;
   }
   .content {
     display: flex;

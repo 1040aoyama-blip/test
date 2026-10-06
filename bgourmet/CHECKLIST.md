@@ -21,7 +21,7 @@
 
 - [x] Cloudflare のアカウントを作り、README.md の「公開」の手順でリポジトリをつなぐ
 - [x] 環境変数 `SITE_URL` に公開先の URL を設定する（設定しないと検索エンジン向けの URL が example.com のままになる）
-- [ ] 独自ドメインを取ったら、カスタムドメインを追加し `SITE_URL` を変える
+- [ ] 独自ドメインを取ったら、カスタムドメインを追加し `SITE_URL` を変える（japanesefoodsinjapan.com を取得・接続済み。`SITE_URL` を https://japanesefoodsinjapan.com に変えたら [x] にする）
 
 ## おすすめの店
 

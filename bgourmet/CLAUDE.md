@@ -27,7 +27,7 @@
   - お問い合わせはサーバーを持たないため、外部フォーム（Google フォームなど）の URL かメールアドレスを案内する
   - プライバシーポリシーは、アフィリエイト・Google AdSense・アクセス解析（Google アナリティクス）・Google マップ・免責・著作権を含む。広告やアクセス解析を実際に導入するときは内容を見直す
 - コラムはサイトにも載せる（未実装）
-- 公開先は Cloudflare Pages（https://bgourmet.pages.dev）。サイト名は日本語「ご当地グルメ図鑑」、英語「JAPANESE FOODS IN JAPAN」（`src/i18n/<言語>.json` の siteName）。独自ドメインは英語名にちなんだものを公開直前に取得する（未取得）
+- 公開先は Cloudflare Pages。独自ドメイン https://japanesefoodsinjapan.com （Cloudflare で取得し、カスタムドメインとして接続済み。https://bgourmet.pages.dev でも見られる）。サイト名は日本語「ご当地グルメ図鑑」、英語「JAPANESE FOODS IN JAPAN」（`src/i18n/<言語>.json` の siteName）。ドメインは英語名にちなむ
 
 ## 保留中（あとで決める）
 
@@ -35,14 +35,13 @@
   - 候補: AI 生成のイラスト（「イメージ」と表示）、自治体・観光協会の写真素材、許可を得た写真、Instagram の公式埋め込み、自分で撮影
   - 他人の Instagram の画像を保存して載せるのは不可（著作権・規約違反）
   - 決まったら、画像とクレジット（出典・ライセンス）の欄をデータとページに追加する
-- ドメイン名（英語のサイト名にちなむ。例：japanesefoodsinjapan.com）
 
 ## これからやること（予定）
 
 0. 621品の説明は全品作成済み（日本語・英語）。事実関係の確認は CHECKLIST.md で運営者が進める
    - おすすめの店：Web 検索で営業中を確かめながら全品に追加済み（1品最低2店。選び方は CHECKLIST.md）。済み：全国（北海道・東北・関東・中部・近畿・中国・四国・九州・沖縄）
 1. シェア用画像（OGP）、コラムのコーナー
-2. Cloudflare Pages で公開済み：https://bgourmet.pages.dev （プロジェクト名 bgourmet、本番ブランチ claude/session-not-showing-mobile-kg5x7o、ルート bgourmet、SITE_URL 設定済み）。このブランチに push すると自動で更新される
+2. Cloudflare Pages で公開済み：https://japanesefoodsinjapan.com （プロジェクト名 bgourmet、本番ブランチ claude/session-not-showing-mobile-kg5x7o、ルート bgourmet、SITE_URL 設定済み）。このブランチに push すると自動で更新される
    - 公開前に `src/data/site.json` を埋める
 
 （検索・絞り込み、必須ページは作成済み。各言語のトップの一番下に、その言語の SNS へのリンク（ロゴ付き）を置く。`site.json` の URL が空の言語では出さない）

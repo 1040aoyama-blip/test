@@ -4,7 +4,7 @@ import DishEntry from '../components/DishEntry.astro';
 import { localizePath, t, type Lang } from '../i18n';
 import { getIntro, getPrefecture, regions } from '../data/prefectures';
 import { getCatalog } from '../data/catalog';
-import { getPrefectureAffiliates } from '../data/affiliates';
+import { getPrefectureAffiliates, klookDestIds } from '../data/affiliates';
 import AffiliateBox from '../components/AffiliateBox.astro';
 import KlookWidget from '../components/KlookWidget.astro';
 
@@ -64,7 +64,7 @@ const affiliates = getPrefectureAffiliates(lang, pref.id, pref.name[lang]);
     affiliates.length > 0 && (
       <section class="experiences">
         <h2>{t(lang, 'experiencesTitle', { pref: pref.name[lang] })}</h2>
-        <KlookWidget />
+        {klookDestIds[pref.id] && <KlookWidget destId={klookDestIds[pref.id]} />}
         <AffiliateBox lang={lang} links={affiliates} />
       </section>
     )

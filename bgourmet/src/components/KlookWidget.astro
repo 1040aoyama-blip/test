@@ -1,9 +1,15 @@
 ---
 /**
  * Klook の「Dynamic Widget」（サムネ付きの体験の一覧）。
- * dest_id が -1 なので、Klook がページの内容（県名など）から地域を判断して体験を選ぶ。
+ * destId に Klook の地域 ID（src/data/affiliates.ts の klookDestIds）を渡す。
+ * -1 だと Klook が地域を自動で選ぶが、どの県でも東京が出てしまったので県ごとに指定している。
  * コードは Klook のアフィリエイト管理画面の Widget で作ったもの（data-adid がこのウィジェットの ID）
  */
+interface Props {
+  destId: number;
+}
+
+const { destId } = Astro.props;
 ---
 
 <div class="klook-widget">
@@ -16,7 +22,7 @@
     data-padding="92"
     data-lgH="470"
     data-edgeValue="655"
-    data-dest_id="-1"
+    data-dest_id={String(destId)}
     data-tid="-1"
     data-amount="6"
     data-prod="dynamic_widget"><a href="//www.klook.com/">Klook.com</a></ins

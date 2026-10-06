@@ -1,5 +1,8 @@
 {
-  "operatorName": "",
+  "operatorName": {
+    "ja": "JAPANESE FOODS IN JAPAN 編集部",
+    "en": "JAPANESE FOODS IN JAPAN Editorial Team"
+  },
   "contactFormUrl": "",
   "contactEmail": "globaljapan2021@gmail.com",
   "instagramUrl": {

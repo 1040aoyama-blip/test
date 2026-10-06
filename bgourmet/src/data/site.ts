@@ -2,7 +2,7 @@ import site from './site.json';
 
 /**
  * サイトの運営情報（src/data/site.json）。運営者情報・お問い合わせ・プライバシーポリシーのページで使う。
- * - operatorName: 運営者名（本名でなくハンドル名でもよい）
+ * - operatorName: 運営者名（本名でなくハンドル名でもよい）。日本語（ja）と英語（en）で別に設定する
  * - contactFormUrl: お問い合わせフォームの URL（Google フォームなど）。あればこちらを優先して案内する
  * - contactEmail: お問い合わせ用のメールアドレス（フォームがない場合に表示）
  * - instagramUrl / xUrl: 運営している SNS アカウントの URL。日本語サイト（ja）と英語サイト（en）で別に設定する

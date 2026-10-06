@@ -47,7 +47,7 @@ const sns = [
     <h2>{ja ? '運営者' : 'Operator'}</h2>
     <dl>
       <dt>{ja ? '運営者名' : 'Name'}</dt>
-      <dd>{siteInfo.operatorName || <span class="pending">{pending}</span>}</dd>
+      <dd>{siteInfo.operatorName[lang] || <span class="pending">{pending}</span>}</dd>
       <dt>{ja ? 'お問い合わせ' : 'Contact'}</dt>
       <dd><a href={localizePath(lang, '/contact/')}>{t(lang, 'contactTitle')}</a></dd>
       {

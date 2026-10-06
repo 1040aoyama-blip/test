@@ -1,0 +1,42 @@
+---
+/**
+ * Klook の「Dynamic Widget」（サムネ付きの体験の一覧）。
+ * dest_id が -1 なので、Klook がページの内容（県名など）から地域を判断して体験を選ぶ。
+ * コードは Klook のアフィリエイト管理画面の Widget で作ったもの（data-adid がこのウィジェットの ID）
+ */
+---
+
+<div class="klook-widget">
+  <ins
+    class="klk-aff-widget"
+    data-adid="1482657"
+    data-lang=""
+    data-currency=""
+    data-cardH="126"
+    data-padding="92"
+    data-lgH="470"
+    data-edgeValue="655"
+    data-dest_id="-1"
+    data-tid="-1"
+    data-amount="6"
+    data-prod="dynamic_widget"><a href="//www.klook.com/">Klook.com</a></ins
+  >
+</div>
+<script is:inline>
+  (function (d, sc, u) {
+    var s = d.createElement(sc),
+      p = d.getElementsByTagName(sc)[0];
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = u;
+    p.parentNode.insertBefore(s, p);
+  })(document, 'script', 'https://affiliate.klook.com/widget/fetch-iframe-init.js');
+</script>
+
+<style>
+  .klook-widget {
+    margin-bottom: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+</style>

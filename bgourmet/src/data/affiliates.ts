@@ -54,9 +54,28 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
   fukushima: {
     transport: { adid: '1482957', destId: '6263', tid: '5' },
   },
+  ibaraki: {
+    transport: { adid: '1482983', destId: '5052', tid: '5' },
+  },
+  tochigi: {
+    transport: { adid: '1482985', destId: '4689', tid: '5' },
+  },
+  gunma: {
+    transport: { adid: '1482986', destId: '4259', tid: '5' },
+  },
+  saitama: {
+    transport: { adid: '1482987', destId: '7259', tid: '5' },
+  },
+  chiba: {
+    transport: { adid: '1482988', destId: '6139', tid: '5' },
+  },
   tokyo: {
+    transport: { adid: '1482990', destId: '28', tid: '5' },
     // dest_id=-1（地域は自動）のコード。東京の体験が出るので、東京の体験として使う
     experiences: { adid: '1482657', destId: '-1', tid: '-1' },
+  },
+  kanagawa: {
+    transport: { adid: '1482991', destId: '6806', tid: '5' },
   },
 };
 

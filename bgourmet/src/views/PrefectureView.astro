@@ -4,6 +4,8 @@ import DishEntry from '../components/DishEntry.astro';
 import { localizePath, t, type Lang } from '../i18n';
 import { getIntro, getPrefecture, regions } from '../data/prefectures';
 import { getCatalog } from '../data/catalog';
+import { getPrefectureAffiliates } from '../data/affiliates';
+import AffiliateBox from '../components/AffiliateBox.astro';
 
 interface Props {
   lang: Lang;
@@ -17,6 +19,7 @@ const groups = getCatalog(lang, pref.id);
 const dishCount = groups.reduce((sum, g) => sum + g.items.length, 0);
 const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
 const intro = getIntro(lang, pref.id);
+const affiliates = getPrefectureAffiliates(lang, pref.id, pref.name[lang]);
 ---
 
 <BaseLayout lang={lang} path={`/${pref.id}/`} title={title} description={intro}>
@@ -56,10 +59,25 @@ const intro = getIntro(lang, pref.id);
     ))
   }
 
+  {
+    affiliates.length > 0 && (
+      <section class="experiences">
+        <h2>{t(lang, 'experiencesTitle', { pref: pref.name[lang] })}</h2>
+        <AffiliateBox lang={lang} links={affiliates} />
+      </section>
+    )
+  }
+
   <p class="back"><a href={localizePath(lang, '/')}>← {t(lang, 'backToTop')}</a></p>
 </BaseLayout>
 
 <style>
+  .experiences {
+    margin-top: 2.5rem;
+  }
+  .experiences h2 {
+    font-size: 1.2rem;
+  }
   .crumbs {
     color: var(--muted);
     font-size: 0.85rem;

@@ -29,6 +29,8 @@
 - コラムはサイトにも載せる（未実装）
 - 公開先は Cloudflare Pages。独自ドメイン https://japanesefoodsinjapan.com （Cloudflare で取得し、カスタムドメインとして接続済み。https://bgourmet.pages.dev でも見られる）。サイト名は日本語「ご当地グルメ図鑑」、英語「JAPANESE FOODS IN JAPAN」（`src/i18n/<言語>.json` の siteName）。ドメインは英語名にちなむ
 
+- アフィリエイト：Klook（パートナー ID は `src/data/site.json` の klookAid）。英語サイトの県ページの一番下に「Tours & experiences in 〇〇」として、その県のツアー検索（東京・京都・大阪はフードツアー・料理教室も）へのリンクを出す（`src/data/affiliates.ts`）
+
 ## 保留中（あとで決める）
 
 - **料理の画像**: 各料理に画像を入れる。入手方法は未定（AdSense の審査で作りかけに見えないよう、「写真準備中」の枠は消した）

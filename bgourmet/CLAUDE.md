@@ -41,7 +41,7 @@
 0. 621品の説明は全品作成済み（日本語・英語）。事実関係の確認は CHECKLIST.md で運営者が進める
    - おすすめの店：Web 検索で営業中を確かめながら全品に追加済み（1品最低2店。選び方は CHECKLIST.md）。済み：全国（北海道・東北・関東・中部・近畿・中国・四国・九州・沖縄）
 1. シェア用画像（OGP）、コラムのコーナー
-2. Cloudflare Pages で公開済み：https://japanesefoodsinjapan.com （プロジェクト名 bgourmet、本番ブランチ claude/session-not-showing-mobile-kg5x7o、ルート bgourmet、SITE_URL = https://japanesefoodsinjapan.com）。このブランチに push すると自動で更新される
+2. Cloudflare Pages で公開済み：https://japanesefoodsinjapan.com （プロジェクト名 bgourmet、本番ブランチ claude/session-not-showing-mobile-kg5x7o、ルート bgourmet、SITE_URL = https://japanesefoodsinjapan.com）。Google Search Console にドメインで登録し、サイトマップ（/sitemap-index.xml）を送信済み。このブランチに push すると自動で更新される
    - 公開前に `src/data/site.json` を埋める
 
 （検索・絞り込み、必須ページは作成済み。各言語のトップの一番下に、その言語の SNS へのリンク（ロゴ付き）を置く。`site.json` の URL が空の言語では出さない）

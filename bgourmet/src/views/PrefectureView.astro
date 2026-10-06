@@ -4,9 +4,10 @@ import DishEntry from '../components/DishEntry.astro';
 import { localizePath, t, type Lang } from '../i18n';
 import { getIntro, getPrefecture, regions } from '../data/prefectures';
 import { getCatalog } from '../data/catalog';
-import { getPrefectureAffiliates, klookWidgets } from '../data/affiliates';
+import { getPrefectureAffiliates } from '../data/affiliates';
 import AffiliateBox from '../components/AffiliateBox.astro';
 import KlookWidget from '../components/KlookWidget.astro';
+import KlookScript from '../components/KlookScript.astro';
 
 interface Props {
   lang: Lang;
@@ -63,9 +64,15 @@ const affiliates = getPrefectureAffiliates(lang, pref.id, pref.name[lang]);
   {
     affiliates.length > 0 && (
       <section class="experiences">
-        <h2>{t(lang, 'experiencesTitle', { pref: pref.name[lang] })}</h2>
-        {klookWidgets[pref.id] && <KlookWidget {...klookWidgets[pref.id]} />}
-        <AffiliateBox lang={lang} links={affiliates} />
+        <h2>{t(lang, 'planTripTitle', { pref: pref.name[lang] })}</h2>
+        {affiliates.map((block) => (
+          <div class="aff-block">
+            <h3>{t(lang, `affiliate_${block.kind}`)}</h3>
+            {block.widget && <KlookWidget {...block.widget} />}
+            {block.links.length > 0 && <AffiliateBox lang={lang} links={block.links} />}
+          </div>
+        ))}
+        {affiliates.some((b) => b.widget) && <KlookScript />}
       </section>
     )
   }
@@ -78,7 +85,14 @@ const affiliates = getPrefectureAffiliates(lang, pref.id, pref.name[lang]);
     margin-top: 2.5rem;
   }
   .experiences h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+  .aff-block {
+    margin-top: 1.5rem;
+  }
+  .aff-block h3 {
+    margin: 0 0 0.6rem;
+    font-size: 1.05rem;
   }
   .crumbs {
     color: var(--muted);

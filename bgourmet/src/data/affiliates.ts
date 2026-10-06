@@ -25,12 +25,21 @@ const klookFood: Record<string, [string, string][]> = {
 };
 
 /**
- * Klook のウィジェット（サムネ付きの体験一覧）。県 ID → Klook の管理画面で作ったコードの値。
- * コードは書き換えずにそのまま使う（地域を変えたいときは、管理画面でその地域のウィジェットを作り、ここに足す）
+ * Klook のウィジェット（サムネ付きの一覧）。県 ID → 種類 → Klook の管理画面で作ったコードの値
+ * （data-adid・data-dest_id・data-tid）。コードは書き換えずにそのまま使う。
+ * 種類：hotels（ホテル）・experiences（体験）・transport（交通・通信）。県ページの下にこの順で出す
  */
-export const klookWidgets: Record<string, { adid: string; destId: string }> = {
-  // dest_id=-1（地域は自動）のコード。どの県でも東京が出るため、東京のページだけに出す
-  tokyo: { adid: '1482657', destId: '-1' },
+export type WidgetKind = 'hotels' | 'experiences' | 'transport';
+export type KlookWidgetCode = { adid: string; destId: string; tid: string };
+
+export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidgetCode>>> = {
+  hokkaido: {
+    transport: { adid: '1482654', destId: '32', tid: '5' },
+  },
+  tokyo: {
+    // dest_id=-1（地域は自動）のコード。東京の体験が出るので、東京の体験として使う
+    experiences: { adid: '1482657', destId: '-1', tid: '-1' },
+  },
 };
 
 function klook(path: string, params: Record<string, string> = {}): string {
@@ -40,13 +49,25 @@ function klook(path: string, params: Record<string, string> = {}): string {
   return url.toString();
 }
 
-export function getPrefectureAffiliates(lang: string, prefId: string, prefName: string): Link[] {
+/** 県ページの下の「ホテル・体験・交通と通信」の欄の中身（英語サイトのみ） */
+export function getPrefectureAffiliates(
+  lang: string,
+  prefId: string,
+  prefName: string,
+): { kind: WidgetKind; widget?: KlookWidgetCode; links: Link[] }[] {
   if (lang !== 'en' || !siteInfo.klookAid) return [];
-  return [
-    ...(klookFood[prefId] ?? []).map(([label, path]) => ({ label: `${label} (Klook)`, url: klook(path) })),
-    { label: `Tours & activities in ${prefName} (Klook)`, url: klook('/search/result/', { query: prefName }) },
-    { label: 'Japan Rail Pass & regional rail passes (Klook)', url: klook('/transport/ttd/jrpass/') },
-  ];
+  const widgets = klookWidgets[prefId] ?? {};
+  const links: Record<WidgetKind, Link[]> = {
+    hotels: [],
+    experiences: [
+      ...(klookFood[prefId] ?? []).map(([label, path]) => ({ label: `${label} (Klook)`, url: klook(path) })),
+      { label: `Tours & activities in ${prefName} (Klook)`, url: klook('/search/result/', { query: prefName }) },
+    ],
+    transport: [{ label: 'Japan Rail Pass & regional rail passes (Klook)', url: klook('/transport/ttd/jrpass/') }],
+  };
+  return (['hotels', 'experiences', 'transport'] as const)
+    .map((kind) => ({ kind, widget: widgets[kind], links: links[kind] }))
+    .filter((b) => b.widget || b.links.length > 0);
 }
 
 /** 英語サイトのトップに出す、旅の準備のリンク */

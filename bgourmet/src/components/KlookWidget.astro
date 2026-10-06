@@ -2,14 +2,16 @@
 /**
  * Klook の「Dynamic Widget」（サムネ付きの体験の一覧）。
  * Klook のアフィリエイト管理画面の Widget で作ったコードを、値を変えずにそのまま出す。
- * adid・destId は src/data/affiliates.ts の klookWidgets（管理画面のコードにある data-adid・data-dest_id）
+ * adid・destId・tid は src/data/affiliates.ts の klookWidgets（管理画面のコードにある data-adid・data-dest_id・data-tid）。
+ * 読み込み用のスクリプトはページに1回だけ置く（KlookScript.astro）
  */
 interface Props {
   adid: string;
   destId: string;
+  tid: string;
 }
 
-const { adid, destId } = Astro.props;
+const { adid, destId, tid } = Astro.props;
 ---
 
 <div class="klook-widget">
@@ -23,21 +25,11 @@ const { adid, destId } = Astro.props;
     data-lgH="470"
     data-edgeValue="655"
     data-dest_id={destId}
-    data-tid="-1"
+    data-tid={tid}
     data-amount="6"
     data-prod="dynamic_widget"><a href="//www.klook.com/">Klook.com</a></ins
   >
 </div>
-<script is:inline>
-  (function (d, sc, u) {
-    var s = d.createElement(sc),
-      p = d.getElementsByTagName(sc)[0];
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = u;
-    p.parentNode.insertBefore(s, p);
-  })(document, 'script', 'https://affiliate.klook.com/widget/fetch-iframe-init.js');
-</script>
 
 <style is:global>
   .klook-widget {

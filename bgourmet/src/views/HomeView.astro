@@ -4,6 +4,7 @@ import { localizePath, t, type Lang } from '../i18n';
 import { getPrefecture, prefectures, regions } from '../data/prefectures';
 import { assertCatalogConsistency, categories, countCatalog, getFeatured } from '../data/catalog';
 import { siteInfo } from '../data/site';
+import { getTripEssentials } from '../data/affiliates';
 
 interface Props {
   lang: Lang;
@@ -12,6 +13,7 @@ interface Props {
 const { lang } = Astro.props;
 assertCatalogConsistency();
 const featured = getFeatured(lang);
+const essentials = getTripEssentials(lang);
 // その言語のサイトで運営している SNS だけを出す（未開設なら欄ごと出さない）
 const sns = [
   { id: 'instagram', label: 'Instagram', url: siteInfo.instagramUrl[lang] },
@@ -79,6 +81,25 @@ const sns = [
       }
     </div>
   </section>
+  {
+    essentials.length > 0 && (
+      <section class="essentials">
+        <h2>
+          Plan your trip <span class="pr">{t(lang, 'prLabel')}</span>
+        </h2>
+        <div class="grid">
+          {essentials.map((e) => (
+            <a class="card" href={e.url} target="_blank" rel="sponsored noopener">
+              <span class="pref">Klook</span>
+              <strong>{e.label}</strong>
+              <span class="summary">{e.note}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
   {
     sns.length > 0 && (
       <section class="sns">
@@ -262,6 +283,18 @@ const sns = [
   }
   .region a.empty {
     color: var(--muted);
+  }
+  .essentials h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .essentials .pr {
+    padding: 0 0.4rem;
+    border-radius: 4px;
+    background: var(--muted);
+    color: var(--bg);
+    font-size: 0.75rem;
   }
   .sns {
     text-align: center;

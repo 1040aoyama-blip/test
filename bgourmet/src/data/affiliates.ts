@@ -3,6 +3,8 @@ import { siteInfo } from './site';
 /**
  * 県ページに出すアフィリエイトのリンク。
  * - Klook（英語サイトのみ）：その県のツアー・体験の検索結果。東京・京都・大阪はフードツアー・料理教室のページも出す
+ *   県ページの最後に JR パスのリンクも付ける
+ * - 英語サイトのトップの「Plan your trip」：鉄道パス・新幹線、eSIM・Wi-Fi、空港アクセス（getTripEssentials）
  *   パートナー ID は src/data/site.json の klookAid（リンクの末尾に ?aid= で付ける）
  */
 type Link = { label: string; url: string };
@@ -34,5 +36,18 @@ export function getPrefectureAffiliates(lang: string, prefId: string, prefName: 
   return [
     ...(klookFood[prefId] ?? []).map(([label, path]) => ({ label: `${label} (Klook)`, url: klook(path) })),
     { label: `Tours & activities in ${prefName} (Klook)`, url: klook('/search/result/', { query: prefName }) },
+    { label: 'Japan Rail Pass & regional rail passes (Klook)', url: klook('/transport/ttd/jrpass/') },
+  ];
+}
+
+/** 英語サイトのトップに出す、旅の準備のリンク */
+export function getTripEssentials(lang: string): (Link & { note: string })[] {
+  if (lang !== 'en' || !siteInfo.klookAid) return [];
+  return [
+    { label: 'Japan Rail Pass', note: 'Nationwide and regional JR passes', url: klook('/transport/ttd/jrpass/') },
+    { label: 'Shinkansen tickets', note: 'Bullet train tickets on every line', url: klook('/japan-rail/') },
+    { label: 'Japan eSIM', note: 'Mobile data from the moment you land', url: klook('/search/result/', { query: 'Japan eSIM' }) },
+    { label: 'Pocket Wi-Fi', note: 'Pick up and return at the airport', url: klook('/search/result/', { query: 'Japan pocket wifi' }) },
+    { label: 'Airport transfers', note: 'Skyliner, Narita Express, Haruka and more', url: klook('/search/result/', { query: 'Japan airport transfer' }) },
   ];
 }

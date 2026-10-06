@@ -77,30 +77,29 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
   kanagawa: {
     transport: { adid: '1482991', destId: '6806', tid: '5' },
   },
-  // 中部9県は管理画面から受け取ったコードの adid がすべて 1483030（dest_id だけが違う）
   niigata: {
-    transport: { adid: '1483030', destId: '6810', tid: '5' },
+    transport: { adid: '1483091', destId: '6810', tid: '5' },
   },
   toyama: {
-    transport: { adid: '1483030', destId: '5851', tid: '5' },
+    transport: { adid: '1483094', destId: '5851', tid: '5' },
   },
   ishikawa: {
-    transport: { adid: '1483030', destId: '4693', tid: '5' },
+    transport: { adid: '1483099', destId: '4693', tid: '5' },
   },
   fukui: {
-    transport: { adid: '1483030', destId: '7240', tid: '5' },
+    transport: { adid: '1483101', destId: '7240', tid: '5' },
   },
   yamanashi: {
-    transport: { adid: '1483030', destId: '4529', tid: '5' },
+    transport: { adid: '1483106', destId: '4529', tid: '5' },
   },
   nagano: {
-    transport: { adid: '1483030', destId: '5483', tid: '5' },
+    transport: { adid: '1483108', destId: '5483', tid: '5' },
   },
   gifu: {
-    transport: { adid: '1483030', destId: '6370', tid: '5' },
+    transport: { adid: '1483112', destId: '6370', tid: '5' },
   },
   shizuoka: {
-    transport: { adid: '1483030', destId: '6409', tid: '5' },
+    transport: { adid: '1483113', destId: '6409', tid: '5' },
   },
   aichi: {
     transport: { adid: '1483030', destId: '6069', tid: '5' },

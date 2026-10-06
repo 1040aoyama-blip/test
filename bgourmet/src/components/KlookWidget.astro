@@ -1,28 +1,28 @@
 ---
 /**
  * Klook の「Dynamic Widget」（サムネ付きの体験の一覧）。
- * destId に Klook の地域 ID（src/data/affiliates.ts の klookDestIds）を渡す。
- * -1 だと Klook が地域を自動で選ぶが、どの県でも東京が出てしまったので県ごとに指定している。
- * コードは Klook のアフィリエイト管理画面の Widget で作ったもの（data-adid がこのウィジェットの ID）
+ * Klook のアフィリエイト管理画面の Widget で作ったコードを、値を変えずにそのまま出す。
+ * adid・destId は src/data/affiliates.ts の klookWidgets（管理画面のコードにある data-adid・data-dest_id）
  */
 interface Props {
-  destId: number;
+  adid: string;
+  destId: string;
 }
 
-const { destId } = Astro.props;
+const { adid, destId } = Astro.props;
 ---
 
 <div class="klook-widget">
   <ins
     class="klk-aff-widget"
-    data-adid="1482657"
+    data-adid={adid}
     data-lang=""
     data-currency=""
     data-cardH="126"
     data-padding="92"
     data-lgH="470"
     data-edgeValue="655"
-    data-dest_id={String(destId)}
+    data-dest_id={destId}
     data-tid="-1"
     data-amount="6"
     data-prod="dynamic_widget"><a href="//www.klook.com/">Klook.com</a></ins
@@ -39,7 +39,7 @@ const { destId } = Astro.props;
   })(document, 'script', 'https://affiliate.klook.com/widget/fetch-iframe-init.js');
 </script>
 
-<style>
+<style is:global>
   .klook-widget {
     margin-bottom: 1rem;
     max-width: 100%;

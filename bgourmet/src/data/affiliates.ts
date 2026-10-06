@@ -25,20 +25,12 @@ const klookFood: Record<string, [string, string][]> = {
 };
 
 /**
- * Klook の地域 ID（県 ID → Klook の destination の番号。klook.com/destination/c<番号>-… の番号）。
- * 県のページがない所は、県庁所在地や近くの観光地・地方の ID にした
- * （岩手=盛岡、茨城・群馬=北関東、石川=金沢、滋賀=大津、島根=松江、徳島=鳴門、愛媛・高知=四国）
+ * Klook のウィジェット（サムネ付きの体験一覧）。県 ID → Klook の管理画面で作ったコードの値。
+ * コードは書き換えずにそのまま使う（地域を変えたいときは、管理画面でその地域のウィジェットを作り、ここに足す）
  */
-export const klookDestIds: Record<string, number> = {
-  hokkaido: 32, aomori: 14493, iwate: 26793, miyagi: 6850, akita: 11753, yamagata: 4507, fukushima: 18085,
-  ibaraki: 10000055, tochigi: 4689, gunma: 10000055, saitama: 7259, chiba: 6139, tokyo: 28, kanagawa: 6806,
-  niigata: 22144, toyama: 21926, ishikawa: 445, fukui: 17406, yamanashi: 4529, nagano: 26277,
-  gifu: 6370, shizuoka: 6409, aichi: 6069, mie: 13104,
-  shiga: 9324, kyoto: 30, osaka: 29, hyogo: 4819, nara: 7062, wakayama: 25492,
-  tottori: 11455, shimane: 7355, okayama: 13088, hiroshima: 5122, yamaguchi: 8406,
-  tokushima: 7950, kagawa: 31301, ehime: 11000006, kochi: 11000006,
-  fukuoka: 5209, saga: 14045, nagasaki: 7057, kumamoto: 4351, oita: 31594, miyazaki: 28941, kagoshima: 21043,
-  okinawa: 6484,
+export const klookWidgets: Record<string, { adid: string; destId: string }> = {
+  // dest_id=-1（地域は自動）のコード。どの県でも東京が出るため、東京のページだけに出す
+  tokyo: { adid: '1482657', destId: '-1' },
 };
 
 function klook(path: string, params: Record<string, string> = {}): string {

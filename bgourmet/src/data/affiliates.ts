@@ -38,21 +38,27 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
     transport: { adid: '1482654', destId: '32', tid: '5' },
   },
   aomori: {
+    experiences: { adid: '1484317', destId: '6257', tid: '2' },
     transport: { adid: '1482944', destId: '6257', tid: '5' },
   },
   iwate: {
+    experiences: { adid: '1484318', destId: '4588', tid: '2' },
     transport: { adid: '1482947', destId: '4588', tid: '5' },
   },
   miyagi: {
+    experiences: { adid: '1484321', destId: '6850', tid: '2' },
     transport: { adid: '1482955', destId: '6850', tid: '5' },
   },
   akita: {
+    experiences: { adid: '1484322', destId: '4920', tid: '2' },
     transport: { adid: '1482945', destId: '4920', tid: '5' },
   },
   yamagata: {
+    experiences: { adid: '1484320', destId: '4507', tid: '2' },
     transport: { adid: '1482952', destId: '4507', tid: '5' },
   },
   fukushima: {
+    experiences: { adid: '1484324', destId: '6263', tid: '2' },
     transport: { adid: '1482957', destId: '6263', tid: '5' },
   },
   ibaraki: {

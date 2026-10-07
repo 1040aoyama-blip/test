@@ -4,7 +4,9 @@ import { localizePath, t, type Lang } from '../i18n';
 import { getPrefecture, prefectures, regions } from '../data/prefectures';
 import { assertCatalogConsistency, categories, countCatalog, getFeatured } from '../data/catalog';
 import { siteInfo } from '../data/site';
-import { getTripEssentials } from '../data/affiliates';
+import { getTripEssentials, homeTransportWidget } from '../data/affiliates';
+import KlookWidget from '../components/KlookWidget.astro';
+import KlookScript from '../components/KlookScript.astro';
 
 interface Props {
   lang: Lang;
@@ -87,6 +89,8 @@ const sns = [
         <h2>
           Plan your trip <span class="pr">{t(lang, 'prLabel')}</span>
         </h2>
+        <KlookWidget {...homeTransportWidget} />
+        <KlookScript />
         <div class="grid">
           {essentials.map((e) => (
             <a class="card" href={e.url} target="_blank" rel="sponsored noopener">

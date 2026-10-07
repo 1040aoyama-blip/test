@@ -251,6 +251,9 @@ export function getPrefectureAffiliates(
     .filter((b) => b.widget || b.links.length > 0);
 }
 
+/** 英語サイトのトップの「Plan your trip」に出す交通・通信のウィジェット（全国。管理画面のコードのまま） */
+export const homeTransportWidget: KlookWidgetCode = { adid: '1482657', destId: '-1', tid: '5' };
+
 /** 英語サイトのトップに出す、旅の準備のリンク */
 export function getTripEssentials(lang: string): (Link & { note: string })[] {
   if (lang !== 'en' || !siteInfo.klookAid) return [];

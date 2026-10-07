@@ -34,6 +34,7 @@ export type KlookWidgetCode = { adid: string; destId: string; tid: string };
 
 export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidgetCode>>> = {
   hokkaido: {
+    experiences: { adid: '1484313', destId: '32', tid: '2' },
     transport: { adid: '1482654', destId: '32', tid: '5' },
   },
   aomori: {

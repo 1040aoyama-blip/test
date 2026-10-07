@@ -126,24 +126,31 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
     transport: { adid: '1483030', destId: '6069', tid: '5' },
   },
   mie: {
+    experiences: { adid: '1484608', destId: '6241', tid: '2' },
     transport: { adid: '1484185', destId: '6241', tid: '5' },
   },
   shiga: {
+    experiences: { adid: '1484609', destId: '6339', tid: '2' },
     transport: { adid: '1484187', destId: '6339', tid: '5' },
   },
   kyoto: {
+    experiences: { adid: '1484610', destId: '5938', tid: '2' },
     transport: { adid: '1484190', destId: '5938', tid: '5' },
   },
   osaka: {
+    experiences: { adid: '1484611', destId: '6093', tid: '2' },
     transport: { adid: '1484191', destId: '6093', tid: '5' },
   },
   hyogo: {
+    experiences: { adid: '1484614', destId: '4819', tid: '2' },
     transport: { adid: '1484192', destId: '4819', tid: '5' },
   },
   nara: {
+    experiences: { adid: '1484616', destId: '7062', tid: '2' },
     transport: { adid: '1484193', destId: '7062', tid: '5' },
   },
   wakayama: {
+    experiences: { adid: '1484618', destId: '6255', tid: '2' },
     transport: { adid: '1484195', destId: '6255', tid: '5' },
   },
   tottori: {

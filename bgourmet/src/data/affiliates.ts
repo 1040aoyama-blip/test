@@ -171,7 +171,7 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
   },
   yamaguchi: {
     experiences: { adid: '1484646', destId: '6251', tid: '2' },
-    transport: { adid: '1484215', destId: '8406', tid: '5' },
+    transport: { adid: '1484215', destId: '6251', tid: '5' },
   },
   tokushima: {
     experiences: { adid: '1484649', destId: '4987', tid: '2' },

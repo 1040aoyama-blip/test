@@ -104,6 +104,27 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
   aichi: {
     transport: { adid: '1483030', destId: '6069', tid: '5' },
   },
+  mie: {
+    transport: { adid: '1484185', destId: '6241', tid: '5' },
+  },
+  shiga: {
+    transport: { adid: '1484187', destId: '6339', tid: '5' },
+  },
+  kyoto: {
+    transport: { adid: '1484190', destId: '5938', tid: '5' },
+  },
+  osaka: {
+    transport: { adid: '1484191', destId: '6093', tid: '5' },
+  },
+  hyogo: {
+    transport: { adid: '1484192', destId: '4819', tid: '5' },
+  },
+  nara: {
+    transport: { adid: '1484193', destId: '7062', tid: '5' },
+  },
+  wakayama: {
+    transport: { adid: '1484195', destId: '6255', tid: '5' },
+  },
 };
 
 function klook(path: string, params: Record<string, string> = {}): string {

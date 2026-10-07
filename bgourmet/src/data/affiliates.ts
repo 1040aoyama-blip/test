@@ -90,30 +90,39 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
     transport: { adid: '1482991', destId: '6806', tid: '5' },
   },
   niigata: {
+    experiences: { adid: '1484445', destId: '6810', tid: '2' },
     transport: { adid: '1483091', destId: '6810', tid: '5' },
   },
   toyama: {
+    experiences: { adid: '1484449', destId: '5851', tid: '2' },
     transport: { adid: '1483094', destId: '5851', tid: '5' },
   },
   ishikawa: {
+    experiences: { adid: '1484451', destId: '4693', tid: '2' },
     transport: { adid: '1483099', destId: '4693', tid: '5' },
   },
   fukui: {
+    experiences: { adid: '1484452', destId: '7240', tid: '2' },
     transport: { adid: '1483101', destId: '7240', tid: '5' },
   },
   yamanashi: {
+    experiences: { adid: '1484458', destId: '4529', tid: '2' },
     transport: { adid: '1483106', destId: '4529', tid: '5' },
   },
   nagano: {
+    experiences: { adid: '1484465', destId: '5483', tid: '2' },
     transport: { adid: '1483108', destId: '5483', tid: '5' },
   },
   gifu: {
+    experiences: { adid: '1484480', destId: '6370', tid: '2' },
     transport: { adid: '1483112', destId: '6370', tid: '5' },
   },
   shizuoka: {
+    experiences: { adid: '1484493', destId: '6409', tid: '2' },
     transport: { adid: '1483113', destId: '6409', tid: '5' },
   },
   aichi: {
+    experiences: { adid: '1484498', destId: '6069', tid: '2' },
     transport: { adid: '1483030', destId: '6069', tid: '5' },
   },
   mie: {

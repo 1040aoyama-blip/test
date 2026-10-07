@@ -62,26 +62,31 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
     transport: { adid: '1482957', destId: '6263', tid: '5' },
   },
   ibaraki: {
+    experiences: { adid: '1484396', destId: '5052', tid: '2' },
     transport: { adid: '1482983', destId: '5052', tid: '5' },
   },
   tochigi: {
+    experiences: { adid: '1484398', destId: '4689', tid: '2' },
     transport: { adid: '1482985', destId: '4689', tid: '5' },
   },
   gunma: {
+    experiences: { adid: '1484400', destId: '4259', tid: '2' },
     transport: { adid: '1482986', destId: '4259', tid: '5' },
   },
   saitama: {
+    experiences: { adid: '1484402', destId: '7259', tid: '2' },
     transport: { adid: '1482987', destId: '7259', tid: '5' },
   },
   chiba: {
+    experiences: { adid: '1484403', destId: '6139', tid: '2' },
     transport: { adid: '1482988', destId: '6139', tid: '5' },
   },
   tokyo: {
+    experiences: { adid: '1484404', destId: '28', tid: '2' },
     transport: { adid: '1482990', destId: '28', tid: '5' },
-    // dest_id=-1（地域は自動）のコード。東京の体験が出るので、東京の体験として使う
-    experiences: { adid: '1482657', destId: '-1', tid: '-1' },
   },
   kanagawa: {
+    experiences: { adid: '1484406', destId: '6806', tid: '2' },
     transport: { adid: '1482991', destId: '6806', tid: '5' },
   },
   niigata: {

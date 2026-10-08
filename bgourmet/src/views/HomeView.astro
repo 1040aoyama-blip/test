@@ -5,6 +5,7 @@ import { getPrefecture, prefectures, regions } from '../data/prefectures';
 import { assertCatalogConsistency, categories, countCatalog, getFeatured } from '../data/catalog';
 import { siteInfo } from '../data/site';
 import { getTripEssentials, homeTransportWidget } from '../data/affiliates';
+import { getClassics } from '../data/classics';
 import KlookWidget from '../components/KlookWidget.astro';
 import KlookScript from '../components/KlookScript.astro';
 
@@ -16,6 +17,8 @@ const { lang } = Astro.props;
 assertCatalogConsistency();
 const featured = getFeatured(lang);
 const essentials = getTripEssentials(lang);
+// 定番の日本食（英語サイトのみ）
+const classics = lang === 'en' ? getClassics(lang) : [];
 // その言語のサイトで運営している SNS だけを出す（未開設なら欄ごと出さない）
 const sns = [
   { id: 'instagram', label: 'Instagram', url: siteInfo.instagramUrl[lang] },
@@ -55,6 +58,26 @@ const sns = [
       }
     </div>
   </section>
+
+  {
+    classics.length > 0 && (
+      <section class="classics">
+        <h2>Classic Japanese food</h2>
+        <p class="lead">New to Japanese food? Start with the classics you can find all over Japan.</p>
+        <div class="grid">
+          {classics.slice(0, 8).map((c) => (
+            <a class="card" href={`${localizePath(lang, '/classics/')}#${c.id}`}>
+              <strong>{c.name}</strong>
+              <span class="summary">{c.tagline}</span>
+            </a>
+          ))}
+        </div>
+        <p class="more">
+          <a href={localizePath(lang, '/classics/')}>See all {classics.length} classic dishes →</a>
+        </p>
+      </section>
+    )
+  }
 
   <section>
     <h2>{t(lang, 'browseByRegion')}</h2>
@@ -287,6 +310,14 @@ const sns = [
   }
   .region a.empty {
     color: var(--muted);
+  }
+  .classics .lead {
+    margin: -0.25rem 0 1rem;
+    color: var(--muted);
+  }
+  .classics .more {
+    margin: 1rem 0 0;
+    font-weight: 700;
   }
   .essentials h2 {
     display: flex;

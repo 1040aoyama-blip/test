@@ -1,0 +1,11 @@
+---
+import ClassicsView from '../../../views/ClassicsView.astro';
+import type { Lang } from '../../../i18n';
+
+// 英語サイトだけのページ
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }];
+}
+---
+
+<ClassicsView lang={Astro.params.lang as Lang} />

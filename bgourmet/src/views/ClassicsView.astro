@@ -35,6 +35,12 @@ const description =
             <p class="ja" lang="ja">{c.ja}</p>
           </header>
           <p class="summary">{c.summary}</p>
+          {c.local && (
+            <section class="local">
+              <h3>How people in Japan eat it</h3>
+              <p>{c.local}</p>
+            </section>
+          )}
           <dl class="facts">
             <div>
               <dt>{t(lang, 'priceRange')}</dt>
@@ -109,6 +115,22 @@ const description =
   }
   .summary {
     max-width: 46rem;
+    line-height: 1.75;
+  }
+  .local {
+    max-width: 46rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    background: var(--surface-2);
+  }
+  .local h3 {
+    margin: 0 0 0.3rem;
+    font-size: 0.95rem;
+  }
+  .local p {
+    margin: 0;
     line-height: 1.75;
   }
   .facts {

@@ -13,6 +13,8 @@ interface ClassicEntry {
   ja: string;
   tagline: string;
   summary: string;
+  /** 日本での食べられ方（普段の食事・チェーン店・地域の違いなど） */
+  local?: string;
   price: string;
   /** ご当地版。catalog.json にある料理（県 ID と日本語名） */
   regional: { pref: string; ja: string }[];

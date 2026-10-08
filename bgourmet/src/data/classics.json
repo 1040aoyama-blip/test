@@ -19,7 +19,8 @@
         "pref": "nara",
         "ja": "柿の葉寿司"
       }
-    ]
+    ],
+    "local": "Sushi is not only for special occasions. Supermarkets sell ready-made packs, and many families eat it as an everyday meal, saving high-end counter sushi for birthdays and anniversaries. Nigiri is a bite of rice with a topping pressed on top, gunkan-maki (\"battleship roll\") is rice wrapped in a strip of seaweed to hold loose toppings like salmon roe, and norimaki is a roll with the filling inside the rice and seaweed on the outside. Popular conveyor-belt chains include Sushiro, Kura Sushi and Hama-zushi."
   },
   {
     "id": "sashimi",
@@ -41,7 +42,8 @@
         "pref": "toyama",
         "ja": "氷見寒ぶりの刺身"
       }
-    ]
+    ],
+    "local": "Sashimi is an everyday dish too: supermarkets sell fresh packs, and it is a standard menu item at izakaya (Japanese pubs). Near fishing ports, restaurants often serve it as a set meal with rice and miso soup."
   },
   {
     "id": "ramen",
@@ -63,7 +65,8 @@
         "pref": "kanagawa",
         "ja": "横浜家系ラーメン"
       }
-    ]
+    ],
+    "local": "Ramen is casual, everyday food, eaten for lunch or dinner. As a national favorite, it is served by countless chains and small independent shops all over Japan, and supermarkets and convenience stores stock a huge range of instant ramen that many people also eat at home."
   },
   {
     "id": "tempura",
@@ -85,7 +88,8 @@
         "pref": "oita",
         "ja": "とり天"
       }
-    ]
+    ],
+    "local": "Many families make tempura at home or buy it ready-made at the supermarket. It is also a common side dish with soba and udon, while high-end tempura restaurants fry each piece in front of you at the counter."
   },
   {
     "id": "soba",
@@ -107,14 +111,15 @@
         "pref": "shimane",
         "ja": "出雲そば"
       }
-    ]
+    ],
+    "local": "Zaru soba is served cold on a bamboo tray with a dipping sauce, and many shops let you choose a plain sauce, one with duck, or a curry-flavored one. Kake soba comes in hot broth, often topped with mountain vegetables, mushrooms or tempura. Quick, stand-and-eat soba chains are found near many train stations, such as Fuji Soba and Hakone Soba in the Tokyo area. People also cook dried soba at home, and instant cup soba is easy to find."
   },
   {
     "id": "udon",
     "name": "Udon",
     "ja": "うどん",
     "tagline": "Thick, chewy wheat noodles",
-    "summary": "Thick wheat noodles with a soft, chewy texture, served in a mild broth or with a dipping sauce. Kagawa is known as the home of udon, and other regions have thin, flat or miso-simmered versions.",
+    "summary": "Thick wheat noodles with a soft, chewy texture, served in a mild broth or with a dipping sauce. Many regions have their own style, from thin and silky to flat and wide, or simmered in miso.",
     "price": "¥500–¥1,200",
     "regional": [
       {
@@ -129,7 +134,8 @@
         "pref": "aichi",
         "ja": "味噌煮込みうどん"
       }
-    ]
+    ],
+    "local": "Kagawa Prefecture, known as the \"Udon Prefecture,\" has by far the most udon shops per person in Japan and many ways to eat it. The broth also differs by region: in the Kanto area (around Tokyo) it is dark and soy-based, while in Kansai (around Osaka and Kyoto) it is light golden and dashi-based. Outside Kagawa, udon is usually served hot in broth (kake udon), and sometimes cold with a dipping sauce (zaru udon). Tempura is a popular side, and people often cook dried or frozen udon at home. For Sanuki-style udon outside Kagawa, try the Marugame Seimen chain."
   },
   {
     "id": "tonkatsu",
@@ -151,7 +157,8 @@
         "pref": "fukui",
         "ja": "ソースカツ丼"
       }
-    ]
+    ],
+    "local": "Tonkatsu comes in different cuts, such as fatty loin (rosu) and lean fillet (hire), each with its own flavor and texture. It is also an everyday home-cooked dish, and you can buy it ready-made at supermarkets and at butcher shops in local shopping streets."
   },
   {
     "id": "yakitori",
@@ -169,7 +176,8 @@
         "pref": "yamaguchi",
         "ja": "長門焼き鳥"
       }
-    ]
+    ],
+    "local": "Besides chicken thigh, yakitori shops grill skin, organs and many other parts, as well as vegetables. You can also buy it at supermarkets and convenience stores, and frozen yakitori heated in the microwave is common at home. In the Tokyo area, Noge in Yokohama is packed with yakitori bars. In Fukuoka, try Hakata-style torikawa: chicken skin wound around a skewer and grilled repeatedly until crispy — it is well worth trying."
   },
   {
     "id": "okonomiyaki",
@@ -191,7 +199,8 @@
         "pref": "tokyo",
         "ja": "月島もんじゃ"
       }
-    ]
+    ],
+    "local": "Okonomiyaki is soul food in Osaka and the wider Kansai region. Families all over Japan also cook it at home on a hot plate, and supermarkets sell okonomiyaki mixes and ready-made ones."
   },
   {
     "id": "takoyaki",
@@ -205,7 +214,8 @@
         "pref": "osaka",
         "ja": "たこ焼き"
       }
-    ]
+    ],
+    "local": "Takoyaki is Osaka's soul food and is eaten all over Japan. It is a standard at festival food stalls, and it is often said that almost every Osaka household owns a takoyaki pan. Tokyo-style takoyaki, made famous by the Tsukiji Gindaco chain often found in food courts, is cooked with plenty of oil so the outside turns extra crispy."
   },
   {
     "id": "gyoza",
@@ -227,7 +237,8 @@
         "pref": "fukuoka",
         "ja": "鉄なべ餃子"
       }
-    ]
+    ],
+    "local": "Many families make gyoza at home, and supermarkets sell frozen gyoza that cook easily in a frying pan. Gyoza are mainly served at izakaya and Chinese restaurants, and well-known chains include Gyoza no Ohsho and Osaka Ohsho."
   },
   {
     "id": "nikuman",
@@ -271,7 +282,8 @@
         "pref": "ishikawa",
         "ja": "金沢カレー"
       }
-    ]
+    ],
+    "local": "Japanese curry comes with pork, beef or chicken, and it is one of the most common home-cooked meals — every family has its own favorite ingredients. The best-known curry chain is CoCo Ichibanya, where you can choose the spice level and toppings."
   },
   {
     "id": "sukiyaki",
@@ -293,7 +305,8 @@
         "pref": "kanagawa",
         "ja": "牛鍋"
       }
-    ]
+    ],
+    "local": "Many families also make sukiyaki at home for special occasions, such as New Year or celebrations."
   },
   {
     "id": "shabu-shabu",
@@ -311,7 +324,8 @@
         "pref": "toyama",
         "ja": "ぶりしゃぶ"
       }
-    ]
+    ],
+    "local": "Pork is the most common meat for shabu-shabu, especially at home, while restaurants also serve premium beef."
   },
   {
     "id": "oden",
@@ -333,7 +347,8 @@
         "pref": "hyogo",
         "ja": "姫路おでん"
       }
-    ]
+    ],
+    "local": "In winter, convenience stores sell oden from a simmering pot by the counter, so you can pick your favorite pieces. Many families also buy the ingredients at the supermarket and make it at home."
   },
   {
     "id": "tendon",
@@ -369,7 +384,8 @@
         "pref": "kumamoto",
         "ja": "あか牛丼"
       }
-    ]
+    ],
+    "local": "Gyudon is one of the most widely eaten dishes in Japan, and most people eat it at chain restaurants — many office workers grab it for lunch. The big three chains, Sukiya, Yoshinoya and Matsuya, compete for the top spot, and everyone has a favorite. It is also made at home and sold at supermarkets and convenience stores."
   },
   {
     "id": "oyakodon",
@@ -383,7 +399,8 @@
         "pref": "akita",
         "ja": "比内地鶏親子丼"
       }
-    ]
+    ],
+    "local": "The Nakau chain is well known for oyakodon. It is also a common home-cooked dish and is sold at supermarkets and convenience stores."
   },
   {
     "id": "kaisendon",
@@ -405,7 +422,8 @@
         "pref": "ishikawa",
         "ja": "能登丼"
       }
-    ]
+    ],
+    "local": "Almost every area famous for seafood has restaurants serving kaisendon, especially Hokkaido, Toyama, Ishikawa, Shizuoka and Kanagawa. In Tokyo, Toyosu Market has many restaurants serving it."
   },
   {
     "id": "onigiri",
@@ -427,7 +445,8 @@
         "pref": "aichi",
         "ja": "天むす"
       }
-    ]
+    ],
+    "local": "People often make onigiri at home or buy them at a shop and take them to work or school for lunch."
   },
   {
     "id": "miso-soup",
@@ -449,7 +468,8 @@
         "pref": "miyazaki",
         "ja": "冷や汁"
       }
-    ]
+    ],
+    "local": "Miso soup is made at home almost every day in many Japanese families."
   },
   {
     "id": "unagi",
@@ -471,7 +491,8 @@
         "pref": "saitama",
         "ja": "浦和うなぎの蒲焼き"
       }
-    ]
+    ],
+    "local": "The most popular style is unaju, eel served on rice in a square lacquered box. Unadon comes in a bowl and tastes much the same, but usually has less eel. Kanto and Kansai grill eel differently: in the Kanto area it is steamed before grilling for a soft, fluffy texture, while in Kansai it is grilled directly for a crispier finish. Unaju is a luxury usually eaten at restaurants on special days, but beef bowl chains such as Sukiya, Matsuya and Yoshinoya offer more affordable unadon, mainly in summer."
   },
   {
     "id": "wagyu",
@@ -515,7 +536,8 @@
         "pref": "mie",
         "ja": "松阪鶏焼き肉"
       }
-    ]
+    ],
+    "local": "Many families also enjoy yakiniku at home, buying meat sliced for grilling at the supermarket and cooking it on a tabletop hot plate. Besides sweet soy-based sauce, salt-based sauces are also popular."
   },
   {
     "id": "horumon",
@@ -537,7 +559,8 @@
         "pref": "okayama",
         "ja": "津山ホルモンうどん"
       }
-    ]
+    ],
+    "local": "In Tokyo, the Kameido area is famous for its many horumon restaurants."
   },
   {
     "id": "yakisoba",
@@ -555,7 +578,8 @@
         "pref": "akita",
         "ja": "横手やきそば"
       }
-    ]
+    ],
+    "local": "Yakisoba is also a common home-cooked meal. You can buy it ready-made at supermarkets and convenience stores, and instant cup yakisoba such as Nissin U.F.O. and Peyoung is very popular."
   },
   {
     "id": "wagashi",

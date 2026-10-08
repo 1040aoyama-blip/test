@@ -7,11 +7,8 @@ import { langs, type Lang } from '../i18n';
  * 全国のグルメ一覧（src/data/catalog.json）と、料理ごとの説明（src/data/dishes/<言語>/<県>.json）。
  * 都道府県ページはこれをもとに全料理を表示する（料理ごとの個別ページは作らない）。
  */
-export const categories = ['bgourmet', 'local', 'sweets'] as const;
-export type Category = (typeof categories)[number];
-
 type CatalogEntry = { ja: string; en: string } & Partial<Record<Lang, string>>;
-const data = catalog as Record<string, Record<Category, CatalogEntry[]>>;
+const data = catalog as Record<string, CatalogEntry[]>;
 
 export interface Shop {
   /** 店名（この言語での表記） */
@@ -56,11 +53,6 @@ export interface CatalogItem {
   mapQuery: string;
 }
 
-export interface CatalogGroup {
-  category: Category;
-  items: CatalogItem[];
-}
-
 function toAnchor(en: string): string {
   return en
     .split(' (')[0]
@@ -72,59 +64,49 @@ function toAnchor(en: string): string {
     .replace(/^-|-$/g, '');
 }
 
-/** 都道府県の料理一覧を、ジャンルごとに返す（その言語の名前がある料理だけ） */
-export function getCatalog(lang: Lang, prefectureId: string): CatalogGroup[] {
-  const pref = data[prefectureId] ?? {};
+/** 都道府県の料理一覧を返す（その言語の名前がある料理だけ） */
+export function getCatalog(lang: Lang, prefectureId: string): CatalogItem[] {
   const prefName = getPrefecture(prefectureId).name.ja;
-  return categories
-    .map((category) => ({
-      category,
-      items: (pref[category] ?? []).flatMap((entry) => {
-        const name = entry[lang];
-        if (!name) return [];
-        return [
-          {
-            anchor: toAnchor(entry.en),
-            name,
-            ja: entry.ja,
-            info: infos[lang]?.[prefectureId]?.[entry.ja],
-            mapQuery: `${entry.ja} ${prefName}`,
-          },
-        ];
-      }),
-    }))
-    .filter((group) => group.items.length > 0);
+  return (data[prefectureId] ?? []).flatMap((entry) => {
+    const name = entry[lang];
+    if (!name) return [];
+    return [
+      {
+        anchor: toAnchor(entry.en),
+        name,
+        ja: entry.ja,
+        info: infos[lang]?.[prefectureId]?.[entry.ja],
+        mapQuery: `${entry.ja} ${prefName}`,
+      },
+    ];
+  });
 }
 
 export interface CatalogEntryWithPlace extends CatalogItem {
   prefectureId: string;
-  category: Category;
   /** 英語名（言語に関係なく検索に使う） */
   en: string;
 }
 
-/** 全国の料理を、都道府県の順・ジャンルの順に返す（検索ページ用） */
+/** 全国の料理を、都道府県の順に返す（検索ページ用） */
 export function getAllDishes(lang: Lang): CatalogEntryWithPlace[] {
   return prefectures.map((p) => p.id).flatMap((prefectureId) =>
-    getCatalog(lang, prefectureId).flatMap((group) =>
-      group.items.map((item) => ({
-        ...item,
-        prefectureId,
-        category: group.category,
-        en: data[prefectureId][group.category].find((e) => e.ja === item.ja)!.en,
-      })),
-    ),
+    getCatalog(lang, prefectureId).map((item) => ({
+      ...item,
+      prefectureId,
+      en: data[prefectureId].find((e) => e.ja === item.ja)!.en,
+    })),
   );
 }
 
 /** 都道府県ごとの掲載数（その言語の名前がある料理の数） */
 export function countCatalog(lang: Lang, prefectureId: string): number {
-  return categories.reduce((sum, c) => sum + (data[prefectureId]?.[c] ?? []).filter((e) => e[lang]).length, 0);
+  return (data[prefectureId] ?? []).filter((e) => e[lang]).length;
 }
 
 /** 一覧にその料理があるか */
 export function hasDish(prefectureId: string, ja: string): boolean {
-  return categories.some((c) => data[prefectureId]?.[c]?.some((e) => e.ja === ja));
+  return data[prefectureId]?.some((e) => e.ja === ja) ?? false;
 }
 
 /** データの食い違いを確かめる（見つかったらビルドを止める） */
@@ -148,9 +130,7 @@ export interface FeaturedItem extends CatalogItem {
 export function getFeatured(lang: Lang): FeaturedItem[] {
   return featured.flatMap(({ prefecture, ja }) => {
     if (!hasDish(prefecture, ja)) throw new Error(`featured.json の「${ja}」が catalog.json の ${prefecture} にありません`);
-    const item = getCatalog(lang, prefecture)
-      .flatMap((g) => g.items)
-      .find((i) => i.ja === ja);
+    const item = getCatalog(lang, prefecture).find((i) => i.ja === ja);
     return item ? [{ ...item, prefectureId: prefecture }] : [];
   });
 }

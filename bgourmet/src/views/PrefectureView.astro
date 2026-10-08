@@ -17,8 +17,8 @@ interface Props {
 const { lang, prefectureId } = Astro.props;
 const pref = getPrefecture(prefectureId);
 const region = regions.find((r) => r.id === pref.region)!;
-const groups = getCatalog(lang, pref.id);
-const dishCount = groups.reduce((sum, g) => sum + g.items.length, 0);
+const items = getCatalog(lang, pref.id);
+const dishCount = items.length;
 const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
 const intro = getIntro(lang, pref.id);
 const affiliates = getPrefectureAffiliates(lang, pref.id, pref.name[lang]);
@@ -32,34 +32,11 @@ const affiliates = getPrefectureAffiliates(lang, pref.id, pref.name[lang]);
   {intro && <p class="intro">{intro}</p>}
   {dishCount > 0 && <p class="count">{t(lang, 'dishCount', { n: dishCount })}</p>}
 
-  {
-    groups.length > 1 && (
-      <nav class="jump" aria-label={t(lang, 'jumpTo')}>
-        {groups.map((group) => (
-          <a href={`#${group.category}`}>
-            {t(lang, `category_${group.category}`)}
-            <span class="n">{group.items.length}</span>
-          </a>
-        ))}
-      </nav>
-    )
-  }
-
-  {
-    groups.map((group) => (
-      <section class="group" id={group.category}>
-        <h2>
-          {t(lang, `category_${group.category}`)}
-          <span class="n">{group.items.length}</span>
-        </h2>
-        <div class="dishes">
-          {group.items.map((item) => (
-            <DishEntry lang={lang} item={item} />
-          ))}
-        </div>
-      </section>
-    ))
-  }
+  <div class="dishes">
+    {items.map((item) => (
+      <DishEntry lang={lang} item={item} />
+    ))}
+  </div>
 
   {
     affiliates.length > 0 && (
@@ -110,45 +87,6 @@ const affiliates = getPrefectureAffiliates(lang, pref.id, pref.name[lang]);
   .count {
     margin: 0 0 1rem;
     color: var(--muted);
-  }
-  .jump {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  .jump a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.35rem 0.9rem;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: var(--surface);
-    color: var(--text);
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .jump a:hover {
-    border-color: var(--accent);
-  }
-  .group {
-    margin-top: 2rem;
-    scroll-margin-top: 4.5rem;
-  }
-  .group h2 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.25rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 2px solid var(--accent-soft);
-  }
-  .n {
-    padding: 0 0.55rem;
-    border-radius: 999px;
-    background: var(--accent-soft);
-    color: var(--accent);
-    font-size: 0.8rem;
   }
   .dishes {
     display: grid;

@@ -29,9 +29,7 @@ export function getClassics(lang: Lang): Classic[] {
   return (classics as ClassicEntry[]).map((c) => ({
     ...c,
     regional: c.regional.map(({ pref, ja }) => {
-      const item = getCatalog(lang, pref)
-        .flatMap((g) => g.items)
-        .find((i) => i.ja === ja);
+      const item = getCatalog(lang, pref).find((i) => i.ja === ja);
       if (!item) throw new Error(`src/data/classics.json の「${c.id}」のご当地版「${pref} / ${ja}」が catalog.json にありません`);
       return { prefId: pref, prefName: getPrefecture(pref).name[lang], name: item.name, anchor: item.anchor };
     }),

@@ -1,5 +1,5 @@
 import classics from './classics.json';
-import { getCatalog } from './catalog';
+import { getCatalog, type Shop } from './catalog';
 import { getPrefecture } from './prefectures';
 import type { Lang } from '../i18n';
 
@@ -16,6 +16,8 @@ interface ClassicEntry {
   /** 日本での食べられ方（普段の食事・チェーン店・地域の違いなど） */
   local?: string;
   price: string;
+  /** 東京のおすすめ店（3件） */
+  shops?: Shop[];
   /** ご当地版。catalog.json にある料理（県 ID と日本語名） */
   regional: { pref: string; ja: string }[];
 }

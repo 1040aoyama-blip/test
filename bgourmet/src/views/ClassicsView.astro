@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { localizePath, t, type Lang } from '../i18n';
 import { getClassics } from '../data/classics';
+import ShopCard from '../components/ShopCard.astro';
 
 interface Props {
   lang: Lang;
@@ -47,6 +48,16 @@ const description =
               <dd>{c.price}</dd>
             </div>
           </dl>
+          {c.shops && c.shops.length > 0 && (
+            <section class="shops">
+              <h3>Where to try it in Tokyo</h3>
+              <ul>
+                {c.shops.map((shop) => (
+                  <ShopCard lang={lang} shop={shop} />
+                ))}
+              </ul>
+            </section>
+          )}
           <section class="regional">
             <h3>Try a regional version</h3>
             <ul>
@@ -152,6 +163,18 @@ const description =
   .facts dd {
     margin: 0;
     font-weight: 700;
+  }
+  .shops h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 0.95rem;
+  }
+  .shops ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   .regional h3 {
     margin: 1rem 0 0.5rem;

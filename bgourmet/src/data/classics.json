@@ -88,7 +88,27 @@
         "ja": "大村寿司"
       }
     ],
-    "local": "Sushi is not only for special occasions. Supermarkets sell ready-made packs, and many families eat it as an everyday meal, saving high-end counter sushi for birthdays and anniversaries. Nigiri is a bite of rice with a topping pressed on top, gunkan-maki (\"battleship roll\") is rice wrapped in a strip of seaweed to hold loose toppings like salmon roe, and norimaki is a roll with the filling inside the rice and seaweed on the outside. Popular conveyor-belt chains include Sushiro, Kura Sushi and Hama-zushi."
+    "local": "Sushi is not only for special occasions. Supermarkets sell ready-made packs, and many families eat it as an everyday meal, saving high-end counter sushi for birthdays and anniversaries. Nigiri is a bite of rice with a topping pressed on top, gunkan-maki (\"battleship roll\") is rice wrapped in a strip of seaweed to hold loose toppings like salmon roe, and norimaki is a roll with the filling inside the rice and seaweed on the outside. Popular conveyor-belt chains include Sushiro, Kura Sushi and Hama-zushi.",
+    "shops": [
+      {
+        "name": "Sushi Dai (Toyosu Market)",
+        "query": "寿司大 豊洲市場",
+        "comment": "One of the most famous sushi counters at Toyosu fish market. The omakase set is great value, but expect a long line.",
+        "access": "Toyosu Market, near Shijo-mae Station (Yurikamome)"
+      },
+      {
+        "name": "Umegaoka Sushi no Midori (Main Store)",
+        "query": "梅丘寿司の美登利 総本店",
+        "comment": "Known for generous, high-quality sushi at reasonable prices. Lines are common.",
+        "access": "Near Umegaoka Station (Odakyu Line)"
+      },
+      {
+        "name": "Sushi Zanmai Tsukiji Main Store",
+        "query": "すしざんまい 本店 築地",
+        "comment": "A big, friendly chain shop in the Tsukiji Outer Market, open long hours. Easy for first-timers.",
+        "access": "Tsukiji Outer Market, near Tsukiji Station"
+      }
+    ]
   },
   {
     "id": "sashimi",
@@ -171,7 +191,27 @@
         "ja": "鶏刺し"
       }
     ],
-    "local": "Sashimi is an everyday dish too: supermarkets sell fresh packs, and it is a standard menu item at izakaya (Japanese pubs). Near fishing ports, restaurants often serve it as a set meal with rice and miso soup."
+    "local": "Sashimi is an everyday dish too: supermarkets sell fresh packs, and it is a standard menu item at izakaya (Japanese pubs). Near fishing ports, restaurants often serve it as a set meal with rice and miso soup.",
+    "shops": [
+      {
+        "name": "Uokin (Shimbashi)",
+        "query": "魚金 新橋",
+        "comment": "A popular seafood izakaya chain born in Shimbashi, known for huge sashimi platters at fair prices.",
+        "access": "Near Shimbashi Station"
+      },
+      {
+        "name": "Tenfusa (Toyosu Market)",
+        "query": "天房 豊洲市場",
+        "comment": "A market diner serving tuna sashimi set meals and tempura to market workers. Opens early in the morning.",
+        "access": "Toyosu Market, near Shijo-mae Station (Yurikamome)"
+      },
+      {
+        "name": "Tsukiji Outer Market",
+        "query": "築地場外市場",
+        "comment": "Not a single shop, but a market street full of seafood stalls and small restaurants where you can try fresh sashimi.",
+        "access": "Near Tsukiji Station"
+      }
+    ]
   },
   {
     "id": "ramen",
@@ -350,7 +390,27 @@
         "ja": "鹿児島ラーメン"
       }
     ],
-    "local": "Ramen is casual, everyday food, eaten for lunch or dinner. As a national favorite, it is served by countless chains and small independent shops all over Japan, and supermarkets and convenience stores stock a huge range of instant ramen that many people also eat at home."
+    "local": "Ramen is casual, everyday food, eaten for lunch or dinner. As a national favorite, it is served by countless chains and small independent shops all over Japan, and supermarkets and convenience stores stock a huge range of instant ramen that many people also eat at home.",
+    "shops": [
+      {
+        "name": "Harukiya Ogikubo Main Store",
+        "query": "春木屋 荻窪本店",
+        "comment": "A classic shop serving old-style Tokyo shoyu ramen since just after the war.",
+        "access": "Near Ogikubo Station"
+      },
+      {
+        "name": "AFURI Ebisu",
+        "query": "AFURI 恵比寿",
+        "comment": "Famous for its light yuzu shio ramen. Order from a ticket machine with English.",
+        "access": "Near Ebisu Station"
+      },
+      {
+        "name": "Rokurinsha (Tokyo Ramen Street)",
+        "query": "六厘舎 東京ラーメンストリート",
+        "comment": "A top spot for tsukemen (dipping noodles), with thick noodles and a rich pork-and-fish broth.",
+        "access": "Inside Tokyo Station, Yaesu side"
+      }
+    ]
   },
   {
     "id": "tempura",
@@ -385,7 +445,27 @@
         "ja": "とり天"
       }
     ],
-    "local": "Many families make tempura at home or buy it ready-made at the supermarket. It is also a common side dish with soba and udon, while high-end tempura restaurants fry each piece in front of you at the counter."
+    "local": "Many families make tempura at home or buy it ready-made at the supermarket. It is also a common side dish with soba and udon, while high-end tempura restaurants fry each piece in front of you at the counter.",
+    "shops": [
+      {
+        "name": "Tempura Tsunahachi Shinjuku Main Store",
+        "query": "天ぷら新宿つな八 総本店",
+        "comment": "A long-established tempura shop with reasonable lunch sets, fried in front of you at the counter.",
+        "access": "Near Shinjuku Station, East Exit"
+      },
+      {
+        "name": "Funabashiya Shinjuku Main Store",
+        "query": "天ぷら 船橋屋 新宿本店",
+        "comment": "A long-established tempura restaurant in Shinjuku with a calm, traditional atmosphere.",
+        "access": "Near Shinjuku Station, East Exit"
+      },
+      {
+        "name": "Ginza Tenkuni",
+        "query": "銀座 天國",
+        "comment": "A tempura restaurant in Ginza since the Meiji era, known for its tendon and tempura set meals.",
+        "access": "Near Ginza Station"
+      }
+    ]
   },
   {
     "id": "soba",
@@ -464,7 +544,27 @@
         "ja": "祖谷そば"
       }
     ],
-    "local": "Zaru soba is served cold on a bamboo tray with a dipping sauce, and many shops let you choose a plain sauce, one with duck, or a curry-flavored one. Kake soba comes in hot broth, often topped with mountain vegetables, mushrooms or tempura. Soba chains are found near many train stations, such as Fuji Soba and Hakone Soba in the Tokyo area. People also cook dried soba at home, and instant cup soba is easy to find."
+    "local": "Zaru soba is served cold on a bamboo tray with a dipping sauce, and many shops let you choose a plain sauce, one with duck, or a curry-flavored one. Kake soba comes in hot broth, often topped with mountain vegetables, mushrooms or tempura. Soba chains are found near many train stations, such as Fuji Soba and Hakone Soba in the Tokyo area. People also cook dried soba at home, and instant cup soba is easy to find.",
+    "shops": [
+      {
+        "name": "Kanda Yabu Soba",
+        "query": "かんだやぶそば",
+        "comment": "One of Tokyo's most famous old soba shops, known for green-tinted noodles and a strong dipping sauce.",
+        "access": "Near Awajicho Station / Kanda"
+      },
+      {
+        "name": "Kanda Matsuya",
+        "query": "神田まつや",
+        "comment": "A classic soba shop in a historic building. Try the zaru soba or the duck soba.",
+        "access": "Near Awajicho Station / Kanda"
+      },
+      {
+        "name": "Muromachi Sunaba",
+        "query": "室町砂場",
+        "comment": "An old soba shop in Nihonbashi said to be where tenzaru (cold soba with tempura) was born.",
+        "access": "Near Mitsukoshimae Station"
+      }
+    ]
   },
   {
     "id": "udon",
@@ -571,7 +671,27 @@
         "ja": "魚うどん"
       }
     ],
-    "local": "Kagawa Prefecture, known as the \"Udon Prefecture,\" has by far the most udon shops per person in Japan and many ways to eat it. The broth also differs by region: in the Kanto area (around Tokyo) it is dark and soy-based, while in Kansai (around Osaka and Kyoto) it is light golden and dashi-based. Outside Kagawa, udon is usually served hot in broth (kake udon), and sometimes cold with a dipping sauce (zaru udon). Tempura is a popular side, and people often cook dried or frozen udon at home. For Sanuki-style udon outside Kagawa, try the Marugame Seimen chain."
+    "local": "Kagawa Prefecture, known as the \"Udon Prefecture,\" has by far the most udon shops per person in Japan and many ways to eat it. The broth also differs by region: in the Kanto area (around Tokyo) it is dark and soy-based, while in Kansai (around Osaka and Kyoto) it is light golden and dashi-based. Outside Kagawa, udon is usually served hot in broth (kake udon), and sometimes cold with a dipping sauce (zaru udon). Tempura is a popular side, and people often cook dried or frozen udon at home. For Sanuki-style udon outside Kagawa, try the Marugame Seimen chain.",
+    "shops": [
+      {
+        "name": "Udon Maruka",
+        "query": "うどん 丸香",
+        "comment": "Often called one of the best Sanuki-style udon shops in Tokyo. Firm, chewy noodles and a long line at lunch.",
+        "access": "Near Jimbocho Station"
+      },
+      {
+        "name": "Udon Shin",
+        "query": "うどん 慎",
+        "comment": "Freshly made udon cut to order. Famous for its butter-and-egg udon.",
+        "access": "Near Shinjuku Station, South Exit"
+      },
+      {
+        "name": "Sanuki Udon Taniya",
+        "query": "谷や 人形町",
+        "comment": "Udon made by a chef trained in Kagawa, the home of Sanuki udon. You can watch noodles being made through the glass.",
+        "access": "Near Ningyocho Station"
+      }
+    ]
   },
   {
     "id": "tonkatsu",
@@ -630,7 +750,27 @@
         "ja": "黒豚とんかつ"
       }
     ],
-    "local": "Tonkatsu comes in different cuts, such as fatty loin (rosu) and lean fillet (hire), each with its own flavor and texture. It is also an everyday home-cooked dish, and you can buy it ready-made at supermarkets and at butcher shops in local shopping streets."
+    "local": "Tonkatsu comes in different cuts, such as fatty loin (rosu) and lean fillet (hire), each with its own flavor and texture. It is also an everyday home-cooked dish, and you can buy it ready-made at supermarkets and at butcher shops in local shopping streets.",
+    "shops": [
+      {
+        "name": "Tonkatsu Maisen Aoyama Main Store",
+        "query": "とんかつ まい泉 青山本店",
+        "comment": "Famous for very tender tonkatsu, served in a former bathhouse building.",
+        "access": "Near Omotesando Station"
+      },
+      {
+        "name": "Tonkatsu Isen Main Store",
+        "query": "とんかつ 井泉 本店",
+        "comment": "Said to be where soft tonkatsu that can be cut with chopsticks began. Also known for katsu sandwiches.",
+        "access": "Near Yushima Station / Ueno-hirokoji"
+      },
+      {
+        "name": "Tonkatsu Marugo",
+        "query": "とんかつ 丸五",
+        "comment": "A popular tonkatsu shop in Akihabara with thick, juicy cutlets.",
+        "access": "Near Akihabara Station"
+      }
+    ]
   },
   {
     "id": "yakitori",
@@ -657,7 +797,27 @@
         "ja": "博多とりかわ"
       }
     ],
-    "local": "Besides chicken thigh, yakitori shops grill skin, organs and many other parts, as well as vegetables. Basic yakitori is also sold at supermarkets and convenience stores, and frozen yakitori heated in the microwave is common at home. In the Tokyo area, Noge in Yokohama is packed with yakitori bars. In Fukuoka, try Hakata-style torikawa: chicken skin wound around a skewer and grilled repeatedly until crispy — it is well worth trying."
+    "local": "Besides chicken thigh, yakitori shops grill skin, organs and many other parts, as well as vegetables. Basic yakitori is also sold at supermarkets and convenience stores, and frozen yakitori heated in the microwave is common at home. In the Tokyo area, Noge in Yokohama is packed with yakitori bars. In Fukuoka, try Hakata-style torikawa: chicken skin wound around a skewer and grilled repeatedly until crispy — it is well worth trying.",
+    "shops": [
+      {
+        "name": "Isehiro Kyobashi Main Store",
+        "query": "伊勢廣 京橋本店",
+        "comment": "A yakitori shop since the Taisho era. The lunch bowl topped with five kinds of skewers is popular.",
+        "access": "Near Kyobashi Station / Tokyo Station"
+      },
+      {
+        "name": "Torigin Ginza Main Store",
+        "query": "鳥ぎん 銀座本店",
+        "comment": "A casual, old yakitori shop in Ginza, also known for kamameshi (rice cooked in a small pot).",
+        "access": "Near Ginza Station"
+      },
+      {
+        "name": "Omoide Yokocho (Shinjuku)",
+        "query": "思い出横丁 新宿",
+        "comment": "Not a single shop, but a narrow alley packed with tiny yakitori bars full of old Tokyo atmosphere.",
+        "access": "Near Shinjuku Station, West Exit"
+      }
+    ]
   },
   {
     "id": "okonomiyaki",
@@ -692,7 +852,27 @@
         "ja": "お好み焼き"
       }
     ],
-    "local": "Okonomiyaki is soul food in Osaka and the wider Kansai region. Families all over Japan also cook it at home on a hot plate, and supermarkets sell okonomiyaki mixes and ready-made ones."
+    "local": "Okonomiyaki is soul food in Osaka and the wider Kansai region. Families all over Japan also cook it at home on a hot plate, and supermarkets sell okonomiyaki mixes and ready-made ones.",
+    "shops": [
+      {
+        "name": "Asakusa Sometaro",
+        "query": "浅草 染太郎",
+        "comment": "A historic okonomiyaki shop where you cook at your own table. Staff will help first-timers.",
+        "access": "Near Tawaramachi Station / Asakusa"
+      },
+      {
+        "name": "Hiroshima Okonomiyaki Denko Sekka (Tokyo Station)",
+        "query": "電光石火 東京駅",
+        "comment": "Hiroshima-style okonomiyaki, layered with noodles, cooked for you on the grill.",
+        "access": "Near Tokyo Station, Yaesu side"
+      },
+      {
+        "name": "Chibo Ikebukuro",
+        "query": "千房 池袋",
+        "comment": "An Osaka-style okonomiyaki chain. Staff cook it for you on the hot plate.",
+        "access": "Seibu Ikebukuro department store, Ikebukuro Station"
+      }
+    ]
   },
   {
     "id": "takoyaki",
@@ -711,7 +891,27 @@
         "ja": "明石焼"
       }
     ],
-    "local": "Takoyaki is Osaka's soul food and is eaten all over Japan. It is a standard at festival food stalls, and it is often said that almost every Osaka household owns a takoyaki pan. Tokyo-style takoyaki, made famous by the Tsukiji Gindaco chain often found in food courts, is cooked with plenty of oil so the outside turns extra crispy."
+    "local": "Takoyaki is Osaka's soul food and is eaten all over Japan. It is a standard at festival food stalls, and it is often said that almost every Osaka household owns a takoyaki pan. Tokyo-style takoyaki, made famous by the Tsukiji Gindaco chain often found in food courts, is cooked with plenty of oil so the outside turns extra crispy.",
+    "shops": [
+      {
+        "name": "Gindaco",
+        "query": "築地銀だこ",
+        "comment": "Japan's biggest takoyaki chain, with shops at stations and malls all over Tokyo. Crispy outside and soft inside.",
+        "access": "Many locations across Tokyo"
+      },
+      {
+        "name": "Takoyaki Juhachiban",
+        "query": "たこ焼き 十八番 麻布十番",
+        "comment": "A small, popular takeaway takoyaki stand in Azabu-Juban.",
+        "access": "Near Azabu-Juban Station"
+      },
+      {
+        "name": "Odaiba Takoyaki Museum",
+        "query": "お台場たこ焼きミュージアム",
+        "comment": "A food court with several famous takoyaki shops from Osaka, so you can compare styles.",
+        "access": "DECKS Tokyo Beach, near Odaiba-kaihinkoen Station"
+      }
+    ]
   },
   {
     "id": "gyoza",
@@ -750,7 +950,27 @@
         "ja": "宮崎ぎょうざ"
       }
     ],
-    "local": "Many families make gyoza at home, and supermarkets sell frozen gyoza that cook easily in a frying pan. Gyoza are mainly served at izakaya and Chinese restaurants, and well-known chains include Gyoza no Ohsho and Osaka Ohsho."
+    "local": "Many families make gyoza at home, and supermarkets sell frozen gyoza that cook easily in a frying pan. Gyoza are mainly served at izakaya and Chinese restaurants, and well-known chains include Gyoza no Ohsho and Osaka Ohsho.",
+    "shops": [
+      {
+        "name": "Kameido Gyoza Main Store",
+        "query": "亀戸餃子 本店",
+        "comment": "A long-running gyoza-only shop. Plates keep coming until you say stop; you must order at least two plates.",
+        "access": "Near Kameido Station"
+      },
+      {
+        "name": "Nihao Main Store (Kamata)",
+        "query": "你好 本店 蒲田",
+        "comment": "Kamata is famous for hanetsuki gyoza (gyoza with a crispy 'wing'), and this is one of its best-known shops.",
+        "access": "Near Kamata Station"
+      },
+      {
+        "name": "Kankei (Kamata)",
+        "query": "歓迎 本店 蒲田",
+        "comment": "Another famous hanetsuki gyoza shop in Kamata, run by a family related to Nihao.",
+        "access": "Near Kamata Station"
+      }
+    ]
   },
   {
     "id": "nikuman",
@@ -771,6 +991,26 @@
       {
         "pref": "nagasaki",
         "ja": "長崎角煮まんじゅう"
+      }
+    ],
+    "shops": [
+      {
+        "name": "Bonna Shinjuku Nakamuraya",
+        "query": "Bonna 新宿中村屋",
+        "comment": "Nakamuraya is said to be the first company in Japan to sell chuka-man (steamed buns). The shop sells buns and sweets.",
+        "access": "Near Shinjuku Station, East Exit"
+      },
+      {
+        "name": "Raya Tokyo Butaman (Shinagawa)",
+        "query": "羅家 東京豚饅 品川",
+        "comment": "A butaman shop started by the grandson of the founder of Osaka's famous 551 Horai.",
+        "access": "Near Shinagawa Station"
+      },
+      {
+        "name": "Lukang (Sakura-shinmachi)",
+        "query": "鹿港 桜新町",
+        "comment": "A small shop making Taiwanese-style meat buns by hand.",
+        "access": "Near Sakura-shinmachi Station"
       }
     ]
   },
@@ -819,7 +1059,27 @@
         "ja": "門司港焼きカレー"
       }
     ],
-    "local": "Japanese curry comes with pork, beef or chicken, and it is one of the most common home-cooked meals — every family has its own favorite ingredients. The best-known curry chain is CoCo Ichibanya, where you can choose the spice level and toppings."
+    "local": "Japanese curry comes with pork, beef or chicken, and it is one of the most common home-cooked meals — every family has its own favorite ingredients. The best-known curry chain is CoCo Ichibanya, where you can choose the spice level and toppings.",
+    "shops": [
+      {
+        "name": "Shinjuku Nakamuraya Manna",
+        "query": "新宿中村屋 Manna",
+        "comment": "The restaurant said to have served Japan's first Indian-style curry, in the early Showa era.",
+        "access": "Near Shinjuku Station, East Exit"
+      },
+      {
+        "name": "Bondy Jimbocho Main Store",
+        "query": "ボンディ 神保町本店",
+        "comment": "A famous European-style curry shop in the bookstore district. Potatoes with butter come first.",
+        "access": "Near Jimbocho Station"
+      },
+      {
+        "name": "Kyoeido",
+        "query": "共栄堂 神保町",
+        "comment": "A Jimbocho curry shop since the Taisho era, known for its dark, spicy Sumatra-style curry.",
+        "access": "Near Jimbocho Station"
+      }
+    ]
   },
   {
     "id": "sukiyaki",
@@ -846,7 +1106,27 @@
         "ja": "近江牛すき焼き"
       }
     ],
-    "local": "Many families also make sukiyaki at home for special occasions, such as New Year or celebrations."
+    "local": "Many families also make sukiyaki at home for special occasions, such as New Year or celebrations.",
+    "shops": [
+      {
+        "name": "Ningyocho Imahan Main Store",
+        "query": "人形町今半 本店",
+        "comment": "A well-known sukiyaki restaurant using top wagyu. Staff cook the first pieces for you.",
+        "access": "Near Ningyocho Station"
+      },
+      {
+        "name": "Asakusa Imahan Main Store",
+        "query": "浅草今半 本店",
+        "comment": "A sukiyaki restaurant founded in the Meiji era. Lunch sets are a more affordable way to try it.",
+        "access": "Near Tawaramachi Station / Asakusa"
+      },
+      {
+        "name": "Chinya Asakusa",
+        "query": "ちんや 浅草本店",
+        "comment": "Asakusa's oldest sukiyaki restaurant, founded in the Meiji era. It has its own butcher shop next door.",
+        "access": "Near Asakusa Station"
+      }
+    ]
   },
   {
     "id": "shabu-shabu",
@@ -865,7 +1145,27 @@
         "ja": "黒豚しゃぶしゃぶ"
       }
     ],
-    "local": "Pork is the most common meat for shabu-shabu, especially at home, while restaurants also serve premium beef."
+    "local": "Pork is the most common meat for shabu-shabu, especially at home, while restaurants also serve premium beef.",
+    "shops": [
+      {
+        "name": "Zakuro Muromachi",
+        "query": "ざくろ 室町店",
+        "comment": "Zakuro is said to be the first restaurant to bring shabu-shabu to Tokyo. English menu available.",
+        "access": "COREDO Muromachi, near Mitsukoshimae Station"
+      },
+      {
+        "name": "Shabusen Ginza",
+        "query": "しゃぶせん 銀座",
+        "comment": "A shabu-shabu restaurant from the same group as Zakuro, with counter seats and individual pots.",
+        "access": "Ginza Core building, near Ginza Station"
+      },
+      {
+        "name": "Kisoji",
+        "query": "木曽路",
+        "comment": "A shabu-shabu and sukiyaki chain with many branches in Tokyo. Good for families and groups.",
+        "access": "Many locations across Tokyo"
+      }
+    ]
   },
   {
     "id": "oden",
@@ -892,7 +1192,27 @@
         "ja": "姫路おでん"
       }
     ],
-    "local": "In winter, convenience stores sell oden from a simmering pot by the counter, so you can pick your favorite pieces. Many families also buy the ingredients at the supermarket and make it at home."
+    "local": "In winter, convenience stores sell oden from a simmering pot by the counter, so you can pick your favorite pieces. Many families also buy the ingredients at the supermarket and make it at home.",
+    "shops": [
+      {
+        "name": "Otako Main Store",
+        "query": "お多幸 本店 日本橋",
+        "comment": "An oden restaurant since the Taisho era, with dark, rich Kanto-style broth. Try the tofu on rice.",
+        "access": "Near Nihonbashi Station"
+      },
+      {
+        "name": "Otafuku Asakusa",
+        "query": "浅草おでん 大多福",
+        "comment": "An oden restaurant in Asakusa since the Taisho era, known for its light, tasty broth.",
+        "access": "North of Senso-ji Temple, Asakusa"
+      },
+      {
+        "name": "Convenience stores",
+        "query": "コンビニのおでん",
+        "comment": "In autumn and winter, almost every convenience store sells oden by the piece at the counter.",
+        "access": "Everywhere in Tokyo"
+      }
+    ]
   },
   {
     "id": "tendon",
@@ -909,6 +1229,26 @@
       {
         "pref": "toyama",
         "ja": "白えび天丼"
+      }
+    ],
+    "shops": [
+      {
+        "name": "Kaneko Hannosuke Nihonbashi Main Store",
+        "query": "日本橋 天丼 金子半之助",
+        "comment": "A very popular tendon shop with a huge, generous bowl. Expect a line.",
+        "access": "Near Mitsukoshimae Station / Nihonbashi"
+      },
+      {
+        "name": "Daikokuya Tempura",
+        "query": "大黒家天麩羅 浅草",
+        "comment": "An Asakusa tendon shop since the Meiji era, known for tempura soaked in a dark, sweet sauce.",
+        "access": "Near Asakusa Station"
+      },
+      {
+        "name": "Dote no Iseya",
+        "query": "土手の伊勢屋",
+        "comment": "A tendon shop in a historic wooden building, open since the Meiji era.",
+        "access": "Near Minowa Station"
       }
     ]
   },
@@ -933,7 +1273,27 @@
         "ja": "あか牛丼"
       }
     ],
-    "local": "Gyudon is one of the most widely eaten dishes in Japan, and most people eat it at chain restaurants — many office workers grab it for lunch. The big three chains, Sukiya, Yoshinoya and Matsuya, compete for the top spot, and everyone has a favorite. It is also made at home and sold at supermarkets and convenience stores."
+    "local": "Gyudon is one of the most widely eaten dishes in Japan, and most people eat it at chain restaurants — many office workers grab it for lunch. The big three chains, Sukiya, Yoshinoya and Matsuya, compete for the top spot, and everyone has a favorite. It is also made at home and sold at supermarkets and convenience stores.",
+    "shops": [
+      {
+        "name": "Yoshinoya Toyosu Market",
+        "query": "吉野家 豊洲市場店",
+        "comment": "The successor to the famous Tsukiji No. 1 shop of Yoshinoya, the chain that made gyudon popular.",
+        "access": "Toyosu Market, near Shijo-mae Station (Yurikamome)"
+      },
+      {
+        "name": "Gyudon Sanbo",
+        "query": "牛丼 サンボ 秋葉原",
+        "comment": "An old-school independent gyudon shop in Akihabara. Cash only.",
+        "access": "Near Suehirocho Station / Akihabara"
+      },
+      {
+        "name": "Matsuya",
+        "query": "松屋",
+        "comment": "A big gyudon chain open early to late at many stations. Order from an English touch-screen machine.",
+        "access": "Many locations across Tokyo"
+      }
+    ]
   },
   {
     "id": "oyakodon",
@@ -956,7 +1316,27 @@
         "ja": "衣笠丼"
       }
     ],
-    "local": "The Nakau chain is well known for oyakodon. It is also a common home-cooked dish and is sold at supermarkets and convenience stores."
+    "local": "The Nakau chain is well known for oyakodon. It is also a common home-cooked dish and is sold at supermarkets and convenience stores.",
+    "shops": [
+      {
+        "name": "Tamahide",
+        "query": "玉ひで 人形町",
+        "comment": "A chicken restaurant founded in the Edo period, said to be where oyakodon was born.",
+        "access": "Near Ningyocho Station"
+      },
+      {
+        "name": "Toritsune Shizendo",
+        "query": "鳥つね 自然洞 湯島",
+        "comment": "A chicken specialist known for a rich, soft and creamy oyakodon.",
+        "access": "Near Yushima Station / Ueno-hirokoji"
+      },
+      {
+        "name": "Torito (Tsukiji Outer Market)",
+        "query": "築地 鳥藤",
+        "comment": "A chicken shop in Tsukiji Outer Market serving oyakodon and chicken rice bowls.",
+        "access": "Tsukiji Outer Market, near Tsukiji Station"
+      }
+    ]
   },
   {
     "id": "kaisendon",
@@ -1011,7 +1391,27 @@
         "ja": "勝浦まぐろ丼"
       }
     ],
-    "local": "Almost every area famous for seafood has restaurants serving kaisendon, especially Hokkaido, Toyama, Ishikawa, Shizuoka and Kanagawa. In Tokyo, Toyosu Market has many restaurants serving it."
+    "local": "Almost every area famous for seafood has restaurants serving kaisendon, especially Hokkaido, Toyama, Ishikawa, Shizuoka and Kanagawa. In Tokyo, Toyosu Market has many restaurants serving it.",
+    "shops": [
+      {
+        "name": "Tsujihan Nihonbashi Main Store",
+        "query": "日本橋 海鮮丼 つじ半",
+        "comment": "Famous for one 'luxury' bowl piled with chopped seafood, finished as sea bream rice in broth.",
+        "access": "Near Nihonbashi Station"
+      },
+      {
+        "name": "Kaisendon Oedo (Tsukiji)",
+        "query": "海鮮丼 大江戸 築地",
+        "comment": "A Tsukiji Outer Market shop with a long menu of seafood bowls.",
+        "access": "Tsukiji Outer Market, near Tsukiji Station"
+      },
+      {
+        "name": "Toyosu Senkyaku Banrai",
+        "query": "豊洲 千客万来",
+        "comment": "A food hall next to Toyosu Market with many seafood bowl shops in one place.",
+        "access": "Near Shijo-mae Station (Yurikamome)"
+      }
+    ]
   },
   {
     "id": "onigiri",
@@ -1042,7 +1442,27 @@
         "ja": "ポークたまごおにぎり"
       }
     ],
-    "local": "People often make onigiri at home or buy them at a shop and take them to work or school for lunch."
+    "local": "People often make onigiri at home or buy them at a shop and take them to work or school for lunch.",
+    "shops": [
+      {
+        "name": "Onigiri Asakusa Yadoroku",
+        "query": "おにぎり浅草宿六",
+        "comment": "Said to be Tokyo's oldest onigiri shop, and listed in the Michelin Guide's Bib Gourmand.",
+        "access": "Near Asakusa Station (Tsukuba Express)"
+      },
+      {
+        "name": "Bongo",
+        "query": "おにぎり ぼんご 大塚",
+        "comment": "Famous for big, loosely packed onigiri with lots of fillings. Lines can be very long.",
+        "access": "Near Otsuka Station"
+      },
+      {
+        "name": "Convenience stores",
+        "query": "コンビニのおにぎり",
+        "comment": "Onigiri at 7-Eleven, FamilyMart and Lawson are cheap and good. Pull the numbered tabs to unwrap.",
+        "access": "Everywhere in Tokyo"
+      }
+    ]
   },
   {
     "id": "miso-soup",
@@ -1085,7 +1505,27 @@
         "ja": "さつま汁"
       }
     ],
-    "local": "Miso soup is made at home almost every day in many Japanese families."
+    "local": "Miso soup is made at home almost every day in many Japanese families.",
+    "shops": [
+      {
+        "name": "Misogen Jiyugaoka",
+        "query": "美噌元 自由が丘本店",
+        "comment": "A miso soup specialist where you can choose from soups made with miso from around Japan.",
+        "access": "Near Jiyugaoka Station"
+      },
+      {
+        "name": "MISOJYU Asakusa",
+        "query": "MISOJYU 浅草",
+        "comment": "A miso soup shop near Senso-ji, with set meals and onigiri. Good for breakfast.",
+        "access": "Near Asakusa Station"
+      },
+      {
+        "name": "Otoya",
+        "query": "大戸屋",
+        "comment": "A set-meal chain where every meal comes with rice and miso soup. A good way to try an everyday Japanese meal.",
+        "access": "Many locations across Tokyo"
+      }
+    ]
   },
   {
     "id": "unagi",
@@ -1112,7 +1552,27 @@
         "ja": "柳川うなぎのせいろ蒸し"
       }
     ],
-    "local": "The most popular style is unaju, eel served on rice in a square lacquered box. Unadon comes in a bowl and tastes much the same, but usually has less eel. Kanto and Kansai grill eel differently: in the Kanto area it is steamed before grilling for a soft, fluffy texture, while in Kansai it is grilled directly for a crispier finish. Unaju is a luxury usually eaten at restaurants on special days, but beef bowl chains such as Sukiya, Matsuya and Yoshinoya offer more affordable unadon, mainly in summer."
+    "local": "The most popular style is unaju, eel served on rice in a square lacquered box. Unadon comes in a bowl and tastes much the same, but usually has less eel. Kanto and Kansai grill eel differently: in the Kanto area it is steamed before grilling for a soft, fluffy texture, while in Kansai it is grilled directly for a crispier finish. Unaju is a luxury usually eaten at restaurants on special days, but beef bowl chains such as Sukiya, Matsuya and Yoshinoya offer more affordable unadon, mainly in summer.",
+    "shops": [
+      {
+        "name": "Nodaiwa Azabu Iikura Main Store",
+        "query": "野田岩 麻布飯倉本店",
+        "comment": "An eel restaurant founded in the Edo period, known for wild eel in season.",
+        "access": "Near Akabanebashi Station / Kamiyacho Station"
+      },
+      {
+        "name": "Obana",
+        "query": "尾花 南千住",
+        "comment": "A famous eel restaurant serving unaju in a traditional tatami room. Expect a wait.",
+        "access": "Near Minami-senju Station"
+      },
+      {
+        "name": "Komagata Maekawa",
+        "query": "駒形 前川",
+        "comment": "An eel restaurant by the Sumida River since the Edo period, with river views.",
+        "access": "Near Asakusa Station"
+      }
+    ]
   },
   {
     "id": "wagyu",
@@ -1170,6 +1630,26 @@
         "pref": "miyazaki",
         "ja": "宮崎牛ステーキ"
       }
+    ],
+    "shops": [
+      {
+        "name": "Steak House Hama Roppongi",
+        "query": "ステーキハウス ハマ 六本木本店",
+        "comment": "Said to be one of the first teppanyaki steak houses. Chefs cook wagyu in front of you.",
+        "access": "Near Roppongi Station"
+      },
+      {
+        "name": "Ginza Yoshizawa",
+        "query": "銀座 吉澤",
+        "comment": "A wagyu restaurant run by a butcher shop, serving sukiyaki and other beef dishes.",
+        "access": "Ginza 1-chome, near Ginza-itchome Station"
+      },
+      {
+        "name": "Meat Yazawa",
+        "query": "ミート矢澤 五反田",
+        "comment": "A restaurant run by a meat wholesaler, famous for its wagyu hamburger steak.",
+        "access": "Near Gotanda Station"
+      }
     ]
   },
   {
@@ -1209,7 +1689,27 @@
         "ja": "松阪鶏焼き肉"
       }
     ],
-    "local": "Many families also enjoy yakiniku at home, buying meat sliced for grilling at the supermarket and cooking it on a tabletop hot plate. Besides sweet soy-based sauce, salt-based sauces are also popular."
+    "local": "Many families also enjoy yakiniku at home, buying meat sliced for grilling at the supermarket and cooking it on a tabletop hot plate. Besides sweet soy-based sauce, salt-based sauces are also popular.",
+    "shops": [
+      {
+        "name": "Jojoen",
+        "query": "叙々苑",
+        "comment": "A well-known yakiniku chain with many branches in Tokyo. Lunch sets are good value.",
+        "access": "Many locations across Tokyo"
+      },
+      {
+        "name": "Sumibiyakiniku Nakahara",
+        "query": "炭火焼肉 なかはら 市ヶ谷",
+        "comment": "A top yakiniku restaurant known for rare cuts of wagyu. Book ahead.",
+        "access": "Near Ichigaya Station"
+      },
+      {
+        "name": "Yakiniku Toraji",
+        "query": "焼肉 トラジ",
+        "comment": "A yakiniku chain with many branches in Tokyo, popular for its beef tongue.",
+        "access": "Many locations across Tokyo"
+      }
+    ]
   },
   {
     "id": "horumon",
@@ -1244,7 +1744,27 @@
         "ja": "博多もつ鍋"
       }
     ],
-    "local": "In Tokyo, the Kameido area is famous for its many horumon restaurants."
+    "local": "In Tokyo, the Kameido area is famous for its many horumon restaurants.",
+    "shops": [
+      {
+        "name": "Kameido Horumon Main Store",
+        "query": "亀戸ホルモン 本店",
+        "comment": "The shop that started the horumon boom in Kameido. Very fresh offal grilled over charcoal.",
+        "access": "Near Kameido Station"
+      },
+      {
+        "name": "Horumon Masaru",
+        "query": "ホルモンまさる 三田",
+        "comment": "A horumon shop picked for Tabelog's Yakiniku Tokyo Top 100 list. Book ahead.",
+        "access": "Near Tamachi Station / Mita Station"
+      },
+      {
+        "name": "Yamadaya (Mikawashima)",
+        "query": "山田屋 三河島",
+        "comment": "An old horumon shop in Mikawashima, known for very fresh offal.",
+        "access": "Near Mikawashima Station"
+      }
+    ]
   },
   {
     "id": "yakisoba",
@@ -1295,7 +1815,27 @@
         "ja": "日田やきそば"
       }
     ],
-    "local": "Yakisoba is also a common home-cooked meal. You can buy it ready-made at supermarkets and convenience stores, and instant cup yakisoba such as Nissin U.F.O. and Peyoung is very popular."
+    "local": "Yakisoba is also a common home-cooked meal. You can buy it ready-made at supermarkets and convenience stores, and instant cup yakisoba such as Nissin U.F.O. and Peyoung is very popular.",
+    "shops": [
+      {
+        "name": "Jimbocho Yakisoba Mikasa",
+        "query": "神保町やきそば みかさ",
+        "comment": "A yakisoba-only shop with sauce and salt versions, topped with a soft-boiled egg.",
+        "access": "Near Jimbocho Station"
+      },
+      {
+        "name": "Apetito (Itabashi)",
+        "query": "あぺたいと 本店 板橋",
+        "comment": "Famous for yakisoba fried on both sides until crispy.",
+        "access": "Near Takashimadaira Station"
+      },
+      {
+        "name": "Ichiban Hanten (Takadanobaba)",
+        "query": "一番飯店 高田馬場",
+        "comment": "A long-running Chinese restaurant, known for its Shanghai-style yakisoba.",
+        "access": "Near Takadanobaba Station"
+      }
+    ]
   },
   {
     "id": "wagashi",
@@ -1552,6 +2092,26 @@
       {
         "pref": "okinawa",
         "ja": "沖縄ぜんざい"
+      }
+    ],
+    "shops": [
+      {
+        "name": "Toraya Akasaka",
+        "query": "とらや 赤坂店",
+        "comment": "A wagashi maker with about 500 years of history, famous for yokan. There is a cafe in the shop.",
+        "access": "Near Akasaka-mitsuke Station"
+      },
+      {
+        "name": "Asakusa Umezono",
+        "query": "浅草 梅園",
+        "comment": "A sweets cafe in Asakusa since the Edo period, known for awa-zenzai and anmitsu.",
+        "access": "Near Asakusa Station"
+      },
+      {
+        "name": "Usagiya (Ueno)",
+        "query": "うさぎや 上野",
+        "comment": "A famous dorayaki shop. The pancakes are soft and the bean paste is freshly made.",
+        "access": "Near Ueno-hirokoji Station / Okachimachi Station"
       }
     ]
   }

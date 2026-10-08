@@ -282,10 +282,6 @@
         "ja": "台湾まぜそば"
       },
       {
-        "pref": "shiga",
-        "ja": "近江ちゃんぽん"
-      },
-      {
         "pref": "kyoto",
         "ja": "京都ラーメン"
       },
@@ -330,10 +326,6 @@
         "ja": "徳島ラーメン"
       },
       {
-        "pref": "ehime",
-        "ja": "八幡浜ちゃんぽん"
-      },
-      {
         "pref": "kochi",
         "ja": "須崎鍋焼きラーメン"
       },
@@ -348,10 +340,6 @@
       {
         "pref": "saga",
         "ja": "佐賀ラーメン"
-      },
-      {
-        "pref": "nagasaki",
-        "ja": "ちゃんぽん"
       },
       {
         "pref": "kumamoto",
@@ -513,10 +501,6 @@
       {
         "pref": "toyama",
         "ja": "氷見うどん"
-      },
-      {
-        "pref": "yamanashi",
-        "ja": "ほうとう"
       },
       {
         "pref": "yamanashi",
@@ -1305,10 +1289,6 @@
       {
         "pref": "okayama",
         "ja": "ひるぜん焼そば"
-      },
-      {
-        "pref": "nagasaki",
-        "ja": "皿うどん"
       },
       {
         "pref": "oita",

@@ -10,6 +10,8 @@ interface Props {
 
 const { lang } = Astro.props;
 const classics = getClassics(lang);
+// 「Googleマップで探す」は東京で検索する（おすすめ店と同じく東京向け）
+const mapsHref = (ja: string) => `https://www.google.com/maps/search/?${new URLSearchParams({ api: '1', query: `${ja} 東京` })}`;
 const title = 'Classic Japanese Food';
 const description =
   'A guide to classic Japanese dishes, from sushi and ramen to tempura and wagyu, with links to regional versions you can try across Japan.';
@@ -58,6 +60,9 @@ const description =
               </ul>
             </section>
           )}
+          <p class="actions">
+            <a class="maps" href={mapsHref(c.ja)} target="_blank" rel="noopener">{t(lang, 'searchMaps')}</a>
+          </p>
           <section class="regional">
             <h3>Try a regional version</h3>
             <ul>
@@ -175,6 +180,23 @@ const description =
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+  .actions {
+    margin: 0.9rem 0 0;
+  }
+  .maps {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .maps:hover {
+    filter: brightness(1.08);
   }
   .regional h3 {
     margin: 1rem 0 0.5rem;

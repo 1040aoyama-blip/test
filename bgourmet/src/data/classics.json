@@ -8,6 +8,18 @@
     "price": "¥1,500–¥3,000 (conveyor belt) / ¥8,000+ (counter)",
     "regional": [
       {
+        "pref": "akita",
+        "ja": "ハタハタ寿し"
+      },
+      {
+        "pref": "ibaraki",
+        "ja": "笠間いなり寿司"
+      },
+      {
+        "pref": "chiba",
+        "ja": "太巻き祭り寿司"
+      },
+      {
         "pref": "tokyo",
         "ja": "江戸前寿司"
       },
@@ -16,8 +28,64 @@
         "ja": "ます寿司"
       },
       {
+        "pref": "ishikawa",
+        "ja": "かぶらずし"
+      },
+      {
+        "pref": "fukui",
+        "ja": "焼き鯖寿司"
+      },
+      {
+        "pref": "gifu",
+        "ja": "朴葉ずし"
+      },
+      {
+        "pref": "gifu",
+        "ja": "飛騨牛にぎり"
+      },
+      {
+        "pref": "mie",
+        "ja": "てこねずし"
+      },
+      {
+        "pref": "shiga",
+        "ja": "ふなずし"
+      },
+      {
+        "pref": "kyoto",
+        "ja": "さばずし"
+      },
+      {
         "pref": "nara",
         "ja": "柿の葉寿司"
+      },
+      {
+        "pref": "wakayama",
+        "ja": "柿の葉寿司"
+      },
+      {
+        "pref": "wakayama",
+        "ja": "早なれ寿司"
+      },
+      {
+        "pref": "okayama",
+        "ja": "まつりずし"
+      },
+      {
+        "pref": "okayama",
+        "ja": "ままかりずし"
+      },
+      {
+        "pref": "yamaguchi",
+        "ja": "岩国寿司"
+      },
+      {
+        "pref": "tokushima",
+        "ja": "ボウゼの姿寿司"
+      },
+      {
+        "pref": "nagasaki",
+        "ja": "大村寿司"
       }
     ],
     "local": "Sushi is not only for special occasions. Supermarkets sell ready-made packs, and many families eat it as an everyday meal, saving high-end counter sushi for birthdays and anniversaries. Nigiri is a bite of rice with a topping pressed on top, gunkan-maki (\"battleship roll\") is rice wrapped in a strip of seaweed to hold loose toppings like salmon roe, and norimaki is a roll with the filling inside the rice and seaweed on the outside. Popular conveyor-belt chains include Sushiro, Kura Sushi and Hama-zushi."
@@ -31,16 +99,76 @@
     "price": "¥1,000–¥3,000",
     "regional": [
       {
+        "pref": "toyama",
+        "ja": "白えびの刺身"
+      },
+      {
+        "pref": "toyama",
+        "ja": "氷見寒ぶりの刺身"
+      },
+      {
+        "pref": "yamanashi",
+        "ja": "馬刺し"
+      },
+      {
+        "pref": "nagano",
+        "ja": "馬刺し"
+      },
+      {
+        "pref": "mie",
+        "ja": "伊勢海老の刺身"
+      },
+      {
+        "pref": "tottori",
+        "ja": "もさえびの刺身"
+      },
+      {
+        "pref": "yamaguchi",
+        "ja": "ふく刺し"
+      },
+      {
+        "pref": "kochi",
+        "ja": "かつおのたたき"
+      },
+      {
         "pref": "kochi",
         "ja": "カツオの塩たたき"
+      },
+      {
+        "pref": "kochi",
+        "ja": "清水サバの刺身"
+      },
+      {
+        "pref": "kochi",
+        "ja": "うつぼのたたき"
+      },
+      {
+        "pref": "saga",
+        "ja": "呼子イカの活き造り"
+      },
+      {
+        "pref": "kumamoto",
+        "ja": "馬刺し"
       },
       {
         "pref": "oita",
         "ja": "関あじの刺身"
       },
       {
-        "pref": "toyama",
-        "ja": "氷見寒ぶりの刺身"
+        "pref": "oita",
+        "ja": "関さばの刺身"
+      },
+      {
+        "pref": "oita",
+        "ja": "城下かれいの刺身"
+      },
+      {
+        "pref": "kagoshima",
+        "ja": "きびなごの刺身"
+      },
+      {
+        "pref": "kagoshima",
+        "ja": "鶏刺し"
       }
     ],
     "local": "Sashimi is an everyday dish too: supermarkets sell fresh packs, and it is a standard menu item at izakaya (Japanese pubs). Near fishing ports, restaurants often serve it as a set meal with rice and miso soup."
@@ -54,16 +182,184 @@
     "price": "¥900–¥1,500",
     "regional": [
       {
-        "pref": "fukuoka",
-        "ja": "博多ラーメン"
-      },
-      {
         "pref": "hokkaido",
         "ja": "札幌味噌ラーメン"
       },
       {
+        "pref": "hokkaido",
+        "ja": "旭川醤油ラーメン"
+      },
+      {
+        "pref": "hokkaido",
+        "ja": "函館塩ラーメン"
+      },
+      {
+        "pref": "aomori",
+        "ja": "青森味噌カレー牛乳ラーメン"
+      },
+      {
+        "pref": "aomori",
+        "ja": "津軽煮干しラーメン"
+      },
+      {
+        "pref": "yamagata",
+        "ja": "冷やしラーメン"
+      },
+      {
+        "pref": "yamagata",
+        "ja": "米沢ラーメン"
+      },
+      {
+        "pref": "yamagata",
+        "ja": "赤湯からみそラーメン"
+      },
+      {
+        "pref": "fukushima",
+        "ja": "喜多方ラーメン"
+      },
+      {
+        "pref": "fukushima",
+        "ja": "白河ラーメン"
+      },
+      {
+        "pref": "ibaraki",
+        "ja": "スタミナラーメン"
+      },
+      {
+        "pref": "tochigi",
+        "ja": "佐野ラーメン"
+      },
+      {
+        "pref": "chiba",
+        "ja": "勝浦タンタンメン"
+      },
+      {
+        "pref": "chiba",
+        "ja": "竹岡式ラーメン"
+      },
+      {
+        "pref": "chiba",
+        "ja": "アリランラーメン"
+      },
+      {
+        "pref": "tokyo",
+        "ja": "八王子ラーメン"
+      },
+      {
+        "pref": "tokyo",
+        "ja": "油そば"
+      },
+      {
         "pref": "kanagawa",
         "ja": "横浜家系ラーメン"
+      },
+      {
+        "pref": "niigata",
+        "ja": "燕背脂ラーメン"
+      },
+      {
+        "pref": "niigata",
+        "ja": "長岡生姜醤油ラーメン"
+      },
+      {
+        "pref": "niigata",
+        "ja": "三条カレーラーメン"
+      },
+      {
+        "pref": "toyama",
+        "ja": "富山ブラックラーメン"
+      },
+      {
+        "pref": "gifu",
+        "ja": "高山ラーメン"
+      },
+      {
+        "pref": "aichi",
+        "ja": "台湾ラーメン"
+      },
+      {
+        "pref": "aichi",
+        "ja": "台湾まぜそば"
+      },
+      {
+        "pref": "shiga",
+        "ja": "近江ちゃんぽん"
+      },
+      {
+        "pref": "kyoto",
+        "ja": "京都ラーメン"
+      },
+      {
+        "pref": "nara",
+        "ja": "天理ラーメン"
+      },
+      {
+        "pref": "wakayama",
+        "ja": "和歌山ラーメン"
+      },
+      {
+        "pref": "tottori",
+        "ja": "鳥取牛骨ラーメン"
+      },
+      {
+        "pref": "shimane",
+        "ja": "宍道湖しじみラーメン"
+      },
+      {
+        "pref": "okayama",
+        "ja": "笠岡ラーメン"
+      },
+      {
+        "pref": "hiroshima",
+        "ja": "尾道ラーメン"
+      },
+      {
+        "pref": "hiroshima",
+        "ja": "広島つけ麺"
+      },
+      {
+        "pref": "hiroshima",
+        "ja": "汁なし担担麺"
+      },
+      {
+        "pref": "yamaguchi",
+        "ja": "宇部ラーメン"
+      },
+      {
+        "pref": "tokushima",
+        "ja": "徳島ラーメン"
+      },
+      {
+        "pref": "ehime",
+        "ja": "八幡浜ちゃんぽん"
+      },
+      {
+        "pref": "kochi",
+        "ja": "須崎鍋焼きラーメン"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "博多ラーメン"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "久留米ラーメン"
+      },
+      {
+        "pref": "saga",
+        "ja": "佐賀ラーメン"
+      },
+      {
+        "pref": "nagasaki",
+        "ja": "ちゃんぽん"
+      },
+      {
+        "pref": "kumamoto",
+        "ja": "熊本ラーメン"
+      },
+      {
+        "pref": "kagoshima",
+        "ja": "鹿児島ラーメン"
       }
     ],
     "local": "Ramen is casual, everyday food, eaten for lunch or dinner. As a national favorite, it is served by countless chains and small independent shops all over Japan, and supermarkets and convenience stores stock a huge range of instant ramen that many people also eat at home."
@@ -85,6 +381,18 @@
         "ja": "白えび天丼"
       },
       {
+        "pref": "shizuoka",
+        "ja": "サクラエビのかき揚げ"
+      },
+      {
+        "pref": "aichi",
+        "ja": "天むす"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "ごぼう天うどん"
+      },
+      {
         "pref": "oita",
         "ja": "とり天"
       }
@@ -100,19 +408,75 @@
     "price": "¥800–¥1,800",
     "regional": [
       {
-        "pref": "nagano",
-        "ja": "信州そば"
-      },
-      {
         "pref": "iwate",
         "ja": "わんこそば"
       },
       {
+        "pref": "yamagata",
+        "ja": "冷たい肉そば"
+      },
+      {
+        "pref": "yamagata",
+        "ja": "山形板そば"
+      },
+      {
+        "pref": "fukushima",
+        "ja": "ねぎそば"
+      },
+      {
+        "pref": "ibaraki",
+        "ja": "常陸秋そば"
+      },
+      {
+        "pref": "tochigi",
+        "ja": "日光湯波そば"
+      },
+      {
+        "pref": "niigata",
+        "ja": "へぎそば"
+      },
+      {
+        "pref": "fukui",
+        "ja": "おろしそば"
+      },
+      {
+        "pref": "nagano",
+        "ja": "信州そば"
+      },
+      {
+        "pref": "nagano",
+        "ja": "戸隠そば"
+      },
+      {
+        "pref": "nagano",
+        "ja": "とうじそば"
+      },
+      {
+        "pref": "kyoto",
+        "ja": "にしんそば"
+      },
+      {
+        "pref": "hyogo",
+        "ja": "出石皿そば"
+      },
+      {
         "pref": "shimane",
         "ja": "出雲そば"
+      },
+      {
+        "pref": "shimane",
+        "ja": "割子そば"
+      },
+      {
+        "pref": "yamaguchi",
+        "ja": "瓦そば"
+      },
+      {
+        "pref": "tokushima",
+        "ja": "祖谷そば"
       }
     ],
-    "local": "Zaru soba is served cold on a bamboo tray with a dipping sauce, and many shops let you choose a plain sauce, one with duck, or a curry-flavored one. Kake soba comes in hot broth, often topped with mountain vegetables, mushrooms or tempura. Quick, stand-and-eat soba chains are found near many train stations, such as Fuji Soba and Hakone Soba in the Tokyo area. People also cook dried soba at home, and instant cup soba is easy to find."
+    "local": "Zaru soba is served cold on a bamboo tray with a dipping sauce, and many shops let you choose a plain sauce, one with duck, or a curry-flavored one. Kake soba comes in hot broth, often topped with mountain vegetables, mushrooms or tempura. Soba chains are found near many train stations, such as Fuji Soba and Hakone Soba in the Tokyo area. People also cook dried soba at home, and instant cup soba is easy to find."
   },
   {
     "id": "udon",
@@ -123,16 +487,104 @@
     "price": "¥500–¥1,200",
     "regional": [
       {
-        "pref": "kagawa",
-        "ja": "讃岐うどん"
-      },
-      {
         "pref": "akita",
         "ja": "稲庭うどん"
       },
       {
+        "pref": "tochigi",
+        "ja": "耳うどん"
+      },
+      {
+        "pref": "gunma",
+        "ja": "水沢うどん"
+      },
+      {
+        "pref": "gunma",
+        "ja": "桐生ひもかわうどん"
+      },
+      {
+        "pref": "saitama",
+        "ja": "武蔵野うどん"
+      },
+      {
+        "pref": "saitama",
+        "ja": "川幅うどん"
+      },
+      {
+        "pref": "toyama",
+        "ja": "氷見うどん"
+      },
+      {
+        "pref": "yamanashi",
+        "ja": "ほうとう"
+      },
+      {
+        "pref": "yamanashi",
+        "ja": "吉田のうどん"
+      },
+      {
+        "pref": "aichi",
+        "ja": "きしめん"
+      },
+      {
         "pref": "aichi",
         "ja": "味噌煮込みうどん"
+      },
+      {
+        "pref": "aichi",
+        "ja": "豊橋カレーうどん"
+      },
+      {
+        "pref": "mie",
+        "ja": "伊勢うどん"
+      },
+      {
+        "pref": "mie",
+        "ja": "亀山みそ焼きうどん"
+      },
+      {
+        "pref": "osaka",
+        "ja": "きつねうどん"
+      },
+      {
+        "pref": "osaka",
+        "ja": "うどんすき"
+      },
+      {
+        "pref": "okayama",
+        "ja": "津山ホルモンうどん"
+      },
+      {
+        "pref": "tokushima",
+        "ja": "たらいうどん"
+      },
+      {
+        "pref": "kagawa",
+        "ja": "讃岐うどん"
+      },
+      {
+        "pref": "kagawa",
+        "ja": "釜玉うどん"
+      },
+      {
+        "pref": "kagawa",
+        "ja": "ぶっかけうどん"
+      },
+      {
+        "pref": "kagawa",
+        "ja": "釜揚げうどん"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "ごぼう天うどん"
+      },
+      {
+        "pref": "nagasaki",
+        "ja": "五島うどん"
+      },
+      {
+        "pref": "miyazaki",
+        "ja": "魚うどん"
       }
     ],
     "local": "Kagawa Prefecture, known as the \"Udon Prefecture,\" has by far the most udon shops per person in Japan and many ways to eat it. The broth also differs by region: in the Kanto area (around Tokyo) it is dark and soy-based, while in Kansai (around Osaka and Kyoto) it is light golden and dashi-based. Outside Kagawa, udon is usually served hot in broth (kake udon), and sometimes cold with a dipping sauce (zaru udon). Tempura is a popular side, and people often cook dried or frozen udon at home. For Sanuki-style udon outside Kagawa, try the Marugame Seimen chain."
@@ -146,16 +598,52 @@
     "price": "¥1,200–¥2,500",
     "regional": [
       {
-        "pref": "kagoshima",
-        "ja": "黒豚とんかつ"
+        "pref": "fukushima",
+        "ja": "会津ソースカツ丼"
+      },
+      {
+        "pref": "gunma",
+        "ja": "ソースカツ丼"
+      },
+      {
+        "pref": "saitama",
+        "ja": "秩父わらじかつ丼"
+      },
+      {
+        "pref": "niigata",
+        "ja": "タレかつ丼"
+      },
+      {
+        "pref": "fukui",
+        "ja": "ソースカツ丼"
+      },
+      {
+        "pref": "yamanashi",
+        "ja": "甲州かつ丼"
+      },
+      {
+        "pref": "nagano",
+        "ja": "駒ヶ根ソースかつ丼"
       },
       {
         "pref": "aichi",
         "ja": "味噌カツ"
       },
       {
-        "pref": "fukui",
-        "ja": "ソースカツ丼"
+        "pref": "osaka",
+        "ja": "串カツ"
+      },
+      {
+        "pref": "hyogo",
+        "ja": "かつめし"
+      },
+      {
+        "pref": "okayama",
+        "ja": "デミかつ丼"
+      },
+      {
+        "pref": "kagoshima",
+        "ja": "黒豚とんかつ"
       }
     ],
     "local": "Tonkatsu comes in different cuts, such as fatty loin (rosu) and lean fillet (hire), each with its own flavor and texture. It is also an everyday home-cooked dish, and you can buy it ready-made at supermarkets and at butcher shops in local shopping streets."
@@ -169,15 +657,23 @@
     "price": "¥150–¥400 per skewer",
     "regional": [
       {
-        "pref": "ehime",
-        "ja": "今治焼き鳥"
+        "pref": "saitama",
+        "ja": "東松山やきとり"
       },
       {
         "pref": "yamaguchi",
         "ja": "長門焼き鳥"
+      },
+      {
+        "pref": "ehime",
+        "ja": "今治焼き鳥"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "博多とりかわ"
       }
     ],
-    "local": "Besides chicken thigh, yakitori shops grill skin, organs and many other parts, as well as vegetables. You can also buy it at supermarkets and convenience stores, and frozen yakitori heated in the microwave is common at home. In the Tokyo area, Noge in Yokohama is packed with yakitori bars. In Fukuoka, try Hakata-style torikawa: chicken skin wound around a skewer and grilled repeatedly until crispy — it is well worth trying."
+    "local": "Besides chicken thigh, yakitori shops grill skin, organs and many other parts, as well as vegetables. Basic yakitori is also sold at supermarkets and convenience stores, and frozen yakitori heated in the microwave is common at home. In the Tokyo area, Noge in Yokohama is packed with yakitori bars. In Fukuoka, try Hakata-style torikawa: chicken skin wound around a skewer and grilled repeatedly until crispy — it is well worth trying."
   },
   {
     "id": "okonomiyaki",
@@ -188,16 +684,28 @@
     "price": "¥900–¥1,500",
     "regional": [
       {
-        "pref": "osaka",
-        "ja": "お好み焼き"
-      },
-      {
-        "pref": "hiroshima",
-        "ja": "お好み焼き"
+        "pref": "yamagata",
+        "ja": "どんどん焼き"
       },
       {
         "pref": "tokyo",
         "ja": "月島もんじゃ"
+      },
+      {
+        "pref": "osaka",
+        "ja": "お好み焼き"
+      },
+      {
+        "pref": "osaka",
+        "ja": "ねぎ焼き"
+      },
+      {
+        "pref": "osaka",
+        "ja": "いか焼き"
+      },
+      {
+        "pref": "hiroshima",
+        "ja": "お好み焼き"
       }
     ],
     "local": "Okonomiyaki is soul food in Osaka and the wider Kansai region. Families all over Japan also cook it at home on a hot plate, and supermarkets sell okonomiyaki mixes and ready-made ones."
@@ -213,6 +721,10 @@
       {
         "pref": "osaka",
         "ja": "たこ焼き"
+      },
+      {
+        "pref": "hyogo",
+        "ja": "明石焼"
       }
     ],
     "local": "Takoyaki is Osaka's soul food and is eaten all over Japan. It is a standard at festival food stalls, and it is often said that almost every Osaka household owns a takoyaki pan. Tokyo-style takoyaki, made famous by the Tsukiji Gindaco chain often found in food courts, is cooked with plenty of oil so the outside turns extra crispy."
@@ -226,16 +738,32 @@
     "price": "¥300–¥700 (6 pieces)",
     "regional": [
       {
+        "pref": "fukushima",
+        "ja": "円盤餃子"
+      },
+      {
         "pref": "tochigi",
         "ja": "宇都宮餃子"
+      },
+      {
+        "pref": "chiba",
+        "ja": "ホワイト餃子"
       },
       {
         "pref": "shizuoka",
         "ja": "浜松餃子"
       },
       {
+        "pref": "mie",
+        "ja": "津ぎょうざ"
+      },
+      {
         "pref": "fukuoka",
         "ja": "鉄なべ餃子"
+      },
+      {
+        "pref": "miyazaki",
+        "ja": "宮崎ぎょうざ"
       }
     ],
     "local": "Many families make gyoza at home, and supermarkets sell frozen gyoza that cook easily in a frying pan. Gyoza are mainly served at izakaya and Chinese restaurants, and well-known chains include Gyoza no Ohsho and Osaka Ohsho."
@@ -249,12 +777,12 @@
     "price": "¥150–¥500 each",
     "regional": [
       {
-        "pref": "osaka",
-        "ja": "豚まん"
-      },
-      {
         "pref": "kanagawa",
         "ja": "横浜中華街の肉まん"
+      },
+      {
+        "pref": "osaka",
+        "ja": "豚まん"
       },
       {
         "pref": "nagasaki",
@@ -271,16 +799,40 @@
     "price": "¥800–¥1,500",
     "regional": [
       {
-        "pref": "kanagawa",
-        "ja": "よこすか海軍カレー"
-      },
-      {
         "pref": "hokkaido",
         "ja": "スープカレー"
       },
       {
+        "pref": "aomori",
+        "ja": "青森味噌カレー牛乳ラーメン"
+      },
+      {
+        "pref": "kanagawa",
+        "ja": "よこすか海軍カレー"
+      },
+      {
+        "pref": "niigata",
+        "ja": "万代バスセンターのカレー"
+      },
+      {
+        "pref": "niigata",
+        "ja": "三条カレーラーメン"
+      },
+      {
         "pref": "ishikawa",
         "ja": "金沢カレー"
+      },
+      {
+        "pref": "aichi",
+        "ja": "豊橋カレーうどん"
+      },
+      {
+        "pref": "tottori",
+        "ja": "鳥取カレー"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "門司港焼きカレー"
       }
     ],
     "local": "Japanese curry comes with pork, beef or chicken, and it is one of the most common home-cooked meals — every family has its own favorite ingredients. The best-known curry chain is CoCo Ichibanya, where you can choose the spice level and toppings."
@@ -294,16 +846,20 @@
     "price": "¥3,000–¥15,000",
     "regional": [
       {
+        "pref": "yamagata",
+        "ja": "米沢牛すき焼き"
+      },
+      {
+        "pref": "kanagawa",
+        "ja": "牛鍋"
+      },
+      {
         "pref": "mie",
         "ja": "松阪牛すき焼き"
       },
       {
         "pref": "shiga",
         "ja": "近江牛すき焼き"
-      },
-      {
-        "pref": "kanagawa",
-        "ja": "牛鍋"
       }
     ],
     "local": "Many families also make sukiyaki at home for special occasions, such as New Year or celebrations."
@@ -317,12 +873,12 @@
     "price": "¥3,000–¥8,000",
     "regional": [
       {
-        "pref": "kagoshima",
-        "ja": "黒豚しゃぶしゃぶ"
-      },
-      {
         "pref": "toyama",
         "ja": "ぶりしゃぶ"
+      },
+      {
+        "pref": "kagoshima",
+        "ja": "黒豚しゃぶしゃぶ"
       }
     ],
     "local": "Pork is the most common meat for shabu-shabu, especially at home, while restaurants also serve premium beef."
@@ -336,12 +892,16 @@
     "price": "¥100–¥300 per piece",
     "regional": [
       {
-        "pref": "shizuoka",
-        "ja": "静岡おでん"
+        "pref": "gunma",
+        "ja": "こんにゃく味噌おでん"
       },
       {
         "pref": "ishikawa",
         "ja": "金沢おでん"
+      },
+      {
+        "pref": "shizuoka",
+        "ja": "静岡おでん"
       },
       {
         "pref": "hyogo",
@@ -381,6 +941,10 @@
         "ja": "豚丼"
       },
       {
+        "pref": "saitama",
+        "ja": "秩父豚みそ丼"
+      },
+      {
         "pref": "kumamoto",
         "ja": "あか牛丼"
       }
@@ -396,8 +960,16 @@
     "price": "¥800–¥2,000",
     "regional": [
       {
+        "pref": "miyagi",
+        "ja": "油麩丼"
+      },
+      {
         "pref": "akita",
         "ja": "比内地鶏親子丼"
+      },
+      {
+        "pref": "kyoto",
+        "ja": "衣笠丼"
       }
     ],
     "local": "The Nakau chain is well known for oyakodon. It is also a common home-cooked dish and is sold at supermarkets and convenience stores."
@@ -415,12 +987,44 @@
         "ja": "うに丼"
       },
       {
+        "pref": "hokkaido",
+        "ja": "いくら丼"
+      },
+      {
         "pref": "aomori",
         "ja": "のっけ丼"
       },
       {
+        "pref": "aomori",
+        "ja": "大間まぐろ丼"
+      },
+      {
+        "pref": "miyagi",
+        "ja": "はらこ飯"
+      },
+      {
+        "pref": "chiba",
+        "ja": "はかりめ丼"
+      },
+      {
+        "pref": "kanagawa",
+        "ja": "生しらす丼"
+      },
+      {
+        "pref": "kanagawa",
+        "ja": "三崎まぐろ丼"
+      },
+      {
         "pref": "ishikawa",
         "ja": "能登丼"
+      },
+      {
+        "pref": "shizuoka",
+        "ja": "生しらす丼"
+      },
+      {
+        "pref": "wakayama",
+        "ja": "勝浦まぐろ丼"
       }
     ],
     "local": "Almost every area famous for seafood has restaurants serving kaisendon, especially Hokkaido, Toyama, Ishikawa, Shizuoka and Kanagawa. In Tokyo, Toyosu Market has many restaurants serving it."
@@ -434,16 +1038,24 @@
     "price": "¥150–¥400",
     "regional": [
       {
-        "pref": "okinawa",
-        "ja": "ポークたまごおにぎり"
+        "pref": "aichi",
+        "ja": "天むす"
+      },
+      {
+        "pref": "wakayama",
+        "ja": "めはりずし"
+      },
+      {
+        "pref": "hiroshima",
+        "ja": "広島菜漬のおにぎり"
       },
       {
         "pref": "miyazaki",
         "ja": "肉巻きおにぎり"
       },
       {
-        "pref": "aichi",
-        "ja": "天むす"
+        "pref": "okinawa",
+        "ja": "ポークたまごおにぎり"
       }
     ],
     "local": "People often make onigiri at home or buy them at a shop and take them to work or school for lunch."
@@ -457,16 +1069,36 @@
     "price": "¥100–¥300 (often included in set meals)",
     "regional": [
       {
+        "pref": "aomori",
+        "ja": "けの汁"
+      },
+      {
+        "pref": "aomori",
+        "ja": "鱈のじゃっぱ汁"
+      },
+      {
+        "pref": "ibaraki",
+        "ja": "どぶ汁"
+      },
+      {
         "pref": "shimane",
         "ja": "しじみ汁"
       },
       {
-        "pref": "kagoshima",
-        "ja": "さつま汁"
+        "pref": "kumamoto",
+        "ja": "だご汁"
+      },
+      {
+        "pref": "oita",
+        "ja": "だんご汁"
       },
       {
         "pref": "miyazaki",
         "ja": "冷や汁"
+      },
+      {
+        "pref": "kagoshima",
+        "ja": "さつま汁"
       }
     ],
     "local": "Miso soup is made at home almost every day in many Japanese families."
@@ -480,16 +1112,20 @@
     "price": "¥3,000–¥6,000",
     "regional": [
       {
+        "pref": "saitama",
+        "ja": "浦和うなぎの蒲焼き"
+      },
+      {
+        "pref": "chiba",
+        "ja": "成田うなぎの蒲焼き"
+      },
+      {
         "pref": "aichi",
         "ja": "ひつまぶし"
       },
       {
         "pref": "fukuoka",
         "ja": "柳川うなぎのせいろ蒸し"
-      },
-      {
-        "pref": "saitama",
-        "ja": "浦和うなぎの蒲焼き"
       }
     ],
     "local": "The most popular style is unaju, eel served on rice in a square lacquered box. Unadon comes in a bowl and tastes much the same, but usually has less eel. Kanto and Kansai grill eel differently: in the Kanto area it is steamed before grilling for a soft, fluffy texture, while in Kansai it is grilled directly for a crispier finish. Unaju is a luxury usually eaten at restaurants on special days, but beef bowl chains such as Sukiya, Matsuya and Yoshinoya offer more affordable unadon, mainly in summer."
@@ -503,8 +1139,36 @@
     "price": "¥5,000–¥20,000",
     "regional": [
       {
+        "pref": "iwate",
+        "ja": "前沢牛ステーキ"
+      },
+      {
+        "pref": "yamagata",
+        "ja": "米沢牛すき焼き"
+      },
+      {
+        "pref": "ibaraki",
+        "ja": "常陸牛ステーキ"
+      },
+      {
+        "pref": "ishikawa",
+        "ja": "能登牛ステーキ"
+      },
+      {
         "pref": "gifu",
         "ja": "飛騨牛ステーキ"
+      },
+      {
+        "pref": "gifu",
+        "ja": "飛騨牛にぎり"
+      },
+      {
+        "pref": "mie",
+        "ja": "松阪牛すき焼き"
+      },
+      {
+        "pref": "shiga",
+        "ja": "近江牛すき焼き"
       },
       {
         "pref": "saga",
@@ -513,6 +1177,14 @@
       {
         "pref": "kumamoto",
         "ja": "あか牛ステーキ"
+      },
+      {
+        "pref": "kumamoto",
+        "ja": "あか牛丼"
+      },
+      {
+        "pref": "miyazaki",
+        "ja": "宮崎牛ステーキ"
       }
     ]
   },
@@ -533,6 +1205,22 @@
         "ja": "十和田バラ焼き"
       },
       {
+        "pref": "iwate",
+        "ja": "遠野ジンギスカン"
+      },
+      {
+        "pref": "iwate",
+        "ja": "盛岡冷麺"
+      },
+      {
+        "pref": "miyagi",
+        "ja": "牛タン焼き"
+      },
+      {
+        "pref": "gifu",
+        "ja": "鶏ちゃん"
+      },
+      {
         "pref": "mie",
         "ja": "松阪鶏焼き肉"
       }
@@ -548,16 +1236,28 @@
     "price": "¥1,500–¥4,000",
     "regional": [
       {
-        "pref": "kanagawa",
-        "ja": "厚木シロコロ・ホルモン"
-      },
-      {
         "pref": "miyagi",
         "ja": "気仙沼ホルモン"
       },
       {
+        "pref": "kanagawa",
+        "ja": "厚木シロコロ・ホルモン"
+      },
+      {
+        "pref": "yamanashi",
+        "ja": "甲府鳥もつ煮"
+      },
+      {
+        "pref": "tottori",
+        "ja": "ホルモンそば"
+      },
+      {
         "pref": "okayama",
         "ja": "津山ホルモンうどん"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "博多もつ鍋"
       }
     ],
     "local": "In Tokyo, the Kameido area is famous for its many horumon restaurants."
@@ -571,12 +1271,48 @@
     "price": "¥500–¥900",
     "regional": [
       {
-        "pref": "shizuoka",
-        "ja": "富士宮やきそば"
+        "pref": "aomori",
+        "ja": "黒石つゆやきそば"
       },
       {
         "pref": "akita",
         "ja": "横手やきそば"
+      },
+      {
+        "pref": "fukushima",
+        "ja": "浪江焼そば"
+      },
+      {
+        "pref": "tochigi",
+        "ja": "那須塩原スープ入り焼きそば"
+      },
+      {
+        "pref": "gunma",
+        "ja": "太田焼きそば"
+      },
+      {
+        "pref": "shizuoka",
+        "ja": "富士宮やきそば"
+      },
+      {
+        "pref": "hyogo",
+        "ja": "そばめし"
+      },
+      {
+        "pref": "tottori",
+        "ja": "ホルモンそば"
+      },
+      {
+        "pref": "okayama",
+        "ja": "ひるぜん焼そば"
+      },
+      {
+        "pref": "nagasaki",
+        "ja": "皿うどん"
+      },
+      {
+        "pref": "oita",
+        "ja": "日田やきそば"
       }
     ],
     "local": "Yakisoba is also a common home-cooked meal. You can buy it ready-made at supermarkets and convenience stores, and instant cup yakisoba such as Nissin U.F.O. and Peyoung is very popular."
@@ -590,16 +1326,252 @@
     "price": "¥300–¥1,500",
     "regional": [
       {
+        "pref": "aomori",
+        "ja": "南部せんべい"
+      },
+      {
+        "pref": "iwate",
+        "ja": "南部せんべい"
+      },
+      {
+        "pref": "miyagi",
+        "ja": "ずんだ餅"
+      },
+      {
+        "pref": "akita",
+        "ja": "北秋田バター餅"
+      },
+      {
+        "pref": "yamagata",
+        "ja": "くじら餅"
+      },
+      {
+        "pref": "fukushima",
+        "ja": "薄皮饅頭"
+      },
+      {
+        "pref": "fukushima",
+        "ja": "あわまんじゅう"
+      },
+      {
+        "pref": "tochigi",
+        "ja": "日光羊羹"
+      },
+      {
+        "pref": "gunma",
+        "ja": "焼きまんじゅう"
+      },
+      {
+        "pref": "gunma",
+        "ja": "湯の花まんじゅう"
+      },
+      {
+        "pref": "saitama",
+        "ja": "草加せんべい"
+      },
+      {
+        "pref": "saitama",
+        "ja": "十万石まんじゅう"
+      },
+      {
+        "pref": "chiba",
+        "ja": "銚子ぬれ煎餅"
+      },
+      {
+        "pref": "chiba",
+        "ja": "ぴーなっつ最中"
+      },
+      {
+        "pref": "tokyo",
+        "ja": "いもようかん"
+      },
+      {
+        "pref": "tokyo",
+        "ja": "あんみつ"
+      },
+      {
+        "pref": "tokyo",
+        "ja": "どら焼き"
+      },
+      {
+        "pref": "niigata",
+        "ja": "笹団子"
+      },
+      {
+        "pref": "ishikawa",
+        "ja": "きんつば"
+      },
+      {
+        "pref": "ishikawa",
+        "ja": "あんころ餅"
+      },
+      {
+        "pref": "fukui",
+        "ja": "羽二重餅"
+      },
+      {
+        "pref": "fukui",
+        "ja": "水ようかん"
+      },
+      {
+        "pref": "yamanashi",
+        "ja": "信玄餅"
+      },
+      {
+        "pref": "yamanashi",
+        "ja": "水信玄餅"
+      },
+      {
+        "pref": "nagano",
+        "ja": "五平餅"
+      },
+      {
+        "pref": "gifu",
+        "ja": "五平餅"
+      },
+      {
+        "pref": "gifu",
+        "ja": "水まんじゅう"
+      },
+      {
+        "pref": "gifu",
+        "ja": "高山みだらしだんご"
+      },
+      {
+        "pref": "aichi",
+        "ja": "鬼まんじゅう"
+      },
+      {
+        "pref": "mie",
+        "ja": "赤福餅"
+      },
+      {
+        "pref": "mie",
+        "ja": "へんば餅"
+      },
+      {
+        "pref": "mie",
+        "ja": "なが餅"
+      },
+      {
+        "pref": "shiga",
+        "ja": "でっち羊羹"
+      },
+      {
+        "pref": "shiga",
+        "ja": "糸切餅"
+      },
+      {
         "pref": "kyoto",
         "ja": "生八ッ橋"
+      },
+      {
+        "pref": "kyoto",
+        "ja": "八ッ橋"
+      },
+      {
+        "pref": "kyoto",
+        "ja": "阿闍梨餅"
       },
       {
         "pref": "kyoto",
         "ja": "宇治抹茶パフェ"
       },
       {
-        "pref": "tokyo",
-        "ja": "どら焼き"
+        "pref": "kyoto",
+        "ja": "豆餅"
+      },
+      {
+        "pref": "osaka",
+        "ja": "みたらし小餅"
+      },
+      {
+        "pref": "hyogo",
+        "ja": "炭酸せんべい"
+      },
+      {
+        "pref": "nara",
+        "ja": "葛餅"
+      },
+      {
+        "pref": "nara",
+        "ja": "吉野葛の葛きり"
+      },
+      {
+        "pref": "nara",
+        "ja": "だんご庄のだんご"
+      },
+      {
+        "pref": "tottori",
+        "ja": "打吹公園だんご"
+      },
+      {
+        "pref": "tottori",
+        "ja": "ふろしきまんじゅう"
+      },
+      {
+        "pref": "shimane",
+        "ja": "出雲ぜんざい"
+      },
+      {
+        "pref": "shimane",
+        "ja": "どじょう掬いまんじゅう"
+      },
+      {
+        "pref": "okayama",
+        "ja": "きびだんご"
+      },
+      {
+        "pref": "hiroshima",
+        "ja": "もみじ饅頭"
+      },
+      {
+        "pref": "tokushima",
+        "ja": "金長まんじゅう"
+      },
+      {
+        "pref": "tokushima",
+        "ja": "ぶどう饅頭"
+      },
+      {
+        "pref": "ehime",
+        "ja": "坊っちゃん団子"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "梅ヶ枝餅"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "千鳥饅頭"
+      },
+      {
+        "pref": "saga",
+        "ja": "小城羊羹"
+      },
+      {
+        "pref": "saga",
+        "ja": "松露饅頭"
+      },
+      {
+        "pref": "nagasaki",
+        "ja": "かんころ餅"
+      },
+      {
+        "pref": "kumamoto",
+        "ja": "いきなり団子"
+      },
+      {
+        "pref": "miyazaki",
+        "ja": "チーズ饅頭"
+      },
+      {
+        "pref": "kagoshima",
+        "ja": "じゃんぼ餅"
+      },
+      {
+        "pref": "okinawa",
+        "ja": "沖縄ぜんざい"
       }
     ]
   }

@@ -380,6 +380,28 @@
     ]
   },
   {
+    "id": "miso-soup",
+    "name": "Miso soup",
+    "ja": "味噌汁",
+    "tagline": "Comforting soup served with every meal",
+    "summary": "A simple soup of dashi broth and miso (fermented soybean paste) with tofu, seaweed and green onion. It comes with almost every Japanese set meal, from breakfast at a hotel to a tonkatsu lunch. The type of miso and the ingredients change from region to region, and some local versions are hearty enough to be a meal on their own.",
+    "price": "¥100–¥300 (often included in set meals)",
+    "regional": [
+      {
+        "pref": "shimane",
+        "ja": "しじみ汁"
+      },
+      {
+        "pref": "kagoshima",
+        "ja": "さつま汁"
+      },
+      {
+        "pref": "miyazaki",
+        "ja": "冷や汁"
+      }
+    ]
+  },
+  {
     "id": "unagi",
     "name": "Unagi (grilled eel)",
     "ja": "うなぎ",

@@ -336,24 +336,74 @@
     ]
   },
   {
-    "id": "donburi",
-    "name": "Donburi (rice bowls)",
-    "ja": "丼",
-    "tagline": "Toppings served on a bowl of rice",
-    "summary": "A big bowl of rice with toppings such as beef (gyudon), chicken and egg (oyakodon), cutlet (katsudon) or fresh seafood (kaisendon). Quick, filling and good value, it is a favorite lunch in Japan.",
-    "price": "¥500–¥3,000",
+    "id": "tendon",
+    "name": "Tendon (tempura rice bowl)",
+    "ja": "天丼",
+    "tagline": "Crispy tempura on a bowl of rice",
+    "summary": "Shrimp, fish and vegetable tempura piled on a bowl of rice and drizzled with a sweet and savory soy-based sauce. The sauce soaks into the rice, making it a filling and affordable way to enjoy tempura.",
+    "price": "¥800–¥2,500",
+    "regional": [
+      {
+        "pref": "tokyo",
+        "ja": "江戸前天丼"
+      },
+      {
+        "pref": "toyama",
+        "ja": "白えび天丼"
+      }
+    ]
+  },
+  {
+    "id": "gyudon",
+    "name": "Gyudon (beef bowl)",
+    "ja": "牛丼",
+    "tagline": "Thin beef and onion simmered in a sweet sauce",
+    "summary": "Thinly sliced beef and onion simmered in a sweet soy sauce broth and served over rice. Chain restaurants serve it fast and cheap all day, often with a raw egg, pickled ginger or miso soup on the side. Some regions are famous for pork or local wagyu versions.",
+    "price": "¥450–¥1,500",
     "regional": [
       {
         "pref": "hokkaido",
         "ja": "豚丼"
       },
       {
+        "pref": "kumamoto",
+        "ja": "あか牛丼"
+      }
+    ]
+  },
+  {
+    "id": "oyakodon",
+    "name": "Oyakodon (chicken and egg bowl)",
+    "ja": "親子丼",
+    "tagline": "Chicken and soft-cooked egg on rice",
+    "summary": "Chicken and onion simmered in a sweet dashi and soy broth, then finished with softly set egg and served over rice. Its name means \"parent and child\" bowl, because it uses both chicken and egg. Restaurants using local free-range chicken make it extra special.",
+    "price": "¥800–¥2,000",
+    "regional": [
+      {
         "pref": "akita",
         "ja": "比内地鶏親子丼"
-      },
+      }
+    ]
+  },
+  {
+    "id": "kaisendon",
+    "name": "Kaisendon (seafood bowl)",
+    "ja": "海鮮丼",
+    "tagline": "Fresh sashimi on a bowl of rice",
+    "summary": "A bowl of rice topped generously with fresh sashimi such as tuna, salmon, salmon roe and sea urchin. Fish markets and port towns serve the freshest bowls, and some let you choose your own toppings.",
+    "price": "¥1,500–¥5,000",
+    "regional": [
       {
         "pref": "hokkaido",
         "ja": "うに丼"
+      },
+      {
+        "pref": "aomori",
+        "ja": "のっけ丼"
+      },
+      {
+        "pref": "ishikawa",
+        "ja": "能登丼"
       }
     ]
   },

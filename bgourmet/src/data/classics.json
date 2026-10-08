@@ -7,9 +7,18 @@
     "summary": "Bite-size vinegared rice topped with raw or lightly cooked fish and shellfish. Conveyor-belt sushi bars are cheap and fun, while counter-style restaurants serve an omakase (chef's choice) course. Many regions also have their own pressed or leaf-wrapped sushi.",
     "price": "¥1,500–¥3,000 (conveyor belt) / ¥8,000+ (counter)",
     "regional": [
-      { "pref": "tokyo", "ja": "江戸前寿司" },
-      { "pref": "toyama", "ja": "ます寿司" },
-      { "pref": "nara", "ja": "柿の葉寿司" }
+      {
+        "pref": "tokyo",
+        "ja": "江戸前寿司"
+      },
+      {
+        "pref": "toyama",
+        "ja": "ます寿司"
+      },
+      {
+        "pref": "nara",
+        "ja": "柿の葉寿司"
+      }
     ]
   },
   {
@@ -20,9 +29,18 @@
     "summary": "Slices of very fresh raw fish served with soy sauce and wasabi, without rice. Coastal towns each have their own prized catch, such as seared bonito in Kochi and premium horse mackerel in Oita.",
     "price": "¥1,000–¥3,000",
     "regional": [
-      { "pref": "kochi", "ja": "カツオの塩たたき" },
-      { "pref": "oita", "ja": "関あじの刺身" },
-      { "pref": "toyama", "ja": "氷見寒ぶりの刺身" }
+      {
+        "pref": "kochi",
+        "ja": "カツオの塩たたき"
+      },
+      {
+        "pref": "oita",
+        "ja": "関あじの刺身"
+      },
+      {
+        "pref": "toyama",
+        "ja": "氷見寒ぶりの刺身"
+      }
     ]
   },
   {
@@ -33,9 +51,18 @@
     "summary": "Wheat noodles in a hot broth, usually flavored with soy sauce, salt, miso or pork bone (tonkotsu), and topped with sliced pork, egg and green onion. Almost every region has its own style, which makes ramen one of the best ways to taste local food.",
     "price": "¥900–¥1,500",
     "regional": [
-      { "pref": "fukuoka", "ja": "博多ラーメン" },
-      { "pref": "hokkaido", "ja": "札幌味噌ラーメン" },
-      { "pref": "kanagawa", "ja": "横浜家系ラーメン" }
+      {
+        "pref": "fukuoka",
+        "ja": "博多ラーメン"
+      },
+      {
+        "pref": "hokkaido",
+        "ja": "札幌味噌ラーメン"
+      },
+      {
+        "pref": "kanagawa",
+        "ja": "横浜家系ラーメン"
+      }
     ]
   },
   {
@@ -46,9 +73,18 @@
     "summary": "Shrimp, fish and seasonal vegetables coated in a thin batter and deep-fried until light and crispy. It is dipped in a light broth or sprinkled with salt, and is also served on rice as tendon.",
     "price": "¥1,500–¥5,000",
     "regional": [
-      { "pref": "tokyo", "ja": "江戸前天丼" },
-      { "pref": "toyama", "ja": "白えび天丼" },
-      { "pref": "oita", "ja": "とり天" }
+      {
+        "pref": "tokyo",
+        "ja": "江戸前天丼"
+      },
+      {
+        "pref": "toyama",
+        "ja": "白えび天丼"
+      },
+      {
+        "pref": "oita",
+        "ja": "とり天"
+      }
     ]
   },
   {
@@ -59,9 +95,18 @@
     "summary": "Thin noodles made from buckwheat flour, eaten cold with a dipping sauce or hot in broth. Mountain areas with cool climates are famous for fragrant handmade soba.",
     "price": "¥800–¥1,800",
     "regional": [
-      { "pref": "nagano", "ja": "信州そば" },
-      { "pref": "iwate", "ja": "わんこそば" },
-      { "pref": "shimane", "ja": "出雲そば" }
+      {
+        "pref": "nagano",
+        "ja": "信州そば"
+      },
+      {
+        "pref": "iwate",
+        "ja": "わんこそば"
+      },
+      {
+        "pref": "shimane",
+        "ja": "出雲そば"
+      }
     ]
   },
   {
@@ -72,9 +117,18 @@
     "summary": "Thick wheat noodles with a soft, chewy texture, served in a mild broth or with a dipping sauce. Kagawa is known as the home of udon, and other regions have thin, flat or miso-simmered versions.",
     "price": "¥500–¥1,200",
     "regional": [
-      { "pref": "kagawa", "ja": "讃岐うどん" },
-      { "pref": "akita", "ja": "稲庭うどん" },
-      { "pref": "aichi", "ja": "味噌煮込みうどん" }
+      {
+        "pref": "kagawa",
+        "ja": "讃岐うどん"
+      },
+      {
+        "pref": "akita",
+        "ja": "稲庭うどん"
+      },
+      {
+        "pref": "aichi",
+        "ja": "味噌煮込みうどん"
+      }
     ]
   },
   {
@@ -85,9 +139,18 @@
     "summary": "A thick pork cutlet coated in panko breadcrumbs and deep-fried, served with shredded cabbage, rice, miso soup and a thick, fruity sauce. Regional versions use miso sauce or come on rice as katsudon.",
     "price": "¥1,200–¥2,500",
     "regional": [
-      { "pref": "kagoshima", "ja": "黒豚とんかつ" },
-      { "pref": "aichi", "ja": "味噌カツ" },
-      { "pref": "fukui", "ja": "ソースカツ丼" }
+      {
+        "pref": "kagoshima",
+        "ja": "黒豚とんかつ"
+      },
+      {
+        "pref": "aichi",
+        "ja": "味噌カツ"
+      },
+      {
+        "pref": "fukui",
+        "ja": "ソースカツ丼"
+      }
     ]
   },
   {
@@ -98,8 +161,14 @@
     "summary": "Bite-size pieces of chicken grilled on skewers over charcoal and seasoned with salt or a sweet soy glaze. It is a classic at izakaya (Japanese pubs) and goes well with beer.",
     "price": "¥150–¥400 per skewer",
     "regional": [
-      { "pref": "ehime", "ja": "今治焼き鳥" },
-      { "pref": "yamaguchi", "ja": "長門焼き鳥" }
+      {
+        "pref": "ehime",
+        "ja": "今治焼き鳥"
+      },
+      {
+        "pref": "yamaguchi",
+        "ja": "長門焼き鳥"
+      }
     ]
   },
   {
@@ -110,9 +179,18 @@
     "summary": "A savory pancake of batter, cabbage and pork or seafood, cooked on a hot iron griddle and topped with sauce, mayonnaise and bonito flakes. Osaka mixes everything together, while Hiroshima layers it with noodles.",
     "price": "¥900–¥1,500",
     "regional": [
-      { "pref": "osaka", "ja": "お好み焼き" },
-      { "pref": "hiroshima", "ja": "お好み焼き" },
-      { "pref": "tokyo", "ja": "月島もんじゃ" }
+      {
+        "pref": "osaka",
+        "ja": "お好み焼き"
+      },
+      {
+        "pref": "hiroshima",
+        "ja": "お好み焼き"
+      },
+      {
+        "pref": "tokyo",
+        "ja": "月島もんじゃ"
+      }
     ]
   },
   {
@@ -122,7 +200,12 @@
     "tagline": "Octopus balls from Osaka",
     "summary": "Round balls of batter with a piece of octopus inside, cooked in a special molded pan and topped with sauce, mayonnaise and bonito flakes. Crispy outside and soft inside, it is Osaka's favorite street food.",
     "price": "¥500–¥800 (6–8 pieces)",
-    "regional": [{ "pref": "osaka", "ja": "たこ焼き" }]
+    "regional": [
+      {
+        "pref": "osaka",
+        "ja": "たこ焼き"
+      }
+    ]
   },
   {
     "id": "gyoza",
@@ -132,9 +215,40 @@
     "summary": "Thin dumplings filled with minced pork, cabbage and garlic, pan-fried until crispy on the bottom. Utsunomiya and Hamamatsu compete for the title of Japan's gyoza capital.",
     "price": "¥300–¥700 (6 pieces)",
     "regional": [
-      { "pref": "tochigi", "ja": "宇都宮餃子" },
-      { "pref": "shizuoka", "ja": "浜松餃子" },
-      { "pref": "fukuoka", "ja": "鉄なべ餃子" }
+      {
+        "pref": "tochigi",
+        "ja": "宇都宮餃子"
+      },
+      {
+        "pref": "shizuoka",
+        "ja": "浜松餃子"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "鉄なべ餃子"
+      }
+    ]
+  },
+  {
+    "id": "nikuman",
+    "name": "Nikuman (steamed buns)",
+    "ja": "肉まん",
+    "tagline": "Fluffy steamed buns with a savory filling",
+    "summary": "Soft, fluffy steamed buns filled with juicy minced pork and onion. Sold hot at convenience stores in winter, and in Chinatowns and specialty shops all year round. Fun variations include pizza buns with tomato sauce and cheese, and seafood or curry fillings.",
+    "price": "¥150–¥500 each",
+    "regional": [
+      {
+        "pref": "osaka",
+        "ja": "豚まん"
+      },
+      {
+        "pref": "kanagawa",
+        "ja": "横浜中華街の肉まん"
+      },
+      {
+        "pref": "nagasaki",
+        "ja": "長崎角煮まんじゅう"
+      }
     ]
   },
   {
@@ -145,9 +259,18 @@
     "summary": "A thick, mildly spiced curry with meat and vegetables served over rice, often with a pork cutlet on top. It is one of Japan's most popular everyday meals, and several cities have their own distinctive style.",
     "price": "¥800–¥1,500",
     "regional": [
-      { "pref": "kanagawa", "ja": "よこすか海軍カレー" },
-      { "pref": "hokkaido", "ja": "スープカレー" },
-      { "pref": "ishikawa", "ja": "金沢カレー" }
+      {
+        "pref": "kanagawa",
+        "ja": "よこすか海軍カレー"
+      },
+      {
+        "pref": "hokkaido",
+        "ja": "スープカレー"
+      },
+      {
+        "pref": "ishikawa",
+        "ja": "金沢カレー"
+      }
     ]
   },
   {
@@ -158,9 +281,18 @@
     "summary": "Thin slices of beef, tofu and vegetables simmered at the table in a sweet soy sauce broth, then dipped in raw egg. It is a special-occasion dish, best with famous wagyu beef.",
     "price": "¥3,000–¥15,000",
     "regional": [
-      { "pref": "mie", "ja": "松阪牛すき焼き" },
-      { "pref": "shiga", "ja": "近江牛すき焼き" },
-      { "pref": "kanagawa", "ja": "牛鍋" }
+      {
+        "pref": "mie",
+        "ja": "松阪牛すき焼き"
+      },
+      {
+        "pref": "shiga",
+        "ja": "近江牛すき焼き"
+      },
+      {
+        "pref": "kanagawa",
+        "ja": "牛鍋"
+      }
     ]
   },
   {
@@ -171,8 +303,36 @@
     "summary": "Paper-thin slices of meat or fish swished through a pot of hot broth at the table, then dipped in sesame or ponzu sauce. Light and healthy, it shows off the quality of the ingredients.",
     "price": "¥3,000–¥8,000",
     "regional": [
-      { "pref": "kagoshima", "ja": "黒豚しゃぶしゃぶ" },
-      { "pref": "toyama", "ja": "ぶりしゃぶ" }
+      {
+        "pref": "kagoshima",
+        "ja": "黒豚しゃぶしゃぶ"
+      },
+      {
+        "pref": "toyama",
+        "ja": "ぶりしゃぶ"
+      }
+    ]
+  },
+  {
+    "id": "oden",
+    "name": "Oden",
+    "ja": "おでん",
+    "tagline": "Hearty one-pot stew, perfect in winter",
+    "summary": "Daikon radish, boiled eggs, fish cakes, konjac and tofu simmered for hours in a light dashi broth and eaten with a dab of mustard. You can pick pieces one by one at convenience stores, food stalls and izakaya, and the broth and toppings change from region to region.",
+    "price": "¥100–¥300 per piece",
+    "regional": [
+      {
+        "pref": "shizuoka",
+        "ja": "静岡おでん"
+      },
+      {
+        "pref": "ishikawa",
+        "ja": "金沢おでん"
+      },
+      {
+        "pref": "hyogo",
+        "ja": "姫路おでん"
+      }
     ]
   },
   {
@@ -183,9 +343,18 @@
     "summary": "A big bowl of rice with toppings such as beef (gyudon), chicken and egg (oyakodon), cutlet (katsudon) or fresh seafood (kaisendon). Quick, filling and good value, it is a favorite lunch in Japan.",
     "price": "¥500–¥3,000",
     "regional": [
-      { "pref": "hokkaido", "ja": "豚丼" },
-      { "pref": "akita", "ja": "比内地鶏親子丼" },
-      { "pref": "hokkaido", "ja": "うに丼" }
+      {
+        "pref": "hokkaido",
+        "ja": "豚丼"
+      },
+      {
+        "pref": "akita",
+        "ja": "比内地鶏親子丼"
+      },
+      {
+        "pref": "hokkaido",
+        "ja": "うに丼"
+      }
     ]
   },
   {
@@ -196,9 +365,18 @@
     "summary": "Rice shaped into a triangle or ball, often wrapped in seaweed and filled with salmon, pickled plum or tuna mayo. You can find them in every convenience store, and some regions have their own unique versions.",
     "price": "¥150–¥400",
     "regional": [
-      { "pref": "okinawa", "ja": "ポークたまごおにぎり" },
-      { "pref": "miyazaki", "ja": "肉巻きおにぎり" },
-      { "pref": "aichi", "ja": "天むす" }
+      {
+        "pref": "okinawa",
+        "ja": "ポークたまごおにぎり"
+      },
+      {
+        "pref": "miyazaki",
+        "ja": "肉巻きおにぎり"
+      },
+      {
+        "pref": "aichi",
+        "ja": "天むす"
+      }
     ]
   },
   {
@@ -209,9 +387,18 @@
     "summary": "Freshwater eel grilled over charcoal and brushed with a sweet soy sauce glaze, served on rice. It is rich and tender, and Nagoya's hitsumabushi lets you enjoy it three different ways.",
     "price": "¥3,000–¥6,000",
     "regional": [
-      { "pref": "aichi", "ja": "ひつまぶし" },
-      { "pref": "fukuoka", "ja": "柳川うなぎのせいろ蒸し" },
-      { "pref": "saitama", "ja": "浦和うなぎの蒲焼き" }
+      {
+        "pref": "aichi",
+        "ja": "ひつまぶし"
+      },
+      {
+        "pref": "fukuoka",
+        "ja": "柳川うなぎのせいろ蒸し"
+      },
+      {
+        "pref": "saitama",
+        "ja": "浦和うなぎの蒲焼き"
+      }
     ]
   },
   {
@@ -222,9 +409,62 @@
     "summary": "Japanese beef known for its fine marbling and melt-in-the-mouth texture. Each region raises its own brand of wagyu, enjoyed as steak, sukiyaki or yakiniku (grilled meat).",
     "price": "¥5,000–¥20,000",
     "regional": [
-      { "pref": "gifu", "ja": "飛騨牛ステーキ" },
-      { "pref": "saga", "ja": "佐賀牛ステーキ" },
-      { "pref": "kumamoto", "ja": "あか牛ステーキ" }
+      {
+        "pref": "gifu",
+        "ja": "飛騨牛ステーキ"
+      },
+      {
+        "pref": "saga",
+        "ja": "佐賀牛ステーキ"
+      },
+      {
+        "pref": "kumamoto",
+        "ja": "あか牛ステーキ"
+      }
+    ]
+  },
+  {
+    "id": "yakiniku",
+    "name": "Yakiniku (Japanese BBQ)",
+    "ja": "焼肉",
+    "tagline": "Grill your own meat at the table",
+    "summary": "Bite-size cuts of beef and pork that you grill yourself over a charcoal or gas grill at the table, then dip in a sweet soy-based sauce. Restaurants range from cheap all-you-can-eat places to high-end wagyu specialists. Some regions grill lamb or chicken instead.",
+    "price": "¥3,000–¥10,000",
+    "regional": [
+      {
+        "pref": "hokkaido",
+        "ja": "ジンギスカン"
+      },
+      {
+        "pref": "aomori",
+        "ja": "十和田バラ焼き"
+      },
+      {
+        "pref": "mie",
+        "ja": "松阪鶏焼き肉"
+      }
+    ]
+  },
+  {
+    "id": "horumon",
+    "name": "Horumon (grilled offal)",
+    "ja": "ホルモン焼き",
+    "tagline": "Chewy, flavorful grilled offal",
+    "summary": "Beef or pork offal such as intestine, tripe and heart, grilled over a fire and dipped in a garlicky miso or soy sauce. It is cheap, full of flavor and a favorite with locals at casual grill restaurants. Some towns even stir-fry it with noodles.",
+    "price": "¥1,500–¥4,000",
+    "regional": [
+      {
+        "pref": "kanagawa",
+        "ja": "厚木シロコロ・ホルモン"
+      },
+      {
+        "pref": "miyagi",
+        "ja": "気仙沼ホルモン"
+      },
+      {
+        "pref": "okayama",
+        "ja": "津山ホルモンうどん"
+      }
     ]
   },
   {
@@ -235,8 +475,14 @@
     "summary": "Wheat noodles stir-fried with cabbage and pork in a tangy sauce, a staple at festivals and street stalls. Several towns are famous for their own local style.",
     "price": "¥500–¥900",
     "regional": [
-      { "pref": "shizuoka", "ja": "富士宮やきそば" },
-      { "pref": "akita", "ja": "横手やきそば" }
+      {
+        "pref": "shizuoka",
+        "ja": "富士宮やきそば"
+      },
+      {
+        "pref": "akita",
+        "ja": "横手やきそば"
+      }
     ]
   },
   {
@@ -247,9 +493,18 @@
     "summary": "Traditional sweets made from rice, sweet red bean paste and seasonal ingredients, often enjoyed with green tea. Kyoto is the place to try elegant wagashi and rich matcha desserts.",
     "price": "¥300–¥1,500",
     "regional": [
-      { "pref": "kyoto", "ja": "生八ッ橋" },
-      { "pref": "kyoto", "ja": "宇治抹茶パフェ" },
-      { "pref": "tokyo", "ja": "どら焼き" }
+      {
+        "pref": "kyoto",
+        "ja": "生八ッ橋"
+      },
+      {
+        "pref": "kyoto",
+        "ja": "宇治抹茶パフェ"
+      },
+      {
+        "pref": "tokyo",
+        "ja": "どら焼き"
+      }
     ]
   }
 ]

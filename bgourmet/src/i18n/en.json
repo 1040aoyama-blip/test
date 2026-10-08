@@ -26,7 +26,7 @@
   "hideMap": "Hide map",
   "search": "Search",
   "searchTitle": "Find a dish",
-  "searchLead": "Search by dish name, prefecture or ingredient, and narrow down by prefecture.",
+  "searchLead": "Search by dish name, prefecture or ingredient, and narrow down by prefecture or type of dish.",
   "searchPlaceholder": "e.g. ramen, eel",
   "searchButton": "Search",
   "filterPrefecture": "Prefecture",
@@ -37,5 +37,14 @@
   "clearFilters": "Clear",
   "aboutTitle": "About",
   "privacyTitle": "Privacy Policy",
-  "contactTitle": "Contact"
+  "contactTitle": "Contact",
+  "filterType": "Type",
+  "allTypes": "All",
+  "browseByType": "Browse by type",
+  "type_meat": "Meat",
+  "type_seafood": "Seafood",
+  "type_vegetable": "Vegetables",
+  "type_noodles": "Noodles",
+  "type_rice": "Rice",
+  "type_sweets": "Sweets"
 }

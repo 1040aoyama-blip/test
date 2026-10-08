@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { localizePath, t, type Lang } from '../i18n';
 import { getPrefecture, prefectures, regions } from '../data/prefectures';
-import { getAllDishes } from '../data/catalog';
+import { dishTypes, getAllDishes } from '../data/catalog';
 import { normalizeForSearch } from '../lib/normalize';
 
 interface Props {
@@ -61,6 +61,18 @@ const rows = dishes.map((dish) => {
         }
       </select>
     </div>
+    <fieldset class="field types">
+      <legend>{t(lang, 'filterType')}</legend>
+      <label><input type="radio" name="type" value="" checked /><span>{t(lang, 'allTypes')}</span></label>
+      {
+        dishTypes.map((type) => (
+          <label>
+            <input type="radio" name="type" value={type} />
+            <span>{t(lang, `type_${type}`)}</span>
+          </label>
+        ))
+      }
+    </fieldset>
   </form>
 
   <div class="status">
@@ -73,7 +85,7 @@ const rows = dishes.map((dish) => {
   <ul class="results" id="results">
     {
       rows.map((row) => (
-        <li data-pref={row.prefectureId} data-region={row.region} data-n={row.nameKey}>
+        <li data-pref={row.prefectureId} data-region={row.region} data-types={row.types.join(' ')} data-n={row.nameKey}>
           <a href={`${localizePath(lang, `/${row.prefectureId}/`)}#${row.anchor}`}>
             <span class="meta">
               <span class="pref">{row.prefName}</span>
@@ -115,24 +127,30 @@ const rows = dishes.map((dish) => {
     })
     .catch(() => {});
 
-  // URL の ?q=&pref= から条件を戻す（SNS などから条件付きのリンクで来られるように）
+  // URL の ?q=&pref=&type= から条件を戻す（SNS などから条件付きのリンクで来られるように）
   const params = new URLSearchParams(location.search);
   input.value = params.get('q') ?? '';
   if (params.get('pref') && select.querySelector(`option[value="${CSS.escape(params.get('pref')!)}"]`)) {
     select.value = params.get('pref')!;
   }
 
+  const typeValue = () => form.querySelector<HTMLInputElement>('input[name="type"]:checked')?.value ?? '';
+  const initialType = form.querySelector<HTMLInputElement>(`input[name="type"][value="${CSS.escape(params.get('type') ?? '')}"]`);
+  if (initialType) initialType.checked = true;
+
   function apply() {
     const terms = normalizeForSearch(input.value).split(' ').filter(Boolean);
     const pref = select.value;
+    const type = typeValue();
     let shown = 0;
     items.forEach((item, i) => {
-      const { pref: p, region, n = '' } = item.dataset;
+      const { pref: p, region, types = '', n = '' } = item.dataset;
       const s = texts[i] ?? '';
       const placeOk = !pref || (pref.startsWith('region:') ? `region:${region}` === pref : p === pref);
+      const typeOk = !type || types.split(' ').includes(type);
       const nameHit = terms.every((term) => matchesTerm(n, term));
       const textHit = nameHit || terms.every((term) => matchesTerm(n, term) || matchesTerm(s, term));
-      const visible = placeOk && textHit;
+      const visible = placeOk && typeOk && textHit;
       item.hidden = !visible;
       // 料理名・都道府県名に当たったものを、説明文だけに当たったものより前に出す
       item.style.order = nameHit ? '0' : '1';
@@ -144,6 +162,7 @@ const rows = dishes.map((dish) => {
     const next = new URLSearchParams();
     if (input.value.trim()) next.set('q', input.value.trim());
     if (pref) next.set('pref', pref);
+    if (type) next.set('type', type);
     const query = next.toString();
     history.replaceState(null, '', query ? `?${query}` : location.pathname);
   }
@@ -180,7 +199,8 @@ const rows = dishes.map((dish) => {
     gap: 0.3rem;
     min-width: 0;
   }
-  .search-page .field label {
+  .search-page .field label,
+  .search-page .types legend {
     color: var(--muted);
     font-size: 0.85rem;
     font-weight: 700;
@@ -203,6 +223,51 @@ const rows = dishes.map((dish) => {
   .search-page select:focus {
     outline: 2px solid var(--accent);
     outline-offset: 1px;
+  }
+  .search-page .types legend {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .search-page .types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .search-page .types legend {
+    width: 100%;
+    margin-bottom: 0.3rem;
+    padding: 0;
+  }
+  .search-page .types label {
+    position: relative;
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .search-page .types input {
+    position: absolute;
+    opacity: 0;
+  }
+  .search-page .types span {
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    cursor: pointer;
+  }
+  .search-page .types input:checked + span {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    font-weight: 700;
+  }
+  .search-page .types input:focus-visible + span {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
   }
   .search-page .status {
     display: flex;

@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { localizePath, t, type Lang } from '../i18n';
 import { getPrefecture, prefectures, regions } from '../data/prefectures';
-import { assertCatalogConsistency, countCatalog, getFeatured } from '../data/catalog';
+import { assertCatalogConsistency, countCatalog, dishTypes, getFeatured } from '../data/catalog';
 import { siteInfo } from '../data/site';
 import { getTripEssentials, homeTransportWidget } from '../data/affiliates';
 import { getClassics } from '../data/classics';
@@ -35,6 +35,13 @@ const sns = [
       <input id="home-q" name="q" type="search" placeholder={t(lang, 'searchPlaceholder')} enterkeyhint="search" />
       <button type="submit">{t(lang, 'searchButton')}</button>
     </form>
+    <nav class="type-links" aria-label={t(lang, 'browseByType')}>
+      {
+        dishTypes.map((type) => (
+          <a href={`${localizePath(lang, '/search/')}?type=${type}`}>{t(lang, `type_${type}`)}</a>
+        ))
+      }
+    </nav>
   </section>
 
   <section>
@@ -196,6 +203,25 @@ const sns = [
     font: inherit;
     font-weight: 700;
     cursor: pointer;
+  }
+  .type-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: 0.9rem;
+  }
+  .type-links a {
+    padding: 0.2rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  .type-links a:hover {
+    border-color: var(--accent);
   }
   .visually-hidden {
     position: absolute;

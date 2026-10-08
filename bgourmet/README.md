@@ -51,7 +51,7 @@ src/
 ## グルメ一覧（catalog.json）
 
 都道府県ページに出る料理の一覧です（都道府県ごとの配列。並び順がそのまま表示順）。
-各料理は `{"ja": "富士宮やきそば", "en": "Fujinomiya Yakisoba"}` のように言語ごとの名前を持ちます。その言語の名前がない料理は、その言語のページには出ません。
+各料理は `{"ja": "富士宮やきそば", "en": "Fujinomiya Yakisoba", "types": ["noodles"]}` のように言語ごとの名前と料理の種類（meat / seafood / vegetable / noodles / rice / sweets、複数可）を持ちます。その言語の名前がない料理は、その言語のページには出ません。
 英語名の括弧より前の部分から、ページ内リンクの ID（`#fujinomiya-yakisoba`）が自動で作られます。
 
 ## 料理の説明（dishes/<言語>/<県>.json）

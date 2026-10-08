@@ -7,7 +7,11 @@ import { langs, type Lang } from '../i18n';
  * 全国のグルメ一覧（src/data/catalog.json）と、料理ごとの説明（src/data/dishes/<言語>/<県>.json）。
  * 都道府県ページはこれをもとに全料理を表示する（料理ごとの個別ページは作らない）。
  */
-type CatalogEntry = { ja: string; en: string } & Partial<Record<Lang, string>>;
+/** 料理の種類（トップのボタンと検索の絞り込みに使う。1品に複数つけてよい） */
+export const dishTypes = ['meat', 'seafood', 'vegetable', 'noodles', 'rice', 'sweets'] as const;
+export type DishType = (typeof dishTypes)[number];
+
+type CatalogEntry = { ja: string; en: string; types?: DishType[] } & Partial<Record<Lang, string>>;
 const data = catalog as Record<string, CatalogEntry[]>;
 
 export interface Shop {
@@ -51,6 +55,8 @@ export interface CatalogItem {
   info?: DishInfo;
   /** Google マップで探すときの検索語 */
   mapQuery: string;
+  /** 料理の種類 */
+  types: DishType[];
 }
 
 function toAnchor(en: string): string {
@@ -77,6 +83,7 @@ export function getCatalog(lang: Lang, prefectureId: string): CatalogItem[] {
         ja: entry.ja,
         info: infos[lang]?.[prefectureId]?.[entry.ja],
         mapQuery: `${entry.ja} ${prefName}`,
+        types: entry.types ?? [],
       },
     ];
   });

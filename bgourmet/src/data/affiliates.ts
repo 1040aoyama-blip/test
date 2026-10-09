@@ -105,38 +105,47 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
     transport: { adid: '1482991', destId: '6806', tid: '5' },
   },
   niigata: {
+    hotels: { adid: '1489848', destId: '6810', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484445', destId: '6810', tid: '2' },
     transport: { adid: '1483091', destId: '6810', tid: '5' },
   },
   toyama: {
+    hotels: { adid: '1489849', destId: '5851', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484449', destId: '5851', tid: '2' },
     transport: { adid: '1483094', destId: '5851', tid: '5' },
   },
   ishikawa: {
+    hotels: { adid: '1489850', destId: '4693', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484451', destId: '4693', tid: '2' },
     transport: { adid: '1483099', destId: '4693', tid: '5' },
   },
   fukui: {
+    hotels: { adid: '1489851', destId: '7240', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484452', destId: '7240', tid: '2' },
     transport: { adid: '1483101', destId: '7240', tid: '5' },
   },
   yamanashi: {
+    hotels: { adid: '1489853', destId: '4529', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484458', destId: '4529', tid: '2' },
     transport: { adid: '1483106', destId: '4529', tid: '5' },
   },
   nagano: {
+    hotels: { adid: '1489854', destId: '5483', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484465', destId: '5483', tid: '2' },
     transport: { adid: '1483108', destId: '5483', tid: '5' },
   },
   gifu: {
+    hotels: { adid: '1489856', destId: '6370', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484480', destId: '6370', tid: '2' },
     transport: { adid: '1483112', destId: '6370', tid: '5' },
   },
   shizuoka: {
+    hotels: { adid: '1489857', destId: '6409', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484493', destId: '6409', tid: '2' },
     transport: { adid: '1483113', destId: '6409', tid: '5' },
   },
   aichi: {
+    hotels: { adid: '1489858', destId: '6069', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484498', destId: '6069', tid: '2' },
     transport: { adid: '1483030', destId: '6069', tid: '5' },
   },

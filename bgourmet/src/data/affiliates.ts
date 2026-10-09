@@ -30,10 +30,12 @@ const klookFood: Record<string, [string, string][]> = {
  * 種類：hotels（ホテル）・experiences（体験）・transport（交通・通信）。県ページの下にこの順で出す
  */
 export type WidgetKind = 'hotels' | 'experiences' | 'transport';
-export type KlookWidgetCode = { adid: string; destId: string; tid: string };
+/** prod はホテルのウィジェットだけ 'hotel_dynamic_widget'（管理画面のコードの data-prod。省略時は dynamic_widget） */
+export type KlookWidgetCode = { adid: string; destId: string; tid: string; prod?: string };
 
 export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidgetCode>>> = {
   hokkaido: {
+    hotels: { adid: '1489767', destId: '32', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484313', destId: '32', tid: '2' },
     transport: { adid: '1482654', destId: '32', tid: '5' },
   },

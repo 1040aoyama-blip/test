@@ -145,7 +145,7 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
     transport: { adid: '1483113', destId: '6409', tid: '5' },
   },
   aichi: {
-    hotels: { adid: '1489858', destId: '6069', tid: '', prod: 'hotel_dynamic_widget' },
+    hotels: { adid: '1489858', destId: '71', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484498', destId: '6069', tid: '2' },
     transport: { adid: '1483030', destId: '6069', tid: '5' },
   },

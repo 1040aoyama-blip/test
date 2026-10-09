@@ -35,7 +35,7 @@ export type KlookWidgetCode = { adid: string; destId: string; tid: string; prod?
 
 export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidgetCode>>> = {
   hokkaido: {
-    hotels: { adid: '1489767', destId: '32', tid: '', prod: 'hotel_dynamic_widget' },
+    hotels: { adid: '1489767', destId: '133938', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484313', destId: '32', tid: '2' },
     transport: { adid: '1482654', destId: '32', tid: '5' },
   },

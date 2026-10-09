@@ -185,38 +185,47 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
     transport: { adid: '1484195', destId: '6255', tid: '5' },
   },
   tottori: {
+    hotels: { adid: '1490063', destId: '5923', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484639', destId: '5923', tid: '2' },
     transport: { adid: '1484208', destId: '5923', tid: '5' },
   },
   shimane: {
+    hotels: { adid: '1490064', destId: '6922', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484643', destId: '6922', tid: '2' },
     transport: { adid: '1484210', destId: '6922', tid: '5' },
   },
   okayama: {
+    hotels: { adid: '1490065', destId: '4467', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484644', destId: '4467', tid: '2' },
     transport: { adid: '1484211', destId: '4467', tid: '5' },
   },
   hiroshima: {
+    hotels: { adid: '1490066', destId: '5122', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484645', destId: '5122', tid: '2' },
     transport: { adid: '1484212', destId: '5122', tid: '5' },
   },
   yamaguchi: {
+    hotels: { adid: '1490067', destId: '8406', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484646', destId: '6251', tid: '2' },
     transport: { adid: '1484215', destId: '6251', tid: '5' },
   },
   tokushima: {
+    hotels: { adid: '1490069', destId: '4987', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484649', destId: '4987', tid: '2' },
     transport: { adid: '1484259', destId: '4987', tid: '5' },
   },
   kagawa: {
+    hotels: { adid: '1490071', destId: '5840', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484652', destId: '5840', tid: '2' },
     transport: { adid: '1484262', destId: '5840', tid: '5' },
   },
   ehime: {
+    hotels: { adid: '1490070', destId: '5829', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484654', destId: '5829', tid: '2' },
     transport: { adid: '1484264', destId: '5829', tid: '5' },
   },
   kochi: {
+    hotels: { adid: '1490072', destId: '5433', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484655', destId: '5433', tid: '2' },
     transport: { adid: '1484266', destId: '5433', tid: '5' },
   },

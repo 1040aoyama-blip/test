@@ -1,0 +1,293 @@
+{
+  "月島もんじゃ": {
+    "summary": "Tsukishima's famous dish: a runny batter of flour and dashi cooked with cabbage and other toppings on a hot plate. The classic method is to first make a ring of fillings, then pour the batter into the middle. Once cooked, press it against the hot plate with a tiny spatula and scoop it up bit by bit. Toppings like spicy cod roe, mochi and cheese can be combined freely. Monja Street near Tsukishima Station is lined with restaurants. If you are unsure how to cook it, ask the staff.",
+    "price": "¥1,000–2,000",
+    "area": "Tsukishima, Chuo Ward",
+    "shops": [
+      {
+        "name": "Monja Kondo Main Store",
+        "query": "もんじゃ 近どう 本店 月島",
+        "comment": "Said to be the oldest monja shop in Tsukishima.",
+        "access": "About 4 min walk from Tsukishima Station"
+      },
+      {
+        "name": "Moheji Tsukishima",
+        "query": "月島もんじゃ もへじ 本店",
+        "comment": "Run by a fish market wholesaler; popular for seafood monja.",
+        "access": "About 3 min walk from Tsukishima Station"
+      }
+    ]
+  },
+  "八王子ラーメン": {
+    "summary": "The local ramen of Hachioji. Its soy sauce broth has a layer of oil on top and is garnished with chopped onion. The oil keeps the soup hot, while the crunchy onion adds sweetness and a little bite. It is said to have been born at a Hachioji shop and is now served at many shops in the city. It is a great stop on the way back from Mt. Takao. Light yet full-bodied, it is easy to enjoy any time.",
+    "price": "¥700–1,000",
+    "area": "Hachioji",
+    "shops": [
+      {
+        "name": "Minmin Ramen",
+        "query": "みんみんラーメン 本店 八王子",
+        "comment": "Often named as a top Hachioji ramen shop.",
+        "access": "Hachioji"
+      },
+      {
+        "name": "Chukasoba Goemon",
+        "query": "中華そば 吾衛門 西八王子",
+        "comment": "Bowls loaded with chopped onion. Closed Sundays and holidays.",
+        "access": "Nishi-Hachioji"
+      }
+    ]
+  },
+  "油そば": {
+    "summary": "Ramen without soup: cooked noodles are mixed well with the soy-based sauce and oil at the bottom of the bowl. The classic way is to add vinegar and chili oil to taste, changing the flavor as you eat. It is said to have been born in Tokyo's Musashino area and has since spread across Japan. It is topped with roast pork, bamboo shoots, seaweed and green onions, and the thick noodles soak up the sauce. Without soup, you can really taste the noodles.",
+    "price": "¥800–1,100",
+    "area": "Musashino and across Tokyo",
+    "shops": [
+      {
+        "name": "Chinchintei",
+        "query": "珍々亭 武蔵境 油そば",
+        "comment": "A long-running shop said to be one of the birthplaces of abura soba.",
+        "access": "Musashi-Sakai"
+      },
+      {
+        "name": "Bubuka Kichijoji",
+        "query": "ぶぶか 吉祥寺 油そば",
+        "comment": "The chain that spread abura soba across Japan.",
+        "access": "About 3 min walk from Kichijoji Station North Exit"
+      }
+    ]
+  },
+  "江戸前天丼": {
+    "summary": "A rice bowl topped with tempura of seafood from Tokyo Bay and a rich, sweet and savory sauce. It typically includes shrimp, conger eel, sillago and squid, fried in sesame oil for a fragrant crunch that pairs with the sauce-soaked rice. Asakusa has many long-established tempura restaurants, some dating back to the Edo period, and famous tendon shops. Enjoy a traditional tendon after visiting Sensoji temple. The richness of the sauce varies by shop.",
+    "price": "¥1,500–3,000",
+    "area": "Asakusa, Taito Ward and more",
+    "shops": [
+      {
+        "name": "Daikokuya Tempura",
+        "query": "大黒家天麩羅 浅草",
+        "comment": "An Asakusa institution known for sesame-oil tendon with a rich sauce.",
+        "access": "Asakusa"
+      },
+      {
+        "name": "Dote no Iseya",
+        "query": "土手の伊勢屋 日本堤",
+        "comment": "Founded in the Meiji era, in a registered cultural property building. Lunch only.",
+        "access": "Nihonzutsumi, Taito (near Minowa Station)"
+      }
+    ]
+  },
+  "江戸前寿司": {
+    "summary": "Nigiri sushi, fish on vinegared rice, began as fast food at Edo-period street stalls. Without refrigeration, the fish was cured in vinegar, marinated in soy sauce or simmered before serving. This careful preparation, known as shigoto, is the tradition of Edomae sushi. Today Tokyo has everything from high-end counters to conveyor-belt sushi. Try it in areas known for great sushi, such as around Toyosu Market or Ginza, and appreciate the craftsmanship.",
+    "price": "¥2,000–20,000+",
+    "area": "Ginza, Toyosu and more",
+    "shops": [
+      {
+        "name": "Bentenyama Miyakozushi",
+        "query": "弁天山美家古寿司 浅草",
+        "comment": "Founded in the late Edo period, keeping classic Edomae techniques.",
+        "access": "Asakusa"
+      },
+      {
+        "name": "Yoshino Sushi Honten",
+        "query": "吉野鮨本店 日本橋",
+        "comment": "Founded in the Meiji era; said to be where toro was first served.",
+        "access": "Nihonbashi"
+      }
+    ]
+  },
+  "深川めし": {
+    "summary": "A clam and rice dish eaten by fishermen in Edo-period Fukagawa (now Koto Ward). There are two styles: bukkake, with clams and green onions simmered in miso and poured over rice, and takikomi, with clams cooked into the rice with soy sauce. It is said to have been created as a quick meal for busy fishermen. Full of clam flavor, it is comforting and satisfying. You can try it in the temple town around Fukagawa Fudo-son and get a taste of old Edo.",
+    "price": "¥1,000–2,000",
+    "area": "Fukagawa, Koto Ward",
+    "shops": [
+      {
+        "name": "Fukagawa Juku",
+        "query": "深川宿 本店 深川めし",
+        "comment": "A fukagawa-meshi specialist right by Kiyosumi-Shirakawa Station.",
+        "access": "Near Kiyosumi-Shirakawa Station"
+      },
+      {
+        "name": "Fukagawa Kamasho",
+        "query": "深川釜匠 清澄白河",
+        "comment": "Popular for clam-packed fukagawa-meshi and fukagawa-don.",
+        "access": "About 2 min walk from Kiyosumi-Shirakawa Station"
+      }
+    ]
+  },
+  "柳川鍋": {
+    "summary": "An Edo dish of loach and shaved burdock simmered in a sweet and savory sauce and bound with egg, cooked in a shallow earthenware pot. The aroma of burdock combines with the flavor of the loach. Since the Edo period, it has been eaten as nourishing food during the hot summer. Specialist loach restaurants still remain in Asakusa and elsewhere, where you can enjoy it in an old Edo atmosphere. Dozeu-nabe, whole loach simmered without being opened, is another specialty.",
+    "price": "¥1,500–3,000",
+    "area": "Asakusa, Taito Ward and more",
+    "shops": [
+      {
+        "name": "Komagata Dozeu",
+        "query": "駒形どぜう 本店 浅草",
+        "comment": "Founded in the Edo period; serving loach for over 200 years.",
+        "access": "Komagata, Asakusa"
+      },
+      {
+        "name": "Dozeu Iidaya",
+        "query": "どぜう飯田屋 浅草",
+        "comment": "Founded in the Meiji era; popular for yanagawa nabe with burdock and egg.",
+        "access": "Nishi-Asakusa (near Kappabashi)"
+      }
+    ]
+  },
+  "ちゃんこ鍋": {
+    "summary": "The hot pot that sumo wrestlers eat to build their bodies. It is packed with chicken, fish, vegetables and many other ingredients. In the sumo world, any dish wrestlers cook is called chanko. Around Ryogoku, home of the Kokugikan sumo arena, many chanko restaurants are run by former wrestlers, so you can enjoy it in a true sumo-town atmosphere. Broths include soy sauce, salt and miso, and the closing rice porridge or udon is something to look forward to. Pair it with watching a tournament.",
+    "price": "¥3,000–6,000",
+    "area": "Ryogoku, Sumida Ward",
+    "shops": [
+      {
+        "name": "Chanko Kawasaki",
+        "query": "ちゃんこ川崎 両国",
+        "comment": "The Ryogoku shop that first put chanko on a restaurant menu. Dinner only.",
+        "access": "Ryogoku"
+      },
+      {
+        "name": "Chanko Kirishima Ryogoku Edo Noren",
+        "query": "ちゃんこ霧島 両国江戸NOREN店",
+        "comment": "Run by former ozeki Kirishima, inside Ryogoku Station. Booking advised.",
+        "access": "Inside JR Ryogoku Station"
+      }
+    ]
+  },
+  "てんぷら": {
+    "summary": "Tempura, seafood and vegetables battered and deep-fried, spread in the Edo period as a casual food sold on skewers at street stalls. Edomae tempura is said to be characterized by fresh Tokyo Bay seafood fried in sesame oil. Enjoy the crisp batter and the flavor of the ingredients. Many restaurants serve it piece by piece at the counter, straight from the fryer. It is usually eaten with tentsuyu dipping sauce or salt. Asakusa and Ginza have many long-established tempura restaurants.",
+    "price": "¥1,500–10,000",
+    "area": "Asakusa, Ginza and more",
+    "shops": [
+      {
+        "name": "Aoi Marushin",
+        "query": "葵丸進 浅草 天ぷら",
+        "comment": "A long-established Edomae tempura restaurant on Kaminarimon-dori.",
+        "access": "Asakusa"
+      },
+      {
+        "name": "Daikokuya Tempura",
+        "query": "大黒家天麩羅 浅草",
+        "comment": "An Asakusa tempura institution with set meals as well as tendon.",
+        "access": "Asakusa"
+      }
+    ]
+  },
+  "人形焼": {
+    "summary": "A famous Tokyo sweet of bean paste wrapped in sponge cake and baked in molds. They come in many shapes, such as the Seven Lucky Gods, Asakusa's Kaminarimon gate and the five-story pagoda. Said to have been born in Ningyocho, Nihonbashi, they are now a well-known treat on Asakusa's Nakamise shopping street. Many shops let you watch them being baked, and fresh ones are especially fragrant. Some have no filling. Choosing shapes is fun, and they make a perfect souvenir after visiting Sensoji.",
+    "price": "¥500–1,500",
+    "area": "Asakusa and Ningyocho",
+    "shops": [
+      {
+        "name": "Kimuraya Ningyoyaki Honpo",
+        "query": "木村家人形焼本舗 浅草",
+        "comment": "Founded in the Meiji era; freshly baked in pigeon and thunder-god shapes.",
+        "access": "Nakamise, Asakusa"
+      },
+      {
+        "name": "Shigemori Eishindo",
+        "query": "重盛永信堂 人形町",
+        "comment": "An old Ningyocho shop with cakes shaped like the Seven Lucky Gods.",
+        "access": "Ningyocho"
+      }
+    ]
+  },
+  "雷おこし": {
+    "summary": "A traditional Tokyo sweet named after Asakusa's Kaminarimon (Thunder Gate). Rice is steamed, dried, popped and bound with starch syrup and sugar. Its name carries lucky meanings such as raising up the family and making a name, and it has long been an Asakusa souvenir. Flavors include peanut, ginger and matcha. Its crisp texture and gentle sweetness are the appeal, and you can buy it at shops in front of Kaminarimon. A true taste of Asakusa.",
+    "price": "¥500–1,500",
+    "area": "Asakusa, Taito Ward",
+    "shops": [
+      {
+        "name": "Tokiwado Kaminarimon",
+        "query": "常盤堂雷おこし本舗 雷門本店",
+        "comment": "Founded in the Edo period, with about 50 kinds of okoshi.",
+        "access": "Right next to Kaminarimon"
+      },
+      {
+        "name": "Nakamise souvenir shops",
+        "query": "浅草 仲見世 雷おこし",
+        "comment": "Many shops along Nakamise sell kaminari okoshi.",
+        "access": "Nakamise, Senso-ji"
+      }
+    ]
+  },
+  "東京ばな奈": {
+    "summary": "A classic Tokyo souvenir: fluffy sponge cake filled with banana-flavored custard cream. Banana was reportedly chosen because it is a flavor everyone likes, and it is popular with all ages. Seasonal flavors and collaborations appear one after another. You can buy it at Tokyo Station, Haneda Airport and elsewhere, making it a reliable choice when you cannot decide on a Tokyo souvenir. Individually wrapped, it is easy to share.",
+    "price": "From about ¥1,000 per box",
+    "area": "Tokyo Station, Haneda Airport and across Tokyo",
+    "shops": [
+      {
+        "name": "Tokyo Station (GRANSTA etc.)",
+        "query": "東京ばな奈 東京駅 グランスタ",
+        "comment": "Many counters inside the station, including limited flavors.",
+        "access": "Tokyo Station"
+      },
+      {
+        "name": "Haneda Airport",
+        "query": "東京ばな奈 羽田空港",
+        "comment": "Sold in every terminal.",
+        "access": "Haneda Airport"
+      }
+    ]
+  },
+  "いもようかん": {
+    "summary": "A Japanese sweet of strained sweet potato set with sugar and salt. It is said to have been created in the Meiji era by an Asakusa sweet shop as an affordable alternative to expensive bean yokan. Its simple flavor brings out the natural sweetness and fluffy texture of sweet potato. A long-established Asakusa shop is especially famous, and it is still loved today. Many shops use no additives, so it does not keep long; eat it soon. Its simple goodness is the charm.",
+    "price": "¥500–1,500",
+    "area": "Asakusa, Taito Ward",
+    "shops": [
+      {
+        "name": "Funawa Main Store",
+        "query": "舟和 本店 浅草",
+        "comment": "Founded in the Meiji era, the originator of imo yokan; café upstairs.",
+        "access": "Shin-Nakamise, Asakusa"
+      },
+      {
+        "name": "Funawa Nakamise",
+        "query": "舟和 仲見世1号店",
+        "comment": "A branch on the approach to Senso-ji.",
+        "access": "Nakamise, Asakusa"
+      }
+    ]
+  },
+  "あんみつ": {
+    "summary": "A dessert of agar jelly, red peas, soft gyuhi, fruit and more, topped with sweet bean paste and dark brown sugar syrup. Mitsumame, agar and peas with syrup, became anmitsu with the addition of bean paste, said to have been created at a Ginza sweet shop in the early Showa era. The slippery agar, sweet bean paste and rich syrup make it refreshing yet satisfying. Asakusa, Ginza and Ueno have many traditional sweet shops. Seasonal fruit is often added. A perfect break while exploring.",
+    "price": "¥700–1,200",
+    "area": "Ginza, Asakusa and more",
+    "shops": [
+      {
+        "name": "Ginza Wakamatsu",
+        "query": "銀座若松 あんみつ",
+        "comment": "The shop that invented anmitsu.",
+        "access": "Ginza"
+      },
+      {
+        "name": "Mihashi Ueno",
+        "query": "あんみつ みはし 上野本店",
+        "comment": "A sweets café in front of Ueno Park.",
+        "access": "In front of Ueno Park"
+      },
+      {
+        "name": "Asakusa Umezono",
+        "query": "浅草梅園",
+        "comment": "An Asakusa sweets café dating from the Edo period.",
+        "access": "Asakusa"
+      }
+    ]
+  },
+  "どら焼き": {
+    "summary": "A Japanese sweet of sweet bean paste sandwiched between two fluffy pancakes. The name is said to come from the pancakes' resemblance to a gong (dora). Tokyo has several famous dorayaki shops, and long-established ones in Ueno and Asakusa often have lines. Shops differ in their moist, honey-sweetened pancakes and the sweetness of their chunky bean paste, so comparing them is fun. Some shops let you enjoy them fresh from the griddle, which is a real treat.",
+    "price": "¥200–400 each",
+    "area": "Ueno, Asakusa and more",
+    "shops": [
+      {
+        "name": "Usagiya",
+        "query": "うさぎや 上野 どらやき",
+        "comment": "One of Tokyo's big three dorayaki shops. Reserve for late afternoon.",
+        "access": "Ueno-Hirokoji"
+      },
+      {
+        "name": "Kamejyu",
+        "query": "亀十 浅草 どら焼き",
+        "comment": "Another of the big three; a line forms before opening.",
+        "access": "Near Kaminarimon"
+      }
+    ]
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "ちゃんぽん": {
+    "summary": "Nagasaki's signature noodle dish. Pork, shrimp, squid, kamaboko, cabbage and bean sprouts are stir-fried, simmered in a pork and chicken bone broth, and finished with special thick noodles. It is said to have been created in the Meiji era by the owner of a Nagasaki Chinese restaurant who wanted to feed Chinese students a cheap, nourishing meal. Packed with toppings, it has a mellow broth full of vegetable and seafood flavor. Many restaurants in Nagasaki serve it, and portions are generous.",
+    "price": "¥800–1,300",
+    "area": "Nagasaki City",
+    "shops": [
+      {
+        "name": "Shikairo",
+        "query": "中華料理 四海樓 長崎",
+        "comment": "The birthplace of champon, founded in the Meiji period.",
+        "access": "Oura (near Glover Garden)"
+      },
+      {
+        "name": "Kozanro Chinatown",
+        "query": "江山楼 中華街本店",
+        "comment": "A popular restaurant in Shinchi Chinatown.",
+        "access": "Shinchi Chinatown"
+      }
+    ]
+  },
+  "皿うどん": {
+    "summary": "Nagasaki's other famous noodle dish alongside champon. Thin noodles fried until crisp are topped with a thick sauce loaded with pork, seafood and vegetables. You can enjoy both the crunchy noodles and the softened noodles soaked in sauce. There is also a futomen version made with thick stir-fried noodles. Many Nagasaki people pour Worcestershire sauce on it to change the flavor. Try it at Chinese restaurants in Nagasaki. Even a single serving is often large.",
+    "price": "¥800–1,300",
+    "area": "Nagasaki City",
+    "shops": [
+      {
+        "name": "Shikairo",
+        "query": "中華料理 四海樓 長崎",
+        "comment": "Sara udon is also said to have been born here.",
+        "access": "Oura (near Glover Garden)"
+      },
+      {
+        "name": "Kozanro Chinatown",
+        "query": "江山楼 中華街本店",
+        "comment": "Try sara udon in Chinatown.",
+        "access": "Shinchi Chinatown"
+      }
+    ]
+  },
+  "佐世保バーガー": {
+    "summary": "Local hamburgers of Sasebo, home to a US Navy base, said to have been introduced by Americans. Each one is handmade after you order, and every shop is particular about its buns, meat and sauce. Many are big and filling, and those with bacon, egg and vegetables are popular. Sasebo has many hamburger shops. Compare them along with sightseeing at Huis Ten Bosch or the Kujukushima islands. Expect a short wait, since everything is made to order.",
+    "price": "¥800–1,500",
+    "area": "Sasebo",
+    "shops": [
+      {
+        "name": "Hikari Honten",
+        "query": "ハンバーガーショップ ヒカリ 本店 佐世保",
+        "comment": "A postwar Sasebo burger pioneer.",
+        "access": "Yatakecho, Sasebo"
+      },
+      {
+        "name": "Log Kit",
+        "query": "ログキット 本店 佐世保",
+        "comment": "A popular shop near the US Navy base.",
+        "access": "Sasebo (near the US base)"
+      }
+    ]
+  },
+  "トルコライス": {
+    "summary": "A popular dish at Nagasaki's Western-style restaurants and cafes: pilaf, spaghetti and a pork cutlet on one plate, topped with demi-glace sauce. Called a kids' lunch plate for grown-ups, it is very filling. One theory says the name, Turkish rice, comes from Japanese, Western and Chinese dishes meeting on one plate, like Turkey where East meets West. Combinations vary by shop, such as curry pilaf or ketchup spaghetti. Many restaurants in Nagasaki serve it.",
+    "price": "¥1,000–1,600",
+    "area": "Nagasaki City",
+    "shops": [
+      {
+        "name": "Tsuruchan",
+        "query": "ツル茶ん 長崎",
+        "comment": "Kyushu's oldest coffee shop, with many kinds of Turkish rice.",
+        "access": "Shianbashi"
+      },
+      {
+        "name": "Bistro Bordeaux",
+        "query": "ビストロ ボルドー 長崎",
+        "comment": "Said to be where Turkish rice has its roots; also serves spoonable milkshake.",
+        "access": "Nagasaki (near Hamanomachi)"
+      }
+    ]
+  },
+  "長崎角煮まんじゅう": {
+    "summary": "A Nagasaki specialty of tender braised pork belly sandwiched in a fluffy white bun. It is said to have come from the braised pork of shippoku cuisine, which has Chinese roots. The meltingly soft pork soaked in sweet-savory sauce goes perfectly with the slightly sweet bun. You can eat them freshly steamed while strolling Nagasaki Chinatown and Shinchi. Frozen versions are popular souvenirs. Warm them at home in a microwave or steamer to enjoy the taste of Nagasaki easily.",
+    "price": "¥400–600 each",
+    "area": "Nagasaki City",
+    "shops": [
+      {
+        "name": "Iwasaki Honpo Nishihamanomachi",
+        "query": "岩崎本舗 西浜町店",
+        "comment": "Freshly steamed kakuni manju to eat in.",
+        "access": "Hamanomachi (Dozamachi)"
+      },
+      {
+        "name": "Iwasaki Honpo Amu Plaza Nagasaki",
+        "query": "岩崎本舗 アミュプラザ長崎",
+        "comment": "Available at Nagasaki Station.",
+        "access": "Nagasaki Station (Amu Plaza)"
+      }
+    ]
+  },
+  "レモンステーキ": {
+    "summary": "A local dish of Sasebo: thinly sliced beef cooked on a hot iron plate and topped with a lemony soy-based sauce. Because the meat is thin, you can use the plate's heat to cook it as you like. The fresh tang of lemon makes it light to eat. After finishing the meat, the classic move is to add rice to the sauce left on the plate and mix it. Try it at Western-style restaurants in Sasebo. The trick is to eat the meat before it overcooks.",
+    "price": "¥1,500–3,000",
+    "area": "Sasebo",
+    "shops": [
+      {
+        "name": "Shitamachi no Yoshoku Jidaiya",
+        "query": "下町の洋食 時代屋 佐世保",
+        "comment": "Run by the family of lemon steak's creator.",
+        "access": "Sasebo"
+      },
+      {
+        "name": "Hachi no Ie",
+        "query": "蜂の家 佐世保",
+        "comment": "Known for Western-style dishes and cream puffs.",
+        "access": "Sasebo"
+      }
+    ]
+  },
+  "ハトシ": {
+    "summary": "A Nagasaki dish of shrimp paste sandwiched between slices of bread and deep-fried until crisp. It is said to have come from China and is also served as part of shippoku cuisine. Crisp and toasty outside, it has springy shrimp and rich flavor inside. Using bread for a dish with Chinese roots is very Nagasaki. It is eaten with sauce or mustard soy sauce. Try it at Chinese restaurants, shippoku restaurants and delis in Nagasaki. It is best freshly fried.",
+    "price": "¥500–1,000",
+    "area": "Nagasaki City",
+    "shops": [
+      {
+        "name": "Dejimatei",
+        "query": "出島亭 長崎 中華街 ハトシ",
+        "comment": "Popular for handmade shrimp hatoshi.",
+        "access": "Shinchi Chinatown"
+      },
+      {
+        "name": "Kairakuen",
+        "query": "会楽園 長崎 中華街",
+        "comment": "Hatoshi at reasonable prices.",
+        "access": "Shinchi Chinatown"
+      }
+    ]
+  },
+  "卓袱料理": {
+    "summary": "A banquet cuisine unique to Nagasaki, born from a blend of Japanese, Chinese and Dutch food cultures. Dishes drawing on all three are served on large platters on a vermilion round table and shared by everyone. The rule is to start with a clear soup called ohire. Braised pork, hatoshi, sashimi and simmered dishes are among the many dishes served. It developed in the Edo period in Nagasaki, then Japan's window to the outside world. Try it at traditional restaurants and enjoy the festive atmosphere.",
+    "price": "¥5,000–15,000 per person",
+    "area": "Nagasaki City",
+    "shops": [
+      {
+        "name": "Kagetsu",
+        "query": "史跡料亭 花月 長崎",
+        "comment": "An Edo-period ryotei designated a prefectural historic site.",
+        "access": "Maruyama"
+      },
+      {
+        "name": "Hamakatsu",
+        "query": "長崎卓袱 浜勝",
+        "comment": "Shippoku cuisine in a casual setting.",
+        "access": "Hamanomachi"
+      }
+    ]
+  },
+  "具雑煮": {
+    "summary": "A local dish of the Shimabara area: a zoni soup with mochi and more than ten other ingredients, such as chicken, kamaboko, burdock, Chinese cabbage, shiitake and garland chrysanthemum. The flavorful broth, made from flying fish and more, takes on the umami of all the ingredients. A story says that during the Shimabara Rebellion in the Edo period, the rebels gathered mochi and ingredients to make zoni. Shops in Shimabara serve it all year. One bowl is very filling.",
+    "price": "¥1,000–1,500",
+    "area": "Shimabara",
+    "shops": [
+      {
+        "name": "Himematsuya Honten",
+        "query": "元祖 具雑煮 姫松屋 本店",
+        "comment": "Said to be the originator of guzoni, in front of Shimabara Castle.",
+        "access": "In front of Shimabara Castle"
+      },
+      {
+        "name": "Himematsuya Shinmachi",
+        "query": "姫松屋 新町店 島原",
+        "comment": "Another Himematsuya branch.",
+        "access": "Shinmachi, Shimabara"
+      }
+    ]
+  },
+  "五島うどん": {
+    "summary": "Hand-stretched udon made in the Goto Islands. A distinctive feature is the use of the islands' camellia oil when stretching the dough; though thin, the noodles have a firm bite and silky smoothness. The local favorite is jigokudaki, scooping noodles straight from the boiling pot and dipping them in flying fish broth or raw egg. You can try it at shops on the islands, and the dried noodles are a popular souvenir. It is sometimes counted among Japan's three great udon.",
+    "price": "¥700–1,200",
+    "area": "Goto Islands (Goto City and around)",
+    "shops": [
+      {
+        "name": "Chikusuitei",
+        "query": "竹酔亭 本店 五島うどん",
+        "comment": "Run by a noodle maker; famous for jigokudaki.",
+        "access": "Shinkamigoto"
+      },
+      {
+        "name": "Masuda Seimen",
+        "query": "ますだ製麺 五島うどん",
+        "comment": "A Goto udon maker with a products shop.",
+        "access": "Shinkamigoto"
+      }
+    ]
+  },
+  "大村寿司": {
+    "summary": "A local dish of Omura: pressed sushi made by layering vinegared rice and toppings, pressing them and cutting into squares. It is topped with colorful shredded egg. It is said to have started in the Sengoku period when the people celebrated their victorious lord by hastily making sushi. A legend says the soldiers cut it with their swords. It features slightly sweet vinegared rice and gently flavored toppings. Try it at shops in Omura. Its colorful look is part of the charm.",
+    "price": "¥500–1,200",
+    "area": "Omura",
+    "shops": [
+      {
+        "name": "Omura Kakuzushi Yamato",
+        "query": "大村角ずし やまと 本店",
+        "comment": "A Meiji-era shop, the first to serve Omura sushi.",
+        "access": "Honmachi, Omura"
+      },
+      {
+        "name": "Omurazushi Gion",
+        "query": "大村ずし ぎおん",
+        "comment": "Makes and sells Omura sushi, with a restaurant.",
+        "access": "Omura (on Route 34)"
+      }
+    ]
+  },
+  "長崎カステラ": {
+    "summary": "One of Nagasaki's most famous sweets, developed in Nagasaki from a nanban sweet brought from Portugal. Made with eggs, sugar, flour and starch syrup, it features a moist, fine-textured sponge and refined sweetness. Many have crystals of coarse sugar at the bottom for a pleasant crunch. Nagasaki has many long-established castella shops, each with its own taste. It is a classic Nagasaki souvenir and long-loved gift. It goes well with milk or black tea.",
+    "price": "¥1,000–3,000",
+    "area": "Nagasaki City",
+    "shops": [
+      {
+        "name": "Fukusaya Nagasaki",
+        "query": "カステラ本家 福砂屋 長崎本店",
+        "comment": "An Edo-period castella maker.",
+        "access": "Near Shianbashi (Funadaikumachi)"
+      },
+      {
+        "name": "Shooken Honten",
+        "query": "松翁軒 本店 長崎",
+        "comment": "An Edo-period maker with a tearoom upstairs.",
+        "access": "Uonomachi, Nagasaki"
+      }
+    ]
+  },
+  "かんころ餅": {
+    "summary": "A local sweet of the Goto Islands and elsewhere: mochi made by pounding glutinous rice with kankoro, sweet potato slices that are boiled and sun-dried. It features the natural sweetness of sweet potato and a chewy texture. It was made as a preserved food on islands where rice was hard to grow. It is eaten as is, or grilled or warmed in a toaster for extra fragrance. It is sold at souvenir shops in Goto and Nagasaki. Its simple flavor lets you feel island life.",
+    "price": "¥500–1,200",
+    "area": "Goto City and around",
+    "shops": [
+      {
+        "name": "Matori Mochiten",
+        "query": "真鳥餅店 五島 かんころ餅",
+        "comment": "A Goto maker of kankoro mochi.",
+        "access": "Goto"
+      },
+      {
+        "name": "Nagasaki Station souvenir shops",
+        "query": "長崎駅 おみやげ かんころ餅",
+        "comment": "Also sold at Nagasaki product shops.",
+        "access": "Nagasaki Station"
+      }
+    ]
+  },
+  "かんざらし": {
+    "summary": "A sweet specialty of Shimabara, known as a town of spring water. Shiratama rice dumplings are chilled in Shimabara's cold spring water and served in a special syrup made with sugar and honey. Enjoy the smooth dumplings, refreshing coolness and gentle sweetness. The name is said to come from rice soaked in water during the coldest season of the year. Some shops in Shimabara use the spring water, perfect for a break while walking around town.",
+    "price": "¥400–700",
+    "area": "Shimabara",
+    "shops": [
+      {
+        "name": "Ginsui",
+        "query": "銀水 島原 かんざらし",
+        "comment": "The original kanzarashi shop, reopened by the city.",
+        "access": "Shimabara (by Hamanokawa spring)"
+      },
+      {
+        "name": "Himematsuya Honten",
+        "query": "元祖 具雑煮 姫松屋 本店",
+        "comment": "Have kanzarashi along with guzoni.",
+        "access": "In front of Shimabara Castle"
+      }
+    ]
+  },
+  "長崎ミルクセーキ": {
+    "summary": "In Nagasaki, milkshake is not a drink but a cold dessert eaten with a spoon. Eggs, sugar, condensed milk and milk are mixed with finely crushed ice into a sherbet-like treat. It is said to have been created at a cafe so people in hilly Nagasaki could enjoy something cold in hot summers. Enjoy the gentle sweetness of egg and the icy texture. Try it at cafes in Nagasaki. It makes a perfect break during a hot day of sightseeing.",
+    "price": "¥500–800",
+    "area": "Nagasaki City",
+    "shops": [
+      {
+        "name": "Tsuruchan",
+        "query": "ツル茶ん 長崎",
+        "comment": "The originator of the spoonable milkshake.",
+        "access": "Shianbashi"
+      },
+      {
+        "name": "Bistro Bordeaux",
+        "query": "ビストロ ボルドー 長崎",
+        "comment": "Serves spoonable milkshake; also known for Turkish rice.",
+        "access": "Nagasaki (near Hamanomachi)"
+      }
+    ]
+  },
+  "よりより": {
+    "summary": "A fried sweet from China sold in Nagasaki Chinatown and elsewhere. Wheat dough is twisted like a rope and deep-fried, with roots in China's mahua. It has a crunchy, firm texture and a faint sweetness. The more you chew, the more its simple flavor comes through. It has long been a familiar snack in Nagasaki and is sold at shops in Chinatown. It keeps well and makes a great souvenir from a stroll around Chinatown.",
+    "price": "¥300–800",
+    "area": "Nagasaki City (Chinatown and around)",
+    "shops": [
+      {
+        "name": "Fukken",
+        "query": "福建 長崎 中華街 よりより",
+        "comment": "A Chinese confectioner known for yoriyori.",
+        "access": "Shinchi Chinatown"
+      },
+      {
+        "name": "Nagasaki Station souvenir shops",
+        "query": "長崎駅 おみやげ よりより",
+        "comment": "Also sold at Nagasaki Station and the airport.",
+        "access": "Nagasaki Station"
+      }
+    ]
+  }
+}

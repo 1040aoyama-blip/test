@@ -1,0 +1,287 @@
+{
+  "冷やしラーメン": {
+    "summary": "Ramen served with an ice-cold broth, said to have been created by a long-established soba restaurant in Yamagata City. It was designed to be eaten refreshingly on hot summer days, and the soy-based broth made with beef bones is crafted so the fat does not solidify when chilled. It is sometimes served with ice cubes floating in it, which looks wonderfully cool. Some shops in Yamagata City serve it all year round. If you visit Yamagata on a hot day, give it a try. It is light yet full of flavor.",
+    "price": "¥800–1,100",
+    "area": "Yamagata City",
+    "shops": [
+      {
+        "name": "Sakaeya Honten",
+        "query": "栄屋本店 山形 冷やしらーめん",
+        "comment": "The long-established shop said to have created cold ramen.",
+        "access": "Honcho, Yamagata City (about 5 min by car from the station)"
+      },
+      {
+        "name": "Sakaeya Bunten",
+        "query": "栄屋分店 山形",
+        "comment": "Serves cold ramen all year round.",
+        "access": "Kita-Yamagata, Yamagata City"
+      }
+    ]
+  },
+  "米沢ラーメン": {
+    "summary": "The local ramen of Yonezawa. It features thin, hand-crumpled wavy noodles in a light soy sauce broth made from dried sardines and chicken bones. The wavy noodles hold the soup well, giving a clean taste with plenty of umami. The city has many ramen shops, and it is loved as a local flavor alongside Yonezawa beef. Enjoy it with sightseeing in the castle town, such as Uesugi Shrine. Some popular shops have lines at lunchtime. Its light flavor never gets old.",
+    "price": "¥700–1,000",
+    "area": "Yonezawa",
+    "shops": [
+      {
+        "name": "Soba no Mise Hirama",
+        "query": "そばの店 ひらま 米沢",
+        "comment": "A popular shop run by a noodle maker; watch noodles being made. Closed Wednesdays.",
+        "access": "Yonezawa (about 15 min by car from the station)"
+      },
+      {
+        "name": "Ryushanhai Yonezawa",
+        "query": "龍上海 米沢店",
+        "comment": "A popular Yonezawa shop with lines; famous for karamiso ramen.",
+        "access": "Yonezawa"
+      }
+    ]
+  },
+  "赤湯からみそラーメン": {
+    "summary": "Ramen topped with a spicy miso paste, born in Akayu Onsen in Nan'yo. Thick, wavy noodles come in a miso-based broth with a ball of red spicy miso in the center. Start by eating it as is, then gradually stir in the spicy miso to change the flavor. The paste, made with garlic and chili, has deep umami beneath the heat. If you do not like spicy food, dissolve it little by little. It is also a great meal during a stay at Akayu Onsen, especially on a cold day.",
+    "price": "¥900–1,200",
+    "area": "Nan'yo (Akayu Onsen)",
+    "shops": [
+      {
+        "name": "Ryushanhai Akayu Main Store",
+        "query": "龍上海 赤湯本店",
+        "comment": "The original home of karamiso ramen.",
+        "access": "Akayu, Nanyo (about 5 min by car from Akayu Station)"
+      },
+      {
+        "name": "Ryushanhai Yamagata",
+        "query": "龍上海 山形店",
+        "comment": "Try Akayu karamiso ramen in Yamagata City.",
+        "access": "Yamagata City"
+      }
+    ]
+  },
+  "鳥中華": {
+    "summary": "A noodle dish from Tendo and nearby areas that pairs Chinese-style ramen noodles with a Japanese broth like soba soup. It is usually topped with sweet and savory simmered chicken, tempura bits and seaweed. It is said to have started as a staff meal at a soba restaurant, and the unexpected mix of Japanese dashi and ramen noodles is addictive. The tempura bits soak up the soup, so the flavor changes as you eat. Enjoy it on a visit to Tendo, famous for making shogi pieces.",
+    "price": "¥700–1,000",
+    "area": "Tendo, Yamagata City and more",
+    "shops": [
+      {
+        "name": "Teuchi Suisha Namasoba",
+        "query": "水車生そば 天童",
+        "comment": "The long-established Tendo soba shop where torichuka was born.",
+        "access": "Central Tendo Onsen"
+      },
+      {
+        "name": "Suzuki Sobaya",
+        "query": "寿々喜そば屋 漆山",
+        "comment": "A soba shop known for its torichuka.",
+        "access": "Urushiyama, Yamagata City"
+      }
+    ]
+  },
+  "どんどん焼き": {
+    "summary": "A Yamagata snack of thin, okonomiyaki-like batter topped with seaweed and fish sausage, then rolled around a pair of chopsticks. It is brushed with sauce, making it easy to eat on the go. Sold at stalls and specialist shops, it is loved by children and adults alike. It is inexpensive and easy to grab. A nostalgic taste for people in Yamagata, it often appears at festival stalls. Eat it piping hot. A casual way to enjoy local flavor.",
+    "price": "¥200–300 each",
+    "area": "Yamagata City and more",
+    "shops": [
+      {
+        "name": "Dondonyaki Oyatsuyasan",
+        "query": "どんどん焼き おやつ屋さん 山形",
+        "comment": "A popular dondon-yaki shop often featured on TV.",
+        "access": "Yamagata City"
+      },
+      {
+        "name": "Coco Yumeya",
+        "query": "CoCo夢や どんどん焼き",
+        "comment": "Sells dondon-yaki at festival stalls and its shop.",
+        "access": "Yamagata City"
+      }
+    ]
+  },
+  "芋煮": {
+    "summary": "A Yamagata dish of taro, beef, konjac and green onions simmered in soy sauce. In autumn, imoni-kai parties, where people gather around big pots by the river, are held across the prefecture and are a seasonal tradition. The flavor varies by area: inland it is usually beef and soy sauce, while the Shonai region uses pork and miso. Every September, there is even an event where imoni is cooked in a giant pot 6 meters across. The soft taro and sweet-savory broth warm you up. It is the taste of autumn in Yamagata.",
+    "price": "¥500–1,000",
+    "area": "All over Yamagata",
+    "shops": [
+      {
+        "name": "Yamagata Imoniya",
+        "query": "山形いも煮ヤ",
+        "comment": "Compare imoni from different areas, available all year.",
+        "access": "About 2 min walk from Yamagata Station"
+      },
+      {
+        "name": "Yamagata Nagaya Sakaba",
+        "query": "山形長屋酒場",
+        "comment": "Taste imoni from all four regions of the prefecture in one place.",
+        "access": "About 3 min walk from Yamagata Station"
+      }
+    ]
+  },
+  "だし": {
+    "summary": "A Yamagata dish of finely chopped summer vegetables like cucumber, eggplant, myoga ginger and shiso, seasoned with soy sauce. It is different from the dashi broth used in cooking, and is eaten as is over rice or chilled tofu. Finely chopped kelp or okra is sometimes added for a sticky texture. Fresh and light, it is perfect for hot summer days when appetites fade. It is a summer staple in Yamagata homes and is sold in local supermarkets. A taste of Yamagata summer worth trying.",
+    "price": "¥300–600",
+    "area": "All over Yamagata",
+    "shops": [
+      {
+        "name": "Aji no Mise Suzuran",
+        "query": "味の店 スズラン 山形",
+        "comment": "A long-running restaurant serving Yamagata dishes and Sea of Japan fish.",
+        "access": "About 5 min walk from Yamagata Station"
+      },
+      {
+        "name": "Yamagata Oshoshina",
+        "query": "山形おしょうしな 総本店",
+        "comment": "Serves dishes with Yamagata ingredients, such as tofu topped with dashi.",
+        "access": "Near Yamagata Station"
+      }
+    ]
+  },
+  "玉こんにゃく": {
+    "summary": "A Yamagata specialty of round konjac balls simmered slowly in soy sauce and dashi and served on skewers, usually with a dab of mustard. Yamagata is known for eating lots of konjac, and you can easily find these at tourist spots and festival stalls. The ones sold at the foot of Yamadera (Risshakuji Temple) are especially famous and make a perfect snack before or after climbing its long stone staircase. Eat them piping hot to warm yourself up. Adjust the mustard to taste.",
+    "price": "¥100–200 each",
+    "area": "Yamagata City (Yamadera) and more",
+    "shops": [
+      {
+        "name": "Yamadera no Chikara Konnyaku",
+        "query": "山寺 力こんにゃく",
+        "comment": "Fuel up with hot konnyaku before climbing Yamadera's stone steps.",
+        "access": "On the approach to Yamadera (Risshakuji)"
+      },
+      {
+        "name": "Tanno Konnyaku (Gutto Yamagata)",
+        "query": "丹野こんにゃく 山形観光物産会館",
+        "comment": "A konnyaku maker's shop serving tama konnyaku.",
+        "access": "Entrance of Gutto Yamagata"
+      }
+    ]
+  },
+  "冷たい肉そば": {
+    "summary": "A specialty of Kahoku: thick soba in a cold soy sauce broth with meat from mature hens. The firm, chewy chicken releases umami and its fat adds richness to the broth. It is said to have started when a regular customer at a soba shop asked for his broth to be served cold. Locals eat it cold even in winter, though some shops also offer a hot version, so choose whichever you like. Enjoy the firm soba and the satisfying chew of the chicken.",
+    "price": "¥700–1,000",
+    "area": "Kahoku and more",
+    "shops": [
+      {
+        "name": "Issuntei Honten",
+        "query": "一寸亭本店 河北町",
+        "comment": "Known as the originator of cold meat soba.",
+        "access": "Yachi, Kahoku"
+      },
+      {
+        "name": "Toiya",
+        "query": "といや 河北町 肉そば",
+        "comment": "Popular for cold meat soba and katsudon; lines on weekends.",
+        "access": "Yachi, Kahoku"
+      }
+    ]
+  },
+  "山形板そば": {
+    "summary": "A Yamagata specialty of soba served on a long wooden board or tray. The portions are meant to be shared by several people, so it is eaten together around the table. The soba tends to be thick, rustic inaka soba with a firm texture and strong aroma. The Murayama area has so many soba shops that one road is called the Soba Highway, so you can compare flavors. If you are traveling in a group, be sure to share an ita soba. You can fully enjoy the aroma and bite of the soba.",
+    "price": "¥900–1,500 per person",
+    "area": "Murayama and the Murayama region",
+    "shops": [
+      {
+        "name": "Araki Soba",
+        "query": "あらきそば 村山",
+        "comment": "A famous shop on the soba road known for thick, firm noodles.",
+        "access": "Murayama"
+      },
+      {
+        "name": "Teuchi Soba Yukimuro",
+        "query": "手打ちそば ゆきむろ 村山",
+        "comment": "Ita soba made from stone-ground flour and spring water.",
+        "access": "Murayama (Mogami River soba road)"
+      }
+    ]
+  },
+  "米沢牛すき焼き": {
+    "summary": "Sukiyaki made with Yonezawa beef, one of Japan's top brands. It is known for fine marbling and sweet fat with a melt-in-the-mouth tenderness. The fame of Yonezawa beef is said to have begun in the Meiji era, when a foreigner who visited Yonezawa spread word of how good the beef was. The city has many long-established restaurants serving it as sukiyaki, steak or yakiniku. Dip the meat in beaten egg and enjoy it with the sweet sauce. A perfect treat for your trip.",
+    "price": "¥5,000–15,000",
+    "area": "Yonezawa",
+    "shops": [
+      {
+        "name": "Yonezawa Beef Tokiwa",
+        "query": "米沢牛 登起波 本店",
+        "comment": "The oldest Yonezawa beef restaurant in town, dating from the Meiji era.",
+        "access": "Central Yonezawa"
+      },
+      {
+        "name": "Yoshitei",
+        "query": "米沢牛 山懐料理 吉亭",
+        "comment": "Enjoy Yonezawa beef in a registered cultural property building.",
+        "access": "Yonezawa"
+      }
+    ]
+  },
+  "だだちゃ豆": {
+    "summary": "A variety of edamame grown in Tsuruoka. Dadacha means father in the Shonai dialect. The pods are slightly brownish and plain-looking compared to ordinary edamame, but they are remarkably sweet and fragrant, with a taste you will not forget. The season is short, around August. They are best simply boiled in salt, and they go perfectly with beer. There are also sweets and ice cream made with them. Locals see them as a sign that summer has arrived, so try to visit in season.",
+    "price": "¥500–1,000",
+    "area": "Tsuruoka",
+    "shops": [
+      {
+        "name": "Shonai Kanko Bussankan",
+        "query": "庄内観光物産館",
+        "comment": "Sells freshly picked dadacha-mame in summer.",
+        "access": "Tsuruoka (near Tsuruoka IC)"
+      },
+      {
+        "name": "Gutto Yamagata",
+        "query": "山形県観光物産会館 ぐっと山形",
+        "comment": "Also sells sweets made with dadacha-mame.",
+        "access": "Omote-Zao, Yamagata City"
+      }
+    ]
+  },
+  "のし梅": {
+    "summary": "A traditional Yamagata sweet of plum pulp mixed with agar and sugar, rolled thin and sandwiched between bamboo sheaths. It is said to have started as a medicine in the Edo period. It has a sweet-tart plum flavor, a smooth texture and refreshing sweetness. Peel away the bamboo sheath to reveal a thin, translucent amber sheet. It is perfect with tea and has long been loved as a Yamagata souvenir. It looks beautiful too, making it a welcome gift. Available at long-established shops in Yamagata City.",
+    "price": "¥500–1,500",
+    "area": "Yamagata City",
+    "shops": [
+      {
+        "name": "Satoya",
+        "query": "佐藤屋 山形 のし梅",
+        "comment": "A long-established Yamagata confectioner known for noshi-ume.",
+        "access": "Tokamachi, Yamagata City"
+      },
+      {
+        "name": "Tamaya Sohonten",
+        "query": "玉屋総本店 山形 のし梅",
+        "comment": "A long-established Yamagata maker of noshi-ume.",
+        "access": "Near Yamagata Station (Teppocho)"
+      }
+    ]
+  },
+  "くじら餅": {
+    "summary": "A traditional Yamagata sweet of glutinous and regular rice flour mixed with sugar, soy sauce and walnuts, then steamed. Despite its name, which means whale mochi, it contains no whale. There are several theories about the name, including that it was written with characters meaning long-lasting because it keeps well. It is lightly sweet and chewy, and toasting it adds a savory aroma. It is often made around the Doll Festival in the Mogami region, including Shinjo. It keeps well, so it makes a good souvenir.",
+    "price": "¥500–1,000",
+    "area": "Shinjo and the Mogami region",
+    "shops": [
+      {
+        "name": "Fukada Kashiho",
+        "query": "深田菓子舗 新庄",
+        "comment": "Founded in the Meiji era; said to be the first to sell kujira mochi.",
+        "access": "Omachi, Shinjo"
+      },
+      {
+        "name": "Sato Kashiten",
+        "query": "佐藤菓子店 新庄 くじら餅",
+        "comment": "One of the Shinjo confectioners making kujira mochi.",
+        "access": "Shinjo"
+      }
+    ]
+  },
+  "富貴豆": {
+    "summary": "A traditional Yamagata sweet of peeled green peas simmered until soft in sugar. It has a fluffy texture and an elegant, gentle sweetness. It is said to have been created at a shop in Yamagata City in the Meiji era, and the name fuki carries an auspicious meaning of wealth and honor. It is perfect with tea or as a snack and can be bought at long-established shops in Yamagata City. Its simple, old-fashioned flavor brings out the natural taste of the peas. A must for fans of Japanese sweets.",
+    "price": "¥500–1,000",
+    "area": "Yamagata City",
+    "shops": [
+      {
+        "name": "Yamadaya",
+        "query": "山田家 白露ふうき豆",
+        "comment": "Founded in the early Showa era; famous for its fuki-mame.",
+        "access": "Nanokamachi, Yamagata City"
+      },
+      {
+        "name": "Choeido",
+        "query": "長榮堂 山形 富貴豆",
+        "comment": "A long-established Yamagata confectioner selling fuki-mame.",
+        "access": "Yamagata City"
+      }
+    ]
+  }
+}

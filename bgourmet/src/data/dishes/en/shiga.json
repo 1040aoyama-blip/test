@@ -1,0 +1,198 @@
+{
+  "近江ちゃんぽん": {
+    "summary": "Local noodles born in Hikone. Unlike Nagasaki champon, it features a clear soy sauce broth flavored with Japanese dashi of bonito and kelp. It is piled with cabbage, bean sprouts, carrot, wood ear mushrooms and pork, and the sweetness of the vegetables melts into the broth. The local way is to add vinegar partway through to change the flavor. Light yet satisfying thanks to the vegetables, it is served at many shops around the prefecture. It is a welcome meal when you need more vegetables on your trip.",
+    "price": "¥700–1,000",
+    "area": "Hikone and around",
+    "shops": [
+      {
+        "name": "Menrui Okabe Honten",
+        "query": "麺類をかべ 本店 彦根",
+        "comment": "The shop where Omi champon was born.",
+        "access": "Ginzamachi, Hikone"
+      },
+      {
+        "name": "Champontei Sohonke Hikone Ekimae",
+        "query": "ちゃんぽん亭総本家 彦根駅前本店",
+        "comment": "Flagship of the chain that carried on Okabe's recipe.",
+        "access": "Hikone Station front"
+      }
+    ]
+  },
+  "サラダパン": {
+    "summary": "A local bread from a bakery in Kinomoto, Nagahama. The name suggests a vegetable sandwich, but the filling is chopped takuan pickled radish mixed with mayonnaise. Generously stuffed into a soft roll, the crunchy pickles and creamy mayonnaise go surprisingly well together. The retro packaging is cute too. It is also sold at supermarkets around the prefecture. It makes a great conversation-starting souvenir. It is a unique bread worth trying at least once.",
+    "price": "¥150–250 each",
+    "area": "Kinomoto, Nagahama",
+    "shops": [
+      {
+        "name": "Tsuruya Pan Kinomoto",
+        "query": "つるやパン 本店 木之本",
+        "comment": "The flagship of the bakery behind salad pan.",
+        "access": "Kinomoto, Nagahama (on the old Hokkoku Kaido)"
+      },
+      {
+        "name": "Tsuruya Pan Marui Shokupan",
+        "query": "つるやパン まるい食パン専門店",
+        "comment": "The second shop, in central Nagahama.",
+        "access": "Asahimachi (near Nagahama Station)"
+      }
+    ]
+  },
+  "ふなずし": {
+    "summary": "Shiga's signature local dish: nigorobuna crucian carp from Lake Biwa salted and then fermented with rice for a long time. It is a type of narezushi, said to be a root of Japanese sushi. It has a strong, distinctive aroma and sourness that divide opinion, but many people become hooked on its rich, cheese-like umami. It is sliced thin as a drinking snack or eaten in ochazuke. It is sold at long-established shops and souvenir stores. First-timers should try a little at a time.",
+    "price": "¥2,000–6,000",
+    "area": "Takashima, Otsu and throughout Shiga",
+    "shops": [
+      {
+        "name": "Uoji",
+        "query": "鮒寿し 魚治 マキノ",
+        "comment": "A funazushi maker dating to the Edo period.",
+        "access": "Kaizu, Makino, Takashima"
+      },
+      {
+        "name": "Ganso Sakamotoya",
+        "query": "元祖阪本屋 大津 鮒寿司",
+        "comment": "A funazushi specialist in Otsu.",
+        "access": "Otsu"
+      }
+    ]
+  },
+  "近江牛すき焼き": {
+    "summary": "Sukiyaki made with Omi beef, sometimes counted among Japan's three great wagyu. It features fine marbling and fat with a mellow, elegant sweetness. Omi beef has a long history: in the Edo period, the Hikone domain presented beef pickled in miso to the shogun's family. Many restaurants serve it Kansai style, searing the beef in a pot greased with beef fat, seasoning with sugar and soy sauce, and eating it with beaten egg. Enjoy it at long-established restaurants in Omihachiman or Hikone.",
+    "price": "¥8,000–20,000",
+    "area": "Omihachiman, Hikone and around",
+    "shops": [
+      {
+        "name": "Morishima Omihachiman",
+        "query": "毛利志満 近江八幡本店",
+        "comment": "A long-running restaurant serving Omi beef from its own ranch.",
+        "access": "Higashigawacho, Omihachiman"
+      },
+      {
+        "name": "Sennaritei Hachimanbori",
+        "query": "千成亭 八幡堀店",
+        "comment": "An Omi beef restaurant near the Hachiman canal.",
+        "access": "Osugicho (near Hachimanbori)"
+      }
+    ]
+  },
+  "鯖そうめん": {
+    "summary": "A local dish of the Kohoku area around Nagahama. Grilled mackerel is simmered sweet and savory, and somen noodles are cooked in the same broth and served together. The mackerel's flavor soaks into the noodles, making it good with rice too. It is said to come from a custom in which a bride's family sent grilled mackerel to her new home during the busy rice-planting season. Try it at restaurants around Kurokabe Square in Nagahama. The pairing of toasty mackerel and soaked noodles is like nothing else.",
+    "price": "¥800–1,500",
+    "area": "Nagahama",
+    "shops": [
+      {
+        "name": "Yokaro",
+        "query": "翼果楼 長浜 焼鯖そうめん",
+        "comment": "A grilled-mackerel somen specialist in an old merchant house.",
+        "access": "5 min walk from Nagahama Station"
+      },
+      {
+        "name": "Narikomaya",
+        "query": "成駒家 長浜 焼鯖そうめん",
+        "comment": "A restaurant founded in the Meiji period.",
+        "access": "Minamigofukucho, Nagahama"
+      }
+    ]
+  },
+  "赤こんにゃく煮": {
+    "summary": "A specialty of Omihachiman: bright red konnyaku simmered sweet and savory in soy sauce. The red color comes from iron oxide. One story says flamboyant warlord Oda Nobunaga had konnyaku dyed red. It looks startlingly red, but it tastes like ordinary konnyaku, well soaked in flavor. You can find it at diners and souvenir shops in Omihachiman. It makes a fun souvenir from a stroll around the town and a great conversation piece.",
+    "price": "¥300–600",
+    "area": "Omihachiman",
+    "shops": [
+      {
+        "name": "Norimatsu Shokuhin Yoshii Shoten",
+        "query": "乃利松 赤こんにゃく 近江八幡",
+        "comment": "An Edo-period maker of red konnyaku.",
+        "access": "Omihachiman"
+      },
+      {
+        "name": "Hakuunkan",
+        "query": "白雲館 近江八幡",
+        "comment": "A tourist center near Hachimanbori that also sells local goods.",
+        "access": "Ishincho (near Hachimanbori)"
+      }
+    ]
+  },
+  "えび豆": {
+    "summary": "A Shiga home dish of small freshwater shrimp from Lake Biwa simmered with soybeans in soy sauce and sugar. The shrimp's flavor and the sweetness of the plump beans combine into a gentle taste. It has been eaten at celebrations with the wish to live healthily until your back bends like a shrimp, since mame, beans, also means diligent and healthy. It is perfect with rice. It is sold at supermarkets and shops selling lake fish simmered in soy sauce. It lets you taste the bounty of Lake Biwa.",
+    "price": "¥400–800",
+    "area": "Throughout Shiga",
+    "shops": [
+      {
+        "name": "Michi no Eki Biwako Ohashi Kome Plaza",
+        "query": "道の駅 びわ湖大橋米プラザ",
+        "comment": "A roadside station full of Shiga foods.",
+        "access": "Otsu (by Biwako Ohashi Bridge)"
+      },
+      {
+        "name": "Ganso Sakamotoya",
+        "query": "元祖阪本屋 大津 鮒寿司",
+        "comment": "A funazushi shop that also sells ebi-mame.",
+        "access": "Otsu"
+      }
+    ]
+  },
+  "でっち羊羹": {
+    "summary": "Yokan red bean jelly wrapped in bamboo sheath and steamed, made in Omihachiman and elsewhere. It is lighter than ordinary firm yokan, with a chewy texture and a faint scent of bamboo. One theory says the name comes from detchi, shop apprentices, who brought it home as a gift when they visited their families. A sweet from the homeland of the Omi merchants, it is sold at confectioners in Omihachiman. Its mild sweetness makes it easy to reach for another slice, and it is perfect with tea.",
+    "price": "¥300–700 each",
+    "area": "Omihachiman and around",
+    "shops": [
+      {
+        "name": "Watayo",
+        "query": "和た与 近江八幡",
+        "comment": "A late-Edo confectioner said to have originated detchi yokan.",
+        "access": "Tamakicho, Omihachiman"
+      },
+      {
+        "name": "Taneya Himure no Ya",
+        "query": "たねや 日牟禮乃舎",
+        "comment": "Taneya's shop beside Himure Hachimangu.",
+        "access": "Miyauchicho (Himure Village)"
+      }
+    ]
+  },
+  "糸切餅": {
+    "summary": "A famous mochi sold at the gate of Taga Taisha Shrine. Long, soft mochi wraps smooth bean paste and is marked with three blue and red lines. Its name comes from being cut with a shamisen string instead of a knife. The lines are said to represent the banners of the Mongol army. Bite-sized, it offers a refined sweetness. Try it at shops in front of the shrine when you visit. It does not keep long, so eat it soon. It makes a fine souvenir of your visit.",
+    "price": "¥600–1,200 per box",
+    "area": "Taga (in front of Taga Taisha)",
+    "shops": [
+      {
+        "name": "Enjudo Honpo",
+        "query": "糸切餅元祖 莚寿堂本舗",
+        "comment": "A Meiji-era shop at the gate of Taga Taisha.",
+        "access": "At the gate of Taga Taisha"
+      },
+      {
+        "name": "Hishiya",
+        "query": "ひしや 多賀 糸切餅",
+        "comment": "A long-established itokiri mochi shop on the approach.",
+        "access": "At the gate of Taga Taisha"
+      },
+      {
+        "name": "Tagaya",
+        "query": "糸切餅総本家 多賀や",
+        "comment": "An itokiri mochi shop on the main approach.",
+        "access": "Main approach to Taga Taisha"
+      }
+    ]
+  },
+  "クラブハリエのバームクーヘン": {
+    "summary": "The signature baumkuchen of a Western-style confectioner run by a group that began as a long-established Japanese sweets shop in Omihachiman. It is moist and fluffy with a gentle sweetness, and the shop has branches in department stores across Japan. In Omihachiman there is a facility known for its grass-covered roof, where you can enjoy freshly baked baumkuchen. It is a popular souvenir and worth stopping by when you visit Omihachiman. Fresh from the oven it is extra fluffy, and lines are common.",
+    "price": "¥1,500–3,000",
+    "area": "Omihachiman",
+    "shops": [
+      {
+        "name": "La Collina Omihachiman",
+        "query": "ラ コリーナ近江八幡",
+        "comment": "The flagship where you can eat baumkuchen fresh from the oven.",
+        "access": "Kitanoshocho, Omihachiman"
+      },
+      {
+        "name": "Club Harie Himure-kan",
+        "query": "クラブハリエ 日牟禮館",
+        "comment": "A Western-style building beside Himure Hachimangu.",
+        "access": "Miyauchicho (Himure Village)"
+      }
+    ]
+  }
+}

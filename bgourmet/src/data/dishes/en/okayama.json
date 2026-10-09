@@ -1,0 +1,255 @@
+{
+  "えびめし": {
+    "summary": "A local dish of Okayama City: rice with shrimp and other ingredients stir-fried in a black sauce made with caramel and more. The jet-black look is surprising, but the taste is rich and sweet-savory, and the toasty sauce goes well with rice. It is often topped with shredded egg, and the contrast of black rice and yellow egg is fun. It is said to have been born at a curry restaurant in Tokyo and spread after reaching Okayama. Try it at Western-style restaurants and cafes in Okayama City.",
+    "price": "¥700–1,100",
+    "area": "Okayama City",
+    "shops": [
+      {
+        "name": "Ebimeshiya Manari",
+        "query": "えびめしや 万成店 岡山",
+        "comment": "A Western-style diner in the group that popularized ebimeshi.",
+        "access": "Manari, Kita Ward, Okayama"
+      },
+      {
+        "name": "Indeira",
+        "query": "いんでいら 新見",
+        "comment": "Serves ebimeshi the way it always has.",
+        "access": "Niimi (inside a shopping plaza)"
+      }
+    ]
+  },
+  "デミかつ丼": {
+    "summary": "A local dish of Okayama City: a pork cutlet on rice topped with demi-glace sauce. Unlike katsudon simmered with egg, it has a rich, Western-style flavor. Many shops lay boiled cabbage on the rice or scatter green peas on top. In Okayama, katsudon often means this demi-katsudon. You can try it at diners and tonkatsu restaurants in the city, and each shop's demi-glace tastes different. Comparing them is fun, and portions are generous.",
+    "price": "¥800–1,300",
+    "area": "Okayama City",
+    "shops": [
+      {
+        "name": "Ajitsukasa Nomura",
+        "query": "味司 野村 岡山 デミカツ丼",
+        "comment": "A prewar restaurant said to be the originator of demi katsudon.",
+        "access": "7 min walk from Okayama Station east exit (Heiwacho)"
+      },
+      {
+        "name": "Shokudo Yamato",
+        "query": "食堂やまと 岡山 デミカツ丼",
+        "comment": "Only one katsudon on the menu: the demi-glace one. A local favorite.",
+        "access": "5 min walk from Okayama Station west exit"
+      }
+    ]
+  },
+  "津山ホルモンうどん": {
+    "summary": "A local dish of Tsuyama: fresh beef offal, udon and vegetables such as cabbage stir-fried on an iron plate with a sweet and savory sauce. Tsuyama has long held cattle and horse markets, and eating beef is deeply rooted here. It is a local dish made possible by access to fresh offal. The chewy udon soaks up the offal's fat and flavor along with the sauce. Sauces differ by shop, from miso to soy sauce. Try it at shops in Tsuyama.",
+    "price": "¥800–1,300",
+    "area": "Tsuyama",
+    "shops": [
+      {
+        "name": "Hashino Shokudo",
+        "query": "橋野食堂 津山",
+        "comment": "A diner dating back to the Meiji period. Closes when sold out.",
+        "access": "Kawasaki, Tsuyama"
+      },
+      {
+        "name": "Ippai Chaya Toho",
+        "query": "いっぱい茶屋 東宝 津山",
+        "comment": "Just a short walk from Tsuyama Station.",
+        "access": "2 min walk from Tsuyama Station"
+      }
+    ]
+  },
+  "ひるぜん焼そば": {
+    "summary": "Local yakisoba of the Hiruzen Highlands. It is made with chicken and cabbage grown in the highlands, fried with a sweet and savory miso-based sauce. A key feature is kashiwa, firm meat from older hens, which gets more flavorful the more you chew. The sweet crunch of highland cabbage and the sweet-savory sauce are addictive. It is also known for winning the B-1 Grand Prix. Enjoy it at highland restaurants along with sightseeing in Hiruzen.",
+    "price": "¥700–1,000",
+    "area": "Hiruzen Highlands, Maniwa",
+    "shops": [
+      {
+        "name": "Yuyu",
+        "query": "悠悠 蒜山 焼そば",
+        "comment": "A popular shop with lines; takeaway available.",
+        "access": "Hiruzen, Maniwa"
+      },
+      {
+        "name": "Yamana Shokudo",
+        "query": "やまな食堂 蒜山",
+        "comment": "A Hiruzen diner.",
+        "access": "Hiruzen, Maniwa"
+      },
+      {
+        "name": "Kogentei",
+        "query": "蒜山高原 高原亭",
+        "comment": "Hiruzen yakisoba with an unchanged miso sauce.",
+        "access": "Hiruzen, Maniwa"
+      }
+    ]
+  },
+  "日生カキオコ": {
+    "summary": "A local dish of the Hinase district of Bizen: okonomiyaki packed with oysters. Hinase is a fishing town where oyster farming thrives, and this dish uses local oysters generously. The flavor of plump oysters spreads through the cabbage-filled batter and goes well with the toasty sauce. Winter to spring, when oysters are best, is the season, and many shops serve it only then. Some popular shops draw lines, so visit during oyster season. Many are surprised by the number of oysters.",
+    "price": "¥1,000–1,500",
+    "area": "Hinase, Bizen",
+    "shops": [
+      {
+        "name": "Tama-chan",
+        "query": "タマちゃん 日生 カキオコ",
+        "comment": "A popular shop that also offers an extra-oyster version.",
+        "access": "Hinase, Bizen"
+      },
+      {
+        "name": "Morishita",
+        "query": "もりした 日生 カキオコ",
+        "comment": "Try it with both soy sauce and okonomi sauce.",
+        "access": "7 min walk from Hinase Station"
+      }
+    ]
+  },
+  "笠岡ラーメン": {
+    "summary": "Local ramen from Kasaoka, featuring a soy sauce broth made from chicken bones topped with kashiwa, slices of simmered meat from older hens instead of pork. Kasaoka has long been a poultry-farming town, and chicken ramen has been loved here. The chewy kashiwa, light and slightly sweet broth, and green onion make a simple, homey bowl. Several shops in the city have been loved by locals for many years. It tastes like old-fashioned chuka soba.",
+    "price": "¥600–900",
+    "area": "Kasaoka",
+    "shops": [
+      {
+        "name": "Sakamoto",
+        "query": "坂本 笠岡 ラーメン",
+        "comment": "A long-running shop near Kasaoka Station.",
+        "access": "2 min walk from Kasaoka Station"
+      },
+      {
+        "name": "Chuka Soba Idehara",
+        "query": "中華そば いではら 笠岡",
+        "comment": "A soy ramen full of chicken flavor.",
+        "access": "Kasaoka"
+      }
+    ]
+  },
+  "まつりずし": {
+    "summary": "Okayama's signature local dish, also called Okayama barazushi, a scattered sushi loaded with toppings. Seto Inland Sea seafood such as Spanish mackerel, shrimp, squid and octopus, and vegetables such as lotus root and shiitake, are arranged lavishly and colorfully over vinegared rice. Legend says that in the Edo period, when a lord issued a frugality decree, commoners hid the toppings inside the rice to make it look plain. It has long been made as a feast for festivals and celebrations.",
+    "price": "¥1,200–2,500",
+    "area": "Okayama City and around",
+    "shops": [
+      {
+        "name": "Miyoshino Honten (Okayama Station)",
+        "query": "三好野本店 桃太郎の祭ずし 岡山駅",
+        "comment": "Try it as the \"Momotaro no Matsurizushi\" station bento.",
+        "access": "Okayama Station"
+      },
+      {
+        "name": "Azuma Sushi Sansute Okayama",
+        "query": "吾妻寿司 さんすて岡山店",
+        "comment": "Serves Okayama's specialty sushi, inside the station.",
+        "access": "Okayama Station (Sansute)"
+      }
+    ]
+  },
+  "ままかりずし": {
+    "summary": "Sushi topped with mamakari, small fish from the Seto Inland Sea, pickled in vinegar. Mamakari is officially called sappa, and the name is said to come from people being so taken with it that they borrowed rice, mama, from their neighbors to keep eating. It is so tender you can eat the small bones, with a refreshing vinegared flavor. Try it as a station bento at Okayama Station or at sushi restaurants in the city. It is also a popular Okayama souvenir and goes well with sake.",
+    "price": "¥800–1,500",
+    "area": "Okayama City and around",
+    "shops": [
+      {
+        "name": "Azuma Sushi Sansute Okayama",
+        "query": "吾妻寿司 さんすて岡山店",
+        "comment": "Serves mamakari sushi, inside the station.",
+        "access": "Okayama Station (Sansute)"
+      },
+      {
+        "name": "Okayama Station bento stands",
+        "query": "岡山駅 駅弁 ままかりの押し寿司",
+        "comment": "Look for the \"mamakari oshizushi\" bento.",
+        "access": "Okayama Station"
+      }
+    ]
+  },
+  "蒜山おこわ": {
+    "summary": "A local dish of the Hiruzen Highlands: glutinous rice steamed with wild vegetables, chicken, burdock and carrot, seasoned with soy sauce. It features wild vegetables from the highlands such as bracken and royal fern, giving it a simple flavor full of the mountains' bounty. The chewy rice soaked with flavor is delicious even cold. It is sold at roadside stations and tourist facilities in Hiruzen. It is perfect to take along on a highland drive and also makes a good souvenir.",
+    "price": "¥500–900",
+    "area": "Hiruzen Highlands, Maniwa",
+    "shops": [
+      {
+        "name": "Suitonbo",
+        "query": "粋呑房 蒜山",
+        "comment": "Serves Hiruzen local dishes; takeaway available.",
+        "access": "Hiruzen, Maniwa"
+      },
+      {
+        "name": "Michi no Eki Kaze no Ie",
+        "query": "道の駅 風の家 蒜山",
+        "comment": "A roadside station that sells lots of Hiruzen okowa every day.",
+        "access": "Hiruzen, Maniwa"
+      }
+    ]
+  },
+  "きびだんご": {
+    "summary": "Okayama's best-known sweet, famous from the folktale of Momotaro, who shared kibi dango with his companions, the dog, monkey and pheasant. Okayama's kibi dango is a soft, gyuhi-like sweet made by kneading glutinous rice flour with sugar and starch syrup, with a faint flavor of millet. Bite-sized and easy to eat, it has a gentle sweetness. There are also flavors using Okayama fruits such as white peach and muscat grapes. It is widely sold at Okayama Station and souvenir shops, and it keeps well.",
+    "price": "¥500–1,200",
+    "area": "Okayama City and around",
+    "shops": [
+      {
+        "name": "Koeido Honten",
+        "query": "廣榮堂 本店 岡山",
+        "comment": "A kibi dango maker founded in the late Edo period.",
+        "access": "Chunagoncho, Naka Ward, Okayama"
+      },
+      {
+        "name": "Okayama Station souvenir shops",
+        "query": "岡山駅 さんすて おみやげ きびだんご",
+        "comment": "Several makers' kibi dango are sold at the station.",
+        "access": "Okayama Station (Sansute)"
+      }
+    ]
+  },
+  "大手まんぢゅう": {
+    "summary": "One of Okayama's best-known sweets, made by a long-established shop in Okayama City. A wrapper made with amazake sweet rice drink, so thin you can see through it, encloses refined smooth bean paste. The wrapper has a faint aroma of amazake, and the paste melts softly in the mouth. It is said to have been made since the Edo period and is said to have been loved by the lords of the domain. Small and easy to eat, it is perfect with tea. It is sold at Okayama Station and souvenir shops.",
+    "price": "¥600–1,500",
+    "area": "Okayama City",
+    "shops": [
+      {
+        "name": "Ote Manju Inbeya Kyobashi",
+        "query": "大手饅頭伊部屋 京橋本店",
+        "comment": "The Edo-period maker's flagship.",
+        "access": "Kyobashicho, Kita Ward, Okayama"
+      },
+      {
+        "name": "Okayama Station souvenir shops",
+        "query": "岡山駅 さんすて おみやげ 大手まんぢゅう",
+        "comment": "Also sold at Okayama Station shops.",
+        "access": "Okayama Station (Sansute)"
+      }
+    ]
+  },
+  "むらすずめ": {
+    "summary": "A famous sweet from a long-established shop in Kurashiki: chunky red bean paste wrapped in a thin crepe-like pancake. The pattern on the surface is said to look like a flock of sparrows gathering on ripe rice, which gave it its name. It is also said to be modeled on the woven hats worn by dancers at Kurashiki's old harvest festivals. Enjoy the chewy pancake and the gentle sweetness of plenty of bean paste. Choose it as a memento of strolling the Kurashiki Bikan Historical Quarter.",
+    "price": "¥150–250 each",
+    "area": "Kurashiki",
+    "shops": [
+      {
+        "name": "Kikkodo Bikan Chiku",
+        "query": "橘香堂 美観地区店",
+        "comment": "The maker of murasuzume; watch them being made.",
+        "access": "Kurashiki Bikan Historical Quarter"
+      },
+      {
+        "name": "Kikkodo Honten",
+        "query": "橘香堂 本店 倉敷",
+        "comment": "The Meiji-era flagship.",
+        "access": "Kurashiki"
+      }
+    ]
+  },
+  "白桃パフェ": {
+    "summary": "A parfait made with white peaches from Okayama, known as a fruit kingdom. Okayama white peaches are prized for their pale, elegant look, melting tenderness and juicy sweetness. Parfaits that lavishly use peaches in season have become a summer specialty of Okayama. You can enjoy them for a limited time at fruit parlors and cafes in Okayama City. Parfaits with other Okayama fruits, such as muscat and pione grapes, are also popular. Plan your visit for peach season.",
+    "price": "¥1,500–3,000",
+    "area": "Okayama City and around",
+    "shops": [
+      {
+        "name": "Kannonyama Fruit Parlor Okayama",
+        "query": "観音山フルーツパーラー 岡山",
+        "comment": "In summer, a parfait with a whole white peach.",
+        "access": "5 min walk from Okayama Station"
+      },
+      {
+        "name": "Kurashiki Momoko",
+        "query": "くらしき桃子 倉敷",
+        "comment": "A fruit parfait shop in Kurashiki's historic quarter.",
+        "access": "Kurashiki Bikan Historical Quarter"
+      }
+    ]
+  }
+}

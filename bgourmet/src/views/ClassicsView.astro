@@ -1,0 +1,233 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localizePath, t, type Lang } from '../i18n';
+import { getClassics } from '../data/classics';
+import ShopCard from '../components/ShopCard.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const classics = getClassics(lang);
+// 「Googleマップで探す」は東京で検索する（おすすめ店と同じく東京向け）
+const mapsHref = (ja: string) => `https://www.google.com/maps/search/?${new URLSearchParams({ api: '1', query: `${ja} 東京` })}`;
+const title = 'Classic Japanese Food';
+const description =
+  'A guide to classic Japanese dishes, from sushi and ramen to tempura and wagyu, with links to regional versions you can try across Japan.';
+---
+
+<BaseLayout lang={lang} path="/classics/" title={title} description={description} availableLangs={['en']}>
+  <nav class="crumbs"><a href={localizePath(lang, '/')}>{t(lang, 'siteName')}</a> › {title}</nav>
+  <h1>{title}</h1>
+  <p class="intro">
+    New to Japanese food? Start with these {classics.length} classics you can find all over Japan. Each one also has regional
+    versions — follow the links to see where to try them.
+  </p>
+
+  <nav class="jump" aria-label="Jump to a dish">
+    {classics.map((c) => <a href={`#${c.id}`}>{c.name}</a>)}
+  </nav>
+
+  <div class="list">
+    {
+      classics.map((c) => (
+        <article id={c.id} class="classic">
+          <header>
+            <h2>{c.name}</h2>
+            <p class="ja" lang="ja">{c.ja}</p>
+          </header>
+          <p class="summary">{c.summary}</p>
+          {c.local && (
+            <section class="local">
+              <h3>How people in Japan eat it</h3>
+              <p>{c.local}</p>
+            </section>
+          )}
+          <dl class="facts">
+            <div>
+              <dt>{t(lang, 'priceRange')}</dt>
+              <dd>{c.price}</dd>
+            </div>
+          </dl>
+          {c.shops && c.shops.length > 0 && (
+            <section class="shops">
+              <h3>Where to try it in Tokyo</h3>
+              <ul>
+                {c.shops.map((shop) => (
+                  <ShopCard lang={lang} shop={shop} />
+                ))}
+              </ul>
+            </section>
+          )}
+          <p class="actions">
+            <a class="maps" href={mapsHref(c.ja)} target="_blank" rel="noopener">{t(lang, 'searchMaps')}</a>
+          </p>
+          <section class="regional">
+            <h3>Try a regional version</h3>
+            <ul>
+              {c.regional.map((r) => (
+                <li>
+                  <a href={`${localizePath(lang, `/${r.prefId}/`)}#${r.anchor}`}>
+                    <strong>{r.name}</strong>
+                    <span>{r.prefName}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </article>
+      ))
+    }
+  </div>
+
+  <p class="back"><a href={localizePath(lang, '/')}>← {t(lang, 'backToTop')}</a></p>
+</BaseLayout>
+
+<style>
+  .crumbs {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .intro {
+    max-width: 46rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+  .jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 1rem 0 0.5rem;
+  }
+  .jump a {
+    padding: 0.2rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  .jump a:hover {
+    border-color: var(--accent);
+  }
+  .classic {
+    padding-block: 1.75rem;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 4rem;
+  }
+  .classic:first-child {
+    border-top: 0;
+  }
+  .classic h2 {
+    margin: 0;
+    font-size: 1.35rem;
+  }
+  .ja {
+    margin: 0.1rem 0 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .summary {
+    max-width: 46rem;
+    line-height: 1.75;
+  }
+  .local {
+    max-width: 46rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    background: var(--surface-2);
+  }
+  .local h3 {
+    margin: 0 0 0.3rem;
+    font-size: 0.95rem;
+  }
+  .local p {
+    margin: 0;
+    line-height: 1.75;
+  }
+  .facts {
+    display: flex;
+    margin: 0;
+  }
+  .facts div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .facts dt {
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    background: var(--surface-2);
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .facts dd {
+    margin: 0;
+    font-weight: 700;
+  }
+  .shops h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 0.95rem;
+  }
+  .shops ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .actions {
+    margin: 0.9rem 0 0;
+  }
+  .maps {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .maps:hover {
+    filter: brightness(1.08);
+  }
+  .regional h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 0.95rem;
+  }
+  .regional ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .regional a {
+    display: grid;
+    padding: 0.45rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+  }
+  .regional a:hover {
+    border-color: var(--accent);
+  }
+  .regional strong {
+    font-size: 0.9rem;
+  }
+  .regional span {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+</style>

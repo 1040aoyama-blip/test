@@ -1,0 +1,230 @@
+{
+  "スタミナラーメン": {
+    "summary": "Ibaraki's local ramen, loved mainly in Mito and Hitachinaka. Noodles are topped with a sweet and savory soy-based sauce thickened with starch, full of liver, pumpkin, cabbage and carrot. Besides the hot version with soup, there is a popular cold version in which hot sauce is poured over chilled noodles, and many locals prefer it. The thick sauce clings to the noodles and, true to its name, gives you a boost of energy. It is a familiar soul food for people in Ibaraki.",
+    "price": "¥800–1,100",
+    "area": "Mito, Hitachinaka and more",
+    "shops": [
+      {
+        "name": "Matsugoro",
+        "query": "スタミナラーメン 松五郎 水戸",
+        "comment": "The originator of stamina ramen, served cold or hot. Closed Mondays.",
+        "access": "Hakamazuka, Mito (about 10 min by car from Mito Station)"
+      },
+      {
+        "name": "Kanariya",
+        "query": "スタミナラーメン 珈奈里屋 ひたちなか",
+        "comment": "A popular stamina ramen shop in Hitachinaka.",
+        "access": "Hitachinaka"
+      }
+    ]
+  },
+  "龍ケ崎コロッケ": {
+    "summary": "Local croquettes born from a community revitalization project in Ryugasaki. They are said to have started with a group of local women, and today many shops in the city sell their own creative versions. Varieties range from classic fluffy potato croquettes to ones made with local vegetables and specialties. They are inexpensive, so it is fun to try several. Buy them fresh from the fryer and enjoy them while strolling around the city.",
+    "price": "¥100–250 each",
+    "area": "Ryugasaki",
+    "shops": [
+      {
+        "name": "Hattori Seinikuten",
+        "query": "服部精肉店 龍ケ崎",
+        "comment": "A butcher founded in the early Showa era, popular for fresh croquettes.",
+        "access": "Ryugasaki"
+      },
+      {
+        "name": "Mine Croquette (Dorasute)",
+        "query": "まいんコロッケ どらすて 龍ケ崎",
+        "comment": "A pioneer of Ryugasaki croquettes, fried to order.",
+        "access": "Ryugasaki"
+      }
+    ]
+  },
+  "あんこう鍋": {
+    "summary": "Ibaraki's signature winter hot pot. Monkfish is so prized that people say pufferfish in the west, monkfish in the east, and Oarai and Kitaibaraki are famous for it. Because the fish is so soft, it is hung and cut in a method called tsurushi-giri. The appeal is enjoying every part, from flesh and skin to the liver, known together as the seven treasures. The rich miso broth with melted liver warms you to the core. The season is winter, making it a highlight of any winter trip to Ibaraki.",
+    "price": "¥3,000–6,000",
+    "area": "Oarai, Kitaibaraki and more",
+    "shops": [
+      {
+        "name": "Kappo Uomasa",
+        "query": "割烹 魚政 水戸",
+        "comment": "A Mito kappo restaurant founded in the Meiji era, famous for anglerfish.",
+        "access": "Mito"
+      },
+      {
+        "name": "Ohamamaru Uoriki",
+        "query": "大浜丸 魚力 平潟",
+        "comment": "Serves dobu-jiru-style anglerfish hot pot in the fishing town of Hirakata.",
+        "access": "Hirakata, Kitaibaraki"
+      }
+    ]
+  },
+  "どぶ汁": {
+    "summary": "A fishermen's monkfish dish from Kitaibaraki and nearby areas. Without adding water, monkfish liver is first stir-fried in the pot, then the flesh and vegetables are added and cooked only in the liquid they release. The liver-rich broth turns cloudy like a ditch (dobu), which is said to be the origin of the name. It is even richer than regular monkfish hot pot, with concentrated umami. You can try it in winter at inns and restaurants in Kitaibaraki. A dish worth seeking out in the cold season.",
+    "price": "¥3,000–6,000",
+    "area": "Kitaibaraki and more",
+    "shops": [
+      {
+        "name": "Marumitsu Ryokan",
+        "query": "あんこうの宿 まるみつ旅館 平潟",
+        "comment": "A Hirakata inn specializing in anglerfish cuisine for decades.",
+        "access": "Hirakata Port, Kitaibaraki"
+      },
+      {
+        "name": "Ajidokoro Omori",
+        "query": "味処 大森 大洗",
+        "comment": "An Oarai restaurant serving anglerfish dobu-jiru in winter.",
+        "access": "Oarai (along the Naka River)"
+      }
+    ]
+  },
+  "常陸秋そば": {
+    "summary": "A variety of buckwheat grown in Ibaraki, said to have originated in the former town of Kanasago in Hitachiota. Its large grains have a strong aroma and gentle sweetness, earning high praise from soba lovers. The new soba harvested in autumn is especially fragrant. Many restaurants in the prefecture make noodles from Hitachi Aki soba, and eating it cold as zaru soba lets you fully enjoy its flavor. Some facilities offer soba-making experiences, making for a fun travel memory.",
+    "price": "¥800–1,500",
+    "area": "Hitachiota and northern Ibaraki",
+    "shops": [
+      {
+        "name": "Tokiwaya",
+        "query": "登喜和家 常陸太田 金砂郷",
+        "comment": "A handmade soba shop in Kanasago, home of Hitachi aki soba.",
+        "access": "Kanasago, Hitachiota"
+      },
+      {
+        "name": "Nishikanasa Soba no Sato",
+        "query": "西金砂そばの郷 そば工房",
+        "comment": "Freshly milled, made and boiled soba. Lunch only.",
+        "access": "Akatsuchi, Hitachiota"
+      }
+    ]
+  },
+  "水戸納豆": {
+    "summary": "Mito's most famous product, often made with small soybeans. In the Meiji era, when the railway reached Mito, natto wrapped in straw was sold at the station, and it became known nationwide as a Mito specialty. Natto in straw bundles (waratsuto) is still a classic souvenir. Besides eating it over rice, you can find dishes and even sweets made with natto. It is a perfect souvenir from Mito sightseeing, such as the plum festival at Kairakuen, and remains a breakfast staple for locals.",
+    "price": "¥300–800",
+    "area": "Mito",
+    "shops": [
+      {
+        "name": "Tengu Natto Sasanuma Goro Shoten",
+        "query": "天狗納豆 笹沼五郎商店",
+        "comment": "A long-established Mito natto maker famous for straw-wrapped natto.",
+        "access": "Near Mito Station (Sannomaru)"
+      },
+      {
+        "name": "Daruma Shokuhin",
+        "query": "だるま食品 水戸 だるま納豆",
+        "comment": "A Mito natto shop known for straw-wrapped natto.",
+        "access": "Yanagicho, Mito"
+      }
+    ]
+  },
+  "そぼろ納豆": {
+    "summary": "An Ibaraki dish of natto and dried shredded daikon marinated in soy sauce. The sticky natto and crunchy dried daikon create a fun contrast of textures. It has long been made at home in Ibaraki, a natto-producing region, as a preserved food that goes perfectly with rice. In some areas it is called shoboro natto. You can buy it at supermarkets and souvenir shops, and it is said to be easy to eat even for people who are not fond of natto. A very Ibaraki souvenir.",
+    "price": "¥300–600",
+    "area": "Mito and across Ibaraki",
+    "shops": [
+      {
+        "name": "Tengu Natto Sasanuma Goro Shoten",
+        "query": "天狗納豆 笹沼五郎商店",
+        "comment": "A veteran natto maker that also sells soboro natto.",
+        "access": "Near Mito Station (Sannomaru)"
+      },
+      {
+        "name": "Daruma Shokuhin",
+        "query": "だるま食品 水戸 だるま納豆",
+        "comment": "A Mito natto shop with a range of natto products.",
+        "access": "Yanagicho, Mito"
+      }
+    ]
+  },
+  "常陸牛ステーキ": {
+    "summary": "Steak from Hitachi beef, a brand reserved for Japanese Black cattle raised in Ibaraki that meet strict standards. It features fine marbling, tender, juicy meat and rich flavor. You can enjoy it at steakhouses, yakiniku restaurants and other restaurants in the prefecture, and some serve it as sukiyaki or shabu-shabu. Being able to enjoy top-quality wagyu so close to the Tokyo area is a big draw. Savor the natural sweetness of the beef on a special occasion or as a reward on your trip.",
+    "price": "¥4,000–12,000",
+    "area": "Mito and across Ibaraki",
+    "shops": [
+      {
+        "name": "Restaurant Iijima",
+        "query": "レストランイイジマ 水戸",
+        "comment": "A steak restaurant centered on Hitachi beef.",
+        "access": "Mito"
+      },
+      {
+        "name": "Hitachigyu Kikusui",
+        "query": "常陸牛 きくすい 水戸",
+        "comment": "Serves Hitachi beef as steak, yakiniku and sukiyaki.",
+        "access": "Mito"
+      }
+    ]
+  },
+  "笠間いなり寿司": {
+    "summary": "A local dish that began as an effort to make inari sushi a specialty of the town in front of Kasama Inari Shrine, counted among Japan's three great Inari shrines. Shops offer creative versions, with fried tofu pouches stuffed with walnuts, soba or chestnuts. Many shops line the approach to the shrine, making it perfect for snacking as you stroll. Kasama is also known for Kasama-yaki pottery, so combine it with a visit to pottery shops. The town is especially lively during the autumn chrysanthemum festival.",
+    "price": "¥100–300 each",
+    "area": "Kasama",
+    "shops": [
+      {
+        "name": "Tsunokuniya",
+        "query": "つの国や 笠間 いなり寿司",
+        "comment": "A long-running shop serving inari sushi with Kasama specialties.",
+        "access": "Near Kasama Inari Shrine"
+      },
+      {
+        "name": "Teuchi Soba Kashiwaya",
+        "query": "手打ちそば 柏屋 笠間",
+        "comment": "A soba shop at the gate of Kasama Inari Shrine, with inari and soba sushi.",
+        "access": "On the approach to Kasama Inari Shrine"
+      }
+    ]
+  },
+  "干しいも": {
+    "summary": "Ibaraki's signature specialty: sweet potatoes steamed, sliced thin and dried in the sun. Ibaraki produces the vast majority of Japan's dried sweet potatoes, mainly in Hitachinaka and Tokai. Drying them in the cold winter sea breeze concentrates their sweetness and gives them a soft, chewy texture. They are delicious as they are, and lightly toasting them brings out more aroma and sweetness. Colors and sweetness vary by variety, so comparing them is fun. A popular, wholesome snack.",
+    "price": "¥500–1,500",
+    "area": "Hitachinaka, Tokai and more",
+    "shops": [
+      {
+        "name": "Hoshiimo Daimaruya",
+        "query": "ほしいも専門店 大丸屋 ひたちなか",
+        "comment": "Founded in the Meiji era; about 30 kinds of hoshiimo.",
+        "access": "Shakamachi, Hitachinaka"
+      },
+      {
+        "name": "Kamejirushi (Excel Mito)",
+        "query": "亀印本舗 エクセル 水戸駅",
+        "comment": "Buy Ibaraki confections right at Mito Station.",
+        "access": "Excel, Mito Station building"
+      }
+    ]
+  },
+  "吉原殿中": {
+    "summary": "A traditional Mito sweet of rice puffs bound with starch syrup and coated in roasted soybean flour (kinako). Legend says it began when Yoshiwara, a lady-in-waiting to Tokugawa Nariaki of the Mito domain, made a treat from dried leftover rice. It has a simple, gentle sweetness and a light, crisp texture, along with the toasty aroma of kinako. Available at Japanese sweet shops in Mito, it has long been a classic souvenir. Enjoy it with green tea and a taste of Mito history.",
+    "price": "¥500–1,000",
+    "area": "Mito",
+    "shops": [
+      {
+        "name": "Kamejirushi (Excel Mito)",
+        "query": "亀印本舗 エクセル 水戸駅",
+        "comment": "A shop of Kamejirushi, an Edo-era confectioner that makes yoshiwara denchu.",
+        "access": "Excel, Mito Station building"
+      },
+      {
+        "name": "Asakawa Mito Station South",
+        "query": "あさ川製菓 水戸駅南店",
+        "comment": "A Meiji-era Mito confectioner selling local sweets.",
+        "access": "Mito Station South Exit"
+      }
+    ]
+  },
+  "水戸の梅": {
+    "summary": "A famous Mito sweet of white bean paste wrapped in soft gyuhi, then wrapped again in red shiso leaves pickled in plum vinegar. The refreshing aroma and saltiness of the shiso bring out the gentle sweetness of the bean paste. Named after the plum blossoms of Kairakuen garden, it is a classic Mito souvenir. The chewy gyuhi adds a pleasant texture. You can buy it at sweet shops and souvenir shops in Mito. If you visit during the plum festival, take some home; its elegant flavor makes it a welcome gift.",
+    "price": "¥500–1,500",
+    "area": "Mito",
+    "shops": [
+      {
+        "name": "Asakawa Mito Station South",
+        "query": "あさ川製菓 水戸駅南店",
+        "comment": "A Meiji-era confectioner whose signature is Mito no Ume.",
+        "access": "Mito Station South Exit"
+      },
+      {
+        "name": "Kamejirushi (Excel Mito)",
+        "query": "亀印本舗 エクセル 水戸駅",
+        "comment": "An Edo-era confectioner that also makes Mito no Ume.",
+        "access": "Excel, Mito Station building"
+      }
+    ]
+  }
+}

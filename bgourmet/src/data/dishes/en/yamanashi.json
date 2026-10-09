@@ -1,0 +1,248 @@
+{
+  "甲府鳥もつ煮": {
+    "summary": "Kofu's local dish of chicken gizzards, hearts, liver and kinkan, the yolks before they become eggs, simmered with sugar and soy sauce into a shiny glaze. It is cooked quickly over high heat so the sauce coats the giblets. It is said to have started as a staff meal at a Kofu soba shop, and it became known nationwide after winning the B-1 Grand Prix. It is often served as a side dish at soba shops and pairs perfectly with drinks. The glossy look alone is enough to whet your appetite.",
+    "price": "¥500–900",
+    "area": "Kofu",
+    "shops": [
+      {
+        "name": "Okuto Honten Kofu Ekimae",
+        "query": "奥藤本店 甲府駅前店",
+        "comment": "The Taisho-era soba house where torimotsu-ni was born. Close to the station.",
+        "access": "A short walk from Kofu Station south exit"
+      },
+      {
+        "name": "Okuto Honten Kokubo",
+        "query": "奥藤本店 国母店",
+        "comment": "Okuto's main branch, with parking for drivers.",
+        "access": "Kokubo, Kofu"
+      }
+    ]
+  },
+  "甲州かつ丼": {
+    "summary": "In Kofu and around, katsudon means not cutlet simmered with egg but shredded cabbage on rice, topped with a pork cutlet and sauce. The egg version is often called nikatsudon, or simmered katsudon, to tell them apart. The simple combination of crispy cutlet, cabbage and sauce is satisfying. You can find it at diners and soba shops in Kofu. If it is your first time, watch out for the difference when ordering. It is generously portioned and very filling.",
+    "price": "¥800–1,200",
+    "area": "Kofu and around",
+    "shops": [
+      {
+        "name": "Okumura Honten",
+        "query": "奥村本店 甲府 そば",
+        "comment": "Kofu's oldest soba house, dating to the Edo period, said to have created Koshu katsudon.",
+        "access": "Chuo, Kofu"
+      },
+      {
+        "name": "Okuto Honten Kofu Ekimae",
+        "query": "奥藤本店 甲府駅前店",
+        "comment": "An offshoot of Okumura, piling the cutlet high on shredded cabbage.",
+        "access": "A short walk from Kofu Station south exit"
+      }
+    ]
+  },
+  "ほうとう": {
+    "summary": "Yamanashi's most famous local dish. Wide, thick flour noodles are simmered without pre-boiling in a miso broth with pumpkin, Chinese cabbage, carrot, mushrooms and other vegetables. The starch from the noodles thickens the broth and blends with the sweetness of the pumpkin, warming you to the core. Legend says the warlord Takeda Shingen spread it as food for his troops. It is often served piping hot in an iron pot. Enjoy it together with sightseeing at Mt. Fuji or Lake Kawaguchi, especially in the cold season.",
+    "price": "¥1,200–1,800",
+    "area": "Kofu, Lake Kawaguchi and throughout Yamanashi",
+    "shops": [
+      {
+        "name": "Koshu Hoto Kosaku Kofu Ekimae",
+        "query": "甲州ほうとう小作 甲府駅前店",
+        "comment": "A popular hoto chain, served bubbling in an iron pot full of vegetables.",
+        "access": "A short walk from Kofu Station south exit"
+      },
+      {
+        "name": "Hoto Fudo Higashi Koiji",
+        "query": "ほうとう不動 東恋路店",
+        "comment": "Look for the cloud-shaped building. Noodles are made in-house.",
+        "access": "Lake Kawaguchi (Fujikawaguchiko)"
+      },
+      {
+        "name": "Chiyoda",
+        "query": "ちよだ 甲府 ほうとう",
+        "comment": "A prewar hoto restaurant that locals still frequent.",
+        "access": "3 min walk from Kofu Station south exit"
+      }
+    ]
+  },
+  "吉田のうどん": {
+    "summary": "The local udon of Fujiyoshida, said to be the hardest in Japan and known for its strong bite. The classic bowl has a soy sauce and miso broth topped with boiled cabbage and sweet-savory simmered horse meat. It is eaten with suridane, a spicy condiment of chili, sansho pepper and more. In Fujiyoshida, once a weaving town, it was loved as a filling meal for workers. There are many udon shops in the city. Combine it with a visit to Mt. Fuji.",
+    "price": "¥500–900",
+    "area": "Fujiyoshida",
+    "shops": [
+      {
+        "name": "Miura Udon",
+        "query": "みうらうどん 富士吉田",
+        "comment": "A hugely popular shop with lines; a good first taste.",
+        "access": "Fujiyoshida"
+      },
+      {
+        "name": "Shirasu Udon",
+        "query": "白須うどん 富士吉田",
+        "comment": "A long-running shop known for very firm noodles.",
+        "access": "Fujiyoshida"
+      },
+      {
+        "name": "Menkyo Kaiden",
+        "query": "麺許皆伝 富士吉田",
+        "comment": "Famous for especially hard noodles. Lunch only, until sold out.",
+        "access": "Kamiyoshida, Fujiyoshida"
+      }
+    ]
+  },
+  "あわびの煮貝": {
+    "summary": "A Kofu specialty of abalone simmered in a soy-based sauce. Why is abalone famous in landlocked Yamanashi? Legend says that in the Edo period, abalone from Suruga Bay was marinated in soy sauce and carried by horse, and by the time it arrived the flavor had soaked in perfectly. The tender abalone has deep umami and a pleasant chew. It is a luxury item bought from Kofu's long-established shops as a gift or for special occasions. Slice it thin and savor it a little at a time.",
+    "price": "From ¥5,000",
+    "area": "Kofu",
+    "shops": [
+      {
+        "name": "Minayo",
+        "query": "みな与 甲府 煮貝",
+        "comment": "Said to be the originator of nigai, founded in the Warring States period.",
+        "access": "Chuo, Kofu"
+      },
+      {
+        "name": "Kaiya",
+        "query": "かいや 甲府 煮貝",
+        "comment": "A nigai specialist; also sold inside Kofu Station.",
+        "access": "Kofu (also sold at Kofu Station)"
+      }
+    ]
+  },
+  "おざら": {
+    "summary": "A Yamanashi summer dish in which hoto noodles are chilled and dipped into a warm sauce. The dipping sauce is soy-based and often contains mushrooms, chicken and fried tofu. Chilling makes the thick, chewy noodles firmer and smoother going down. Easy to eat even in hot weather, it is delicious in a different way from hoto. You can try it at hoto restaurants in Yamanashi during summer. Enjoy the chewy bite of the thick noodles.",
+    "price": "¥1,000–1,500",
+    "area": "Throughout Yamanashi",
+    "shops": [
+      {
+        "name": "Chiyoda",
+        "query": "ちよだ 甲府 ほうとう",
+        "comment": "Said to be where ozara was born; served year-round.",
+        "access": "3 min walk from Kofu Station south exit"
+      },
+      {
+        "name": "Koshu Hoto Kosaku Kofu Ekimae",
+        "query": "甲州ほうとう小作 甲府駅前店",
+        "comment": "A popular hoto chain that also serves ozara.",
+        "access": "A short walk from Kofu Station south exit"
+      }
+    ]
+  },
+  "馬刺し": {
+    "summary": "Yamanashi has long had a culture of eating horse meat, and horse sashimi is popular. One reason is said to be the many horses that traveled the Koshu Kaido highway. It is mostly lean red meat, light yet full of flavor the more you chew. The classic way is to eat it with garlic or ginger and sweet soy sauce. You can try it at izakaya, soba shops and butcher shops in Kofu. Horse meat is also used as a topping for Yoshida udon. The lean meat goes well with drinks.",
+    "price": "¥1,000–2,000",
+    "area": "Kofu and around",
+    "shops": [
+      {
+        "name": "Kinpo",
+        "query": "金峰 甲府 ほうとう",
+        "comment": "A local-food restaurant popular for hoto and basashi.",
+        "access": "Tokugyo, Kofu"
+      },
+      {
+        "name": "Chiyoda",
+        "query": "ちよだ 甲府 ほうとう",
+        "comment": "A veteran hoto restaurant that also serves light, lean basashi.",
+        "access": "3 min walk from Kofu Station south exit"
+      }
+    ]
+  },
+  "信玄餅": {
+    "summary": "Yamanashi's signature sweet: soft mochi coated in roasted soybean flour, eaten with brown sugar syrup. It comes in a small container wrapped in a plastic sheet like a furoshiki cloth. To eat it, open the wrapping, pour the syrup over the mochi and mix it well with the soybean flour. The flour spills easily, so spread the plastic wrapping out as a plate. It is a classic Yamanashi souvenir sold at stations and highway rest areas. Adjusting the amount of syrup as you go is part of the fun.",
+    "price": "From about ¥800 per box",
+    "area": "Throughout Yamanashi",
+    "shops": [
+      {
+        "name": "Kikyo Shingen Mochi Factory Theme Park",
+        "query": "桔梗信玄餅工場テーマパーク",
+        "comment": "Kikyoya's main factory, with tours and an all-you-can-pack deal.",
+        "access": "Ichinomiya, Fuefuki"
+      },
+      {
+        "name": "Kikyoya Kofu Honkan",
+        "query": "桔梗屋 甲府本館",
+        "comment": "The flagship of Kikyoya, founded in the Meiji period.",
+        "access": "Aonuma, Kofu"
+      },
+      {
+        "name": "Kinseiken Nirasaki",
+        "query": "金精軒 韮崎店",
+        "comment": "The other classic Shingen mochi maker, popular for its fresh nama version.",
+        "access": "Nirasaki"
+      }
+    ]
+  },
+  "水信玄餅": {
+    "summary": "A mochi as clear as water and wobbly, made by a confectioner in Hokuto. It is eaten with roasted soybean flour and brown sugar syrup. Made with water from Hokuto, a town known for its famous spring water, it looks like a giant water droplet and became a big talking point. Because it can only hold its shape for a short time, it is usually eaten only in the shop, and it is sold only for limited periods, such as summer. It is a cool-looking summer treat worth the trip. It is also beautiful and very photogenic.",
+    "price": "¥500–1,000",
+    "area": "Hokuto",
+    "shops": [
+      {
+        "name": "Kinseiken Daigahara",
+        "query": "金精軒 台ヶ原店",
+        "comment": "The home of mizu Shingen mochi. Summer Fri–Sun and holidays only, eat-in.",
+        "access": "Daigahara, Hakushu, Hokuto"
+      },
+      {
+        "name": "Kinseiken Nirasaki",
+        "query": "金精軒 韮崎店",
+        "comment": "No mizu Shingen mochi here, but you can buy the same maker's Shingen mochi.",
+        "access": "Nirasaki"
+      }
+    ]
+  },
+  "くろ玉": {
+    "summary": "A famous sweet from a long-established Kofu confectioner: a ball of green pea paste wrapped in brown sugar yokan jelly. Its round black look is said to be modeled on black stones mined in the mountains of Kai. The rich sweetness of brown sugar and the gentle sweetness of the pea paste combine into an elegant flavor. It has long been loved as a Kofu souvenir. It goes well with Japanese tea and is sold at Kofu Station and souvenir shops. It is one of the souvenirs locals choose too.",
+    "price": "About ¥150 each",
+    "area": "Kofu",
+    "shops": [
+      {
+        "name": "Sawadaya Honten",
+        "query": "澤田屋 本店 甲府",
+        "comment": "The Meiji-era confectioner that makes kurodama.",
+        "access": "Chuo, Kofu"
+      },
+      {
+        "name": "Kofu Station souvenir shops",
+        "query": "甲府駅 おみやげ くろ玉",
+        "comment": "Sold at shops in Kofu, Isawa-Onsen and other stations.",
+        "access": "Kofu Station"
+      }
+    ]
+  },
+  "信玄桃": {
+    "summary": "A peach-shaped Japanese sweet made by a Yamanashi confectioner. Yamanashi produces more peaches than any other prefecture, and this sweet is modeled on that local specialty. Inside a soft, fluffy dough is bean paste, and its peach-like pastel color and cute shape are its charm. It is available all year, not only in peach season, making it a popular Yamanashi souvenir. Look for it at stations, highway rest areas and souvenir shops. Its adorable peach shape is sure to make you smile.",
+    "price": "¥500–1,500",
+    "area": "Throughout Yamanashi",
+    "shops": [
+      {
+        "name": "Kikyoya Kofu Honkan",
+        "query": "桔梗屋 甲府本館",
+        "comment": "Made by Kikyoya of Shingen mochi fame; sold at its flagship.",
+        "access": "Aonuma, Kofu"
+      },
+      {
+        "name": "Kikyo Shingen Mochi Factory Theme Park",
+        "query": "桔梗信玄餅工場テーマパーク",
+        "comment": "The factory shop, with the rest of Kikyoya's range.",
+        "access": "Ichinomiya, Fuefuki"
+      }
+    ]
+  },
+  "月の雫": {
+    "summary": "A traditional Kofu sweet made by coating fresh grapes in a syrup of ground sugar and letting it set. You get the crunch of the white sugar shell and the juicy sweet-tart grape inside. The name is said to come from its beautiful look, like drops of moonlight. It is a sweet only a grape-growing region like Yamanashi could make, and it is often produced only from autumn to winter. When you bite in, grape juice bursts out.",
+    "price": "¥500–1,500",
+    "area": "Kofu",
+    "shops": [
+      {
+        "name": "Shorinken Toyoshimaya",
+        "query": "松林軒豊嶋家 甲府",
+        "comment": "An Edo-period confectioner. Autumn only.",
+        "access": "Kunitama, Kofu (12 min walk from Sakaori Station)"
+      },
+      {
+        "name": "Tsuki no Shizuku Honpo Sanyu Shokai",
+        "query": "月の雫本舗 三友商会",
+        "comment": "A tsuki no shizuku maker, also sold at Kofu Station.",
+        "access": "Misaki, Kofu"
+      }
+    ]
+  }
+}

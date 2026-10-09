@@ -1,0 +1,255 @@
+{
+  "富山ブラックラーメン": {
+    "summary": "The local ramen of Toyama City, known for its jet-black soy sauce broth. As its color suggests, it has a strong soy flavor and is topped with lots of coarsely ground black pepper. It is said to have been created to help manual workers replace salt and to go well with rice. That is why many people order a bowl of rice with it. Bamboo shoots, roast pork and green onion are the standard toppings. If you like bold flavors, this bowl is a must-try.",
+    "price": "¥800–1,100",
+    "area": "Toyama City",
+    "shops": [
+      {
+        "name": "Nishicho Taiki",
+        "query": "西町大喜 西町本店",
+        "comment": "The originator of Toyama Black. Very salty, so order rice.",
+        "access": "Toyama City (near Nishicho tram stop)"
+      },
+      {
+        "name": "Menya Iroha CiC",
+        "query": "麺家いろは CiC店 富山",
+        "comment": "A popular shop in a building basement by Toyama Station.",
+        "access": "By Toyama Station (CiC B1)"
+      }
+    ]
+  },
+  "白えび天丼": {
+    "summary": "A tempura rice bowl made with white shrimp, called the jewel of Toyama Bay. White shrimp are tiny, about 6 cm long, and translucent pale pink. The peeled shrimp are fried as tempura or kakiage fritters, placed on rice and topped with a sweet and savory sauce. Enjoy the crisp batter and the shrimp's gentle sweetness. Try it around Toyama Station or near fishing ports such as Shinminato in Imizu. The season runs from spring to autumn. A fritter packed with tiny shrimp looks gorgeous, too.",
+    "price": "¥1,500–2,500",
+    "area": "Toyama City, Imizu and around",
+    "shops": [
+      {
+        "name": "Shiroebi-tei",
+        "query": "白えび亭 富山駅",
+        "comment": "A white shrimp specialist said to have created the tempura bowl.",
+        "access": "Toyama Station (Toyama Marche)"
+      },
+      {
+        "name": "Kitokito Shokudo",
+        "query": "きときと食堂 新湊",
+        "comment": "A port diner by Shinminato harbor with white shrimp bowls; opens early.",
+        "access": "Shinminato, Imizu"
+      }
+    ]
+  },
+  "高岡コロッケ": {
+    "summary": "Takaoka is known as a city that loves croquettes, and it calls itself the croquette town as part of local promotion. Butcher shops and restaurants in the city offer a wide range, from classic fluffy potato croquettes to ones made with local ingredients. They are inexpensive, and many shops let you eat them freshly fried on the spot. Enjoy them as street food while visiting the Takaoka Great Buddha or the old townscape of Yamachosuji. The crispness right out of the fryer is something special.",
+    "price": "¥100–250 each",
+    "area": "Takaoka",
+    "shops": [
+      {
+        "name": "Marucho Seinikuten",
+        "query": "丸長精肉店 高岡",
+        "comment": "A butcher said to be the originator of Takaoka croquettes; bought hot.",
+        "access": "About 3 min walk from Shiginochugakkomae Station"
+      },
+      {
+        "name": "Michi no Eki Manyo no Sato Takaoka",
+        "query": "道の駅 万葉の里 高岡",
+        "comment": "Known for its giant Daibutsu croquette.",
+        "access": "Takaoka"
+      }
+    ]
+  },
+  "ます寿司": {
+    "summary": "Toyama's signature local dish and a pressed sushi famous across Japan as a train station bento. Bamboo leaves line a round wooden container, then trout cured in salt and vinegar and vinegared rice are layered and pressed under a weight. The scent of bamboo, the mild richness of the trout and the tang of the rice go together beautifully. To eat, cut it into wedges like a cake. Many shops in Toyama make it, each with different trout thickness and vinegar balance. Buy one at Toyama Station to eat on the train.",
+    "price": "¥1,500–2,500",
+    "area": "Toyama City",
+    "shops": [
+      {
+        "name": "Minamoto Masu no Sushi Museum",
+        "query": "源 ますのすしミュージアム",
+        "comment": "See how it's made, with a shop on site.",
+        "access": "Nanocho, Toyama City"
+      },
+      {
+        "name": "Takataya",
+        "query": "鱒の寿し 高田屋 富山",
+        "comment": "A shop founded in the Meiji era. Closes when sold out.",
+        "access": "Marunouchi, Toyama City"
+      },
+      {
+        "name": "Aoyama Sohonpo",
+        "query": "青山総本舗 ます寿し",
+        "comment": "A popular shop open only in the morning.",
+        "access": "Shintomicho (near Toyama Station)"
+      }
+    ]
+  },
+  "ぶりしゃぶ": {
+    "summary": "A hot pot of fatty winter yellowtail from Toyama Bay, sliced thin and swished briefly in kelp broth. Heating it melts away excess fat, leaving the surface lightly white and the inside tender and sweet. The standard way is to eat it with refreshing ponzu. Enjoy it with vegetables like green onion and mizuna, and finish with rice porridge made in the broth full of yellowtail flavor. If you visit Toyama in winter, this luxurious hot pot is a must. Since the slices are thin, cook them only briefly.",
+    "price": "¥3,000–6,000",
+    "area": "Toyama City, Himi and around",
+    "shops": [
+      {
+        "name": "Banyatei (Himi Banya-gai)",
+        "query": "ひみ番屋街 番屋亭",
+        "comment": "A roadside station restaurant with winter buri dishes.",
+        "access": "Himi (Michi no Eki Himi Banya-gai)"
+      },
+      {
+        "name": "Shigehama",
+        "query": "割烹 しげはま 氷見",
+        "comment": "A Himi restaurant; book ahead in winter buri season.",
+        "access": "Himi"
+      }
+    ]
+  },
+  "ほたるいかの酢味噌和え": {
+    "summary": "A dish of firefly squid, Toyama Bay's spring specialty. These tiny squid, about 7 cm long, glow bluish-white in the sea at night, which gave them their name. The classic way is to boil them and dress them with sweet and sour vinegared miso, enjoying the plump body and rich innards. The season is spring, and in Namerikawa there are sightseeing boats to watch the squid glow. They are also delicious marinated in soy sauce or as tempura. Locals love them as a taste of spring.",
+    "price": "¥600–1,200",
+    "area": "Namerikawa, Toyama City and around",
+    "shops": [
+      {
+        "name": "Panorama Restaurant Kosai",
+        "query": "ほたるいかミュージアム 光彩",
+        "comment": "Firefly squid straight from Namerikawa port.",
+        "access": "Namerikawa (Hotaruika Museum 2F)"
+      },
+      {
+        "name": "Kaiko Sanko Etchu Chaya",
+        "query": "海幸山幸 越中茶屋 富山駅",
+        "comment": "Toyama seafood inside Toyama Station.",
+        "access": "Toyama Station (Toyama Marche)"
+      }
+    ]
+  },
+  "白えびの刺身": {
+    "summary": "White shrimp, called the jewel of Toyama Bay, peeled and served as sashimi. The shrimp are only about 6 cm long and peeled one by one by hand, making this a laborious and luxurious dish. It has a silky texture and an elegant sweetness unlike any other shrimp. Enjoy it with wasabi and soy sauce, or as gunkan sushi or on a rice bowl at some shops. The season runs from spring to autumn, and freshness like this is only possible in Toyama. Its rich sweetness is unforgettable.",
+    "price": "¥1,000–2,000",
+    "area": "Toyama City, Imizu and around",
+    "shops": [
+      {
+        "name": "Shiroebi-tei",
+        "query": "白えび亭 富山駅",
+        "comment": "Famous for a sashimi bowl of hand-peeled white shrimp.",
+        "access": "Toyama Station (Toyama Marche)"
+      },
+      {
+        "name": "Kittokito-tei",
+        "query": "きっときと亭 新湊きっときと市場",
+        "comment": "White shrimp sashimi with a view of the Kaiwomaru.",
+        "access": "Imizu (Shinminato Kittokito Market)"
+      }
+    ]
+  },
+  "昆布〆": {
+    "summary": "A traditional Toyama dish in which fish such as sashimi is sandwiched between sheets of kelp and left to rest. The kelp's umami soaks into the fish, firming it slightly and giving it a sticky texture. Toyama is known for eating a lot of kelp, a legacy of the Edo period when kitamaebune trading ships brought it from Hokkaido. White fish such as flounder and sea bream are common, but wild vegetables are also cured this way. It is an everyday Toyama food sold even at supermarkets, and it goes well with sake.",
+    "price": "¥500–1,500",
+    "area": "Throughout Toyama",
+    "shops": [
+      {
+        "name": "Kanemitsu",
+        "query": "かねみつ 昆布じめ 魚津",
+        "comment": "A company making only kobujime sashimi, with a direct shop.",
+        "access": "Uozu"
+      },
+      {
+        "name": "Toyama Marche",
+        "query": "とやマルシェ 富山駅",
+        "comment": "Toyama Station's souvenir market, with kobujime.",
+        "access": "Toyama Station"
+      }
+    ]
+  },
+  "氷見うどん": {
+    "summary": "Hand-stretched udon said to have been made in Himi since the Edo period. The thin noodles are stretched by hand and then dried, giving them a smooth texture and a firm bite. They are eaten cold on a bamboo tray, and are also delicious in hot broth or simmered in a pot. You can try them at udon shops in Himi, and the dried noodles are a popular souvenir. They are also great alongside Himi's seafood, such as winter yellowtail. Savor the glossy noodles fresh from the pot.",
+    "price": "¥800–1,300",
+    "area": "Himi",
+    "shops": [
+      {
+        "name": "Udon Chaya Kaizuya",
+        "query": "うどん茶屋 海津屋 氷見",
+        "comment": "Run by the noodle maker itself.",
+        "access": "Himi"
+      },
+      {
+        "name": "Takaokaya Honpo",
+        "query": "高岡屋本舗 氷見うどん",
+        "comment": "Said to be the originator, dating from the Edo period.",
+        "access": "Himi"
+      }
+    ]
+  },
+  "氷見寒ぶりの刺身": {
+    "summary": "Among the winter yellowtail caught in Toyama Bay, those landed at Himi fishing port are a premium brand known as Himi kanburi. Raised in the rough waters of the Sea of Japan, the fish have firm flesh and superb fat. The melt-in-your-mouth sashimi is a treat you must try when visiting Himi in winter. It is also delicious as shabu-shabu, teriyaki, or simmered with daikon. The season is winter, and restaurants and inns near Himi port serve it fresh. Enjoy the sweet fat and the firm texture.",
+    "price": "¥2,000–5,000",
+    "area": "Himi",
+    "shops": [
+      {
+        "name": "Himi Uoichiba Shokudo",
+        "query": "氷見魚市場食堂",
+        "comment": "A diner inside the Himi fish market.",
+        "access": "Himi fishing port"
+      },
+      {
+        "name": "Himi Ganpeki Shokudo",
+        "query": "ひみ岸壁食堂 ひみ岸壁市場",
+        "comment": "A market and diner on the harbor quay.",
+        "access": "Himi fishing port"
+      }
+    ]
+  },
+  "月世界": {
+    "summary": "One of Toyama's best-known sweets, made by setting egg white, sugar and agar, then slowly drying it. In the mouth it dissolves and crumbles away with a uniquely light texture. The name is said to come from the beauty of the moon in the night sky. Its simple, gentle sweetness goes well not only with Japanese tea but also with black tea and coffee. It has a long history and is a beloved Toyama souvenir. It is perfect with a cup of tea.",
+    "price": "¥500–1,500",
+    "area": "Toyama City",
+    "shops": [
+      {
+        "name": "Tsukisekai Honpo",
+        "query": "月世界本舗 富山 上本町",
+        "comment": "The main store, with sweets sold only here.",
+        "access": "Kamihoncho (1 min from Nishicho tram stop)"
+      },
+      {
+        "name": "Toyama Marche",
+        "query": "とやマルシェ 富山駅",
+        "comment": "Also sold at Toyama Station's souvenir market.",
+        "access": "Toyama Station"
+      }
+    ]
+  },
+  "甘金丹": {
+    "summary": "A well-known sweet made by Lis Blanc, a confectioner in Toyama City. It is a Western-style steamed cake: soft, fluffy sponge wrapped around smooth custard cream. The name is said to come from a Toyama dialect word and from Hangontan, a medicine sold by Toyama's famous traveling peddlers, a playful nod to the city's medicine history. It has won a gold prize at the national confectionery fair. Try it chilled. You can buy it at Toyama Station and Lis Blanc shops, and it keeps well, so it makes an easy gift.",
+    "price": "¥500–1,500",
+    "area": "Toyama Prefecture",
+    "shops": [
+      {
+        "name": "Lis Blanc Main Store",
+        "query": "リブラン 総本店 富山",
+        "comment": "The main store of the confectioner that makes it.",
+        "access": "Sakaemachi, Toyama City"
+      },
+      {
+        "name": "Toyama Marche",
+        "query": "とやマルシェ 富山駅",
+        "comment": "Also sold at Toyama Station's souvenir market.",
+        "access": "Toyama Station"
+      }
+    ]
+  },
+  "薄氷": {
+    "summary": "A dry sweet made with wasanbon sugar by a long-established confectioner in Oyabe, Toyama. Its thin, irregular shapes are modeled on the thin ice that forms on rice paddies in winter. It cracks crisply in the mouth, then melts away, spreading wasanbon's refined sweetness. This delicate, beautiful sweet is also used at tea ceremonies. Its elegant look makes it a lovely gift. It breaks easily, so handle it gently on the way home.",
+    "price": "¥1,000–2,000",
+    "area": "Oyabe and around",
+    "shops": [
+      {
+        "name": "Usugori Honpo Goromaruya",
+        "query": "薄氷本舗 五郎丸屋",
+        "comment": "The main store, in business for over 260 years.",
+        "access": "About 8 min walk from Isurugi Station (Oyabe)"
+      },
+      {
+        "name": "Toyama Marche",
+        "query": "とやマルシェ 富山駅",
+        "comment": "Toyama Station's souvenir market.",
+        "access": "Toyama Station"
+      }
+    ]
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "博多ラーメン": {
+    "summary": "Fukuoka's ramen pairs a rich, milky broth made by slowly simmering pork bones with very thin, straight noodles. The noodles are thin so they do not go soft, and you can choose their firmness when ordering, from barikata (very firm) to futsu (regular). There is a culture of kaedama, ordering just a refill of noodles, so locals save some broth for a second helping. Change the flavor with pickled ginger, spicy mustard greens or sesame on the table. Try it at the yatai food stalls in Nakasu for the full experience.",
+    "price": "¥700–1,000",
+    "area": "Fukuoka City (Hakata, Nakasu, etc.)",
+    "shops": [
+      {
+        "name": "Ganso Nagahamaya",
+        "query": "元祖長浜屋 福岡",
+        "comment": "A Nagahama ramen veteran that popularized kaedama refills.",
+        "access": "Nagahama (near the fish market)"
+      },
+      {
+        "name": "Hakata Issou",
+        "query": "博多一双 博多駅東本店",
+        "comment": "A popular shop known for its rich, frothy tonkotsu.",
+        "access": "Near Hakata Station Chikushi exit"
+      }
+    ]
+  },
+  "久留米ラーメン": {
+    "summary": "Kurume is said to be the birthplace of tonkotsu pork bone ramen. Kurume ramen features a rich, hearty broth made by slowly simmering pork bones. Some shops use the yobimodoshi method, continually adding to the broth, for deep richness and a distinctive aroma. Many shops use slightly thicker noodles than Hakata ramen. Nori, green onion and roast pork are the standard toppings. The city has many long-established shops, and any tonkotsu fan should visit at least once.",
+    "price": "¥600–900",
+    "area": "Kurume",
+    "shops": [
+      {
+        "name": "Nankin Senryo Honke",
+        "query": "南京千両 本家 久留米",
+        "comment": "Descended from the food stall said to have created tonkotsu ramen.",
+        "access": "Kurume"
+      },
+      {
+        "name": "Taiho Ramen Honten",
+        "query": "大砲ラーメン 本店 久留米",
+        "comment": "A Kurume favorite known for its \"mukashi ramen\".",
+        "access": "Kurume"
+      }
+    ]
+  },
+  "博多もつ鍋": {
+    "summary": "Hakata's famous hot pot of tender beef offal, such as small intestine, simmered with plenty of cabbage, garlic chives and garlic. Soy sauce and miso broths are the most common, combining the rich umami of the offal with the sweetness of the vegetables. It was born in postwar Hakata and has even sparked a nationwide craze. Finish by adding champon noodles to the leftover soup, or make rice porridge. Most restaurants serve it for two or more people, so it is best enjoyed in a group. It warms you up on a cold day.",
+    "price": "¥1,500–2,500 per person",
+    "area": "Fukuoka City",
+    "shops": [
+      {
+        "name": "Rakutenchi Hakata Ekimae",
+        "query": "元祖もつ鍋 楽天地 博多駅前店",
+        "comment": "A long-running motsunabe specialist. Evenings only.",
+        "access": "Near Hakata Station Hakata exit"
+      },
+      {
+        "name": "Yamanaka Hakata",
+        "query": "博多もつ鍋 やま中 博多店",
+        "comment": "Popular for miso-based motsunabe.",
+        "access": "3 min walk from Hakata Station Chikushi exit"
+      }
+    ]
+  },
+  "ごぼう天うどん": {
+    "summary": "A staple at Hakata udon shops: udon topped with burdock root tempura. The burdock is sliced thin or cut into strips before frying, and the shape differs by shop. Hakata udon features soft, chewy noodles paired with a light, clear broth made from kelp, dried sardines and flying fish. Enjoy the toasty burdock tempura soaking up the broth and the gentle texture of the noodles. Hakata is even said to be one of the birthplaces of udon.",
+    "price": "¥500–800",
+    "area": "Fukuoka City and around",
+    "shops": [
+      {
+        "name": "Inaba Udon",
+        "query": "因幡うどん 博多",
+        "comment": "A long-running Hakata udon shop known for gobo-ten udon.",
+        "access": "Hakata"
+      },
+      {
+        "name": "Maki no Udon Hakata Bus Terminal",
+        "query": "牧のうどん 博多バスターミナル店",
+        "comment": "A popular chain with soft noodles.",
+        "access": "Hakata Bus Terminal"
+      }
+    ]
+  },
+  "鉄なべ餃子": {
+    "summary": "A Fukuoka specialty of bite-sized gyoza lined up in a hot iron pan, cooked, and served in the pan at the table. Many specialty shops are found in Kitakyushu and Fukuoka City. The skins are crisp and fragrant, the filling juicy, and they stay hot to the end. Because they are small, you can eat as many as you like. They go perfectly with beer, enjoyed in a casual izakaya style. Dipping them in vinegar soy sauce with yuzu pepper is a very Fukuoka touch. Mind the hot pan.",
+    "price": "¥500–800 per person",
+    "area": "Kitakyushu, Fukuoka City and around",
+    "shops": [
+      {
+        "name": "Honten Tetsunabe",
+        "query": "本店鉄なべ 黒崎",
+        "comment": "The birthplace of tetsunabe gyoza.",
+        "access": "Kurosaki, Yahatanishi, Kitakyushu"
+      },
+      {
+        "name": "Hakata Gion Tetsunabe",
+        "query": "博多祇園鉄なべ",
+        "comment": "Handmade tetsunabe gyoza. Evenings only.",
+        "access": "Gion, Hakata Ward"
+      }
+    ]
+  },
+  "博多とりかわ": {
+    "summary": "A staple at Hakata yakitori restaurants: chicken neck skin wound around a skewer and grilled. Some shops repeat grilling and resting over several days, draining excess fat while soaking in the sauce. It is crisp outside and chewy inside, and the sweet and savory sauce is addictive. Many people order several skewers each. Hakata yakitori restaurants also often serve free cabbage. It goes perfectly with beer, and some shops sell out early in the evening, so go early if you can.",
+    "price": "¥100–200 per skewer",
+    "area": "Fukuoka City",
+    "shops": [
+      {
+        "name": "Torikawa Suikyo",
+        "query": "とりかわ 粋恭 薬院",
+        "comment": "Said to be the birthplace of Hakata torikawa.",
+        "access": "3 min walk from Yakuin-odori Station"
+      },
+      {
+        "name": "Hakata Kawaya Shirogane",
+        "query": "博多かわ屋 白金店",
+        "comment": "A popular torikawa spot.",
+        "access": "4 min walk from Yakuin Station"
+      }
+    ]
+  },
+  "門司港焼きカレー": {
+    "summary": "A local dish of Mojiko in Kitakyushu: curry over rice topped with cheese and egg and baked in the oven. The cheese turns golden and fragrant, and the egg blends with the curry for a mellow flavor. It is said to have started at a Mojiko cafe that baked leftover curry gratin-style. Many baked curry restaurants are found around Mojiko Retro. Enjoy it along with a stroll among the retro buildings. Eat it piping hot.",
+    "price": "¥900–1,500",
+    "area": "Mojiko, Kitakyushu",
+    "shops": [
+      {
+        "name": "BEAR FRUITS Mojiko",
+        "query": "BEAR FRUITS 門司港",
+        "comment": "A yaki curry specialist, open every day.",
+        "access": "Near Mojiko Station"
+      },
+      {
+        "name": "Curry Honpo Mojiko Retro",
+        "query": "伽哩本舗 門司港レトロ店",
+        "comment": "A yaki curry shop in Mojiko Retro.",
+        "access": "Mojiko Retro"
+      }
+    ]
+  },
+  "若鶏の水炊き": {
+    "summary": "One of Hakata's signature hot pots. Chicken and vegetables are cooked in a cloudy white broth made by simmering bone-in chicken for a long time. The Hakata way is to first drink just the broth from a cup with a pinch of salt. Enjoy its rich soup packed with chicken flavor. The chicken and vegetables are eaten with ponzu and condiments, and the meal ends with rice porridge or champon noodles. Some long-established mizutaki restaurants in Hakata date back to the Meiji era.",
+    "price": "¥3,000–6,000",
+    "area": "Fukuoka City",
+    "shops": [
+      {
+        "name": "Shin-Miura Hakata Honten",
+        "query": "新三浦 博多本店",
+        "comment": "A mizutaki house founded in the Meiji period.",
+        "access": "Sekijomachi, Hakata Ward"
+      },
+      {
+        "name": "Mizutaki Nagano",
+        "query": "水たき長野 博多",
+        "comment": "A popular mizutaki shop using Kyushu chicken.",
+        "access": "Tsushimakoji, Hakata Ward"
+      }
+    ]
+  },
+  "がめ煮": {
+    "summary": "Fukuoka's signature local dish, known nationwide as chikuzen-ni. Chicken, burdock, lotus root, carrot, taro, konnyaku and shiitake are stir-fried in oil, then simmered sweet and savory. One theory says the name comes from soft-shelled turtle, called game in the Hakata dialect, once used in it. It is essential for New Year and celebrations, and every family has its own taste. Try it at Japanese restaurants, izakaya and delis in Fukuoka. It is tasty even cold.",
+    "price": "¥500–1,000",
+    "area": "Throughout Fukuoka",
+    "shops": [
+      {
+        "name": "Umeyama Teppei Shokudo",
+        "query": "梅山鉄平食堂 本店",
+        "comment": "A fish set-meal diner; a small dish of gameni comes on the side.",
+        "access": "Watanabe-dori, Chuo Ward"
+      },
+      {
+        "name": "Mentai Ryori Hakata Shobouan",
+        "query": "めんたい料理 博多 椒房庵",
+        "comment": "Mentaiko and Hakata home cooking.",
+        "access": "JR Hakata City 9F"
+      }
+    ]
+  },
+  "博多の胡麻鯖": {
+    "summary": "A Hakata local dish of fresh mackerel sashimi dressed in a sesame sauce of ground sesame and soy sauce. Only possible in Fukuoka, where very fresh mackerel is available, the fish's pleasant fat goes perfectly with toasty sesame. It is usually served with shredded nori, wasabi and green onion. It is great with drinks, and at the end you can put it on rice and pour hot tea or dashi over it as ochazuke. Try it at izakaya and restaurants in Hakata.",
+    "price": "¥800–1,500",
+    "area": "Fukuoka City",
+    "shops": [
+      {
+        "name": "Hakata Gomasaba-ya",
+        "query": "博多ごまさば屋",
+        "comment": "Popular for its gomasaba set meal.",
+        "access": "5 min walk from Tenjin Station (Akasaka)"
+      },
+      {
+        "name": "Okiyo Shokudo",
+        "query": "おきよ食堂 市場会館 長浜",
+        "comment": "A canteen inside the fish market, popular for gomasaba.",
+        "access": "Nagahama Fish Market"
+      }
+    ]
+  },
+  "辛子明太子": {
+    "summary": "Fukuoka's most famous specialty: pollock roe marinated in a seasoning with chili pepper. It is said to have been created by the founder of a Hakata food store who adapted a taste he knew from Busan, Korea, to Japanese palates. It features a popping texture, a spicy kick and rich umami. Besides being eaten with rice, it is used in pasta, rice balls and rolled omelettes. Fukuoka Airport and Hakata Station have many mentaiko shops. Compare different spice levels.",
+    "price": "¥1,000–5,000",
+    "area": "Fukuoka City",
+    "shops": [
+      {
+        "name": "Fukuya Nakasu Honten",
+        "query": "味の明太子 ふくや 中洲本店",
+        "comment": "The flagship of Fukuya, the first to sell karashi mentaiko.",
+        "access": "Nakasu"
+      },
+      {
+        "name": "Mentai Ryori Hakata Shobouan",
+        "query": "めんたい料理 博多 椒房庵",
+        "comment": "Mentaiko seasoned with flying-fish stock, at Hakata Station.",
+        "access": "JR Hakata City 9F"
+      }
+    ]
+  },
+  "柳川うなぎのせいろ蒸し": {
+    "summary": "A specialty of the water town Yanagawa: rice mixed with sweet-savory sauce, topped with grilled eel and shredded egg, and steamed in a bamboo steamer. Steaming makes the eel plump and soft and lets the sauce soak into the rice. It also stays warm to the last bite. It is said to have been made since the Edo period. Yanagawa has many long-established eel restaurants. Enjoy it after a canal boat ride through the town's waterways. The aroma of the sauce is irresistible.",
+    "price": "¥3,500–6,000",
+    "area": "Yanagawa",
+    "shops": [
+      {
+        "name": "Ganso Motoyoshiya",
+        "query": "元祖本吉屋 本店",
+        "comment": "The Edo-period birthplace of seiro-mushi.",
+        "access": "Yanagawa"
+      },
+      {
+        "name": "Wakamatsuya",
+        "query": "うなぎ料理 若松屋 柳川",
+        "comment": "A long-established eel house with a Japanese garden.",
+        "access": "Yanagawa"
+      }
+    ]
+  },
+  "梅ヶ枝餅": {
+    "summary": "A specialty along the approach to Dazaifu Tenmangu: a thin mochi filled with chunky red bean paste and baked in iron molds stamped with a plum blossom. It is crisp outside, chewy inside and gently sweet. It is said to come from a legend about an old woman who comforted the exiled Sugawara no Michizane by offering him mochi on a plum branch. Many shops line the approach, selling them freshly baked. Eat one hot after praying to the god of learning.",
+    "price": "¥130–150 each",
+    "area": "Dazaifu",
+    "shops": [
+      {
+        "name": "Kasanoya",
+        "query": "かさの家 太宰府",
+        "comment": "A popular shop on the shrine approach, with a tearoom.",
+        "access": "Approach to Dazaifu Tenmangu"
+      },
+      {
+        "name": "Juan Teradaya",
+        "query": "寿庵 寺田屋 太宰府",
+        "comment": "Umegae mochi and plum products.",
+        "access": "Approach to Dazaifu Tenmangu"
+      }
+    ]
+  },
+  "博多通りもん": {
+    "summary": "One of Fukuoka's best-known souvenir sweets, made by a Hakata confectioner. Smooth white bean paste is wrapped in moist Western-style dough made with butter and milk and baked. It combines the best of Japanese and Western sweets and melts gently in the mouth. Individually wrapped and easy to share, it is a hugely popular classic Fukuoka souvenir. It is widely sold at Hakata Station, Fukuoka Airport and souvenir shops. It is good warmed or chilled.",
+    "price": "¥600–2,000",
+    "area": "Fukuoka City",
+    "shops": [
+      {
+        "name": "Meigetsudo Amu Plaza Hakata",
+        "query": "明月堂 1号店 アミュプラザ博多",
+        "comment": "Meigetsudo's shop inside Hakata Station.",
+        "access": "Hakata Station (Amu Plaza)"
+      },
+      {
+        "name": "Hakata Station souvenir shops",
+        "query": "博多駅 マイング 博多通りもん",
+        "comment": "Widely sold at Hakata Station shops.",
+        "access": "Hakata Station (Ming)"
+      }
+    ]
+  },
+  "筑紫もち": {
+    "summary": "One of Fukuoka's best-known sweets, made by a Fukuoka confectioner. Soft mochi is dusted with roasted soybean flour and eaten with brown sugar syrup; each serving comes in a small container wrapped in plastic. To eat it, open the wrapping, pour on the syrup and mix with the soybean flour. The chewy mochi, toasty soybean flour and rich syrup are delicious together. It is sold at Hakata Station, Fukuoka Airport and souvenir shops. Enjoy it with Japanese tea.",
+    "price": "¥600–1,500",
+    "area": "Fukuoka City",
+    "shops": [
+      {
+        "name": "Josuian Hakata Ekimae",
+        "query": "如水庵 博多駅前本店",
+        "comment": "The flagship of Josuian, maker of Chikushi mochi.",
+        "access": "Hakata Station front"
+      },
+      {
+        "name": "Hakata Station souvenir shops",
+        "query": "博多駅 マイング 筑紫もち",
+        "comment": "Sold at Hakata Station shops.",
+        "access": "Hakata Station (Ming)"
+      }
+    ]
+  },
+  "千鳥饅頭": {
+    "summary": "One of Fukuoka's best-known souvenir sweets, made by a Fukuoka confectioner. Refined white bean paste is wrapped in moist dough made with plenty of eggs and baked. A plover bird, chidori, is branded on top. Its simple, gentle sweetness has long been loved. It is said to have originated in Iizuka, a former coal-mining town. It is sold at Hakata Station, Fukuoka Airport and souvenir shops. Enjoy it with Japanese tea.",
+    "price": "¥600–1,500",
+    "area": "Fukuoka City, Iizuka and around",
+    "shops": [
+      {
+        "name": "Chidori Manju Sohonpo Honten",
+        "query": "千鳥饅頭総本舗 本店",
+        "comment": "The flagship of a confectioner tracing back to the Edo period.",
+        "access": "Kamikawabatamachi (Kawabata shopping street)"
+      },
+      {
+        "name": "Fukuoka Airport souvenir shops",
+        "query": "福岡空港 千鳥饅頭",
+        "comment": "Also sold at the airport and Hakata Station.",
+        "access": "Fukuoka Airport"
+      }
+    ]
+  }
+}

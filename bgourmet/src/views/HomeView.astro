@@ -1,0 +1,366 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localizePath, t, type Lang } from '../i18n';
+import { getPrefecture, prefectures, regions } from '../data/prefectures';
+import { assertCatalogConsistency, countCatalog, dishTypes, getFeatured } from '../data/catalog';
+import { siteInfo } from '../data/site';
+import { getTripEssentials, homeTransportWidget } from '../data/affiliates';
+import { getClassics } from '../data/classics';
+import KlookWidget from '../components/KlookWidget.astro';
+import KlookScript from '../components/KlookScript.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+assertCatalogConsistency();
+const featured = getFeatured(lang);
+const essentials = getTripEssentials(lang);
+// 定番の日本食（英語サイトのみ）
+const classics = lang === 'en' ? getClassics(lang) : [];
+// その言語のサイトで運営している SNS だけを出す（未開設なら欄ごと出さない）
+const sns = [
+  { id: 'instagram', label: 'Instagram', url: siteInfo.instagramUrl[lang] },
+  { id: 'x', label: 'X', url: siteInfo.xUrl[lang] },
+].filter((s) => s.url);
+---
+
+<BaseLayout lang={lang} path="/">
+  <section class="hero">
+    <h1>{t(lang, 'siteName')}</h1>
+    <p>{t(lang, 'siteTagline')}</p>
+    <form class="search" action={localizePath(lang, '/search/')} method="get" role="search">
+      <label for="home-q" class="visually-hidden">{t(lang, 'search')}</label>
+      <input id="home-q" name="q" type="search" placeholder={t(lang, 'searchPlaceholder')} enterkeyhint="search" />
+      <button type="submit">{t(lang, 'searchButton')}</button>
+    </form>
+    <nav class="type-links" aria-label={t(lang, 'browseByType')}>
+      {
+        dishTypes.map((type) => (
+          <a href={`${localizePath(lang, '/search/')}?type=${type}`}>{t(lang, `type_${type}`)}</a>
+        ))
+      }
+    </nav>
+  </section>
+
+  <section>
+    <h2>{t(lang, 'featured')}</h2>
+    <div class="grid">
+      {
+        featured.map((item) => (
+          <a class="card" href={`${localizePath(lang, `/${item.prefectureId}/`)}#${item.anchor}`}>
+            <span class="pref">{getPrefecture(item.prefectureId).name[lang]}</span>
+            <strong>{item.name}</strong>
+            {item.info && <span class="summary">{item.info.summary}</span>}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  {
+    classics.length > 0 && (
+      <section class="classics">
+        <h2>Classic Japanese food</h2>
+        <p class="lead">New to Japanese food? Start with the classics you can find all over Japan.</p>
+        <div class="grid">
+          {classics.slice(0, 8).map((c) => (
+            <a class="card" href={`${localizePath(lang, '/classics/')}#${c.id}`}>
+              <strong>{c.name}</strong>
+              <span class="summary">{c.tagline}</span>
+            </a>
+          ))}
+        </div>
+        <p class="more">
+          <a href={localizePath(lang, '/classics/')}>See all {classics.length} classic dishes →</a>
+        </p>
+      </section>
+    )
+  }
+
+  <section>
+    <h2>{t(lang, 'browseByRegion')}</h2>
+    <div class="regions">
+      {
+        regions.map((region) => (
+          <div class="region">
+            <h3>{region.name[lang]}</h3>
+            <ul>
+              {prefectures
+                .filter((p) => p.region === region.id)
+                .map((p) => {
+                  const count = countCatalog(lang, p.id);
+                  return (
+                    <li>
+                      <a href={localizePath(lang, `/${p.id}/`)} class={count ? 'has' : 'empty'}>
+                        {p.name[lang]}
+                        {count > 0 && <span class="count">{t(lang, 'gourmetCount', { n: count })}</span>}
+                      </a>
+                    </li>
+                  );
+                })}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+  {
+    essentials.length > 0 && (
+      <section class="essentials">
+        <h2>
+          Plan your trip <span class="pr">{t(lang, 'prLabel')}</span>
+        </h2>
+        <KlookWidget {...homeTransportWidget} />
+        <KlookScript />
+        <div class="grid">
+          {essentials.map((e) => (
+            <a class="card" href={e.url} target="_blank" rel="sponsored noopener">
+              <span class="pref">Klook</span>
+              <strong>{e.label}</strong>
+              <span class="summary">{e.note}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    sns.length > 0 && (
+      <section class="sns">
+        <h2>{lang === 'ja' ? 'SNS でも紹介中' : 'Follow us'}</h2>
+        <ul>
+          {sns.map((s) => (
+            <li>
+              <a href={s.url} target="_blank" rel="noopener" aria-label={s.label}>
+                {s.id === 'instagram' ? (
+                  <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                ) : (
+                  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="currentColor">
+                    <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L2.9 2h6.4l4.4 5.9zm-1.1 18.1h1.7L7.2 3.8H5.4z" />
+                  </svg>
+                )}
+                <span>{s.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: calc(var(--radius) * 1.5);
+    background: linear-gradient(135deg, var(--accent-soft), var(--surface-2));
+    text-align: center;
+  }
+  .hero h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+  }
+  .hero p {
+    margin: 0;
+    color: var(--muted);
+  }
+  .search {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 520px;
+    margin: 1.25rem auto 0;
+  }
+  .search input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 1rem; /* 16px 未満だと iPhone で入力時に拡大されるため */
+  }
+  .search input:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .search button {
+    flex-shrink: 0;
+    padding: 0.7rem 1.2rem;
+    border: 0;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .type-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: 0.9rem;
+  }
+  .type-links a {
+    padding: 0.2rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  .type-links a:hover {
+    border-color: var(--accent);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  section {
+    margin-top: 2.5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    display: grid;
+    gap: 0.2rem;
+    align-content: start;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    color: var(--text);
+    text-decoration: none;
+  }
+  .card:hover {
+    border-color: var(--accent);
+  }
+  .card .pref {
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .card strong {
+    font-size: 1.1rem;
+  }
+  .card .summary {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .regions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1rem;
+  }
+  .region {
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .region h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+  }
+  .region ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .region a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.15rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .region a.has {
+    background: var(--accent-soft);
+    color: var(--text);
+    font-weight: 700;
+  }
+  .region a.empty {
+    color: var(--muted);
+  }
+  .classics .lead {
+    margin: -0.25rem 0 1rem;
+    color: var(--muted);
+  }
+  .classics .more {
+    margin: 1rem 0 0;
+    font-weight: 700;
+  }
+  .essentials h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .essentials .pr {
+    padding: 0 0.4rem;
+    border-radius: 4px;
+    background: var(--muted);
+    color: var(--bg);
+    font-size: 0.75rem;
+  }
+  .sns {
+    text-align: center;
+  }
+  .sns ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .sns a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .sns a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .count {
+    color: var(--accent);
+    font-size: 0.75rem;
+  }
+</style>

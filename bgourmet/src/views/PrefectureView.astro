@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DishEntry from '../components/DishEntry.astro';
+import { localizePath, t, type Lang } from '../i18n';
+import { getIntro, getPrefecture, regions } from '../data/prefectures';
+import { getCatalog } from '../data/catalog';
+import { getPrefectureAffiliates } from '../data/affiliates';
+import AffiliateBox from '../components/AffiliateBox.astro';
+import KlookWidget from '../components/KlookWidget.astro';
+import KlookScript from '../components/KlookScript.astro';
+
+interface Props {
+  lang: Lang;
+  prefectureId: string;
+}
+
+const { lang, prefectureId } = Astro.props;
+const pref = getPrefecture(prefectureId);
+const region = regions.find((r) => r.id === pref.region)!;
+const items = getCatalog(lang, pref.id);
+const dishCount = items.length;
+const title = t(lang, 'prefectureTitle', { pref: pref.name[lang] });
+const intro = getIntro(lang, pref.id);
+const affiliates = getPrefectureAffiliates(lang, pref.id, pref.name[lang]);
+---
+
+<BaseLayout lang={lang} path={`/${pref.id}/`} title={title} description={intro}>
+  <nav class="crumbs">
+    <a href={localizePath(lang, '/')}>{t(lang, 'siteName')}</a> › {region.name[lang]}
+  </nav>
+  <h1>{pref.name[lang]}</h1>
+  {intro && <p class="intro">{intro}</p>}
+  {dishCount > 0 && <p class="count">{t(lang, 'dishCount', { n: dishCount })}</p>}
+
+  <div class="dishes">
+    {items.map((item) => (
+      <DishEntry lang={lang} item={item} />
+    ))}
+  </div>
+
+  {
+    affiliates.length > 0 && (
+      <section class="experiences">
+        <h2>{t(lang, 'planTripTitle', { pref: pref.name[lang] })}</h2>
+        {affiliates.map((block) => (
+          <div class="aff-block">
+            <h3>{t(lang, `affiliate_${block.kind}`, { pref: pref.name[lang] })}</h3>
+            {block.widget && <KlookWidget {...block.widget} />}
+            {block.links.length > 0 && <AffiliateBox lang={lang} links={block.links} />}
+          </div>
+        ))}
+        {affiliates.some((b) => b.widget) && <KlookScript />}
+      </section>
+    )
+  }
+
+  <p class="back"><a href={localizePath(lang, '/')}>← {t(lang, 'backToTop')}</a></p>
+</BaseLayout>
+
+<style>
+  .experiences {
+    margin-top: 2.5rem;
+  }
+  .experiences h2 {
+    font-size: 1.95rem; /* 1.3rem の1.5倍 */
+  }
+  .aff-block {
+    margin-top: 1.5rem;
+  }
+  .aff-block h3 {
+    margin: 0 0 0.6rem;
+    font-size: 1.575rem; /* 1.05rem の1.5倍 */
+  }
+  .crumbs {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  h1 {
+    margin-bottom: 0.25rem;
+    font-size: 3em; /* 標準（2em）の1.5倍 */
+  }
+  .intro {
+    max-width: 46rem;
+    margin: 0.5rem 0 0.75rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+  .count {
+    margin: 0 0 1rem;
+    color: var(--muted);
+  }
+  .dishes {
+    display: grid;
+  }
+  .back {
+    margin-top: 2.5rem;
+  }
+</style>

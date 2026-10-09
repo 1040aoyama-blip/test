@@ -1,0 +1,280 @@
+{
+  "浜松餃子": {
+    "summary": "Hamamatsu is known, along with Utsunomiya, as one of Japan's gyoza cities, and locals eat gyoza both at home and when dining out. The Hamamatsu style is to fry them in a circle in the pan and serve them with boiled bean sprouts in the middle. The filling is rich in cabbage and onion, so they taste light and it is easy to keep eating. Eat them with the bean sprouts to refresh your palate. Many shops sell them to take away, and they go perfectly with a cold beer.",
+    "price": "¥500–800",
+    "area": "Hamamatsu",
+    "shops": [
+      {
+        "name": "Ishimatsu Gyoza Honten",
+        "query": "石松餃子 本店 浜松",
+        "comment": "Said to be the originator of Hamamatsu gyoza. Open every day.",
+        "access": "Hiraguchi, Hamana Ward, Hamamatsu"
+      },
+      {
+        "name": "Mutsugiku",
+        "query": "むつぎく 浜松 餃子",
+        "comment": "A popular long-running shop near the station. No reservations.",
+        "access": "3 min walk from Hamamatsu Station"
+      }
+    ]
+  },
+  "富士宮やきそば": {
+    "summary": "The local yakisoba of Fujinomiya, at the foot of Mt. Fuji. It uses special low-moisture steamed noodles that are firm and chewy. The toppings are cabbage and nikukasu, crispy bits left over from rendering pork fat. Locals finish it with plenty of dashiko, a powder of dried sardine or mackerel, which adds aroma and umami. It won the B-1 Grand Prix two years in a row, sparking Japan's local food boom. Stop by when visiting Mt. Fuji or Sengen Taisha shrine; the city has many places serving it.",
+    "price": "¥500–900",
+    "area": "Fujinomiya",
+    "shops": [
+      {
+        "name": "Fujinomiya Yakisoba Antenna Shop",
+        "query": "富士宮やきそばアンテナショップ",
+        "comment": "Near Fujisan Hongu Sengen Taisha shrine. A good place to compare styles.",
+        "access": "In front of Fujisan Hongu Sengen Taisha (Omiya Yokocho)"
+      },
+      {
+        "name": "Teppanyaki Sugimoto Honten",
+        "query": "鉄板焼 すぎ本 本店 富士宮",
+        "comment": "A long-loved local teppanyaki restaurant.",
+        "access": "Nishimachi, Fujinomiya"
+      },
+      {
+        "name": "Uruoitei",
+        "query": "うるおいてい 富士宮",
+        "comment": "A popular shop serving classic Fujinomiya yakisoba.",
+        "access": "15 min walk from Fujinomiya Station"
+      }
+    ]
+  },
+  "静岡おでん": {
+    "summary": "Shizuoka City's famous oden, simmered in a dark broth made with beef tendon and pork offal. Every ingredient is served on a skewer, and the grey kuro hanpen fish cake made from sardines or mackerel is a must. Sprinkle on plenty of fish powder and green seaweed flakes before eating. Children have long eaten it as an afternoon snack at old candy shops, and today you can still order it skewer by skewer at candy shops and izakaya. There is even an alley lined with oden bars in the city center.",
+    "price": "¥100–200 per skewer",
+    "area": "Shizuoka City",
+    "shops": [
+      {
+        "name": "Aoba Oden Street",
+        "query": "青葉おでん街 静岡",
+        "comment": "An alley lined with Shizuoka oden bars. Fun for bar-hopping.",
+        "access": "Central Shizuoka City (around Aoba Symbol Road)"
+      },
+      {
+        "name": "Shizuoka Oden Ogawa",
+        "query": "静岡おでん おがわ",
+        "comment": "Oden from daytime. Closes when sold out.",
+        "access": "Aoi Ward, Shizuoka City"
+      },
+      {
+        "name": "Umibozu Honten",
+        "query": "海ぼうず 本店 静岡",
+        "comment": "An izakaya proud of its Shizuoka oden.",
+        "access": "Near Shizuoka Station south exit"
+      }
+    ]
+  },
+  "生しらす丼": {
+    "summary": "A rice bowl piled high with whitebait caught in Suruga Bay, served raw instead of boiled. It is translucent, plump and lightly sweet, and usually eaten with ginger and soy sauce. Because it loses freshness quickly, it is best eaten in the fishing towns where it is landed. It may not be served during the winter-to-spring closed season or on days when boats cannot go out, so check ahead. A half-and-half bowl with boiled whitebait is also popular. Enjoy it at a harbor-side diner.",
+    "price": "¥1,000–1,800",
+    "area": "Shizuoka City (Mochimune, Yui), Yaizu",
+    "shops": [
+      {
+        "name": "Donburi House",
+        "query": "漁協直営 どんぶりハウス 用宗",
+        "comment": "Run by the fishing co-op. Raw shirasu only on days the boats go out.",
+        "access": "Mochimune Port, Suruga Ward"
+      },
+      {
+        "name": "Tagonoura Port Fishermen's Diner",
+        "query": "田子の浦港 漁協食堂",
+        "comment": "A co-op diner on the quay. Open Apr–Dec.",
+        "access": "Tagonoura Port, Fuji"
+      }
+    ]
+  },
+  "三島コロッケ": {
+    "summary": "Croquettes made with Mishima potatoes, a May Queen variety grown on the western slopes of Mt. Hakone. Grown in volcanic soil, these potatoes are fine-textured and sweet, giving the croquettes a fluffy bite. Butchers and restaurants all over the city sell them, each with slightly different fillings and seasoning. Buy one fresh from the fryer and eat it while strolling around Mishima Taisha shrine or along the crystal-clear Gembe River. They are inexpensive and still tasty when cool.",
+    "price": "¥100–250 each",
+    "area": "Mishima",
+    "shops": [
+      {
+        "name": "Omura Butcher",
+        "query": "大村精肉店 三島 コロッケ",
+        "comment": "A butcher popular for its heart-shaped Mishima croquettes.",
+        "access": "Taishacho (near Mishima Taisha)"
+      },
+      {
+        "name": "Komai Butcher",
+        "query": "駒井精肉店 三島",
+        "comment": "A butcher certified to sell Mishima croquettes.",
+        "access": "Hinodecho, Mishima"
+      }
+    ]
+  },
+  "浜名湖うな重": {
+    "summary": "Lake Hamana has farmed eel since the Meiji era and is one of Japan's leading eel regions. The area is full of eel restaurants, and its specialty is unaju: fragrant grilled eel over rice in a lacquered box. Some shops steam the eel before grilling for a soft Kanto-style texture, while others grill it directly for crispy Kansai-style skin, so comparing them is part of the fun. The sauce-soaked rice is a treat too. Popular shops can sell out before noon, so go early, and try it with eel liver soup.",
+    "price": "¥3,000–6,000",
+    "area": "Hamamatsu (Lake Hamana area)",
+    "shops": [
+      {
+        "name": "Atsumi",
+        "query": "うなぎ料理 あつみ 浜松",
+        "comment": "A Meiji-era eel restaurant committed to Lake Hamana eel.",
+        "access": "Chuo Ward, Hamamatsu"
+      },
+      {
+        "name": "Yaotoku Honten",
+        "query": "うなぎ 八百徳 本店",
+        "comment": "A long-established eel restaurant founded in the Meiji period.",
+        "access": "6 min walk from Hamamatsu Station north exit"
+      }
+    ]
+  },
+  "サクラエビのかき揚げ": {
+    "summary": "Sakura shrimp are a rare catch landed in Japan only in Suruga Bay. They are only about 4 cm long and, as the name suggests, a lovely cherry-blossom pink. Packed into a crispy fritter, they are Yui's specialty, fragrant and naturally sweet. The fishing seasons are spring and autumn, when you can also try them raw or boiled. Near Yui fishing port there are diners run by the local fishermen's cooperative, where you can enjoy the fresh catch at reasonable prices. They are also delicious on rice or soba.",
+    "price": "¥800–1,500",
+    "area": "Shizuoka City (Yui), Fuji",
+    "shops": [
+      {
+        "name": "Kurasawaya",
+        "query": "桜えび 磯料理 くらさわや 由比",
+        "comment": "A sakura-ebi restaurant on a rise overlooking Suruga Bay.",
+        "access": "5 min drive from Yui Station"
+      },
+      {
+        "name": "Izutsuya",
+        "query": "井筒屋 由比 桜えび",
+        "comment": "A sakura-ebi restaurant in the old Tokaido post town of Yui.",
+        "access": "Yui, Shimizu Ward"
+      }
+    ]
+  },
+  "金目の煮付け": {
+    "summary": "Splendid alfonsino is a deep-sea fish with bright red skin and large golden eyes. Inatori and Shimoda on the Izu Peninsula land a lot of it and are famous for it. The classic way to eat it is simmered in a sweet soy sauce glaze, which suits its rich, tender white flesh. It goes perfectly with rice soaked in the sauce, and many restaurants serve it as a set meal. Try comparing it with other alfonsino dishes such as shabu-shabu or dried fish. A great match for a hot spring trip to Izu.",
+    "price": "¥2,000–4,000",
+    "area": "Izu (Inatori, Shimoda, etc.)",
+    "shops": [
+      {
+        "name": "Tokuzomaru Honten",
+        "query": "網元料理 徳造丸 本店 稲取",
+        "comment": "A Taisho-era fishing family's restaurant, famous for sweet-savory simmered kinmedai.",
+        "access": "Near Inatori Port, Higashiizu"
+      },
+      {
+        "name": "Kinmetei",
+        "query": "市場の食堂 金目亭 下田",
+        "comment": "A diner inside the Shimoda fish market.",
+        "access": "Shimoda Fish Market"
+      }
+    ]
+  },
+  "とろろ汁": {
+    "summary": "Grated wild yam (jinenjo) thinned with miso soup and poured over barley rice. It is the specialty of Mariko, a post town on the old Tokaido road, and has fed travelers since the Edo period. A tororo-jiru shop even appears in Hiroshige's famous woodblock print of Mariko in The Fifty-three Stations of the Tokaido. Wild yam is sticky and fragrant, and the dish slips down easily. Each shop has its own condiments and broth, and eating it at a historic restaurant makes it feel like a journey back in time.",
+    "price": "¥1,500–2,500",
+    "area": "Shizuoka City (Mariko)",
+    "shops": [
+      {
+        "name": "Chojiya",
+        "query": "とろろ汁の丁子屋 丸子",
+        "comment": "A tororo-jiru house in the old Mariko post town, dating back to the late Warring States period.",
+        "access": "Mariko, Suruga Ward"
+      },
+      {
+        "name": "Keigetsu",
+        "query": "渓月 丸子 とろろ",
+        "comment": "An affordable tororo set-meal restaurant up in the hills.",
+        "access": "Mariko, Suruga Ward"
+      }
+    ]
+  },
+  "山葵漬け": {
+    "summary": "Shizuoka is said to be the birthplace of wasabi cultivation and is still one of Japan's main producers. Wasabi-zuke is chopped wasabi stems and roots pickled in sake lees, with a sharp kick balanced by the mellow sweetness of the lees. Put it on hot rice, serve it with fish cakes or sashimi, or mix it with cream cheese. It keeps well, so it makes a popular Shizuoka souvenir. A little goes a long way. Some places let you visit wasabi fields, a treat you can only have in a growing region.",
+    "price": "¥500–1,000 (souvenir)",
+    "area": "Shizuoka City, Izu",
+    "shops": [
+      {
+        "name": "Tamaruya Honten",
+        "query": "田丸屋本店 静岡",
+        "comment": "A long-established wasabi-zuke maker; you can also eat wasabi rice bowls.",
+        "access": "5 min walk from Shizuoka Station"
+      },
+      {
+        "name": "Izuya Wasabi",
+        "query": "伊豆屋わさび店 湯ケ島",
+        "comment": "Run by a wasabi farming family.",
+        "access": "Yugashima, Izu"
+      }
+    ]
+  },
+  "うなぎパイ": {
+    "summary": "Pie cookies made by Hamamatsu confectioner Shunkado and the classic Hamamatsu souvenir. Eel extract and garlic are mixed into the dough, which is baked until flaky and crisp. The famous slogan \"a sweet for the night\" was meant to suggest enjoying them together as a family after dinner. In Hamamatsu you can visit the Unagi Pie Factory to watch them being made and buy limited-edition items. There are also varieties with nuts.",
+    "price": "From about ¥1,000 per box",
+    "area": "Hamamatsu and souvenir shops across the prefecture",
+    "shops": [
+      {
+        "name": "Unagi Pie Factory",
+        "query": "うなぎパイファクトリー",
+        "comment": "Factory tours and a café.",
+        "access": "Okubocho, Hamamatsu"
+      },
+      {
+        "name": "Shunkado Honten",
+        "query": "春華堂 本店 浜松",
+        "comment": "The shop where unagi pie was born.",
+        "access": "Kajimachi, Hamamatsu"
+      }
+    ]
+  },
+  "安倍川もち": {
+    "summary": "A Shizuoka City specialty pairing soft, freshly pounded rice cakes coated in sweetened roasted soybean flour (kinako) with others covered in smooth red bean paste. Teahouses along the Abe River have served it to travelers since the Edo period, and legend says Tokugawa Ieyasu gave it its name. Long-established teahouses still stand near Abekawa Bridge, where you can eat it freshly made. Its simple, gentle sweetness is best enjoyed with a cup of hot Shizuoka green tea. A nice break during a walk.",
+    "price": "¥600–900",
+    "area": "Shizuoka City (near Abekawa Bridge)",
+    "shops": [
+      {
+        "name": "Sekibeya",
+        "query": "石部屋 安倍川もち",
+        "comment": "An abekawa mochi shop dating to the Edo period.",
+        "access": "Near Abekawa Bridge (Miroku, Aoi Ward)"
+      },
+      {
+        "name": "Yamadaichi Parche",
+        "query": "安倍川もちのやまだいち パルシェ",
+        "comment": "Buy them inside the station building.",
+        "access": "Parche, Shizuoka Station"
+      }
+    ]
+  },
+  "こっこ": {
+    "summary": "A fluffy steamed sponge cake filled with milk cream and one of Shizuoka's best-known souvenirs. Its cute name and gentle sweetness make it popular with children and adults alike. Each cake is individually wrapped, so it is easy to hand out to friends or coworkers. You can find it at stations, highway service areas and souvenir shops across the prefecture. Seasonal limited flavors appear from time to time, so try one alongside the original if you see it. It also makes a nice snack for the train home.",
+    "price": "About ¥1,000 per box",
+    "area": "Stations and souvenir shops across the prefecture",
+    "shops": [
+      {
+        "name": "Kokkoan",
+        "query": "こっこ庵 静岡",
+        "comment": "The direct shop of Mihomi, the maker of kokko.",
+        "access": "Suruga Ward, Shizuoka City"
+      },
+      {
+        "name": "Shizuoka Station souvenir shops",
+        "query": "静岡駅 ASTY おみやげ こっこ",
+        "comment": "Sold at station kiosks and in ASTY Shizuoka.",
+        "access": "Shizuoka Station"
+      }
+    ]
+  },
+  "治一郎のバウムクーヘン": {
+    "summary": "A baumkuchen born in Hamamatsu. Unlike many baumkuchen, it is never dry and is loved for its moist, melt-in-the-mouth texture. The egg flavor comes through clearly and the sweetness is refined, so you will want another slice. It is a popular gift, and some people travel from other prefectures just to buy it. Although there are now shops in major cities across Japan, buying it in its hometown of Hamamatsu is part of the fun of the trip. Its pudding and other cakes are popular too.",
+    "price": "From about ¥1,500",
+    "area": "Hamamatsu and other locations",
+    "shops": [
+      {
+        "name": "Jiichiro Ohiradai",
+        "query": "治一郎 大平台本店",
+        "comment": "The flagship with a café and some shop-only treats.",
+        "access": "Ohiradai, Hamamatsu"
+      },
+      {
+        "name": "Jiichiro Entetsu Department Store",
+        "query": "治一郎 遠鉄百貨店",
+        "comment": "Inside the department store connected to Shin-Hamamatsu Station.",
+        "access": "Entetsu Department Store (Shin-Hamamatsu)"
+      }
+    ]
+  }
+}

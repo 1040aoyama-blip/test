@@ -1,0 +1,198 @@
+{
+  "天理ラーメン": {
+    "summary": "Local ramen from Tenri, featuring a spicy soy sauce and pork bone broth loaded with Chinese cabbage, garlic chives and pork. It is said to have started at street stalls and is now Nara's signature ramen. The sweetness of the crunchy cabbage combined with the garlic and chili broth is addictive. Some shops let you choose the spice level. You can find it at many shops in Nara, centered on Tenri. It warms you up on a cold day.",
+    "price": "¥700–1,000",
+    "area": "Tenri and around",
+    "shops": [
+      {
+        "name": "Saika Ramen Honten",
+        "query": "彩華ラーメン 本店 天理",
+        "comment": "Known as the originator of Tenri's cabbage-laden stamina ramen.",
+        "access": "Iwamurocho, Tenri"
+      },
+      {
+        "name": "Tenri Stamina Ramen Honten",
+        "query": "天理スタミナラーメン 本店",
+        "comment": "The other big name in Tenri ramen, open until late.",
+        "access": "Tenri"
+      }
+    ]
+  },
+  "柿の葉寿司": {
+    "summary": "A Nara local dish: salted mackerel or salmon placed on bite-sized vinegared rice, wrapped in persimmon leaves and pressed. It is said to have been created in Nara's mountains, far from the sea, to preserve precious sea fish. Persimmon leaves have antibacterial properties, and their faint scent transfers to the sushi. Remove the leaf before eating. It has long been made in the Yoshino area and elsewhere. It is easy to buy at souvenir shops around Nara Station and Nara Park, and it keeps well enough for a souvenir.",
+    "price": "¥1,000–2,000",
+    "area": "Yoshino, Nara City and around",
+    "shops": [
+      {
+        "name": "Tanaka Nara Honten",
+        "query": "柿の葉すし本舗たなか なら本店",
+        "comment": "The flagship in central Nara.",
+        "access": "Nishimikadocho (near Kintetsu-Nara Station)"
+      },
+      {
+        "name": "Hiraso Yoshino Honten",
+        "query": "柿の葉ずし総本家 平宗 吉野本店",
+        "comment": "An Edo-period maker; eat in at the shop.",
+        "access": "Iigai, Yoshino"
+      },
+      {
+        "name": "Izasa Nakatani Honpo",
+        "query": "ゐざさ 中谷本舗 奈良",
+        "comment": "A popular kakinoha-zushi maker.",
+        "access": "Oshikumacho, Nara"
+      }
+    ]
+  },
+  "三輪そうめん": {
+    "summary": "Hand-stretched somen noodles made in the Miwa area of Sakurai. Miwa is said to be the birthplace of Japanese somen and has a long history. Dough of flour and salt water is coated with oil and gradually stretched thinner and thinner by hand. The noodles are thin, firm and silky going down. Besides cold somen, they are also delicious hot as nyumen. Shops serving somen line the approach to Omiwa Shrine. There are also different thicknesses to compare.",
+    "price": "¥700–1,200",
+    "area": "Miwa, Sakurai",
+    "shops": [
+      {
+        "name": "Miwa Yamamoto Dining",
+        "query": "三輪山本 お食事処",
+        "comment": "The dining room of an Edo-period somen maker.",
+        "access": "Hashinaka, Sakurai"
+      },
+      {
+        "name": "Ikeri Senjutei",
+        "query": "池利 千寿亭 三輪",
+        "comment": "The restaurant of a late-Edo somen maker.",
+        "access": "Shiba, Sakurai"
+      }
+    ]
+  },
+  "奈良漬け": {
+    "summary": "Pickles of white gourd, cucumber, watermelon and other vegetables, repeatedly transferred to fresh sake lees and aged for a long time. They have a rich sake lees aroma, an amber color and a firm bite. They are said to have begun at Nara's temples and became the city's signature product. Because they use sake lees, eating a lot is said to make some people tipsy. Enjoy them with rice, or sliced thin with drinks. They are also delicious chopped and mixed with cream cheese.",
+    "price": "¥800–2,500",
+    "area": "Nara City and around",
+    "shops": [
+      {
+        "name": "Mori Narazuke",
+        "query": "森奈良漬店 奈良",
+        "comment": "A Meiji-era shop on the approach to Todaiji.",
+        "access": "Approach to Todaiji's Great South Gate"
+      },
+      {
+        "name": "Imanishi Honten",
+        "query": "今西本店 奈良漬",
+        "comment": "A long-established maker of traditional narazuke.",
+        "access": "Kamisanjocho, Nara"
+      }
+    ]
+  },
+  "茶粥": {
+    "summary": "A Nara local dish of rice cooked into a thin porridge with hojicha or bancha tea. Locals also call it okaisan, and it has long been eaten for breakfast. The toasty tea aroma and light texture make it gentle on the stomach and easy to eat. It is said to have begun as a meal eaten by monks at Nara's temples. It is often served with pickles and simmered side dishes. Try it for breakfast at inns in Nara or at restaurants that serve it. Enjoy a relaxing Nara morning.",
+    "price": "¥800–1,500",
+    "area": "Nara City and around",
+    "shops": [
+      {
+        "name": "Tsukihiboshi",
+        "query": "茶粥茶論 月日星 奈良",
+        "comment": "Tea gruel with a spread of pickles.",
+        "access": "Noboriojicho (near Nara Park)"
+      },
+      {
+        "name": "To no Chaya",
+        "query": "塔の茶屋 奈良",
+        "comment": "Tea gruel with a view of Kofukuji's pagoda.",
+        "access": "Nara (near Sarusawa Pond)"
+      }
+    ]
+  },
+  "飛鳥鍋": {
+    "summary": "A Nara local hot pot of chicken and vegetables simmered in a chicken broth with milk. Legend says it began in the Asuka period, when a monk from Tang China introduced dishes using milk. The mellow richness of milk and the flavor of chicken combine into a gentle taste. It is filled with Chinese cabbage, mushrooms, green onion and other vegetables. You can try it at restaurants around Asuka village. Pair it with a stroll through Asuka, steeped in ancient history. It warms you to the core in the cold season.",
+    "price": "¥1,500–3,000",
+    "area": "Asuka and around",
+    "shops": [
+      {
+        "name": "Mendoya",
+        "query": "めんどや 明日香 飛鳥鍋",
+        "comment": "A long-running shop in Asuka; asuka-nabe by reservation.",
+        "access": "Asuka Village"
+      },
+      {
+        "name": "Yumeichi Chaya",
+        "query": "夢市茶屋 明日香",
+        "comment": "Near Ishibutai Kofun; serves asuka-nabe in winter.",
+        "access": "Near Ishibutai Kofun"
+      }
+    ]
+  },
+  "葛餅": {
+    "summary": "Kuzu mochi made with high-quality kudzu starch from the Yoshino area of Nara. Yoshino kudzu has long been prized as a luxury ingredient. Made by dissolving kudzu starch in water and kneading it, the mochi is translucent, springy and smooth in the mouth. The classic way is to eat it with brown sugar syrup and roasted soybean flour. When visiting Mt. Yoshino, enjoy it freshly made at a long-established kudzu shop. Chilled versions are perfect in summer.",
+    "price": "¥600–1,200",
+    "area": "Yoshino and around",
+    "shops": [
+      {
+        "name": "Tengyokudo Nara Honten",
+        "query": "吉野本葛 天極堂 奈良本店",
+        "comment": "A Meiji-era Yoshino kudzu maker; freshly made kuzu mochi.",
+        "access": "Nara (west of Todaiji)"
+      },
+      {
+        "name": "Yasokichi",
+        "query": "吉野葛 八十吉",
+        "comment": "Enjoy it with views over the Yoshino hills.",
+        "access": "Yoshino"
+      }
+    ]
+  },
+  "吉野葛の葛きり": {
+    "summary": "A sweet made by dissolving Yoshino kudzu starch in water, setting it in thin sheets and cutting it into noodle-like strips. It is clear, slippery and pleasantly chewy. It is served floating in ice water and dipped in brown sugar syrup. At shops that make it to order, you can enjoy a freshly made texture like no other. Try it at shops near Mt. Yoshino or at sweet shops in Nara City. It turns cloudy over time, so enjoy its clear beauty right away on a hot summer day.",
+    "price": "¥800–1,500",
+    "area": "Yoshino, Nara City and around",
+    "shops": [
+      {
+        "name": "Tengyokudo Nara Honten",
+        "query": "吉野本葛 天極堂 奈良本店",
+        "comment": "Serves kuzukiri made to order.",
+        "access": "Nara (west of Todaiji)"
+      },
+      {
+        "name": "Yasokichi",
+        "query": "吉野葛 八十吉",
+        "comment": "A Yoshino kudzu shop founded in the late Edo period.",
+        "access": "Yoshino"
+      }
+    ]
+  },
+  "かき氷": {
+    "summary": "Nara is known as a city that loves shaved ice. Nara City has Himuro Shrine, dedicated to the god of ice, where ice houses once stored natural ice. With that history, the city has many renowned shaved ice shops serving fluffy ice topped with seasonal fruits, matcha, hojicha and other unique syrups. Shaved ice events are sometimes held too. Popular shops draw lines, so allow plenty of time. Some shops are open even in winter.",
+    "price": "¥800–1,500",
+    "area": "Nara City",
+    "shops": [
+      {
+        "name": "Hosekibako",
+        "query": "ほうせき箱 奈良 かき氷",
+        "comment": "A popular shop serving kakigori all year round.",
+        "access": "Naramachi (Mochiidonocho)"
+      },
+      {
+        "name": "Ochanoko",
+        "query": "おちゃのこ 奈良 かき氷",
+        "comment": "Fluffy kakigori from a tea shop.",
+        "access": "Nara"
+      }
+    ]
+  },
+  "だんご庄のだんご": {
+    "summary": "Famous dango from a long-established dumpling shop in Kashihara. Small dumplings are skewered, coated in brown sugar syrup and generously covered with roasted soybean flour. Enjoy the toasty soybean flour, the rich sweetness of the syrup and the chewy dumplings. With their simple, gentle flavor, they have long been loved by locals. They do not keep, so eat them the same day. The soybean flour spills easily, so be careful when eating. You may find yourself eating skewer after skewer.",
+    "price": "¥500–1,500 per box",
+    "area": "Kashihara (Yagi and around)",
+    "shops": [
+      {
+        "name": "Dangosho Honten",
+        "query": "だんご庄 坊城本店",
+        "comment": "A Meiji-era kinako dango shop.",
+        "access": "1 min walk from Bojo Station (Kashihara)"
+      },
+      {
+        "name": "Dangosho Yagi",
+        "query": "だんご庄 八木店",
+        "comment": "In front of Yamato-Yagi Station.",
+        "access": "Yamato-Yagi Station front"
+      }
+    ]
+  }
+}

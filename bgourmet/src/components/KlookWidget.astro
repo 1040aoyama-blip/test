@@ -1,0 +1,41 @@
+---
+/**
+ * Klook の「Dynamic Widget」（サムネ付きの体験の一覧）。
+ * Klook のアフィリエイト管理画面の Widget で作ったコードを、値を変えずにそのまま出す。
+ * adid・destId・tid・prod は src/data/affiliates.ts の klookWidgets（管理画面のコードにある data-adid・data-dest_id・data-tid・data-prod）。
+ * 読み込み用のスクリプトはページに1回だけ置く（KlookScript.astro）
+ */
+interface Props {
+  adid: string;
+  destId: string;
+  tid: string;
+  prod?: string;
+}
+
+const { adid, destId, tid, prod = 'dynamic_widget' } = Astro.props;
+---
+
+<div class="klook-widget">
+  <ins
+    class="klk-aff-widget"
+    data-adid={adid}
+    data-lang=""
+    data-currency=""
+    data-cardH="126"
+    data-padding="92"
+    data-lgH="470"
+    data-edgeValue="655"
+    data-dest_id={destId}
+    data-tid={tid}
+    data-amount="6"
+    data-prod={prod}><a href="//www.klook.com/">Klook.com</a></ins
+  >
+</div>
+
+<style is:global>
+  .klook-widget {
+    margin-bottom: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+</style>

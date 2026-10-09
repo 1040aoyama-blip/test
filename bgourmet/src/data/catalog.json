@@ -1,0 +1,4509 @@
+{
+  "hokkaido": [
+    {
+      "ja": "豚丼",
+      "en": "Butadon (Grilled Pork Rice Bowl)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "札幌味噌ラーメン",
+      "en": "Sapporo Miso Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "旭川醤油ラーメン",
+      "en": "Asahikawa Soy Sauce Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "函館塩ラーメン",
+      "en": "Hakodate Salt Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "スープカレー",
+      "en": "Soup Curry",
+      "types": [
+        "meat",
+        "vegetable",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ザンギ",
+      "en": "Zangi (Hokkaido Fried Chicken)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "ジンギスカン",
+      "en": "Jingisukan (Grilled Lamb)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "石狩鍋",
+      "en": "Ishikari Nabe (Salmon Miso Hot Pot)",
+      "types": [
+        "seafood",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "鮭のチャンチャン焼き",
+      "en": "Chan-chan Yaki (Salmon and Vegetables Grilled with Miso)",
+      "types": [
+        "seafood",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "いかめし",
+      "en": "Ikameshi (Rice-Stuffed Squid)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "松前漬",
+      "en": "Matsumae-zuke (Squid and Kelp Pickle)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "いくら丼",
+      "en": "Ikura Don (Salmon Roe Rice Bowl)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "うに丼",
+      "en": "Uni Don (Sea Urchin Rice Bowl)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "白い恋人",
+      "en": "Shiroi Koibito (White Chocolate Langue de Chat)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "バターサンド",
+      "en": "Butter Sandwich Cookies",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "三方六",
+      "en": "Sanporoku (Birch-Log Baumkuchen)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "aomori": [
+    {
+      "ja": "十和田バラ焼き",
+      "en": "Towada Barayaki (Grilled Beef and Onions)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "黒石つゆやきそば",
+      "en": "Kuroishi Tsuyu Yakisoba (Yakisoba in Broth)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "青森味噌カレー牛乳ラーメン",
+      "en": "Aomori Miso Curry Milk Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "津軽煮干しラーメン",
+      "en": "Tsugaru Niboshi Ramen (Dried Sardine Broth)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "のっけ丼",
+      "en": "Nokke Don (Build-Your-Own Seafood Bowl)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "せんべい汁",
+      "en": "Senbei-jiru (Cracker Hot Pot)",
+      "types": [
+        "meat",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "いちご煮",
+      "en": "Ichigo-ni (Sea Urchin and Abalone Soup)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "貝焼き味噌",
+      "en": "Kaiyaki Miso (Scallop Shell Miso and Egg)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "けの汁",
+      "en": "Ke-no-shiru (Finely Diced Vegetable Soup)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "鱈のじゃっぱ汁",
+      "en": "Tara Jappa-jiru (Cod Soup)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "大間まぐろ丼",
+      "en": "Oma Tuna Rice Bowl",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "弘前アップルパイ",
+      "en": "Hirosaki Apple Pie",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "南部せんべい",
+      "en": "Nanbu Senbei (Wheat Crackers)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "気になるリンゴ",
+      "en": "Kininaru Ringo (Whole Apple Pie)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "iwate": [
+    {
+      "ja": "盛岡冷麺",
+      "en": "Morioka Reimen (Cold Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "盛岡じゃじゃ麺",
+      "en": "Morioka Jajamen (Udon with Meat Miso)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "福田パン",
+      "en": "Fukuda Pan (Filled Bread Rolls)"
+    },
+    {
+      "ja": "わんこそば",
+      "en": "Wanko Soba (All-You-Can-Eat Bite-Size Soba)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "ひっつみ",
+      "en": "Hittsumi (Torn Dumpling Soup)",
+      "types": [
+        "meat",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "まめぶ汁",
+      "en": "Mamebu-jiru (Walnut Dumpling Soup)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "前沢牛ステーキ",
+      "en": "Maezawa Beef Steak",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "遠野ジンギスカン",
+      "en": "Tono Jingisukan (Grilled Lamb)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "かもめの玉子",
+      "en": "Kamome no Tamago (Egg-Shaped Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "南部せんべい",
+      "en": "Nanbu Senbei (Wheat Crackers)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "miyagi": [
+    {
+      "ja": "牛タン焼き",
+      "en": "Gyutan (Grilled Beef Tongue)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "油麩丼",
+      "en": "Abura-fu Don (Fried Gluten Rice Bowl)",
+      "types": [
+        "vegetable",
+        "rice"
+      ]
+    },
+    {
+      "ja": "気仙沼ホルモン",
+      "en": "Kesennuma Horumon (Grilled Pork Offal)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "はらこ飯",
+      "en": "Harako Meshi (Salmon and Roe Rice)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "笹かまぼこ",
+      "en": "Sasa Kamaboko (Bamboo-Leaf Fish Cake)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "白石温麺",
+      "en": "Shiroishi Umen (Short Wheat Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "ホヤの酢の物",
+      "en": "Hoya Sunomono (Sea Pineapple in Vinegar)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "ほっきめし",
+      "en": "Hokki Meshi (Surf Clam Rice)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ずんだ餅",
+      "en": "Zunda Mochi (Rice Cake with Edamame Paste)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "萩の月",
+      "en": "Hagi no Tsuki (Custard Sponge Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "喜久福",
+      "en": "Kikufuku (Cream Daifuku)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ずんだシェイク",
+      "en": "Zunda Shake (Edamame Milkshake)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "akita": [
+    {
+      "ja": "横手やきそば",
+      "en": "Yokote Yakisoba (with Fried Egg)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "比内地鶏親子丼",
+      "en": "Hinai Jidori Oyakodon (Chicken and Egg Rice Bowl)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "きりたんぽ鍋",
+      "en": "Kiritanpo Nabe (Grilled Rice Stick Hot Pot)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "しょっつる鍋",
+      "en": "Shottsuru Nabe (Fish Sauce Hot Pot)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "稲庭うどん",
+      "en": "Inaniwa Udon",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "いぶりがっこ",
+      "en": "Iburigakko (Smoked Pickled Daikon)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "だまこ鍋",
+      "en": "Damako Nabe (Rice Ball Hot Pot)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ハタハタ寿し",
+      "en": "Hatahata-zushi (Fermented Sandfish Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ババヘラアイス",
+      "en": "Babahera Ice (Rose-Shaped Ice Cream)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "金萬",
+      "en": "Kinman (Custard Bean Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "北秋田バター餅",
+      "en": "Kita-Akita Butter Mochi",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "yamagata": [
+    {
+      "ja": "冷やしラーメン",
+      "en": "Hiyashi Ramen (Chilled Ramen)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "米沢ラーメン",
+      "en": "Yonezawa Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "赤湯からみそラーメン",
+      "en": "Akayu Spicy Miso Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "鳥中華",
+      "en": "Tori Chuka (Chicken Soba-Broth Ramen)",
+      "types": [
+        "meat",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "どんどん焼き",
+      "en": "Dondon-yaki (Rolled Savory Pancake on a Stick)"
+    },
+    {
+      "ja": "芋煮",
+      "en": "Imoni (Taro and Beef Stew)",
+      "types": [
+        "meat",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "だし",
+      "en": "Dashi (Chopped Summer Vegetable Relish)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "玉こんにゃく",
+      "en": "Tama Konnyaku (Simmered Konjac Balls)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "冷たい肉そば",
+      "en": "Tsumetai Niku Soba (Cold Chicken Soba)",
+      "types": [
+        "meat",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "山形板そば",
+      "en": "Yamagata Ita Soba (Soba on a Wooden Tray)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "米沢牛すき焼き",
+      "en": "Yonezawa Beef Sukiyaki",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "だだちゃ豆",
+      "en": "Dadacha Mame (Premium Edamame)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "のし梅",
+      "en": "Noshi Ume (Plum Jelly Sheets)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "くじら餅",
+      "en": "Kujira Mochi (Sweet Rice Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "富貴豆",
+      "en": "Fuki Mame (Sweet Simmered Green Peas)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "fukushima": [
+    {
+      "ja": "喜多方ラーメン",
+      "en": "Kitakata Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "白河ラーメン",
+      "en": "Shirakawa Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "会津ソースカツ丼",
+      "en": "Aizu Sauce Katsudon",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "浪江焼そば",
+      "en": "Namie Yakisoba (Thick Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "円盤餃子",
+      "en": "Enban Gyoza (Disc-Shaped Gyoza)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "こづゆ",
+      "en": "Kozuyu (Scallop Broth Vegetable Soup)",
+      "types": [
+        "seafood",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "いかにんじん",
+      "en": "Ika Ninjin (Squid and Carrot Pickle)",
+      "types": [
+        "seafood",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "にしんの山椒漬け",
+      "en": "Nishin no Sansho-zuke (Herring Pickled with Sansho)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "ねぎそば",
+      "en": "Negi Soba (Soba Eaten with a Leek)",
+      "types": [
+        "vegetable",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "クリームボックス",
+      "en": "Cream Box (Milk Cream Bread)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "薄皮饅頭",
+      "en": "Usukawa Manju (Thin-Skin Bean Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ままどおる",
+      "en": "Mamadoru (Milk Bean Pastry)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "あわまんじゅう",
+      "en": "Awa Manju (Millet Bean Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "あんぽ柿",
+      "en": "Anpo Gaki (Semi-Dried Persimmon)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "ibaraki": [
+    {
+      "ja": "スタミナラーメン",
+      "en": "Stamina Ramen (Sweet-Spicy Thickened Ramen)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "龍ケ崎コロッケ",
+      "en": "Ryugasaki Croquette",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "あんこう鍋",
+      "en": "Anko Nabe (Monkfish Hot Pot)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "どぶ汁",
+      "en": "Dobu-jiru (Monkfish Liver Hot Pot)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "常陸秋そば",
+      "en": "Hitachi Aki Soba",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "水戸納豆",
+      "en": "Mito Natto (Fermented Soybeans)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "そぼろ納豆",
+      "en": "Soboro Natto (Natto with Dried Radish)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "常陸牛ステーキ",
+      "en": "Hitachi Beef Steak",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "笠間いなり寿司",
+      "en": "Kasama Inari Sushi",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "干しいも",
+      "en": "Hoshi-imo (Dried Sweet Potato)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "吉原殿中",
+      "en": "Yoshiwara Denchu (Puffed Rice Soybean Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "水戸の梅",
+      "en": "Mito no Ume (Plum Bean Paste Sweet)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "tochigi": [
+    {
+      "ja": "宇都宮餃子",
+      "en": "Utsunomiya Gyoza",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "佐野ラーメン",
+      "en": "Sano Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "いもフライ",
+      "en": "Imo Fry (Fried Potato Skewers)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "那須塩原スープ入り焼きそば",
+      "en": "Nasushiobara Soup Yakisoba",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "しもつかれ",
+      "en": "Shimotsukare (Salmon Head and Vegetable Stew)",
+      "types": [
+        "seafood",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "耳うどん",
+      "en": "Mimi Udon (Ear-Shaped Udon)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "揚げまき湯波の煮物",
+      "en": "Simmered Fried Yuba Rolls",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "日光湯波そば",
+      "en": "Nikko Yuba Soba",
+      "types": [
+        "vegetable",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "レモン牛乳",
+      "en": "Lemon Milk",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "とちおとめジェラート",
+      "en": "Tochiotome Strawberry Gelato",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "御用邸チーズケーキ",
+      "en": "Goyotei Cheesecake",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "日光羊羹",
+      "en": "Nikko Yokan (Sweet Bean Jelly)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "gunma": [
+    {
+      "ja": "高崎パスタ",
+      "en": "Takasaki Pasta",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "太田焼きそば",
+      "en": "Ota Yakisoba",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "ソースカツ丼",
+      "en": "Sauce Katsudon",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "峠の釜めし",
+      "en": "Toge no Kamameshi (Pot Rice Bento)",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "登利平の鳥めし",
+      "en": "Torihei Tori Meshi (Chicken Rice Bento)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "おきりこみ",
+      "en": "Okirikomi (Flat Noodle Stew)",
+      "types": [
+        "vegetable",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "水沢うどん",
+      "en": "Mizusawa Udon",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "桐生ひもかわうどん",
+      "en": "Kiryu Himokawa Udon (Extra-Wide Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "こんにゃく味噌おでん",
+      "en": "Konnyaku Miso Oden",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "焼きまんじゅう",
+      "en": "Yaki Manju (Grilled Miso-Glazed Buns)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "湯の花まんじゅう",
+      "en": "Yunohana Manju (Hot Spring Bean Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "旅がらす",
+      "en": "Tabigarasu (Cream Wafer Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ガトーラスク",
+      "en": "Gâteau Rusk",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "saitama": [
+    {
+      "ja": "ゼリーフライ",
+      "en": "Zeri Fry (Okara Potato Patty)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "みそポテト",
+      "en": "Miso Potato",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "東松山やきとり",
+      "en": "Higashimatsuyama Yakitori (Pork with Spicy Miso)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "秩父わらじかつ丼",
+      "en": "Chichibu Waraji Katsudon (Sandal-Size Cutlet Bowl)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "秩父豚みそ丼",
+      "en": "Chichibu Pork Miso Rice Bowl",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "武蔵野うどん",
+      "en": "Musashino Udon (Dipping Udon)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "深谷煮ぼうとう",
+      "en": "Fukaya Nibouto (Wide Noodle Stew)",
+      "types": [
+        "vegetable",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "浦和うなぎの蒲焼き",
+      "en": "Urawa Grilled Eel",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "川幅うどん",
+      "en": "Kawahaba Udon (Ultra-Wide Udon)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "草加せんべい",
+      "en": "Soka Senbei (Rice Crackers)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "十万石まんじゅう",
+      "en": "Jumangoku Manju (Bean Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "五家宝",
+      "en": "Gokabo (Soybean Flour Rice Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "彩果の宝石",
+      "en": "Saika no Hoseki (Fruit Jellies)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "chiba": [
+    {
+      "ja": "勝浦タンタンメン",
+      "en": "Katsuura Tantanmen (Spicy Chili Oil Ramen)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "竹岡式ラーメン",
+      "en": "Takeoka-style Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "アリランラーメン",
+      "en": "Arirang Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "はかりめ丼",
+      "en": "Hakarime Don (Conger Eel Rice Bowl)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ホワイト餃子",
+      "en": "White Gyoza",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "なめろう",
+      "en": "Namero (Minced Horse Mackerel with Miso)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "さんが焼き",
+      "en": "Sanga-yaki (Grilled Namero Patty)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "太巻き祭り寿司",
+      "en": "Futomaki Matsuri Sushi (Decorative Sushi Rolls)",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "ゆで落花生",
+      "en": "Boiled Peanuts",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "成田うなぎの蒲焼き",
+      "en": "Narita Grilled Eel",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "銚子ぬれ煎餅",
+      "en": "Choshi Nure Senbei (Soft Soy Rice Crackers)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ぴーなっつ最中",
+      "en": "Peanut Monaka",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "びわゼリー",
+      "en": "Loquat Jelly",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "tokyo": [
+    {
+      "ja": "月島もんじゃ",
+      "en": "Tsukishima Monja (Runny Savory Pancake)"
+    },
+    {
+      "ja": "八王子ラーメン",
+      "en": "Hachioji Ramen (with Chopped Onion)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "油そば",
+      "en": "Abura Soba (Soupless Ramen)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "江戸前天丼",
+      "en": "Edomae Tendon (Tempura Rice Bowl)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "江戸前寿司",
+      "en": "Edomae Sushi",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "深川めし",
+      "en": "Fukagawa Meshi (Clam Rice)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "柳川鍋",
+      "en": "Yanagawa Nabe (Loach and Burdock with Egg)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "ちゃんこ鍋",
+      "en": "Chanko Nabe (Sumo Wrestlers' Hot Pot)",
+      "types": [
+        "meat",
+        "seafood"
+      ]
+    },
+    {
+      "ja": "てんぷら",
+      "en": "Tempura",
+      "types": [
+        "seafood",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "人形焼",
+      "en": "Ningyo-yaki (Shaped Sponge Cakes)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "雷おこし",
+      "en": "Kaminari Okoshi (Puffed Rice Crackers)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "東京ばな奈",
+      "en": "Tokyo Banana",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "いもようかん",
+      "en": "Imo Yokan (Sweet Potato Jelly)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "あんみつ",
+      "en": "Anmitsu (Agar Jelly Dessert)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "どら焼き",
+      "en": "Dorayaki (Red Bean Pancake)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "kanagawa": [
+    {
+      "ja": "生しらす丼",
+      "en": "Nama Shirasu Don (Raw Whitebait Rice Bowl)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "よこすか海軍カレー",
+      "en": "Yokosuka Navy Curry",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "横浜家系ラーメン",
+      "en": "Yokohama Iekei Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "サンマーメン",
+      "en": "Sanmamen (Ramen with Thick Vegetable Sauce)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "厚木シロコロ・ホルモン",
+      "en": "Atsugi Shirokoro Horumon (Grilled Pork Intestine)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "三崎まぐろ丼",
+      "en": "Misaki Tuna Rice Bowl",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "崎陽軒シウマイ弁当",
+      "en": "Kiyoken Shumai Bento",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "横浜中華街の肉まん",
+      "en": "Yokohama Chinatown Pork Buns",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "小田原かまぼこ",
+      "en": "Odawara Kamaboko (Fish Cake)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "牛鍋",
+      "en": "Gyunabe (Yokohama Beef Hot Pot)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "大山の豆腐料理",
+      "en": "Oyama Tofu Cuisine",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "鳩サブレー",
+      "en": "Hato Sable (Dove-Shaped Butter Cookies)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "クルミッ子",
+      "en": "Kurumikko (Walnut Caramel Bars)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "横浜ハーバー",
+      "en": "Yokohama Harbour (Chestnut Cake)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "niigata": [
+    {
+      "ja": "栃尾の油揚げ",
+      "en": "Tochio Aburaage (Giant Fried Tofu)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "タレかつ丼",
+      "en": "Tare Katsudon (Soy-Glazed Cutlet Bowl)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "新潟イタリアン",
+      "en": "Niigata Italian (Yakisoba with Tomato Sauce)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "燕背脂ラーメン",
+      "en": "Tsubame Seabura Ramen (Pork Back Fat)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "長岡生姜醤油ラーメン",
+      "en": "Nagaoka Ginger Soy Sauce Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "三条カレーラーメン",
+      "en": "Sanjo Curry Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "万代バスセンターのカレー",
+      "en": "Bandai Bus Center Curry",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "へぎそば",
+      "en": "Hegi Soba (Seaweed-Bound Soba)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "のっぺ",
+      "en": "Noppe (Simmered Root Vegetables)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "笹団子",
+      "en": "Sasa Dango (Bamboo-Leaf Rice Dumplings)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "柿の種",
+      "en": "Kaki no Tane (Rice Cracker Snack)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ぽっぽ焼き",
+      "en": "Poppo-yaki (Brown Sugar Steamed Cake)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "toyama": [
+    {
+      "ja": "富山ブラックラーメン",
+      "en": "Toyama Black Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "白えび天丼",
+      "en": "Shiro Ebi Tendon (White Shrimp Tempura Bowl)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "高岡コロッケ",
+      "en": "Takaoka Croquette",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "ます寿司",
+      "en": "Masu-zushi (Pressed Trout Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ぶりしゃぶ",
+      "en": "Buri Shabu (Yellowtail Shabu-Shabu)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "ほたるいかの酢味噌和え",
+      "en": "Firefly Squid with Vinegar Miso",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "白えびの刺身",
+      "en": "White Shrimp Sashimi",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "昆布〆",
+      "en": "Kobujime (Kelp-Cured Fish)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "氷見うどん",
+      "en": "Himi Udon",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "氷見寒ぶりの刺身",
+      "en": "Himi Winter Yellowtail Sashimi",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "月世界",
+      "en": "Gessekai (Egg White Sugar Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "甘金丹",
+      "en": "Kankintan (Traditional Toyama Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "薄氷",
+      "en": "Usugori (Thin Ice Sugar Wafers)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "ishikawa": [
+    {
+      "ja": "金沢カレー",
+      "en": "Kanazawa Curry",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "ハントンライス",
+      "en": "Hanton Rice (Omelette Rice with Fried Fish)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "能登丼",
+      "en": "Noto Don (Noto Seafood Rice Bowl)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "じぶ煮",
+      "en": "Jibu-ni (Thickened Duck Stew)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "かぶらずし",
+      "en": "Kabura-zushi (Yellowtail and Turnip Pickle)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "金沢おでん",
+      "en": "Kanazawa Oden",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "のどぐろの塩焼き",
+      "en": "Nodoguro Shioyaki (Salt-Grilled Blackthroat Seaperch)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "香箱ガニの甲羅盛り",
+      "en": "Kobako Crab in the Shell",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "能登牛ステーキ",
+      "en": "Noto Beef Steak",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "きんつば",
+      "en": "Kintsuba (Square Bean Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "あんころ餅",
+      "en": "Ankoro Mochi (Rice Cake in Bean Paste)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "金箔ソフトクリーム",
+      "en": "Gold Leaf Soft Serve",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "五色生菓子",
+      "en": "Goshiki Namagashi (Five-Color Sweets)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "fukui": [
+    {
+      "ja": "ソースカツ丼",
+      "en": "Sauce Katsudon",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ボルガライス",
+      "en": "Volga Rice (Omelette Rice with Pork Cutlet)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "油揚げステーキ",
+      "en": "Aburaage Steak (Thick Fried Tofu)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "おろしそば",
+      "en": "Oroshi Soba (Soba with Grated Daikon)",
+      "types": [
+        "vegetable",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "へしこ",
+      "en": "Heshiko (Rice Bran–Cured Mackerel)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "越前ガニ",
+      "en": "Echizen Crab",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "焼き鯖寿司",
+      "en": "Yaki Saba-zushi (Grilled Mackerel Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "丸焼き鯖",
+      "en": "Maruyaki Saba (Whole Grilled Mackerel)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "羽二重餅",
+      "en": "Habutae Mochi (Silky Rice Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "水ようかん",
+      "en": "Mizu Yokan (Winter Bean Jelly)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "五月ヶ瀬",
+      "en": "Satsukigase (Peanut Crackers)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "yamanashi": [
+    {
+      "ja": "甲府鳥もつ煮",
+      "en": "Kofu Tori Motsu-ni (Glazed Chicken Giblets)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "甲州かつ丼",
+      "en": "Koshu Katsudon (Cutlet on Rice with Sauce)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ほうとう",
+      "en": "Hoto (Flat Noodle Miso Stew)",
+      "types": [
+        "vegetable",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "吉田のうどん",
+      "en": "Yoshida Udon (Extra-Firm Udon)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "あわびの煮貝",
+      "en": "Awabi no Nigai (Simmered Abalone)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "おざら",
+      "en": "Ozara (Cold Hoto Noodles with Dipping Sauce)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "馬刺し",
+      "en": "Basashi (Horse Meat Sashimi)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "信玄餅",
+      "en": "Shingen Mochi (Rice Cake with Kinako and Syrup)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "水信玄餅",
+      "en": "Mizu Shingen Mochi (Raindrop Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "くろ玉",
+      "en": "Kurodama (Green Pea Paste Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "信玄桃",
+      "en": "Shingen Momo (Peach-Shaped Bean Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "月の雫",
+      "en": "Tsuki no Shizuku (Sugar-Coated Grapes)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "nagano": [
+    {
+      "ja": "山賊焼き",
+      "en": "Sanzoku-yaki (Garlic Fried Chicken)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "駒ヶ根ソースかつ丼",
+      "en": "Komagane Sauce Katsudon",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "伊那ローメン",
+      "en": "Ina Romen (Steamed Mutton Noodles)",
+      "types": [
+        "meat",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "信州そば",
+      "en": "Shinshu Soba",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "戸隠そば",
+      "en": "Togakushi Soba",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "おやき",
+      "en": "Oyaki (Stuffed Dumplings)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "野沢菜漬",
+      "en": "Nozawana-zuke (Pickled Turnip Greens)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "馬刺し",
+      "en": "Basashi (Horse Meat Sashimi)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "とうじそば",
+      "en": "Toji Soba (Soba Dipped in Hot Pot)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "五平餅",
+      "en": "Gohei Mochi (Grilled Rice Skewer with Sweet Miso)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "栗かの子",
+      "en": "Kuri Kanoko (Chestnut Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "牛乳パン",
+      "en": "Gyunyu Pan (Milk Cream Bread)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "雷鳥の里",
+      "en": "Raicho no Sato (Wafer Cookies)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "みすゞ飴",
+      "en": "Misuzu Ame (Fruit Jelly Candy)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "gifu": [
+    {
+      "ja": "高山ラーメン",
+      "en": "Takayama Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "鶏ちゃん",
+      "en": "Keichan (Miso-Grilled Chicken and Cabbage)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "漬物ステーキ",
+      "en": "Tsukemono Steak (Pan-Fried Pickles with Egg)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "朴葉味噌",
+      "en": "Hoba Miso (Miso Grilled on a Magnolia Leaf)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "朴葉ずし",
+      "en": "Hoba-zushi (Sushi Wrapped in Magnolia Leaves)",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "飛騨牛ステーキ",
+      "en": "Hida Beef Steak",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "飛騨牛にぎり",
+      "en": "Hida Beef Nigiri",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "鮎の塩焼",
+      "en": "Ayu Shioyaki (Salt-Grilled Sweetfish)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "五平餅",
+      "en": "Gohei Mochi (Grilled Rice Skewer with Sweet Miso)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "栗きんとん",
+      "en": "Kuri Kinton (Chestnut Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "水まんじゅう",
+      "en": "Mizu Manju (Clear Kudzu Bean Dumplings)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "高山みだらしだんご",
+      "en": "Takayama Midarashi Dango (Soy-Glazed Dumplings)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "shizuoka": [
+    {
+      "ja": "浜松餃子",
+      "en": "Hamamatsu Gyoza (with Bean Sprouts)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "富士宮やきそば",
+      "en": "Fujinomiya Yakisoba",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "静岡おでん",
+      "en": "Shizuoka Oden",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "生しらす丼",
+      "en": "Nama Shirasu Don (Raw Whitebait Rice Bowl)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "三島コロッケ",
+      "en": "Mishima Croquette",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "浜名湖うな重",
+      "en": "Lake Hamana Unaju (Eel over Rice)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "サクラエビのかき揚げ",
+      "en": "Sakura Shrimp Kakiage (Tempura Fritter)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "金目の煮付け",
+      "en": "Simmered Splendid Alfonsino",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "とろろ汁",
+      "en": "Tororo-jiru (Grated Yam Soup)",
+      "types": [
+        "vegetable",
+        "rice"
+      ]
+    },
+    {
+      "ja": "山葵漬け",
+      "en": "Wasabi-zuke (Wasabi Pickled in Sake Lees)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "うなぎパイ",
+      "en": "Unagi Pie (Eel Pie Cookies)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "安倍川もち",
+      "en": "Abekawa Mochi (Rice Cake with Kinako)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "こっこ",
+      "en": "Kokko (Milk Cream Sponge Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "治一郎のバウムクーヘン",
+      "en": "Jiichiro Baumkuchen",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "aichi": [
+    {
+      "ja": "味噌カツ",
+      "en": "Miso Katsu (Cutlet with Red Miso Sauce)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "手羽先唐揚げ",
+      "en": "Tebasaki (Fried Chicken Wings)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "台湾ラーメン",
+      "en": "Taiwan Ramen (Spicy Minced Meat Ramen)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "台湾まぜそば",
+      "en": "Taiwan Mazesoba (Spicy Soupless Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "あんかけスパゲッティ",
+      "en": "Ankake Spaghetti (with Thick Peppery Sauce)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "鉄板ナポリタン",
+      "en": "Teppan Napolitan (Spaghetti on a Hot Plate with Egg)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "天むす",
+      "en": "Tenmusu (Shrimp Tempura Rice Ball)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "小倉トースト",
+      "en": "Ogura Toast (Toast with Red Bean Paste)"
+    },
+    {
+      "ja": "豊橋カレーうどん",
+      "en": "Toyohashi Curry Udon",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "ひつまぶし",
+      "en": "Hitsumabushi (Grilled Eel Rice Three Ways)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "きしめん",
+      "en": "Kishimen (Flat Udon)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "味噌煮込みうどん",
+      "en": "Miso Nikomi Udon (Udon in Red Miso Broth)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "ういろう",
+      "en": "Uiro (Steamed Rice Flour Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "鬼まんじゅう",
+      "en": "Oni Manju (Sweet Potato Steamed Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ぴよりん",
+      "en": "Piyorin (Chick-Shaped Pudding)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ゆかり",
+      "en": "Yukari (Shrimp Crackers)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "mie": [
+    {
+      "ja": "松阪鶏焼き肉",
+      "en": "Matsusaka Chicken Yakiniku",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "四日市とんてき",
+      "en": "Yokkaichi Tonteki (Thick Pork Steak)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "津ぎょうざ",
+      "en": "Tsu Gyoza (Giant Fried Dumplings)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "亀山みそ焼きうどん",
+      "en": "Kameyama Miso Yaki Udon",
+      "types": [
+        "meat",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "伊勢うどん",
+      "en": "Ise Udon (Soft Udon with Thick Soy Sauce)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "てこねずし",
+      "en": "Tekone-zushi (Marinated Bonito Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "松阪牛すき焼き",
+      "en": "Matsusaka Beef Sukiyaki",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "伊勢海老の刺身",
+      "en": "Ise Lobster Sashimi",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "桑名焼きはまぐり",
+      "en": "Kuwana Grilled Clams",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "赤福餅",
+      "en": "Akafuku Mochi (Rice Cake with Bean Paste)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "へんば餅",
+      "en": "Henba Mochi (Grilled Bean Rice Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "なが餅",
+      "en": "Naga Mochi (Long Flat Rice Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "伊勢ういろ",
+      "en": "Ise Uiro (Steamed Rice Flour Cake)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "shiga": [
+    {
+      "ja": "近江ちゃんぽん",
+      "en": "Omi Champon (Dashi-Broth Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "サラダパン",
+      "en": "Salad Pan (Pickled Daikon Mayo Bread)"
+    },
+    {
+      "ja": "ふなずし",
+      "en": "Funa-zushi (Fermented Crucian Carp Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "近江牛すき焼き",
+      "en": "Omi Beef Sukiyaki",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "鯖そうめん",
+      "en": "Saba Somen (Somen Simmered with Mackerel)",
+      "types": [
+        "seafood",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "赤こんにゃく煮",
+      "en": "Simmered Red Konjac",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "えび豆",
+      "en": "Ebi Mame (Shrimp and Soybeans)",
+      "types": [
+        "seafood",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "でっち羊羹",
+      "en": "Decchi Yokan (Steamed Bean Jelly)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "糸切餅",
+      "en": "Itokiri Mochi (String-Cut Rice Cakes)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "クラブハリエのバームクーヘン",
+      "en": "Club Harie Baumkuchen",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "kyoto": [
+    {
+      "ja": "京都ラーメン",
+      "en": "Kyoto Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "衣笠丼",
+      "en": "Kinugasa Don (Fried Tofu and Egg Rice Bowl)",
+      "types": [
+        "vegetable",
+        "rice"
+      ]
+    },
+    {
+      "ja": "湯豆腐",
+      "en": "Yudofu (Simmered Tofu)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "湯葉料理",
+      "en": "Yuba Cuisine (Tofu Skin)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "にしんそば",
+      "en": "Nishin Soba (Soba with Simmered Herring)",
+      "types": [
+        "seafood",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "さばずし",
+      "en": "Saba-zushi (Mackerel Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "賀茂なすの田楽",
+      "en": "Kamo Eggplant Dengaku (with Sweet Miso)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "千枚漬け",
+      "en": "Senmai-zuke (Thinly Sliced Turnip Pickle)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "しば漬け",
+      "en": "Shiba-zuke (Purple Eggplant Pickle)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "鱧落とし",
+      "en": "Hamo Otoshi (Blanched Pike Conger)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "生八ッ橋",
+      "en": "Nama Yatsuhashi (Soft Cinnamon Rice Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "八ッ橋",
+      "en": "Yatsuhashi (Cinnamon Rice Crackers)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "阿闍梨餅",
+      "en": "Ajari Mochi (Bean-Filled Mochi Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "宇治抹茶パフェ",
+      "en": "Uji Matcha Parfait",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "水無月",
+      "en": "Minazuki (Triangular Jelly with Red Beans)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "豆餅",
+      "en": "Mame Mochi (Bean Rice Cake)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "osaka": [
+    {
+      "ja": "たこ焼き",
+      "en": "Takoyaki",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "お好み焼き",
+      "en": "Okonomiyaki (Osaka-style)"
+    },
+    {
+      "ja": "串カツ",
+      "en": "Kushikatsu",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "ねぎ焼き",
+      "en": "Negi-yaki (Green Onion Pancake)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "いか焼き",
+      "en": "Ika-yaki (Pressed Squid Pancake)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "きつねうどん",
+      "en": "Kitsune Udon (Udon with Sweet Fried Tofu)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "どて焼き",
+      "en": "Dote-yaki (Beef Tendon Stewed in Miso)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "肉吸い",
+      "en": "Nikusui (Beef Broth without Noodles)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "豚まん",
+      "en": "Butaman (Pork Buns)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "バッテラ",
+      "en": "Battera (Pressed Mackerel Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "鯨のハリハリ鍋",
+      "en": "Harihari Nabe (Whale and Mizuna Hot Pot)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "てっちり",
+      "en": "Tecchiri (Pufferfish Hot Pot)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "うどんすき",
+      "en": "Udon-suki (Udon Hot Pot)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "りくろーおじさんのチーズケーキ",
+      "en": "Rikuro Ojisan's Cheesecake",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ミックスジュース",
+      "en": "Mix Juice (Fruit Smoothie)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "みたらし小餅",
+      "en": "Mitarashi Komochi (Soy-Glazed Rice Cakes)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "岩おこし",
+      "en": "Iwa Okoshi (Rock-Hard Puffed Rice Sweet)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "hyogo": [
+    {
+      "ja": "明石焼",
+      "en": "Akashi-yaki (Egg-Rich Takoyaki in Dashi)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "そばめし",
+      "en": "Sobameshi (Fried Noodles and Rice)",
+      "types": [
+        "noodles",
+        "rice"
+      ]
+    },
+    {
+      "ja": "かつめし",
+      "en": "Katsumeshi (Cutlet on Rice with Demi-Glace)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "姫路おでん",
+      "en": "Himeji Oden (with Ginger Soy Sauce)"
+    },
+    {
+      "ja": "ぼっかけ",
+      "en": "Bokkake (Beef Tendon and Konjac Stew)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "淡路島バーガー",
+      "en": "Awaji Island Burger",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "神戸ビーフステーキ",
+      "en": "Kobe Beef Steak",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "ぼたん鍋",
+      "en": "Botan Nabe (Wild Boar Hot Pot)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "イカナゴのくぎ煮",
+      "en": "Ikanago Kugi-ni (Simmered Sand Lance)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "出石皿そば",
+      "en": "Izushi Sara Soba (Soba on Small Plates)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "炭酸せんべい",
+      "en": "Tansan Senbei (Soda Water Wafers)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "神戸プリン",
+      "en": "Kobe Pudding",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ゴーフル",
+      "en": "Gaufres (Thin Cream Wafers)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "御座候",
+      "en": "Gozasoro (Red Bean Wheel Cake)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "nara": [
+    {
+      "ja": "天理ラーメン",
+      "en": "Tenri Ramen (Spicy Cabbage Ramen)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "柿の葉寿司",
+      "en": "Kakinoha-zushi (Persimmon Leaf Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "三輪そうめん",
+      "en": "Miwa Somen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "奈良漬け",
+      "en": "Narazuke (Sake Lees Pickles)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "茶粥",
+      "en": "Chagayu (Tea Rice Porridge)",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "飛鳥鍋",
+      "en": "Asuka Nabe (Chicken Milk Hot Pot)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "葛餅",
+      "en": "Kuzu Mochi (Kudzu Starch Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "吉野葛の葛きり",
+      "en": "Yoshino Kuzukiri (Kudzu Noodles with Syrup)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "かき氷",
+      "en": "Kakigori (Shaved Ice)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "だんご庄のだんご",
+      "en": "Dangosho Dango (Soybean Flour Dumplings)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "wakayama": [
+    {
+      "ja": "和歌山ラーメン",
+      "en": "Wakayama Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "めはりずし",
+      "en": "Mehari-zushi (Pickled Mustard Leaf Rice Ball)",
+      "types": [
+        "vegetable",
+        "rice"
+      ]
+    },
+    {
+      "ja": "柿の葉寿司",
+      "en": "Kakinoha-zushi (Persimmon Leaf Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "金山寺味噌",
+      "en": "Kinzanji Miso (Chunky Vegetable Miso)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "梅干し",
+      "en": "Umeboshi (Pickled Plums)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "クエ鍋",
+      "en": "Kue Nabe (Longtooth Grouper Hot Pot)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "勝浦まぐろ丼",
+      "en": "Katsuura Tuna Rice Bowl",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ごま豆腐",
+      "en": "Goma Dofu (Sesame Tofu)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "早なれ寿司",
+      "en": "Hayanare-zushi (Quick-Fermented Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "かげろう",
+      "en": "Kagero (Light Cream Biscuit)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "鈴焼",
+      "en": "Suzuyaki (Bell-Shaped Sponge Cakes)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "那智黒",
+      "en": "Nachiguro (Brown Sugar Candy)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "tottori": [
+    {
+      "ja": "鳥取牛骨ラーメン",
+      "en": "Tottori Beef Bone Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "鳥取カレー",
+      "en": "Tottori Curry",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "ホルモンそば",
+      "en": "Horumon Soba (Stir-Fried Noodles with Offal)",
+      "types": [
+        "meat",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "松葉ガニの塩ゆで",
+      "en": "Boiled Matsuba Snow Crab",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "とうふちくわ",
+      "en": "Tofu Chikuwa (Tofu Fish Cake Tube)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "大山おこわ",
+      "en": "Daisen Okowa (Seasoned Sticky Rice)",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "らっきょう漬け",
+      "en": "Rakkyo-zuke (Pickled Shallots)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "もさえびの刺身",
+      "en": "Mosa Shrimp Sashimi",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "打吹公園だんご",
+      "en": "Utsubuki Koen Dango (Three-Color Dumplings)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "因幡の白うさぎ",
+      "en": "Inaba no Shirousagi (Rabbit-Shaped Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ふろしきまんじゅう",
+      "en": "Furoshiki Manju (Brown Sugar Bun)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "shimane": [
+    {
+      "ja": "宍道湖しじみラーメン",
+      "en": "Lake Shinji Clam Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "出雲そば",
+      "en": "Izumo Soba",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "割子そば",
+      "en": "Warigo Soba (Soba in Stacked Bowls)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "しじみ汁",
+      "en": "Shijimi-jiru (Freshwater Clam Miso Soup)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "スズキの奉書焼き",
+      "en": "Suzuki Hosho-yaki (Sea Bass Baked in Paper)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "あご野焼き",
+      "en": "Ago Noyaki (Flying Fish Cake)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "赤天",
+      "en": "Akaten (Spicy Red Fish Cake)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "のどぐろの塩焼き",
+      "en": "Nodoguro Shioyaki (Salt-Grilled Blackthroat Seaperch)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "出雲ぜんざい",
+      "en": "Izumo Zenzai (Sweet Red Bean Soup)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "源氏巻",
+      "en": "Genjimaki (Bean-Filled Sponge Roll)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "若草",
+      "en": "Wakakusa (Green Rice Cake Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "どじょう掬いまんじゅう",
+      "en": "Dojo Sukui Manju (Bean Bun)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "okayama": [
+    {
+      "ja": "えびめし",
+      "en": "Ebi Meshi (Dark Shrimp Fried Rice)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "デミかつ丼",
+      "en": "Demi Katsudon (Cutlet Bowl with Demi-Glace)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "津山ホルモンうどん",
+      "en": "Tsuyama Horumon Udon (Stir-Fried Udon with Offal)",
+      "types": [
+        "meat",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "ひるぜん焼そば",
+      "en": "Hiruzen Yakisoba (Chicken and Cabbage)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "日生カキオコ",
+      "en": "Hinase Kakioko (Oyster Okonomiyaki)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "笠岡ラーメン",
+      "en": "Kasaoka Ramen (Chicken Ramen)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "まつりずし",
+      "en": "Matsuri-zushi (Festive Scattered Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ままかりずし",
+      "en": "Mamakari-zushi (Pickled Sardinella Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "蒜山おこわ",
+      "en": "Hiruzen Okowa (Seasoned Sticky Rice)",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "きびだんご",
+      "en": "Kibi Dango (Millet Rice Cakes)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "大手まんぢゅう",
+      "en": "Ote Manju (Sake-Leavened Bean Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "むらすずめ",
+      "en": "Murasuzume (Bean-Filled Crepe)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "白桃パフェ",
+      "en": "White Peach Parfait",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "hiroshima": [
+    {
+      "ja": "お好み焼き",
+      "en": "Okonomiyaki (Hiroshima-style)"
+    },
+    {
+      "ja": "尾道ラーメン",
+      "en": "Onomichi Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "広島つけ麺",
+      "en": "Hiroshima Tsukemen (Spicy Dipping Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "汁なし担担麺",
+      "en": "Shirunashi Tantanmen (Soupless Dandan Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "呉冷麺",
+      "en": "Kure Reimen (Cold Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "府中焼き",
+      "en": "Fuchu-yaki (Okonomiyaki with Minced Pork)"
+    },
+    {
+      "ja": "あなご飯",
+      "en": "Anago Meshi (Conger Eel Rice)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "かきの土手鍋",
+      "en": "Kaki no Dote Nabe (Oyster Miso Hot Pot)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "焼き牡蠣",
+      "en": "Grilled Oysters",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "広島菜漬のおにぎり",
+      "en": "Hiroshimana Pickle Rice Ball",
+      "types": [
+        "vegetable",
+        "rice"
+      ]
+    },
+    {
+      "ja": "もみじ饅頭",
+      "en": "Momiji Manju (Maple Leaf Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "生もみじ",
+      "en": "Nama Momiji (Mochi Maple Leaf Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "はっさく大福",
+      "en": "Hassaku Daifuku (Citrus Mochi)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "くりーむパン",
+      "en": "Cream Pan (Chilled Cream Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "レモンケーキ",
+      "en": "Lemon Cake",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "yamaguchi": [
+    {
+      "ja": "瓦そば",
+      "en": "Kawara Soba (Green Tea Soba on a Hot Roof Tile)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "バリそば",
+      "en": "Bari Soba (Crispy Noodles with Thick Sauce)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "宇部ラーメン",
+      "en": "Ube Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "長門焼き鳥",
+      "en": "Nagato Yakitori",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "ふく刺し",
+      "en": "Fuku Sashi (Pufferfish Sashimi)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "下関ふく鍋",
+      "en": "Shimonoseki Fuku Nabe (Pufferfish Hot Pot)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "岩国寿司",
+      "en": "Iwakuni-zushi (Layered Pressed Sushi)",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "仙崎かまぼこ",
+      "en": "Senzaki Kamaboko (Fish Cake)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "外郎",
+      "en": "Uiro (Bracken Starch Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "月でひろった卵",
+      "en": "Tsuki de Hirotta Tamago (Custard Sponge Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "豆子郎",
+      "en": "Tonoro (Steamed Bean Sweet)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "tokushima": [
+    {
+      "ja": "徳島ラーメン",
+      "en": "Tokushima Ramen (with Raw Egg)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "フィッシュカツ",
+      "en": "Fish Katsu (Curry-Spiced Fish Cutlet)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "そば米雑炊",
+      "en": "Sobagome Zosui (Buckwheat Grain Porridge)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "祖谷そば",
+      "en": "Iya Soba",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "半田そうめん",
+      "en": "Handa Somen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "たらいうどん",
+      "en": "Tarai Udon (Udon in a Wooden Tub)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "ボウゼの姿寿司",
+      "en": "Boze Sugata-zushi (Whole Butterfish Sushi)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "阿波尾鶏の炭火焼き",
+      "en": "Awaodori Chicken Charcoal Grill",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "阿波ういろ",
+      "en": "Awa Uiro (Steamed Rice Flour Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "金長まんじゅう",
+      "en": "Kincho Manju (Chocolate-Coated Bean Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ぶどう饅頭",
+      "en": "Budo Manju (Grape-Shaped Bean Skewer)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "鳴門うず芋",
+      "en": "Naruto Uzu Imo (Candied Sweet Potato)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "kagawa": [
+    {
+      "ja": "釜玉うどん",
+      "en": "Kamatama Udon (Udon with Raw Egg)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "ぶっかけうどん",
+      "en": "Bukkake Udon (Udon with Poured Sauce)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "骨付鳥",
+      "en": "Honetsukidori (Spiced Roast Chicken Leg)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "讃岐うどん",
+      "en": "Sanuki Udon",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "釜揚げうどん",
+      "en": "Kamaage Udon (Udon Straight from the Pot)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "あんもち雑煮",
+      "en": "Anmochi Zoni (Bean-Filled Mochi in White Miso Soup)"
+    },
+    {
+      "ja": "しょうゆ豆",
+      "en": "Shoyu Mame (Soy-Marinated Broad Beans)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "小豆島そうめん",
+      "en": "Shodoshima Somen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "おいり",
+      "en": "Oiri (Colorful Rice Puffs)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "かまど",
+      "en": "Kamado (Oven-Shaped Bean Sweet)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "灸まん",
+      "en": "Kyuman (Moxa-Shaped Bean Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "和三盆干菓子",
+      "en": "Wasanbon Higashi (Fine Sugar Sweets)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "ehime": [
+    {
+      "ja": "今治焼豚玉子飯",
+      "en": "Imabari Yakibuta Tamago Meshi (Roast Pork and Egg Rice)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "今治焼き鳥",
+      "en": "Imabari Yakitori (Iron-Plate Grilled Chicken)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "八幡浜ちゃんぽん",
+      "en": "Yawatahama Champon",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "三津浜焼き",
+      "en": "Mitsuhama-yaki (Folded Okonomiyaki)"
+    },
+    {
+      "ja": "宇和島鯛めし",
+      "en": "Uwajima Taimeshi (Raw Sea Bream on Rice)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "松山鯛めし",
+      "en": "Matsuyama Taimeshi (Sea Bream Cooked with Rice)",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "じゃこ天",
+      "en": "Jakoten (Fried Fish Cake)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "鯛そうめん",
+      "en": "Tai Somen (Sea Bream with Somen)",
+      "types": [
+        "seafood",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "いもたき",
+      "en": "Imotaki (Taro Hot Pot)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "一六タルト",
+      "en": "Ichiroku Tart (Yuzu Bean Paste Roll)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "坊っちゃん団子",
+      "en": "Botchan Dango (Three-Color Dumplings)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "母恵夢",
+      "en": "Poemu (Bean Paste Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "霧の森大福",
+      "en": "Kiri no Mori Daifuku (Matcha Mochi)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "kochi": [
+    {
+      "ja": "須崎鍋焼きラーメン",
+      "en": "Susaki Nabeyaki Ramen (Clay Pot Ramen)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "かつおのたたき",
+      "en": "Katsuo no Tataki (Seared Bonito)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "カツオの塩たたき",
+      "en": "Salt Katsuo no Tataki (Seared Bonito with Salt)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "皿鉢料理",
+      "en": "Sawachi Ryori (Platter Feast)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "清水サバの刺身",
+      "en": "Shimizu Mackerel Sashimi",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "どろめ",
+      "en": "Dorome (Raw Baby Sardines)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "酒盗",
+      "en": "Shuto (Fermented Bonito Innards)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "うつぼのたたき",
+      "en": "Seared Moray Eel",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "芋けんぴ",
+      "en": "Imo Kenpi (Candied Sweet Potato Sticks)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ミレービスケット",
+      "en": "Mire Biscuits",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "アイスクリン",
+      "en": "Ice Kurin (Light Ice Cream)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ぼうしパン",
+      "en": "Boshi Pan (Hat-Shaped Bread)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "fukuoka": [
+    {
+      "ja": "博多ラーメン",
+      "en": "Hakata Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "久留米ラーメン",
+      "en": "Kurume Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "博多もつ鍋",
+      "en": "Hakata Motsunabe (Offal Hot Pot)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "ごぼう天うどん",
+      "en": "Gobo-ten Udon (Udon with Burdock Tempura)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "鉄なべ餃子",
+      "en": "Tetsunabe Gyoza (Iron Pan Gyoza)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "博多とりかわ",
+      "en": "Hakata Torikawa (Grilled Chicken Skin)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "門司港焼きカレー",
+      "en": "Mojiko Yaki Curry (Baked Curry)",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "若鶏の水炊き",
+      "en": "Mizutaki (Chicken Hot Pot)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "がめ煮",
+      "en": "Gameni (Simmered Chicken and Vegetables)",
+      "types": [
+        "meat",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "博多の胡麻鯖",
+      "en": "Hakata Goma Saba (Mackerel with Sesame Sauce)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "辛子明太子",
+      "en": "Karashi Mentaiko (Spicy Cod Roe)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "柳川うなぎのせいろ蒸し",
+      "en": "Yanagawa Steamed Eel Rice",
+      "types": [
+        "seafood",
+        "rice"
+      ]
+    },
+    {
+      "ja": "梅ヶ枝餅",
+      "en": "Umegae Mochi (Grilled Bean Rice Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "博多通りもん",
+      "en": "Hakata Torimon (Milk Bean Paste Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "筑紫もち",
+      "en": "Chikushi Mochi (Rice Cake with Kinako)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "千鳥饅頭",
+      "en": "Chidori Manju (Bean Paste Bun)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "saga": [
+    {
+      "ja": "シシリアンライス",
+      "en": "Sicilian Rice (Meat and Salad on Rice)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "唐津バーガー",
+      "en": "Karatsu Burger",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "イカしゅうまい",
+      "en": "Ika Shumai (Squid Dumplings)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "佐賀ラーメン",
+      "en": "Saga Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "佐賀牛ステーキ",
+      "en": "Saga Beef Steak",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "呼子イカの活き造り",
+      "en": "Yobuko Squid Sashimi (Served Live-Fresh)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "嬉野温泉湯豆腐",
+      "en": "Ureshino Onsen Yudofu (Melting Tofu)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "竹崎カニの塩ゆで",
+      "en": "Boiled Takezaki Crab",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "神埼そうめん",
+      "en": "Kanzaki Somen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "小城羊羹",
+      "en": "Ogi Yokan (Sweet Bean Jelly)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "丸ぼうろ",
+      "en": "Maru Boro (Round Egg Cookies)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "佐賀錦",
+      "en": "Saga Nishiki (Layered Bean Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "松露饅頭",
+      "en": "Shoro Manju (Round Bean Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ブラックモンブラン",
+      "en": "Black Mont Blanc (Chocolate Ice Cream Bar)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "nagasaki": [
+    {
+      "ja": "ちゃんぽん",
+      "en": "Champon (Nagasaki Seafood Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "皿うどん",
+      "en": "Sara Udon (Crispy Noodles with Thick Sauce)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "佐世保バーガー",
+      "en": "Sasebo Burger",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "トルコライス",
+      "en": "Turkish Rice (Pork Cutlet, Pilaf and Spaghetti)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "長崎角煮まんじゅう",
+      "en": "Nagasaki Kakuni Manju (Braised Pork Belly Bun)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "レモンステーキ",
+      "en": "Lemon Steak",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "ハトシ",
+      "en": "Hatoshi (Shrimp Toast)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "卓袱料理",
+      "en": "Shippoku Ryori (Nagasaki Banquet Cuisine)"
+    },
+    {
+      "ja": "具雑煮",
+      "en": "Gu Zoni (Mochi Soup with Many Ingredients)"
+    },
+    {
+      "ja": "五島うどん",
+      "en": "Goto Udon",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "大村寿司",
+      "en": "Omura-zushi (Pressed Sweet Sushi)",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "長崎カステラ",
+      "en": "Nagasaki Castella (Sponge Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "かんころ餅",
+      "en": "Kankoro Mochi (Sweet Potato Rice Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "かんざらし",
+      "en": "Kanzarashi (Rice Dumplings in Syrup)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "長崎ミルクセーキ",
+      "en": "Nagasaki Milkshake (Eaten with a Spoon)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "よりより",
+      "en": "Yoriyori (Twisted Fried Dough)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "kumamoto": [
+    {
+      "ja": "熊本ラーメン",
+      "en": "Kumamoto Ramen (with Fried Garlic)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "太平燕",
+      "en": "Taipien (Glass Noodle Soup)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "あか牛丼",
+      "en": "Akaushi Don (Red Wagyu Rice Bowl)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "高菜めし",
+      "en": "Takana Meshi (Mustard Greens Fried Rice)",
+      "types": [
+        "vegetable",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ちくわサラダ",
+      "en": "Chikuwa Salad (Potato-Stuffed Fish Cake)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "馬刺し",
+      "en": "Basashi (Horse Meat Sashimi)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "からし蓮根",
+      "en": "Karashi Renkon (Mustard-Stuffed Lotus Root)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "だご汁",
+      "en": "Dago-jiru (Dumpling Soup)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "高森田楽",
+      "en": "Takamori Dengaku (Miso-Grilled Skewers)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "あか牛ステーキ",
+      "en": "Akaushi Steak (Red Wagyu)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "いきなり団子",
+      "en": "Ikinari Dango (Sweet Potato and Bean Dumpling)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "陣太鼓",
+      "en": "Jindaiko (Drum-Shaped Bean Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "武者がえし",
+      "en": "Mushagaeshi (Bean Paste Pie)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "黒糖ドーナツ棒",
+      "en": "Kokuto Donut Bo (Brown Sugar Donut Sticks)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "oita": [
+    {
+      "ja": "とり天",
+      "en": "Toriten (Chicken Tempura)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "中津からあげ",
+      "en": "Nakatsu Karaage (Fried Chicken)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "宇佐からあげ",
+      "en": "Usa Karaage (Fried Chicken)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "別府冷麺",
+      "en": "Beppu Reimen (Cold Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "日田やきそば",
+      "en": "Hita Yakisoba (Crispy Pan-Fried Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "りゅうきゅう",
+      "en": "Ryukyu (Marinated Raw Fish)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "だんご汁",
+      "en": "Dango-jiru (Flat Dumpling Miso Soup)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "関あじの刺身",
+      "en": "Seki Aji Sashimi (Premium Horse Mackerel)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "関さばの刺身",
+      "en": "Seki Saba Sashimi (Premium Mackerel)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "城下かれいの刺身",
+      "en": "Shiroshita Flounder Sashimi",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "地獄蒸し",
+      "en": "Jigoku Mushi (Hot Spring Steam Cooking)",
+      "types": [
+        "seafood",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "やせうま",
+      "en": "Yaseuma (Flat Noodles with Kinako)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ざびえる",
+      "en": "Zabieru (Bean Paste Butter Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "地獄蒸しプリン",
+      "en": "Jigoku Mushi Pudding (Hot Spring–Steamed Pudding)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "miyazaki": [
+    {
+      "ja": "チキン南蛮",
+      "en": "Chicken Nanban (with Tartar Sauce)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "宮崎辛麺",
+      "en": "Miyazaki Karamen (Spicy Noodles)",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "肉巻きおにぎり",
+      "en": "Nikumaki Onigiri (Meat-Wrapped Rice Ball)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "レタス巻き",
+      "en": "Lettuce Maki (Lettuce and Shrimp Sushi Roll)",
+      "types": [
+        "rice"
+      ]
+    },
+    {
+      "ja": "宮崎ぎょうざ",
+      "en": "Miyazaki Gyoza",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "冷や汁",
+      "en": "Hiyajiru (Cold Miso Soup over Rice)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "地鶏の炭火焼き",
+      "en": "Jidori Sumibiyaki (Charcoal-Grilled Chicken)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "宮崎牛ステーキ",
+      "en": "Miyazaki Beef Steak",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "おび天",
+      "en": "Obiten (Sweet Fried Fish Cake)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "魚うどん",
+      "en": "Sakana Udon (Fish Noodles)",
+      "types": [
+        "seafood",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "チーズ饅頭",
+      "en": "Cheese Manju (Cream Cheese Bun)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "なんじゃこら大福",
+      "en": "Nanjakora Daifuku (Strawberry Chestnut Mochi)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "マンゴーパフェ",
+      "en": "Mango Parfait",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "kagoshima": [
+    {
+      "ja": "鹿児島ラーメン",
+      "en": "Kagoshima Ramen",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "黒豚とんかつ",
+      "en": "Kurobuta Tonkatsu (Black Pork Cutlet)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "鶏飯",
+      "en": "Keihan (Chicken Rice with Broth)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "さつま揚げ",
+      "en": "Satsuma-age (Fried Fish Cake)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "黒豚しゃぶしゃぶ",
+      "en": "Kurobuta Shabu-Shabu (Black Pork)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "きびなごの刺身",
+      "en": "Kibinago Sashimi (Silver-Stripe Herring)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "さつま汁",
+      "en": "Satsuma-jiru (Chicken Miso Soup)",
+      "types": [
+        "meat",
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "豚骨",
+      "en": "Tonkotsu (Simmered Pork Ribs with Miso)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "鶏刺し",
+      "en": "Torisashi (Chicken Sashimi)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "しろくま",
+      "en": "Shirokuma (Fruit-Topped Shaved Ice)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "かるかん",
+      "en": "Karukan (Yam Sponge Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "あくまき",
+      "en": "Akumaki (Lye-Soaked Rice Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "じゃんぼ餅",
+      "en": "Jambo Mochi (Two-Stick Rice Cake)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "げたんは",
+      "en": "Getanha (Brown Sugar Cookie)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ],
+  "okinawa": [
+    {
+      "ja": "タコライス",
+      "en": "Taco Rice",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "ポークたまごおにぎり",
+      "en": "Pork Tamago Onigiri (Spam and Egg Rice Ball)",
+      "types": [
+        "meat",
+        "rice"
+      ]
+    },
+    {
+      "ja": "沖縄タコス",
+      "en": "Okinawa Tacos",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "ゴーヤーチャンプルー",
+      "en": "Goya Champuru (Bitter Melon Stir-Fry)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "ラフテー",
+      "en": "Rafute (Braised Pork Belly)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "沖縄そば",
+      "en": "Okinawa Soba",
+      "types": [
+        "noodles"
+      ]
+    },
+    {
+      "ja": "ソーキそば",
+      "en": "Soki Soba (with Pork Spare Ribs)",
+      "types": [
+        "meat",
+        "noodles"
+      ]
+    },
+    {
+      "ja": "海ぶどう",
+      "en": "Umibudo (Sea Grapes)",
+      "types": [
+        "seafood"
+      ]
+    },
+    {
+      "ja": "ジーマーミ豆腐",
+      "en": "Jimami Tofu (Peanut Tofu)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "ミミガーさしみ",
+      "en": "Mimiga Sashimi (Pig Ear Salad)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "足ティビチ",
+      "en": "Tebichi (Stewed Pig's Feet)",
+      "types": [
+        "meat"
+      ]
+    },
+    {
+      "ja": "豆腐よう",
+      "en": "Tofuyo (Fermented Tofu)",
+      "types": [
+        "vegetable"
+      ]
+    },
+    {
+      "ja": "サーターアンダーギー",
+      "en": "Sata Andagi (Okinawan Doughnuts)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "ちんすこう",
+      "en": "Chinsuko (Shortbread Cookies)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "紅いもタルト",
+      "en": "Beni Imo Tart (Purple Sweet Potato Tart)",
+      "types": [
+        "sweets"
+      ]
+    },
+    {
+      "ja": "沖縄ぜんざい",
+      "en": "Okinawa Zenzai (Shaved Ice with Sweet Beans)",
+      "types": [
+        "sweets"
+      ]
+    }
+  ]
+}

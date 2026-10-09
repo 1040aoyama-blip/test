@@ -1,0 +1,11 @@
+---
+import PrefectureView from '../../../views/PrefectureView.astro';
+import { langs, type Lang } from '../../../i18n';
+import { prefectures } from '../../../data/prefectures';
+
+export function getStaticPaths() {
+  return langs.flatMap((lang) => prefectures.map((p) => ({ params: { lang, prefecture: p.id } })));
+}
+---
+
+<PrefectureView lang={Astro.params.lang as Lang} prefectureId={Astro.params.prefecture} />

@@ -1,0 +1,324 @@
+{
+  "豚丼": {
+    "summary": "The signature dish of the Tokachi region around Obihiro. Thick slices of pork loin are grilled, often over charcoal, glazed with a sweet soy-based sauce and served over rice. It is said to have been created in the early Showa era by an Obihiro diner that wanted to give hard-working farmers a hearty, energizing meal. The combination of smoky pork and sauce-soaked rice is simple but deeply satisfying. Each shop has its own sauce and cut of meat, and there are many specialist restaurants around Obihiro Station.",
+    "price": "¥1,000–1,800",
+    "area": "Obihiro and the Tokachi region",
+    "shops": [
+      {
+        "name": "Panchou (Original Butadon)",
+        "query": "元祖豚丼のぱんちょう 帯広",
+        "comment": "The long-established shop said to have created butadon. Expect a line.",
+        "access": "Near Obihiro Station"
+      },
+      {
+        "name": "Butadon no Hanatokachi",
+        "query": "豚丼のはなとかち 帯広",
+        "comment": "Known for quality pork and its additive-free house sauce.",
+        "access": "Near Obihiro Station"
+      }
+    ]
+  },
+  "札幌味噌ラーメン": {
+    "summary": "Sapporo's signature ramen: a rich miso broth with thick, wavy noodles, often topped with stir-fried bean sprouts, minced pork, corn and a pat of butter. A layer of lard on the surface keeps the soup hot to the last sip, even in the depths of winter. It is said to have been born at a Sapporo ramen shop before spreading across Japan. Try it at Ramen Yokocho in Susukino or at popular shops around the city. On a snowy day, it warms you to the core.",
+    "price": "¥900–1,300",
+    "area": "Sapporo",
+    "shops": [
+      {
+        "name": "Sumire Susukino",
+        "query": "すみれ 札幌すすきの店",
+        "comment": "A leading name in rich Sapporo miso ramen. Open in the evening.",
+        "access": "Susukino"
+      },
+      {
+        "name": "Sapporo Junren Main Store",
+        "query": "さっぽろ純連 札幌本店",
+        "comment": "A long-running shop descended from the origin of Sapporo miso ramen.",
+        "access": "Sumikawa (near Sumikawa Station)"
+      }
+    ]
+  },
+  "旭川醤油ラーメン": {
+    "summary": "The local ramen of Asahikawa, Hokkaido's second-largest city. Its double soup combines pork and chicken bone broth with seafood stock, seasoned with soy sauce. A film of lard on top seals in the heat, so it stays hot even when Asahikawa drops below freezing. The thin, wavy, low-moisture noodles hold the soup well. The city has many long-established shops, and at Asahikawa Ramen Village you can compare several famous ones. Pair it with a visit to Asahiyama Zoo.",
+    "price": "¥800–1,100",
+    "area": "Asahikawa",
+    "shops": [
+      {
+        "name": "Asahikawa Ramen Aoba Main Store",
+        "query": "旭川らぅめん青葉 本店",
+        "comment": "A veteran shop that began as a street stall, with a double broth.",
+        "access": "Near Asahikawa Station"
+      },
+      {
+        "name": "Baikohken Main Store",
+        "query": "梅光軒 本店 旭川",
+        "comment": "A famous shop with branches abroad. Good for a first try.",
+        "access": "Near Asahikawa Station"
+      },
+      {
+        "name": "Hachiya (Original Store)",
+        "query": "らーめん蜂屋 五条創業店",
+        "comment": "A long-running shop with a distinctive burnt-lard aroma.",
+        "access": "Gojo-dori, Asahikawa"
+      }
+    ]
+  },
+  "函館塩ラーメン": {
+    "summary": "A salt-based ramen long eaten in the port city of Hakodate. Pork and chicken bones are simmered gently so the broth stays clear and light. It is served with thin, straight noodles and simple toppings such as roast pork, bamboo shoots and green onions. Some say its roots go back to Chinese cooking that arrived in the Meiji era, giving it one of the longest histories of any Japanese ramen. Try it around Hakodate Station or in the Motomachi area, perhaps as a light meal before seeing the famous night view.",
+    "price": "¥700–1,000",
+    "area": "Hakodate",
+    "shops": [
+      {
+        "name": "Hakodate Menchubo Ajisai Main Store",
+        "query": "函館麺厨房あじさい 本店",
+        "comment": "A leading Hakodate shop known for its clear salt broth.",
+        "access": "Near Goryokaku Tower"
+      },
+      {
+        "name": "Jiyoken",
+        "query": "滋養軒 函館",
+        "comment": "A long-established shop with clear broth and house-made noodles.",
+        "access": "Near Hakodate Station"
+      },
+      {
+        "name": "Hakodate Menya Ichimonji",
+        "query": "函館麺や 一文字 函館本店",
+        "comment": "Popular for offering both light and rich salt ramen.",
+        "access": "Near Yunokawa Onsen (Yukawacho)"
+      }
+    ]
+  },
+  "スープカレー": {
+    "summary": "A Sapporo-born curry with a thin, broth-like soup instead of a thick roux. It usually comes loaded with large pieces of fried vegetables and a bone-in chicken leg, and looks as good as it tastes. Scoop some rice with your spoon and dip it into the fragrant, spicy soup. Many shops let you choose the soup base, spice level and amount of rice, so you can make it your own. Sapporo has countless specialist shops, so comparing them is fun. If it is your first time, start with a mild spice level.",
+    "price": "¥1,200–1,800",
+    "area": "Sapporo",
+    "shops": [
+      {
+        "name": "Soup Curry GARAKU",
+        "query": "スープカレー GARAKU 札幌",
+        "comment": "One of Sapporo's most popular soup curry shops, with frequent lines.",
+        "access": "Central Sapporo"
+      },
+      {
+        "name": "Okushiba Shoten Ekimae Soseiji",
+        "query": "奥芝商店 駅前創成寺",
+        "comment": "Famous for its shrimp-stock soup curry.",
+        "access": "Near Sapporo Station"
+      },
+      {
+        "name": "Soup Curry Suage+",
+        "query": "スープカレー すあげプラス 札幌",
+        "comment": "Known for deep-fried ingredients served on skewers.",
+        "access": "Susukino"
+      }
+    ]
+  },
+  "ザンギ": {
+    "summary": "Hokkaido's beloved fried chicken. The chicken is well marinated in soy sauce, garlic and ginger before frying, giving it an irresistible aroma. Kushiro is said to be its birthplace, and locals sometimes eat it with a dipping sauce. How zangi differs from ordinary karaage varies by shop and area, but to people in Hokkaido, fried chicken is simply zangi. It is a staple at izakaya, in bento boxes and at home, and goes perfectly with a cold beer.",
+    "price": "¥500–900",
+    "area": "All over Hokkaido (said to originate in Kushiro)",
+    "shops": [
+      {
+        "name": "Torimatsu",
+        "query": "鳥松 釧路 ザンギ",
+        "comment": "Said to be where zangi was born. Open in the evening.",
+        "access": "Sakaemachi, Kushiro"
+      },
+      {
+        "name": "Hotei",
+        "query": "布袋 札幌 ザンギ",
+        "comment": "A Sapporo Chinese restaurant known for its big zangi.",
+        "access": "Central Sapporo (near Odori)"
+      }
+    ]
+  },
+  "ジンギスカン": {
+    "summary": "Hokkaido's signature dish: lamb or mutton and vegetables grilled on a special dome-shaped iron pan. The meat juices run down to the edge of the pan and soak into the bean sprouts and onions. There are two styles: meat marinated in sauce before grilling, or grilled plain and dipped in sauce afterwards. Locals enjoy it at home, at cherry-blossom parties and at barbecues. The smoke sticks to clothes easily, so use the apron most restaurants provide.",
+    "price": "¥1,500–3,000",
+    "area": "Sapporo and all over Hokkaido",
+    "shops": [
+      {
+        "name": "Jingisukan Daruma Main Store",
+        "query": "成吉思汗だるま 本店",
+        "comment": "A long-established Sapporo jingisukan shop serving hand-cut mutton.",
+        "access": "Susukino"
+      },
+      {
+        "name": "Sapporo Beer Garden",
+        "query": "サッポロビール園",
+        "comment": "Enjoy it with fresh beer in a historic brick building.",
+        "access": "Higashi Ward (about 10 min by car from Sapporo Station)"
+      }
+    ]
+  },
+  "石狩鍋": {
+    "summary": "A hot pot of salmon fillets and bones simmered in miso broth with cabbage, onion, potato and tofu. It is the specialty of Ishikari, at the mouth of the Ishikari River, and is said to come from meals eaten by fishermen in the Meiji era. A sprinkle of sansho pepper at the end adds a fresh aroma that brings out the salmon's flavor, and some places add butter for extra richness. Enjoy this Hokkaido home-style dish in autumn and winter, during salmon season. It warms you right through.",
+    "price": "¥1,500–3,000",
+    "area": "Ishikari and all over Hokkaido",
+    "shops": [
+      {
+        "name": "Kintaitei",
+        "query": "金大亭 石狩",
+        "comment": "The long-established restaurant said to have created ishikari nabe. Reservation only.",
+        "access": "Ishikari (about 40 min by car from Sapporo)"
+      },
+      {
+        "name": "Kyodo Ryori Oga",
+        "query": "郷土料理 おが 札幌",
+        "comment": "Serves Hokkaido regional dishes like ishikari nabe and chan-chan yaki.",
+        "access": "About 3 min walk from Susukino Station"
+      }
+    ]
+  },
+  "鮭のチャンチャン焼き": {
+    "summary": "A fishing-town dish of salmon fillets and vegetables such as cabbage, onion and carrot, steam-grilled on an iron plate with miso sauce. Once cooked, you flake the salmon and mix it with the vegetables as you eat. Theories about the name include that it can be made quickly (chatto) or that it was cooked by dad (chan). Adding butter makes it even richer. It is a staple at home and at barbecues in Hokkaido, and you will often find it at izakaya too.",
+    "price": "¥1,000–2,000",
+    "area": "All over Hokkaido",
+    "shops": [
+      {
+        "name": "Kyodo Ryori Oga",
+        "query": "郷土料理 おが 札幌",
+        "comment": "A regional cuisine restaurant serving chan-chan yaki.",
+        "access": "About 3 min walk from Susukino Station"
+      },
+      {
+        "name": "Uodoraku",
+        "query": "魚道楽 札幌 二条市場",
+        "comment": "Serves chan-chan yaki with house-made miso.",
+        "access": "Next to Nijo Market"
+      }
+    ]
+  },
+  "いかめし": {
+    "summary": "Squid stuffed with glutinous and regular rice and simmered in a sweet soy sauce. It is famous as an ekiben (station bento) from Mori Station on the Hakodate Line, and is said to have been created during wartime food shortages as a way to fill people up with less rice. The chewy rice soaks up the squid's flavor and the aroma of soy sauce. It is a favorite at station bento fairs across Japan and a classic Hokkaido souvenir. It is best warmed up before eating.",
+    "price": "¥600–1,000 per pack",
+    "area": "Mori (Mori Station, Hakodate Line)",
+    "shops": [
+      {
+        "name": "Shibata Shoten (in front of Mori Station)",
+        "query": "柴田商店 森駅",
+        "comment": "Sells Mori Station's famous ikameshi all year round.",
+        "access": "In front of Mori Station"
+      },
+      {
+        "name": "Michi no Eki You Yu Mori",
+        "query": "道の駅 YOU・遊・もり",
+        "comment": "A roadside station selling ikameshi with other Mori specialties.",
+        "access": "About 6 min by car from Mori Station"
+      }
+    ]
+  },
+  "松前漬": {
+    "summary": "A Hokkaido specialty of thinly sliced dried squid and kelp marinated in soy sauce, sake and mirin. The kelp releases a silky stickiness and umami, while the squid gives a pleasant chew. The name is said to come from the Matsumae domain, a source of kelp and dried squid in the Edo period. Luxurious versions include herring roe, and it is a popular New Year dish. It goes perfectly with rice or drinks and keeps well, making it a popular Hokkaido souvenir.",
+    "price": "¥500–1,500",
+    "area": "All over Hokkaido (famous around Hakodate)",
+    "shops": [
+      {
+        "name": "Michi no Eki Kitamaebune Matsumae",
+        "query": "道の駅 北前船 松前",
+        "comment": "A roadside station in Matsumae itself, where you can sample and compare many kinds.",
+        "access": "Matsumae (about 2 hours by car from Hakodate)"
+      },
+      {
+        "name": "Hakodate Morning Market",
+        "query": "函館朝市",
+        "comment": "Lined with seafood shops, many of which sell matsumae-zuke.",
+        "access": "Near Hakodate Station"
+      }
+    ]
+  },
+  "いくら丼": {
+    "summary": "A rice bowl topped generously with ikura, salmon roe separated and marinated in soy sauce. The roe pops in your mouth and releases a rich, creamy flavor. Autumn, when salmon are caught, is the season for fresh raw ikura. The classic place to eat it is at a market diner, such as Hakodate Morning Market or Sapporo's Nijo Market, and bowls combined with sea urchin or crab are also popular. Prices vary by season and shop, so check before you order.",
+    "price": "¥2,000–4,000",
+    "area": "Hakodate, Sapporo, Otaru and more",
+    "shops": [
+      {
+        "name": "Kikuyo Shokudo Main Store",
+        "query": "きくよ食堂 本店 函館朝市",
+        "comment": "A long-running seafood bowl shop in the Hakodate Morning Market. Opens early.",
+        "access": "Hakodate Morning Market (near Hakodate Station)"
+      },
+      {
+        "name": "Asaichi no Ajidokoro Chamu",
+        "query": "朝市の味処 茶夢 函館",
+        "comment": "A popular Morning Market eatery using house-marinated salmon roe.",
+        "access": "Donburi Yokocho, Morning Market (1 min walk from Hakodate Station)"
+      }
+    ]
+  },
+  "うに丼": {
+    "summary": "A luxurious Hokkaido rice bowl piled with fresh sea urchin. It is known for its rich sweetness and a texture that melts in your mouth. Hokkaido is home to northern purple and short-spined sea urchins, and areas such as the Shakotan Peninsula and Rishiri and Rebun islands are famous for them. The main season for fresh sea urchin is summer, when you can enjoy bowls made with the day's catch. Prices vary greatly by season, area and type, so check before ordering. Having it for breakfast at a morning market diner is a real treat.",
+    "price": "¥3,000–6,000",
+    "area": "Shakotan, Rishiri, Rebun, Hakodate and more",
+    "shops": [
+      {
+        "name": "Oshokujidokoro Misaki",
+        "query": "お食事処 みさき 積丹",
+        "comment": "A popular restaurant run by sea urchin fishermen. Open spring to autumn.",
+        "access": "Shakotan (about 2 hours by car from Sapporo)"
+      },
+      {
+        "name": "Oshokujidokoro Nakamuraya",
+        "query": "お食事処 中村屋 積丹",
+        "comment": "Famous for bafun sea urchin bowls in summer. Open spring to autumn.",
+        "access": "Shakotan"
+      }
+    ]
+  },
+  "白い恋人": {
+    "summary": "White chocolate sandwiched between crisp langue de chat cookies, made by Sapporo confectioner Ishiya. It is known across Japan as the classic Hokkaido souvenir. The light, crunchy cookie and smooth chocolate are what make it so popular. At Shiroi Koibito Park in Sapporo, you can tour the factory and try making sweets, and it is a popular attraction in its own right. You can buy it at airports, stations and souvenir shops all over Hokkaido. Seasonal packaging also appears from time to time.",
+    "price": "From about ¥800 per box",
+    "area": "All over Hokkaido (Shiroi Koibito Park in Sapporo)",
+    "shops": [
+      {
+        "name": "Shiroi Koibito Park",
+        "query": "白い恋人パーク",
+        "comment": "A factory park with tours and sweets-making workshops.",
+        "access": "Nishi Ward, Sapporo (near Miyanosawa Station)"
+      },
+      {
+        "name": "New Chitose Airport (Domestic Terminal)",
+        "query": "新千歳空港 国内線ターミナル",
+        "comment": "Full of souvenir shops, making it easy to pick up Shiroi Koibito on the way home.",
+        "access": "New Chitose Airport"
+      }
+    ]
+  },
+  "バターサンド": {
+    "summary": "Biscuits sandwiching a cream made with Hokkaido butter and raisins. The Marusei Butter Sandwich by Obihiro confectioner Rokkatei is especially famous and has become a classic Hokkaido souvenir. The crumbly biscuit, rich butter cream and raisins with a hint of liqueur make a delightful combination. Chilling it in the fridge firms up the cream and gives a different texture. You can find it at airports and stations around Hokkaido.",
+    "price": "From about ¥800 per box",
+    "area": "All over Hokkaido (main store in Obihiro)",
+    "shops": [
+      {
+        "name": "Rokkatei Obihiro Main Store",
+        "query": "六花亭 帯広本店",
+        "comment": "Rokkatei's main store, with a cafe serving store-only treats.",
+        "access": "Near Obihiro Station"
+      },
+      {
+        "name": "Rokkatei Sapporo Main Store",
+        "query": "六花亭 札幌本店",
+        "comment": "A large store near Sapporo Station, with a cafe upstairs serving store-only treats.",
+        "access": "About 3 min walk from Sapporo Station"
+      }
+    ]
+  },
+  "三方六": {
+    "summary": "A baumkuchen made by Obihiro confectioner Ryugetsu. It is coated in white and dark chocolate so that it looks like a birch log. The name comes from the firewood used in the pioneer days, which was cut to six sun (about 18 cm) on each of three sides. The moist cake and sweet chocolate go well together, and because it is sliced to share, it makes a great souvenir for the family. You can buy it in the Tokachi region and at souvenir shops all over Hokkaido.",
+    "price": "¥700–1,000",
+    "area": "Obihiro and all over Hokkaido",
+    "shops": [
+      {
+        "name": "Ryugetsu Sweetpia Garden",
+        "query": "柳月スイートピア・ガーデン",
+        "comment": "Watch the factory where sanpouroku is made and enjoy the cafe.",
+        "access": "Otofuke (about 20 min by car from Obihiro)"
+      },
+      {
+        "name": "New Chitose Airport (Domestic Terminal)",
+        "query": "新千歳空港 国内線ターミナル",
+        "comment": "Pick up Ryugetsu's sanpouroku at the airport souvenir shops.",
+        "access": "New Chitose Airport"
+      }
+    ]
+  }
+}

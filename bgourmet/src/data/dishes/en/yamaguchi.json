@@ -1,0 +1,211 @@
+{
+  "瓦そば": {
+    "summary": "A specialty of Kawatana Onsen in Shimonoseki: green tea soba placed on a heated roof tile, topped with beef, shredded egg, nori, lemon and grated daikon with chili. It is eaten dipped in warm noodle sauce. The soba touching the hot tile turns crisp and fragrant while the top stays soft, so you enjoy two textures. It is said to have been inspired by a story of soldiers grilling meat and vegetables on tiles during an old war. It is served at many shops in the prefecture, and some families make it at home on a hot plate.",
+    "price": "¥1,000–1,500 per person",
+    "area": "Kawatana Onsen, Shimonoseki and around",
+    "shops": [
+      {
+        "name": "Ganso Kawara Soba Takase Minami Honkan",
+        "query": "元祖瓦そば たかせ 川棚南本館",
+        "comment": "The restaurant that invented kawara soba.",
+        "access": "Kawatana Onsen (Toyoura, Shimonoseki)"
+      },
+      {
+        "name": "Ganso Kawara Soba Takase Honkan",
+        "query": "元祖瓦そば たかせ 川棚本館",
+        "comment": "The main building in a century-old house. Weekends and holidays only.",
+        "access": "Kawatana Onsen (Toyoura, Shimonoseki)"
+      }
+    ]
+  },
+  "バリそば": {
+    "summary": "A Yamaguchi local dish: thin noodles deep-fried until crisp, topped with a thick sauce full of vegetables and meat. It resembles Nagasaki's sara udon, but each shop has its own take on the sauce. The crunchy, bari-bari texture of the fried noodles is said to be the origin of the name. As you eat, the sauce soaks in and the noodles soften, so you can enjoy the changing texture. Adding vinegar or mustard to change the flavor is also recommended. It is generously portioned.",
+    "price": "¥800–1,200",
+    "area": "Yamaguchi Prefecture",
+    "shops": [
+      {
+        "name": "Shunraiken Nakaichi",
+        "query": "元祖ばりそば本舗 春来軒 中市店",
+        "comment": "The shop said to have originated bari soba.",
+        "access": "Nakaichicho, Yamaguchi"
+      },
+      {
+        "name": "Shunraiken Honmachi",
+        "query": "春来軒 本町店 山口",
+        "comment": "Bari soba piled with vegetables.",
+        "access": "Yamaguchi City"
+      }
+    ]
+  },
+  "宇部ラーメン": {
+    "summary": "Local ramen from Ube, featuring a rich pork bone and soy sauce broth. The slowly simmered pork bone soup is hearty, but the soy sauce aroma keeps the finish balanced. It is said to have started as street stall food and has long been loved by locals. Thin straight noodles cling well to the broth. Toppings tend to be simple, such as roast pork, green onion and bean sprouts. Ube has several long-running popular shops.",
+    "price": "¥700–1,000",
+    "area": "Ube",
+    "shops": [
+      {
+        "name": "Ikkyu Shinkawa",
+        "query": "一久ラーメン 新川店 宇部",
+        "comment": "The leading tonkotsu shop of Ube ramen; open late.",
+        "access": "Ube"
+      },
+      {
+        "name": "Ikkyu Misaki",
+        "query": "一久中華そば 岬店",
+        "comment": "Another Ikkyu branch.",
+        "access": "Ube"
+      }
+    ]
+  },
+  "長門焼き鳥": {
+    "summary": "Nagato is known for having many yakitori restaurants for its population and promotes itself as a yakitori town. Locally raised chicken, including skin, meat and negima with green onion, is grilled fragrantly over charcoal. You can enjoy the savory chicken with salt or sauce. Having a drink with yakitori after work is the Nagato way. Try it at yakitori restaurants in the city along with sightseeing at Nagato Yumoto Onsen. The casual feel of eating skewer after skewer is part of the appeal.",
+    "price": "¥100–200 per skewer",
+    "area": "Nagato",
+    "shops": [
+      {
+        "name": "Yakitoriya Chikuzen",
+        "query": "焼とりや ちくぜん 総本店 長門",
+        "comment": "A go-to yakitori shop in Nagato.",
+        "access": "Nagato"
+      },
+      {
+        "name": "Yakitori Sakura Shokudo",
+        "query": "焼鳥 さくら食堂 長門湯本",
+        "comment": "A yakitori shop in Nagato-Yumoto Onsen.",
+        "access": "Nagato-Yumoto Onsen"
+      }
+    ]
+  },
+  "ふく刺し": {
+    "summary": "In Shimonoseki, pufferfish is called fuku, a play on the word for good fortune. Fuku sashimi is sliced so thin you can see the plate's pattern through it, and arranged beautifully like a chrysanthemum. The classic way is to eat it with ponzu, grated daikon with chili and green onion. Mild yet increasingly flavorful as you chew, it has a pleasant firm bite. Shimonoseki is said to handle the most pufferfish in Japan. Try it around Karato Market and at Shimonoseki restaurants. Winter is the season.",
+    "price": "¥3,000–10,000",
+    "area": "Shimonoseki",
+    "shops": [
+      {
+        "name": "Shunpanro Shimonoseki",
+        "query": "春帆楼 下関本店",
+        "comment": "The historic first licensed fugu restaurant, from the Meiji period.",
+        "access": "Amidaijicho (near Karato)"
+      },
+      {
+        "name": "Karato Market",
+        "query": "唐戸市場 下関",
+        "comment": "On Fri–Sun and holidays, seafood stalls fill the market.",
+        "access": "Karato, Shimonoseki"
+      }
+    ]
+  },
+  "下関ふく鍋": {
+    "summary": "A Shimonoseki winter specialty: a hot pot of pufferfish meat and bony pieces with Chinese cabbage, tofu and green onion, simmered in kelp broth. It is also called fuku-chiri. The meat becomes springier when cooked, and the bones release a flavorful broth. It is eaten with ponzu. The highlight is rice porridge made at the end in the broth full of pufferfish flavor. Pufferfish is prepared by licensed cooks, so enjoy it at a trusted restaurant. It warms you to the core.",
+    "price": "¥5,000–15,000",
+    "area": "Shimonoseki",
+    "shops": [
+      {
+        "name": "Shunpanro Shimonoseki",
+        "query": "春帆楼 下関本店",
+        "comment": "Enjoy fuku nabe as part of a fugu course.",
+        "access": "Amidaijicho (near Karato)"
+      },
+      {
+        "name": "Karato Market",
+        "query": "唐戸市場 下関",
+        "comment": "A market full of fugu shops and stalls.",
+        "access": "Karato, Shimonoseki"
+      }
+    ]
+  },
+  "岩国寿司": {
+    "summary": "A local dish of Iwakuni: pressed sushi made by layering vinegared rice and toppings many times in a large wooden frame and pressing from above. Toppings include lotus root, shiitake, shredded egg and sweet fish flakes, and when cut, the cross-section shows beautiful layers. It is said to be called tonosama sushi, the lord's sushi, because it was presented to the lord of the Iwakuni domain. It is a feast made for celebrations and festivals. Try it at shops around Kintaikyo Bridge. It is colorful and photogenic.",
+    "price": "¥800–1,500",
+    "area": "Iwakuni",
+    "shops": [
+      {
+        "name": "Sakura no Chaya",
+        "query": "さくらの茶屋 岩国 錦帯橋",
+        "comment": "A local-cuisine restaurant right by Kintaikyo Bridge.",
+        "access": "Near Kintaikyo Bridge"
+      },
+      {
+        "name": "Hangetsuan",
+        "query": "半月庵 岩国",
+        "comment": "A long-established ryotei inn in Iwakuni.",
+        "access": "Iwakuni (near Kintaikyo Bridge)"
+      }
+    ]
+  },
+  "仙崎かまぼこ": {
+    "summary": "The famous kamaboko of Senzaki in Nagato. It is made from white fish such as lizardfish using traditional methods. It is pure white and very springy; this springiness is called ashi and is said to show the quality of kamaboko. Enjoy its firm bite and elegant fish flavor. Kamaboko shops line the port town, and there are facilities where you can try making it yourself. Combine it with a stroll around Senzaki, the hometown of poet Kaneko Misuzu. Enjoy it with wasabi soy sauce.",
+    "price": "¥500–1,500",
+    "area": "Senzaki, Nagato",
+    "shops": [
+      {
+        "name": "Yamato Kamaboko",
+        "query": "大和蒲鉾 仙崎",
+        "comment": "Yakinuki kamaboko made only from locally caught lizardfish.",
+        "access": "Senzaki, Nagato"
+      },
+      {
+        "name": "Fujitatsu Senzaki Misuzu",
+        "query": "蒲鉾屋 藤辰 仙崎みすゞ店",
+        "comment": "A Senzaki kamaboko shop with a restaurant.",
+        "access": "Senzaki, Nagato"
+      }
+    ]
+  },
+  "外郎": {
+    "summary": "Yamaguchi's uiro is made with bracken starch, giving it a taste different from uiro in Nagoya and elsewhere. It has a wobbly bounce, a smooth texture and a translucent look, with a gentle sweetness. Chilled, it becomes even more slippery. There are also azuki and matcha versions. It is sold at confectioners in Yamaguchi City. Enjoy it while strolling through Yamaguchi, where traces of the Ouchi clan's culture remain. It is perfect with tea.",
+    "price": "¥500–1,200",
+    "area": "Yamaguchi City",
+    "shops": [
+      {
+        "name": "Mihorido Honten",
+        "query": "御堀堂 本店 山口",
+        "comment": "A long-established maker of Yamaguchi uiro.",
+        "access": "Ekidori, Yamaguchi"
+      },
+      {
+        "name": "Toshiro Sakuraan",
+        "query": "豆子郎の里 茶藏庵",
+        "comment": "Toshiro's flagship, with a garden tearoom.",
+        "access": "Ouchi-Mihori, Yamaguchi"
+      }
+    ]
+  },
+  "月でひろった卵": {
+    "summary": "A popular souvenir sweet made by a Yamaguchi confectioner. Soft, fluffy castella sponge wraps smooth custard cream with a hint of chestnut sweetness. Its round, egg-like cute shape and romantic name, meaning an egg picked up on the moon, are distinctive. Chilled, the cream turns cool for a different kind of treat. It is individually wrapped and easy to share. It is sold at Shin-Yamaguchi Station and souvenir shops in the prefecture. It is a classic Yamaguchi souvenir.",
+    "price": "¥600–1,500",
+    "area": "Yamaguchi Prefecture",
+    "shops": [
+      {
+        "name": "Kashinoki Yamaguchi",
+        "query": "果子乃季 山口 月でひろった卵",
+        "comment": "The maker of Tsuki de Hirotta Tamago, with many shops in the prefecture.",
+        "access": "Yamaguchi City"
+      },
+      {
+        "name": "Shin-Yamaguchi Station souvenir shops",
+        "query": "新山口駅 おみやげ 月でひろった卵",
+        "comment": "Also sold at Shin-Yamaguchi Station.",
+        "access": "Shin-Yamaguchi Station"
+      }
+    ]
+  },
+  "豆子郎": {
+    "summary": "One of Yamaguchi's best-known sweets, made by a long-established shop in Yamaguchi City. It is a long, stick-shaped steamed sweet made with azuki beans and rice flour, with a dense, chewy texture similar to uiro. The azuki flavor comes through clearly, with restrained sweetness and an elegant taste. The name is read toshiro, and its unusual name is a talking point. There are also matcha and brown sugar flavors. It is sold at shops in Yamaguchi City and stations in the prefecture. Savor it slowly with Japanese tea.",
+    "price": "¥600–1,500",
+    "area": "Yamaguchi City",
+    "shops": [
+      {
+        "name": "Toshiro Sakuraan",
+        "query": "豆子郎の里 茶藏庵",
+        "comment": "Toshiro's flagship, with a tearoom.",
+        "access": "Ouchi-Mihori, Yamaguchi"
+      },
+      {
+        "name": "Toshiro Shin-Yamaguchi Station",
+        "query": "豆子郎 新山口駅店",
+        "comment": "Available at the Shinkansen station.",
+        "access": "Shin-Yamaguchi Station"
+      }
+    ]
+  }
+}

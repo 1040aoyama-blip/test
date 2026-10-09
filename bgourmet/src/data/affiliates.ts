@@ -205,7 +205,7 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
     transport: { adid: '1484212', destId: '5122', tid: '5' },
   },
   yamaguchi: {
-    hotels: { adid: '1490067', destId: '8406', tid: '', prod: 'hotel_dynamic_widget' },
+    hotels: { adid: '1490067', destId: '6251', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484646', destId: '6251', tid: '2' },
     transport: { adid: '1484215', destId: '6251', tid: '5' },
   },

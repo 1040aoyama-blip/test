@@ -44,7 +44,7 @@ const affiliates = getPrefectureAffiliates(lang, pref.id, pref.name[lang]);
         <h2>{t(lang, 'planTripTitle', { pref: pref.name[lang] })}</h2>
         {affiliates.map((block) => (
           <div class="aff-block">
-            <h3>{t(lang, `affiliate_${block.kind}`)}</h3>
+            <h3>{t(lang, `affiliate_${block.kind}`, { pref: pref.name[lang] })}</h3>
             {block.widget && <KlookWidget {...block.widget} />}
             {block.links.length > 0 && <AffiliateBox lang={lang} links={block.links} />}
           </div>
@@ -62,14 +62,14 @@ const affiliates = getPrefectureAffiliates(lang, pref.id, pref.name[lang]);
     margin-top: 2.5rem;
   }
   .experiences h2 {
-    font-size: 1.3rem;
+    font-size: 1.95rem; /* 1.3rem の1.5倍 */
   }
   .aff-block {
     margin-top: 1.5rem;
   }
   .aff-block h3 {
     margin: 0 0 0.6rem;
-    font-size: 1.05rem;
+    font-size: 1.575rem; /* 1.05rem の1.5倍 */
   }
   .crumbs {
     color: var(--muted);

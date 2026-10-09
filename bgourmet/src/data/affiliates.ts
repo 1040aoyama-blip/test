@@ -70,30 +70,37 @@ export const klookWidgets: Record<string, Partial<Record<WidgetKind, KlookWidget
     transport: { adid: '1482957', destId: '6263', tid: '5' },
   },
   ibaraki: {
+    hotels: { adid: '1489832', destId: '5052', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484396', destId: '5052', tid: '2' },
     transport: { adid: '1482983', destId: '5052', tid: '5' },
   },
   tochigi: {
+    hotels: { adid: '1489834', destId: '4689', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484398', destId: '4689', tid: '2' },
     transport: { adid: '1482985', destId: '4689', tid: '5' },
   },
   gunma: {
+    hotels: { adid: '1489838', destId: '4259', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484400', destId: '4259', tid: '2' },
     transport: { adid: '1482986', destId: '4259', tid: '5' },
   },
   saitama: {
+    hotels: { adid: '1489835', destId: '7259', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484402', destId: '7259', tid: '2' },
     transport: { adid: '1482987', destId: '7259', tid: '5' },
   },
   chiba: {
+    hotels: { adid: '1489836', destId: '6139', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484403', destId: '6139', tid: '2' },
     transport: { adid: '1482988', destId: '6139', tid: '5' },
   },
   tokyo: {
+    hotels: { adid: '1489841', destId: '28', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484404', destId: '28', tid: '2' },
     transport: { adid: '1482990', destId: '28', tid: '5' },
   },
   kanagawa: {
+    hotels: { adid: '1489839', destId: '6806', tid: '', prod: 'hotel_dynamic_widget' },
     experiences: { adid: '1484406', destId: '6806', tid: '2' },
     transport: { adid: '1482991', destId: '6806', tid: '5' },
   },

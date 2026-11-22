@@ -134,3 +134,14 @@ test('フォルダの追加・名前変更・並べ替え・削除', () => {
   assert.equal(s.items[0].category, '');
   assert.ok(!s.categories.includes('パンツ類'));
 });
+
+test('季節で分けない並びは、早い季節順・同じなら名前順で、重複しない', () => {
+  const sorted = W.sortBySeason([
+    item('ダウン', 'アウター', ['冬']),
+    item('ベルト', '小物'),
+    item('カーディガン', 'トップス', ['春', '秋']),
+    item('Tシャツ', 'トップス', ['夏']),
+    item('アンサンブル', 'トップス', ['春']),
+  ]);
+  assert.deepEqual(sorted.map((it) => it.name), ['アンサンブル', 'カーディガン', 'Tシャツ', 'ダウン', 'ベルト']);
+});

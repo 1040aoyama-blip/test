@@ -197,6 +197,12 @@
     return result;
   }
 
+  // 季節で分けないときの並び: 一番早い季節（春→夏→秋→冬→未設定）の順、同じなら名前順。各アイテムは1回だけ
+  function sortBySeason(items) {
+    const first = (it) => (it.seasons.length ? SEASONS.indexOf(it.seasons[0]) : SEASONS.length);
+    return items.slice().sort((a, b) => first(a) - first(b) || a.name.localeCompare(b.name, 'ja'));
+  }
+
   function parseState(raw) {
     const data = typeof raw === 'string' ? JSON.parse(raw) : raw;
     if (!data || !Array.isArray(data.items)) throw new Error('items がありません');
@@ -260,7 +266,7 @@
 
   const api = {
     SEASONS, NO_SEASON, NO_CATEGORY, DEFAULT_CATEGORIES, DEFAULT_SUBCATEGORIES, DEFAULT_COLORS,
-    normalizeItem, validateItem, buildFolderTree, matchesFilter, groupBySeason, parseState, emptyState, sortSeasons,
+    normalizeItem, validateItem, buildFolderTree, matchesFilter, groupBySeason, sortBySeason, parseState, emptyState, sortSeasons,
     addFolder, renameFolder, deleteFolder, moveFolder, countInFolder,
   };
 

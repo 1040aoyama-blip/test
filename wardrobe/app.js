@@ -311,11 +311,26 @@
       ));
       return;
     }
+    if (!splitBySeason) {
+      list.replaceChildren(el('div', { class: 'grid' }, W.sortBySeason(items).map(card)));
+      return;
+    }
     list.replaceChildren(...W.groupBySeason(items).map((sec) => el('section', { class: 'season', 'data-season': sec.season },
       el('h2', null, sec.season, el('span', { class: 'count' }, `${sec.items.length}点`)),
       el('div', { class: 'grid' }, sec.items.map(card)),
     )));
   }
+
+  // 季節ごとに分けて表示するか（この端末のブラウザに記憶）
+  const SPLIT_KEY = 'wardrobe-split-by-season';
+  let splitBySeason = true;
+  try { splitBySeason = localStorage.getItem(SPLIT_KEY) !== '0'; } catch (e) { /* 無視 */ }
+  $('season-switch').checked = splitBySeason;
+  $('season-switch').addEventListener('change', (e) => {
+    splitBySeason = e.target.checked;
+    try { localStorage.setItem(SPLIT_KEY, splitBySeason ? '1' : '0'); } catch (err) { /* 無視 */ }
+    render();
+  });
 
   function card(it) {
     const where = !view.category

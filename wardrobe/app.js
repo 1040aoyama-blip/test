@@ -259,6 +259,8 @@
     if (view.color && !state.colors.some((c) => c.name === view.color)) view.color = '';
 
     renderSidebar(tree);
+    // 「すべてのアイテム」は登録順の一覧で固定なので、季節スイッチは出さない
+    $('season-switch-label').hidden = !view.category;
 
     // 現在地（パンくず）
     const total = state.items.filter((it) => W.matchesFilter(it, { category: view.category, subcategory: view.subcategory })).length;
@@ -309,6 +311,10 @@
         !total && here && here !== W.NO_CATEGORY ? el('div', { class: 'empty-actions' },
           el('button', { class: 'primary', onclick: () => openItem() }, `＋ ${here}に追加`)) : null,
       ));
+      return;
+    }
+    if (!view.category) {
+      list.replaceChildren(el('div', { class: 'grid' }, W.sortByRegistration(items).map(card)));
       return;
     }
     if (!splitBySeason) {

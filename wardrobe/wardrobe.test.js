@@ -173,3 +173,9 @@ test('季節で分けない表示は、フォルダ順→同じフォルダ内�
   ], ['トップス', 'アウター', 'ボトムス'], { トップス: ['Tシャツ'], ボトムス: ['ジーンズ', 'スラックス'] });
   assert.deepEqual(sorted.map((it) => it.name), ['白T', 'ダウン', '501', 'リネン', 'ウール']);
 });
+
+test('登録順は登録日時の古い順。日時のない旧データは保存順のまま先頭', () => {
+  const at = (name, createdAt) => W.normalizeItem({ id: name, name, createdAt });
+  const sorted = W.sortByRegistration([at('C', 300), at('旧1', 0), at('A', 100), at('旧2', 0), at('B', 200)]);
+  assert.deepEqual(sorted.map((it) => it.name), ['旧1', '旧2', 'A', 'B', 'C']);
+});

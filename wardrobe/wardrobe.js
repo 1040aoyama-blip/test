@@ -203,6 +203,11 @@
       || a.name.localeCompare(b.name, 'ja');
   }
 
+  // 登録順（古いものが先）。登録日時のない旧データは保存されている並びのまま先頭に置く
+  function sortByRegistration(items) {
+    return items.map((it, i) => [it, i]).sort(([a, i], [b, j]) => (a.createdAt || 0) - (b.createdAt || 0) || i - j).map(([it]) => it);
+  }
+
   // 季節で分けないときの並び: フォルダ順、同じフォルダの中は一番早い季節（春→夏→秋→冬→未設定）の順、さらに名前順。各アイテムは1回だけ
   function sortByFolder(items, categories, subcategories) {
     const byFolder = folderComparator(categories, subcategories);
@@ -303,7 +308,7 @@
 
   const api = {
     SEASONS, NO_SEASON, NO_CATEGORY, DEFAULT_CATEGORIES, DEFAULT_SUBCATEGORIES, DEFAULT_COLORS,
-    normalizeItem, validateItem, buildFolderTree, matchesFilter, groupBySeason, folderComparator, sortByFolder, parseState, emptyState, sortSeasons,
+    normalizeItem, validateItem, buildFolderTree, matchesFilter, groupBySeason, folderComparator, sortByFolder, sortByRegistration, parseState, emptyState, sortSeasons,
     addFolder, renameFolder, deleteFolder, moveFolder, countInFolder,
   };
 

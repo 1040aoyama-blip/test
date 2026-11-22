@@ -203,6 +203,14 @@
       || a.name.localeCompare(b.name, 'ja');
   }
 
+  // 季節で分けないときの並び: フォルダ順、同じフォルダの中は一番早い季節（春→夏→秋→冬→未設定）の順、さらに名前順。各アイテムは1回だけ
+  function sortByFolder(items, categories, subcategories) {
+    const byFolder = folderComparator(categories, subcategories);
+    const first = (it) => (it.seasons.length ? SEASONS.indexOf(it.seasons[0]) : SEASONS.length);
+    const sameFolder = (a, b) => a.category === b.category && a.subcategory === b.subcategory;
+    return items.slice().sort((a, b) => (sameFolder(a, b) ? first(a) - first(b) || a.name.localeCompare(b.name, 'ja') : byFolder(a, b)));
+  }
+
   // compare を渡すと各季節の中をその順に並べる（省略時は名前順）
   function groupBySeason(items, compare) {
     const sections = SEASONS.map((s) => ({ season: s, items: [] }));
@@ -218,12 +226,6 @@
     const result = [...sections, none].filter((sec) => sec.items.length);
     for (const sec of result) sec.items.sort(order);
     return result;
-  }
-
-  // 季節で分けないときの並び: 一番早い季節（春→夏→秋→冬→未設定）の順、同じなら名前順。各アイテムは1回だけ
-  function sortBySeason(items) {
-    const first = (it) => (it.seasons.length ? SEASONS.indexOf(it.seasons[0]) : SEASONS.length);
-    return items.slice().sort((a, b) => first(a) - first(b) || a.name.localeCompare(b.name, 'ja'));
   }
 
   function parseState(raw) {
@@ -301,7 +303,7 @@
 
   const api = {
     SEASONS, NO_SEASON, NO_CATEGORY, DEFAULT_CATEGORIES, DEFAULT_SUBCATEGORIES, DEFAULT_COLORS,
-    normalizeItem, validateItem, buildFolderTree, matchesFilter, groupBySeason, folderComparator, sortBySeason, parseState, emptyState, sortSeasons,
+    normalizeItem, validateItem, buildFolderTree, matchesFilter, groupBySeason, folderComparator, sortByFolder, parseState, emptyState, sortSeasons,
     addFolder, renameFolder, deleteFolder, moveFolder, countInFolder,
   };
 

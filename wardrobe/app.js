@@ -312,7 +312,7 @@
       return;
     }
     if (!splitBySeason) {
-      list.replaceChildren(el('div', { class: 'grid' }, W.sortBySeason(items).map(card)));
+      list.replaceChildren(el('div', { class: 'grid' }, W.sortByFolder(items, state.categories, state.subcategories).map(card)));
       return;
     }
     list.replaceChildren(...W.groupBySeason(items, W.folderComparator(state.categories, state.subcategories)).map((sec) => el('section', { class: 'season', 'data-season': sec.season },

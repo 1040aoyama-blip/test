@@ -92,7 +92,7 @@ test('旧形式のデータは大カテゴリーの中へ移行する', () => {
       { id: '4', name: 'キャップ', category: '帽子', subcategory: 'キャップ' },
     ],
   });
-  assert.equal(s.layout, 'folders');
+  assert.equal(s.layout, 'folders-2');
   assert.ok(s.categories.includes('帽子'));
   assert.ok(!s.categories.includes('ニット'));
   assert.ok(s.subcategories.ボトムス.includes('ショートパンツ'));
@@ -144,4 +144,16 @@ test('季節で分けない並びは、早い季節順・同じなら名前順�
     item('アンサンブル', 'トップス', ['春']),
   ]);
   assert.deepEqual(sorted.map((it) => it.name), ['アンサンブル', 'カーディガン', 'Tシャツ', 'ダウン', 'ベルト']);
+});
+
+test('スカートは既定のフォルダにない。以前の版で保存した空のスカートは取り除き、中身があれば残す', () => {
+  assert.ok(!W.emptyState().subcategories.ボトムス.includes('スカート'));
+  const base = { layout: 'folders', categories: ['ボトムス'], subcategories: { ボトムス: ['ジーンズ', 'スカート'] } };
+  const empty = W.parseState({ ...base, items: [{ id: '1', name: 'a', category: 'ボトムス', subcategory: 'ジーンズ' }] });
+  assert.deepEqual(empty.subcategories.ボトムス, ['ジーンズ']);
+  const used = W.parseState({ ...base, items: [{ id: '1', name: 'プリーツ', category: 'ボトムス', subcategory: 'スカート' }] });
+  assert.deepEqual(used.subcategories.ボトムス, ['ジーンズ', 'スカート']);
+  // 旧形式の既定カテゴリーに空のスカートがあっても作らない
+  const legacy = W.parseState({ categories: ['ニット', 'スカート'], items: [] });
+  assert.ok(!legacy.subcategories.ボトムス.includes('スカート'));
 });

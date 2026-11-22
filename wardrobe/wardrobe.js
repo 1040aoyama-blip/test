@@ -6,14 +6,15 @@
   const NO_SEASON = '季節未設定';
   const NO_CATEGORY = '未分類';
   // データ形式の目印。これがないデータは旧形式（フラットなカテゴリー）として移行する
-  const LAYOUT = 'folders';
+  // folders-2: 既定のサブフォルダから「スカート」を外した版
+  const LAYOUT = 'folders-2';
 
   // 大カテゴリー（フォルダ）とその中のサブフォルダ
   const DEFAULT_CATEGORIES = ['トップス', 'アウター', 'ボトムス', 'ワンピース', 'シューズ', '小物'];
   const DEFAULT_SUBCATEGORIES = {
     トップス: ['Tシャツ', 'シャツ', 'ニット', 'パーカー'],
     アウター: ['ジャケット', 'コート'],
-    ボトムス: ['ジーンズ', 'スラックス', 'コットンパンツ', 'スカート'],
+    ボトムス: ['ジーンズ', 'スラックス', 'コットンパンツ'],
   };
   // 旧形式のカテゴリー → 移行先の大カテゴリー
   const LEGACY_PARENT = {
@@ -219,11 +220,21 @@
         if (String(k).trim() && list.length) subcategories[String(k).trim()] = list;
       }
     }
-    if (data.layout !== LAYOUT) ({ categories, subcategories } = migrateToFolders(categories, subcategories, items));
+    if (data.layout === 'folders') removeEmptySkirt(subcategories, items);
+    else if (data.layout !== LAYOUT) ({ categories, subcategories } = migrateToFolders(categories, subcategories, items));
     const colors = Array.isArray(data.colors)
       ? data.colors.filter((c) => c && String(c.name || '').trim()).map((c) => ({ name: String(c.name).trim(), hex: /^#[0-9a-fA-F]{6}$/.test(c.hex) ? c.hex : '#cccccc' }))
       : DEFAULT_COLORS.map((c) => ({ ...c }));
     return { layout: LAYOUT, items, categories, subcategories, colors };
+  }
+
+  // 「ボトムス › スカート」が空なら取り除く（アイテムが入っていれば残す）
+  function removeEmptySkirt(subcategories, items) {
+    const list = subcategories['ボトムス'];
+    if (!list || !list.includes('スカート')) return;
+    if (items.some((it) => it.category === 'ボトムス' && it.subcategory === 'スカート')) return;
+    subcategories['ボトムス'] = list.filter((c) => c !== 'スカート');
+    if (!subcategories['ボトムス'].length) delete subcategories['ボトムス'];
   }
 
   // 旧形式（Tシャツ・ニット・パンツなどが同列のカテゴリー）を、大カテゴリー＋サブフォルダの形に移す。
@@ -240,7 +251,8 @@
     for (const c of used) {
       const parent = LEGACY_PARENT[c];
       if (c === 'パンツ') for (const sub of oldSubcategories[c] || []) addChild(parent, sub);
-      else if (parent) addChild(parent, c);
+      // 中身のない旧カテゴリーは、既定のサブフォルダにあるものだけ残す（例: 空のスカートは作らない）
+      else if (parent) { if (items.some((it) => it.category === c)) addChild(parent, c); }
       else {
         if (!categories.includes(c)) categories.push(c);
         for (const sub of oldSubcategories[c] || []) addChild(c, sub);
@@ -254,6 +266,7 @@
       } else {
         if (it.subcategory && !it.tags.includes(it.subcategory)) it.tags.push(it.subcategory);
         it.subcategory = it.category;
+        addChild(parent, it.category);
       }
       it.category = parent;
     }

@@ -182,7 +182,29 @@
 
   // 春→夏→秋→冬→季節未設定 の順のセクションに分ける。
   // 複数の季節を持つアイテムはそれぞれの季節に表示する。
-  function groupBySeason(items) {
+  // フォルダ一覧の並び順（大カテゴリー → サブフォルダ）で比べる。同じ場所なら名前順。
+  // 一覧にない分類は後ろ、未分類は最後。サブフォルダなし（大カテゴリー直下）はそのサブフォルダ群の後ろ
+  function folderComparator(categories, subcategories) {
+    const big = (it) => {
+      if (!it.category) return Infinity;
+      const i = categories.indexOf(it.category);
+      return i < 0 ? categories.length : i;
+    };
+    const sub = (it) => {
+      const list = (subcategories || {})[it.category] || [];
+      if (!it.subcategory) return list.length + 1;
+      const i = list.indexOf(it.subcategory);
+      return i < 0 ? list.length : i;
+    };
+    return (a, b) => big(a) - big(b)
+      || (big(a) === categories.length && a.category !== b.category ? a.category.localeCompare(b.category, 'ja') : 0)
+      || sub(a) - sub(b)
+      || (a.subcategory !== b.subcategory ? a.subcategory.localeCompare(b.subcategory, 'ja') : 0)
+      || a.name.localeCompare(b.name, 'ja');
+  }
+
+  // compare を渡すと各季節の中をその順に並べる（省略時は名前順）
+  function groupBySeason(items, compare) {
     const sections = SEASONS.map((s) => ({ season: s, items: [] }));
     const none = { season: NO_SEASON, items: [] };
     for (const it of items) {
@@ -192,9 +214,9 @@
       }
       for (const s of it.seasons) sections[SEASONS.indexOf(s)].items.push(it);
     }
-    const byName = (a, b) => a.name.localeCompare(b.name, 'ja');
+    const order = compare || ((a, b) => a.name.localeCompare(b.name, 'ja'));
     const result = [...sections, none].filter((sec) => sec.items.length);
-    for (const sec of result) sec.items.sort(byName);
+    for (const sec of result) sec.items.sort(order);
     return result;
   }
 
@@ -279,7 +301,7 @@
 
   const api = {
     SEASONS, NO_SEASON, NO_CATEGORY, DEFAULT_CATEGORIES, DEFAULT_SUBCATEGORIES, DEFAULT_COLORS,
-    normalizeItem, validateItem, buildFolderTree, matchesFilter, groupBySeason, sortBySeason, parseState, emptyState, sortSeasons,
+    normalizeItem, validateItem, buildFolderTree, matchesFilter, groupBySeason, folderComparator, sortBySeason, parseState, emptyState, sortSeasons,
     addFolder, renameFolder, deleteFolder, moveFolder, countInFolder,
   };
 

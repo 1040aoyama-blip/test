@@ -315,7 +315,7 @@
       list.replaceChildren(el('div', { class: 'grid' }, W.sortBySeason(items).map(card)));
       return;
     }
-    list.replaceChildren(...W.groupBySeason(items).map((sec) => el('section', { class: 'season', 'data-season': sec.season },
+    list.replaceChildren(...W.groupBySeason(items, W.folderComparator(state.categories, state.subcategories)).map((sec) => el('section', { class: 'season', 'data-season': sec.season },
       el('h2', null, sec.season, el('span', { class: 'count' }, `${sec.items.length}点`)),
       el('div', { class: 'grid' }, sec.items.map(card)),
     )));

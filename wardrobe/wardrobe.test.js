@@ -174,8 +174,8 @@ test('季節で分けない表示は、フォルダ順→同じフォルダ内�
   assert.deepEqual(sorted.map((it) => it.name), ['白T', 'ダウン', '501', 'リネン', 'ウール']);
 });
 
-test('登録順は登録日時の古い順。日時のない旧データは保存順のまま先頭', () => {
+test('登録順は新しいものが先。日時のない旧データは末尾（保存順の後ろほど新しい）', () => {
   const at = (name, createdAt) => W.normalizeItem({ id: name, name, createdAt });
   const sorted = W.sortByRegistration([at('C', 300), at('旧1', 0), at('A', 100), at('旧2', 0), at('B', 200)]);
-  assert.deepEqual(sorted.map((it) => it.name), ['旧1', '旧2', 'A', 'B', 'C']);
+  assert.deepEqual(sorted.map((it) => it.name), ['C', 'B', 'A', '旧2', '旧1']);
 });

@@ -203,9 +203,9 @@
       || a.name.localeCompare(b.name, 'ja');
   }
 
-  // 登録順（古いものが先）。登録日時のない旧データは保存されている並びのまま先頭に置く
+  // 新しく登録したものが先。登録日時のない旧データは末尾（保存されている並びの後ろのものほど新しいとみなす）
   function sortByRegistration(items) {
-    return items.map((it, i) => [it, i]).sort(([a, i], [b, j]) => (a.createdAt || 0) - (b.createdAt || 0) || i - j).map(([it]) => it);
+    return items.map((it, i) => [it, i]).sort(([a, i], [b, j]) => (b.createdAt || 0) - (a.createdAt || 0) || j - i).map(([it]) => it);
   }
 
   // 季節で分けないときの並び: フォルダ順、同じフォルダの中は一番早い季節（春→夏→秋→冬→未設定）の順、さらに名前順。各アイテムは1回だけ

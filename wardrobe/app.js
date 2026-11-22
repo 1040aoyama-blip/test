@@ -7,7 +7,7 @@
   const SEASON_COLORS = { 春: 'var(--spring)', 夏: 'var(--summer)', 秋: 'var(--autumn)', 冬: 'var(--winter)' };
 
   let state = load();
-  let view = { folder: '', color: '', query: '' }; // folder: '' = すべてのアイテム、W.UNFILED = 未分類、それ以外はフォルダ ID
+  let view = { folder: '', season: '', color: '', query: '' }; // folder: '' = すべてのアイテム、W.UNFILED = 未分類、それ以外はフォルダ ID
   let draft = null; // 編集中のアイテム
 
   // ---------- 永続化 ----------
@@ -278,8 +278,10 @@
     const node = here ? findNode(tree.folders, view.folder) : null;
 
     renderSidebar(tree);
-    // 「すべてのアイテム」は登録順の一覧で固定なので、季節スイッチは出さない
-    $('season-switch-label').hidden = !view.folder;
+    // 「すべてのアイテム」は登録順の一覧で固定なので、並び順と季節スイッチは出さない
+    $('view-controls').hidden = !view.folder;
+    $('sort-folder').setAttribute('aria-pressed', String(sortMode === 'folder'));
+    $('sort-color').setAttribute('aria-pressed', String(sortMode === 'color'));
 
     // 現在地（パンくず）
     const total = state.items.filter((it) => W.matchesFilter(it, { folder: view.folder }, index)).length;
@@ -301,6 +303,14 @@
     $('subfolders').replaceChildren(...subs.map((c) => el('button', {
       class: 'chip', onclick: () => selectFolder(c.id),
     }, icon('sub'), c.name, el('span', { class: 'count' }, String(c.count)))));
+
+    $('season-filter').replaceChildren(
+      el('button', { class: 'chip', 'aria-pressed': String(!view.season), onclick: () => { view.season = ''; render(); } }, 'すべての季節'),
+      ...[...W.SEASONS, W.NO_SEASON].map((s) => el('button', {
+        class: 'chip', 'aria-pressed': String(view.season === s),
+        onclick: () => { view.season = view.season === s ? '' : s; render(); },
+      }, SEASON_COLORS[s] ? el('span', { class: 'swatch', style: `background:${SEASON_COLORS[s]}` }) : null, s)),
+    );
 
     $('color-filter').replaceChildren(
       el('button', { class: 'chip', 'aria-pressed': String(!view.color), onclick: () => { view.color = ''; render(); } }, 'すべての色'),
@@ -340,14 +350,31 @@
       list.replaceChildren(el('div', { class: 'grid' }, W.sortByRegistration(items).map((it) => card(it, ctx))));
       return;
     }
+    const colorNames = state.colors.map((c) => c.name);
     if (!splitBySeason) {
-      list.replaceChildren(el('div', { class: 'grid' }, W.sortByFolder(items, index).map((it) => card(it, ctx))));
+      const sorted = sortMode === 'color' ? W.sortByColor(items, index, colorNames) : W.sortByFolder(items, index);
+      list.replaceChildren(el('div', { class: 'grid' }, sorted.map((it) => card(it, ctx))));
       return;
     }
-    list.replaceChildren(...W.groupBySeason(items, W.folderComparator(index)).map((sec) => el('section', { class: 'season', 'data-season': sec.season },
+    const compare = sortMode === 'color' ? W.colorComparator(index, colorNames) : W.folderComparator(index);
+    // 季節で絞り込んでいるときは、その季節の見出しだけを出す
+    const sections = W.groupBySeason(items, compare).filter((sec) => !view.season || sec.season === view.season);
+    list.replaceChildren(...sections.map((sec) => el('section', { class: 'season', 'data-season': sec.season },
       el('h2', null, sec.season, el('span', { class: 'count' }, `${sec.items.length}点`)),
       el('div', { class: 'grid' }, sec.items.map((it) => card(it, ctx))),
     )));
+  }
+
+  // 並び順（フォルダ順 / 色順）。この端末のブラウザに記憶
+  const SORT_KEY = 'wardrobe-sort';
+  let sortMode = 'folder';
+  try { if (localStorage.getItem(SORT_KEY) === 'color') sortMode = 'color'; } catch (e) { /* 無視 */ }
+  for (const [btn, mode] of [['sort-folder', 'folder'], ['sort-color', 'color']]) {
+    $(btn).addEventListener('click', () => {
+      sortMode = mode;
+      try { localStorage.setItem(SORT_KEY, mode); } catch (e) { /* 無視 */ }
+      render();
+    });
   }
 
   // 季節ごとに分けて表示するか（この端末のブラウザに記憶）

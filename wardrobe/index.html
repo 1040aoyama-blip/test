@@ -39,15 +39,22 @@
       <p id="status" class="status" role="status" hidden></p>
       <div class="title-row">
         <h2 id="folder-title" class="folder-title"></h2>
-        <label class="switch" id="season-switch-label">
-          <input id="season-switch" type="checkbox" role="switch" checked>
-          <span class="track" aria-hidden="true"></span>
-          季節ごとに分ける
-        </label>
+        <div class="view-controls" id="view-controls">
+          <div class="segmented" role="group" aria-label="並び順">
+            <button type="button" id="sort-folder" aria-pressed="true">フォルダ順</button>
+            <button type="button" id="sort-color" aria-pressed="false">色順</button>
+          </div>
+          <label class="switch">
+            <input id="season-switch" type="checkbox" role="switch" checked>
+            <span class="track" aria-hidden="true"></span>
+            季節ごとに分ける
+          </label>
+        </div>
       </div>
       <div id="subfolders" class="chips subfolders" aria-label="サブフォルダ" hidden></div>
       <div class="toolbar">
         <input id="search" type="search" placeholder="名前・タグ・メモで検索">
+        <div id="season-filter" class="chips" aria-label="季節で絞り込み"></div>
         <div id="color-filter" class="chips" aria-label="色で絞り込み"></div>
       </div>
 

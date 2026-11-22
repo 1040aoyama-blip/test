@@ -219,6 +219,7 @@
     } else if (f.folder && !isInFolder(index, item.folder, f.folder)) {
       return false;
     }
+    if (f.season === NO_SEASON ? item.seasons.length > 0 : f.season && !item.seasons.includes(f.season)) return false;
     if (f.color && !item.colors.includes(f.color)) return false;
     if (f.query) {
       const q = f.query.trim().toLowerCase();
@@ -247,6 +248,28 @@
   }
   function folderComparator(index) {
     return (a, b) => compareKeys(folderKey(index, a), folderKey(index, b)) || a.name.localeCompare(b.name, 'ja');
+  }
+
+  // 色順: 色の一覧（色の管理の並び）で、アイテムの1つ目の色の位置。色の一覧にない色は後ろ、色なしは最後
+  function colorRank(colorNames, it) {
+    if (!it.colors.length) return colorNames.length + 1;
+    const i = colorNames.indexOf(it.colors[0]);
+    return i < 0 ? colorNames.length : i;
+  }
+  // 季節ごとの表示で、各季節の中を色順に並べる（同じ色ならフォルダ順 → 名前順）
+  function colorComparator(index, colorNames) {
+    const byFolder = folderComparator(index);
+    return (a, b) => colorRank(colorNames, a) - colorRank(colorNames, b)
+      || (a.colors[0] || '').localeCompare(b.colors[0] || '', 'ja')
+      || byFolder(a, b);
+  }
+  // 季節で分けないときの色順: 色 → フォルダ順 → 早い季節順 → 名前順
+  function sortByColor(items, index, colorNames) {
+    const first = (it) => (it.seasons.length ? SEASONS.indexOf(it.seasons[0]) : SEASONS.length);
+    return items.slice().sort((a, b) => colorRank(colorNames, a) - colorRank(colorNames, b)
+      || (a.colors[0] || '').localeCompare(b.colors[0] || '', 'ja')
+      || compareKeys(folderKey(index, a), folderKey(index, b))
+      || first(a) - first(b) || a.name.localeCompare(b.name, 'ja'));
   }
 
   // 季節で分けないときの並び: フォルダ順、同じフォルダの中は一番早い季節（春→夏→秋→冬→未設定）の順、さらに名前順。各アイテムは1回だけ
@@ -410,7 +433,7 @@
     normalizeItem, validateItem, sortSeasons,
     indexFolders, isInFolder, buildFolderTree, countInFolder, countSubfolders,
     addFolder, renameFolder, relocateFolder, moveFolder, deleteFolder,
-    matchesFilter, folderComparator, sortByFolder, sortByRegistration, groupBySeason,
+    matchesFilter, folderComparator, colorComparator, sortByFolder, sortByColor, sortByRegistration, groupBySeason,
     parseState, emptyState,
   };
 

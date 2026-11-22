@@ -49,6 +49,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 body {
   margin: 0;
   background: var(--bg);
@@ -164,6 +165,10 @@ main {
 }
 .layout main { padding-left: 8px; }
 .title-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; margin: 0 0 12px; }
+.view-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.segmented { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; padding: 2px; background: var(--surface); }
+.segmented button { border: none; background: none; border-radius: 999px; padding: 3px 12px; font-size: .85rem; color: var(--muted); }
+.segmented button[aria-pressed=true] { background: var(--accent); color: var(--accent-text); }
 .switch { display: inline-flex; align-items: center; gap: 8px; font-size: .9rem; color: var(--muted); cursor: pointer; user-select: none; white-space: nowrap; }
 .switch input { position: absolute; opacity: 0; width: 1px; height: 1px; }
 .switch .track { width: 36px; height: 20px; border-radius: 999px; background: var(--border); position: relative; transition: background .15s; flex: none; }
@@ -274,6 +279,8 @@ dialog h3 { margin: 8px 0 0; font-size: .95rem; }
 @media (max-width: 520px) {
   .topbar h1 { font-size: 1.05rem; }
   .grid { grid-template-columns: 1fr; }
+  #season-filter { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+  #season-filter .chip { flex: none; }
   #subfolders { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
   #subfolders .chip { flex: none; }
   #color-filter { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }

@@ -221,3 +221,32 @@ test('前の前の版（folders）で保存した空のスカートは取り除�
   const used = W.parseState({ ...base, items: [{ id: '1', name: 'プリーツ', category: 'ボトムス', subcategory: 'スカート' }] });
   assert.equal(used.items[0].folder, idOf(used, 'ボトムス', 'スカート'));
 });
+
+test('季節で絞り込む（季節未設定も選べる）', () => {
+  const index = W.indexFolders([]);
+  const a = item('カーディガン', '', ['春', '秋']);
+  const b = item('ベルト');
+  assert.ok(W.matchesFilter(a, { season: '秋' }, index));
+  assert.ok(!W.matchesFilter(a, { season: '夏' }, index));
+  assert.ok(!W.matchesFilter(a, { season: W.NO_SEASON }, index));
+  assert.ok(W.matchesFilter(b, { season: W.NO_SEASON }, index));
+  assert.ok(W.matchesFilter(b, {}, index));
+});
+
+test('色順: 季節の中を色の一覧の順（1つ目の色）で並べ、同じ色ならフォルダ順・名前順。色なしは最後', () => {
+  const s = W.emptyState();
+  const f = (...p) => ensure(s, ...p);
+  const index = W.indexFolders(s.folders);
+  const colors = ['白', '黒', 'ネイビー'];
+  const list = [
+    item('黒スラックス', f('ボトムス', 'スラックス'), ['春'], ['黒']),
+    item('紺ジャケット', f('アウター', 'ジャケット'), ['春'], ['ネイビー', '白']),
+    item('色なし', f('トップス'), ['春']),
+    item('黒T', f('トップス', 'Tシャツ'), ['春'], ['黒', '白']),
+    item('白シャツ', f('トップス', 'シャツ'), ['春'], ['白']),
+    item('一覧にない色', f('トップス'), ['春'], ['からし色']),
+  ];
+  const secs = W.groupBySeason(list, W.colorComparator(index, colors));
+  assert.deepEqual(names(secs[0].items), ['白シャツ', '黒T', '黒スラックス', '紺ジャケット', '一覧にない色', '色なし']);
+  assert.deepEqual(names(W.sortByColor(list, index, colors)), ['白シャツ', '黒T', '黒スラックス', '紺ジャケット', '一覧にない色', '色なし']);
+});

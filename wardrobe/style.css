@@ -209,8 +209,12 @@ button.chip[aria-pressed=true] { background: var(--accent); color: var(--accent-
 .card .meta { display: flex; flex-wrap: wrap; gap: 4px; font-size: .8rem; }
 .card .meta .chip { font-size: .78rem; padding: 1px 8px; }
 .card .memo { color: var(--muted); font-size: .85rem; white-space: pre-wrap; }
-.season-dots { display: inline-flex; gap: 2px; }
-.season-dot { font-size: .72rem; padding: 0 5px; border-radius: 4px; color: #fff; }
+.meta.attrs { align-items: center; }
+.season-slots { display: inline-grid; grid-template-columns: repeat(4, 1.75em); gap: 2px; flex: none; margin-right: 4px; }
+.season-dot {
+  display: grid; place-items: center; height: 1.75em; font-size: .72rem; border-radius: 4px; color: #fff;
+}
+.season-dot.vacant { background: transparent; }
 
 .empty { text-align: center; color: var(--muted); padding: 48px 16px; }
 

@@ -338,11 +338,17 @@
       : !view.subcategory ? it.subcategory : '';
     return el('button', { class: 'card', type: 'button', onclick: () => openItem(it), title: 'クリックで編集' },
       el('span', { class: 'name' }, it.name),
-      el('span', { class: 'meta' },
+      (where || it.tags.length) ? el('span', { class: 'meta' },
         where && el('span', { class: 'chip folder-chip' }, where),
-        it.seasons.length > 0 && el('span', { class: 'season-dots' }, it.seasons.map((s) => el('span', { class: 'season-dot', style: `background:${SEASON_COLORS[s]}` }, s))),
-        it.colors.map((c) => el('span', { class: 'chip' }, swatch(c), c)),
         it.tags.map((t) => el('span', { class: 'chip' }, '#' + t)),
+      ) : null,
+      // 下の段: 季節は春夏秋冬の4枠を常に確保し、色はその後ろから始める（カード間で縦位置をそろえる）
+      el('span', { class: 'meta attrs' },
+        el('span', { class: 'season-slots', 'aria-label': it.seasons.length ? '季節: ' + it.seasons.join('・') : '季節未設定' },
+          W.SEASONS.map((s) => it.seasons.includes(s)
+            ? el('span', { class: 'season-dot', style: `background:${SEASON_COLORS[s]}`, 'aria-hidden': 'true' }, s)
+            : el('span', { class: 'season-dot vacant', 'aria-hidden': 'true' }))),
+        it.colors.map((c) => el('span', { class: 'chip' }, swatch(c), c)),
       ),
       it.memo && el('span', { class: 'memo' }, it.memo),
     );

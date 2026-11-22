@@ -20,6 +20,8 @@
 
 データはブラウザの localStorage に保存されます。別の端末やブラウザに移すときはエクスポート／インポートを使ってください。
 
+claude.ai の Artifact として公開した場合は、アカウントごとの非公開ストレージに保存され、スマホとPCで同じデータを使えます（`app.js` の `connectRemote`）。公開用の1ファイル版は、`index.html` に `style.css`・`wardrobe.js`・`app.js` を埋め込んで作ります。
+
 ## ファイル構成
 
 | ファイル | 内容 |

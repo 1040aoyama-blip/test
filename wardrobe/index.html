@@ -24,6 +24,7 @@
   </header>
 
   <main>
+    <p id="status" class="status" role="status" hidden></p>
     <div class="toolbar">
       <input id="search" type="search" placeholder="名前・タグ・メモで検索">
       <div id="color-filter" class="chips" aria-label="色で絞り込み"></div>
@@ -113,6 +114,18 @@
       <div class="dialog-actions">
         <span class="spacer"></span>
         <button type="button" id="s-close" class="primary">閉じる</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 確認ダイアログ -->
+  <dialog id="confirm-dialog" class="confirm">
+    <div class="settings">
+      <p id="c-message"></p>
+      <div class="dialog-actions">
+        <span class="spacer"></span>
+        <button type="button" id="c-cancel">キャンセル</button>
+        <button type="button" id="c-ok" class="primary">OK</button>
       </div>
     </div>
   </dialog>

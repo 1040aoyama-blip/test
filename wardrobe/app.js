@@ -11,6 +11,10 @@
   let draft = null; // 編集中のアイテム
 
   // ---------- 永続化 ----------
+  // 通常はブラウザの localStorage に保存する。
+  // claude.ai で公開したページでは、アカウントごとの非公開ストレージ（db）に保存し、端末間で同期する。
+  const remote = { ref: null, loading: false, timer: null, writing: false, again: false, lastJSON: '' };
+
   function load() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -22,8 +26,97 @@
   }
   function save() {
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) { console.warn('保存に失敗しました', e); }
+    if (remote.ref) {
+      clearTimeout(remote.timer);
+      remote.timer = setTimeout(flushRemote, 400);
+    }
+  }
+  async function flushRemote() {
+    if (remote.writing) { remote.again = true; return; }
+    remote.writing = true;
+    const json = JSON.stringify(state);
+    try {
+      if (json !== remote.lastJSON) {
+        await remote.ref.set(JSON.parse(json));
+        remote.lastJSON = json;
+      }
+      setStatus('');
+    } catch (e) {
+      setStatus(e && e.code === 'quota_exceeded' ? '保存容量の上限に達しました。不要なアイテムを削除してください。' : '保存できませんでした。通信状態を確認してください。');
+    }
+    remote.writing = false;
+    if (remote.again) { remote.again = false; flushRemote(); }
+  }
+  function setStatus(msg) {
+    $('status').textContent = msg;
+    $('status').hidden = !msg;
+  }
+  async function connectRemote() {
+    if (!window.claude || typeof window.claude.use !== 'function') return;
+    try {
+      const [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
+      const uid = db && user ? await user.id() : null;
+      if (!uid) return;
+      remote.ref = db.doc('data/users/' + uid + '/wardrobe');
+    } catch (e) {
+      console.warn('同期ストレージに接続できませんでした', e);
+      return;
+    }
+    remote.loading = true;
+    render();
+    const timeout = setTimeout(() => setStatus('データを読み込めていません。通信状態を確認してください。'), 10000);
+    remote.ref.onSnapshot((snap) => {
+      if (snap.metadata.hasPendingWrites) return;
+      if (!snap.exists) {
+        if (snap.metadata.fromCache) return;
+        clearTimeout(timeout);
+        remote.loading = false;
+        // まだ何も保存されていない: この端末のデータがあれば引き継ぐ
+        if (state.items.length) save();
+        render();
+        return;
+      }
+      if (!snap.metadata.fromCache) { clearTimeout(timeout); setStatus(''); }
+      remote.loading = false;
+      try {
+        const next = W.parseState(snap.data());
+        const json = JSON.stringify(next);
+        remote.lastJSON = json;
+        if (json !== JSON.stringify(state)) {
+          state = next;
+          try { localStorage.setItem(STORAGE_KEY, json); } catch (e) { /* 無視 */ }
+        }
+      } catch (e) {
+        console.warn('保存データの形式が不正です', e);
+      }
+      render();
+    }, () => {
+      clearTimeout(timeout);
+      remote.loading = false;
+      setStatus('同期が切れました。ページを開き直すと再接続します。');
+      render();
+    });
   }
   function commit() { save(); render(); }
+
+  // ---------- 確認ダイアログ（confirm/alert の代わり） ----------
+  function ask(message, { ok = 'OK', cancel = 'キャンセル', danger = false } = {}) {
+    return new Promise((resolve) => {
+      const dlg = $('confirm-dialog');
+      $('c-message').textContent = message;
+      $('c-ok').textContent = ok;
+      $('c-ok').className = danger ? 'danger-solid' : 'primary';
+      $('c-cancel').hidden = !cancel;
+      $('c-cancel').textContent = cancel || '';
+      const done = (v) => { dlg.close(); resolve(v); };
+      $('c-ok').onclick = () => done(true);
+      $('c-cancel').onclick = () => done(false);
+      dlg.oncancel = (e) => { e.preventDefault(); done(false); };
+      dlg.showModal();
+      $('c-ok').focus();
+    });
+  }
+  const notice = (message) => ask(message, { cancel: null });
 
   // ---------- 小さなDOMヘルパー ----------
   function el(tag, attrs, ...children) {
@@ -63,10 +156,17 @@
 
     const items = state.items.filter((it) => W.matchesFilter(it, view));
     const list = $('list');
+    if (!state.items.length && remote.loading) {
+      list.replaceChildren(el('p', { class: 'empty' }, '読み込み中…'));
+      return;
+    }
     if (!state.items.length) {
       list.replaceChildren(el('div', { class: 'empty' },
-        el('p', null, 'まだアイテムがありません。'),
-        el('button', { class: 'primary', onclick: () => openItem() }, '＋ 最初のアイテムを追加'),
+        el('p', null, 'まだアイテムがありません。登録した洋服はカテゴリーごとのタブに、春・夏・秋・冬の順で並びます。'),
+        el('div', { class: 'empty-actions' },
+          el('button', { class: 'primary', onclick: () => openItem() }, '＋ 最初のアイテムを追加'),
+          el('button', { onclick: loadSample }, 'サンプルで試す'),
+        ),
       ));
       return;
     }
@@ -187,8 +287,8 @@
     commit();
   });
   $('f-cancel').addEventListener('click', () => $('item-dialog').close());
-  $('f-delete').addEventListener('click', () => {
-    if (!confirm(`「${draft.name}」を削除しますか？`)) return;
+  $('f-delete').addEventListener('click', async () => {
+    if (!(await ask(`「${draft.name}」を削除しますか？`, { ok: '削除', danger: true }))) return;
     state.items = state.items.filter((x) => x.id !== draft.id);
     $('item-dialog').close();
     commit();
@@ -214,16 +314,16 @@
     [cats[i], cats[i + d]] = [cats[i + d], cats[i]];
     commit(); renderSettings();
   }
-  function removeCategory(c) {
+  async function removeCategory(c) {
     const n = state.items.filter((it) => it.category === c).length;
-    if (n && !confirm(`「${c}」は${n}点のアイテムで使われています。削除すると、それらは「${W.NO_CATEGORY}」になります。よろしいですか？`)) return;
+    if (n && !(await ask(`「${c}」は${n}点のアイテムで使われています。削除すると、それらは「${W.NO_CATEGORY}」になります。よろしいですか？`, { ok: '削除', danger: true }))) return;
     state.categories = state.categories.filter((x) => x !== c);
     for (const it of state.items) if (it.category === c) it.category = '';
     commit(); renderSettings();
   }
-  function removeColor(name) {
+  async function removeColor(name) {
     const n = state.items.filter((it) => it.colors.includes(name)).length;
-    if (n && !confirm(`「${name}」は${n}点のアイテムで使われています。削除するとアイテムからも外れます。よろしいですか？`)) return;
+    if (n && !(await ask(`「${name}」は${n}点のアイテムで使われています。削除するとアイテムからも外れます。よろしいですか？`, { ok: '削除', danger: true }))) return;
     state.colors = state.colors.filter((x) => x.name !== name);
     for (const it of state.items) it.colors = it.colors.filter((x) => x !== name);
     commit(); renderSettings();
@@ -244,26 +344,36 @@
   $('btn-add').addEventListener('click', () => openItem());
   $('search').addEventListener('input', (e) => { view.query = e.target.value; render(); });
 
-  $('btn-export').addEventListener('click', () => {
-    const blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
-    const a = el('a', { href: URL.createObjectURL(blob), download: `wardrobe-${new Date().toISOString().slice(0, 10)}.json` });
+  $('btn-export').addEventListener('click', async () => {
+    closeMenus();
+    const json = JSON.stringify(state, null, 2);
+    const filename = `wardrobe-${new Date().toISOString().slice(0, 10)}.json`;
+    const downloads = window.claude && window.claude.use ? await window.claude.use('downloads').catch(() => null) : null;
+    if (downloads) {
+      try { await downloads.save({ filename, data: json }); } catch (e) { /* 閲覧者がキャンセル */ }
+      return;
+    }
+    const blob = new Blob([json], { type: 'application/json' });
+    const a = el('a', { href: URL.createObjectURL(blob), download: filename });
     document.body.append(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   });
   $('file-import').addEventListener('change', async (e) => {
+    closeMenus();
     const file = e.target.files[0];
     e.target.value = '';
     if (!file) return;
     try {
       const next = W.parseState(await file.text());
-      if (!confirm(`${next.items.length}点のアイテムを読み込みます。現在のデータは置き換えられます。よろしいですか？`)) return;
+      if (!(await ask(`${next.items.length}点のアイテムを読み込みます。現在のデータは置き換えられます。よろしいですか？`, { ok: '読み込む' }))) return;
       state = next; commit();
     } catch (err) {
-      alert('読み込めませんでした: ' + err.message);
+      notice('読み込めませんでした: ' + err.message);
     }
   });
-  $('btn-sample').addEventListener('click', () => {
-    if (state.items.length && !confirm('現在のデータをサンプルデータで置き換えます。よろしいですか？')) return;
+  $('btn-sample').addEventListener('click', () => { closeMenus(); loadSample(); });
+  async function loadSample() {
+    if (state.items.length && !(await ask('現在のデータをサンプルデータで置き換えます。よろしいですか？', { ok: '置き換える', danger: true }))) return;
     const s = W.emptyState();
     const add = (name, category, seasons, colors, tags = [], memo = '') => s.items.push(W.normalizeItem({ id: newId(), name, category, seasons, colors, tags, memo, createdAt: Date.now() }));
     add('ウールスラックス', 'スラックス', ['秋', '冬'], ['グレー'], ['仕事用']);
@@ -278,12 +388,15 @@
     add('ステンカラーコート', 'コート', ['秋', '冬'], ['ベージュ']);
     add('無地Tシャツ', 'Tシャツ', ['夏'], ['白', '黒']);
     state = s; commit();
+  }
+  function closeMenus() {
     for (const d of document.querySelectorAll('details.menu')) d.open = false;
-  });
+  }
   // メニュー外クリックで閉じる
   document.addEventListener('click', (e) => {
     for (const d of document.querySelectorAll('details.menu')) if (!d.contains(e.target)) d.open = false;
   });
 
   render();
+  connectRemote();
 })();

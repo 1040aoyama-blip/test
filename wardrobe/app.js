@@ -7,7 +7,7 @@
   const SEASON_COLORS = { 春: 'var(--spring)', 夏: 'var(--summer)', 秋: 'var(--autumn)', 冬: 'var(--winter)' };
 
   let state = load();
-  let view = { category: '', subcategory: '', color: '', query: '' }; // category '' = すべてのアイテム
+  let view = { folder: '', color: '', query: '' }; // folder: '' = すべてのアイテム、W.UNFILED = 未分類、それ以外はフォルダ ID
   let draft = null; // 編集中のアイテム
 
   // ---------- 永続化 ----------
@@ -156,13 +156,12 @@
   const newId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 
   // ---------- フォルダ一覧（サイドバー） ----------
-  const COLLAPSED_KEY = 'wardrobe-collapsed';
+  const COLLAPSED_KEY = 'wardrobe-collapsed-v2';
   let collapsed = new Set();
   try { collapsed = new Set(JSON.parse(localStorage.getItem(COLLAPSED_KEY) || '[]')); } catch (e) { /* 無視 */ }
-  function toggleCollapsed(name) {
-    if (collapsed.has(name)) collapsed.delete(name); else collapsed.add(name);
+  function setCollapsed(id, value) {
+    if (value) collapsed.add(id); else collapsed.delete(id);
     try { localStorage.setItem(COLLAPSED_KEY, JSON.stringify([...collapsed])); } catch (e) { /* 無視 */ }
-    render();
   }
 
   const SVG_NS = 'http://www.w3.org/2000/svg';
@@ -184,18 +183,22 @@
     svg.append(path);
     return svg;
   }
+  // 段が深くなっても名前が読めるよう、5段目からは字下げを小さくする
+  const indentPx = (depth) => (depth <= 4 ? depth * 16 : 64 + (depth - 4) * 6);
 
-  function selectFolder(category, subcategory = '') {
-    view.category = category;
-    view.subcategory = subcategory;
+  function selectFolder(id) {
+    view.folder = id;
+    // 選んだフォルダが閉じたフォルダの中にあれば開く
+    const info = folderIndex().get(id);
+    if (info) for (const pid of info.ids.slice(0, -1)) setCollapsed(pid, false);
     closeSidebar();
     render();
     window.scrollTo({ top: 0 });
   }
-  const isSelected = (category, subcategory = '') => view.category === category && view.subcategory === subcategory;
+  const folderIndex = () => W.indexFolders(state.folders);
 
-  function folderRow({ level, label, count, iconKind, selected, onSelect, caret, onEdit }) {
-    return el('div', { class: `folder-row level-${level}`, 'aria-current': selected ? 'true' : null },
+  function folderRow({ depth, label, count, iconKind, selected, onSelect, caret, onEdit }) {
+    return el('div', { class: 'folder-row', style: `padding-left:${indentPx(depth)}px`, 'aria-current': selected ? 'true' : null },
       caret || el('span', { class: 'caret-space' }),
       el('button', { type: 'button', class: 'folder-link', onclick: onSelect },
         icon(iconKind), el('span', { class: 'folder-name' }, label), el('span', { class: 'folder-count' }, count ? String(count) : '')),
@@ -203,33 +206,38 @@
     );
   }
 
-  function renderSidebar(tree) {
-    const rows = [el('li', null, folderRow({
-      level: 0, label: 'すべてのアイテム', count: tree.total, iconKind: 'all',
-      selected: isSelected(''), onSelect: () => selectFolder(''),
-    }))];
-    for (const f of tree.folders) {
-      const open = !collapsed.has(f.name);
+  function folderNodes(nodes, depth) {
+    return nodes.map((f) => {
+      const open = !collapsed.has(f.id);
       const caret = f.children.length
-        ? el('button', { type: 'button', class: 'caret', 'aria-expanded': String(open), 'aria-label': open ? `${f.name} を閉じる` : `${f.name} を開く`, onclick: () => toggleCollapsed(f.name) }, icon('caret'))
+        ? el('button', {
+          type: 'button', class: 'caret', 'aria-expanded': String(open),
+          'aria-label': open ? `${f.name} を閉じる` : `${f.name} を開く`,
+          onclick: () => { setCollapsed(f.id, open); render(); },
+        }, icon('caret'))
         : null;
-      rows.push(el('li', null,
+      return el('li', null,
         folderRow({
-          level: 1, label: f.name, count: f.count, iconKind: 'folder', caret,
-          selected: isSelected(f.name), onSelect: () => selectFolder(f.name),
-          onEdit: state.categories.includes(f.name) ? () => openFolder({ parent: '', name: f.name }) : null,
+          depth, label: f.name, count: f.count, iconKind: depth ? 'sub' : 'folder', caret,
+          selected: view.folder === f.id, onSelect: () => selectFolder(f.id), onEdit: () => openFolder({ id: f.id }),
         }),
-        f.children.length && open ? el('ul', { class: 'children' }, f.children.map((c) => el('li', null, folderRow({
-          level: 2, label: c.name, count: c.count, iconKind: 'sub',
-          selected: isSelected(f.name, c.name), onSelect: () => selectFolder(f.name, c.name),
-          onEdit: (state.subcategories[f.name] || []).includes(c.name) ? () => openFolder({ parent: f.name, name: c.name }) : null,
-        })))) : null,
-      ));
-    }
+        f.children.length && open ? el('ul', { class: 'children' }, folderNodes(f.children, depth + 1)) : null,
+      );
+    });
+  }
+
+  function renderSidebar(tree) {
+    const rows = [
+      el('li', null, folderRow({
+        depth: 0, label: 'すべてのアイテム', count: tree.total, iconKind: 'all',
+        selected: view.folder === '', onSelect: () => selectFolder(''),
+      })),
+      ...folderNodes(tree.folders, 0),
+    ];
     if (tree.uncategorized) {
       rows.push(el('li', null, folderRow({
-        level: 1, label: W.NO_CATEGORY, count: tree.uncategorized, iconKind: 'none',
-        selected: isSelected(W.NO_CATEGORY), onSelect: () => selectFolder(W.NO_CATEGORY),
+        depth: 0, label: W.NO_CATEGORY, count: tree.uncategorized, iconKind: 'none',
+        selected: view.folder === W.UNFILED, onSelect: () => selectFolder(W.UNFILED),
       })));
     }
     $('folder-tree').replaceChildren(el('ul', { class: 'tree' }, rows));
@@ -249,36 +257,50 @@
   $('sidebar-backdrop').addEventListener('click', closeSidebar);
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && $('sidebar').classList.contains('open')) closeSidebar(); });
 
+  // ツリーの中からフォルダ（集計つき）を探す
+  function findNode(nodes, id) {
+    for (const n of nodes) {
+      if (n.id === id) return n;
+      const hit = findNode(n.children, id);
+      if (hit) return hit;
+    }
+    return null;
+  }
+
   // ---------- 一覧描画 ----------
   function render() {
-    const tree = W.buildFolderTree(state.items, state.categories, state.subcategories);
+    const tree = W.buildFolderTree(state.items, state.folders);
+    const index = folderIndex();
     // 選択中のフォルダが消えていたら「すべてのアイテム」に戻す
-    const folder = tree.folders.find((f) => f.name === view.category);
-    if (view.category === W.NO_CATEGORY ? !tree.uncategorized : view.category && !folder) { view.category = ''; view.subcategory = ''; }
-    if (view.subcategory && !(folder && folder.children.some((c) => c.name === view.subcategory))) view.subcategory = '';
+    if (view.folder === W.UNFILED ? !tree.uncategorized : view.folder && !index.has(view.folder)) view.folder = '';
     if (view.color && !state.colors.some((c) => c.name === view.color)) view.color = '';
+    const here = index.get(view.folder);
+    const node = here ? findNode(tree.folders, view.folder) : null;
 
     renderSidebar(tree);
     // 「すべてのアイテム」は登録順の一覧で固定なので、季節スイッチは出さない
-    $('season-switch-label').hidden = !view.category;
+    $('season-switch-label').hidden = !view.folder;
 
     // 現在地（パンくず）
-    const total = state.items.filter((it) => W.matchesFilter(it, { category: view.category, subcategory: view.subcategory })).length;
+    const total = state.items.filter((it) => W.matchesFilter(it, { folder: view.folder }, index)).length;
     const crumbs = [el('button', { type: 'button', class: 'crumb', onclick: () => selectFolder('') }, 'すべてのアイテム')];
-    if (view.category) crumbs.push(el('span', { class: 'sep', 'aria-hidden': 'true' }, '›'), el('button', { type: 'button', class: 'crumb', onclick: () => selectFolder(view.category) }, view.category));
-    if (view.subcategory) crumbs.push(el('span', { class: 'sep', 'aria-hidden': 'true' }, '›'), el('span', { class: 'crumb' }, view.subcategory));
+    if (view.folder === W.UNFILED) crumbs.push(el('span', { class: 'sep', 'aria-hidden': 'true' }, '›'), el('span', { class: 'crumb' }, W.NO_CATEGORY));
+    if (here) {
+      here.path.forEach((name, i) => {
+        const id = here.ids[i];
+        crumbs.push(el('span', { class: 'sep', 'aria-hidden': 'true' }, '›'),
+          i === here.path.length - 1 ? el('span', { class: 'crumb' }, name) : el('button', { type: 'button', class: 'crumb', onclick: () => selectFolder(id) }, name));
+      });
+    }
     crumbs[crumbs.length - 1].setAttribute('aria-current', 'page');
     $('folder-title').replaceChildren(el('span', { class: 'crumbs' }, crumbs), el('span', { class: 'count' }, `${total}点`));
 
-    // 大カテゴリーを開いているときは、中のサブフォルダへすぐ切り替えられるようにする
-    const subs = folder && view.category !== W.NO_CATEGORY ? folder.children : [];
+    // 開いているフォルダのすぐ下の段へ切り替えるボタン
+    const subs = node ? node.children : [];
     $('subfolders').hidden = subs.length === 0;
-    $('subfolders').replaceChildren(...(subs.length ? [
-      el('button', { class: 'chip', 'aria-pressed': String(!view.subcategory), onclick: () => selectFolder(view.category) }, 'すべて', el('span', { class: 'count' }, String(folder.count))),
-      ...subs.map((c) => el('button', {
-        class: 'chip', 'aria-pressed': String(view.subcategory === c.name), onclick: () => selectFolder(view.category, c.name),
-      }, c.name, el('span', { class: 'count' }, String(c.count)))),
-    ] : []));
+    $('subfolders').replaceChildren(...subs.map((c) => el('button', {
+      class: 'chip', onclick: () => selectFolder(c.id),
+    }, icon('sub'), c.name, el('span', { class: 'count' }, String(c.count)))));
 
     $('color-filter').replaceChildren(
       el('button', { class: 'chip', 'aria-pressed': String(!view.color), onclick: () => { view.color = ''; render(); } }, 'すべての色'),
@@ -288,8 +310,9 @@
       }, swatch(c.name), c.name)),
     );
 
-    const items = state.items.filter((it) => W.matchesFilter(it, view));
+    const items = state.items.filter((it) => W.matchesFilter(it, view, index));
     const list = $('list');
+    const ctx = { index, base: here ? here.depth + 1 : 0 };
     if (!state.items.length && remote.loading) {
       list.replaceChildren(el('p', { class: 'empty' }, '読み込み中…'));
       return;
@@ -305,25 +328,25 @@
       return;
     }
     if (!items.length) {
-      const here = view.subcategory || view.category;
+      const name = here ? here.node.name : '';
       list.replaceChildren(el('div', { class: 'empty' },
-        el('p', null, total || !here ? '条件に合うアイテムがありません。' : `「${here}」にはまだアイテムがありません。`),
-        !total && here && here !== W.NO_CATEGORY ? el('div', { class: 'empty-actions' },
-          el('button', { class: 'primary', onclick: () => openItem() }, `＋ ${here}に追加`)) : null,
+        el('p', null, total || !name ? '条件に合うアイテムがありません。' : `「${name}」にはまだアイテムがありません。`),
+        !total && name ? el('div', { class: 'empty-actions' },
+          el('button', { class: 'primary', onclick: () => openItem() }, `＋ ${name}に追加`)) : null,
       ));
       return;
     }
-    if (!view.category) {
-      list.replaceChildren(el('div', { class: 'grid' }, W.sortByRegistration(items).map(card)));
+    if (!view.folder) {
+      list.replaceChildren(el('div', { class: 'grid' }, W.sortByRegistration(items).map((it) => card(it, ctx))));
       return;
     }
     if (!splitBySeason) {
-      list.replaceChildren(el('div', { class: 'grid' }, W.sortByFolder(items, state.categories, state.subcategories).map(card)));
+      list.replaceChildren(el('div', { class: 'grid' }, W.sortByFolder(items, index).map((it) => card(it, ctx))));
       return;
     }
-    list.replaceChildren(...W.groupBySeason(items, W.folderComparator(state.categories, state.subcategories)).map((sec) => el('section', { class: 'season', 'data-season': sec.season },
+    list.replaceChildren(...W.groupBySeason(items, W.folderComparator(index)).map((sec) => el('section', { class: 'season', 'data-season': sec.season },
       el('h2', null, sec.season, el('span', { class: 'count' }, `${sec.items.length}点`)),
-      el('div', { class: 'grid' }, sec.items.map(card)),
+      el('div', { class: 'grid' }, sec.items.map((it) => card(it, ctx))),
     )));
   }
 
@@ -338,10 +361,10 @@
     render();
   });
 
-  function card(it) {
-    const where = !view.category
-      ? [it.category || W.NO_CATEGORY, it.subcategory].filter(Boolean).join(' › ')
-      : !view.subcategory ? it.subcategory : '';
+  // カードに出すフォルダ名: 開いているフォルダより下の段の部分だけ（すべてのアイテムでは全体）
+  function card(it, { index, base }) {
+    const info = index.get(it.folder);
+    const where = info ? info.path.slice(base).join(' › ') : (view.folder ? '' : W.NO_CATEGORY);
     return el('button', { class: 'card', type: 'button', onclick: () => openItem(it), title: 'クリックで編集' },
       el('span', { class: 'name' }, it.name),
       (where || it.tags.length) ? el('span', { class: 'meta' },
@@ -361,31 +384,43 @@
   }
 
   // ---------- フォルダの追加・編集 ----------
-  let folderDraft = null; // { parent, name } 編集時。追加時は { parent, name: '' , isNew: true }
-  function openFolder({ parent = '', name = '', isNew = false }) {
-    folderDraft = { parent, name, isNew };
-    const big = !parent;
-    $('folder-dialog-title').textContent = isNew ? '新しいフォルダ' : 'フォルダを編集';
-    $('fd-name').value = name;
-    $('fd-parent-field').hidden = !isNew;
-    if (isNew) {
-      $('fd-parent').replaceChildren(
-        el('option', { value: '' }, 'なし（大カテゴリーとして作る）'),
-        ...state.categories.map((c) => el('option', { value: c }, c)),
-      );
-      $('fd-parent').value = parent;
-    }
-    const siblings = big ? state.categories : (state.subcategories[parent] || []);
-    const i = siblings.indexOf(name);
-    $('fd-up').hidden = $('fd-down').hidden = isNew;
+  // 親フォルダの選択肢（字下げつき）。exclude のフォルダとその中は選べない（自分の中へは移せないため）
+  function parentOptions(exclude) {
+    const opts = [el('option', { value: '' }, 'なし（いちばん上の段）')];
+    const walk = (nodes, depth) => {
+      for (const n of nodes) {
+        if (n.id === exclude) continue;
+        opts.push(el('option', { value: n.id }, '　'.repeat(depth) + n.name));
+        walk(n.children, depth + 1);
+      }
+    };
+    walk(state.folders, 0);
+    return opts;
+  }
+
+  let folderDraft = null; // { id } 編集時、{ parent, isNew: true } 追加時
+  function openFolder(d) {
+    folderDraft = d;
+    const index = folderIndex();
+    const info = d.isNew ? null : index.get(d.id);
+    if (!d.isNew && !info) return;
+    $('folder-dialog-title').textContent = d.isNew ? '新しいフォルダ' : 'フォルダを編集';
+    $('fd-name').value = info ? info.node.name : '';
+    $('fd-parent-label').textContent = d.isNew ? 'どのフォルダの中に作りますか' : '置き場所（別のフォルダの中へ移せます）';
+    $('fd-parent').replaceChildren(...parentOptions(info ? info.node.id : null));
+    $('fd-parent').value = d.isNew ? (d.parent || '') : (info.parent ? info.parent.id : '');
+    const i = info ? info.siblings.indexOf(info.node) : -1;
+    $('fd-up').hidden = $('fd-down').hidden = !info;
     $('fd-up').disabled = i <= 0;
-    $('fd-down').disabled = i < 0 || i >= siblings.length - 1;
-    $('fd-delete').hidden = isNew;
-    $('fd-add-child').hidden = isNew || !big;
-    $('fd-add-child').textContent = `＋ 「${name}」の中にサブフォルダを作る`;
-    const n = isNew ? 0 : W.countInFolder(state.items, parent, name);
-    $('fd-info').hidden = isNew;
-    $('fd-info').textContent = isNew ? '' : `${parent ? parent + ' › ' : ''}${name}（${n}点）`;
+    $('fd-down').disabled = !info || i >= info.siblings.length - 1;
+    $('fd-delete').hidden = !info;
+    $('fd-add-child').hidden = !info;
+    if (info) $('fd-add-child').textContent = `＋ 「${info.node.name}」の中にフォルダを作る`;
+    $('fd-info').hidden = !info;
+    if (info) {
+      const n = W.countInFolder(state.items, state.folders, info.node.id);
+      $('fd-info').textContent = `${info.path.join(' › ')}（${n}点）`;
+    }
     $('fd-error').hidden = true;
     closeSidebar();
     if (!$('folder-dialog').open) $('folder-dialog').showModal();
@@ -396,49 +431,52 @@
   $('folder-form').addEventListener('submit', (e) => {
     e.preventDefault();
     const d = folderDraft;
-    const name = $('fd-name').value.trim();
+    const name = $('fd-name').value;
+    const parent = $('fd-parent').value;
     if (d.isNew) {
-      const parent = $('fd-parent').value;
-      const err = W.addFolder(state, parent, name);
-      if (err) return folderError(err);
-      if (parent) collapsed.delete(parent);
+      const res = W.addFolder(state, parent, name);
+      if (res.error) return folderError(res.error);
+      if (parent) setCollapsed(parent, false);
       $('folder-dialog').close();
       commit();
-      selectFolder(parent || name, parent ? name : '');
-    } else {
-      const err = W.renameFolder(state, d.parent, d.name, name);
-      if (err) return folderError(err);
-      if (!d.parent && collapsed.has(d.name)) { collapsed.delete(d.name); collapsed.add(name); }
-      if (!d.parent && view.category === d.name) view.category = name;
-      if (d.parent && view.category === d.parent && view.subcategory === d.name) view.subcategory = name;
-      $('folder-dialog').close();
-      commit();
+      selectFolder(res.id);
+      return;
     }
+    // 移動と名前変更は、両方うまくいくときだけ反映する
+    const trial = JSON.parse(JSON.stringify(state));
+    const err = W.relocateFolder(trial, d.id, parent) || W.renameFolder(trial, d.id, name);
+    if (err) return folderError(err);
+    state = trial;
+    if (parent) setCollapsed(parent, false);
+    $('folder-dialog').close();
+    commit();
   });
   $('fd-cancel').addEventListener('click', () => $('folder-dialog').close());
   for (const [btn, dir] of [['fd-up', -1], ['fd-down', 1]]) {
     $(btn).addEventListener('click', () => {
-      W.moveFolder(state, folderDraft.parent, folderDraft.name, dir);
+      W.moveFolder(state, folderDraft.id, dir);
       commit();
       openFolder(folderDraft);
     });
   }
-  $('fd-add-child').addEventListener('click', () => openFolder({ parent: folderDraft.name, isNew: true }));
+  $('fd-add-child').addEventListener('click', () => openFolder({ parent: folderDraft.id, isNew: true }));
   $('fd-delete').addEventListener('click', async () => {
-    const { parent, name } = folderDraft;
-    const n = W.countInFolder(state.items, parent, name);
-    const subs = !parent ? (state.subcategories[name] || []).length : 0;
+    const info = folderIndex().get(folderDraft.id);
+    if (!info) return;
+    const n = W.countInFolder(state.items, state.folders, info.node.id);
+    const subs = W.countSubfolders(info.node);
+    const dest = info.parent ? `「${info.parent.name}」の直下` : `「${W.NO_CATEGORY}」`;
     const detail = [
-      subs ? `中のサブフォルダ${subs}個も削除されます。` : '',
-      n ? (parent ? `中の${n}点のアイテムは「${parent}」の直下に移ります。` : `中の${n}点のアイテムは「${W.NO_CATEGORY}」に移ります。`) : '',
+      subs ? `中のフォルダ${subs}個も削除されます。` : '',
+      n ? `中の${n}点のアイテムは${dest}に移ります。` : '',
     ].join('');
-    if (!(await ask(`フォルダ「${name}」を削除しますか？${detail ? '\n' + detail : ''}アイテム自体は削除されません。`, { ok: '削除', danger: true }))) return;
-    W.deleteFolder(state, parent, name);
+    if (!(await ask(`フォルダ「${info.node.name}」を削除しますか？${detail ? '\n' + detail : ''}アイテム自体は削除されません。`, { ok: '削除', danger: true }))) return;
+    W.deleteFolder(state, info.node.id);
     $('folder-dialog').close();
     commit();
   });
   $('btn-new-folder').addEventListener('click', () => openFolder({
-    parent: view.category && view.category !== W.NO_CATEGORY && state.categories.includes(view.category) && !view.subcategory ? view.category : '',
+    parent: view.folder && view.folder !== W.UNFILED ? view.folder : '',
     isNew: true,
   }));
 
@@ -446,13 +484,7 @@
   function openItem(item) {
     draft = item
       ? { ...item, seasons: [...item.seasons], colors: [...item.colors], tags: [...item.tags] }
-      : {
-        id: '', name: '',
-        category: view.category && view.category !== W.NO_CATEGORY ? view.category : '',
-        subcategory: view.subcategory || '',
-        seasons: [], colors: [], tags: [], memo: '',
-      };
-    if (!draft.subcategory) draft.subcategory = '';
+      : { id: '', name: '', folder: view.folder && view.folder !== W.UNFILED ? view.folder : '', seasons: [], colors: [], tags: [], memo: '' };
     $('item-dialog-title').textContent = item ? 'アイテム編集' : 'アイテム追加';
     $('f-name').value = draft.name;
     $('f-memo').value = draft.memo;
@@ -461,6 +493,8 @@
     renderDraft();
     $('item-dialog').showModal();
     $('f-name').focus();
+    const sel = $('f-folder').querySelector('[aria-checked=true]');
+    if (sel) sel.scrollIntoView({ block: 'nearest' });
   }
 
   function toggle(list, v) {
@@ -468,25 +502,32 @@
     if (i >= 0) list.splice(i, 1); else list.push(v);
   }
 
+  // フォルダはツリーから1つ選ぶ
+  function renderFolderPicker() {
+    const index = folderIndex();
+    if (draft.folder && !index.has(draft.folder)) draft.folder = '';
+    const rows = [];
+    const pick = (id, label, depth, kind) => el('button', {
+      type: 'button', class: 'pick', role: 'radio', 'aria-checked': String(draft.folder === id),
+      style: `padding-left:${8 + indentPx(depth)}px`,
+      onclick: () => { draft.folder = id; renderDraft(); },
+    }, icon(kind), el('span', { class: 'folder-name' }, label));
+    rows.push(pick('', `${W.NO_CATEGORY}（フォルダなし）`, 0, 'none'));
+    const walk = (nodes, depth) => {
+      for (const n of nodes) {
+        rows.push(pick(n.id, n.name, depth, depth ? 'sub' : 'folder'));
+        walk(n.children, depth + 1);
+      }
+    };
+    walk(state.folders, 0);
+    $('f-folder').replaceChildren(...rows);
+    const info = index.get(draft.folder);
+    $('f-folder-current').textContent = info ? info.path.join(' › ') : W.NO_CATEGORY;
+    $('f-new-folder').placeholder = info ? `「${info.node.name}」の中に新しいフォルダ` : 'いちばん上の段に新しいフォルダ';
+  }
+
   function renderDraft() {
-    // 旧データなどで一覧にない分類が付いている場合も表示する
-    const cats = draft.category && !state.categories.includes(draft.category) ? [...state.categories, draft.category] : state.categories;
-    $('f-category').replaceChildren(...cats.map((c) => el('button', {
-      type: 'button', class: 'chip', 'aria-pressed': String(draft.category === c),
-      onclick: () => {
-        draft.category = draft.category === c ? '' : c;
-        if (!subsOf(draft.category).includes(draft.subcategory)) draft.subcategory = '';
-        renderDraft();
-      },
-    }, c)));
-    const subs = subsOf(draft.category);
-    const shownSubs = draft.subcategory && !subs.includes(draft.subcategory) ? [...subs, draft.subcategory] : subs;
-    $('f-subcategory-field').hidden = !draft.category;
-    $('f-subcategory-label').textContent = `「${draft.category}」の中のサブフォルダ（任意）`;
-    $('f-subcategory').replaceChildren(...shownSubs.map((c) => el('button', {
-      type: 'button', class: 'chip', 'aria-pressed': String(draft.subcategory === c),
-      onclick: () => { draft.subcategory = draft.subcategory === c ? '' : c; renderDraft(); },
-    }, c)));
+    renderFolderPicker();
     $('f-seasons').replaceChildren(...W.SEASONS.map((s) => el('button', {
       type: 'button', class: 'chip', 'aria-pressed': String(draft.seasons.includes(s)),
       onclick: () => { toggle(draft.seasons, s); renderDraft(); },
@@ -501,17 +542,6 @@
       el('button', { type: 'button', class: 'x', 'aria-label': `${t} を外す`, onclick: () => { toggle(draft.tags, t); renderDraft(); } }, '×'))));
   }
 
-  function subsOf(category) {
-    return (category && state.subcategories[category]) || [];
-  }
-  // 入力欄からフォルダを作る。既にあればそれを選ぶ
-  function ensureFolder(parent, name) {
-    const v = name.trim();
-    if (!v) return '';
-    const list = parent ? subsOf(parent) : state.categories;
-    if (!list.includes(v) && !W.addFolder(state, parent, v)) save();
-    return v;
-  }
   function addColor(name, hex) {
     const v = name.trim();
     if (!v) return '';
@@ -519,15 +549,26 @@
     return v;
   }
 
-  $('f-add-category').addEventListener('click', () => {
-    const v = ensureFolder('', $('f-new-category').value);
-    if (v) { draft.category = v; draft.subcategory = ''; $('f-new-category').value = ''; renderDraft(); render(); }
-  });
-  $('f-add-subcategory').addEventListener('click', () => {
-    if (!draft.category) return;
-    if (!state.categories.includes(draft.category)) ensureFolder('', draft.category);
-    const v = ensureFolder(draft.category, $('f-new-subcategory').value);
-    if (v) { draft.subcategory = v; $('f-new-subcategory').value = ''; renderDraft(); render(); }
+  // 選んでいるフォルダの中に新しいフォルダを作って選ぶ（同じ名前があればそれを選ぶ）
+  $('f-add-folder').addEventListener('click', () => {
+    const name = $('f-new-folder').value.trim();
+    if (!name) return;
+    const index = folderIndex();
+    const siblings = draft.folder && index.has(draft.folder) ? index.get(draft.folder).node.children : state.folders;
+    const existing = siblings.find((n) => n.name === name);
+    let id = existing && existing.id;
+    if (!id) {
+      const res = W.addFolder(state, draft.folder, name);
+      if (res.error) { $('f-error').textContent = res.error; $('f-error').hidden = false; return; }
+      id = res.id;
+      if (draft.folder) setCollapsed(draft.folder, false);
+      save();
+    }
+    draft.folder = id;
+    $('f-new-folder').value = '';
+    $('f-error').hidden = true;
+    renderDraft();
+    render();
   });
   $('f-add-color').addEventListener('click', () => {
     const v = addColor($('f-new-color').value, $('f-new-color-hex').value);
@@ -543,7 +584,7 @@
   }
   $('f-add-tag').addEventListener('click', addTagFromInput);
   // 入力欄で Enter を押したときにフォーム送信せず「追加」として扱う
-  for (const [input, btn] of [['f-new-category', 'f-add-category'], ['f-new-subcategory', 'f-add-subcategory'], ['f-new-color', 'f-add-color'], ['f-new-tag', 'f-add-tag']]) {
+  for (const [input, btn] of [['f-new-folder', 'f-add-folder'], ['f-new-color', 'f-add-color'], ['f-new-tag', 'f-add-tag']]) {
     $(input).addEventListener('keydown', (e) => {
       if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); $(btn).click(); }
     });
@@ -631,14 +672,25 @@
   async function loadSample() {
     if (state.items.length && !(await ask('現在のデータをサンプルデータで置き換えます。よろしいですか？', { ok: '置き換える', danger: true }))) return;
     const s = W.emptyState();
-    const add = (name, cat, seasons, colors, tags = [], memo = '') => {
-      const [category, subcategory = ''] = cat.split('/');
-      s.items.push(W.normalizeItem({ id: newId(), name, category, subcategory, seasons, colors, tags, memo, createdAt: Date.now() }));
+    // 'ボトムス/ジーンズ' のような名前の並びからフォルダを探す（なければ作る）
+    const folderOf = (path) => {
+      let parent = '';
+      let list = s.folders;
+      for (const name of path.split('/')) {
+        const hit = list.find((n) => n.name === name);
+        parent = hit ? hit.id : W.addFolder(s, parent, name).id;
+        list = (hit || W.indexFolders(s.folders).get(parent).node).children;
+      }
+      return parent;
+    };
+    const add = (name, path, seasons, colors, tags = [], memo = '') => {
+      s.items.push(W.normalizeItem({ id: newId(), name, folder: folderOf(path), seasons, colors, tags, memo, createdAt: Date.now() + s.items.length }));
     };
     add('ウールスラックス', 'ボトムス/スラックス', ['秋', '冬'], ['グレー'], ['仕事用']);
     add('リネンスラックス', 'ボトムス/スラックス', ['春', '夏'], ['ベージュ']);
     add('センタープレススラックス', 'ボトムス/スラックス', ['春', '秋'], ['黒'], ['仕事用']);
     add('セルビッジジーンズ', 'ボトムス/ジーンズ', ['春', '秋', '冬'], ['ネイビー'], ['お気に入り'], '購入 2024年');
+    add('ブラックスキニー', 'ボトムス/ジーンズ/スキニー', ['春', '秋', '冬'], ['黒']);
     add('ホワイトデニム', 'ボトムス/ジーンズ', ['夏'], ['白']);
     add('ベージュのチノパン', 'ボトムス/コットンパンツ', ['春', '夏', '秋'], ['ベージュ']);
     add('ケーブルニット', 'トップス/ニット', ['冬'], ['白']);

@@ -105,7 +105,7 @@ body::before {
 
 /* 左: フォルダ一覧（Gmail のラベル風）、右: 一覧 */
 .layout {
-  display: grid; grid-template-columns: 256px minmax(0, 1fr); gap: 8px;
+  display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 8px;
   max-width: 1280px; margin: 0 auto;
 }
 .sidebar {
@@ -121,7 +121,6 @@ body::before {
 }
 .folder-row:hover { background: var(--hover); }
 .folder-row[aria-current=true] { background: var(--accent-soft); font-weight: 600; }
-.folder-row.level-2 { padding-left: 22px; }
 .caret, .caret-space { width: 24px; height: 24px; flex: none; }
 .caret { border: none; background: none; padding: 0; border-radius: 50%; display: grid; place-items: center; color: var(--muted); }
 .caret[aria-expanded=true] .icon { transform: rotate(90deg); }
@@ -132,6 +131,20 @@ body::before {
 .folder-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .folder-count { font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 .more-space { width: 26px; flex: none; }
+.folder-picker {
+  display: flex; flex-direction: column; max-height: 240px; overflow-y: auto;
+  border: 1px solid var(--border); border-radius: 10px; padding: 4px;
+}
+.pick {
+  display: flex; align-items: center; gap: 8px; border: none; background: none; border-radius: 8px;
+  padding: 5px 8px; text-align: left; min-width: 0;
+}
+.pick:hover { background: var(--hover); }
+.pick[aria-checked=true] { background: var(--accent-soft); font-weight: 600; }
+.pick .icon { color: var(--muted); }
+.pick[aria-checked=true] .icon { color: var(--accent); }
+.picked { color: var(--text); font-weight: 600; margin-left: 6px; }
+.subfolders .chip .icon { width: 14px; height: 14px; color: var(--muted); }
 .subfolders { margin: -4px 0 12px; }
 .subfolders .count { font-size: .8em; margin-left: 2px; opacity: .75; }
 .more { border: none; background: none; padding: 4px; border-radius: 50%; opacity: 0; color: var(--muted); }

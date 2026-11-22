@@ -66,20 +66,11 @@
       </label>
 
       <div class="field">
-        <span>フォルダ</span>
-        <div id="f-category" class="chips"></div>
+        <span>フォルダ <small id="f-folder-current" class="picked"></small></span>
+        <div id="f-folder" class="folder-picker" role="radiogroup" aria-label="フォルダ"></div>
         <div class="inline-add">
-          <input id="f-new-category" placeholder="新しいフォルダ" maxlength="30">
-          <button type="button" id="f-add-category">追加</button>
-        </div>
-      </div>
-
-      <div class="field" id="f-subcategory-field" hidden>
-        <span id="f-subcategory-label">サブフォルダ</span>
-        <div id="f-subcategory" class="chips"></div>
-        <div class="inline-add">
-          <input id="f-new-subcategory" placeholder="新しいサブフォルダ" maxlength="30">
-          <button type="button" id="f-add-subcategory">追加</button>
+          <input id="f-new-folder" maxlength="30">
+          <button type="button" id="f-add-folder">作成</button>
         </div>
       </div>
 
@@ -132,8 +123,8 @@
         <span>フォルダ名</span>
         <input id="fd-name" required maxlength="30" placeholder="例: ショートパンツ">
       </label>
-      <label class="field" id="fd-parent-field">
-        <span>どのフォルダの中に作りますか</span>
+      <label class="field">
+        <span id="fd-parent-label">どのフォルダの中に作りますか</span>
         <select id="fd-parent"></select>
       </label>
       <button type="button" id="fd-add-child" class="link-button" hidden></button>

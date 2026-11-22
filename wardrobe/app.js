@@ -13,7 +13,7 @@
   // ---------- 永続化 ----------
   // 通常はブラウザの localStorage に保存する。
   // claude.ai で公開したページでは、アカウントごとの非公開ストレージ（db）に保存し、端末間で同期する。
-  const remote = { ref: null, loading: false, timer: null, writing: false, again: false, lastJSON: '' };
+  const remote = { ref: null, loading: false, timer: null, loadTimer: null, unsubscribe: null, writing: false, again: false, lastJSON: '' };
 
   function load() {
     try {
@@ -42,10 +42,27 @@
       }
       setStatus('');
     } catch (e) {
+      if (e && e.code === 'invalid_argument') {
+        // この人にはアカウントへの保存が許可されていない: ブラウザ保存に切り替える
+        useLocalOnly();
+        return;
+      }
       setStatus(e && e.code === 'quota_exceeded' ? '保存容量の上限に達しました。不要なアイテムを削除してください。' : '保存できませんでした。通信状態を確認してください。');
     }
     remote.writing = false;
-    if (remote.again) { remote.again = false; flushRemote(); }
+    if (remote.again && remote.ref) { remote.again = false; flushRemote(); }
+  }
+  function useLocalOnly() {
+    if (remote.unsubscribe) remote.unsubscribe();
+    clearTimeout(remote.timer);
+    clearTimeout(remote.loadTimer);
+    remote.ref = null;
+    remote.unsubscribe = null;
+    remote.loading = false;
+    remote.writing = false;
+    remote.again = false;
+    setStatus('');
+    render();
   }
   function setStatus(msg) {
     $('status').textContent = msg;
@@ -57,6 +74,8 @@
       const [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
       const uid = db && user ? await user.id() : null;
       if (!uid) return;
+      // 閲覧のみの人はアカウントに保存できないので、ブラウザ保存のまま使う
+      if ((await user.can('data.write')) === false) return;
       remote.ref = db.doc('data/users/' + uid + '/wardrobe');
     } catch (e) {
       console.warn('同期ストレージに接続できませんでした', e);
@@ -64,8 +83,8 @@
     }
     remote.loading = true;
     render();
-    const timeout = setTimeout(() => setStatus('データを読み込めていません。通信状態を確認してください。'), 10000);
-    remote.ref.onSnapshot((snap) => {
+    const timeout = remote.loadTimer = setTimeout(() => setStatus('データを読み込めていません。通信状態を確認してください。'), 10000);
+    remote.unsubscribe = remote.ref.onSnapshot((snap) => {
       if (snap.metadata.hasPendingWrites) return;
       if (!snap.exists) {
         if (snap.metadata.fromCache) return;
@@ -90,8 +109,9 @@
         console.warn('保存データの形式が不正です', e);
       }
       render();
-    }, () => {
+    }, (e) => {
       clearTimeout(timeout);
+      if (e && e.code === 'invalid_argument') { useLocalOnly(); return; }
       remote.loading = false;
       setStatus('同期が切れました。ページを開き直すと再接続します。');
       render();

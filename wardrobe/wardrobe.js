@@ -5,11 +5,22 @@
   const SEASONS = ['春', '夏', '秋', '冬'];
   const NO_SEASON = '季節未設定';
   const NO_CATEGORY = '未分類';
-  const NO_SUBCATEGORY = 'その他';
+  // データ形式の目印。これがないデータは旧形式（フラットなカテゴリー）として移行する
+  const LAYOUT = 'folders';
 
-  const DEFAULT_CATEGORIES = ['Tシャツ', 'シャツ', 'ニット', 'パーカー', 'ジャケット', 'コート', 'パンツ', 'スカート', 'ワンピース', 'シューズ', '小物'];
-  // カテゴリー → サブカテゴリーの一覧
-  const DEFAULT_SUBCATEGORIES = { パンツ: ['コットンパンツ', 'スラックス', 'ジーンズ'] };
+  // 大カテゴリー（フォルダ）とその中のサブフォルダ
+  const DEFAULT_CATEGORIES = ['トップス', 'アウター', 'ボトムス', 'ワンピース', 'シューズ', '小物'];
+  const DEFAULT_SUBCATEGORIES = {
+    トップス: ['Tシャツ', 'シャツ', 'ニット', 'パーカー'],
+    アウター: ['ジャケット', 'コート'],
+    ボトムス: ['ジーンズ', 'スラックス', 'コットンパンツ', 'スカート'],
+  };
+  // 旧形式のカテゴリー → 移行先の大カテゴリー
+  const LEGACY_PARENT = {
+    Tシャツ: 'トップス', シャツ: 'トップス', ニット: 'トップス', パーカー: 'トップス',
+    ジャケット: 'アウター', コート: 'アウター',
+    パンツ: 'ボトムス', スラックス: 'ボトムス', ジーンズ: 'ボトムス', コットンパンツ: 'ボトムス', スカート: 'ボトムス',
+  };
   const cloneSubcategories = (src) => Object.fromEntries(Object.entries(src).map(([k, v]) => [k, v.slice()]));
   const DEFAULT_COLORS = [
     { name: '白', hex: '#ffffff' },
@@ -68,47 +79,95 @@
     return null;
   }
 
-  // タブ一覧: [{ key, label, count }]。カテゴリ順は categories の順、未登録カテゴリは末尾
-  function buildTabs(items, categories) {
-    const counts = new Map();
+  // フォルダツリー: { total, folders: [{ name, count, children: [{ name, count }] }], uncategorized }
+  // フォルダは中身が空でも表示する。フォルダ一覧にない分類のアイテムは末尾にフォルダとして足す
+  function buildFolderTree(items, categories, subcategories) {
+    const folders = categories.map((name) => ({
+      name, count: 0, children: ((subcategories || {})[name] || []).map((n) => ({ name: n, count: 0 })),
+    }));
+    const byName = new Map(folders.map((f) => [f.name, f]));
+    let uncategorized = 0;
     for (const it of items) {
-      const c = it.category || NO_CATEGORY;
-      counts.set(c, (counts.get(c) || 0) + 1);
+      if (!it.category) { uncategorized++; continue; }
+      let f = byName.get(it.category);
+      if (!f) { f = { name: it.category, count: 0, children: [] }; folders.push(f); byName.set(f.name, f); }
+      f.count++;
+      if (it.subcategory) {
+        let ch = f.children.find((c) => c.name === it.subcategory);
+        if (!ch) { ch = { name: it.subcategory, count: 0 }; f.children.push(ch); }
+        ch.count++;
+      }
     }
-    const order = uniqStrings(categories);
-    for (const c of counts.keys()) {
-      if (!order.includes(c) && c !== NO_CATEGORY) order.push(c);
-    }
-    if (counts.has(NO_CATEGORY)) order.push(NO_CATEGORY);
-    const tabs = [{ key: '', label: 'すべて', count: items.length }];
-    for (const c of order) {
-      if (counts.has(c)) tabs.push({ key: c, label: c, count: counts.get(c) });
-    }
-    return tabs;
+    return { total: items.length, folders, uncategorized };
   }
 
-  // カテゴリー内のサブタブ: [{ key, label, count }]。サブカテゴリーを使っていないカテゴリーでは空配列
-  function buildSubTabs(items, category, subcategories) {
-    const inCat = items.filter((it) => (it.category || NO_CATEGORY) === category);
-    const defined = (subcategories && subcategories[category]) || [];
-    const counts = new Map();
-    for (const it of inCat) {
-      const k = it.subcategory || NO_SUBCATEGORY;
-      counts.set(k, (counts.get(k) || 0) + 1);
+  // ---------- フォルダ操作（state を直接変更し、エラーメッセージか null を返す） ----------
+  // parent が '' なら大カテゴリー、それ以外はその大カテゴリーの中のサブフォルダ
+  function siblings(state, parent) {
+    if (!parent) return state.categories;
+    return state.subcategories[parent] || (state.subcategories[parent] = []);
+  }
+  function cleanupEmpty(state, parent) {
+    if (parent && state.subcategories[parent] && !state.subcategories[parent].length) delete state.subcategories[parent];
+  }
+  function addFolder(state, parent, name) {
+    const v = String(name || '').trim();
+    if (!v) return 'フォルダ名を入力してください';
+    if (parent && !state.categories.includes(parent)) return '親フォルダが見つかりません';
+    const list = siblings(state, parent);
+    if (list.includes(v)) { cleanupEmpty(state, parent); return '同じ名前のフォルダがあります'; }
+    list.push(v);
+    return null;
+  }
+  function renameFolder(state, parent, oldName, newName) {
+    const v = String(newName || '').trim();
+    if (!v) return 'フォルダ名を入力してください';
+    if (v === oldName) return null;
+    const list = siblings(state, parent);
+    const i = list.indexOf(oldName);
+    if (i < 0) { cleanupEmpty(state, parent); return 'フォルダが見つかりません'; }
+    if (list.includes(v)) return '同じ名前のフォルダがあります';
+    list[i] = v;
+    if (!parent) {
+      if (state.subcategories[oldName]) {
+        state.subcategories[v] = state.subcategories[oldName];
+        delete state.subcategories[oldName];
+      }
+      for (const it of state.items) if (it.category === oldName) it.category = v;
+    } else {
+      for (const it of state.items) if (it.category === parent && it.subcategory === oldName) it.subcategory = v;
     }
-    if (!defined.length && !inCat.some((it) => it.subcategory)) return [];
-    const order = defined.slice();
-    for (const k of counts.keys()) if (!order.includes(k) && k !== NO_SUBCATEGORY) order.push(k);
-    if (counts.has(NO_SUBCATEGORY)) order.push(NO_SUBCATEGORY);
-    const tabs = [{ key: '', label: 'すべて', count: inCat.length }];
-    for (const k of order) if (counts.has(k)) tabs.push({ key: k, label: k, count: counts.get(k) });
-    return tabs;
+    return null;
+  }
+  // 大カテゴリーを消すと中のアイテムは未分類に、サブフォルダを消すと中のアイテムは親フォルダの直下に移る
+  function deleteFolder(state, parent, name) {
+    if (!parent) {
+      state.categories = state.categories.filter((c) => c !== name);
+      delete state.subcategories[name];
+      for (const it of state.items) if (it.category === name) { it.category = ''; it.subcategory = ''; }
+    } else {
+      if (state.subcategories[parent]) state.subcategories[parent] = state.subcategories[parent].filter((c) => c !== name);
+      cleanupEmpty(state, parent);
+      for (const it of state.items) if (it.category === parent && it.subcategory === name) it.subcategory = '';
+    }
+    return null;
+  }
+  function moveFolder(state, parent, name, dir) {
+    const list = siblings(state, parent);
+    const i = list.indexOf(name);
+    const j = i + dir;
+    if (i < 0 || j < 0 || j >= list.length) { cleanupEmpty(state, parent); return null; }
+    [list[i], list[j]] = [list[j], list[i]];
+    return null;
+  }
+  function countInFolder(items, parent, name) {
+    return items.filter((it) => (parent ? it.category === parent && it.subcategory === name : it.category === name)).length;
   }
 
   function matchesFilter(item, filter) {
     const f = filter || {};
     if (f.category && (item.category || NO_CATEGORY) !== f.category) return false;
-    if (f.subcategory && (item.subcategory || NO_SUBCATEGORY) !== f.subcategory) return false;
+    if (f.subcategory && item.subcategory !== f.subcategory) return false;
     if (f.color && !item.colors.includes(f.color)) return false;
     if (f.query) {
       const q = f.query.trim().toLowerCase();
@@ -147,50 +206,63 @@
       return normalizeItem(it);
     });
     let categories = uniqStrings(Array.isArray(data.categories) ? data.categories : DEFAULT_CATEGORIES);
-    let subcategories;
+    let subcategories = {};
     if (data.subcategories && typeof data.subcategories === 'object') {
-      subcategories = {};
       for (const [k, v] of Object.entries(data.subcategories)) {
         const list = uniqStrings(Array.isArray(v) ? v : []);
         if (String(k).trim() && list.length) subcategories[String(k).trim()] = list;
       }
-    } else {
-      // サブカテゴリー導入前のデータ: スラックス・ジーンズを「パンツ」のサブカテゴリーへ移す
-      ({ categories } = migrateToPants(categories, items));
-      subcategories = cloneSubcategories(DEFAULT_SUBCATEGORIES);
     }
+    if (data.layout !== LAYOUT) ({ categories, subcategories } = migrateToFolders(categories, subcategories, items));
     const colors = Array.isArray(data.colors)
       ? data.colors.filter((c) => c && String(c.name || '').trim()).map((c) => ({ name: String(c.name).trim(), hex: /^#[0-9a-fA-F]{6}$/.test(c.hex) ? c.hex : '#cccccc' }))
       : DEFAULT_COLORS.map((c) => ({ ...c }));
-    return { items, categories, subcategories, colors };
+    return { layout: LAYOUT, items, categories, subcategories, colors };
   }
 
-  function migrateToPants(categories, items) {
-    const PANTS = 'パンツ';
-    const legacy = DEFAULT_SUBCATEGORIES[PANTS];
-    const out = [];
-    for (const c of categories) {
-      if (legacy.includes(c)) {
-        if (!out.includes(PANTS)) out.push(PANTS);
-      } else if (!out.includes(c)) {
-        out.push(c);
+  // 旧形式（Tシャツ・ニット・パンツなどが同列のカテゴリー）を、大カテゴリー＋サブフォルダの形に移す。
+  // 例: ニット → トップス / ニット、パンツ / ジーンズ → ボトムス / ジーンズ。
+  // 旧形式で「ニット / カーディガン」のように付けていた細分類は、消えないようにタグとして残す。
+  function migrateToFolders(oldCategories, oldSubcategories, items) {
+    const categories = DEFAULT_CATEGORIES.slice();
+    const subcategories = cloneSubcategories(DEFAULT_SUBCATEGORIES);
+    const addChild = (parent, child) => {
+      const list = subcategories[parent] || (subcategories[parent] = []);
+      if (!list.includes(child)) list.push(child);
+    };
+    const used = uniqStrings([...oldCategories, ...items.map((it) => it.category)]);
+    for (const c of used) {
+      const parent = LEGACY_PARENT[c];
+      if (c === 'パンツ') for (const sub of oldSubcategories[c] || []) addChild(parent, sub);
+      else if (parent) addChild(parent, c);
+      else {
+        if (!categories.includes(c)) categories.push(c);
+        for (const sub of oldSubcategories[c] || []) addChild(c, sub);
       }
     }
-    if (!out.includes(PANTS)) out.push(PANTS);
     for (const it of items) {
-      if (legacy.includes(it.category)) {
+      const parent = LEGACY_PARENT[it.category];
+      if (!parent) continue;
+      if (it.category === 'パンツ') {
+        if (it.subcategory) addChild(parent, it.subcategory);
+      } else {
+        if (it.subcategory && !it.tags.includes(it.subcategory)) it.tags.push(it.subcategory);
         it.subcategory = it.category;
-        it.category = PANTS;
       }
+      it.category = parent;
     }
-    return { categories: out };
+    return { categories, subcategories };
   }
 
   function emptyState() {
-    return { items: [], categories: DEFAULT_CATEGORIES.slice(), subcategories: cloneSubcategories(DEFAULT_SUBCATEGORIES), colors: DEFAULT_COLORS.map((c) => ({ ...c })) };
+    return { layout: LAYOUT, items: [], categories: DEFAULT_CATEGORIES.slice(), subcategories: cloneSubcategories(DEFAULT_SUBCATEGORIES), colors: DEFAULT_COLORS.map((c) => ({ ...c })) };
   }
 
-  const api = { SEASONS, NO_SEASON, NO_CATEGORY, NO_SUBCATEGORY, DEFAULT_SUBCATEGORIES, buildSubTabs, DEFAULT_CATEGORIES, DEFAULT_COLORS, normalizeItem, validateItem, buildTabs, matchesFilter, groupBySeason, parseState, emptyState, sortSeasons };
+  const api = {
+    SEASONS, NO_SEASON, NO_CATEGORY, DEFAULT_CATEGORIES, DEFAULT_SUBCATEGORIES, DEFAULT_COLORS,
+    normalizeItem, validateItem, buildFolderTree, matchesFilter, groupBySeason, parseState, emptyState, sortSeasons,
+    addFolder, renameFolder, deleteFolder, moveFolder, countInFolder,
+  };
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = api;

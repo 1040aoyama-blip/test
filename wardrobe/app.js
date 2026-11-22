@@ -7,7 +7,7 @@
   const SEASON_COLORS = { 春: 'var(--spring)', 夏: 'var(--summer)', 秋: 'var(--autumn)', 冬: 'var(--winter)' };
 
   let state = load();
-  let view = { category: '', subcategory: '', color: '', query: '' };
+  let view = { category: '', subcategory: '', color: '', query: '' }; // category '' = すべてのアイテム
   let draft = null; // 編集中のアイテム
 
   // ---------- 永続化 ----------
@@ -155,24 +155,128 @@
   const swatch = (name) => el('span', { class: 'swatch', style: `background:${colorHex(name)}` });
   const newId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 
+  // ---------- フォルダ一覧（サイドバー） ----------
+  const COLLAPSED_KEY = 'wardrobe-collapsed';
+  let collapsed = new Set();
+  try { collapsed = new Set(JSON.parse(localStorage.getItem(COLLAPSED_KEY) || '[]')); } catch (e) { /* 無視 */ }
+  function toggleCollapsed(name) {
+    if (collapsed.has(name)) collapsed.delete(name); else collapsed.add(name);
+    try { localStorage.setItem(COLLAPSED_KEY, JSON.stringify([...collapsed])); } catch (e) { /* 無視 */ }
+    render();
+  }
+
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  function icon(kind) {
+    const paths = {
+      all: 'M4 5h16v3H4zM5 10h14v9H5zM10 13h4',
+      folder: 'M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z',
+      sub: 'M5 7h6l1.5 1.5H19v9H5z',
+      none: 'M4 6h16v12H4zM8 10h8M8 14h5',
+      caret: 'M9 6l6 6-6 6',
+      more: 'M5 12h.01M12 12h.01M19 12h.01',
+    };
+    const svg = document.createElementNS(SVG_NS, 'svg');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('class', 'icon icon-' + kind);
+    svg.setAttribute('aria-hidden', 'true');
+    const path = document.createElementNS(SVG_NS, 'path');
+    path.setAttribute('d', paths[kind]);
+    svg.append(path);
+    return svg;
+  }
+
+  function selectFolder(category, subcategory = '') {
+    view.category = category;
+    view.subcategory = subcategory;
+    closeSidebar();
+    render();
+    window.scrollTo({ top: 0 });
+  }
+  const isSelected = (category, subcategory = '') => view.category === category && view.subcategory === subcategory;
+
+  function folderRow({ level, label, count, iconKind, selected, onSelect, caret, onEdit }) {
+    return el('div', { class: `folder-row level-${level}`, 'aria-current': selected ? 'true' : null },
+      caret || el('span', { class: 'caret-space' }),
+      el('button', { type: 'button', class: 'folder-link', onclick: onSelect },
+        icon(iconKind), el('span', { class: 'folder-name' }, label), el('span', { class: 'folder-count' }, count ? String(count) : '')),
+      onEdit ? el('button', { type: 'button', class: 'more', 'aria-label': `${label} を編集`, title: 'フォルダを編集', onclick: onEdit }, icon('more')) : el('span', { class: 'more-space' }),
+    );
+  }
+
+  function renderSidebar(tree) {
+    const rows = [el('li', null, folderRow({
+      level: 0, label: 'すべてのアイテム', count: tree.total, iconKind: 'all',
+      selected: isSelected(''), onSelect: () => selectFolder(''),
+    }))];
+    for (const f of tree.folders) {
+      const open = !collapsed.has(f.name);
+      const caret = f.children.length
+        ? el('button', { type: 'button', class: 'caret', 'aria-expanded': String(open), 'aria-label': open ? `${f.name} を閉じる` : `${f.name} を開く`, onclick: () => toggleCollapsed(f.name) }, icon('caret'))
+        : null;
+      rows.push(el('li', null,
+        folderRow({
+          level: 1, label: f.name, count: f.count, iconKind: 'folder', caret,
+          selected: isSelected(f.name), onSelect: () => selectFolder(f.name),
+          onEdit: state.categories.includes(f.name) ? () => openFolder({ parent: '', name: f.name }) : null,
+        }),
+        f.children.length && open ? el('ul', { class: 'children' }, f.children.map((c) => el('li', null, folderRow({
+          level: 2, label: c.name, count: c.count, iconKind: 'sub',
+          selected: isSelected(f.name, c.name), onSelect: () => selectFolder(f.name, c.name),
+          onEdit: (state.subcategories[f.name] || []).includes(c.name) ? () => openFolder({ parent: f.name, name: c.name }) : null,
+        })))) : null,
+      ));
+    }
+    if (tree.uncategorized) {
+      rows.push(el('li', null, folderRow({
+        level: 1, label: W.NO_CATEGORY, count: tree.uncategorized, iconKind: 'none',
+        selected: isSelected(W.NO_CATEGORY), onSelect: () => selectFolder(W.NO_CATEGORY),
+      })));
+    }
+    $('folder-tree').replaceChildren(el('ul', { class: 'tree' }, rows));
+  }
+
+  function openSidebar() {
+    $('sidebar').classList.add('open');
+    $('sidebar-backdrop').hidden = false;
+    $('btn-folders').setAttribute('aria-expanded', 'true');
+  }
+  function closeSidebar() {
+    $('sidebar').classList.remove('open');
+    $('sidebar-backdrop').hidden = true;
+    $('btn-folders').setAttribute('aria-expanded', 'false');
+  }
+  $('btn-folders').addEventListener('click', () => ($('sidebar').classList.contains('open') ? closeSidebar() : openSidebar()));
+  $('sidebar-backdrop').addEventListener('click', closeSidebar);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && $('sidebar').classList.contains('open')) closeSidebar(); });
+
   // ---------- 一覧描画 ----------
   function render() {
-    const tabs = W.buildTabs(state.items, state.categories);
-    if (!tabs.some((t) => t.key === view.category)) view.category = '';
+    const tree = W.buildFolderTree(state.items, state.categories, state.subcategories);
+    // 選択中のフォルダが消えていたら「すべてのアイテム」に戻す
+    const folder = tree.folders.find((f) => f.name === view.category);
+    if (view.category === W.NO_CATEGORY ? !tree.uncategorized : view.category && !folder) { view.category = ''; view.subcategory = ''; }
+    if (view.subcategory && !(folder && folder.children.some((c) => c.name === view.subcategory))) view.subcategory = '';
     if (view.color && !state.colors.some((c) => c.name === view.color)) view.color = '';
 
-    $('tabs').replaceChildren(...tabs.map((t) => el('button', {
-      class: 'tab', role: 'tab', 'aria-selected': String(t.key === view.category),
-      onclick: () => { view.category = t.key; view.subcategory = ''; render(); },
-    }, t.label, el('span', { class: 'count' }, String(t.count)))));
+    renderSidebar(tree);
 
-    const subTabs = view.category ? W.buildSubTabs(state.items, view.category, state.subcategories) : [];
-    if (!subTabs.some((t) => t.key === view.subcategory)) view.subcategory = '';
-    $('subtabs').hidden = subTabs.length === 0;
-    $('subtabs').replaceChildren(...subTabs.map((t) => el('button', {
-      class: 'chip', 'aria-pressed': String(t.key === view.subcategory),
-      onclick: () => { view.subcategory = t.key; render(); },
-    }, t.label, el('span', { class: 'count' }, String(t.count)))));
+    // 現在地（パンくず）
+    const total = state.items.filter((it) => W.matchesFilter(it, { category: view.category, subcategory: view.subcategory })).length;
+    const crumbs = [el('button', { type: 'button', class: 'crumb', onclick: () => selectFolder('') }, 'すべてのアイテム')];
+    if (view.category) crumbs.push(el('span', { class: 'sep', 'aria-hidden': 'true' }, '›'), el('button', { type: 'button', class: 'crumb', onclick: () => selectFolder(view.category) }, view.category));
+    if (view.subcategory) crumbs.push(el('span', { class: 'sep', 'aria-hidden': 'true' }, '›'), el('span', { class: 'crumb' }, view.subcategory));
+    crumbs[crumbs.length - 1].setAttribute('aria-current', 'page');
+    $('folder-title').replaceChildren(el('span', { class: 'crumbs' }, crumbs), el('span', { class: 'count' }, `${total}点`));
+
+    // 大カテゴリーを開いているときは、中のサブフォルダへすぐ切り替えられるようにする
+    const subs = folder && view.category !== W.NO_CATEGORY ? folder.children : [];
+    $('subfolders').hidden = subs.length === 0;
+    $('subfolders').replaceChildren(...(subs.length ? [
+      el('button', { class: 'chip', 'aria-pressed': String(!view.subcategory), onclick: () => selectFolder(view.category) }, 'すべて', el('span', { class: 'count' }, String(folder.count))),
+      ...subs.map((c) => el('button', {
+        class: 'chip', 'aria-pressed': String(view.subcategory === c.name), onclick: () => selectFolder(view.category, c.name),
+      }, c.name, el('span', { class: 'count' }, String(c.count)))),
+    ] : []));
 
     $('color-filter').replaceChildren(
       el('button', { class: 'chip', 'aria-pressed': String(!view.color), onclick: () => { view.color = ''; render(); } }, 'すべての色'),
@@ -190,7 +294,7 @@
     }
     if (!state.items.length) {
       list.replaceChildren(el('div', { class: 'empty' },
-        el('p', null, 'まだアイテムがありません。登録した洋服はカテゴリーごとのタブに、春・夏・秋・冬の順で並びます。'),
+        el('p', null, 'まだアイテムがありません。登録した洋服はフォルダごとに、春・夏・秋・冬の順で並びます。'),
         el('div', { class: 'empty-actions' },
           el('button', { class: 'primary', onclick: () => openItem() }, '＋ 最初のアイテムを追加'),
           el('button', { onclick: loadSample }, 'サンプルで試す'),
@@ -199,7 +303,12 @@
       return;
     }
     if (!items.length) {
-      list.replaceChildren(el('p', { class: 'empty' }, '条件に合うアイテムがありません。'));
+      const here = view.subcategory || view.category;
+      list.replaceChildren(el('div', { class: 'empty' },
+        el('p', null, total || !here ? '条件に合うアイテムがありません。' : `「${here}」にはまだアイテムがありません。`),
+        !total && here && here !== W.NO_CATEGORY ? el('div', { class: 'empty-actions' },
+          el('button', { class: 'primary', onclick: () => openItem() }, `＋ ${here}に追加`)) : null,
+      ));
       return;
     }
     list.replaceChildren(...W.groupBySeason(items).map((sec) => el('section', { class: 'season', 'data-season': sec.season },
@@ -209,11 +318,13 @@
   }
 
   function card(it) {
+    const where = !view.category
+      ? [it.category || W.NO_CATEGORY, it.subcategory].filter(Boolean).join(' › ')
+      : !view.subcategory ? it.subcategory : '';
     return el('button', { class: 'card', type: 'button', onclick: () => openItem(it), title: 'クリックで編集' },
       el('span', { class: 'name' }, it.name),
       el('span', { class: 'meta' },
-        !view.category && el('span', { class: 'chip' }, [it.category || W.NO_CATEGORY, it.subcategory].filter(Boolean).join(' / ')),
-        view.category && !view.subcategory && it.subcategory && el('span', { class: 'chip' }, it.subcategory),
+        where && el('span', { class: 'chip folder-chip' }, where),
         it.seasons.length > 0 && el('span', { class: 'season-dots' }, it.seasons.map((s) => el('span', { class: 'season-dot', style: `background:${SEASON_COLORS[s]}` }, s))),
         it.colors.map((c) => el('span', { class: 'chip' }, swatch(c), c)),
         it.tags.map((t) => el('span', { class: 'chip' }, '#' + t)),
@@ -222,6 +333,88 @@
     );
   }
 
+  // ---------- フォルダの追加・編集 ----------
+  let folderDraft = null; // { parent, name } 編集時。追加時は { parent, name: '' , isNew: true }
+  function openFolder({ parent = '', name = '', isNew = false }) {
+    folderDraft = { parent, name, isNew };
+    const big = !parent;
+    $('folder-dialog-title').textContent = isNew ? '新しいフォルダ' : 'フォルダを編集';
+    $('fd-name').value = name;
+    $('fd-parent-field').hidden = !isNew;
+    if (isNew) {
+      $('fd-parent').replaceChildren(
+        el('option', { value: '' }, 'なし（大カテゴリーとして作る）'),
+        ...state.categories.map((c) => el('option', { value: c }, c)),
+      );
+      $('fd-parent').value = parent;
+    }
+    const siblings = big ? state.categories : (state.subcategories[parent] || []);
+    const i = siblings.indexOf(name);
+    $('fd-up').hidden = $('fd-down').hidden = isNew;
+    $('fd-up').disabled = i <= 0;
+    $('fd-down').disabled = i < 0 || i >= siblings.length - 1;
+    $('fd-delete').hidden = isNew;
+    $('fd-add-child').hidden = isNew || !big;
+    $('fd-add-child').textContent = `＋ 「${name}」の中にサブフォルダを作る`;
+    const n = isNew ? 0 : W.countInFolder(state.items, parent, name);
+    $('fd-info').hidden = isNew;
+    $('fd-info').textContent = isNew ? '' : `${parent ? parent + ' › ' : ''}${name}（${n}点）`;
+    $('fd-error').hidden = true;
+    closeSidebar();
+    if (!$('folder-dialog').open) $('folder-dialog').showModal();
+    $('fd-name').focus();
+  }
+  function folderError(msg) { $('fd-error').textContent = msg; $('fd-error').hidden = false; }
+
+  $('folder-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const d = folderDraft;
+    const name = $('fd-name').value.trim();
+    if (d.isNew) {
+      const parent = $('fd-parent').value;
+      const err = W.addFolder(state, parent, name);
+      if (err) return folderError(err);
+      if (parent) collapsed.delete(parent);
+      $('folder-dialog').close();
+      commit();
+      selectFolder(parent || name, parent ? name : '');
+    } else {
+      const err = W.renameFolder(state, d.parent, d.name, name);
+      if (err) return folderError(err);
+      if (!d.parent && collapsed.has(d.name)) { collapsed.delete(d.name); collapsed.add(name); }
+      if (!d.parent && view.category === d.name) view.category = name;
+      if (d.parent && view.category === d.parent && view.subcategory === d.name) view.subcategory = name;
+      $('folder-dialog').close();
+      commit();
+    }
+  });
+  $('fd-cancel').addEventListener('click', () => $('folder-dialog').close());
+  for (const [btn, dir] of [['fd-up', -1], ['fd-down', 1]]) {
+    $(btn).addEventListener('click', () => {
+      W.moveFolder(state, folderDraft.parent, folderDraft.name, dir);
+      commit();
+      openFolder(folderDraft);
+    });
+  }
+  $('fd-add-child').addEventListener('click', () => openFolder({ parent: folderDraft.name, isNew: true }));
+  $('fd-delete').addEventListener('click', async () => {
+    const { parent, name } = folderDraft;
+    const n = W.countInFolder(state.items, parent, name);
+    const subs = !parent ? (state.subcategories[name] || []).length : 0;
+    const detail = [
+      subs ? `中のサブフォルダ${subs}個も削除されます。` : '',
+      n ? (parent ? `中の${n}点のアイテムは「${parent}」の直下に移ります。` : `中の${n}点のアイテムは「${W.NO_CATEGORY}」に移ります。`) : '',
+    ].join('');
+    if (!(await ask(`フォルダ「${name}」を削除しますか？${detail ? '\n' + detail : ''}アイテム自体は削除されません。`, { ok: '削除', danger: true }))) return;
+    W.deleteFolder(state, parent, name);
+    $('folder-dialog').close();
+    commit();
+  });
+  $('btn-new-folder').addEventListener('click', () => openFolder({
+    parent: view.category && view.category !== W.NO_CATEGORY && state.categories.includes(view.category) && !view.subcategory ? view.category : '',
+    isNew: true,
+  }));
+
   // ---------- 追加・編集ダイアログ ----------
   function openItem(item) {
     draft = item
@@ -229,7 +422,7 @@
       : {
         id: '', name: '',
         category: view.category && view.category !== W.NO_CATEGORY ? view.category : '',
-        subcategory: view.subcategory && view.subcategory !== W.NO_SUBCATEGORY ? view.subcategory : '',
+        subcategory: view.subcategory || '',
         seasons: [], colors: [], tags: [], memo: '',
       };
     if (!draft.subcategory) draft.subcategory = '';
@@ -249,7 +442,9 @@
   }
 
   function renderDraft() {
-    $('f-category').replaceChildren(...state.categories.map((c) => el('button', {
+    // 旧データなどで一覧にない分類が付いている場合も表示する
+    const cats = draft.category && !state.categories.includes(draft.category) ? [...state.categories, draft.category] : state.categories;
+    $('f-category').replaceChildren(...cats.map((c) => el('button', {
       type: 'button', class: 'chip', 'aria-pressed': String(draft.category === c),
       onclick: () => {
         draft.category = draft.category === c ? '' : c;
@@ -258,10 +453,9 @@
       },
     }, c)));
     const subs = subsOf(draft.category);
-    // 旧データなどで一覧にないサブカテゴリーが付いている場合も表示する
     const shownSubs = draft.subcategory && !subs.includes(draft.subcategory) ? [...subs, draft.subcategory] : subs;
-    $('f-subcategory-field').hidden = shownSubs.length === 0;
-    $('f-subcategory-label').textContent = `${draft.category}の種類`;
+    $('f-subcategory-field').hidden = !draft.category;
+    $('f-subcategory-label').textContent = `「${draft.category}」の中のサブフォルダ（任意）`;
     $('f-subcategory').replaceChildren(...shownSubs.map((c) => el('button', {
       type: 'button', class: 'chip', 'aria-pressed': String(draft.subcategory === c),
       onclick: () => { draft.subcategory = draft.subcategory === c ? '' : c; renderDraft(); },
@@ -283,17 +477,12 @@
   function subsOf(category) {
     return (category && state.subcategories[category]) || [];
   }
-  function addSubcategory(category, name) {
-    const v = name.trim();
-    if (!category || !v) return '';
-    const list = state.subcategories[category] || (state.subcategories[category] = []);
-    if (!list.includes(v)) { list.push(v); save(); }
-    return v;
-  }
-  function addCategory(name) {
+  // 入力欄からフォルダを作る。既にあればそれを選ぶ
+  function ensureFolder(parent, name) {
     const v = name.trim();
     if (!v) return '';
-    if (!state.categories.includes(v)) { state.categories.push(v); save(); }
+    const list = parent ? subsOf(parent) : state.categories;
+    if (!list.includes(v) && !W.addFolder(state, parent, v)) save();
     return v;
   }
   function addColor(name, hex) {
@@ -304,12 +493,14 @@
   }
 
   $('f-add-category').addEventListener('click', () => {
-    const v = addCategory($('f-new-category').value);
-    if (v) { draft.category = v; $('f-new-category').value = ''; renderDraft(); }
+    const v = ensureFolder('', $('f-new-category').value);
+    if (v) { draft.category = v; draft.subcategory = ''; $('f-new-category').value = ''; renderDraft(); render(); }
   });
   $('f-add-subcategory').addEventListener('click', () => {
-    const v = addSubcategory(draft.category, $('f-new-subcategory').value);
-    if (v) { draft.subcategory = v; $('f-new-subcategory').value = ''; renderDraft(); }
+    if (!draft.category) return;
+    if (!state.categories.includes(draft.category)) ensureFolder('', draft.category);
+    const v = ensureFolder(draft.category, $('f-new-subcategory').value);
+    if (v) { draft.subcategory = v; $('f-new-subcategory').value = ''; renderDraft(); render(); }
   });
   $('f-add-color').addEventListener('click', () => {
     const v = addColor($('f-new-color').value, $('f-new-color-hex').value);
@@ -356,60 +547,13 @@
     commit();
   });
 
-  // ---------- タグ管理 ----------
+  // ---------- 色の管理 ----------
   function renderSettings() {
-    const usedCat = (c) => state.items.filter((it) => it.category === c).length;
     const usedColor = (c) => state.items.filter((it) => it.colors.includes(c)).length;
-    const usedSub = (c, sub) => state.items.filter((it) => it.category === c && it.subcategory === sub).length;
-    $('s-categories').replaceChildren(...state.categories.map((c, i) => el('li', { class: 'cat-row' },
-      el('div', { class: 'row' },
-        el('span', { class: 'label' }, c, el('span', { class: 'used' }, `${usedCat(c)}点`)),
-        el('button', { type: 'button', disabled: i === 0, 'aria-label': '上へ', onclick: () => moveCategory(i, -1) }, '↑'),
-        el('button', { type: 'button', disabled: i === state.categories.length - 1, 'aria-label': '下へ', onclick: () => moveCategory(i, 1) }, '↓'),
-        el('button', { type: 'button', class: 'danger', onclick: () => removeCategory(c) }, '削除'),
-      ),
-      el('div', { class: 'chips subs' },
-        subsOf(c).map((sub) => el('span', { class: 'chip' }, sub, el('span', { class: 'used' }, `${usedSub(c, sub)}`),
-          el('button', { type: 'button', class: 'x', 'aria-label': `${sub} を削除`, onclick: () => removeSubcategory(c, sub) }, '×'))),
-        settingsSubFor === c
-          ? el('span', { class: 'inline-add' },
-            el('input', { id: 's-new-sub', placeholder: 'サブカテゴリー名', maxlength: '30', onkeydown: (e) => {
-              if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); submitSub(c); }
-              if (e.key === 'Escape') { e.preventDefault(); settingsSubFor = ''; renderSettings(); }
-            } }),
-            el('button', { type: 'button', onclick: () => submitSub(c) }, '追加'))
-          : el('button', { type: 'button', class: 'chip add-sub', onclick: () => { settingsSubFor = c; renderSettings(); $('s-new-sub').focus(); } }, '＋ サブカテゴリー'),
-      ),
-    )));
     $('s-colors').replaceChildren(...state.colors.map((c) => el('li', null,
       el('span', { class: 'label' }, swatch(c.name), c.name, el('span', { class: 'used' }, `${usedColor(c.name)}点`)),
       el('button', { type: 'button', class: 'danger', onclick: () => removeColor(c.name) }, '削除'),
     )));
-  }
-  let settingsSubFor = '';
-  function submitSub(c) {
-    if (addSubcategory(c, $('s-new-sub').value)) { settingsSubFor = ''; commit(); renderSettings(); }
-  }
-  async function removeSubcategory(c, sub) {
-    const n = state.items.filter((it) => it.category === c && it.subcategory === sub).length;
-    if (n && !(await ask(`「${c} / ${sub}」は${n}点のアイテムで使われています。削除すると、それらは${c}の「${W.NO_SUBCATEGORY}」になります。よろしいですか？`, { ok: '削除', danger: true }))) return;
-    state.subcategories[c] = subsOf(c).filter((x) => x !== sub);
-    if (!state.subcategories[c].length) delete state.subcategories[c];
-    for (const it of state.items) if (it.category === c && it.subcategory === sub) it.subcategory = '';
-    commit(); renderSettings();
-  }
-  function moveCategory(i, d) {
-    const cats = state.categories;
-    [cats[i], cats[i + d]] = [cats[i + d], cats[i]];
-    commit(); renderSettings();
-  }
-  async function removeCategory(c) {
-    const n = state.items.filter((it) => it.category === c).length;
-    if (n && !(await ask(`「${c}」は${n}点のアイテムで使われています。削除すると、それらは「${W.NO_CATEGORY}」になります。よろしいですか？`, { ok: '削除', danger: true }))) return;
-    state.categories = state.categories.filter((x) => x !== c);
-    delete state.subcategories[c];
-    for (const it of state.items) if (it.category === c) { it.category = ''; it.subcategory = ''; }
-    commit(); renderSettings();
   }
   async function removeColor(name) {
     const n = state.items.filter((it) => it.colors.includes(name)).length;
@@ -418,17 +562,12 @@
     for (const it of state.items) it.colors = it.colors.filter((x) => x !== name);
     commit(); renderSettings();
   }
-  $('btn-settings').addEventListener('click', () => { renderSettings(); $('settings-dialog').showModal(); });
+  $('btn-settings').addEventListener('click', () => { closeMenus(); renderSettings(); $('settings-dialog').showModal(); });
   $('s-close').addEventListener('click', () => $('settings-dialog').close());
-  $('s-add-category').addEventListener('click', () => {
-    if (addCategory($('s-new-category').value)) { $('s-new-category').value = ''; commit(); renderSettings(); }
-  });
   $('s-add-color').addEventListener('click', () => {
     if (addColor($('s-new-color').value, $('s-new-color-hex').value)) { $('s-new-color').value = ''; commit(); renderSettings(); }
   });
-  for (const [input, btn] of [['s-new-category', 's-add-category'], ['s-new-color', 's-add-color']]) {
-    $(input).addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); $(btn).click(); } });
-  }
+  $('s-new-color').addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); $('s-add-color').click(); } });
 
   // ---------- その他 ----------
   $('btn-add').addEventListener('click', () => openItem());
@@ -469,18 +608,20 @@
       const [category, subcategory = ''] = cat.split('/');
       s.items.push(W.normalizeItem({ id: newId(), name, category, subcategory, seasons, colors, tags, memo, createdAt: Date.now() }));
     };
-    add('ウールスラックス', 'パンツ/スラックス', ['秋', '冬'], ['グレー'], ['仕事用']);
-    add('リネンスラックス', 'パンツ/スラックス', ['春', '夏'], ['ベージュ']);
-    add('センタープレススラックス', 'パンツ/スラックス', ['春', '秋'], ['黒'], ['仕事用']);
-    add('セルビッジジーンズ', 'パンツ/ジーンズ', ['春', '秋', '冬'], ['ネイビー'], ['お気に入り'], '購入 2024年');
-    add('ホワイトデニム', 'パンツ/ジーンズ', ['夏'], ['白']);
-    add('ベージュのチノパン', 'パンツ/コットンパンツ', ['春', '夏', '秋'], ['ベージュ']);
-    add('ケーブルニット', 'ニット', ['冬'], ['白']);
-    add('ハイゲージニット', 'ニット', ['春', '秋'], ['ネイビー', '黒']);
-    add('テーラードジャケット', 'ジャケット', ['春', '秋'], ['ネイビー'], ['仕事用']);
-    add('デニムジャケット', 'ジャケット', ['春'], ['青']);
-    add('ステンカラーコート', 'コート', ['秋', '冬'], ['ベージュ']);
-    add('無地Tシャツ', 'Tシャツ', ['夏'], ['白', '黒']);
+    add('ウールスラックス', 'ボトムス/スラックス', ['秋', '冬'], ['グレー'], ['仕事用']);
+    add('リネンスラックス', 'ボトムス/スラックス', ['春', '夏'], ['ベージュ']);
+    add('センタープレススラックス', 'ボトムス/スラックス', ['春', '秋'], ['黒'], ['仕事用']);
+    add('セルビッジジーンズ', 'ボトムス/ジーンズ', ['春', '秋', '冬'], ['ネイビー'], ['お気に入り'], '購入 2024年');
+    add('ホワイトデニム', 'ボトムス/ジーンズ', ['夏'], ['白']);
+    add('ベージュのチノパン', 'ボトムス/コットンパンツ', ['春', '夏', '秋'], ['ベージュ']);
+    add('ケーブルニット', 'トップス/ニット', ['冬'], ['白']);
+    add('ハイゲージニット', 'トップス/ニット', ['春', '秋'], ['ネイビー', '黒']);
+    add('無地Tシャツ', 'トップス/Tシャツ', ['夏'], ['白', '黒']);
+    add('オックスフォードシャツ', 'トップス/シャツ', ['春', '秋'], ['白'], ['仕事用']);
+    add('テーラードジャケット', 'アウター/ジャケット', ['春', '秋'], ['ネイビー'], ['仕事用']);
+    add('デニムジャケット', 'アウター/ジャケット', ['春'], ['青']);
+    add('ステンカラーコート', 'アウター/コート', ['秋', '冬'], ['ベージュ']);
+    add('白スニーカー', 'シューズ', ['春', '夏', '秋'], ['白']);
     state = s; commit();
   }
   function closeMenus() {

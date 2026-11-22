@@ -26,21 +26,12 @@ test('複数季節のアイテムはそれぞれの季節に表示され、空�
   assert.equal(secs[1].items[0].name, 'カーディガン');
 });
 
-test('タブはカテゴリ定義順で、アイテムのあるカテゴリだけを件数つきで出す', () => {
-  const tabs = W.buildTabs(
-    [item('A', 'ジーンズ'), item('B', 'スラックス'), item('C', 'スラックス'), item('D', '帽子'), item('E', '')],
-    ['スラックス', 'ジーンズ', 'ニット'],
-  );
-  assert.deepEqual(
-    tabs.map((t) => [t.label, t.count]),
-    [['すべて', 5], ['スラックス', 2], ['ジーンズ', 1], ['帽子', 1], ['未分類', 1]],
-  );
-});
-
 test('フィルタ: カテゴリ・色・キーワード', () => {
-  const a = item('黒スキニー', 'ジーンズ', ['春'], ['黒'], ['お気に入り']);
-  assert.ok(W.matchesFilter(a, { category: 'ジーンズ' }));
-  assert.ok(!W.matchesFilter(a, { category: 'ニット' }));
+  const a = item('黒スキニー', 'ボトムス', ['春'], ['黒'], ['お気に入り'], 'ジーンズ');
+  assert.ok(W.matchesFilter(a, { category: 'ボトムス' }));
+  assert.ok(!W.matchesFilter(a, { category: 'トップス' }));
+  assert.ok(W.matchesFilter(a, { category: 'ボトムス', subcategory: 'ジーンズ' }));
+  assert.ok(!W.matchesFilter(a, { category: 'ボトムス', subcategory: 'スラックス' }));
   assert.ok(W.matchesFilter(a, { color: '黒' }));
   assert.ok(!W.matchesFilter(a, { color: '白' }));
   assert.ok(W.matchesFilter(a, { query: 'お気に' }));
@@ -63,44 +54,83 @@ test('parseState は不正データを拒否し、カテゴリ未指定なら既
   assert.equal(s.colors.length, W.DEFAULT_COLORS.length);
 });
 
-test('既定のカテゴリーにパンツがあり、サブカテゴリーはコットンパンツ・スラックス・ジーンズ', () => {
+const state = (items) => {
   const s = W.emptyState();
-  assert.ok(s.categories.includes('パンツ'));
-  assert.ok(!s.categories.includes('スラックス'));
-  assert.deepEqual(s.subcategories.パンツ, ['コットンパンツ', 'スラックス', 'ジーンズ']);
+  s.items = items;
+  return s;
+};
+
+test('既定のフォルダは大カテゴリー＋サブフォルダ（ボトムスにジーンズ・スラックス・コットンパンツ）', () => {
+  const s = W.emptyState();
+  assert.deepEqual(s.categories, ['トップス', 'アウター', 'ボトムス', 'ワンピース', 'シューズ', '小物']);
+  assert.deepEqual(s.subcategories.ボトムス.slice(0, 3), ['ジーンズ', 'スラックス', 'コットンパンツ']);
 });
 
-test('旧データのスラックス・ジーンズはパンツのサブカテゴリーへ移行する', () => {
+test('フォルダツリーは空のフォルダも含み、大カテゴリーの件数はサブフォルダ分を含む', () => {
+  const t = W.buildFolderTree(
+    [item('A', 'ボトムス', [], [], [], 'ジーンズ'), item('B', 'ボトムス'), item('C', 'トップス', [], [], [], 'ニット'), item('D', '')],
+    ['トップス', 'ボトムス', 'シューズ'],
+    { トップス: ['ニット'], ボトムス: ['ジーンズ', 'スラックス'] },
+  );
+  assert.equal(t.total, 4);
+  assert.equal(t.uncategorized, 1);
+  assert.deepEqual(t.folders.map((f) => [f.name, f.count, f.children.map((c) => `${c.name}:${c.count}`)]), [
+    ['トップス', 1, ['ニット:1']],
+    ['ボトムス', 2, ['ジーンズ:1', 'スラックス:0']],
+    ['シューズ', 0, []],
+  ]);
+});
+
+test('旧形式のデータは大カテゴリーの中へ移行する', () => {
   const s = W.parseState({
-    categories: ['ニット', 'スラックス', 'ジーンズ', '帽子'],
+    categories: ['ニット', 'パンツ', 'スラックス', '帽子'],
+    subcategories: { パンツ: ['ジーンズ', 'ショートパンツ'], ニット: ['カーディガン'], 帽子: ['キャップ'] },
     items: [
       { id: '1', name: 'ウール', category: 'スラックス' },
-      { id: '2', name: 'デニム', category: 'ジーンズ' },
-      { id: '3', name: 'セーター', category: 'ニット' },
+      { id: '2', name: 'デニム', category: 'パンツ', subcategory: 'ジーンズ' },
+      { id: '3', name: '羽織', category: 'ニット', subcategory: 'カーディガン' },
+      { id: '4', name: 'キャップ', category: '帽子', subcategory: 'キャップ' },
     ],
   });
-  assert.deepEqual(s.categories, ['ニット', 'パンツ', '帽子']);
-  assert.deepEqual(s.items.map((it) => [it.category, it.subcategory]), [['パンツ', 'スラックス'], ['パンツ', 'ジーンズ'], ['ニット', '']]);
+  assert.equal(s.layout, 'folders');
+  assert.ok(s.categories.includes('帽子'));
+  assert.ok(!s.categories.includes('ニット'));
+  assert.ok(s.subcategories.ボトムス.includes('ショートパンツ'));
+  assert.deepEqual(s.subcategories.帽子, ['キャップ']);
+  assert.deepEqual(s.items.map((it) => [it.category, it.subcategory]), [
+    ['ボトムス', 'スラックス'], ['ボトムス', 'ジーンズ'], ['トップス', 'ニット'], ['帽子', 'キャップ'],
+  ]);
+  assert.deepEqual(s.items[2].tags, ['カーディガン']);
 });
 
-test('移行済みデータはそのまま読み込む', () => {
-  const s = W.parseState({ categories: ['スラックス'], subcategories: {}, items: [{ id: '1', name: 'a', category: 'スラックス' }] });
-  assert.deepEqual(s.categories, ['スラックス']);
-  assert.equal(s.items[0].category, 'スラックス');
+test('新形式のデータはそのまま読み込む（移行は1回だけ）', () => {
+  const once = W.parseState({ categories: ['ニット'], items: [{ id: '1', name: 'a', category: 'ニット' }] });
+  const twice = W.parseState(JSON.parse(JSON.stringify(once)));
+  assert.deepEqual(twice, once);
 });
 
-test('サブタブはサブカテゴリー定義順で、未設定は「その他」として末尾', () => {
-  const items = [
-    item('A', 'パンツ', [], [], [], 'ジーンズ'),
-    item('B', 'パンツ', [], [], [], 'コットンパンツ'),
-    item('C', 'パンツ', [], [], [], 'ジーンズ'),
-    item('D', 'パンツ'),
-    item('E', 'ニット'),
-  ];
-  const tabs = W.buildSubTabs(items, 'パンツ', W.DEFAULT_SUBCATEGORIES);
-  assert.deepEqual(tabs.map((t) => [t.label, t.count]), [['すべて', 4], ['コットンパンツ', 1], ['ジーンズ', 2], ['その他', 1]]);
-  assert.deepEqual(W.buildSubTabs(items, 'ニット', W.DEFAULT_SUBCATEGORIES), []);
-  assert.ok(W.matchesFilter(items[0], { category: 'パンツ', subcategory: 'ジーンズ' }));
-  assert.ok(!W.matchesFilter(items[1], { category: 'パンツ', subcategory: 'ジーンズ' }));
-  assert.ok(W.matchesFilter(items[3], { category: 'パンツ', subcategory: 'その他' }));
+test('フォルダの追加・名前変更・並べ替え・削除', () => {
+  const s = state([item('A', 'ボトムス', [], [], [], 'ジーンズ'), item('B', 'ボトムス')]);
+  assert.equal(W.addFolder(s, 'ボトムス', 'ショートパンツ'), null);
+  assert.match(W.addFolder(s, 'ボトムス', 'ジーンズ'), /同じ名前/);
+  assert.match(W.addFolder(s, '', ' '), /入力/);
+  assert.equal(W.addFolder(s, '', 'ルームウェア'), null);
+  assert.equal(s.categories.at(-1), 'ルームウェア');
+
+  assert.equal(W.renameFolder(s, 'ボトムス', 'ジーンズ', 'デニム'), null);
+  assert.equal(s.items[0].subcategory, 'デニム');
+  assert.equal(W.renameFolder(s, '', 'ボトムス', 'パンツ類'), null);
+  assert.deepEqual([s.items[0].category, s.items[1].category], ['パンツ類', 'パンツ類']);
+  assert.ok(s.subcategories.パンツ類.includes('デニム'));
+  assert.equal(s.subcategories.ボトムス, undefined);
+
+  W.moveFolder(s, '', 'パンツ類', -1);
+  assert.equal(s.categories.indexOf('パンツ類'), 1);
+
+  W.deleteFolder(s, 'パンツ類', 'デニム');
+  assert.equal(s.items[0].subcategory, '');
+  assert.equal(s.items[0].category, 'パンツ類');
+  W.deleteFolder(s, '', 'パンツ類');
+  assert.equal(s.items[0].category, '');
+  assert.ok(!s.categories.includes('パンツ類'));
 });

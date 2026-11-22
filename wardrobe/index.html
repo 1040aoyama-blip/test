@@ -8,13 +8,18 @@
 </head>
 <body>
   <header class="topbar">
-    <h1>ワードローブ</h1>
+    <div class="brand">
+      <button id="btn-folders" class="icon-button" aria-label="フォルダ一覧" aria-controls="sidebar" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <h1>ワードローブ</h1>
+    </div>
     <div class="actions">
       <button id="btn-add" class="primary">＋ アイテム追加</button>
-      <button id="btn-settings">タグ管理</button>
       <details class="menu">
         <summary>その他</summary>
         <div class="menu-body">
+          <button id="btn-settings">色の管理</button>
           <button id="btn-export">エクスポート（JSON）</button>
           <label class="as-button">インポート（JSON）<input id="file-import" type="file" accept="application/json,.json" hidden></label>
           <button id="btn-sample">サンプルデータを読み込む</button>
@@ -23,18 +28,25 @@
     </div>
   </header>
 
-  <main>
-    <p id="status" class="status" role="status" hidden></p>
-    <div class="toolbar">
-      <input id="search" type="search" placeholder="名前・タグ・メモで検索">
-      <div id="color-filter" class="chips" aria-label="色で絞り込み"></div>
-    </div>
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-label="フォルダ">
+      <nav id="folder-tree"></nav>
+      <button id="btn-new-folder" type="button" class="new-folder">＋ 新しいフォルダ</button>
+    </aside>
+    <div id="sidebar-backdrop" class="backdrop" hidden></div>
 
-    <nav id="tabs" class="tabs" role="tablist"></nav>
-    <div id="subtabs" class="chips subtabs" aria-label="サブカテゴリー" hidden></div>
+    <main>
+      <p id="status" class="status" role="status" hidden></p>
+      <h2 id="folder-title" class="folder-title"></h2>
+      <div id="subfolders" class="chips subfolders" aria-label="サブフォルダ" hidden></div>
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="名前・タグ・メモで検索">
+        <div id="color-filter" class="chips" aria-label="色で絞り込み"></div>
+      </div>
 
-    <section id="list" aria-live="polite"></section>
-  </main>
+      <section id="list" aria-live="polite"></section>
+    </main>
+  </div>
 
   <!-- 追加・編集ダイアログ -->
   <dialog id="item-dialog">
@@ -47,19 +59,19 @@
       </label>
 
       <div class="field">
-        <span>カテゴリー</span>
+        <span>フォルダ</span>
         <div id="f-category" class="chips"></div>
         <div class="inline-add">
-          <input id="f-new-category" placeholder="新しいカテゴリー" maxlength="30">
+          <input id="f-new-category" placeholder="新しいフォルダ" maxlength="30">
           <button type="button" id="f-add-category">追加</button>
         </div>
       </div>
 
       <div class="field" id="f-subcategory-field" hidden>
-        <span id="f-subcategory-label">種類</span>
+        <span id="f-subcategory-label">サブフォルダ</span>
         <div id="f-subcategory" class="chips"></div>
         <div class="inline-add">
-          <input id="f-new-subcategory" placeholder="新しい種類" maxlength="30">
+          <input id="f-new-subcategory" placeholder="新しいサブフォルダ" maxlength="30">
           <button type="button" id="f-add-subcategory">追加</button>
         </div>
       </div>
@@ -104,17 +116,36 @@
     </form>
   </dialog>
 
-  <!-- タグ管理ダイアログ -->
+  <!-- フォルダの追加・編集ダイアログ -->
+  <dialog id="folder-dialog">
+    <form id="folder-form" method="dialog">
+      <h2 id="folder-dialog-title">新しいフォルダ</h2>
+      <p id="fd-info" class="muted" hidden></p>
+      <label class="field">
+        <span>フォルダ名</span>
+        <input id="fd-name" required maxlength="30" placeholder="例: ショートパンツ">
+      </label>
+      <label class="field" id="fd-parent-field">
+        <span>どのフォルダの中に作りますか</span>
+        <select id="fd-parent"></select>
+      </label>
+      <button type="button" id="fd-add-child" class="link-button" hidden></button>
+      <p id="fd-error" class="error" hidden></p>
+      <div class="dialog-actions">
+        <button type="button" id="fd-delete" class="danger" hidden>削除</button>
+        <button type="button" id="fd-up" aria-label="上へ移動" title="上へ移動" hidden>↑</button>
+        <button type="button" id="fd-down" aria-label="下へ移動" title="下へ移動" hidden>↓</button>
+        <span class="spacer"></span>
+        <button type="button" id="fd-cancel">キャンセル</button>
+        <button type="submit" class="primary">保存</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- 色の管理ダイアログ -->
   <dialog id="settings-dialog">
     <div class="settings">
-      <h2>タグ管理</h2>
-      <h3>カテゴリーとサブカテゴリー</h3>
-      <ul id="s-categories" class="manage-list"></ul>
-      <div class="inline-add">
-        <input id="s-new-category" placeholder="新しいカテゴリー" maxlength="30">
-        <button type="button" id="s-add-category">追加</button>
-      </div>
-      <h3>色</h3>
+      <h2>色の管理</h2>
       <ul id="s-colors" class="manage-list"></ul>
       <div class="inline-add">
         <input id="s-new-color" placeholder="新しい色" maxlength="20">

@@ -31,6 +31,7 @@
     </div>
 
     <nav id="tabs" class="tabs" role="tablist"></nav>
+    <div id="subtabs" class="chips subtabs" aria-label="サブカテゴリー" hidden></div>
 
     <section id="list" aria-live="polite"></section>
   </main>
@@ -51,6 +52,15 @@
         <div class="inline-add">
           <input id="f-new-category" placeholder="新しいカテゴリー" maxlength="30">
           <button type="button" id="f-add-category">追加</button>
+        </div>
+      </div>
+
+      <div class="field" id="f-subcategory-field" hidden>
+        <span id="f-subcategory-label">種類</span>
+        <div id="f-subcategory" class="chips"></div>
+        <div class="inline-add">
+          <input id="f-new-subcategory" placeholder="新しい種類" maxlength="30">
+          <button type="button" id="f-add-subcategory">追加</button>
         </div>
       </div>
 
@@ -98,7 +108,7 @@
   <dialog id="settings-dialog">
     <div class="settings">
       <h2>タグ管理</h2>
-      <h3>カテゴリー（タブの並び順）</h3>
+      <h3>カテゴリーとサブカテゴリー</h3>
       <ul id="s-categories" class="manage-list"></ul>
       <div class="inline-add">
         <input id="s-new-category" placeholder="新しいカテゴリー" maxlength="30">

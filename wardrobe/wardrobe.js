@@ -5,8 +5,12 @@
   const SEASONS = ['春', '夏', '秋', '冬'];
   const NO_SEASON = '季節未設定';
   const NO_CATEGORY = '未分類';
+  const NO_SUBCATEGORY = 'その他';
 
-  const DEFAULT_CATEGORIES = ['Tシャツ', 'シャツ', 'ニット', 'パーカー', 'ジャケット', 'コート', 'スラックス', 'ジーンズ', 'スカート', 'ワンピース', 'シューズ', '小物'];
+  const DEFAULT_CATEGORIES = ['Tシャツ', 'シャツ', 'ニット', 'パーカー', 'ジャケット', 'コート', 'パンツ', 'スカート', 'ワンピース', 'シューズ', '小物'];
+  // カテゴリー → サブカテゴリーの一覧
+  const DEFAULT_SUBCATEGORIES = { パンツ: ['コットンパンツ', 'スラックス', 'ジーンズ'] };
+  const cloneSubcategories = (src) => Object.fromEntries(Object.entries(src).map(([k, v]) => [k, v.slice()]));
   const DEFAULT_COLORS = [
     { name: '白', hex: '#ffffff' },
     { name: '黒', hex: '#1f1f1f' },
@@ -41,6 +45,7 @@
       id: String(input.id || ''),
       name: String(input.name || '').trim(),
       category: String(input.category || '').trim(),
+      subcategory: input.category ? String(input.subcategory || '').trim() : '',
       seasons: sortSeasons(input.seasons),
       colors: uniqStrings(input.colors),
       tags: uniqStrings(input.tags),
@@ -82,14 +87,33 @@
     return tabs;
   }
 
+  // カテゴリー内のサブタブ: [{ key, label, count }]。サブカテゴリーを使っていないカテゴリーでは空配列
+  function buildSubTabs(items, category, subcategories) {
+    const inCat = items.filter((it) => (it.category || NO_CATEGORY) === category);
+    const defined = (subcategories && subcategories[category]) || [];
+    const counts = new Map();
+    for (const it of inCat) {
+      const k = it.subcategory || NO_SUBCATEGORY;
+      counts.set(k, (counts.get(k) || 0) + 1);
+    }
+    if (!defined.length && !inCat.some((it) => it.subcategory)) return [];
+    const order = defined.slice();
+    for (const k of counts.keys()) if (!order.includes(k) && k !== NO_SUBCATEGORY) order.push(k);
+    if (counts.has(NO_SUBCATEGORY)) order.push(NO_SUBCATEGORY);
+    const tabs = [{ key: '', label: 'すべて', count: inCat.length }];
+    for (const k of order) if (counts.has(k)) tabs.push({ key: k, label: k, count: counts.get(k) });
+    return tabs;
+  }
+
   function matchesFilter(item, filter) {
     const f = filter || {};
     if (f.category && (item.category || NO_CATEGORY) !== f.category) return false;
+    if (f.subcategory && (item.subcategory || NO_SUBCATEGORY) !== f.subcategory) return false;
     if (f.color && !item.colors.includes(f.color)) return false;
     if (f.query) {
       const q = f.query.trim().toLowerCase();
       if (q) {
-        const hay = [item.name, item.category, item.memo, ...item.colors, ...item.tags, ...item.seasons].join(' ').toLowerCase();
+        const hay = [item.name, item.category, item.subcategory, item.memo, ...item.colors, ...item.tags, ...item.seasons].join(' ').toLowerCase();
         if (!hay.includes(q)) return false;
       }
     }
@@ -122,18 +146,51 @@
       if (err) throw new Error(`不正なアイテム: ${err}`);
       return normalizeItem(it);
     });
-    const categories = uniqStrings(Array.isArray(data.categories) ? data.categories : DEFAULT_CATEGORIES);
+    let categories = uniqStrings(Array.isArray(data.categories) ? data.categories : DEFAULT_CATEGORIES);
+    let subcategories;
+    if (data.subcategories && typeof data.subcategories === 'object') {
+      subcategories = {};
+      for (const [k, v] of Object.entries(data.subcategories)) {
+        const list = uniqStrings(Array.isArray(v) ? v : []);
+        if (String(k).trim() && list.length) subcategories[String(k).trim()] = list;
+      }
+    } else {
+      // サブカテゴリー導入前のデータ: スラックス・ジーンズを「パンツ」のサブカテゴリーへ移す
+      ({ categories } = migrateToPants(categories, items));
+      subcategories = cloneSubcategories(DEFAULT_SUBCATEGORIES);
+    }
     const colors = Array.isArray(data.colors)
       ? data.colors.filter((c) => c && String(c.name || '').trim()).map((c) => ({ name: String(c.name).trim(), hex: /^#[0-9a-fA-F]{6}$/.test(c.hex) ? c.hex : '#cccccc' }))
       : DEFAULT_COLORS.map((c) => ({ ...c }));
-    return { items, categories, colors };
+    return { items, categories, subcategories, colors };
+  }
+
+  function migrateToPants(categories, items) {
+    const PANTS = 'パンツ';
+    const legacy = DEFAULT_SUBCATEGORIES[PANTS];
+    const out = [];
+    for (const c of categories) {
+      if (legacy.includes(c)) {
+        if (!out.includes(PANTS)) out.push(PANTS);
+      } else if (!out.includes(c)) {
+        out.push(c);
+      }
+    }
+    if (!out.includes(PANTS)) out.push(PANTS);
+    for (const it of items) {
+      if (legacy.includes(it.category)) {
+        it.subcategory = it.category;
+        it.category = PANTS;
+      }
+    }
+    return { categories: out };
   }
 
   function emptyState() {
-    return { items: [], categories: DEFAULT_CATEGORIES.slice(), colors: DEFAULT_COLORS.map((c) => ({ ...c })) };
+    return { items: [], categories: DEFAULT_CATEGORIES.slice(), subcategories: cloneSubcategories(DEFAULT_SUBCATEGORIES), colors: DEFAULT_COLORS.map((c) => ({ ...c })) };
   }
 
-  const api = { SEASONS, NO_SEASON, NO_CATEGORY, DEFAULT_CATEGORIES, DEFAULT_COLORS, normalizeItem, validateItem, buildTabs, matchesFilter, groupBySeason, parseState, emptyState, sortSeasons };
+  const api = { SEASONS, NO_SEASON, NO_CATEGORY, NO_SUBCATEGORY, DEFAULT_SUBCATEGORIES, buildSubTabs, DEFAULT_CATEGORIES, DEFAULT_COLORS, normalizeItem, validateItem, buildTabs, matchesFilter, groupBySeason, parseState, emptyState, sortSeasons };
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = api;

@@ -7,7 +7,7 @@
   const SEASON_COLORS = { 春: 'var(--spring)', 夏: 'var(--summer)', 秋: 'var(--autumn)', 冬: 'var(--winter)' };
 
   let state = load();
-  let view = { category: '', color: '', query: '' };
+  let view = { category: '', subcategory: '', color: '', query: '' };
   let draft = null; // 編集中のアイテム
 
   // ---------- 永続化 ----------
@@ -163,7 +163,15 @@
 
     $('tabs').replaceChildren(...tabs.map((t) => el('button', {
       class: 'tab', role: 'tab', 'aria-selected': String(t.key === view.category),
-      onclick: () => { view.category = t.key; render(); },
+      onclick: () => { view.category = t.key; view.subcategory = ''; render(); },
+    }, t.label, el('span', { class: 'count' }, String(t.count)))));
+
+    const subTabs = view.category ? W.buildSubTabs(state.items, view.category, state.subcategories) : [];
+    if (!subTabs.some((t) => t.key === view.subcategory)) view.subcategory = '';
+    $('subtabs').hidden = subTabs.length === 0;
+    $('subtabs').replaceChildren(...subTabs.map((t) => el('button', {
+      class: 'chip', 'aria-pressed': String(t.key === view.subcategory),
+      onclick: () => { view.subcategory = t.key; render(); },
     }, t.label, el('span', { class: 'count' }, String(t.count)))));
 
     $('color-filter').replaceChildren(
@@ -204,7 +212,8 @@
     return el('button', { class: 'card', type: 'button', onclick: () => openItem(it), title: 'クリックで編集' },
       el('span', { class: 'name' }, it.name),
       el('span', { class: 'meta' },
-        !view.category && el('span', { class: 'chip' }, it.category || W.NO_CATEGORY),
+        !view.category && el('span', { class: 'chip' }, [it.category || W.NO_CATEGORY, it.subcategory].filter(Boolean).join(' / ')),
+        view.category && !view.subcategory && it.subcategory && el('span', { class: 'chip' }, it.subcategory),
         it.seasons.length > 0 && el('span', { class: 'season-dots' }, it.seasons.map((s) => el('span', { class: 'season-dot', style: `background:${SEASON_COLORS[s]}` }, s))),
         it.colors.map((c) => el('span', { class: 'chip' }, swatch(c), c)),
         it.tags.map((t) => el('span', { class: 'chip' }, '#' + t)),
@@ -217,7 +226,13 @@
   function openItem(item) {
     draft = item
       ? { ...item, seasons: [...item.seasons], colors: [...item.colors], tags: [...item.tags] }
-      : { id: '', name: '', category: view.category && view.category !== W.NO_CATEGORY ? view.category : '', seasons: [], colors: [], tags: [], memo: '' };
+      : {
+        id: '', name: '',
+        category: view.category && view.category !== W.NO_CATEGORY ? view.category : '',
+        subcategory: view.subcategory && view.subcategory !== W.NO_SUBCATEGORY ? view.subcategory : '',
+        seasons: [], colors: [], tags: [], memo: '',
+      };
+    if (!draft.subcategory) draft.subcategory = '';
     $('item-dialog-title').textContent = item ? 'アイテム編集' : 'アイテム追加';
     $('f-name').value = draft.name;
     $('f-memo').value = draft.memo;
@@ -236,7 +251,20 @@
   function renderDraft() {
     $('f-category').replaceChildren(...state.categories.map((c) => el('button', {
       type: 'button', class: 'chip', 'aria-pressed': String(draft.category === c),
-      onclick: () => { draft.category = draft.category === c ? '' : c; renderDraft(); },
+      onclick: () => {
+        draft.category = draft.category === c ? '' : c;
+        if (!subsOf(draft.category).includes(draft.subcategory)) draft.subcategory = '';
+        renderDraft();
+      },
+    }, c)));
+    const subs = subsOf(draft.category);
+    // 旧データなどで一覧にないサブカテゴリーが付いている場合も表示する
+    const shownSubs = draft.subcategory && !subs.includes(draft.subcategory) ? [...subs, draft.subcategory] : subs;
+    $('f-subcategory-field').hidden = shownSubs.length === 0;
+    $('f-subcategory-label').textContent = `${draft.category}の種類`;
+    $('f-subcategory').replaceChildren(...shownSubs.map((c) => el('button', {
+      type: 'button', class: 'chip', 'aria-pressed': String(draft.subcategory === c),
+      onclick: () => { draft.subcategory = draft.subcategory === c ? '' : c; renderDraft(); },
     }, c)));
     $('f-seasons').replaceChildren(...W.SEASONS.map((s) => el('button', {
       type: 'button', class: 'chip', 'aria-pressed': String(draft.seasons.includes(s)),
@@ -252,6 +280,16 @@
       el('button', { type: 'button', class: 'x', 'aria-label': `${t} を外す`, onclick: () => { toggle(draft.tags, t); renderDraft(); } }, '×'))));
   }
 
+  function subsOf(category) {
+    return (category && state.subcategories[category]) || [];
+  }
+  function addSubcategory(category, name) {
+    const v = name.trim();
+    if (!category || !v) return '';
+    const list = state.subcategories[category] || (state.subcategories[category] = []);
+    if (!list.includes(v)) { list.push(v); save(); }
+    return v;
+  }
   function addCategory(name) {
     const v = name.trim();
     if (!v) return '';
@@ -269,6 +307,10 @@
     const v = addCategory($('f-new-category').value);
     if (v) { draft.category = v; $('f-new-category').value = ''; renderDraft(); }
   });
+  $('f-add-subcategory').addEventListener('click', () => {
+    const v = addSubcategory(draft.category, $('f-new-subcategory').value);
+    if (v) { draft.subcategory = v; $('f-new-subcategory').value = ''; renderDraft(); }
+  });
   $('f-add-color').addEventListener('click', () => {
     const v = addColor($('f-new-color').value, $('f-new-color-hex').value);
     if (v) { if (!draft.colors.includes(v)) draft.colors.push(v); $('f-new-color').value = ''; renderDraft(); }
@@ -283,7 +325,7 @@
   }
   $('f-add-tag').addEventListener('click', addTagFromInput);
   // 入力欄で Enter を押したときにフォーム送信せず「追加」として扱う
-  for (const [input, btn] of [['f-new-category', 'f-add-category'], ['f-new-color', 'f-add-color'], ['f-new-tag', 'f-add-tag']]) {
+  for (const [input, btn] of [['f-new-category', 'f-add-category'], ['f-new-subcategory', 'f-add-subcategory'], ['f-new-color', 'f-add-color'], ['f-new-tag', 'f-add-tag']]) {
     $(input).addEventListener('keydown', (e) => {
       if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); $(btn).click(); }
     });
@@ -318,16 +360,43 @@
   function renderSettings() {
     const usedCat = (c) => state.items.filter((it) => it.category === c).length;
     const usedColor = (c) => state.items.filter((it) => it.colors.includes(c)).length;
-    $('s-categories').replaceChildren(...state.categories.map((c, i) => el('li', null,
-      el('span', { class: 'label' }, c, el('span', { class: 'used' }, `${usedCat(c)}点`)),
-      el('button', { type: 'button', disabled: i === 0, 'aria-label': '上へ', onclick: () => moveCategory(i, -1) }, '↑'),
-      el('button', { type: 'button', disabled: i === state.categories.length - 1, 'aria-label': '下へ', onclick: () => moveCategory(i, 1) }, '↓'),
-      el('button', { type: 'button', class: 'danger', onclick: () => removeCategory(c) }, '削除'),
+    const usedSub = (c, sub) => state.items.filter((it) => it.category === c && it.subcategory === sub).length;
+    $('s-categories').replaceChildren(...state.categories.map((c, i) => el('li', { class: 'cat-row' },
+      el('div', { class: 'row' },
+        el('span', { class: 'label' }, c, el('span', { class: 'used' }, `${usedCat(c)}点`)),
+        el('button', { type: 'button', disabled: i === 0, 'aria-label': '上へ', onclick: () => moveCategory(i, -1) }, '↑'),
+        el('button', { type: 'button', disabled: i === state.categories.length - 1, 'aria-label': '下へ', onclick: () => moveCategory(i, 1) }, '↓'),
+        el('button', { type: 'button', class: 'danger', onclick: () => removeCategory(c) }, '削除'),
+      ),
+      el('div', { class: 'chips subs' },
+        subsOf(c).map((sub) => el('span', { class: 'chip' }, sub, el('span', { class: 'used' }, `${usedSub(c, sub)}`),
+          el('button', { type: 'button', class: 'x', 'aria-label': `${sub} を削除`, onclick: () => removeSubcategory(c, sub) }, '×'))),
+        settingsSubFor === c
+          ? el('span', { class: 'inline-add' },
+            el('input', { id: 's-new-sub', placeholder: 'サブカテゴリー名', maxlength: '30', onkeydown: (e) => {
+              if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); submitSub(c); }
+              if (e.key === 'Escape') { e.preventDefault(); settingsSubFor = ''; renderSettings(); }
+            } }),
+            el('button', { type: 'button', onclick: () => submitSub(c) }, '追加'))
+          : el('button', { type: 'button', class: 'chip add-sub', onclick: () => { settingsSubFor = c; renderSettings(); $('s-new-sub').focus(); } }, '＋ サブカテゴリー'),
+      ),
     )));
     $('s-colors').replaceChildren(...state.colors.map((c) => el('li', null,
       el('span', { class: 'label' }, swatch(c.name), c.name, el('span', { class: 'used' }, `${usedColor(c.name)}点`)),
       el('button', { type: 'button', class: 'danger', onclick: () => removeColor(c.name) }, '削除'),
     )));
+  }
+  let settingsSubFor = '';
+  function submitSub(c) {
+    if (addSubcategory(c, $('s-new-sub').value)) { settingsSubFor = ''; commit(); renderSettings(); }
+  }
+  async function removeSubcategory(c, sub) {
+    const n = state.items.filter((it) => it.category === c && it.subcategory === sub).length;
+    if (n && !(await ask(`「${c} / ${sub}」は${n}点のアイテムで使われています。削除すると、それらは${c}の「${W.NO_SUBCATEGORY}」になります。よろしいですか？`, { ok: '削除', danger: true }))) return;
+    state.subcategories[c] = subsOf(c).filter((x) => x !== sub);
+    if (!state.subcategories[c].length) delete state.subcategories[c];
+    for (const it of state.items) if (it.category === c && it.subcategory === sub) it.subcategory = '';
+    commit(); renderSettings();
   }
   function moveCategory(i, d) {
     const cats = state.categories;
@@ -338,7 +407,8 @@
     const n = state.items.filter((it) => it.category === c).length;
     if (n && !(await ask(`「${c}」は${n}点のアイテムで使われています。削除すると、それらは「${W.NO_CATEGORY}」になります。よろしいですか？`, { ok: '削除', danger: true }))) return;
     state.categories = state.categories.filter((x) => x !== c);
-    for (const it of state.items) if (it.category === c) it.category = '';
+    delete state.subcategories[c];
+    for (const it of state.items) if (it.category === c) { it.category = ''; it.subcategory = ''; }
     commit(); renderSettings();
   }
   async function removeColor(name) {
@@ -395,12 +465,16 @@
   async function loadSample() {
     if (state.items.length && !(await ask('現在のデータをサンプルデータで置き換えます。よろしいですか？', { ok: '置き換える', danger: true }))) return;
     const s = W.emptyState();
-    const add = (name, category, seasons, colors, tags = [], memo = '') => s.items.push(W.normalizeItem({ id: newId(), name, category, seasons, colors, tags, memo, createdAt: Date.now() }));
-    add('ウールスラックス', 'スラックス', ['秋', '冬'], ['グレー'], ['仕事用']);
-    add('リネンスラックス', 'スラックス', ['春', '夏'], ['ベージュ']);
-    add('センタープレススラックス', 'スラックス', ['春', '秋'], ['黒'], ['仕事用']);
-    add('セルビッジジーンズ', 'ジーンズ', ['春', '秋', '冬'], ['ネイビー'], ['お気に入り'], '購入 2024年');
-    add('ホワイトデニム', 'ジーンズ', ['夏'], ['白']);
+    const add = (name, cat, seasons, colors, tags = [], memo = '') => {
+      const [category, subcategory = ''] = cat.split('/');
+      s.items.push(W.normalizeItem({ id: newId(), name, category, subcategory, seasons, colors, tags, memo, createdAt: Date.now() }));
+    };
+    add('ウールスラックス', 'パンツ/スラックス', ['秋', '冬'], ['グレー'], ['仕事用']);
+    add('リネンスラックス', 'パンツ/スラックス', ['春', '夏'], ['ベージュ']);
+    add('センタープレススラックス', 'パンツ/スラックス', ['春', '秋'], ['黒'], ['仕事用']);
+    add('セルビッジジーンズ', 'パンツ/ジーンズ', ['春', '秋', '冬'], ['ネイビー'], ['お気に入り'], '購入 2024年');
+    add('ホワイトデニム', 'パンツ/ジーンズ', ['夏'], ['白']);
+    add('ベージュのチノパン', 'パンツ/コットンパンツ', ['春', '夏', '秋'], ['ベージュ']);
     add('ケーブルニット', 'ニット', ['冬'], ['白']);
     add('ハイゲージニット', 'ニット', ['春', '秋'], ['ネイビー', '黒']);
     add('テーラードジャケット', 'ジャケット', ['春', '秋'], ['ネイビー'], ['仕事用']);
